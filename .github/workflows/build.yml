@@ -35,8 +35,8 @@ jobs:
         run: |
           Write-Host "Starting VS 2022 modification to add v141..."
           $vsInstaller = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe"
-          # Standard command without the problematic --log param
-          $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --quiet --norestart" -PassThru
+          # Adding ATL component for winutil.h compatibility
+          $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --add Microsoft.VisualStudio.Component.VC.v141.ATL --quiet --norestart" -PassThru
           
           # Heartbeat monitor
           $seconds = 0
