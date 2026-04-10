@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - name: Checkout Robo 3T
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.7'
 
@@ -39,7 +39,7 @@ jobs:
 
     - name: Cache Robo Shell
       id: cache-shell
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ../robo-shell
         key: ${{ runner.os }}-robo-shell-v4.2
@@ -70,7 +70,7 @@ jobs:
       shell: cmd
 
     - name: Upload EXE Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Robo3T-Fixed-Windows
         path: build/Release/package/*.exe
