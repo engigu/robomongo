@@ -34,10 +34,27 @@ jobs:
 
     - name: Setup OpenSSL
       run: |
-        choco install openssl -y
-        # 自动探测 OpenSSL 安装目录
-        $opensslPath = (Get-Item "C:\Program Files\OpenSSL*").FullName
-        echo "OPENSSL_ROOT=$opensslPath" | Out-File -FilePath $env:GITHUB_ENV -Append
+        # 优先查找系统中可能存在的 OpenSSL 路径
+        $paths = @(
+          "C:\Program Files\OpenSSL-Win64",
+          "C:\Program Files\OpenSSL",
+          "C:\Program Files (x86)\OpenSSL-Win32"
+        )
+        $found = $false
+        foreach ($p in $paths) {
+          if (Test-Path "$p\bin\openssl.exe") {
+            echo "OPENSSL_ROOT=$p" | Out-File -FilePath $env:GITHUB_ENV -Append
+            $found = $true
+            Write-Host "Found pre-installed OpenSSL at $p"
+            break
+          }
+        }
+        if (-not $found) {
+          Write-Host "OpenSSL not found, installing via choco..."
+          choco install openssl -y --no-progress
+          $opensslPath = (Get-Item "C:\Program Files\OpenSSL*").FullName
+          echo "OPENSSL_ROOT=$opensslPath" | Out-File -FilePath $env:GITHUB_ENV -Append
+        }
       shell: powershell
 
     - name: Cache Robo Shell
