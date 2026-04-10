@@ -77,8 +77,8 @@ jobs:
         git clone --recursive --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
         cd robo-shell
         
-        # 核心修复 1：继承环境变量，并禁用“警告视为错误”及强制宽容模式适配 VS 2022
-        python -c "import os; lines = open('SConstruct').readlines(); out = open('SConstruct', 'w'); out.write('import os\n'); [out.write(l.replace('env = Environment(', 'env = Environment(ENV = os.environ, ').replace('/WX', '/WX-').replace('/permissive-', '/permissive')) if l.strip().startswith('env = Environment(') else out.write(l) for l in lines]; out.close()"
+        # 核心修复 1：地毯式修补所有 SCons 配置文件，强制禁用 /WX 并开启 /permissive
+        python -c "import os; [([open(os.path.join(root, f), 'w', encoding='utf-8').write(open(os.path.join(root, f), 'r', encoding='utf-8', errors='ignore').read().replace('env = Environment(', 'env = Environment(ENV = os.environ, ').replace('/WX', '/WX-').replace('/permissive-', '/permissive')) for f in files if f in ['SConstruct', 'SConscript']]) for root, dirs, files in os.walk('.'))]"
         
         # 核心修复 2：针对 VS 2022 修复 mozjs 的源码兼容性问题 (C7626) - 使用正则精准替换所有匿名结构体
         python -c "import os, re; path='src/third_party/mozjs-60/extract/js/src/gc/StoreBuffer.h'; content=open(path).read(); content=re.sub(r'typedef struct \{(.*?)\} (\w+);', r'struct \2 {\1};', content, flags=re.dotall); open(path, 'w').write(content)"
