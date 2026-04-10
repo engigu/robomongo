@@ -16,10 +16,12 @@ def patch_scons():
                     # 2. Disable Treat Warnings as Errors (/WX -> /WX-)
                     # 3. Enable permissive mode (/permissive- -> /permissive) for old libs
                     # 4. Fix VS 2022 Internal Compiler Error (ICE) via /Zc:lambda-
+                    # 4. Fix VS 2022 Internal Compiler Error (ICE) via /Zc:lambda-
+                    # We use comma to split them into multiple arguments in SCons lists
                     new_content = content.replace('env = Environment(', 'env = Environment(ENV = os.environ, ')
                     new_content = new_content.replace('/WX', '/WX-')
                     new_content = new_content.replace('/permissive-', '/permissive')
-                    new_content = new_content.replace('/Zc:inline', '/Zc:inline /Zc:lambda-')
+                    new_content = new_content.replace("'/Zc:inline'", "'/Zc:inline', '/Zc:lambda-'").replace('"/Zc:inline"', '"/Zc:inline", "/Zc:lambda-"')
                     
                     if new_content != content:
                         with open(path, 'w', encoding='utf-8') as f:
