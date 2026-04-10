@@ -27,7 +27,7 @@ def patch_scons():
                     print(f"Failed to patch {path}: {e}")
 
 def patch_mozjs():
-    print("--- Patching mozjs StoreBuffer.h ---")
+    print("--- Patching mozjs StoreBuffer.h (Robust Version) ---")
     path = 'src/third_party/mozjs-60/extract/js/src/gc/StoreBuffer.h'
     if not os.path.exists(path):
         print(f"Warning: {path} not found. Skipping.")
@@ -37,15 +37,51 @@ def patch_mozjs():
         with open(path, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        # Proper regex to fix unnamed structs (C7626 error on VS 2022)
-        # Finds: typedef struct { ... } Name;
-        # Replaces with: struct Name { ... };
-        new_content = re.sub(r'typedef struct \{(.*?)\} (\w+);', r'struct \2 {\1};', content, flags=re.DOTALL)
+        # We need to find "typedef struct {" and match it with the correct closing "}"
+        # that precedes " Name;"
+        new_content = content
+        while True:
+            match = re.search(r'typedef struct \s*\{', new_content)
+            if not match:
+                break
+            
+            start_idx = match.start()
+            brace_start = match.end() - 1
+            
+            # Find matching closing brace
+            count = 1
+            brace_end = -1
+            for i in range(brace_start + 1, len(new_content)):
+                if new_content[i] == '{': count += 1
+                elif new_content[i] == '}':
+                    count -= 1
+                    if count == 0:
+                        brace_end = i
+                        break
+            
+            if brace_end == -1: break
+            
+            # Find the name after the closing brace
+            suffix_match = re.match(r'\s*(\w+);', new_content[brace_end+1:])
+            if suffix_match:
+                name = suffix_match.group(1)
+                body = new_content[brace_start+1:brace_end]
+                full_match_end = brace_end + 1 + suffix_match.end()
+                
+                # Replace with: struct Name { body };
+                replacement = f"struct {name} {{{body}}};"
+                new_content = new_content[:start_idx] + replacement + new_content[full_match_end:]
+            else:
+                # Not the pattern we are looking for, skip this one
+                # Advanced: move past this struct or mark it
+                new_content = new_content[:start_idx] + "STRUCT_PROCESSED" + new_content[start_idx+6:]
+        
+        new_content = new_content.replace("STRUCT_PROCESSED", "typedef struct ")
         
         if new_content != content:
             with open(path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
-            print(f"Patched: {path}")
+            print(f"Patched with balanced braces: {path}")
     except Exception as e:
         print(f"Failed to patch mozjs: {e}")
 
