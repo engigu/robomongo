@@ -27,7 +27,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        pip install scons  # 安装最新版以支持 VS 2022
+        pip install scons>=4.3.0  # 明确指定支持 VS 2022 的版本
         pip install Cheetah3
         pip install psutil pymongo pyyaml regex setuptools typing
         choco install nsis -y
