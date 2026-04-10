@@ -63,7 +63,15 @@ jobs:
           python fix/apply_patches.py
         shell: pwsh
 
+      - name: Cache Robo Shell
+        id: cache-shell
+        uses: actions/cache@v4
+        with:
+          path: robo-shell/build
+          key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('fix/apply_patches.py') }}
+
       - name: Build Robo Shell
+        if: steps.cache-shell.outputs.cache-hit != 'true'
         run: |
           cd robo-shell
           scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0
