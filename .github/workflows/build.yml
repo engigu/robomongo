@@ -21,7 +21,7 @@ jobs:
       - name: Checkout Robo Shell
         uses: actions/checkout@v4
         with:
-          repository: studio-3t/robo-shell
+          repository: robomongo/robo-shell
           ref: robo3.4.0-1
           path: robo-shell
 
