@@ -1,10 +1,7 @@
-name: Build Robo 3T Windows EXE (v142 Toolset on VS 2022)
+name: Build Robo 3T Windows EXE (Force v141 on VS 2022)
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
     branches:
       - master
 
@@ -30,10 +27,21 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Setup MSVC (v142 Toolset on VS 2022)
+      - name: Install MSVC v141 Toolset Component
+        run: |
+          Write-Host "Starting VS 2022 modification to add v141..."
+          $vsInstaller = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe"
+          $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --quiet --norestart" -Wait -PassThru
+          if ($process.ExitCode -ne 0) {
+            Write-Warning "VS Installer returned non-zero exit code: $($process.ExitCode). Trying to continue anyway..."
+          }
+          Write-Host "VS modification complete."
+        shell: powershell
+
+      - name: Setup MSVC (v141 Toolset)
         uses: ilammy/msvc-dev-cmd@v1
         with:
-          toolset: '14.2'
+          toolset: '14.1'
           arch: x64
 
       - name: Install dependencies (SCons)
@@ -49,16 +57,16 @@ jobs:
           arch: 'win64_msvc2019_64'
           modules: 'qtcharts qtwebengine'
 
-      - name: Apply Compatibility Patches
+      - name: Apply Minimal Env Patch
         run: |
           cd robomongo
           python fix/apply_patches.py
         shell: pwsh
 
-      - name: Compilation - Robo Shell
+      - name: Build Robo Shell
         run: |
           cd robo-shell
-          scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0 CC=cl CXX=cl || (type build\scons\config.log && exit 1)
+          scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0
         shell: cmd
 
       - name: Configure and Build Robo 3T
@@ -66,14 +74,14 @@ jobs:
           cd robomongo
           mkdir build
           cd build
-          cmake -G "Visual Studio 17 2022" -A x64 -T v142 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DPROJ_ROBO_SHELL_PATH="../../robo-shell" ..
+          cmake -G "Visual Studio 17 2022" -A x64 -T v141 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DPROJ_ROBO_SHELL_PATH="../../robo-shell" ..
           cmake --build . --config Release -j 2
         shell: cmd
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: robo3t-v142-build
+          name: robo3t-v141-on-2022
           path: |
             robomongo/build/bin/Release/robo3t.exe
             robomongo/build/bin/Release/*.dll
