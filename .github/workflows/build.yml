@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: studio-3t/robo-shell
-          ref: robo-3.4.0
+          ref: robo3.4.0-1
           path: robo-shell
 
       - name: Setup Python
