@@ -34,8 +34,11 @@ jobs:
 
     - name: Setup OpenSSL
       run: |
-        choco install openssl --version=1.1.1.20190901 -y
-        echo "OPENSSL_ROOT=C:\Program Files\OpenSSL-Win64" >> $GITHUB_ENV
+        choco install openssl -y
+        # 自动探测 OpenSSL 安装目录
+        $opensslPath = (Get-Item "C:\Program Files\OpenSSL*").FullName
+        echo "OPENSSL_ROOT=$opensslPath" | Out-File -FilePath $env:GITHUB_ENV -Append
+      shell: powershell
 
     - name: Cache Robo Shell
       id: cache-shell
