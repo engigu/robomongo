@@ -1,17 +1,16 @@
 import os
 import sys
 
-def patch_scons_files():
-    print("--- INDISCRIMINATE SCONS HIJACKING (v141) ---")
+def patch_directory(target_dir):
+    print(f"--- Patches applying to: {target_dir} ---")
     hijack_code = """
 import os
 import sys
 
-# FORCE MSVC v141 ENVIRONMENT
+# FORCE MSVC v141 ENVIRONMENT (PROPERLY INJECTED)
 os.environ['CC'] = 'cl'
 os.environ['CXX'] = 'cl'
 
-# Monkey-patching SCons if necessary
 try:
     import SCons.Environment
     orig_init = SCons.Environment.Base.__init__
@@ -27,11 +26,14 @@ try:
 except:
     pass
 """
-    # Find ALL SCons related files and prepend the code
     patched_count = 0
-    for root, dirs, files in os.walk('.'):
+    if not os.path.exists(target_dir):
+        print(f"Directory {target_dir} not found!")
+        return
+
+    for root, dirs, files in os.walk(target_dir):
         for file in files:
-            if file in ['SConstruct', 'SConscript']:
+            if file in ['SConstruct', 'SConscript', 'Sconstruct']:
                 path = os.path.join(root, file)
                 try:
                     with open(path, 'r', encoding='utf-8', errors='ignore') as f:
@@ -43,8 +45,10 @@ except:
                     patched_count += 1
                 except:
                     pass
-    print(f"Patched {patched_count} SCons files.")
+    print(f"Patched {patched_count} files in {target_dir}")
 
 if __name__ == "__main__":
-    patch_scons_files()
-    print("--- HIJACK COMPLETE ---")
+    # Patch both the current dir (robomongo) and its sibling (robo-shell)
+    patch_directory('.')
+    patch_directory('../robo-shell')
+    print("--- GLOBAL HIJACK COMPLETE ---")
