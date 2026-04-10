@@ -77,10 +77,9 @@ jobs:
         git clone --recursive --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
         cd robo-shell
         
-        # 核心修复：使用更稳健的 Python 脚本修改 SConstruct，确保不破坏语法
         python -c "import os; lines = open('SConstruct').readlines(); out = open('SConstruct', 'w'); out.write('import os\n'); [out.write(l.replace('env = Environment(', 'env = Environment(ENV = os.environ, ')) if l.strip().startswith('env = Environment(') else out.write(l) for l in lines]; out.close()"
         
-        scons mongo.exe -j2 --link-model=object --disable-minimum-compiler-version-enforcement --msvc-version=14.3
+        scons mongo.exe -j2 --link-model=object --disable-minimum-compiler-version-enforcement
       shell: cmd
 
     - name: Configure and Build Robo 3T
