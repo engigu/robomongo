@@ -537,10 +537,10 @@ namespace Robomongo
                 client->insertDocument(event->obj(), event->ns());
 
             client->done();
-            reply(event->sender(), new InsertDocumentResponse(this));
+            reply(event->sender(), new InsertDocumentResponse(this, event->ns()));
         } 
         catch(const std::exception &ex) {
-            reply(event->sender(), new InsertDocumentResponse(this, EventError(ex.what())));
+            reply(event->sender(), new InsertDocumentResponse(this, EventError(ex.what()), event->ns()));
             sendLog(this, LogEvent::RBM_ERROR, ex.what());
         }
     }
@@ -554,11 +554,11 @@ namespace Robomongo
                                     event->removeCount() == RemoveDocumentCount::ONE);
             client->done();
 
-            reply(event->sender(), new RemoveDocumentResponse(this, event->removeCount(), event->index()));
+            reply(event->sender(), new RemoveDocumentResponse(this, event->ns(), event->removeCount(), event->index()));
         } 
         catch(const std::exception &ex) {
             reply(event->sender(), new RemoveDocumentResponse(this, EventError(ex.what()), 
-                event->removeCount(), event->index()));
+                event->ns(), event->removeCount(), event->index()));
             // Logging handled in main thread
         }
     }

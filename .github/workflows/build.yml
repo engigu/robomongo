@@ -1,0 +1,76 @@
+name: Build Robo 3T Windows EXE
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-2019
+
+    steps:
+    - name: Checkout Robo 3T
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.7'
+
+    - name: Install Dependencies
+      run: |
+        pip install scons==3.1.2
+        pip install Cheetah3
+        choco install nsis -y
+
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v3
+      with:
+        version: '5.12.8'
+        arch: 'win64_msvc2017_64'
+
+    - name: Setup OpenSSL
+      run: |
+        choco install openssl --version=1.1.1.20190901 -y
+        echo "OPENSSL_ROOT=C:\Program Files\OpenSSL-Win64" >> $GITHUB_ENV
+
+    - name: Cache Robo Shell
+      id: cache-shell
+      uses: actions/cache@v3
+      with:
+        path: ../robo-shell
+        key: ${{ runner.os }}-robo-shell-v4.2
+
+    - name: Build Robo Shell (if not cached)
+      if: steps.cache-shell.outputs.cache-hit != 'true'
+      run: |
+        cd ..
+        git clone --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
+        cd robo-shell
+        .\bin\build.bat
+      shell: cmd
+
+    - name: Configure and Build Robo 3T
+      env:
+        ROBOMONGO_CMAKE_PREFIX_PATH: "${{ env.Qt5_Dir }};${{ github.workspace }}\\..\\robo-shell;C:\\Program Files\\OpenSSL-Win64"
+      run: |
+        .\bin\configure.bat
+        .\bin\build.bat
+        .\bin\install.bat
+      shell: cmd
+
+    - name: Package with NSIS
+      env:
+        ROBOMONGO_CMAKE_PREFIX_PATH: "${{ env.Qt5_Dir }};${{ github.workspace }}\\..\\robo-shell;C:\\Program Files\\OpenSSL-Win64"
+      run: |
+        .\bin\pack.bat
+      shell: cmd
+
+    - name: Upload EXE Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Robo3T-Fixed-Windows
+        path: build/Release/package/*.exe

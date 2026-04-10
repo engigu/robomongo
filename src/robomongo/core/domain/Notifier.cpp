@@ -247,8 +247,10 @@ namespace Robomongo
         }
 
         // Success
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-        _shell->query(0, _queryInfo);
+        // Only refresh if the namespace matches the current query
+        if (event->ns() == _queryInfo._info._ns) {
+            _shell->query(0, _queryInfo);
+        }
     }
 
     void Notifier::handle(RemoveDocumentResponse *event)
@@ -258,8 +260,10 @@ namespace Robomongo
                 QMessageBox::warning(NULL, "Database Error", QString::fromStdString(event->error().errorMessage()));
        }
        else {   // Success
-           std::this_thread::sleep_for(std::chrono::milliseconds(100));
-           _shell->query(0, _queryInfo);
+           // Only refresh if the namespace matches the current query
+           if (event->ns() == _queryInfo._info._ns) {
+               _shell->query(0, _queryInfo);
+           }
        }
     }
 

@@ -14,6 +14,8 @@ namespace Robomongo
         std::string databaseName() const { return _databaseName; }
         std::string collectionName() const { return _collectionName; }
         bool isValid() const { return !_ns.empty(); }
+        bool operator==(const MongoNamespace &other) const { return _ns == other._ns; }
+        bool operator!=(const MongoNamespace &other) const { return _ns != other._ns; }
     private:
         std::string _ns;
         std::string _databaseName;

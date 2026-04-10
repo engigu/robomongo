@@ -420,11 +420,16 @@ namespace Robomongo
         R_EVENT
 
     public:
-        InsertDocumentResponse(QObject *sender) :
-            Event(sender) {}
+        InsertDocumentResponse(QObject *sender, const MongoNamespace &ns = MongoNamespace()) :
+            Event(sender), _ns(ns) {}
 
-        InsertDocumentResponse(QObject *sender, EventError const& error) :
-            Event(sender, error) {}
+        InsertDocumentResponse(QObject *sender, EventError const& error, const MongoNamespace &ns = MongoNamespace()) :
+            Event(sender, error), _ns(ns) {}
+
+        MongoNamespace ns() const { return _ns; }
+
+    private:
+        const MongoNamespace _ns;
     };
 
     /**
@@ -463,14 +468,19 @@ namespace Robomongo
     {
         R_EVENT
 
-        RemoveDocumentResponse(QObject *sender, RemoveDocumentCount removeCount, int index) :
-            Event(sender), removeCount(removeCount), index(index) {}
+        RemoveDocumentResponse(QObject *sender, const MongoNamespace &ns, RemoveDocumentCount removeCount, int index) :
+            Event(sender), _ns(ns), removeCount(removeCount), index(index) {}
 
-        RemoveDocumentResponse(QObject *sender, const EventError &error, RemoveDocumentCount removeCount, int index) :
-            Event(sender, error), removeCount(removeCount), index(index) {}
+        RemoveDocumentResponse(QObject *sender, const EventError &error, const MongoNamespace &ns, RemoveDocumentCount removeCount, int index) :
+            Event(sender, error), _ns(ns), removeCount(removeCount), index(index) {}
+
+        MongoNamespace ns() const { return _ns; }
 
         RemoveDocumentCount const removeCount;
         int const index;
+
+    private:
+        const MongoNamespace _ns;
     };
 
     /**

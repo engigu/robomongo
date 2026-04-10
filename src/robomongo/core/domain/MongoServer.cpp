@@ -267,13 +267,13 @@ namespace Robomongo {
                     }
                 }
                 else {  // Insert document from tab results window (Notifier, OutputWindow widget)
-                    _bus->publish(new InsertDocumentResponse(this, event->error()));
+                    _bus->publish(new InsertDocumentResponse(this, event->error(), event->ns()));
                 }
             }
             genericEventErrorHandler(event, "Failed to insert document.", _bus, this);
         }
         else {
-            _bus->publish(new InsertDocumentResponse(this, event->error()));
+            _bus->publish(new InsertDocumentResponse(this, event->error(), event->ns()));
             LOG_MSG("Document inserted.", mongo::logger::LogSeverity::Info());
         }
     }
@@ -301,7 +301,7 @@ namespace Robomongo {
             genericEventErrorHandler(event, "Failed to remove " + subStr, _bus, this);
         }
         else {  // success
-            _bus->publish(new RemoveDocumentResponse(this, event->error(), event->removeCount, event->index));
+            _bus->publish(new RemoveDocumentResponse(this, event->error(), event->ns(), event->removeCount(), event->index));
             LOG_MSG("Removed " + subStr, mongo::logger::LogSeverity::Info());
         }
     }
