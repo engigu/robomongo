@@ -55,10 +55,10 @@ jobs:
           python fix/apply_patches.py
         shell: pwsh
 
-      - name: Build Robo Shell
+      - name: Compilation - Robo Shell
         run: |
           cd robo-shell
-          scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0 CC=cl CXX=cl
+          scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0 CC=cl CXX=cl || (type build\scons\config.log && exit 1)
         shell: cmd
 
       - name: Configure and Build Robo 3T
