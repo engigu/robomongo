@@ -1,4 +1,4 @@
-name: Build Robo 3T Windows EXE (Force v141 on VS 2022)
+name: Build Robo 3T Windows EXE (Dual-Job Optimized)
 
 on:
   push:
@@ -10,9 +10,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  # Job 1: 专门负责编译内核，确保 41 分钟的成果能被物理保存到缓存
+  build-shell:
     runs-on: windows-latest
-
     steps:
       - name: Checkout Robo 3T
         uses: actions/checkout@v4
@@ -33,28 +33,10 @@ jobs:
 
       - name: Install MSVC v141 Toolset Component
         run: |
-          Write-Host "Starting VS 2022 modification to add v141..."
+          Write-Host "Installing v141 Toolset (Compiler + ATL + MFC)..."
           $vsInstaller = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe"
-          # Adding ATL and MFC for maximum compatibility with legacy shell code
           $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --add Microsoft.VisualStudio.Component.VC.v141.ATL --add Microsoft.VisualStudio.Component.VC.v141.MFC --quiet --norestart" -PassThru
-          
-          # Heartbeat monitor
-          $seconds = 0
-          while (!$process.HasExited) {
-            Start-Sleep -Seconds 30
-            $seconds += 30
-            Write-Host "Still installing MSVC v141... ($seconds seconds elapsed)"
-          }
-
-          if ($process.ExitCode -ne 0 -and $process.ExitCode -ne 3010) {
-            Write-Host "--- INSTALLATION LOG (Auto-discovered) ---"
-            $latestLog = Get-ChildItem -Path "$env:TEMP\vs_install_*.log" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-            if ($latestLog) { 
-               Write-Host "Found log: $($latestLog.FullName)"
-               Get-Content $latestLog.FullName -Tail 50 
-            }
-            throw "VS Installer failed with exit code: $($process.ExitCode)"
-          }
+          while (!$process.HasExited) { Start-Sleep -Seconds 30 }
           Write-Host "VS modification complete."
         shell: powershell
 
@@ -64,18 +46,8 @@ jobs:
           toolset: '14.1'
           arch: x64
 
-      - name: Install dependencies (SCons & Build Tools)
-        run: |
-          python -m pip install scons==3.1.2 Cheetah3 pywin32 regex pyyaml
-
-      - name: Install Qt
-        uses: jurplel/install-qt-action/action@v3
-        with:
-          version: '5.15.2'
-          host: 'windows'
-          target: 'desktop'
-          arch: 'win64_msvc2019_64'
-          modules: 'qtcharts qtwebengine'
+      - name: Install dependencies (SCons)
+        run: python -m pip install scons==3.1.2 Cheetah3 pywin32 regex pyyaml
 
       - name: Apply Minimal Env Patch
         run: |
@@ -90,12 +62,64 @@ jobs:
           path: robo-shell/build
           key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('fix/apply_patches.py') }}
 
-      - name: Build Robo Shell
+      - name: Build Robo Shell (Long Run)
         if: steps.cache-shell.outputs.cache-hit != 'true'
         run: |
           cd robo-shell
           scons --ssl --opt=on mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0
         shell: cmd
+
+  # Job 2: 依赖 Job 1，拉取缓存并冲刺主程序构建
+  build-app:
+    needs: build-shell
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Robo 3T
+        uses: actions/checkout@v4
+        with:
+          path: robomongo
+
+      - name: Checkout Robo Shell
+        uses: actions/checkout@v4
+        with:
+          repository: paralect/robomongo-shell
+          ref: roboshell-v4.2
+          path: robo-shell
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install MSVC v141 Toolset Component
+        run: |
+          # 这一步在 GHA 中由于虚拟机隔离必须重做，但只需几分钟
+          $vsInstaller = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe"
+          $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --add Microsoft.VisualStudio.Component.VC.v141.ATL --add Microsoft.VisualStudio.Component.VC.v141.MFC --quiet --norestart" -PassThru
+          while (!$process.HasExited) { Start-Sleep -Seconds 30 }
+        shell: powershell
+
+      - name: Setup MSVC (v141 Toolset)
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          toolset: '14.1'
+          arch: x64
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action/action@v3
+        with:
+          version: '5.15.2'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2019_64'
+          modules: 'qtcharts qtwebengine'
+
+      - name: Cache Robo Shell (Restoring from Job 1)
+        uses: actions/cache@v4
+        with:
+          path: robo-shell/build
+          key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('fix/apply_patches.py') }}
+          fail-on-cache-miss: true
 
       - name: Configure and Build Robo 3T
         env:
@@ -111,7 +135,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: robo3t-v141-on-2022
+          name: robo3t-final-binary
           path: |
             robomongo/build/bin/Release/robo3t.exe
             robomongo/build/bin/Release/*.dll
