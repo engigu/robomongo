@@ -12,6 +12,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: Setup MSVC Developer Command Prompt
+      uses: ilammy/msvc-dev-cmd@v1
+      with:
+        arch: x64
+
     - name: Checkout Robo 3T
       uses: actions/checkout@v4
 
