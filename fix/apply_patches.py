@@ -1,52 +1,50 @@
 import os
 import sys
 
-def force_hijack_scons():
-    print("--- Force Hijacking SCons Environment (The Nuclear Way) ---")
-    sconstruct_path = 'SConstruct'
-    if not os.path.exists(sconstruct_path):
-        # Find it if it's in a subdirectory
-        for root, dirs, files in os.walk('.'):
-            if 'SConstruct' in files:
-                sconstruct_path = os.path.join(root, 'SConstruct')
-                break
-    
-    if os.path.exists(sconstruct_path):
-        with open(sconstruct_path, 'r', encoding='utf-8', errors='ignore') as f:
-            content = f.read()
-        
-        # Prepend our massive environment sync block
-        hijack_code = """
+def patch_scons_files():
+    print("--- INDISCRIMINATE SCONS HIJACKING (v141) ---")
+    hijack_code = """
 import os
-import SCons.Util
+import sys
 
-# Aggressive Environment Sync
-def sync_env(env):
-    for key in ['PATH', 'LIB', 'INCLUDE', 'LIBPATH']:
-        if key in os.environ:
-            env['ENV'][key] = os.environ[key]
-    env['CC'] = 'cl'
-    env['CXX'] = 'cl'
-    env['MSVC_VERSION'] = '14.1'
-    env['MSVC_USE_SCRIPT'] = False
+# FORCE MSVC v141 ENVIRONMENT
+os.environ['CC'] = 'cl'
+os.environ['CXX'] = 'cl'
 
-# We will inject a call to this function later or monkey-patch the Environment
+# Monkey-patching SCons if necessary
+try:
+    import SCons.Environment
+    orig_init = SCons.Environment.Base.__init__
+    def new_init(self, *args, **kwargs):
+        kwargs['ENV'] = os.environ
+        kwargs['MSVC_VERSION'] = '14.1'
+        kwargs['MSVC_USE_SCRIPT'] = False
+        kwargs['TARGET_ARCH'] = 'x86_64'
+        orig_init(self, *args, **kwargs)
+        self['CC'] = 'cl'
+        self['CXX'] = 'cl'
+    SCons.Environment.Base.__init__ = new_init
+except:
+    pass
 """
-        # A more direct way: replace the creation logic
-        new_content = content.replace('env = Environment(', 'env_orig = Environment(')
-        # Add a wrapper
-        new_content = hijack_code + new_content
-        new_content += """
-if 'env' in locals():
-    sync_env(env)
-elif 'env_orig' in locals():
-    env = env_orig
-    sync_env(env)
-"""
-        with open(sconstruct_path, 'w', encoding='utf-8') as f:
-            f.write(new_content)
-        print(f"Successfully hijacked {sconstruct_path}")
+    # Find ALL SCons related files and prepend the code
+    patched_count = 0
+    for root, dirs, files in os.walk('.'):
+        for file in files:
+            if file in ['SConstruct', 'SConscript']:
+                path = os.path.join(root, file)
+                try:
+                    with open(path, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
+                    if 'FORCE MSVC v141 ENVIRONMENT' in content:
+                        continue
+                    with open(path, 'w', encoding='utf-8') as f:
+                        f.write(hijack_code + "\n" + content)
+                    patched_count += 1
+                except:
+                    pass
+    print(f"Patched {patched_count} SCons files.")
 
 if __name__ == "__main__":
-    force_hijack_scons()
+    patch_scons_files()
     print("--- HIJACK COMPLETE ---")

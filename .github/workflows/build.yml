@@ -32,8 +32,8 @@ jobs:
           Write-Host "Starting VS 2022 modification to add v141..."
           $vsInstaller = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe"
           $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --quiet --norestart" -Wait -PassThru
-          if ($process.ExitCode -ne 0) {
-            Write-Warning "VS Installer returned non-zero exit code: $($process.ExitCode). Trying to continue anyway..."
+          if ($process.ExitCode -ne 0 -and $process.ExitCode -ne 3010) {
+            throw "VS Installer failed with exit code: $($process.ExitCode)"
           }
           Write-Host "VS modification complete."
         shell: powershell
