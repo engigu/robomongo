@@ -2,105 +2,82 @@ name: Build Robo 3T Windows EXE
 
 on:
   push:
-    branches: [ master, main ]
+    branches:
+      - master
   pull_request:
-    branches: [ master, main ]
-  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-    - name: Setup MSVC Developer Command Prompt
-      uses: ilammy/msvc-dev-cmd@v1
-      with:
-        arch: x64
+      - name: Checkout Robo 3T
+        uses: actions/checkout@v4
+        with:
+          path: robomongo
 
-    - name: Checkout Robo 3T
-      uses: actions/checkout@v4
+      - name: Checkout Robo Shell
+        uses: actions/checkout@v4
+        with:
+          repository: studio-3t/robo-shell
+          ref: robo-3.4.0
+          path: robo-shell
 
-    - name: Setup Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.7'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    - name: Install Dependencies
-      run: |
-        pip install --force-reinstall scons==4.3.0
-        pip install Cheetah3
-        pip install psutil pymongo pyyaml regex setuptools typing
-        choco install nsis -y
+      - name: Setup MSVC (VS 2022)
+        uses: ilammy/msvc-dev-cmd@v1
 
-    - name: Install Qt
-      uses: jurplel/install-qt-action@v3
-      with:
-        version: '5.12.8'
-        arch: 'win64_msvc2017_64'
+      - name: Install dependencies (SCons)
+        run: |
+          python -m pip install scons==3.1.2
 
-    - name: Setup OpenSSL
-      run: |
-        # 优先查找系统中可能存在的 OpenSSL 路径
-        $paths = @(
-          "C:\Program Files\OpenSSL-Win64",
-          "C:\Program Files\OpenSSL",
-          "C:\Program Files (x86)\OpenSSL-Win32"
-        )
-        $found = $false
-        foreach ($p in $paths) {
-          if (Test-Path "$p\bin\openssl.exe") {
-            echo "OPENSSL_ROOT=$p" | Out-File -FilePath $env:GITHUB_ENV -Append
-            $found = $true
-            Write-Host "Found pre-installed OpenSSL at $p"
-            break
-          }
-        }
-        if (-not $found) {
-          Write-Host "OpenSSL not found, installing via choco..."
-          choco install openssl -y --no-progress
-          $opensslPath = (Get-Item "C:\Program Files\OpenSSL*").FullName
-          echo "OPENSSL_ROOT=$opensslPath" | Out-File -FilePath $env:GITHUB_ENV -Append
-        }
-      shell: powershell
+      - name: Install Qt
+        uses: jurplel/install-qt-action/action@v3
+        with:
+          version: '5.15.2'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2019_64'
+          modules: 'qtcharts qtwebengine'
 
-    - name: Cache Robo Shell
-      id: cache-shell
-      uses: actions/cache@v4
-      with:
-        path: ../robo-shell
-        key: ${{ runner.os }}-robo-shell-v4.2
+      - name: Apply Universal Patches
+        run: |
+          cd robomongo
+          python fix/apply_patches.py
+        shell: pwsh
 
-    - name: Build Robo Shell (if not cached)
-      if: steps.cache-shell.outputs.cache-hit != 'true'
-      run: |
-        cd ..
-        git clone --recursive --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
-        cd robo-shell
-        
-        # 执行自动化修正方案
-        python ${{ github.workspace }}/fix/apply_patches.py
-        
-        scons mongo.exe -j2 --link-model=object --disable-minimum-compiler-version-enforcement
-      shell: cmd
+      - name: Build Robo Shell (if not cached)
+        id: cache-shell
+        uses: actions/cache@v4
+        with:
+          path: robo-shell/build/opt
+          key: ${{ runner.os }}-robo-shell-${{ hashFiles('robomongo/fix/apply_patches.py') }}
 
-    - name: Configure and Build Robo 3T
-      env:
-        ROBOMONGO_CMAKE_PREFIX_PATH: "${{ env.Qt5_Dir }};${{ github.workspace }}\\..\\robo-shell;C:\\Program Files\\OpenSSL-Win64"
-      run: |
-        .\bin\configure.bat
-        .\bin\build.bat
-        .\bin\install.bat
-      shell: cmd
+      - name: Compilation - Robo Shell
+        run: |
+          cd robo-shell
+          scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2
+        shell: cmd
 
-    - name: Package with NSIS
-      env:
-        ROBOMONGO_CMAKE_PREFIX_PATH: "${{ env.Qt5_Dir }};${{ github.workspace }}\\..\\robo-shell;C:\\Program Files\\OpenSSL-Win64"
-      run: |
-        .\bin\pack.bat
-      shell: cmd
+      - name: Configure and Build Robo 3T
+        run: |
+          cd robomongo
+          mkdir build
+          cd build
+          cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DPROJ_ROBO_SHELL_PATH="../../robo-shell" ..
+          cmake --build . --config Release -j 2
+        shell: cmd
 
-    - name: Upload EXE Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: Robo3T-Fixed-Windows
-        path: build/Release/package/*.exe
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: robo3t-windows-exe
+          path: |
+            robomongo/build/bin/Release/robo3t.exe
+            robomongo/build/bin/Release/*.dll
