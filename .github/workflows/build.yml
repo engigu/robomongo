@@ -77,14 +77,8 @@ jobs:
         git clone --recursive --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
         cd robo-shell
         
-        # 核心修复 1：地毯式修补所有 SCons 配置文件，强制禁用 /WX 并开启 /permissive
-        python -c "import os; [[open(os.path.join(r, f), 'w', encoding='utf-8').write(open(os.path.join(r, f), 'r', encoding='utf-8', errors='ignore').read().replace('env = Environment(', 'env = Environment(ENV = os.environ, ').replace('/WX', '/WX-').replace('/permissive-', '/permissive')) for f in fs if f in ['SConstruct', 'SConscript']] for r, ds, fs in os.walk('.')]"
-        
-        # 核心修复 2：针对 VS 2022 修复 mozjs 的源码兼容性问题 (C7626) - 使用正则精准替换所有匿名结构体
-        python -c "import os, re; path='src/third_party/mozjs-60/extract/js/src/gc/StoreBuffer.h'; content=open(path).read(); content=re.sub(r'typedef struct \{(.*?)\} (\w+);', r'struct \2 {\1};', content, flags=re.DOTALL); open(path, 'w').write(content)"
-        
-        # 核心修复 3：针对 VS 2022 修复 S2 库的 stdext 兼容性问题
-        python -c "import os; path='src/third_party/s2/s2cellid.cc'; content=open(path).read(); content=content.replace('size_t stdext::hash_value', 'size_t hash_value'); open(path, 'w').write(content)"
+        # 执行自动化修正方案
+        python ${{ github.workspace }}/fix/apply_patches.py
         
         scons mongo.exe -j2 --link-model=object --disable-minimum-compiler-version-enforcement
       shell: cmd
