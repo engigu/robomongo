@@ -1,4 +1,4 @@
-name: Build Robo 3T Windows EXE
+name: Build Robo 3T Windows EXE (Legacy Toolset)
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
       - name: Checkout Robo 3T
@@ -28,10 +28,13 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.7'
 
-      - name: Setup MSVC (VS 2022)
+      - name: Setup MSVC (VS 2017 Toolset)
         uses: ilammy/msvc-dev-cmd@v1
+        with:
+          toolset: '14.1'
+          arch: x64
 
       - name: Install dependencies (SCons)
         run: |
@@ -40,29 +43,22 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action/action@v3
         with:
-          version: '5.15.2'
+          version: '5.12.8'
           host: 'windows'
           target: 'desktop'
-          arch: 'win64_msvc2019_64'
+          arch: 'win64_msvc2017_64'
           modules: 'qtcharts qtwebengine'
 
-      - name: Apply Universal Patches
+      - name: Apply Compatibility Patches
         run: |
           cd robomongo
           python fix/apply_patches.py
         shell: pwsh
 
-      - name: Build Robo Shell (if not cached)
-        id: cache-shell
-        uses: actions/cache@v4
-        with:
-          path: robo-shell/build/opt
-          key: ${{ runner.os }}-robo-shell-${{ hashFiles('robomongo/fix/apply_patches.py') }}
-
-      - name: Compilation - Robo Shell
+      - name: Build Robo Shell
         run: |
           cd robo-shell
-          scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0 CC=cl CXX=cl
+          scons --ssl --opt=on --allow-warnings-as-errors=off mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0
         shell: cmd
 
       - name: Configure and Build Robo 3T
@@ -70,14 +66,14 @@ jobs:
           cd robomongo
           mkdir build
           cd build
-          cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DPROJ_ROBO_SHELL_PATH="../../robo-shell" ..
+          cmake -G "Visual Studio 16 2019" -A x64 -T v141 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DPROJ_ROBO_SHELL_PATH="../../robo-shell" ..
           cmake --build . --config Release -j 2
         shell: cmd
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: robo3t-windows-exe
+          name: robo3t-v141-build
           path: |
             robomongo/build/bin/Release/robo3t.exe
             robomongo/build/bin/Release/*.dll
