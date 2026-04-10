@@ -19,8 +19,9 @@ def patch_scons():
                     new_content = new_content.replace('/WX', '/WX-')
                     new_content = new_content.replace('/permissive-', '/permissive')
                     
-                    # Fix flag injection to be part of a list if possible, or use a safer replacement
-                    # We inject a forced fix at the end of the root SConstruct later
+                    # Remove /Zc:inline as it's known to conflict with if constexpr in VS 2022 ICE
+                    new_content = new_content.replace("'/Zc:inline'", "").replace('"/Zc:inline"', "")
+                    
                     if new_content != content:
                         with open(path, 'w', encoding='utf-8') as f:
                             f.write(new_content)
@@ -28,14 +29,14 @@ def patch_scons():
                 except Exception as e:
                     print(f"Failed to patch {path}: {e}")
     
-    # Force injection of VS 2022 compatibility flags at the end of SConstruct
+    # 4. Force injection of VS 2022 compatibility flags at the end of SConstruct
     if os.path.exists('SConstruct'):
         try:
             with open('SConstruct', 'a') as f:
-                f.write("\n# Forced VS 2022 compatibility flags\n")
-                # This ensures the flags are added as separate arguments
-                f.write("if 'env' in locals(): env.Append(CCFLAGS=['/Zc:lambda-', '/Zc:inline-'])\n")
-            print("Injected VS 2022 flags into root SConstruct")
+                f.write("\n# Forced VS 2022 compatibility flags - Fix ICE in future_impl.h\n")
+                # Using /d2clret- to help with deduction crashes
+                f.write("if 'env' in locals(): env.Append(CCFLAGS=['/Zc:lambda-', '/d2clret-', '/bigobj'])\n")
+            print("Injected VS 2022 ICE-fix flags into root SConstruct")
         except Exception as e:
             print(f"Failed to inject flags: {e}")
 
@@ -45,16 +46,13 @@ def patch_mozjs():
     if not os.path.exists(path):
         print(f"Warning: {path} not found. Skipping.")
         return
-    
     try:
         with open(path, 'r', encoding='utf-8') as f:
             content = f.read()
-        
         new_content = content
         while True:
             match = re.search(r'typedef struct \s*\{', new_content)
             if not match: break
-            
             start_idx = match.start()
             brace_start = match.end() - 1
             count = 1
@@ -67,7 +65,6 @@ def patch_mozjs():
                         brace_end = i
                         break
             if brace_end == -1: break
-            
             suffix_match = re.match(r'\s*(\w+);', new_content[brace_end+1:])
             if suffix_match:
                 name = suffix_match.group(1)
@@ -77,7 +74,6 @@ def patch_mozjs():
                 new_content = new_content[:start_idx] + replacement + new_content[full_match_end:]
             else:
                 new_content = new_content[:start_idx] + "STRUCT_PROCESSED" + new_content[start_idx+6:]
-        
         new_content = new_content.replace("STRUCT_PROCESSED", "typedef struct ")
         if new_content != content:
             with open(path, 'w', encoding='utf-8') as f:
@@ -85,26 +81,6 @@ def patch_mozjs():
             print(f"Patched with balanced braces: {path}")
     except Exception as e:
         print(f"Failed to patch mozjs: {e}")
-
-def patch_future():
-    print("--- Patching MongoDB future_impl.h to avoid ICE ---")
-    path = 'src/mongo/util/future_impl.h'
-    if not os.path.exists(path):
-        print(f"Warning: {path} not found. Skipping.")
-        return
-    try:
-        with open(path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # Lower 'constexpr if' to normal 'if' for problematic line to avoid VS 2022 ICE
-        new_content = content.replace('IF_CONSTEXPR(!isFutureLike<Result>)', 'if (!isFutureLike<Result>)')
-        
-        if new_content != content:
-            with open(path, 'w', encoding='utf-8') as f:
-                f.write(new_content)
-            print(f"Patched future_impl.h to bypass ICE: {path}")
-    except Exception as e:
-        print(f"Failed to patch future_impl.h: {e}")
 
 def patch_s2():
     print("--- Patching S2 Geometry Library ---")
@@ -127,6 +103,5 @@ def patch_s2():
 if __name__ == "__main__":
     patch_scons()
     patch_mozjs()
-    patch_future()
     patch_s2()
     print("--- All patches applied successfully ---")
