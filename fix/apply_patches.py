@@ -60,13 +60,16 @@ def patch_s2():
         with open(path, 'r', encoding='utf-8') as f:
             content = f.read()
             
-        # Fix stdext::hash_value compatibility issue
-        new_content = content.replace('size_t stdext::hash_value', 'size_t hash_value')
-        
-        if new_content != content:
+        # Fix stdext::hash_value compatibility issue for VS 2022
+        # We need to declare the primary template before specializing it
+        if 'namespace stdext' not in content:
+            patch = "\n#if defined(_MSC_VER) && _MSC_VER >= 1930\nnamespace stdext { template<typename T> size_t hash_value(const T&); }\n#endif\n"
+            content = patch + content
             with open(path, 'w', encoding='utf-8') as f:
-                f.write(new_content)
-            print(f"Patched: {path}")
+                f.write(content)
+            print(f"Patched (injected declaration): {path}")
+        else:
+            print(f"Skipping S2 patch: already patched or declaration exists.")
     except Exception as e:
         print(f"Failed to patch S2: {e}")
 
