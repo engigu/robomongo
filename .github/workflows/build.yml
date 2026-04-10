@@ -79,6 +79,9 @@ jobs:
         
         python -c "import os; lines = open('SConstruct').readlines(); out = open('SConstruct', 'w'); out.write('import os\n'); [out.write(l.replace('env = Environment(', 'env = Environment(ENV = os.environ, ')) if l.strip().startswith('env = Environment(') else out.write(l) for l in lines]; out.close()"
         
+        # 核心修复 2：针对 VS 2022 修复 mozjs 的源码兼容性问题 (C7626)
+        python -c "import os; path='src/third_party/mozjs-60/extract/js/src/gc/StoreBuffer.h'; content=open(path).read(); content=content.replace('typedef struct {', 'struct Buffer {').replace('} Buffer;', '};'); open(path, 'w').write(content)"
+        
         scons mongo.exe -j2 --link-model=object --disable-minimum-compiler-version-enforcement
       shell: cmd
 
