@@ -24,7 +24,7 @@ jobs:
       run: |
         pip install scons==3.1.2
         pip install Cheetah3
-        pip install psutil pymongo pyyaml
+        pip install psutil pymongo pyyaml regex setuptools typing
         choco install nsis -y
 
     - name: Install Qt
@@ -69,7 +69,7 @@ jobs:
       if: steps.cache-shell.outputs.cache-hit != 'true'
       run: |
         cd ..
-        git clone --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
+        git clone --recursive --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
         cd robo-shell
         .\bin\build.bat
       shell: cmd
