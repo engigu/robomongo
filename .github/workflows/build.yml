@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
     - name: Setup MSVC Developer Command Prompt
@@ -27,7 +27,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        pip install scons==3.1.2
+        pip install scons  # 安装最新版以支持 VS 2022
         pip install Cheetah3
         pip install psutil pymongo pyyaml regex setuptools typing
         choco install nsis -y
@@ -76,7 +76,8 @@ jobs:
         cd ..
         git clone --recursive --branch roboshell-v4.2 https://github.com/paralect/robomongo-shell.git robo-shell
         cd robo-shell
-        .\bin\build.bat
+        # 不再使用 bin\build.bat，直接调用 scons 并强制它继承环境变量
+        scons mongo.exe -j2 --link-model=object --disable-minimum-compiler-version-enforcement --msvc-version=14.3
       shell: cmd
 
     - name: Configure and Build Robo 3T
