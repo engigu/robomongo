@@ -79,8 +79,8 @@ jobs:
         
         python -c "import os; lines = open('SConstruct').readlines(); out = open('SConstruct', 'w'); out.write('import os\n'); [out.write(l.replace('env = Environment(', 'env = Environment(ENV = os.environ, ')) if l.strip().startswith('env = Environment(') else out.write(l) for l in lines]; out.close()"
         
-        # 核心修复 2：针对 VS 2022 修复 mozjs 的源码兼容性问题 (C7626)
-        python -c "import os; path='src/third_party/mozjs-60/extract/js/src/gc/StoreBuffer.h'; content=open(path).read(); content=content.replace('typedef struct {', 'struct Buffer {').replace('} Buffer;', '};'); open(path, 'w').write(content)"
+        # 核心修复 2：针对 VS 2022 修复 mozjs 的源码兼容性问题 (C7626) - 使用正则精准替换所有匿名结构体
+        python -c "import os, re; path='src/third_party/mozjs-60/extract/js/src/gc/StoreBuffer.h'; content=open(path).read(); content=re.sub(r'typedef struct \{(.*?)\} (\w+);', r'struct \2 {\1};', content, flags=re.dotall); open(path, 'w').write(content)"
         
         # 核心修复 3：针对 VS 2022 修复 S2 库的 stdext 兼容性问题
         python -c "import os; path='src/third_party/s2/s2cellid.cc'; content=open(path).read(); content=content.replace('size_t stdext::hash_value', 'size_t hash_value'); open(path, 'w').write(content)"
