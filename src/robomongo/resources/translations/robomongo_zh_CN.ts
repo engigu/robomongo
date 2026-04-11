@@ -13,11 +13,11 @@
     </message>
     <message>
         <source>&amp;Manage Connections...</source>
-        <translation>连接管理器(&amp;M)...</translation>
+        <translation>连接管理�?&amp;M)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退出(&amp;E)</translation>
+        <translation>退�?&amp;E)</translation>
     </message>
     <message>
         <source>File</source>
@@ -53,11 +53,11 @@
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当前 Shell 中的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>将当�?Shell 中的脚本保存到文�?&lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存为(&amp;A)...</translation>
+        <translation>另存�?&amp;A)...</translation>
     </message>
     <message>
         <source>Connect to local or remote MongoDB instance &lt;b&gt;(%1 + N)&lt;/b&gt;</source>
@@ -69,7 +69,7 @@
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换结果视图的方向 &lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>切换结果视图的方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
@@ -97,7 +97,7 @@
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模式(&amp;C)</translation>
+        <translation>自定义模�?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
@@ -105,11 +105,11 @@
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前页签的查询。如果选择了部分文本，则只执行所选内容 &lt;b&gt;(F5 &lt;/b&gt; 或 &lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>执行当前页签的查询。如果选择了部分文本，则只执行所选内�?&lt;b&gt;(F5 &lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止执行当前运行的脚本。&lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>停止执行当前运行的脚本�?lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -121,7 +121,7 @@
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解码 (原样显示)</translation>
+        <translation>不解�?(原样显示)</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
@@ -149,7 +149,7 @@
     </message>
     <message>
         <source>None</source>
-        <translation>无</translation>
+        <translation>�?/translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文档</translation>
+        <translation>自动展开第一个文�?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
@@ -169,15 +169,15 @@
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷键</translation>
+        <translation>禁用连接快捷�?/translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>关闭按钮应最小化到系统托盘</translation>
+        <translation>关闭按钮应最小化到系统托�?/translation>
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托盘</translation>
+        <translation>最小化到托�?/translation>
     </message>
     <message>
         <source>Preferences</source>
@@ -193,19 +193,19 @@
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择下一个页签</translation>
+        <translation>选择下一个页�?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择上一个页签</translation>
+        <translation>选择上一个页�?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
-        <translation>在当前页签重新执行查询</translation>
+        <translation>在当前页签重新执行查�?/translation>
     </message>
     <message>
         <source>Duplicate Query in New Tab</source>
-        <translation>在新页签中复制查询</translation>
+        <translation>在新页签中复制查�?/translation>
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
@@ -213,7 +213,7 @@
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新工具栏</translation>
+        <translation>更新工具�?/translation>
     </message>
     <message>
         <source>Theme</source>
@@ -225,15 +225,15 @@
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>退�?/translation>
     </message>
     <message>
         <source>Connect to MongoDB</source>
-        <translation>连接到 MongoDB</translation>
+        <translation>连接�?MongoDB</translation>
     </message>
     <message>
         <source>Cannot connect to MongoDB (%1)</source>
-        <translation>无法连接到 MongoDB (%1)</translation>
+        <translation>无法连接�?MongoDB (%1)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -245,7 +245,7 @@
     </message>
     <message>
         <source>Cannot connect to the MongoDB at %1.</source>
-        <translation>无法连接到 %1 处的 MongoDB。</translation>
+        <translation>无法连接�?%1 处的 MongoDB�?/translation>
     </message>
     <message>
         <source>Operation failed</source>
@@ -257,11 +257,11 @@
     </message>
     <message>
         <source>&amp;Explorer</source>
-        <translation>资源管理器(&amp;E)</translation>
+        <translation>资源管理�?&amp;E)</translation>
     </message>
     <message>
         <source>Press to show/hide Database Explorer panel.</source>
-        <translation>点击显示/隐藏数据库资源管理器面板。</translation>
+        <translation>点击显示/隐藏数据库资源管理器面板�?/translation>
     </message>
     <message>
         <source>&amp;Logs</source>
@@ -269,14 +269,14 @@
     </message>
     <message>
         <source>Language Changed</source>
-        <translation>语言已更改</translation>
+        <translation>语言已更�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source>MongoDB Connections</source>
-        <translation>MongoDB 连接管理器</translation>
+        <translation>MongoDB 连接管理�?/translation>
     </message>
     <message>
         <source>&amp;Add...</source>
@@ -304,11 +304,11 @@
     </message>
     <message>
         <source>Attributes</source>
-        <translation>特性</translation>
+        <translation>特�?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>认证数据库 / 用户</translation>
+        <translation>认证数据�?/ 用户</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
@@ -316,7 +316,7 @@
     </message>
     <message>
         <source>Are you sure you want to delete "%1" connection?</source>
-        <translation>确定要删除连接 "%1" 吗？</translation>
+        <translation>确定要删除连�?"%1" 吗？</translation>
     </message>
     <message>
         <source>Connections</source>
@@ -358,11 +358,11 @@
     <name>Robomongo::BsonTreeModel</name>
     <message>
         <source>Key</source>
-        <translation>键 (Key)</translation>
+        <translation>�?(Key)</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值 (Value)</translation>
+        <translation>�?(Value)</translation>
     </message>
     <message>
         <source>Type</source>
@@ -373,19 +373,19 @@
     <name>QObject</name>
     <message>
         <source>element</source>
-        <translation>个元素</translation>
+        <translation>个元�?/translation>
     </message>
     <message>
         <source>elements</source>
-        <translation>个元素</translation>
+        <translation>个元�?/translation>
     </message>
     <message>
         <source>field</source>
-        <translation>个字段</translation>
+        <translation>个字�?/translation>
     </message>
     <message>
         <source>fields</source>
-        <translation>个字段</translation>
+        <translation>个字�?/translation>
     </message>
 </context>
 <context>
@@ -400,11 +400,11 @@
     </message>
     <message>
         <source>Create Database</source>
-        <translation>创建数据库</translation>
+        <translation>创建数据�?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状态</translation>
+        <translation>服务器状�?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -439,7 +439,7 @@
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>数据库统计</translation>
+        <translation>数据库统�?/translation>
     </message>
     <message>
         <source>Current Operations</source>
@@ -451,11 +451,11 @@
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据库...</translation>
+        <translation>删除数据�?..</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据库...</translation>
+        <translation>修复数据�?..</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -483,7 +483,7 @@
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据库</translation>
+        <translation>删除数据�?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
@@ -491,7 +491,7 @@
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据库</translation>
+        <translation>修复数据�?/translation>
     </message>
 </context>
 <context>
@@ -510,7 +510,7 @@
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>删除所有文档...</translation>
+        <translation>删除所有文�?..</translation>
     </message>
     <message>
         <source>Statistics</source>
@@ -522,11 +522,11 @@
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大小</translation>
+        <translation>索引总大�?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大小</translation>
+        <translation>总大�?/translation>
     </message>
     <message>
         <source>Shard Version</source>
@@ -542,7 +542,7 @@
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集合...</translation>
+        <translation>重命名集�?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
@@ -562,11 +562,11 @@
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>删除所有文档</translation>
+        <translation>删除所有文�?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>确定要删除集合 &lt;b&gt;%1&lt;/b&gt; 下的所有文档吗？</translation>
+        <translation>确定要删除集�?&lt;b&gt;%1&lt;/b&gt; 下的所有文档吗�?/translation>
     </message>
     <message>
         <source>Duplicate Collection</source>
@@ -582,11 +582,11 @@
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集合</translation>
+        <translation>重命名集�?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命名(&amp;R)</translation>
+        <translation>重命�?&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -624,7 +624,7 @@
     </message>
     <message>
         <source>Copy Value</source>
-        <translation>复制值</translation>
+        <translation>复制�?/translation>
     </message>
     <message>
         <source>Copy Name</source>
@@ -636,7 +636,7 @@
     </message>
     <message>
         <source>Copy Timestamp from ObjectId</source>
-        <translation>从 ObjectId 复制时间戳</translation>
+        <translation>�?ObjectId 复制时间�?/translation>
     </message>
     <message>
         <source>Copy JSON</source>
@@ -649,8 +649,7 @@
     <message>
         <source>Selected document doesn&apos;t have _id field. 
 Maybe this is a system document that should be managed in a special way?</source>
-        <translation>所选文档不包含 _id 字段。
-这可能是一个系统文档，需要通过特殊方式进行管理。</translation>
+        <translation>所选文档不包含 _id 字段�?这可能是一个系统文档，需要通过特殊方式进行管理�?/translation>
     </message>
     <message>
         <source>Delete</source>
@@ -662,11 +661,11 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Database Error</source>
-        <translation>数据库错误</translation>
+        <translation>数据库错�?/translation>
     </message>
     <message>
         <source>Do you want to delete %1 selected documents?</source>
-        <translation>您确定要删除所选的 %1 个文档吗？</translation>
+        <translation>您确定要删除所选的 %1 个文档吗�?/translation>
     </message>
     <message>
         <source>Error extracting ISODate()</source>
@@ -692,7 +691,7 @@ Maybe this is a system document that should be managed in a special way?</source
     <name>Robomongo::CreateDatabaseDialog</name>
     <message>
         <source>Create Database</source>
-        <translation>创建数据库</translation>
+        <translation>创建数据�?/translation>
     </message>
     <message>
         <source>Database Name:</source>
@@ -712,12 +711,11 @@ Maybe this is a system document that should be managed in a special way?</source
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>文档已被修改。
-是否保存更改？</translation>
+        <translation>文档已被修改�?是否保存更改�?/translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON：&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于 (%2, %3)。</translation>
+        <translation>无法解析 JSON�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位�?(%2, %3)�?/translation>
     </message>
     <message>
         <source>Parsing error</source>
@@ -729,7 +727,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效！</translation>
+        <translation>JSON 格式有效�?/translation>
     </message>
 </context>
 <context>
@@ -737,8 +735,7 @@ Do you want to save your changes?</source>
     <message>
         <source>Enter new value for Robo 3T shell timeout in seconds:
 </source>
-        <translation>请输入新的 Robo 3T Shell 超时时间 (单位：秒)：
-</translation>
+        <translation>请输入新�?Robo 3T Shell 超时时间 (单位：秒)�?</translation>
     </message>
     <message>
         <source>Current Value: </source>
@@ -757,7 +754,7 @@ Do you want to save your changes?</source>
     <name>Robomongo::OutputItemHeaderWidget</name>
     <message>
         <source>View results in text mode</source>
-        <translation>以文本模式查看结果</translation>
+        <translation>以文本模式查看结�?/translation>
     </message>
     <message>
         <source>View results in tree mode</source>
@@ -765,7 +762,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>View results in table mode</source>
-        <translation>以表格模式查看结果</translation>
+        <translation>以表格模式查看结�?/translation>
     </message>
     <message>
         <source>View results in custom UI</source>
@@ -773,11 +770,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Maximize this output result (double-click on result's header)</source>
-        <translation>最大化此输出结果 (双击页眉也可实现)</translation>
+        <translation>最大化此输出结�?(双击页眉也可实现)</translation>
     </message>
     <message>
         <source>Undock into separate window</source>
-        <translation>取消停靠到独立窗口</translation>
+        <translation>取消停靠到独立窗�?/translation>
     </message>
     <message>
         <source>Dock into main window</source>
@@ -785,7 +782,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Maximize this output result (double-click on result header)</source>
-        <translation>最大化此输出结果 (双击页眉也可实现)</translation>
+        <translation>最大化此输出结�?(双击页眉也可实现)</translation>
     </message>
     <message>
         <source>Restore back to original size (double-click on result header)</source>
@@ -806,10 +803,8 @@ Do you want to save your changes?</source>
 
 Error:
 %1</source>
-        <translation>加载文档失败。
-
-错误：
-%1</translation>
+        <translation>加载文档失败�?
+错误�?%1</translation>
     </message>
     <message>
         <source>Error</source>
@@ -819,8 +814,7 @@ Error:
         <source>Failed to execute script.
 
 </source>
-        <translation>执行脚本失败。
-
+        <translation>执行脚本失败�?
 </translation>
     </message>
     <message>
@@ -829,15 +823,15 @@ Error:
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达到 Shell 超时限制</translation>
+        <translation>脚本已达�?Shell 超时限制</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
@@ -845,11 +839,11 @@ Error:
     </message>
     <message>
         <source>New Shell</source>
-        <translation>新 Shell</translation>
+        <translation>�?Shell</translation>
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果。</translation>
+        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
     </message>
 </context>
 <context>
@@ -860,22 +854,22 @@ Error:
     </message>
     <message>
         <source>Batch Size (number of documents shown at once)</source>
-        <translation>分批大小 (每页显示的文档数量)</translation>
+        <translation>分批大小 (每页显示的文档数�?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::FindFrame</name>
     <message>
         <source>Next</source>
-        <translation>下一个</translation>
+        <translation>下一�?/translation>
     </message>
     <message>
         <source>Previous</source>
-        <translation>上一个</translation>
+        <translation>上一�?/translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>区分大小写</translation>
+        <translation>区分大小�?/translation>
     </message>
     <message>
         <source>Search</source>
@@ -883,34 +877,34 @@ Error:
     </message>
     <message>
         <source>The specified text was not found.</source>
-        <translation>未找到指定的文本。</translation>
+        <translation>未找到指定的文本�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionBasicTab</name>
     <message>
         <source>Type:</source>
-        <translation>类型：</translation>
+        <translation>类型�?/translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称：</translation>
+        <translation>名称�?/translation>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>选择任何有助于您识别此连接的名称。</translation>
+        <translation>选择任何有助于您识别此连接的名称�?/translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>地址：</translation>
+        <translation>地址�?/translation>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>指定 MongoDB 服务器的主机和端口。主机可以是 IPv4、IPv6 或域名。</translation>
+        <translation>指定 MongoDB 服务器的主机和端口。主机可以是 IPv4、IPv6 或域名�?/translation>
     </message>
     <message>
         <source>Members:</source>
-        <translation>成员：</translation>
+        <translation>成员�?/translation>
     </message>
     <message>
         <source>Set Name:</source>
@@ -918,11 +912,11 @@ Error:
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>从 MongoDB URI 连接字符串导入连接详情</translation>
+        <translation>�?MongoDB URI 连接字符串导入连接详�?/translation>
     </message>
     <message>
         <source>From URI</source>
-        <translation>从 URI 导入</translation>
+        <translation>�?URI 导入</translation>
     </message>
     <message>
         <source>Error</source>
@@ -930,15 +924,15 @@ Error:
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>副本集成员不能为空。请输入至少一个成员。</translation>
+        <translation>副本集成员不能为空。请输入至少一个成员�?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain &apos;:&apos; between hostname and port.</source>
-        <translation>项副本集成员必须在主机名和端口之间包含“:”。</translation>
+        <translation>项副本集成员必须在主机名和端口之间包含�?”�?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请删除重复成员，两个副本集成员不能具有相同的主机名和端口。</translation>
+        <translation>请删除重复成员，两个副本集成员不能具有相同的主机名和端口�?/translation>
     </message>
     <message>
         <source>New Connection</source>
@@ -947,8 +941,7 @@ Error:
     <message>
         <source>MongoDB URI:
 </source>
-        <translation>MongoDB URI：
-</translation>
+        <translation>MongoDB URI�?</translation>
     </message>
 </context>
 <context>
@@ -959,11 +952,11 @@ Error:
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的。&lt;/nobr&gt; 具有 admin 数据库标准访问权限的用户对&lt;b&gt;所有数据库&lt;/b&gt;都有读写权限。</translation>
+        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 具有 admin 数据库标准访问权限的用户�?lt;b&gt;所有数据库&lt;/b&gt;都有读写权限�?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户名</translation>
+        <translation>用户�?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
@@ -975,23 +968,23 @@ Error:
     </message>
     <message>
         <source>Database</source>
-        <translation>数据库</translation>
+        <translation>数据�?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
-        <translation>逗号分隔，例如 products, users</translation>
+        <translation>逗号分隔，例�?products, users</translation>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库列表</translation>
+        <translation>数据库列�?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有获取数据库名称列表（&lt;b&gt;listDatabases&lt;/b&gt; 命令）的权限。在这种情况下，请手动添加该用户有权访问的数据库名称。</translation>
+        <translation>某些 MongoDB 用户可能没有获取数据库名称列表（&lt;b&gt;listDatabases&lt;/b&gt; 命令）的权限。在这种情况下，请手动添加该用户有权访问的数据库名称�?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
-        <translation>手动指定可见数据库</translation>
+        <translation>手动指定可见数据�?/translation>
     </message>
 </context>
 <context>
@@ -1002,7 +995,7 @@ Error:
     </message>
     <message>
         <source>SSH Address:</source>
-        <translation>SSH 地址：</translation>
+        <translation>SSH 地址�?/translation>
     </message>
     <message>
         <source>SSH User Name:</source>
@@ -1010,19 +1003,19 @@ Error:
     </message>
     <message>
         <source>SSH Auth Method:</source>
-        <translation>SSH 认证方式：</translation>
+        <translation>SSH 认证方式�?/translation>
     </message>
     <message>
         <source>User Password:</source>
-        <translation>用户密码：</translation>
+        <translation>用户密码�?/translation>
     </message>
     <message>
         <source>Private key:</source>
-        <translation>私钥：</translation>
+        <translation>私钥�?/translation>
     </message>
     <message>
         <source>Passphrase:</source>
-        <translation>短语 (Passphrase)：</translation>
+        <translation>短语 (Passphrase)�?/translation>
     </message>
     <message>
         <source>Password</source>
@@ -1034,11 +1027,11 @@ Error:
     </message>
     <message>
         <source>DSA, RSA, and on Windows/macOS ECDSA, Ed25519 keys are supported. PPK keys must be converted to OPENSSH format.</source>
-        <translation>支持 DSA, RSA 以及 Windows/macOS 下的 ECDSA, Ed25519 密钥。PPK 密钥必须转换为 OPENSSH 格式。</translation>
+        <translation>支持 DSA, RSA 以及 Windows/macOS 下的 ECDSA, Ed25519 密钥。PPK 密钥必须转换�?OPENSSH 格式�?/translation>
     </message>
     <message>
         <source>SSH is currently not supported for Replica Set connections</source>
-        <translation>目前副本集连接暂不支持使用 SSH</translation>
+        <translation>目前副本集连接暂不支持使�?SSH</translation>
     </message>
     <message>
         <source>Select private key file</source>
@@ -1046,11 +1039,11 @@ Error:
     </message>
     <message>
         <source>Settings are incomplete</source>
-        <translation>设置不完整</translation>
+        <translation>设置不完�?/translation>
     </message>
     <message>
         <source>Private key file &quot;%1&quot; doesn&apos;t exist</source>
-        <translation>私钥文件“%1”不存在</translation>
+        <translation>私钥文件�?1”不存在</translation>
     </message>
 </context>
 <context>
@@ -1061,11 +1054,11 @@ Error:
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>认证方式：</translation>
+        <translation>认证方式�?/translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证书</translation>
+        <translation>自签名证�?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
@@ -1073,31 +1066,31 @@ Error:
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络环境可信，否则请避免使用自签名证书。如果使用自签名证书，通信频道将被加密，但不会验证服务器身份。</translation>
+        <translation>通常情况下，除非网络环境可信，否则请避免使用自签名证书。如果使用自签名证书，通信频道将被加密，但不会验证服务器身份�?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书：</translation>
+        <translation>CA 证书�?/translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/私钥：</translation>
+        <translation>使用 PEM 证书/私钥�?/translation>
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>连接到要求 CA 签名的客户端证书/私钥文件的 MongoDB 时，请启用此选项。</translation>
+        <translation>连接到要�?CA 签名的客户端证书/私钥文件�?MongoDB 时，请启用此选项�?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/私钥：</translation>
+        <translation>PEM 证书/私钥�?/translation>
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>短语 (Passphrase)：</translation>
+        <translation>短语 (Passphrase)�?/translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次都询问短语</translation>
+        <translation>每次都询问短�?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
@@ -1105,7 +1098,7 @@ Error:
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>CRL (吊销列表)：</translation>
+        <translation>CRL (吊销列表)�?/translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
@@ -1113,7 +1106,7 @@ Error:
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允许</translation>
+        <translation>不允�?/translation>
     </message>
     <message>
         <source>Allowed</source>
@@ -1125,11 +1118,11 @@ Error:
     </message>
     <message>
         <source>Error: </source>
-        <translation>错误：</translation>
+        <translation>错误�?/translation>
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存在</translation>
+        <translation> 文件不存�?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
@@ -1152,7 +1145,7 @@ Error:
     </message>
     <message>
         <source>Database, that will be default (&lt;code&gt;db&lt;/code&gt; shell variable will point to this database). By default, default database will be the one you authenticate on, or &lt;code&gt;test&lt;/code&gt; otherwise. Leave this field empty, if you want default behavior.</source>
-        <translation>默认数据库（Shell 变量 &lt;code&gt;db&lt;/code&gt; 将指向此数据库）。默认情况下，默认数据库将是您认证时使用的数据库，否则为 &lt;code&gt;test&lt;/code&gt;。如果您希望使用默认行为，请将此字段留空。</translation>
+        <translation>默认数据库（Shell 变量 &lt;code&gt;db&lt;/code&gt; 将指向此数据库）。默认情况下，默认数据库将是您认证时使用的数据库，否则为 &lt;code&gt;test&lt;/code&gt;。如果您希望使用默认行为，请将此字段留空�?/translation>
     </message>
 </context>
 <context>
@@ -1175,15 +1168,15 @@ Error:
     </message>
     <message>
         <source>Connecting to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;...</source>
-        <translation>正在连接到 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;...</translation>
+        <translation>正在连接�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;...</translation>
     </message>
     <message>
         <source>Connected to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>已连接到 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>已连接到 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Unable to connect to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>无法连接到 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>无法连接�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source> via SSH tunnel</source>
@@ -1195,7 +1188,7 @@ Error:
     </message>
     <message>
         <source>Connecting to &lt;b&gt;%1&lt;/b&gt;%2...</source>
-        <translation>正在连接到 &lt;b&gt;%1&lt;/b&gt;%2...</translation>
+        <translation>正在连接�?&lt;b&gt;%1&lt;/b&gt;%2...</translation>
     </message>
     <message>
         <source>Connected to &lt;b&gt;%1&lt;/b&gt;%2</source>
@@ -1207,19 +1200,19 @@ Error:
     </message>
     <message>
         <source>No chance to try connection to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>没有机会尝试连接到 &lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>没有机会尝试连接�?&lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Authorizing on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;...</source>
-        <translation>正在使用用户 &lt;b&gt;%2&lt;/b&gt; 在 &lt;b&gt;%1&lt;/b&gt; 数据库上进行认证...</translation>
+        <translation>正在使用用户 &lt;b&gt;%2&lt;/b&gt; �?&lt;b&gt;%1&lt;/b&gt; 数据库上进行认证...</translation>
     </message>
     <message>
         <source>Authorized on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>已使用用户 &lt;b&gt;%2&lt;/b&gt; 在 &lt;b&gt;%1&lt;/b&gt; 数据库上完成认证</translation>
+        <translation>已使用用�?&lt;b&gt;%2&lt;/b&gt; �?&lt;b&gt;%1&lt;/b&gt; 数据库上完成认证</translation>
     </message>
     <message>
         <source>Authorization failed on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>用户 &lt;b&gt;%2&lt;/b&gt; 在 &lt;b&gt;%1&lt;/b&gt; 数据库上认证失败</translation>
+        <translation>用户 &lt;b&gt;%2&lt;/b&gt; �?&lt;b&gt;%1&lt;/b&gt; 数据库上认证失败</translation>
     </message>
     <message>
         <source>No chance to authorize</source>
@@ -1227,19 +1220,19 @@ Error:
     </message>
     <message>
         <source>Loading list of databases...</source>
-        <translation>正在加载数据库列表...</translation>
+        <translation>正在加载数据库列�?..</translation>
     </message>
     <message>
         <source>Access to databases is available</source>
-        <translation>数据库访问可用</translation>
+        <translation>数据库访问可�?/translation>
     </message>
     <message>
         <source>Failed to load list of databases</source>
-        <translation>加载数据库列表失败</translation>
+        <translation>加载数据库列表失�?/translation>
     </message>
     <message>
         <source>No chance to load list of databases</source>
-        <translation>没有机会尝试加载数据库列表</translation>
+        <translation>没有机会尝试加载数据库列�?/translation>
     </message>
 </context>
 <context>
@@ -1262,7 +1255,7 @@ Error:
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称：</translation>
+        <translation>集合名称�?/translation>
     </message>
     <message>
         <source>Server: </source>
@@ -1274,7 +1267,7 @@ Error:
     </message>
     <message>
         <source>Collection: </source>
-        <translation>集合：</translation>
+        <translation>集合�?/translation>
     </message>
     <message>
         <source>JSON</source>
@@ -1286,15 +1279,15 @@ Error:
     </message>
     <message>
         <source>Fields:</source>
-        <translation>字段：</translation>
+        <translation>字段�?/translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation>格式：</translation>
+        <translation>格式�?/translation>
     </message>
     <message>
         <source>Query:</source>
-        <translation>查询：</translation>
+        <translation>查询�?/translation>
     </message>
     <message>
         <source>File Name:</source>
@@ -1302,11 +1295,11 @@ Error:
     </message>
     <message>
         <source>Directory:</source>
-        <translation>目录：</translation>
+        <translation>目录�?/translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>命令：</translation>
+        <translation>命令�?/translation>
     </message>
     <message>
         <source>Manual Mode</source>
@@ -1322,7 +1315,7 @@ Error:
     </message>
     <message>
         <source>Selected Collection</source>
-        <translation>所选集合</translation>
+        <translation>所选集�?/translation>
     </message>
     <message>
         <source>Selected Server</source>
@@ -1330,7 +1323,7 @@ Error:
     </message>
     <message>
         <source>Output Properties</source>
-        <translation>输出属性</translation>
+        <translation>输出属�?/translation>
     </message>
     <message>
         <source>Manual Export</source>
@@ -1350,7 +1343,7 @@ Error:
     </message>
     <message>
         <source>&quot;Fields&quot; option is required in CSV mode.</source>
-        <translation>CSV 模式下必须配置“字段 (Fields)”选项。</translation>
+        <translation>CSV 模式下必须配置“字�?(Fields)”选项�?/translation>
     </message>
     <message>
         <source>Export Successful: \n</source>
@@ -1374,11 +1367,11 @@ Error:
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed to start. Either the invoked program is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>错误：“mongoexport”进程启动失败。可能是调用的程序缺失，或您没有足够的权限来调用该程序。</translation>
+        <translation>错误：“mongoexport”进程启动失败。可能是调用的程序缺失，或您没有足够的权限来调用该程序�?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process crashed some time after starting successfully..</source>
-        <translation>错误：“mongoexport”进程在成功启动后发生崩溃。</translation>
+        <translation>错误：“mongoexport”进程在成功启动后发生崩溃�?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed. Error code: </source>
@@ -1393,23 +1386,23 @@ Error:
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>仅适用于 WiredTiger 存储引擎且数据库版本为 3.0 及以上。</translation>
+        <translation>仅适用�?WiredTiger 存储引擎且数据库版本�?3.0 及以上�?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>仅适用于数据库版本为 3.2 及以上。</translation>
+        <translation>仅适用于数据库版本�?3.2 及以上�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>仅适用于 MMAPv1 存储引擎且数据库版本为 3.0 及以上。</translation>
+        <translation>仅适用�?MMAPv1 存储引擎且数据库版本�?3.0 及以上�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>仅适用于 MMAPv1 存储引擎，自 3.0 版本起已弃用。</translation>
+        <translation>仅适用�?MMAPv1 存储引擎，自 3.0 版本起已弃用�?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>自 3.2 版本起已弃用。</translation>
+        <translation>�?3.2 版本起已弃用�?/translation>
     </message>
 </context>
 <context>
@@ -1420,11 +1413,11 @@ Error:
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称：</translation>
+        <translation>名称�?/translation>
     </message>
     <message>
         <source>Password:</source>
-        <translation>密码：</translation>
+        <translation>密码�?/translation>
     </message>
     <message>
         <source>UserSource:</source>
@@ -1444,7 +1437,7 @@ Error:
     </message>
     <message>
         <source>dbAdmin</source>
-        <translation>数据库管理</translation>
+        <translation>数据库管�?/translation>
     </message>
     <message>
         <source>userAdmin</source>
@@ -1456,42 +1449,42 @@ Error:
     </message>
     <message>
         <source>readAnyDatabase</source>
-        <translation>读取任意数据库</translation>
+        <translation>读取任意数据�?/translation>
     </message>
     <message>
         <source>readWriteAnyDatabase</source>
-        <translation>读写任意数据库</translation>
+        <translation>读写任意数据�?/translation>
     </message>
     <message>
         <source>userAdminAnyDatabase</source>
-        <translation>管理任意数据库用户</translation>
+        <translation>管理任意数据库用�?/translation>
     </message>
     <message>
         <source>dbAdminAnyDatabase</source>
-        <translation>管理任意数据库</translation>
+        <translation>管理任意数据�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AddEditIndexDialog</name>
     <message>
         <source>Index Properties</source>
-        <translation>索引属性</translation>
+        <translation>索引属�?/translation>
     </message>
     <message>
         <source>Choose any name that will help you to identify this index.</source>
-        <translation>选择一个能帮助您识别此索引的名称。</translation>
+        <translation>选择一个能帮助您识别此索引的名称�?/translation>
     </message>
     <message>
         <source>Document that contains pairs with the name of the field or fields to index and order of the index. A 1 specifies ascending and a -1 specifies descending.</source>
-        <translation>包含要索引的一个或多个字段名称及索引方向的文档。1 表示升序，-1 表示降序。</translation>
+        <translation>包含要索引的一个或多个字段名称及索引方向的文档�? 表示升序�?1 表示降序�?/translation>
     </message>
     <message>
         <source>If set, creates a unique index so that the collection will not accept insertion of documents where the index key or keys match an existing value in the index.</source>
-        <translation>如果设置，将创建一个唯一索引，这样集合将不接受索引键与现有值匹配的文档插入。</translation>
+        <translation>如果设置，将创建一个唯一索引，这样集合将不接受索引键与现有值匹配的文档插入�?/translation>
     </message>
     <message>
         <source>Name:   </source>
-        <translation>名称：</translation>
+        <translation>名称�?/translation>
     </message>
     <message>
         <source>Keys:   </source>
@@ -1499,11 +1492,11 @@ Error:
     </message>
     <message>
         <source>If set, the index only references documents with the specified field. These indexes use less space but behave differently in some situations (particularly sorts).</source>
-        <translation>如果设置，索引仅引用针对包含指定字段的文档。这些索引占用空间较少，但在某些情况下（特别是排序）表现不同。</translation>
+        <translation>如果设置，索引仅引用针对包含指定字段的文档。这些索引占用空间较少，但在某些情况下（特别是排序）表现不同�?/translation>
     </message>
     <message>
         <source>Builds the index in the background so that building an index does not block other database activities.</source>
-        <translation>在后台构建索引，这样构建索引就不会阻塞其他数据库活动。</translation>
+        <translation>在后台构建索引，这样构建索引就不会阻塞其他数据库活动�?/translation>
     </message>
     <message>
         <source>Specifies a &lt;i&gt;time to live&lt;/i&gt;, in seconds, to control how long MongoDB retains documents in this collection</source>
@@ -1519,15 +1512,15 @@ Error:
     </message>
     <message>
         <source>Document that contains field and weight pairs. The weight is a number ranging from 1 to 99,999 and denotes the significance of the field relative to the other indexed fields. </source>
-        <translation>包含字段和权重对的文档。权重是一个介于 1 到 99,999 之间的数字，表示该字段相对于其他索引字段的重要性。</translation>
+        <translation>包含字段和权重对的文档。权重是一个介�?1 �?99,999 之间的数字，表示该字段相对于其他索引字段的重要性�?/translation>
     </message>
     <message>
         <source>Invalid json</source>
-        <translation>无效的 JSON</translation>
+        <translation>无效�?JSON</translation>
     </message>
     <message>
         <source>Please check json text.\n</source>
-        <translation>请检查 JSON 文本。\n</translation>
+        <translation>请检�?JSON 文本。\n</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -1549,7 +1542,7 @@ Error:
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状态</translation>
+        <translation>服务器状�?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -1588,7 +1581,7 @@ Error:
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>数据库统计信息</translation>
+        <translation>数据库统计信�?/translation>
     </message>
     <message>
         <source>Current Operations</source>
@@ -1600,11 +1593,11 @@ Error:
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据库...</translation>
+        <translation>删除数据�?..</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据库...</translation>
+        <translation>修复数据�?..</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -1628,25 +1621,25 @@ Error:
     </message>
     <message>
         <source>Drop &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要删除 &lt;b&gt;%1&lt;/b&gt; 数据库吗？</translation>
+        <translation>确定要删�?&lt;b&gt;%1&lt;/b&gt; 数据库吗�?/translation>
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据库</translation>
+        <translation>删除数据�?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要修复 &lt;b&gt;%1&lt;/b&gt; 数据库吗？</translation>
+        <translation>确定要修�?&lt;b&gt;%1&lt;/b&gt; 数据库吗�?/translation>
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据库</translation>
+        <translation>修复数据�?/translation>
     </message>
 </context>
 <context>
     <message>
         <source>Replica Set (%1 nodes)</source>
-        <translation>副本集 (%1 个节点)</translation>
+        <translation>副本�?(%1 个节�?</translation>
     </message>
     <message>
         <source>Replica Set ...</source>
@@ -1654,7 +1647,7 @@ Error:
     </message>
     <message>
         <source>Status of Replica Set</source>
-        <translation>副本集状态</translation>
+        <translation>副本集状�?/translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -1704,7 +1697,7 @@ Error:
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索引...</translation>
+        <translation>重建所有索�?..</translation>
     </message>
     <message>
         <source>View Indexes</source>
@@ -1719,21 +1712,21 @@ Error:
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>EULA</source>
-        <translation>最终用户许可协议 (EULA)</translation>
+        <translation>最终用户许可协�?(EULA)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::OutputItemContentWidget</name>
     <message>
         <source>Loading...</source>
-        <translation>加载中...</translation>
+        <translation>加载�?..</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExportDialog</name>
     <message>
         <source>Exporting...</source>
-        <translation>导出中...</translation>
+        <translation>导出�?..</translation>
     </message>
 </context>
 <context>
@@ -1789,15 +1782,15 @@ Error:
     </message>
     <message>
         <source>Default display mode:</source>
-        <translation>默认显示模式：</translation>
+        <translation>默认显示模式�?/translation>
     </message>
     <message>
         <source>Display Dates in: </source>
-        <translation>日期显示时区：</translation>
+        <translation>日期显示时区�?/translation>
     </message>
     <message>
         <source>Legacy UUID Encoding:</source>
-        <translation>传统 UUID 编码：</translation>
+        <translation>传统 UUID 编码�?/translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
@@ -1805,11 +1798,11 @@ Error:
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷键</translation>
+        <translation>禁用连接快捷�?/translation>
     </message>
     <message>
         <source>Styles:</source>
-        <translation>主题样式：</translation>
+        <translation>主题样式�?/translation>
     </message>
     <message>
         <source>Text mode</source>
@@ -1825,7 +1818,7 @@ Error:
     </message>
     <message>
         <source>Custom mode</source>
-        <translation>自定义模式</translation>
+        <translation>自定义模�?/translation>
     </message>
     <message>
         <source>UTC</source>
@@ -1864,7 +1857,7 @@ Error:
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本集</translation>
+        <translation>副本�?/translation>
     </message>
     <message>
         <source>TLS</source>
@@ -1884,30 +1877,30 @@ Error:
     </message>
     <message>
         <source>records</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>&lt;span style=&apos;color: #777777;&apos;&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导入 (%1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导�?(%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;Create&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;edit&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;remove&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;clone&lt;/a&gt; or reorder connections via drag&apos;n&amp;drop.</source>
-        <translation>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;创建&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;删除&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;，或通过拖拽重排序。</translation>
+        <translation>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;创建&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;删除&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;，或通过拖拽重排序�?/translation>
     </message>
     <message>
         <source>Copy of </source>
-        <translation>副本：</translation>
+        <translation>副本�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AboutDialog</name>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=&quot;https://%6&quot;&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://%7&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href=&quot;%8&quot;&gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=&quot;https://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;以 Shell 为中心的 MongoDB 管理工具。&lt;br/&gt;在 GitHub 上 &lt;a href=&quot;https://%6&quot;&gt;提交&lt;/a&gt; 问题/建议。&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://%7&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所有 2014-%5 &lt;a href=&quot;%8&quot;&gt;%9&lt;/a&gt;。保留所有权利。&lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不附带任何形式的保证，包括但不限于设计、适销性和针对特定用途的适用性保证。&lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项：&lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;鸣谢：&lt;br/&gt;&lt;/b&gt;部分图标由 Freepik 设计 &lt;a href=&quot;https://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;�?Shell 为中心的 MongoDB 管理工具�?lt;br/&gt;�?GitHub �?&lt;a href=&quot;https://%6&quot;&gt;提交&lt;/a&gt; 问题/建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://%7&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href=&quot;%8&quot;&gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不附带任何形式的保证，包括但不限于设计、适销性和针对特定用途的适用性保证�?lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项：&lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;鸣谢�?lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=&quot;https://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -1935,7 +1928,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✓&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -1976,7 +1969,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✓&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -1984,21 +1977,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重生版 v1.5.0 - 标准发行版&lt;/div&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;重生�?v1.5.0 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎使用 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化的 Robo 3T 版本。我们剔除了冗余功能并修复了核心 Bug，助您专注于数据处理。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们剔除了冗余功能并修复了核心 Bug，助您专注于数据处理�?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决 Windows 编译兼容性及内存泄漏问题。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 集成最新的稳定版 OpenSSL 1.1.1u 工具包。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重构，性能大幅提升。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携：&lt;/strong&gt; 国内绿色版，所有依赖项已打包，真正实现零安装。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决 Windows 编译兼容性及内存泄漏问题�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 集成最新的稳定�?OpenSSL 1.1.1u 工具包�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重构，性能大幅提升�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt; 国内绿色版，所有依赖项已打包，真正实现零安装�?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        “您的数据，由您掌控。感谢支持社区版。”
-                    &lt;/div&gt;
+                        “您的数据，由您掌控。感谢支持社区版。�?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -2012,10 +2004,8 @@ Error:
 
 Error:
 %1</source>
-        <translation>加载文档失败。
-
-错误：
-%1</translation>
+        <translation>加载文档失败�?
+错误�?%1</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2024,15 +2014,13 @@ Error:
     <message>
         <source>Error:
 </source>
-        <translation>错误：
-</translation>
+        <translation>错误�?</translation>
     </message>
     <message>
         <source>Failed to execute script.
 
 </source>
-        <translation>执行脚本失败。
-
+        <translation>执行脚本失败�?
 </translation>
     </message>
     <message>
@@ -2041,23 +2029,23 @@ Error:
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达到 Shell 超时限制</translation>
+        <translation>脚本已达�?Shell 超时限制</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>执行所有脚本失败。 </translation>
+        <translation>执行所有脚本失败�?</translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制。 </translation>
+        <translation> 限制�?</translation>
     </message>
     <message>
         <source>
@@ -2065,7 +2053,7 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu &quot;Options-&gt;Change Shell Timeout&quot;.</source>
         <translation>
 
-请使用下方的按钮，或者通过主窗口菜单“选项 -&gt; 更改 Shell 超时”来增加 Shell 超时值。</translation>
+请使用下方的按钮，或者通过主窗口菜单“选项 -&gt; 更改 Shell 超时”来增加 Shell 超时值�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
@@ -2077,7 +2065,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果。</translation>
+        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
     </message>
 </context>
 <context>
@@ -2092,7 +2080,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>&amp;Duplicate Query In New Tab</source>
-        <translation>在新页签中复制查询(&amp;D)</translation>
+        <translation>在新页签中复制查�?&amp;D)</translation>
     </message>
     <message>
         <source>&amp;Pin Shell</source>
@@ -2108,7 +2096,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Close Shells to the R&amp;ight</source>
-        <translation>关闭右侧所有 Shell(&amp;I)</translation>
+        <translation>关闭右侧所�?Shell(&amp;I)</translation>
     </message>
 </context>
 <context>
@@ -2130,7 +2118,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状态</translation>
+        <translation>服务器状�?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -2165,7 +2153,7 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::ExplorerReplicaSetFolderItem</name>
     <message>
         <source>Replica Set (%1 nodes)</source>
-        <translation>副本集 (%1 个节点)</translation>
+        <translation>副本�?(%1 个节�?</translation>
     </message>
     <message>
         <source>Replica Set ...</source>
@@ -2173,7 +2161,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Status of Replica Set</source>
-        <translation>副本集状态</translation>
+        <translation>副本集状�?/translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -2223,7 +2211,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索引...</translation>
+        <translation>重建所有索�?..</translation>
     </message>
     <message>
         <source>View Indexes</source>
@@ -2238,21 +2226,21 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>EULA</source>
-        <translation>最终用户许可协议 (EULA)</translation>
+        <translation>最终用户许可协�?(EULA)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::OutputItemContentWidget</name>
     <message>
         <source>Loading...</source>
-        <translation>加载中...</translation>
+        <translation>加载�?..</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExportDialog</name>
     <message>
         <source>Exporting...</source>
-        <translation>导出中...</translation>
+        <translation>导出�?..</translation>
     </message>
 </context>
 <context>
@@ -2290,15 +2278,15 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source> nodes</source>
-        <translation> 个节点</translation>
+        <translation> 个节�?/translation>
     </message>
     <message>
         <source> node</source>
-        <translation> 个节点</translation>
+        <translation> 个节�?/translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本集 (Replica Set)</translation>
+        <translation>副本�?(Replica Set)</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -2318,7 +2306,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>MongoDB Connections</source>
-        <translation>MongoDB 连接管理器</translation>
+        <translation>MongoDB 连接管理�?/translation>
     </message>
     <message>
         <source>&amp;Add...</source>
@@ -2346,11 +2334,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Attributes</source>
-        <translation>属性</translation>
+        <translation>属�?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>认证数据库 / 用户</translation>
+        <translation>认证数据�?/ 用户</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
@@ -2358,23 +2346,23 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>records</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>&lt;span style=&apos;color: #777777;&apos;&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导入 (%1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导�?(%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;Create&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;edit&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;remove&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;clone&lt;/a&gt; or reorder connections via drag&apos;n&apos;drop.</source>
-        <translation>通过拖拽可以进行&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;创建&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;删除&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;或重新排序连接。</translation>
+        <translation>通过拖拽可以进行&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;创建&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;删除&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;或重新排序连接�?/translation>
     </message>
     <message>
         <source>Are you sure you want to delete &quot;%1&quot; connection?</source>
-        <translation>您确定要删除“%1”连接吗？</translation>
+        <translation>您确定要删除�?1”连接吗�?/translation>
     </message>
     <message>
         <source>Connections</source>
@@ -2389,23 +2377,23 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::SSLTab</name>
     <message>
         <source> mongo --tlsCAFile : Certificate Authority file for TLS</source>
-        <translation> mongo --tlsCAFile : 用于 TLS 的证书颁发机构 (CA) 文件</translation>
+        <translation> mongo --tlsCAFile : 用于 TLS 的证书颁发机�?(CA) 文件</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFile : 用于 TLS 的 PEM 证书/密钥文件</translation>
+        <translation> mongo --tlsCertificateKeyFile : 用于 TLS �?PEM 证书/密钥文件</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFilePassword : 用于 TLS 的 PEM 文件中密钥的密码</translation>
+        <translation> mongo --tlsCertificateKeyFilePassword : 用于 TLS �?PEM 文件中密钥的密码</translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidHostnames : Allow connections to servers with non-matching hostnames</source>
-        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务器</translation>
+        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务�?/translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidCertificates : Allow connections to servers with invalid certificates</source>
-        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到证书无效的服务器</translation>
+        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到证书无效的服务�?/translation>
     </message>
     <message>
         <source> mongo --tlsCRLFile : Certificate Revocation List file for TLS</source>
@@ -2417,11 +2405,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>验证方法： </translation>
+        <translation>验证方法�?</translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证书</translation>
+        <translation>自签名证�?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
@@ -2429,31 +2417,31 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络是受信任的，否则请避免使用自签名证书。如果使用自签名证书，通信通道将被加密，但不会对服务器身份进行验证。</translation>
+        <translation>通常情况下，除非网络是受信任的，否则请避免使用自签名证书。如果使用自签名证书，通信通道将被加密，但不会对服务器身份进行验证�?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书：</translation>
+        <translation>CA 证书�?/translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/密钥： </translation>
+        <translation>使用 PEM 证书/密钥�?</translation>
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>启用此选项以连接到需要 CA 签名客户端证书/密钥文件的 MongoDB。</translation>
+        <translation>启用此选项以连接到需�?CA 签名客户端证�?密钥文件�?MongoDB�?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/密钥： </translation>
+        <translation>PEM 证书/密钥�?</translation>
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>密码： </translation>
+        <translation>密码�?</translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次都询问密码</translation>
+        <translation>每次都询问密�?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
@@ -2461,7 +2449,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>CRL (吊销列表)： </translation>
+        <translation>CRL (吊销列表)�?</translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
@@ -2469,7 +2457,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允许</translation>
+        <translation>不允�?/translation>
     </message>
     <message>
         <source>Allowed</source>
@@ -2481,11 +2469,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Error: </source>
-        <translation>错误： </translation>
+        <translation>错误�?</translation>
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存在</translation>
+        <translation> 文件不存�?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
@@ -2512,7 +2500,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source> Loading...</source>
-        <translation> 加载中...</translation>
+        <translation> 加载�?..</translation>
     </message>
     <message>
         <source>New Shell</source>
@@ -2523,7 +2511,7 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::ConnectionBasicTab</name>
     <message>
         <source>Type:</source>
-        <translation>类型：</translation>
+        <translation>类型�?/translation>
     </message>
     <message>
         <source>Direct Connection</source>
@@ -2531,27 +2519,27 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本集</translation>
+        <translation>副本�?/translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称：</translation>
+        <translation>名称�?/translation>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>选择任意连接名称，以帮助您识别此连接。</translation>
+        <translation>选择任意连接名称，以帮助您识别此连接�?/translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>地址：</translation>
+        <translation>地址�?/translation>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>指定 MongoDB 服务器的主机和端口。主机可以是 IPv4、IPv6 或域名。</translation>
+        <translation>指定 MongoDB 服务器的主机和端口。主机可以是 IPv4、IPv6 或域名�?/translation>
     </message>
     <message>
         <source>Members:</source>
-        <translation>成员：</translation>
+        <translation>成员�?/translation>
     </message>
     <message>
         <source>Set Name:</source>
@@ -2559,7 +2547,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>从 MongoDB URI 连接字符串导入连接详情</translation>
+        <translation>�?MongoDB URI 连接字符串导入连接详�?/translation>
     </message>
     <message>
         <source>From URI</source>
@@ -2571,19 +2559,19 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>副本集成员不能为空。请输入至少一个成员。</translation>
+        <translation>副本集成员不能为空。请输入至少一个成员�?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain &apos;:&apos; between hostname and port.</source>
-        <translation>副本集成员项必须在主机名和端口之间包含“:”。</translation>
+        <translation>副本集成员项必须在主机名和端口之间包含�?”�?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请删除重复成员，两个副本集成员不能具有相同的主机名和端口。</translation>
+        <translation>请删除重复成员，两个副本集成员不能具有相同的主机名和端口�?/translation>
     </message>
     <message>
         <source>New Connection</source>
-        <translation>新连接</translation>
+        <translation>新连�?/translation>
     </message>
 </context>
 <context>
@@ -2594,11 +2582,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的。&lt;/nobr&gt; 拥有 admin 数据库常规访问权限的用户对&lt;b&gt;所有数据库&lt;/b&gt;都拥有读写权限。</translation>
+        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 拥有 admin 数据库常规访问权限的用户�?lt;b&gt;所有数据库&lt;/b&gt;都拥有读写权限�?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户名</translation>
+        <translation>用户�?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
@@ -2610,7 +2598,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Database</source>
-        <translation>数据库</translation>
+        <translation>数据�?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
@@ -2618,15 +2606,15 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库</translation>
+        <translation>数据�?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有获取数据库名称列表（&lt;b&gt;listDatabases&lt;/b&gt; 命令）的权限。在这种情况下，请手动添加该用户有权访问的数据库名称。</translation>
+        <translation>某些 MongoDB 用户可能没有获取数据库名称列表（&lt;b&gt;listDatabases&lt;/b&gt; 命令）的权限。在这种情况下，请手动添加该用户有权访问的数据库名称�?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
-        <translation>手动指定可见数据库</translation>
+        <translation>手动指定可见数据�?/translation>
     </message>
 </context>
 <context>
@@ -2637,11 +2625,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Ask for password each time</source>
-        <translation>每次都询问密码</translation>
+        <translation>每次都询问密�?/translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次都询问密码短语</translation>
+        <translation>每次都询问密码短�?/translation>
     </message>
     <message>
         <source>Password</source>
@@ -2653,19 +2641,19 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>User Password:</source>
-        <translation>用户密码：</translation>
+        <translation>用户密码�?/translation>
     </message>
     <message>
         <source>Private key:</source>
-        <translation>私钥：</translation>
+        <translation>私钥�?/translation>
     </message>
     <message>
         <source>Passphrase:</source>
-        <translation>密码短语：</translation>
+        <translation>密码短语�?/translation>
     </message>
     <message>
         <source>SSH Address:</source>
-        <translation>SSH 地址：</translation>
+        <translation>SSH 地址�?/translation>
     </message>
     <message>
         <source>SSH User Name:</source>
@@ -2673,7 +2661,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>SSH Auth Method:</source>
-        <translation>SSH 认证方式：</translation>
+        <translation>SSH 认证方式�?/translation>
     </message>
     <message>
         <source>Select private key file</source>
@@ -2685,7 +2673,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Settings are incomplete</source>
-        <translation>设置不完整</translation>
+        <translation>设置不完�?/translation>
     </message>
     <message>
         <source>SSH is currently not supported for Replica Set connections</source>
@@ -2693,7 +2681,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Private key file &quot;%1&quot; doesn&apos;t exist</source>
-        <translation>私钥文件“%1”不存在</translation>
+        <translation>私钥文件�?1”不存在</translation>
     </message>
 </context>
 <context>
@@ -2704,11 +2692,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>验证方式：</translation>
+        <translation>验证方式�?/translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证书</translation>
+        <translation>自签名证�?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
@@ -2716,19 +2704,19 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络是可信的，否则请避免使用自签名证书。如果使用自签名证书，通信通道将被加密，但不会验证服务器身份。</translation>
+        <translation>通常情况下，除非网络是可信的，否则请避免使用自签名证书。如果使用自签名证书，通信通道将被加密，但不会验证服务器身份�?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书：</translation>
+        <translation>CA 证书�?/translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/秘钥：</translation>
+        <translation>使用 PEM 证书/秘钥�?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/秘钥：</translation>
+        <translation>PEM 证书/秘钥�?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
@@ -2736,7 +2724,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>CRL (吊销列表)：</translation>
+        <translation>CRL (吊销列表)�?/translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
@@ -2744,7 +2732,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允许</translation>
+        <translation>不允�?/translation>
     </message>
     <message>
         <source>Allowed</source>
@@ -2759,7 +2747,7 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::ConnectionAdvancedTab</name>
     <message>
         <source>Database, that will be default (&lt;code&gt;db&lt;/code&gt; shell variable will point to this database). By default, default database will be the one you authenticate on, or &lt;code&gt;test&lt;/code&gt; otherwise. Leave this field empty, if you want default behavior.</source>
-        <translation>将作为默认值的数据库（&lt;code&gt;db&lt;/code&gt; shell 变量将指向此数据库）。默认情况下，默认数据库将是您进行身份验证的数据库，否则为 &lt;code&gt;test&lt;/code&gt;。如果您想要默认行为，请将此字段留空。</translation>
+        <translation>将作为默认值的数据库（&lt;code&gt;db&lt;/code&gt; shell 变量将指向此数据库）。默认情况下，默认数据库将是您进行身份验证的数据库，否则�?&lt;code&gt;test&lt;/code&gt;。如果您想要默认行为，请将此字段留空�?/translation>
     </message>
     <message>
         <source>Default Database:</source>
@@ -2783,15 +2771,15 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当前 Shell 的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>将当�?Shell 的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存为(&amp;A)...</translation>
+        <translation>另存�?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退出(&amp;E)</translation>
+        <translation>退�?&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
@@ -2803,11 +2791,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托盘</translation>
+        <translation>最小化到托�?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>退�?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
@@ -2843,7 +2831,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模式(&amp;C)</translation>
+        <translation>自定义模�?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
@@ -2851,11 +2839,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前选项卡的查询。如果选择了部分文本，则只执行选中的部分 &lt;b&gt;(F5 &lt;/b&gt; 或 &lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>执行当前选项卡的查询。如果选择了部分文本，则只执行选中的部�?&lt;b&gt;(F5 &lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止执行当前正在运行的脚本 &lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>停止执行当前正在运行的脚�?&lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -2871,7 +2859,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具栏</translation>
+        <translation>工具�?/translation>
     </message>
     <message>
         <source>Options</source>
@@ -2883,7 +2871,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>UTC (Coordinated Universal Time)</source>
-        <translation>UTC (协调世界时)</translation>
+        <translation>UTC (协调世界�?</translation>
     </message>
     <message>
         <source>Local Time</source>
@@ -2891,11 +2879,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Display Dates In...</source>
-        <translation>显示日期格式为...</translation>
+        <translation>显示日期格式�?..</translation>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解码 (按原样显示)</translation>
+        <translation>不解�?(按原样显�?</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
@@ -2923,7 +2911,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>None</source>
-        <translation>无</translation>
+        <translation>�?/translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
@@ -2935,7 +2923,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文档</translation>
+        <translation>自动展开第一个文�?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
@@ -2943,7 +2931,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷键</translation>
+        <translation>禁用连接快捷�?/translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
@@ -2951,11 +2939,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>点击关闭按钮应最小化到系统托盘</translation>
+        <translation>点击关闭按钮应最小化到系统托�?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更新</translation>
+        <translation>检查更�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
@@ -2975,11 +2963,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择下一个选项卡</translation>
+        <translation>选择下一个选项�?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择上一个选项卡</translation>
+        <translation>选择上一个选项�?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
@@ -2995,7 +2983,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>开启/刷新欢迎页</translation>
+        <translation>开�?刷新欢迎�?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
@@ -3007,19 +2995,19 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具栏</translation>
+        <translation>连接工具�?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存工具栏</translation>
+        <translation>打开/保存工具�?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具栏</translation>
+        <translation>执行工具�?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新工具栏</translation>
+        <translation>更新工具�?/translation>
     </message>
     <message>
         <source>Theme</source>
@@ -3038,14 +3026,14 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::CreateUserDialog</name>
     <message>
         <source>Name:</source>
-        <translation>名称：</translation>
+        <translation>名称�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>I agree</source>
-        <translation>我同意</translation>
+        <translation>我同�?/translation>
     </message>
     <message>
         <source>I don&apos;t agree</source>
@@ -3091,7 +3079,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Batch Size (number of documents shown at once)</source>
-        <translation>批量大小（一次显示的文档数量）</translation>
+        <translation>批量大小（一次显示的文档数量�?/translation>
     </message>
 </context>
 <context>
@@ -3107,12 +3095,11 @@ Please increase the value of shell timeout using button below or from the main w
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>该文档已被修改。
-您是否要保存更改？</translation>
+        <translation>该文档已被修改�?您是否要保存更改�?/translation>
     </message>
     <message>
-        <source>Unable to parse JSON:<br /> &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON：&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于 (%2, %3)。</translation>
+        <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
+        <translation>无法解析 JSON�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位�?(%2, %3)�?/translation>
     </message>
     <message>
         <source>Parsing error</source>
@@ -3124,7 +3111,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效！</translation>
+        <translation>JSON 格式有效�?/translation>
     </message>
     <message>
         <source>Edit Document</source>
@@ -3158,10 +3145,8 @@ Do you want to save your changes?</source>
 
 Error:
 %1</source>
-        <translation>加载文档失败。
-
-错误：
-%1</translation>
+        <translation>加载文档失败�?
+错误�?%1</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3171,15 +3156,13 @@ Error:
         <source>Failed to execute script.
 
 </source>
-        <translation>执行脚本失败。
-
+        <translation>执行脚本失败�?
 </translation>
     </message>
     <message>
         <source>Error:
 </source>
-        <translation>错误：
-</translation>
+        <translation>错误�?</translation>
     </message>
     <message>
         <source>At least one of the scripts has reached shell timeout</source>
@@ -3187,23 +3170,23 @@ Error:
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达到 Shell 超时限制</translation>
+        <translation>脚本已达�?Shell 超时限制</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>执行所有脚本失败。</translation>
+        <translation>执行所有脚本失败�?/translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制。</translation>
+        <translation> 限制�?/translation>
     </message>
     <message>
         <source>
@@ -3211,7 +3194,7 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu &quot;Options-&gt;Change Shell Timeout&quot;.</source>
         <translation>
 
-请使用下方的按钮或通过主窗口菜单“选项-&gt;更改 Shell 超时”来增加 Shell 超时值。</translation>
+请使用下方的按钮或通过主窗口菜单“选项-&gt;更改 Shell 超时”来增加 Shell 超时值�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
@@ -3223,14 +3206,14 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果。</translation>
+        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ScriptWidget</name>
     <message>
         <source>Loading...</source>
-        <translation>加载中...</translation>
+        <translation>加载�?..</translation>
     </message>
 </context>
 <context>
@@ -3249,7 +3232,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>删除所有文档...</translation>
+        <translation>删除所有文�?..</translation>
     </message>
     <message>
         <source>Statistics</source>
@@ -3261,11 +3244,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大小</translation>
+        <translation>索引总大�?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大小</translation>
+        <translation>总大�?/translation>
     </message>
     <message>
         <source>Shard Version</source>
@@ -3281,7 +3264,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集合...</translation>
+        <translation>重命名集�?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
@@ -3300,10 +3283,8 @@ Please increase the value of shell timeout using button below or from the main w
 
 Error:
 </source>
-        <translation>无法加载索引列表。
-
-错误：
-</translation>
+        <translation>无法加载索引列表�?
+错误�?</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3327,7 +3308,7 @@ Error:
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>错误：%1</translation>
+        <translation>错误�?1</translation>
     </message>
     <message>
         <source>Failed to drop index &quot;%1&quot;</source>
@@ -3335,7 +3316,7 @@ Error:
     </message>
     <message>
         <source>Reason: </source>
-        <translation>原因： </translation>
+        <translation>原因�?</translation>
     </message>
     <message>
         <source>Insert Document</source>
@@ -3343,11 +3324,11 @@ Error:
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>删除所有文档</translation>
+        <translation>删除所有文�?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>是否从 &lt;b&gt;%1&lt;/b&gt; 集合中删除所有文档？</translation>
+        <translation>是否�?&lt;b&gt;%1&lt;/b&gt; 集合中删除所有文档？</translation>
     </message>
     <message>
         <source>Drop</source>
@@ -3371,11 +3352,11 @@ Error:
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集合</translation>
+        <translation>重命名集�?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命名(&amp;R)</translation>
+        <translation>重命�?&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -3395,7 +3376,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✓&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -3403,21 +3384,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制版 v1.5.0 - 标准发行版&lt;/div&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎使用 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护和优化的 Robo 3T 版本。我们去冗存精，修复了核心问题，让您可以专注于数据处理。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护和优化�?Robo 3T 版本。我们去冗存精，修复了核心问题，让您可以专注于数据处理�?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定优先：&lt;/strong&gt;解决了关键的 Windows 编译问题和内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt;集成了稳定的 OpenSSL 1.1.1u 工具包。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt;使用 Qt 5.15.2 和 Ninja 重新构建，性能更卓越。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携：&lt;/strong&gt;所有依赖项现已封装，实现真正的免安装体验。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定优先�?lt;/strong&gt;解决了关键的 Windows 编译问题和内存泄漏�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt;集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt;使用 Qt 5.15.2 �?Ninja 重新构建，性能更卓越�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt;所有依赖项现已封装，实现真正的免安装体验�?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        “数据由你掌控。感谢支持社区版本。”
-                    &lt;/div&gt;
+                        “数据由你掌控。感谢支持社区版本。�?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -3436,7 +3416,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✓&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -3444,21 +3424,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制版 v1.5.0 - 标准发行版&lt;/div&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎回来，Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护和优化的 Robo 3T 版本。我们去冗存精，修复了核心问题，让您可以专注于数据处理。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护和优化�?Robo 3T 版本。我们去冗存精，修复了核心问题，让您可以专注于数据处理�?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定优先：&lt;/strong&gt;解决了关键的 Windows 编译问题和内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt;集成了稳定的 OpenSSL 1.1.1u 工具包。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt;使用 Qt 5.15.2 和 Ninja 重新构建，性能更卓越。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携：&lt;/strong&gt;所有依赖项现已封装，实现真正的免安装体验。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定优先�?lt;/strong&gt;解决了关键的 Windows 编译问题和内存泄漏�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt;集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt;使用 Qt 5.15.2 �?Ninja 重新构建，性能更卓越�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt;所有依赖项现已封装，实现真正的免安装体验�?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        “数据由你掌控。感谢支持社区版本。”
-                    &lt;/div&gt;
+                        “数据由你掌控。感谢支持社区版本。�?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -3470,14 +3449,14 @@ Error:
     &lt;/message&gt;
     &lt;message&gt;
         &lt;source&gt;All Blog Posts&lt;/source&gt;
-        &lt;translation&gt;所有博客文章&lt;/translation&gt;
+        &lt;translation&gt;所有博客文�?lt;/translation&gt;
     &lt;/message&gt;
 </context>
 <context>
     <name>Robomongo::AddEditIndexDialog</name>
     <message>
         <source>Index Properties</source>
-        <translation>索引属性</translation>
+        <translation>索引属�?/translation>
     </message>
     <message>
         <source>Basic</source>
@@ -3493,23 +3472,23 @@ Error:
     </message>
     <message>
         <source>Unique</source>
-        <translation>唯一性</translation>
+        <translation>唯一�?/translation>
     </message>
     <message>
         <source>Choose any name that will help you to identify this index.</source>
-        <translation>选择任何能帮助您识别此索引的名称。</translation>
+        <translation>选择任何能帮助您识别此索引的名称�?/translation>
     </message>
     <message>
         <source>Document that contains pairs with the name of the field or fields to index and order of the index. A 1 specifies ascending and a -1 specifies descending.</source>
-        <translation>包含要建立索引的一个或多个字段名称及其顺序的文档。1 表示升序，-1 表示降序。</translation>
+        <translation>包含要建立索引的一个或多个字段名称及其顺序的文档�? 表示升序�?1 表示降序�?/translation>
     </message>
     <message>
         <source>If set, creates a unique index so that the collection will not accept insertion of documents where the index key or keys match an existing value in the index.</source>
-        <translation>如果设置，将创建唯一索引，使集合不接受索引键值与索引中现有值匹配的文档插入。</translation>
+        <translation>如果设置，将创建唯一索引，使集合不接受索引键值与索引中现有值匹配的文档插入�?/translation>
     </message>
     <message>
         <source>Name:   </source>
-        <translation>名称：   </translation>
+        <translation>名称�?  </translation>
     </message>
     <message>
         <source>Keys:   </source>
@@ -3517,27 +3496,27 @@ Error:
     </message>
     <message>
         <source>Sparse</source>
-        <translation>稀疏索引 (Sparse)</translation>
+        <translation>稀疏索�?(Sparse)</translation>
     </message>
     <message>
         <source>Create index in background</source>
-        <translation>在后台创建索引</translation>
+        <translation>在后台创建索�?/translation>
     </message>
     <message>
         <source>seconds</source>
-        <translation>秒</translation>
+        <translation>�?/translation>
     </message>
     <message>
         <source>Expire after</source>
-        <translation>在该时长后过期</translation>
+        <translation>在该时长后过�?/translation>
     </message>
     <message>
         <source>If set, the index only references documents with the specified field. These indexes use less space but behave differently in some situations (particularly sorts).</source>
-        <translation>如果设置，索引只引用包含指定字段的文档。这些索引占用空间较少，但在某些情况下（特别是排序）表现不同。</translation>
+        <translation>如果设置，索引只引用包含指定字段的文档。这些索引占用空间较少，但在某些情况下（特别是排序）表现不同�?/translation>
     </message>
     <message>
         <source>Builds the index in the background so that building an index does not block other database activities.</source>
-        <translation>在后台构建索引，这样构建索引就不会阻塞其他数据库活动。</translation>
+        <translation>在后台构建索引，这样构建索引就不会阻塞其他数据库活动�?/translation>
     </message>
     <message>
         <source>Specifies a &lt;i&gt;time to live&lt;/i&gt;, in seconds, to control how long MongoDB retains documents in this collection</source>
@@ -3553,15 +3532,15 @@ Error:
     </message>
     <message>
         <source>Document that contains field and weight pairs. The weight is a number ranging from 1 to 99,999 and denotes the significance of the field relative to the other indexed fields. </source>
-        <translation>包含字段和权重对的文档。权重是 1 到 99,999 之间的数字，表示该字段相对于其他索引字段的重要性。 </translation>
+        <translation>包含字段和权重对的文档。权重是 1 �?99,999 之间的数字，表示该字段相对于其他索引字段的重要性�?</translation>
     </message>
     <message>
         <source>Default language:</source>
-        <translation>默认语言：</translation>
+        <translation>默认语言�?/translation>
     </message>
     <message>
         <source>Language override:</source>
-        <translation>语言覆盖 (Override)：</translation>
+        <translation>语言覆盖 (Override)�?/translation>
     </message>
     <message>
         <source>Text weights</source>
@@ -3569,13 +3548,12 @@ Error:
     </message>
     <message>
         <source>Invalid json</source>
-        <translation>无效的 JSON</translation>
+        <translation>无效�?JSON</translation>
     </message>
     <message>
         <source>Please check json text.
 </source>
-        <translation>请检查 JSON 文本。
-</translation>
+        <translation>请检�?JSON 文本�?</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3586,9 +3564,7 @@ Error:
 To edit an existing index, the index must be dropped and recreated. This means if the recreate step fails, the index being edited might have already been dropped. In this case, Robo 3T will try to recover (recreate) the index being edited. Please consider backing up your index first. 
 
 Are you sure you want to proceed?</source>
-        <translation>MongoDB 不支持直接（一步到位）编辑索引。
-要编辑现有索引，必须先删除索引然后重新创建。这意味着如果重建步骤失败，正在编辑的索引可能已被删除。在这种情况下，Robo 3T 将尝试恢复（重新创建）正在编辑的索引。请考虑先备份您的索引。
-
+        <translation>MongoDB 不支持直接（一步到位）编辑索引�?要编辑现有索引，必须先删除索引然后重新创建。这意味着如果重建步骤失败，正在编辑的索引可能已被删除。在这种情况下，Robo 3T 将尝试恢复（重新创建）正在编辑的索引。请考虑先备份您的索引�?
 您确定要继续吗？</translation>
     </message>
 </context>
@@ -3596,15 +3572,15 @@ Are you sure you want to proceed?</source>
     <name>Robomongo::ExplorerReplicaSetTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>开启 Shell</translation>
+        <translation>开�?Shell</translation>
     </message>
     <message>
         <source>Open Direct Connection</source>
-        <translation>开启直接连接</translation>
+        <translation>开启直接连�?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状态</translation>
+        <translation>服务器状�?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -3647,7 +3623,7 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>(truncated) </source>
-        <translation>(已截断) </translation>
+        <translation>(已截�? </translation>
     </message>
 </context>
 <context>
@@ -3697,7 +3673,7 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=\&quot;https://%6\&quot;&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (构建版本 %3 - %4/%5)&lt;/h3&gt;以 Shell 为核心的 MongoDB 管理工具。&lt;br/&gt;您可以在 GitHub 上&lt;a href=\&quot;https://%6\&quot;&gt;提交&lt;/a&gt;问题或建议。&lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所有 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利。&lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性或特定用途适用性的担保。&lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项目：&lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;致谢：&lt;br/&gt;&lt;/b&gt;部分图标由 Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (构建版本 %3 - %4/%5)&lt;/h3&gt;�?Shell 为核心的 MongoDB 管理工具�?lt;br/&gt;您可以在 GitHub �?lt;a href=\&quot;https://%6\&quot;&gt;提交&lt;/a&gt;问题或建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性或特定用途适用性的担保�?lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项目�?lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;致谢�?lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -3716,7 +3692,7 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>删除所有文档...</translation>
+        <translation>删除所有文�?..</translation>
     </message>
     <message>
         <source>Statistics</source>
@@ -3728,11 +3704,11 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大小</translation>
+        <translation>索引总大�?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大小</translation>
+        <translation>总大�?/translation>
     </message>
     <message>
         <source>Shard Version</source>
@@ -3748,7 +3724,7 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集合...</translation>
+        <translation>重命名集�?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
@@ -3767,10 +3743,8 @@ Are you sure you want to proceed?</source>
 
 Error:
 </source>
-        <translation>无法加载索引列表。
-
-错误：
-</translation>
+        <translation>无法加载索引列表�?
+错误�?</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3790,19 +3764,19 @@ Error:
     </message>
     <message>
         <source>Failed to %1 index &quot;%2&quot;</source>
-        <translation>无法%1索引“%2”</translation>
+        <translation>无法%1索引�?2�?/translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>错误：%1</translation>
+        <translation>错误�?1</translation>
     </message>
     <message>
         <source>Failed to drop index &quot;%1&quot;</source>
-        <translation>删除索引“%1”失败</translation>
+        <translation>删除索引�?1”失�?/translation>
     </message>
     <message>
         <source>Reason: </source>
-        <translation>原因： </translation>
+        <translation>原因�?</translation>
     </message>
     <message>
         <source>Insert Document</source>
@@ -3810,11 +3784,11 @@ Error:
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>删除所有文档</translation>
+        <translation>删除所有文�?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>您确定要删除集合 &lt;b&gt;%1&lt;/b&gt; 中的所有文档吗？</translation>
+        <translation>您确定要删除集合 &lt;b&gt;%1&lt;/b&gt; 中的所有文档吗�?/translation>
     </message>
     <message>
         <source>Drop</source>
@@ -3838,11 +3812,11 @@ Error:
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集合</translation>
+        <translation>重命名集�?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命名(&amp;R)</translation>
+        <translation>重命�?&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -3857,7 +3831,7 @@ Error:
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称：</translation>
+        <translation>集合名称�?/translation>
     </message>
     <message>
         <source>Server: </source>
@@ -3869,7 +3843,7 @@ Error:
     </message>
     <message>
         <source>Collection: </source>
-        <translation>集合： </translation>
+        <translation>集合�?</translation>
     </message>
     <message>
         <source>JSON</source>
@@ -3881,15 +3855,15 @@ Error:
     </message>
     <message>
         <source>Fields:</source>
-        <translation>字段：</translation>
+        <translation>字段�?/translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation>格式：</translation>
+        <translation>格式�?/translation>
     </message>
     <message>
         <source>Query:</source>
-        <translation>查询 (Query)：</translation>
+        <translation>查询 (Query)�?/translation>
     </message>
     <message>
         <source>File Name:</source>
@@ -3897,11 +3871,11 @@ Error:
     </message>
     <message>
         <source>Directory:</source>
-        <translation>目录：</translation>
+        <translation>目录�?/translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>命令：</translation>
+        <translation>命令�?/translation>
     </message>
     <message>
         <source>Manual Mode</source>
@@ -3913,11 +3887,11 @@ Error:
     </message>
     <message>
         <source>Selected Collection</source>
-        <translation>选中的集合</translation>
+        <translation>选中的集�?/translation>
     </message>
     <message>
         <source>Output Properties</source>
-        <translation>输出属性</translation>
+        <translation>输出属�?/translation>
     </message>
     <message>
         <source>Manual Export</source>
@@ -3937,7 +3911,7 @@ Error:
     </message>
     <message>
         <source>&quot;Fields&quot; option is required in CSV mode.</source>
-        <translation>CSV 模式下必须提供“字段”选项。</translation>
+        <translation>CSV 模式下必须提供“字段”选项�?/translation>
     </message>
     <message>
         <source>Select Directory</source>
@@ -3954,8 +3928,7 @@ Error:
     <message>
         <source>Export Successful: 
 </source>
-        <translation>导出成功：
-</translation>
+        <translation>导出成功�?</translation>
     </message>
     <message>
         <source>Exported file: </source>
@@ -3968,22 +3941,20 @@ Error:
     <message>
         <source>Export Failed.
 </source>
-        <translation>导出失败。
-</translation>
+        <translation>导出失败�?</translation>
     </message>
     <message>
         <source>Output:
 </source>
-        <translation>输出：
-</translation>
+        <translation>输出�?</translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed to start. Either the invoked program is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>错误：“mongoexport”进程启动失败。可能是程序文件缺失，或者您没有足够的执行权限。</translation>
+        <translation>错误：“mongoexport”进程启动失败。可能是程序文件缺失，或者您没有足够的执行权限�?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process crashed some time after starting successfully..</source>
-        <translation>错误：“mongoexport”进程在启动后意外崩溃。</translation>
+        <translation>错误：“mongoexport”进程在启动后意外崩溃�?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed. Error code: </source>
@@ -3998,23 +3969,23 @@ Error:
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用于 WiredTiger 存储引擎且数据库版本需为 3.0 或更高。</translation>
+        <translation>该选项仅适用�?WiredTiger 存储引擎且数据库版本需�?3.0 或更高�?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>该选项仅适用于数据库版本 3.2 或更高。</translation>
+        <translation>该选项仅适用于数据库版本 3.2 或更高�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用于 MMAPv1 存储引擎且数据库版本需为 3.0 或更高。</translation>
+        <translation>该选项仅适用�?MMAPv1 存储引擎且数据库版本需�?3.0 或更高�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>该选项仅适用于 MMAPv1 存储引擎，并自 3.0 版本起已弃用。</translation>
+        <translation>该选项仅适用�?MMAPv1 存储引擎，并�?3.0 版本起已弃用�?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>该选项自数据库版本 3.2 起已弃用。</translation>
+        <translation>该选项自数据库版本 3.2 起已弃用�?/translation>
     </message>
     <message>
         <source>Create Collection</source>
@@ -4022,7 +3993,7 @@ Error:
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称：</translation>
+        <translation>集合名称�?/translation>
     </message>
     <message>
         <source>C&amp;reate</source>
@@ -4042,11 +4013,11 @@ Error:
     </message>
     <message>
         <source>Validator</source>
-        <translation>验证器</translation>
+        <translation>验证�?/translation>
     </message>
     <message>
         <source>Index Option Defaults</source>
-        <translation>索引选项默认值</translation>
+        <translation>索引选项默认�?/translation>
     </message>
     <message>
         <source>Advanced</source>
@@ -4058,7 +4029,7 @@ Error:
     </message>
     <message>
         <source>Maximum size in bytes: </source>
-        <translation>最大容量 (字节)： </translation>
+        <translation>最大容�?(字节)�?</translation>
     </message>
     <message>
         <source>Maximum number of documents: </source>
@@ -4066,15 +4037,15 @@ Error:
     </message>
     <message>
         <source>Auto index _id</source>
-        <translation>自动为 _id 创建索引</translation>
+        <translation>自动�?_id 创建索引</translation>
     </message>
     <message>
         <source>Use power-of-2 sizes</source>
-        <translation>使用 2 的幂次大小空间</translation>
+        <translation>使用 2 的幂次大小空�?/translation>
     </message>
     <message>
         <source>No Padding</source>
-        <translation>无填充 (No Padding)</translation>
+        <translation>无填�?(No Padding)</translation>
     </message>
     <message>
         <source>Enter the configuration for the storage engine: </source>
@@ -4082,23 +4053,23 @@ Error:
     </message>
     <message>
         <source>Validation Level: </source>
-        <translation>验证级别： </translation>
+        <translation>验证级别�?</translation>
     </message>
     <message>
         <source>Validation Action: </source>
-        <translation>验证动作： </translation>
+        <translation>验证动作�?</translation>
     </message>
     <message>
         <source>Enter the validator document for this collection: </source>
-        <translation>输入此集合的验证文档： </translation>
+        <translation>输入此集合的验证文档�?</translation>
     </message>
     <message>
         <source>Enter a default configuration for indexes when creating a collection: </source>
-        <translation>输入创建集合时的索引默认配置： </translation>
+        <translation>输入创建集合时的索引默认配置�?</translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON：&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于 (%2, %3)。</translation>
+        <translation>无法解析 JSON�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位�?(%2, %3)�?/translation>
     </message>
     <message>
         <source>Parsing error</source>
@@ -4110,11 +4081,11 @@ Error:
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效！</translation>
+        <translation>JSON 格式有效�?/translation>
     </message>
     <message>
         <source>Maximum size is required for capped collections</source>
-        <translation>上限集合必须设置最大容量</translation>
+        <translation>上限集合必须设置最大容�?/translation>
     </message>
 </context>
 <context>
@@ -4125,15 +4096,15 @@ Error:
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称：</translation>
+        <translation>名称�?/translation>
     </message>
     <message>
         <source>Password:</source>
-        <translation>密码：</translation>
+        <translation>密码�?/translation>
     </message>
     <message>
         <source>UserSource:</source>
-        <translation>用户源 (UserSource)：</translation>
+        <translation>用户�?(UserSource)�?/translation>
     </message>
     <message>
         <source>read</source>
@@ -4145,7 +4116,7 @@ Error:
     </message>
     <message>
         <source>dbAdmin</source>
-        <translation>数据库管理 (dbAdmin)</translation>
+        <translation>数据库管�?(dbAdmin)</translation>
     </message>
     <message>
         <source>userAdmin</source>
@@ -4157,15 +4128,15 @@ Error:
     </message>
     <message>
         <source>readAnyDatabase</source>
-        <translation>读取任意数据库 (readAnyDatabase)</translation>
+        <translation>读取任意数据�?(readAnyDatabase)</translation>
     </message>
     <message>
         <source>readWriteAnyDatabase</source>
-        <translation>读写任意数据库 (readWriteAnyDatabase)</translation>
+        <translation>读写任意数据�?(readWriteAnyDatabase)</translation>
     </message>
     <message>
         <source>userAdminAnyDatabase</source>
-        <translation>用户管理任意数据库 (userAdminAnyDatabase)</translation>
+        <translation>用户管理任意数据�?(userAdminAnyDatabase)</translation>
     </message>
     <message>
         <source>dbAdminAnyDatabase</source>
@@ -4181,8 +4152,7 @@ Error:
     <message>
         <source>Enter new value for Robo 3T shell timeout in seconds:
 </source>
-        <translation>输入 Robo 3T 的新 Shell 超时时间 (以秒为单位)：
-</translation>
+        <translation>输入 Robo 3T 的新 Shell 超时时间 (以秒为单�?�?</translation>
     </message>
     <message>
         <source>Current Value: </source>
@@ -4205,7 +4175,7 @@ Error:
     </message>
     <message>
         <source>Default display mode:</source>
-        <translation>默认显示模式：</translation>
+        <translation>默认显示模式�?/translation>
     </message>
     <message>
         <source>Text</source>
@@ -4221,11 +4191,11 @@ Error:
     </message>
     <message>
         <source>Custom</source>
-        <translation>自定义</translation>
+        <translation>自定�?/translation>
     </message>
     <message>
         <source>Display Dates in:</source>
-        <translation>日期显示方式：</translation>
+        <translation>日期显示方式�?/translation>
     </message>
     <message>
         <source>UTC</source>
@@ -4237,7 +4207,7 @@ Error:
     </message>
     <message>
         <source>Legacy UUID Encoding:</source>
-        <translation>旧版 UUID 编码：</translation>
+        <translation>旧版 UUID 编码�?/translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
@@ -4245,11 +4215,11 @@ Error:
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷键</translation>
+        <translation>禁用连接快捷�?/translation>
     </message>
     <message>
         <source>Styles:</source>
-        <translation>界面样式：</translation>
+        <translation>界面样式�?/translation>
     </message>
 </context>
 <context>
@@ -4307,11 +4277,11 @@ Error:
     </message>
     <message>
         <source>Connected to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>已连接到 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>已连接到 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Unable to connect to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>无法连接到 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>无法连接�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source> via SSH tunnel</source>
@@ -4323,7 +4293,7 @@ Error:
     </message>
     <message>
         <source>Connecting to &lt;b&gt;%1&lt;/b&gt;%2...</source>
-        <translation>正在连接到 &lt;b&gt;%1&lt;/b&gt;%2...</translation>
+        <translation>正在连接�?&lt;b&gt;%1&lt;/b&gt;%2...</translation>
     </message>
     <message>
         <source>Connected to &lt;b&gt;%1&lt;/b&gt;%2</source>
@@ -4331,39 +4301,39 @@ Error:
     </message>
     <message>
         <source>Failed to connect to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>连接到 &lt;b&gt;%1&lt;/b&gt;%2 失败</translation>
+        <translation>连接�?&lt;b&gt;%1&lt;/b&gt;%2 失败</translation>
     </message>
     <message>
         <source>No chance to try connection to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>由于前置步骤失败，未尝试连接到 &lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>由于前置步骤失败，未尝试连接�?&lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Authorizing on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;...</source>
-        <translation>正在以用户 &lt;b&gt;%2&lt;/b&gt; 身份在 &lt;b&gt;%1&lt;/b&gt; 数据库进行验证...</translation>
+        <translation>正在以用�?&lt;b&gt;%2&lt;/b&gt; 身份�?&lt;b&gt;%1&lt;/b&gt; 数据库进行验�?..</translation>
     </message>
     <message>
         <source>Authorized on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>身份验证成功：用户 &lt;b&gt;%2&lt;/b&gt; 已登录数据库 &lt;b&gt;%1&lt;/b&gt;</translation>
+        <translation>身份验证成功：用�?&lt;b&gt;%2&lt;/b&gt; 已登录数据库 &lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Authorization failed on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>身份验证失败：用户 &lt;b&gt;%2&lt;/b&gt; 无法登录数据库 &lt;b&gt;%1&lt;/b&gt;</translation>
+        <translation>身份验证失败：用�?&lt;b&gt;%2&lt;/b&gt; 无法登录数据�?&lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
         <source>No chance to authorize</source>
-        <translation>未尝试身份验证 (因连接失败)</translation>
+        <translation>未尝试身份验�?(因连接失�?</translation>
     </message>
     <message>
         <source>Loading list of databases...</source>
-        <translation>正在加载数据库列表...</translation>
+        <translation>正在加载数据库列�?..</translation>
     </message>
     <message>
         <source>Access to databases is available</source>
-        <translation>可以访问数据库列表</translation>
+        <translation>可以访问数据库列�?/translation>
     </message>
     <message>
         <source>Failed to load list of databases</source>
-        <translation>加载数据库列表失败</translation>
+        <translation>加载数据库列表失�?/translation>
     </message>
     <message>
         <source>No chance to load list of databases</source>
@@ -4378,7 +4348,7 @@ Error:
     </message>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=\&quot;https://%6\&quot;&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (构建版本 %3 - %4/%5)&lt;/h3&gt;以 Shell 为核心的 MongoDB 管理工具。&lt;br/&gt;您可以在 GitHub 上&lt;a href=\&quot;https://%6\&quot;&gt;提交&lt;/a&gt;问题或建议。&lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所有 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利。&lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性或特定用途适用性的担保。&lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项目：&lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;致谢：&lt;br/&gt;&lt;/b&gt;部分图标由 Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (构建版本 %3 - %4/%5)&lt;/h3&gt;�?Shell 为核心的 MongoDB 管理工具�?lt;br/&gt;您可以在 GitHub �?lt;a href=\&quot;https://%6\&quot;&gt;提交&lt;/a&gt;问题或建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性或特定用途适用性的担保�?lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项目�?lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;致谢�?lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
     <message>
         <source>About</source>
@@ -4405,7 +4375,7 @@ Error:
     </message>
     <message>
         <source>Copy &lt;b&gt;%1&lt;/b&gt; collection to database on this or another server. You need to be already connected to destination server, in order to see this server in the list below. This operation will &lt;i&gt;not&lt;/i&gt; overwrite existing documents with the same _id.</source>
-        <translation>将集合 &lt;b&gt;%1&lt;/b&gt; 复制到当前服务器或其他服务器的数据库。您需要先连接到目标服务器，才能在下方列表中看到它。此操作&lt;i&gt;不会&lt;/i&gt;覆盖具有相同 _id 的现有文档。</translation>
+        <translation>将集�?&lt;b&gt;%1&lt;/b&gt; 复制到当前服务器或其他服务器的数据库。您需要先连接到目标服务器，才能在下方列表中看到它。此操作&lt;i&gt;不会&lt;/i&gt;覆盖具有相同 _id 的现有文档�?/translation>
     </message>
     <message>
         <source>Select database:</source>
@@ -4420,11 +4390,11 @@ Error:
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称：</translation>
+        <translation>名称�?/translation>
     </message>
     <message>
         <source>Code:</source>
-        <translation>代码：</translation>
+        <translation>代码�?/translation>
     </message>
 </context>
 <context>
@@ -4444,7 +4414,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✓&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -4452,20 +4422,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制版 v1.5.0 - 标准发行版&lt;/div&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化的 Robo 3T 版本。我们移除了多余的干扰并修复了核心底层，只为让您更专注地管理数据。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们移除了多余的干扰并修复了核心底层，只为让您更专注地管理数据�?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 集成了稳定的 OpenSSL 1.1.1u 工具包。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携：&lt;/strong&gt; 所有依赖现已内部打包，实现真正的“零安装”体验。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及内存泄漏�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt; 所有依赖现已内部打包，实现真正的“零安装”体验�?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        &quot;您的数据，由您掌控。感谢支持社区版。&quot;
+                        &quot;您的数据，由您掌控。感谢支持社区版�?quot;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
@@ -4485,7 +4455,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✓&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -4493,20 +4463,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制版 v1.5.0 - 标准发行版&lt;/div&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化的 Robo 3T 版本。我们移除了多余的干扰并修复了核心底层，只为让您更专注地管理数据。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们移除了多余的干扰并修复了核心底层，只为让您更专注地管理数据�?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 集成了稳定的 OpenSSL 1.1.1u 工具包。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携：&lt;/strong&gt; 所有依赖现已内部打包，实现真正的“零安装”体验。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及内存泄漏�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt; 所有依赖现已内部打包，实现真正的“零安装”体验�?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        &quot;您的数据，由您掌控。感谢支持社区版。&quot;
+                        &quot;您的数据，由您掌控。感谢支持社区版�?quot;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
@@ -4519,7 +4489,7 @@ Error:
     &lt;/message&gt;
     &lt;message&gt;
         &lt;source&gt;All Blog Posts&lt;/source&gt;
-        &lt;translation&gt;所有博客文章&lt;/translation&gt;
+        &lt;translation&gt;所有博客文�?lt;/translation&gt;
     </message>
 </context>
 <context>
@@ -4545,11 +4515,11 @@ Error:
     </message>
     <message>
         <source>Create Database</source>
-        <translation>新建数据库</translation>
+        <translation>新建数据�?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>查看服务器状态 (serverStatus)</translation>
+        <translation>查看服务器状�?(serverStatus)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -4576,10 +4546,8 @@ Error:
 
 Error:
 </source>
-        <translation>无法加载数据库列表。
-
-错误信息：
-</translation>
+        <translation>无法加载数据库列表�?
+错误信息�?</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4590,10 +4558,8 @@ Error:
 
 Reason:
 Connection failure. </source>
-        <translation>副本集的主节点 (Primary) 不可达。
-
-原因：
-连接失败。 </translation>
+        <translation>副本集的主节�?(Primary) 不可达�?
+原因�?连接失败�?</translation>
     </message>
     <message>
         <source> [Offline]</source>
@@ -4612,15 +4578,15 @@ Connection failure. </source>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source> nodes</source>
-        <translation> 个节点</translation>
+        <translation> 个节�?/translation>
     </message>
     <message>
         <source> node</source>
-        <translation> 个节点</translation>
+        <translation> 个节�?/translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本集 (Replica Set)</translation>
+        <translation>副本�?(Replica Set)</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -4668,11 +4634,11 @@ Connection failure. </source>
     </message>
     <message>
         <source>Attributes</source>
-        <translation>属性</translation>
+        <translation>属�?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>验证数据库 / 用户</translation>
+        <translation>验证数据�?/ 用户</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
@@ -4680,23 +4646,23 @@ Connection failure. </source>
     </message>
     <message>
         <source>records</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>&lt;span style=&apos;color: #777777;&apos;&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导入 (共 %1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导�?(�?%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;Create&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;edit&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;remove&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;clone&lt;/a&gt; or reorder connections via drag&apos;n&apos;drop.</source>
-        <translation>通过拖放来&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;新建&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;移除&lt;/a&gt;、&lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;或重排连接。</translation>
+        <translation>通过拖放�?lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;新建&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;移除&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;或重排连接�?/translation>
     </message>
     <message>
         <source>Are you sure you want to delete &quot;%1&quot; connection?</source>
-        <translation>您确定要删除连接“%1”吗？</translation>
+        <translation>您确定要删除连接�?1”吗�?/translation>
     </message>
     <message>
         <source>Connections</source>
@@ -4715,11 +4681,11 @@ Connection failure. </source>
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的。&lt;/nobr&gt; 拥有 admin 数据库普通访问权限的用户，通常对&lt;b&gt;所有数据库&lt;/b&gt;均拥有读写权限。</translation>
+        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 拥有 admin 数据库普通访问权限的用户，通常�?lt;b&gt;所有数据库&lt;/b&gt;均拥有读写权限�?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户名</translation>
+        <translation>用户�?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
@@ -4731,7 +4697,7 @@ Connection failure. </source>
     </message>
     <message>
         <source>Database</source>
-        <translation>数据库</translation>
+        <translation>数据�?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
@@ -4739,11 +4705,11 @@ Connection failure. </source>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库列表</translation>
+        <translation>数据库列�?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有权限获取数据库列表 (执行 &lt;b&gt;listDatabases&lt;/b&gt; 命令)。在这种情况下，请手动添加该用户有权访问的数据库名称。</translation>
+        <translation>某些 MongoDB 用户可能没有权限获取数据库列�?(执行 &lt;b&gt;listDatabases&lt;/b&gt; 命令)。在这种情况下，请手动添加该用户有权访问的数据库名称�?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
@@ -4767,12 +4733,11 @@ Connection failure. </source>
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>该文档已被修改。
-您要保存更改吗？</translation>
+        <translation>该文档已被修改�?您要保存更改吗？</translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON 数据：&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于第 %2 行、第 %3 列。</translation>
+        <translation>无法解析 JSON 数据�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于第 %2 行、第 %3 列�?/translation>
     </message>
     <message>
         <source>Parsing error</source>
@@ -4784,7 +4749,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效！</translation>
+        <translation>JSON 格式有效�?/translation>
     </message>
 </context>
 <context>
@@ -4795,7 +4760,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Load script from the file to the currently opened shell &lt;b&gt;(%1 + O)&lt;/b&gt;</source>
-        <translation>从文件加载脚本到当前打开的 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
+        <translation>从文件加载脚本到当前打开�?Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Save</source>
@@ -4803,15 +4768,15 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当前 Shell 的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>将当�?Shell 的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存为(&amp;A)...</translation>
+        <translation>另存�?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退出(&amp;E)</translation>
+        <translation>退�?&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
@@ -4823,11 +4788,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托盘</translation>
+        <translation>最小化到托�?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>退�?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
@@ -4835,7 +4800,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换结果视图的排列方向 &lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>切换结果视图的排列方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
@@ -4843,7 +4808,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Show current tab in text mode, and make this mode default for all subsequent queries &lt;b&gt;(F4)&lt;/b&gt;</source>
-        <translation>在文本模式下显示当前选项卡，并将此模式设为后续查询的默认值 &lt;b&gt;(F4)&lt;/b&gt;</translation>
+        <translation>在文本模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F4)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Tree Mode</source>
@@ -4851,7 +4816,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Show current tab in tree mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>在树形模式下显示当前选项卡，并将此模式设为后续查询的默认值 &lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>在树形模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>T&amp;able Mode</source>
@@ -4859,19 +4824,19 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Show current tab in table mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>在表格模式下显示当前选项卡，并将此模式设为后续查询的默认值 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>在表格模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模式(&amp;C)</translation>
+        <translation>自定义模�?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
-        <translation>如果可能，在自定义模式下显示当前选项卡，并将此模式设为后续查询的默认值 &lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>如果可能，在自定义模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前选项卡的查询。如果选中了部分脚本，则仅执行选中部分 &lt;b&gt;(F5 &lt;/b&gt; 或 &lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>执行当前选项卡的查询。如果选中了部分脚本，则仅执行选中部分 &lt;b&gt;(F5 &lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
@@ -4891,7 +4856,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具栏</translation>
+        <translation>工具�?/translation>
     </message>
     <message>
         <source>Options</source>
@@ -4907,7 +4872,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解码 (原样显示)</translation>
+        <translation>不解�?(原样显示)</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
@@ -4931,7 +4896,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>All (Except Collection Names)</source>
-        <translation>全量补全 (不包括集合名称)</translation>
+        <translation>全量补全 (不包括集合名�?</translation>
     </message>
     <message>
         <source>None</source>
@@ -4947,7 +4912,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文档</translation>
+        <translation>自动展开第一个文�?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
@@ -4955,7 +4920,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷键</translation>
+        <translation>禁用连接快捷�?/translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
@@ -4963,11 +4928,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>关闭按钮应最小化到系统托盘</translation>
+        <translation>关闭按钮应最小化到系统托�?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更新</translation>
+        <translation>检查更�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
@@ -4987,11 +4952,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择下一个选项卡</translation>
+        <translation>选择下一个选项�?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择上一个选项卡</translation>
+        <translation>选择上一个选项�?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
@@ -5007,7 +4972,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>打开/刷新欢迎页</translation>
+        <translation>打开/刷新欢迎�?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
@@ -5019,19 +4984,19 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具栏</translation>
+        <translation>连接工具�?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存工具栏</translation>
+        <translation>打开/保存工具�?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具栏</translation>
+        <translation>执行工具�?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新提示工具栏</translation>
+        <translation>更新提示工具�?/translation>
     </message>
     <message>
         <source>Robo 3T - </source>
@@ -5054,7 +5019,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>查看数据库统计 (db.stats)</translation>
+        <translation>查看数据库统�?(db.stats)</translation>
     </message>
     <message>
         <source>Current Operations</source>
@@ -5066,11 +5031,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据库 (Drop)...</translation>
+        <translation>删除数据�?(Drop)...</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据库 (Repair)...</translation>
+        <translation>修复数据�?(Repair)...</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -5098,7 +5063,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据库</translation>
+        <translation>删除数据�?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
@@ -5106,7 +5071,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据库</translation>
+        <translation>修复数据�?/translation>
     </message>
 </context>
 <context>
@@ -5159,7 +5124,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>复本集 (Replica Set)</translation>
+        <translation>复本�?(Replica Set)</translation>
     </message>
     <message>
         <source>Name:</source>
@@ -5167,7 +5132,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>请输入任何方便您识别此连接的名称。</translation>
+        <translation>请输入任何方便您识别此连接的名称�?/translation>
     </message>
     <message>
         <source>Address:</source>
@@ -5175,7 +5140,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>请指定 MongoDB 服务器的主机名和端口。主机名可以是 IPv4、IPv6 或域名。</translation>
+        <translation>请指�?MongoDB 服务器的主机名和端口。主机名可以�?IPv4、IPv6 或域名�?/translation>
     </message>
     <message>
         <source>Members:</source>
@@ -5187,11 +5152,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>从 MongoDB URI 连接字符串导入详细信息</translation>
+        <translation>�?MongoDB URI 连接字符串导入详细信�?/translation>
     </message>
     <message>
         <source>From URI</source>
-        <translation>从 URI 获取</translation>
+        <translation>�?URI 获取</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5199,15 +5164,15 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>复本集成组成员不能为空。请至少输入一个成员地址。</translation>
+        <translation>复本集成组成员不能为空。请至少输入一个成员地址�?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain ':' between hostname and port.</source>
-        <translation>复本集成组成员项必须在主机名和端口之间包含冒号“:”。</translation>
+        <translation>复本集成组成员项必须在主机名和端口之间包含冒号�?”�?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请删除重复的成员，两个复本集成组成员不能拥有相同的主机名和端口。</translation>
+        <translation>请删除重复的成员，两个复本集成组成员不能拥有相同的主机名和端口�?/translation>
     </message>
     <message>
         <source>New Connection</source>
@@ -5224,19 +5189,19 @@ Do you want to save your changes?</source>
     <name>Robomongo::MongoServer</name>
     <message>
         <source>document.</source>
-        <translation>文档。</translation>
+        <translation>文档�?/translation>
     </message>
     <message>
         <source>documents.</source>
-        <translation>个文档。</translation>
+        <translation>个文档�?/translation>
     </message>
     <message>
         <source>all documents.</source>
-        <translation>所有文档。</translation>
+        <translation>所有文档�?/translation>
     </message>
     <message>
         <source>(logic error).</source>
-        <translation>(逻辑错误)。</translation>
+        <translation>(逻辑错误)�?/translation>
     </message>
     <message>
         <source>Failed to remove </source>
@@ -5244,7 +5209,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Removed </source>
-        <translation>已删除: </translation>
+        <translation>已删�? </translation>
     </message>
     <message>
         <source>Cannot connect to replica set "%1"</source>
@@ -5253,8 +5218,7 @@ Do you want to save your changes?</source>
     <message>
         <source>. 
 A primary with different host name [%1] found in server side. </source>
-        <translation>。
-在服务端发现了一个具有不同主机名 [%1] 的 Primary 节点。</translation>
+        <translation>�?在服务端发现了一个具有不同主机名 [%1] �?Primary 节点�?/translation>
     </message>
     <message>
         <source>Please double check if same host names and ports are used as in server's replica set configuration. 
@@ -5262,9 +5226,7 @@ If same set name is used for different replica sets, this configuration is suppo
 
 Reason:
 </source>
-        <translation>请仔细检查是否使用了与服务端复本集配置相同的主机名和端口。
-如果不同的复本集使用了相同的集名(Set Name)，则仅在运行多个 Robo 3T 实例时才支持此类配置。请为每个具有相同集名的复本集开启一个新的 Robo 3T 窗口。
-
+        <translation>请仔细检查是否使用了与服务端复本集配置相同的主机名和端口�?如果不同的复本集使用了相同的集名(Set Name)，则仅在运行多个 Robo 3T 实例时才支持此类配置。请为每个具有相同集名的复本集开启一个新�?Robo 3T 窗口�?
 原因:
 </translation>
     </message>
@@ -5274,9 +5236,7 @@ Set's primary is unreachable.
 
 Reason:
 </source>
-        <translation>。
-该复本集的 Primary 节点不可达。
-
+        <translation>�?该复本集�?Primary 节点不可达�?
 原因:
 </translation>
     </message>
@@ -5285,8 +5245,7 @@ Reason:
 
 Error:
 TLS connection failure: </source>
-        <translation>无法连接到位于 %1 的 MongoDB。
-
+        <translation>无法连接到位�?%1 �?MongoDB�?
 错误:
 TLS 连接失败: </translation>
     </message>
@@ -5295,8 +5254,7 @@ TLS 连接失败: </translation>
 
 Error:
 </source>
-        <translation>无法连接到位于 %1 的 MongoDB。
-
+        <translation>无法连接到位�?%1 �?MongoDB�?
 错误:
 </translation>
     </message>
@@ -5317,7 +5275,7 @@ Error:
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>清空所有文档...</translation>
+        <translation>清空所有文�?..</translation>
     </message>
     <message>
         <source>Statistics</source>
@@ -5329,11 +5287,11 @@ Error:
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大小</translation>
+        <translation>索引总大�?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大小</translation>
+        <translation>总大�?/translation>
     </message>
     <message>
         <source>Shard Version</source>
@@ -5349,7 +5307,7 @@ Error:
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集合...</translation>
+        <translation>重命名集�?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
@@ -5368,8 +5326,7 @@ Error:
 
 Error:
 </source>
-        <translation>无法加载索引列表。
-
+        <translation>无法加载索引列表�?
 错误:
 </translation>
     </message>
@@ -5411,11 +5368,11 @@ Error:
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>清空所有文档</translation>
+        <translation>清空所有文�?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>确定要清空集合 &lt;b&gt;%1&lt;/b&gt; 中的所有文档吗？</translation>
+        <translation>确定要清空集�?&lt;b&gt;%1&lt;/b&gt; 中的所有文档吗�?/translation>
     </message>
     <message>
         <source>Drop</source>
@@ -5435,15 +5392,15 @@ Error:
     </message>
     <message>
         <source>New Collection Name:</source>
-        <translation>新集合名称:</translation>
+        <translation>新集合名�?</translation>
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集合</translation>
+        <translation>重命名集�?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命名(&amp;R)</translation>
+        <translation>重命�?&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -5453,8 +5410,7 @@ Error:
 
 Error:
 %1</source>
-        <translation>加载文档失败。
-
+        <translation>加载文档失败�?
 错误:
 %1</translation>
     </message>
@@ -5472,8 +5428,7 @@ Error:
         <source>Failed to execute script.
 
 </source>
-        <translation>脚本执行失败。
-
+        <translation>脚本执行失败�?
 </translation>
     </message>
     <message>
@@ -5482,23 +5437,23 @@ Error:
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达到 Shell 执行超时上限</translation>
+        <translation>脚本已达�?Shell 执行超时上限</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>未能执行所有脚本。 </translation>
+        <translation>未能执行所有脚本�?</translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制。 </translation>
+        <translation> 限制�?</translation>
     </message>
     <message>
         <source>
@@ -5506,7 +5461,7 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu "Options-&gt;Change Shell Timeout".</source>
         <translation>
 
-请使用下方按钮或通过主窗口菜单“选项-&gt;更改 Shell 超时”来增加超时时长。</translation>
+请使用下方按钮或通过主窗口菜单“选项-&gt;更改 Shell 超时”来增加超时时长�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
@@ -5518,7 +5473,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果。</translation>
+        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
     </message>
 </context>
 <context>
@@ -5529,11 +5484,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的。&lt;/nobr&gt;拥有 admin 数据库常规访问权限的用户，将自动获得对&lt;b&gt;所有数据库&lt;/b&gt;的读写权限。</translation>
+        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt;拥有 admin 数据库常规访问权限的用户，将自动获得�?lt;b&gt;所有数据库&lt;/b&gt;的读写权限�?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户名</translation>
+        <translation>用户�?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
@@ -5545,7 +5500,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Database</source>
-        <translation>数据库</translation>
+        <translation>数据�?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
@@ -5553,11 +5508,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库</translation>
+        <translation>数据�?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有获取数据库列表的权限（未授权 &lt;b&gt;listDatabases&lt;/b&gt; 命令）。在这种情况下，请手动输入该用户有权访问的数据库名称。</translation>
+        <translation>某些 MongoDB 用户可能没有获取数据库列表的权限（未授权 &lt;b&gt;listDatabases&lt;/b&gt; 命令）。在这种情况下，请手动输入该用户有权访问的数据库名称�?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
@@ -5568,11 +5523,11 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>EULA</source>
-        <translation>最终用户许可协议 (EULA)</translation>
+        <translation>最终用户许可协�?(EULA)</translation>
     </message>
     <message>
         <source>I agree</source>
-        <translation>我同意</translation>
+        <translation>我同�?/translation>
     </message>
     <message>
         <source>I don't agree</source>
@@ -5580,15 +5535,15 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>&lt;h3&gt;End-User License Agreement&lt;/h3&gt;</source>
-        <translation>&lt;h3&gt;最终用户许可协议&lt;/h3&gt;</translation>
+        <translation>&lt;h3&gt;最终用户许可协�?lt;/h3&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;First Name:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;名:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;�?&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Last Name:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;姓:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;�?&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Email:&lt;/b&gt;</source>
@@ -5596,17 +5551,17 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>By submitting this form I agree to 3T Software Labs &lt;a href='https://studio3t.com/privacy-policy'&gt;Privacy Policy&lt;/a&gt;.</source>
-        <translation>提交此表单即表示我同意 3T Software Labs 的&lt;a href='https://studio3t.com/privacy-policy'&gt;隐私政策&lt;/a&gt;。</translation>
+        <translation>提交此表单即表示我同�?3T Software Labs �?lt;a href='https://studio3t.com/privacy-policy'&gt;隐私政策&lt;/a&gt;�?/translation>
     </message>
     <message>
         <source>
 Share your email address with us and we'll keep you up-to-date with updates from us and new features as they come out.</source>
         <translation>
-向我们提供您的电子邮箱地址，我们将为您提供最新的功能更新和版本咨询。</translation>
+向我们提供您的电子邮箱地址，我们将为您提供最新的功能更新和版本咨询�?/translation>
     </message>
     <message>
         <source>&lt;h3&gt;Thank you for choosing Robo 3T!&lt;/h3&gt;</source>
-        <translation>&lt;h3&gt;感谢您选择 Robo 3T！&lt;/h3&gt;</translation>
+        <translation>&lt;h3&gt;感谢您选择 Robo 3T�?lt;/h3&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Phone: &lt;/b&gt;</source>
@@ -5618,11 +5573,11 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Back</source>
-        <translation>上一步</translation>
+        <translation>上一�?/translation>
     </message>
     <message>
         <source>Next</source>
-        <translation>下一步</translation>
+        <translation>下一�?/translation>
     </message>
     <message>
         <source>Finish</source>
@@ -5649,11 +5604,11 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存为(&amp;A)...</translation>
+        <translation>另存�?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退出(&amp;E)</translation>
+        <translation>退�?&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
@@ -5665,11 +5620,11 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托盘</translation>
+        <translation>最小化到托�?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>退�?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
@@ -5677,7 +5632,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换结果视图的排列方向 &lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>切换结果视图的排列方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
@@ -5705,7 +5660,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模式(&amp;C)</translation>
+        <translation>自定义模�?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
@@ -5713,11 +5668,11 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前选项卡的查询。如果您在查询文本中有选定内容，则仅执行选定内容 &lt;b&gt;(F5&lt;/b&gt; 或 &lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>执行当前选项卡的查询。如果您在查询文本中有选定内容，则仅执行选定内容 &lt;b&gt;(F5&lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止当前正在运行的脚本。&lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>停止当前正在运行的脚本�?lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -5733,7 +5688,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具栏</translation>
+        <translation>工具�?/translation>
     </message>
     <message>
         <source>Options</source>
@@ -5749,7 +5704,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>保持原样（不解码）</translation>
+        <translation>保持原样（不解码�?/translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
@@ -5777,7 +5732,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>None</source>
-        <translation>无限制</translation>
+        <translation>无限�?/translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
@@ -5789,7 +5744,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文档</translation>
+        <translation>自动展开第一个文�?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
@@ -5797,19 +5752,19 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷键 (Alt+1...9)</translation>
+        <translation>禁用连接快捷�?(Alt+1...9)</translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
-        <translation>新标签页中自动执行代码</translation>
+        <translation>新标签页中自动执行代�?/translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>点击关闭按钮时最小化到系统托盘</translation>
+        <translation>点击关闭按钮时最小化到系统托�?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更新</translation>
+        <translation>检查更�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
@@ -5849,7 +5804,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>打开/刷新欢迎页</translation>
+        <translation>打开/刷新欢迎�?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
@@ -5861,19 +5816,19 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具栏</translation>
+        <translation>连接工具�?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存工具栏</translation>
+        <translation>打开/保存工具�?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具栏</translation>
+        <translation>执行工具�?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新提示栏</translation>
+        <translation>更新提示�?/translation>
     </message>
     <message>
         <source>Robo 3T - </source>
@@ -5893,11 +5848,11 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Connect to MongoDB</source>
-        <translation>连接到 MongoDB</translation>
+        <translation>连接�?MongoDB</translation>
     </message>
     <message>
         <source>Cannot connect to MongoDB (%1)</source>
-        <translation>无法连接到 MongoDB (%1)</translation>
+        <translation>无法连接�?MongoDB (%1)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5909,7 +5864,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Cannot connect to the MongoDB at %1.</source>
-        <translation>无法连接到位于 %1 的 MongoDB。</translation>
+        <translation>无法连接到位�?%1 �?MongoDB�?/translation>
     </message>
     <message>
         <source>Operation failed</source>
@@ -5925,11 +5880,11 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>&amp;Explorer</source>
-        <translation>资源管理器(&amp;E)</translation>
+        <translation>资源管理�?&amp;E)</translation>
     </message>
     <message>
         <source>Press to show/hide Database Explorer panel.</source>
-        <translation>点击以显示/隐藏资源管理器面板。</translation>
+        <translation>点击以显�?隐藏资源管理器面板�?/translation>
     </message>
     <message>
         <source>&amp;Logs</source>
@@ -5937,7 +5892,7 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Language Changed</source>
-        <translation>语言已更改</translation>
+        <translation>语言已更�?/translation>
     </message>
 </context>
 <context>
@@ -5952,11 +5907,11 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Create Database</source>
-        <translation>创建数据库</translation>
+        <translation>创建数据�?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状态 (Server Status)</translation>
+        <translation>服务器状�?(Server Status)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -5976,15 +5931,14 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>System</source>
-        <translation>系统数据库 (System)</translation>
+        <translation>系统数据�?(System)</translation>
     </message>
     <message>
         <source>Cannot load list of databases.
 
 Error:
 </source>
-        <translation>无法加载数据库列表。
-
+        <translation>无法加载数据库列表�?
 错误:
 </translation>
     </message>
@@ -5997,10 +5951,9 @@ Error:
 
 Reason:
 Connection failure. </source>
-        <translation>复本集的 Primary 节点不可达。
-
+        <translation>复本集的 Primary 节点不可达�?
 原因:
-连接失败。 </translation>
+连接失败�?</translation>
     </message>
     <message>
         <source> [Offline]</source>
@@ -6012,7 +5965,7 @@ Connection failure. </source>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称:</translation>
+        <translation>数据库名�?</translation>
     </message>
 </context>
 <context>
@@ -6039,7 +5992,7 @@ Connection failure. </source>
     </message>
     <message>
         <source>Copy Value</source>
-        <translation>复制值</translation>
+        <translation>复制�?/translation>
     </message>
     <message>
         <source>Copy Name</source>
@@ -6051,11 +6004,11 @@ Connection failure. </source>
     </message>
     <message>
         <source>Copy Timestamp from ObjectId</source>
-        <translation>从 ObjectId 复制时间戳</translation>
+        <translation>�?ObjectId 复制时间�?/translation>
     </message>
     <message>
         <source>Copy JSON</source>
-        <translation>复制为 JSON</translation>
+        <translation>复制�?JSON</translation>
     </message>
     <message>
         <source>Cannot delete</source>
@@ -6064,8 +6017,7 @@ Connection failure. </source>
     <message>
         <source>Selected document doesn't have _id field. 
 Maybe this is a system document that should be managed in a special way?</source>
-        <translation>选定的文档不包含 _id 字段。
-这可能是一个需要特殊管理方式的系统文档。</translation>
+        <translation>选定的文档不包含 _id 字段�?这可能是一个需要特殊管理方式的系统文档�?/translation>
     </message>
     <message>
         <source>Delete</source>
@@ -6077,15 +6029,15 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>%1 %2 with id:&lt;br&gt;&lt;b&gt;%3&lt;/b&gt;?</source>
-        <translation>确定要删除 ID 为 &lt;br&gt;&lt;b&gt;%3&lt;/b&gt; 的 %1 %2 吗？</translation>
+        <translation>确定要删�?ID �?&lt;br&gt;&lt;b&gt;%3&lt;/b&gt; �?%1 %2 吗？</translation>
     </message>
     <message>
         <source>Database Error</source>
-        <translation>数据库错误</translation>
+        <translation>数据库错�?/translation>
     </message>
     <message>
         <source>Do you want to delete %1 selected documents?</source>
-        <translation>确定要删除所选的 %1 个文档吗？</translation>
+        <translation>确定要删除所选的 %1 个文档吗�?/translation>
     </message>
     <message>
         <source>Edit Document</source>
@@ -6101,7 +6053,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Error extracting ISODate()</source>
-        <translation>提取 ISODate() 时出错</translation>
+        <translation>提取 ISODate() 时出�?/translation>
     </message>
 </context>
 <context>
@@ -6116,7 +6068,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证书</translation>
+        <translation>自签名证�?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
@@ -6124,7 +6076,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络环境完全可信，否则应避免使用自签名证书。如果使用自签名证书，通信频道虽会被加密，但无法验证服务器身份的真实性。</translation>
+        <translation>通常情况下，除非网络环境完全可信，否则应避免使用自签名证书。如果使用自签名证书，通信频道虽会被加密，但无法验证服务器身份的真实性�?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
@@ -6136,7 +6088,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>如果 MongoDB 服务器要求客户端提供经 CA 签名的证书或密钥文件，请开启此选项。</translation>
+        <translation>如果 MongoDB 服务器要求客户端提供�?CA 签名的证书或密钥文件，请开启此选项�?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
@@ -6148,7 +6100,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次连接时询问密码</translation>
+        <translation>每次连接时询问密�?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
@@ -6164,7 +6116,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允许</translation>
+        <translation>不允�?/translation>
     </message>
     <message>
         <source>Allowed</source>
@@ -6180,7 +6132,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存在</translation>
+        <translation> 文件不存�?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
@@ -6200,23 +6152,23 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source> mongo --tlsCAFile : Certificate Authority file for TLS</source>
-        <translation> mongo --tlsCAFile : 用于 TLS 的 CA 证书颁发机构文件</translation>
+        <translation> mongo --tlsCAFile : 用于 TLS �?CA 证书颁发机构文件</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFile : 用于 TLS 的 PEM 证书/密钥文件</translation>
+        <translation> mongo --tlsCertificateKeyFile : 用于 TLS �?PEM 证书/密钥文件</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFilePassword : 用于 TLS 的 PEM 文件密钥密码</translation>
+        <translation> mongo --tlsCertificateKeyFilePassword : 用于 TLS �?PEM 文件密钥密码</translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidHostnames : Allow connections to servers with non-matching hostnames</source>
-        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务器</translation>
+        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务�?/translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidCertificates : Allow connections to servers with invalid certificates</source>
-        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到包含无效证书的服务器</translation>
+        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到包含无效证书的服务�?/translation>
     </message>
     <message>
         <source> mongo --tlsCRLFile : Certificate Revocation List file for TLS</source>
@@ -6231,7 +6183,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称:</translation>
+        <translation>数据库名�?</translation>
     </message>
     <message>
         <source>Collection Name:</source>
@@ -6239,11 +6191,11 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Server: </source>
-        <translation>服务器: </translation>
+        <translation>服务�? </translation>
     </message>
     <message>
         <source>Database: </source>
-        <translation>数据库: </translation>
+        <translation>数据�? </translation>
     </message>
     <message>
         <source>Collection: </source>
@@ -6271,7 +6223,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>File Name:</source>
-        <translation>文件名:</translation>
+        <translation>文件�?</translation>
     </message>
     <message>
         <source>Directory:</source>
@@ -6291,11 +6243,11 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Selected Collection</source>
-        <translation>选定的集合</translation>
+        <translation>选定的集�?/translation>
     </message>
     <message>
         <source>Output Properties</source>
-        <translation>导出属性</translation>
+        <translation>导出属�?/translation>
     </message>
     <message>
         <source>Manual Export</source>
@@ -6315,7 +6267,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>"Fields" option is required in CSV mode.</source>
-        <translation>在 CSV 模式下，必须指定“字段”选项。</translation>
+        <translation>�?CSV 模式下，必须指定“字段”选项�?/translation>
     </message>
     <message>
         <source>Select Directory</source>
@@ -6337,17 +6289,16 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Exported file: </source>
-        <translation>导出的文件: </translation>
+        <translation>导出的文�? </translation>
     </message>
     <message>
         <source>Number of records exported:</source>
-        <translation>导出的记录条数:</translation>
+        <translation>导出的记录条�?</translation>
     </message>
     <message>
         <source>Export Failed.
 </source>
-        <translation>导出失败。
-</translation>
+        <translation>导出失败�?</translation>
     </message>
     <message>
         <source>Output:
@@ -6357,15 +6308,15 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Error: "mongoexport" process failed to start. Either the invoked program is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>错误: “mongoexport” 进程启动失败。可能是调用的程序丢失，或者您没有足够的权限来调用该程序。</translation>
+        <translation>错误: “mongoexport�?进程启动失败。可能是调用的程序丢失，或者您没有足够的权限来调用该程序�?/translation>
     </message>
     <message>
         <source>Error: "mongoexport" process crashed some time after starting successfully..</source>
-        <translation>错误: “mongoexport” 进程在成功启动后发生崩溃。</translation>
+        <translation>错误: “mongoexport�?进程在成功启动后发生崩溃�?/translation>
     </message>
     <message>
         <source>Error: "mongoexport" process failed. Error code: </source>
-        <translation>错误: “mongoexport” 进程失败。错误码: </translation>
+        <translation>错误: “mongoexport�?进程失败。错误码: </translation>
     </message>
     <message>
         <source>Details</source>
@@ -6404,7 +6355,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷键 (Alt+1...9)</translation>
+        <translation>禁用连接快捷�?(Alt+1...9)</translation>
     </message>
     <message>
         <source>Styles:</source>
@@ -6424,11 +6375,11 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Custom</source>
-        <translation>自定义模式</translation>
+        <translation>自定义模�?/translation>
     </message>
     <message>
         <source>UTC</source>
-        <translation>UTC (协调世界时)</translation>
+        <translation>UTC (协调世界�?</translation>
     </message>
     <message>
         <source>Local Time</source>
@@ -6514,7 +6465,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Validator</source>
-        <translation>验证器 (Validator)</translation>
+        <translation>验证�?(Validator)</translation>
     </message>
     <message>
         <source>Index Option Defaults</source>
@@ -6534,11 +6485,11 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Maximum number of documents: </source>
-        <translation>最大文档数量: </translation>
+        <translation>最大文档数�? </translation>
     </message>
     <message>
         <source>Auto index _id</source>
-        <translation>自动为 _id 创建索引</translation>
+        <translation>自动�?_id 创建索引</translation>
     </message>
     <message>
         <source>Use power-of-2 sizes</source>
@@ -6562,15 +6513,15 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Enter the validator document for this collection: </source>
-        <translation>请输入该集合的验证文档 (Validator): </translation>
+        <translation>请输入该集合的验证文�?(Validator): </translation>
     </message>
     <message>
         <source>Enter a default configuration for indexes when creating a collection: </source>
-        <translation>请输入创建集合时的索引默认配置: </translation>
+        <translation>请输入创建集合时的索引默认配�? </translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, 位于 第 %2 行, 第 %3 列。</translation>
+        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, 位于 �?%2 �? �?%3 列�?/translation>
     </message>
     <message>
         <source>Parsing error</source>
@@ -6582,7 +6533,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效！</translation>
+        <translation>JSON 格式有效�?/translation>
     </message>
     <message>
         <source>Error</source>
@@ -6594,23 +6545,23 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>此选项仅适用于 WiredTiger 存储引擎且数据库版本需在 3.0 及以上。</translation>
+        <translation>此选项仅适用�?WiredTiger 存储引擎且数据库版本需�?3.0 及以上�?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>此选项仅适用于数据库版本 3.2 及以上。</translation>
+        <translation>此选项仅适用于数据库版本 3.2 及以上�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>此选项仅适用于 MMAPv1 存储引擎且数据库版本需在 3.0 及以上。</translation>
+        <translation>此选项仅适用�?MMAPv1 存储引擎且数据库版本需�?3.0 及以上�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>此选项仅适用于 MMAPv1 存储引擎，且自数据库版本 3.0 起已被弃用。</translation>
+        <translation>此选项仅适用�?MMAPv1 存储引擎，且自数据库版本 3.0 起已被弃用�?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>自数据库版本 3.2 起该选项已被弃用。</translation>
+        <translation>自数据库版本 3.2 起该选项已被弃用�?/translation>
     </message>
 </context>
 <context>
@@ -6621,7 +6572,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Name:</source>
-        <translation>用户名:</translation>
+        <translation>用户�?</translation>
     </message>
     <message>
         <source>Password:</source>
@@ -6629,7 +6580,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>UserSource:</source>
-        <translation>认证源 (Auth Source):</translation>
+        <translation>认证�?(Auth Source):</translation>
     </message>
     <message>
         <source>Read Only</source>
@@ -6645,7 +6596,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>dbAdmin</source>
-        <translation>dbAdmin (数据库管理)</translation>
+        <translation>dbAdmin (数据库管�?</translation>
     </message>
     <message>
         <source>userAdmin</source>
@@ -6657,19 +6608,19 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>readAnyDatabase</source>
-        <translation>readAnyDatabase (任意数据库只读)</translation>
+        <translation>readAnyDatabase (任意数据库只�?</translation>
     </message>
     <message>
         <source>readWriteAnyDatabase</source>
-        <translation>readWriteAnyDatabase (任意数据库读写)</translation>
+        <translation>readWriteAnyDatabase (任意数据库读�?</translation>
     </message>
     <message>
         <source>userAdminAnyDatabase</source>
-        <translation>userAdminAnyDatabase (任意数据库用户管理)</translation>
+        <translation>userAdminAnyDatabase (任意数据库用户管�?</translation>
     </message>
     <message>
         <source>dbAdminAnyDatabase</source>
-        <translation>dbAdminAnyDatabase (任意数据库管理)</translation>
+        <translation>dbAdminAnyDatabase (任意数据库管�?</translation>
     </message>
 </context>
 <context>
@@ -6688,7 +6639,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状态 (Server Status)</translation>
+        <translation>服务器状�?(Server Status)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -6708,7 +6659,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>[Primary]</source>
-        <translation>[主节点 Primary]</translation>
+        <translation>[主节�?Primary]</translation>
     </message>
     <message>
         <source>[Secondary]</source>
@@ -6727,7 +6678,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索引 (ReIndex)...</translation>
+        <translation>重建所有索�?(ReIndex)...</translation>
     </message>
     <message>
         <source>View Indexes</source>
@@ -6750,7 +6701,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索引 (ReIndex)...</translation>
+        <translation>重建所有索�?(ReIndex)...</translation>
     </message>
     <message>
         <source>View Indexes</source>
@@ -6769,7 +6720,7 @@ Maybe this is a system document that should be managed in a special way?</source
     <name>Robomongo::AddEditIndexDialog</name>
     <message>
         <source>Index Properties</source>
-        <translation>索引属性</translation>
+        <translation>索引属�?/translation>
     </message>
     <message>
         <source>Basic</source>
@@ -6777,7 +6728,7 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级属性 (Advanced)</translation>
+        <translation>高级属�?(Advanced)</translation>
     </message>
     <message>
         <source>Text Search</source>
@@ -6789,15 +6740,15 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Choose any name that will help you to identify this index.</source>
-        <translation>请选择一个有助于您识别该索引的名称。</translation>
+        <translation>请选择一个有助于您识别该索引的名称�?/translation>
     </message>
     <message>
         <source>Document that contains pairs with the name of the field or fields to index and order of the index. A 1 specifies ascending and a -1 specifies descending.</source>
-        <translation>包含要索引的字段名称及其顺序的文档。1 表示升序，-1 表示降序。</translation>
+        <translation>包含要索引的字段名称及其顺序的文档�? 表示升序�?1 表示降序�?/translation>
     </message>
     <message>
         <source>If set, creates a unique index so that the collection will not accept insertion of documents where the index key or keys match an existing value in the index.</source>
-        <translation>如果开启，将创建唯一索引，使集合不接受索引键值与现有值重复的文档插入。</translation>
+        <translation>如果开启，将创建唯一索引，使集合不接受索引键值与现有值重复的文档插入�?/translation>
     </message>
     <message>
         <source>Name:   </source>
@@ -6805,19 +6756,19 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Keys:   </source>
-        <translation>索引键 (Keys): </translation>
+        <translation>索引�?(Keys): </translation>
     </message>
     <message>
         <source>Sparse</source>
-        <translation>稀疏索引 (Sparse)</translation>
+        <translation>稀疏索�?(Sparse)</translation>
     </message>
     <message>
         <source>Create index in background</source>
-        <translation>在后台创建索引 (Background)</translation>
+        <translation>在后台创建索�?(Background)</translation>
     </message>
     <message>
         <source>seconds</source>
-        <translation>秒</translation>
+        <translation>�?/translation>
     </message>
     <message>
         <source>Expire after</source>
@@ -6825,27 +6776,27 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>If set, the index only references documents with the specified field. These indexes use less space but behave differently in some situations (particularly sorts).</source>
-        <translation>如果开启，索引仅引用包含指定字段的文档。此类索引占用空间较少，但在某些情况下（特别是排序）行为会有所不同。</translation>
+        <translation>如果开启，索引仅引用包含指定字段的文档。此类索引占用空间较少，但在某些情况下（特别是排序）行为会有所不同�?/translation>
     </message>
     <message>
         <source>Builds the index in the background so that building an index does not block other database activities.</source>
-        <translation>在后台构建索引，这样构建过程不会阻塞其他的数据库活动（如正常的读写操作）。</translation>
+        <translation>在后台构建索引，这样构建过程不会阻塞其他的数据库活动（如正常的读写操作）�?/translation>
     </message>
     <message>
         <source>Specifies a &lt;i&gt;time to live&lt;/i&gt;, in seconds, to control how long MongoDB retains documents in this collection</source>
-        <translation>指定 &lt;i&gt;生存时间 (TTL)&lt;/i&gt;（单位：秒），用于控制 MongoDB 在该集合中保留文档的时长。</translation>
+        <translation>指定 &lt;i&gt;生存时间 (TTL)&lt;/i&gt;（单位：秒），用于控�?MongoDB 在该集合中保留文档的时长�?/translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, the language that determines the list of stop words and the rules for the stemmer and tokenizer. The default value is &lt;b&gt;english&lt;/b&gt;</source>
-        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，决定停用词列表以及分词器和词干规则的语言。默认值为 &lt;b&gt;english&lt;/b&gt;。</translation>
+        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，决定停用词列表以及分词器和词干规则的语言。默认值为 &lt;b&gt;english&lt;/b&gt;�?/translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, specify the name of the field in the document that contains, for that document, the language to override the default language. The default value is &lt;b&gt;language&lt;/b&gt;</source>
-        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，指定文档中的字段名，该字段包含用于覆盖默认语言的特定语言设置。默认值为 &lt;b&gt;language&lt;/b&gt;。</translation>
+        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，指定文档中的字段名，该字段包含用于覆盖默认语言的特定语言设置。默认值为 &lt;b&gt;language&lt;/b&gt;�?/translation>
     </message>
     <message>
         <source>Document that contains field and weight pairs. The weight is a number ranging from 1 to 99,999 and denotes the significance of the field relative to the other indexed fields. </source>
-        <translation>包含字段和权重配对的文档。权重的取值范围为 1 到 99,999，表示该字段相对于其他索引字段的重要性。</translation>
+        <translation>包含字段和权重配对的文档。权重的取值范围为 1 �?99,999，表示该字段相对于其他索引字段的重要性�?/translation>
     </message>
     <message>
         <source>Default language:</source>
@@ -6861,13 +6812,12 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Invalid json</source>
-        <translation>无效的 JSON</translation>
+        <translation>无效�?JSON</translation>
     </message>
     <message>
         <source>Please check json text.
 </source>
-        <translation>请检查 JSON 文本。
-</translation>
+        <translation>请检�?JSON 文本�?</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -6878,10 +6828,8 @@ Maybe this is a system document that should be managed in a special way?</source
 To edit an existing index, the index must be dropped and recreated. This means if the recreate step fails, the index being edited might have already been dropped. In this case, Robo 3T will try to recover (recreate) the index being edited. Please consider backing up your index first. 
 
 Are you sure you want to proceed?</source>
-        <translation>MongoDB 不支持直接（一步式）编辑索引。
-要修改现有索引，必须先删除再重新创建。这意味着如果重建步骤失败，正在编辑的索引可能已经被删除了。在这种情况下，Robo 3T 将尝试恢复（重新创建）原索引。请考虑在操作前先备份索引。
-
-确定要继续吗？</translation>
+        <translation>MongoDB 不支持直接（一步式）编辑索引�?要修改现有索引，必须先删除再重新创建。这意味着如果重建步骤失败，正在编辑的索引可能已经被删除了。在这种情况下，Robo 3T 将尝试恢复（重新创建）原索引。请考虑在操作前先备份索引�?
+确定要继续吗�?/translation>
     </message>
 </context>
 <context>
@@ -6892,7 +6840,7 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=\"https://%6\"&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=\"https://%7\"&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (内部版本 %3 - %4/%5)&lt;/h3&gt;以 Shell 为中心的 MongoDB 管理工具。&lt;br/&gt;前往 GitHub &lt;a href=\"https://%6\"&gt;提交&lt;/a&gt; 问题反馈或功能建议。&lt;br/&gt;&lt;br/&gt;&lt;a href=\"https://%7\"&gt;%7&lt;/a&gt; &lt;br/&gt;版权所有 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利。&lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性及特定用途适用性的担保。&lt;br/&gt;&lt;br&gt;&lt;b&gt;核心依赖: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;项目致谢: &lt;br/&gt;&lt;/b&gt;部分图标由 Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (内部版本 %3 - %4/%5)&lt;/h3&gt;�?Shell 为中心的 MongoDB 管理工具�?lt;br/&gt;前往 GitHub &lt;a href=\"https://%6\"&gt;提交&lt;/a&gt; 问题反馈或功能建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=\"https://%7\"&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性及特定用途适用性的担保�?lt;br/&gt;&lt;br&gt;&lt;b&gt;核心依赖: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;项目致谢: &lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
     <message>
         <source>About</source>
@@ -6964,15 +6912,15 @@ Are you sure you want to proceed?</source>
     <name>Robomongo::FindFrame</name>
     <message>
         <source>Next</source>
-        <translation>下一个</translation>
+        <translation>下一�?/translation>
     </message>
     <message>
         <source>Previous</source>
-        <translation>上一个</translation>
+        <translation>上一�?/translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>区分大小写</translation>
+        <translation>区分大小�?/translation>
     </message>
     <message>
         <source>Search</source>
@@ -6980,22 +6928,22 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>The specified text was not found.</source>
-        <translation>未找到指定的文本。</translation>
+        <translation>未找到指定的文本�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source> nodes</source>
-        <translation> 个节点</translation>
+        <translation> 个节�?/translation>
     </message>
     <message>
         <source> node</source>
-        <translation> 个节点</translation>
+        <translation> 个节�?/translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本集 (Replica Set)</translation>
+        <translation>副本�?(Replica Set)</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -7043,11 +6991,11 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>Attributes</source>
-        <translation>属性</translation>
+        <translation>属�?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>认证库 / 用户</translation>
+        <translation>认证�?/ 用户</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
@@ -7055,19 +7003,19 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>records</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记录</translation>
+        <translation>条记�?/translation>
     </message>
     <message>
         <source>&lt;span style='color: #777777;'&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style='color: #777777;'&gt;连接设置已导入 (共 %1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style='color: #777777;'&gt;连接设置已导�?(�?%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style='color: %1' href='create'&gt;Create&lt;/a&gt;, &lt;a style='color: %1' href='edit'&gt;edit&lt;/a&gt;, &lt;a style='color: %1' href='remove'&gt;remove&lt;/a&gt;, &lt;a style='color: %1' href='clone'&gt;clone&lt;/a&gt; or reorder connections via drag'n'drop.</source>
-        <translation>&lt;a style='color: %1' href='create'&gt;创建&lt;/a&gt;、&lt;a style='color: %1' href='edit'&gt;编辑&lt;/a&gt;、&lt;a style='color: %1' href='remove'&gt;删除&lt;/a&gt;、&lt;a style='color: %1' href='clone'&gt;克隆&lt;/a&gt;连接。支持通过拖拽重新排序。</translation>
+        <translation>&lt;a style='color: %1' href='create'&gt;创建&lt;/a&gt;�?lt;a style='color: %1' href='edit'&gt;编辑&lt;/a&gt;�?lt;a style='color: %1' href='remove'&gt;删除&lt;/a&gt;�?lt;a style='color: %1' href='clone'&gt;克隆&lt;/a&gt;连接。支持通过拖拽重新排序�?/translation>
     </message>
     <message>
         <source>Are you sure you want to delete "%1" connection?</source>
@@ -7086,7 +7034,7 @@ Are you sure you want to proceed?</source>
     <name>Robomongo::ExplorerReplicaSetFolderItem</name>
     <message>
         <source>Status of Replica Set</source>
-        <translation>查看副本集状态 (rs.status)</translation>
+        <translation>查看副本集状�?(rs.status)</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -7094,11 +7042,11 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>Replica Set (%1 nodes)</source>
-        <translation>副本集 (%1 个节点)</translation>
+        <translation>副本�?(%1 个节�?</translation>
     </message>
     <message>
         <source>Replica Set ...</source>
-        <translation>副本集 (加载中...)</translation>
+        <translation>副本�?(加载�?..)</translation>
     </message>
 </context>
 <context>
@@ -7118,12 +7066,11 @@ Are you sure you want to proceed?</source>
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>文档已被修改。
-您想要保存更改吗？</translation>
+        <translation>文档已被修改�?您想要保存更改吗�?/translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于第 %2 行，第 %3 列。</translation>
+        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于第 %2 行，�?%3 列�?/translation>
     </message>
     <message>
         <source>Parsing error</source>
@@ -7135,7 +7082,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效！</translation>
+        <translation>JSON 格式有效�?/translation>
     </message>
 </context>
 <context>
@@ -7154,7 +7101,7 @@ Do you want to save your changes?</source>
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: '✓'; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: '�?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -7162,21 +7109,20 @@ Do you want to save your changes?</source>
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=\"card\"&gt;
-                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 标准发行版&lt;/div&gt;
+                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护、深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注于数据管理。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护、深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注于数据管理�?lt;/p&gt;
                     
                     &lt;ul class=\"feature-list\"&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 修复了关键的 Windows 编译问题及严重的内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携：&lt;/strong&gt; 所有的依赖库已打包内置，实现真正的零安装即点即用。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 修复了关键的 Windows 编译问题及严重的内存泄漏�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代核心�?lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;完全绿色便携�?lt;/strong&gt; 所有的依赖库已打包内置，实现真正的零安装即点即用�?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=\"divider\"&gt;&lt;/div&gt;
                     &lt;div class=\"footer\"&gt;
-                        “您的数据，由您掌控。感谢支持社区版。”
-                    &lt;/div&gt;
+                        “您的数据，由您掌控。感谢支持社区版。�?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -7194,7 +7140,7 @@ Do you want to save your changes?</source>
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: '✓'; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: '�?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -7202,21 +7148,20 @@ Do you want to save your changes?</source>
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=\"card\"&gt;
-                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 标准发行版&lt;/div&gt;
+                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护、深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注于数据管理。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护、深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注于数据管理�?lt;/p&gt;
                     
                     &lt;ul class=\"feature-list\"&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 修复了关键的 Windows 编译问题及严重的内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携：&lt;/strong&gt; 所有的依赖库已打包内置，实现真正的零安装即点即用。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 修复了关键的 Windows 编译问题及严重的内存泄漏�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代核心�?lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;完全绿色便携�?lt;/strong&gt; 所有的依赖库已打包内置，实现真正的零安装即点即用�?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=\"divider\"&gt;&lt;/div&gt;
                     &lt;div class=\"footer\"&gt;
-                        “您的数据，由您掌控。感谢支持社区版。”
-                    &lt;/div&gt;
+                        “您的数据，由您掌控。感谢支持社区版。�?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -7224,11 +7169,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>&lt;p&gt;&lt;h1&gt;&lt;font color=\"#2d862d\"&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\"#2d862d\"&gt;官方博客动态&lt;/h1&gt;&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\"#2d862d\"&gt;官方博客动�?lt;/h1&gt;&lt;/p&gt;</translation>
     </message>
     <message>
         <source>All Blog Posts</source>
-        <translation>查看所有博客文章</translation>
+        <translation>查看所有博客文�?/translation>
     </message>
 </context>
 <context>
@@ -7243,7 +7188,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本集 (Replica Set)</translation>
+        <translation>副本�?(Replica Set)</translation>
     </message>
     <message>
         <source>Name:</source>
@@ -7251,7 +7196,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>请选择一个有助于您识别该连接的名称。</translation>
+        <translation>请选择一个有助于您识别该连接的名称�?/translation>
     </message>
     <message>
         <source>Address:</source>
@@ -7259,7 +7204,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>指定 MongoDB 服务器的主机地址和端口。主机可以是 IPv4、IPv6 地址或域名。</translation>
+        <translation>指定 MongoDB 服务器的主机地址和端口。主机可以是 IPv4、IPv6 地址或域名�?/translation>
     </message>
     <message>
         <source>Members:</source>
@@ -7267,15 +7212,15 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Set Name:</source>
-        <translation>副本集名称:</translation>
+        <translation>副本集名�?</translation>
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>从 MongoDB URI 连接字符串中导入连接细节</translation>
+        <translation>�?MongoDB URI 连接字符串中导入连接细节</translation>
     </message>
     <message>
         <source>From URI</source>
-        <translation>从 URI 导入</translation>
+        <translation>�?URI 导入</translation>
     </message>
     <message>
         <source>Error</source>
@@ -7283,15 +7228,15 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>副本集成员列表不能为空。请至少输入一个节点地址。</translation>
+        <translation>副本集成员列表不能为空。请至少输入一个节点地址�?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain ':' between hostname and port.</source>
-        <translation>副本集成员条目必须在主机名和端口之间包含“:”分隔符。</translation>
+        <translation>副本集成员条目必须在主机名和端口之间包含�?”分隔符�?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请移除重复的成员。两个副本集节点不能拥有相同的主机名和端口。</translation>
+        <translation>请移除重复的成员。两个副本集节点不能拥有相同的主机名和端口�?/translation>
     </message>
     <message>
         <source>New Connection</source>
@@ -7312,11 +7257,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的。&lt;/nobr&gt; 拥有 admin 库正常访问权限的用户，将自动获得对&lt;b&gt;所有数据库&lt;/b&gt;的读写访问权。</translation>
+        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 拥有 admin 库正常访问权限的用户，将自动获得�?lt;b&gt;所有数据库&lt;/b&gt;的读写访问权�?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户名</translation>
+        <translation>用户�?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
@@ -7328,7 +7273,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Database</source>
-        <translation>认证数据库</translation>
+        <translation>认证数据�?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
@@ -7336,11 +7281,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库列表</translation>
+        <translation>数据库列�?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>部分 MongoDB 用户可能没有获取数据库列表的权限（缺少 &lt;b&gt;listDatabases&lt;/b&gt; 命令权限）。在这种情况下，请手动输入该用户有权访问的数据库名称。</translation>
+        <translation>部分 MongoDB 用户可能没有获取数据库列表的权限（缺�?&lt;b&gt;listDatabases&lt;/b&gt; 命令权限）。在这种情况下，请手动输入该用户有权访问的数据库名称�?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
@@ -7359,11 +7304,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>创建数据库</translation>
+        <translation>创建数据�?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>查看服务器状态 (serverStatus)</translation>
+        <translation>查看服务器状�?(serverStatus)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
@@ -7390,8 +7335,7 @@ Do you want to save your changes?</source>
 
 Error:
 </source>
-        <translation>无法加载数据库列表。
-
+        <translation>无法加载数据库列表�?
 错误详情:
 </translation>
     </message>
@@ -7404,10 +7348,9 @@ Error:
 
 Reason:
 Connection failure. </source>
-        <translation>副本集的主节点 (Primary) 不可达。
-
-可能的原因:
-连接失败。 </translation>
+        <translation>副本集的主节�?(Primary) 不可达�?
+可能的原�?
+连接失败�?</translation>
     </message>
     <message>
         <source> [Offline]</source>
@@ -7419,30 +7362,30 @@ Connection failure. </source>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称:</translation>
+        <translation>数据库名�?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSLTab</name>
     <message>
         <source> mongo --tlsCAFile : Certificate Authority file for TLS</source>
-        <translation> mongo --tlsCAFile : TLS 的 CA 根证书文件</translation>
+        <translation> mongo --tlsCAFile : TLS �?CA 根证书文�?/translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFile : TLS 的 PEM 证书/私钥文件</translation>
+        <translation> mongo --tlsCertificateKeyFile : TLS �?PEM 证书/私钥文件</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFilePassword : TLS 的 PEM 文件私钥密码</translation>
+        <translation> mongo --tlsCertificateKeyFilePassword : TLS �?PEM 文件私钥密码</translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidHostnames : Allow connections to servers with non-matching hostnames</source>
-        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务器</translation>
+        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务�?/translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidCertificates : Allow connections to servers with invalid certificates</source>
-        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到证书无效的服务器</translation>
+        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到证书无效的服务�?/translation>
     </message>
     <message>
         <source> mongo --tlsCRLFile : Certificate Revocation List file for TLS</source>
@@ -7458,15 +7401,15 @@ Connection failure. </source>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证书 (Self-signed)</translation>
+        <translation>自签名证�?(Self-signed)</translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
-        <translation>使用 CA 根证书</translation>
+        <translation>使用 CA 根证�?/translation>
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络环境完全可信，否则应避免使用自签名证书。如果使用自签名证书，通信频道虽会被加密，但将无法验证服务器的身份真实性。</translation>
+        <translation>通常情况下，除非网络环境完全可信，否则应避免使用自签名证书。如果使用自签名证书，通信频道虽会被加密，但将无法验证服务器的身份真实性�?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
@@ -7478,7 +7421,7 @@ Connection failure. </source>
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>如果 MongoDB 服务器要求提供由 CA 签名的客户端证书/私钥文件，请启用此选项。</translation>
+        <translation>如果 MongoDB 服务器要求提供由 CA 签名的客户端证书/私钥文件，请启用此选项�?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
@@ -7490,7 +7433,7 @@ Connection failure. </source>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次连接时询问密码</translation>
+        <translation>每次连接时询问密�?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
@@ -7502,15 +7445,15 @@ Connection failure. </source>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
-        <translation>主机名不匹配时: </translation>
+        <translation>主机名不匹配�? </translation>
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允许连接</translation>
+        <translation>不允许连�?/translation>
     </message>
     <message>
         <source>Allowed</source>
-        <translation>允许连接 (不安全)</translation>
+        <translation>允许连接 (不安�?</translation>
     </message>
     <message>
         <source>Error</source>
@@ -7522,11 +7465,11 @@ Connection failure. </source>
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存在</translation>
+        <translation> 文件不存�?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
-        <translation>CA 根证书</translation>
+        <translation>CA 根证�?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key</source>
@@ -7548,8 +7491,7 @@ Connection failure. </source>
 
 Error:
 %1</source>
-        <translation>加载文档失败。
-
+        <translation>加载文档失败�?
 错误详情:
 %1</translation>
     </message>
@@ -7567,8 +7509,7 @@ Error:
         <source>Failed to execute script.
 
 </source>
-        <translation>脚本执行失败。
-
+        <translation>脚本执行失败�?
 </translation>
     </message>
     <message>
@@ -7577,23 +7518,23 @@ Error:
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达到 Shell 执行超时限制</translation>
+        <translation>脚本已达�?Shell 执行超时限制</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> 秒)</translation>
+        <translation> �?</translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制。 </translation>
+        <translation> 限制�?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>未能执行所有脚本。 </translation>
+        <translation>未能执行所有脚本�?</translation>
     </message>
     <message>
         <source>
@@ -7601,7 +7542,7 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu "Options-&gt;Change Shell Timeout".</source>
         <translation>
 
-请使用下方按钮或通过主窗口菜单“选项 -&gt; 更改 Shell 超时时间”来增加超时阈值。</translation>
+请使用下方按钮或通过主窗口菜单“选项 -&gt; 更改 Shell 超时时间”来增加超时阈值�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
@@ -7609,11 +7550,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>New Shell</source>
-        <translation>新查询窗口</translation>
+        <translation>新查询窗�?/translation>
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果。</translation>
+        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
     </message>
 </context>
 <context>
@@ -7624,15 +7565,15 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Update Documents...</source>
-        <translation>更新所有文档...</translation>
+        <translation>更新所有文�?..</translation>
     </message>
     <message>
         <source>Remove Documents...</source>
-        <translation>删除文档 (带条件)...</translation>
+        <translation>删除文档 (带条�?...</translation>
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>清空所有文档...</translation>
+        <translation>清空所有文�?..</translation>
     </message>
     <message>
         <source>Statistics</source>
@@ -7644,11 +7585,11 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大小</translation>
+        <translation>索引总大�?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大小 (含索引)</translation>
+        <translation>总大�?(含索�?</translation>
     </message>
     <message>
         <source>Shard Version</source>
@@ -7664,7 +7605,7 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集合...</translation>
+        <translation>重命名集�?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
@@ -7683,8 +7624,7 @@ Please increase the value of shell timeout using button below or from the main w
 
 Error:
 </source>
-        <translation>无法加载索引列表。
-
+        <translation>无法加载索引列表�?
 错误详情:
 </translation>
     </message>
@@ -7726,11 +7666,11 @@ Error:
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>清空所有文档</translation>
+        <translation>清空所有文�?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>您确定要清空集合 &lt;b&gt;%1&lt;/b&gt; 中的所有文档吗？</translation>
+        <translation>您确定要清空集合 &lt;b&gt;%1&lt;/b&gt; 中的所有文档吗�?/translation>
     </message>
     <message>
         <source>Drop</source>
@@ -7750,26 +7690,26 @@ Error:
     </message>
     <message>
         <source>New Collection Name:</source>
-        <translation>新集合名称:</translation>
+        <translation>新集合名�?</translation>
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集合</translation>
+        <translation>重命名集�?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命名(&amp;R)</translation>
+        <translation>重命�?&amp;R)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSHTunnelTab</name>
     <message>
         <source>Ask for password each time</source>
-        <translation>每次连接时询问密码</translation>
+        <translation>每次连接时询问密�?/translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次连接时询问私钥密码</translation>
+        <translation>每次连接时询问私钥密�?/translation>
     </message>
     <message>
         <source>Use SSH tunnel</source>
@@ -7785,7 +7725,7 @@ Error:
     </message>
     <message>
         <source>DSA, RSA, and on Windows/macOS ECDSA, Ed25519 keys are supported. PPK keys must be converted to OPENSSH format.</source>
-        <translation>支持 DSA, RSA 格式，在 Windows/macOS 上还支持 ECDSA, Ed25519 私钥。PPK 格式私钥必须先转换为 OPENSSH 格式。</translation>
+        <translation>支持 DSA, RSA 格式，在 Windows/macOS 上还支持 ECDSA, Ed25519 私钥。PPK 格式私钥必须先转换为 OPENSSH 格式�?/translation>
     </message>
     <message>
         <source>User Password:</source>
@@ -7805,7 +7745,7 @@ Error:
     </message>
     <message>
         <source>SSH User Name:</source>
-        <translation>SSH 用户名:</translation>
+        <translation>SSH 用户�?</translation>
     </message>
     <message>
         <source>SSH Auth Method:</source>
@@ -7825,22 +7765,22 @@ Error:
     </message>
     <message>
         <source>Private key file "%1" doesn't exist</source>
-        <translation>私钥文件 "%1" 不存在</translation>
+        <translation>私钥文件 "%1" 不存�?/translation>
     </message>
     <message>
         <source>Settings are incomplete</source>
-        <translation>配置不完整</translation>
+        <translation>配置不完�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAdvancedTab</name>
     <message>
         <source>Database, that will be default (&lt;code&gt;db&lt;/code&gt; shell variable will point to this database). By default, default database will be the one you authenticate on, or &lt;code&gt;test&lt;/code&gt; otherwise. Leave this field empty, if you want default behavior.</source>
-        <translation>指定连接后的默认数据库（Shell 中的 &lt;code&gt;db&lt;/code&gt; 变量将指向此数据库）。默认情况下，系统会指向您认证时所在的数据库，否则指向 &lt;code&gt;test&lt;/code&gt;。如需保持默认行为，请将此字段留空。</translation>
+        <translation>指定连接后的默认数据库（Shell 中的 &lt;code&gt;db&lt;/code&gt; 变量将指向此数据库）。默认情况下，系统会指向您认证时所在的数据库，否则指向 &lt;code&gt;test&lt;/code&gt;。如需保持默认行为，请将此字段留空�?/translation>
     </message>
     <message>
         <source>Default Database:</source>
-        <translation>默认数据库:</translation>
+        <translation>默认数据�?</translation>
     </message>
 </context>
 <context>
@@ -7851,7 +7791,7 @@ Error:
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>数据库统计信息 (db.stats)</translation>
+        <translation>数据库统计信�?(db.stats)</translation>
     </message>
     <message>
         <source>Current Operations</source>
@@ -7863,11 +7803,11 @@ Error:
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据库 (Drop)...</translation>
+        <translation>删除数据�?(Drop)...</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据库...</translation>
+        <translation>修复数据�?..</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -7891,19 +7831,19 @@ Error:
     </message>
     <message>
         <source>Drop &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>您确定要删除数据库 &lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>您确定要删除数据�?&lt;b&gt;%1&lt;/b&gt; 吗？</translation>
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据库</translation>
+        <translation>删除数据�?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>您确定要修复数据库 &lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>您确定要修复数据�?&lt;b&gt;%1&lt;/b&gt; 吗？</translation>
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据库</translation>
+        <translation>修复数据�?/translation>
     </message>
 </context>
 <context>
@@ -7922,15 +7862,15 @@ Error:
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当前查询窗口的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>将当前查询窗口的脚本保存到文�?&lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存为(&amp;A)...</translation>
+        <translation>另存�?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退出(&amp;X)</translation>
+        <translation>退�?&amp;X)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
@@ -7942,11 +7882,11 @@ Error:
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化至托盘</translation>
+        <translation>最小化至托�?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>退�?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
@@ -7954,7 +7894,7 @@ Error:
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换查询结果视图的方向 &lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>切换查询结果视图的方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
@@ -7982,7 +7922,7 @@ Error:
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模式(&amp;C)</translation>
+        <translation>自定义模�?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
@@ -7990,11 +7930,11 @@ Error:
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前页签的查询。如果选中了部分代码，则仅执行选中的代码 &lt;b&gt;(F5&lt;/b&gt; 或 &lt;b&gt;%1 + 回车)&lt;/b&gt;</translation>
+        <translation>执行当前页签的查询。如果选中了部分代码，则仅执行选中的代�?&lt;b&gt;(F5&lt;/b&gt; �?&lt;b&gt;%1 + 回车)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止当前正在运行的脚本。&lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>停止当前正在运行的脚本�?lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -8010,7 +7950,7 @@ Error:
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具栏</translation>
+        <translation>工具�?/translation>
     </message>
     <message>
         <source>Options</source>
@@ -8022,11 +7962,11 @@ Error:
     </message>
     <message>
         <source>Display Dates In...</source>
-        <translation>显示日期格式为...</translation>
+        <translation>显示日期格式�?..</translation>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解码 (按原样显示)</translation>
+        <translation>不解�?(按原样显�?</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
@@ -8046,7 +7986,7 @@ Error:
     </message>
     <message>
         <source>All</source>
-        <translation>全部开启</translation>
+        <translation>全部开�?/translation>
     </message>
     <message>
         <source>All (Except Collection Names)</source>
@@ -8066,7 +8006,7 @@ Error:
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文档</translation>
+        <translation>自动展开第一个文�?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
@@ -8074,19 +8014,19 @@ Error:
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷键</translation>
+        <translation>禁用连接快捷�?/translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
-        <translation>在新页签中自动执行代码</translation>
+        <translation>在新页签中自动执行代�?/translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>关闭按钮应最小化至系统托盘</translation>
+        <translation>关闭按钮应最小化至系统托�?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更新</translation>
+        <translation>检查更�?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
@@ -8106,15 +8046,15 @@ Error:
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择后一个页签</translation>
+        <translation>选择后一个页�?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择前一个页签</translation>
+        <translation>选择前一个页�?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
-        <translation>在当前页签重新执行查询</translation>
+        <translation>在当前页签重新执行查�?/translation>
     </message>
     <message>
         <source>Duplicate Query in New Tab</source>
@@ -8126,7 +8066,7 @@ Error:
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>打开/刷新 欢迎页</translation>
+        <translation>打开/刷新 欢迎�?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
@@ -8138,19 +8078,19 @@ Error:
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具栏</translation>
+        <translation>连接工具�?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存 工具栏</translation>
+        <translation>打开/保存 工具�?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具栏</translation>
+        <translation>执行工具�?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新工具栏</translation>
+        <translation>更新工具�?/translation>
     </message>
     <message>
         <source>Robo 3T - </source>
@@ -8185,11 +8125,11 @@ Error:
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>启动时加载 .mongorc.js</translation>
+        <translation>启动时加�?.mongorc.js</translation>
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷键</translation>
+        <translation>禁用连接快捷�?/translation>
     </message>
     <message>
         <source>Styles:</source>
@@ -8204,7 +8144,7 @@ Error:
     </message>
     <message>
         <source>Batch Size (number of documents shown at once)</source>
-        <translation>批处理大小 (单页显示的文档条数)</translation>
+        <translation>批处理大�?(单页显示的文档条�?</translation>
     </message>
 </context>
 <context>
@@ -8258,15 +8198,15 @@ Error:
     </message>
     <message>
         <source>Connecting to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;...</source>
-        <translation>正在连接 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;...</translation>
+        <translation>正在连接 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;...</translation>
     </message>
     <message>
         <source>Connected to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>已成功连接 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>已成功连�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Unable to connect to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>无法连接 SSH 服务器 &lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>无法连接 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source> via SSH tunnel</source>
@@ -8282,7 +8222,7 @@ Error:
     </message>
     <message>
         <source>Connected to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>已成功连接 &lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>已成功连�?&lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Failed to connect to &lt;b&gt;%1&lt;/b&gt;%2</source>
@@ -8294,31 +8234,31 @@ Error:
     </message>
     <message>
         <source>Authorizing on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;...</source>
-        <translation>正在认证数据库 &lt;b&gt;%1&lt;/b&gt; (用户: &lt;b&gt;%2&lt;/b&gt;)...</translation>
+        <translation>正在认证数据�?&lt;b&gt;%1&lt;/b&gt; (用户: &lt;b&gt;%2&lt;/b&gt;)...</translation>
     </message>
     <message>
         <source>Authorized on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>数据库 &lt;b&gt;%1&lt;/b&gt; 认证成功 (用户: &lt;b&gt;%2&lt;/b&gt;)</translation>
+        <translation>数据�?&lt;b&gt;%1&lt;/b&gt; 认证成功 (用户: &lt;b&gt;%2&lt;/b&gt;)</translation>
     </message>
     <message>
         <source>Authorization failed on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>数据库 &lt;b&gt;%1&lt;/b&gt; 认证失败 (用户: &lt;b&gt;%2&lt;/b&gt;)</translation>
+        <translation>数据�?&lt;b&gt;%1&lt;/b&gt; 认证失败 (用户: &lt;b&gt;%2&lt;/b&gt;)</translation>
     </message>
     <message>
         <source>No chance to authorize</source>
-        <translation>未进行身份认证</translation>
+        <translation>未进行身份认�?/translation>
     </message>
     <message>
         <source>Loading list of databases...</source>
-        <translation>正在加载数据库列表...</translation>
+        <translation>正在加载数据库列�?..</translation>
     </message>
     <message>
         <source>Access to databases is available</source>
-        <translation>数据库访问正常</translation>
+        <translation>数据库访问正�?/translation>
     </message>
     <message>
         <source>Failed to load list of databases</source>
-        <translation>无法加载数据库列表</translation>
+        <translation>无法加载数据库列�?/translation>
     </message>
     <message>
         <source>No chance to load list of databases</source>
@@ -8329,23 +8269,23 @@ Error:
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用于 WiredTiger 存储引擎且数据库版本需在 3.0 或以上。</translation>
+        <translation>该选项仅适用�?WiredTiger 存储引擎且数据库版本需�?3.0 或以上�?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>该选项仅适用于数据库版本 3.2 或以上。</translation>
+        <translation>该选项仅适用于数据库版本 3.2 或以上�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用于 MMAPv1 存储引擎且数据库版本需在 3.0 或以上。</translation>
+        <translation>该选项仅适用�?MMAPv1 存储引擎且数据库版本需�?3.0 或以上�?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>该选项仅适用于 MMAPv1 存储引擎，且在数据库 3.0 版本后已弃用。</translation>
+        <translation>该选项仅适用�?MMAPv1 存储引擎，且在数据库 3.0 版本后已弃用�?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>该选项自数据库 3.2 版本起已弃用。</translation>
+        <translation>该选项自数据库 3.2 版本起已弃用�?/translation>
     </message>
     <message>
         <source>Create Collection</source>
@@ -8373,7 +8313,7 @@ Error:
     </message>
     <message>
         <source>Validator</source>
-        <translation>文档验证器 (Validator)</translation>
+        <translation>文档验证�?(Validator)</translation>
     </message>
     <message>
         <source>Index Option Defaults</source>
@@ -8389,15 +8329,15 @@ Error:
     </message>
     <message>
         <source>Maximum size in bytes: </source>
-        <translation>最大尺寸 (Bytes): </translation>
+        <translation>最大尺�?(Bytes): </translation>
     </message>
     <message>
         <source>Maximum number of documents: </source>
-        <translation>最大文档数量: </translation>
+        <translation>最大文档数�? </translation>
     </message>
     <message>
         <source>Auto index _id</source>
-        <translation>自动为 _id 创建索引</translation>
+        <translation>自动�?_id 创建索引</translation>
     </message>
     <message>
         <source>Use power-of-2 sizes</source>
@@ -8421,15 +8361,15 @@ Error:
     </message>
     <message>
         <source>Enter the validator document for this collection: </source>
-        <translation>请输入此集合的验证规则文档 (JSON): </translation>
+        <translation>请输入此集合的验证规则文�?(JSON): </translation>
     </message>
     <message>
         <source>Enter a default configuration for indexes when creating a collection: </source>
-        <translation>请输入创建集合时的默认索引配置 (JSON): </translation>
+        <translation>请输入创建集合时的默认索引配�?(JSON): </translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于行 %2, 列 %3。</translation>
+        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于行 %2, �?%3�?/translation>
     </message>
     <message>
         <source>Parsing error</source>
@@ -8441,7 +8381,7 @@ Error:
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效！</translation>
+        <translation>JSON 格式有效�?/translation>
     </message>
     <message>
         <source>Error</source>
@@ -8449,18 +8389,18 @@ Error:
     </message>
     <message>
         <source>Maximum size is required for capped collections</source>
-        <translation>创建固定集合 (Capped) 时必须指定最大尺寸</translation>
+        <translation>创建固定集合 (Capped) 时必须指定最大尺�?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateDatabaseDialog</name>
     <message>
         <source>Create Database</source>
-        <translation>创建数据库</translation>
+        <translation>创建数据�?/translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称:</translation>
+        <translation>数据库名�?</translation>
     </message>
     <message>
         <source>C&amp;reate</source>
@@ -8479,22 +8419,22 @@ Error:
     </message>
     <message>
         <source>Select server:</source>
-        <translation>选择目标服务器:</translation>
+        <translation>选择目标服务�?</translation>
     </message>
     <message>
         <source>Copy &lt;b&gt;%1&lt;/b&gt; collection to database on this or another server. You need to be already connected to destination server, in order to see this server in the list below. This operation will &lt;i&gt;not&lt;/i&gt; overwrite existing documents with the same _id.</source>
-        <translation>将集合 &lt;b&gt;%1&lt;/b&gt; 克隆到当前服务器或其它已连接服务器的数据库中。您需要先连接到目标服务器，才能在下方列表中看到它。此操作&lt;i&gt;不会&lt;/i&gt;覆盖已具有相同 _id 的现有文档。</translation>
+        <translation>将集�?&lt;b&gt;%1&lt;/b&gt; 克隆到当前服务器或其它已连接服务器的数据库中。您需要先连接到目标服务器，才能在下方列表中看到它。此操作&lt;i&gt;不会&lt;/i&gt;覆盖已具有相�?_id 的现有文档�?/translation>
     </message>
     <message>
         <source>Select database:</source>
-        <translation>选择目标数据库:</translation>
+        <translation>选择目标数据�?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::WelcomeTab</name>
     <message>
         <source>All Blog Posts</source>
-        <translation>查看所有博客文章</translation>
+        <translation>查看所有博客文�?/translation>
     </message>
     <message>
         <source>
@@ -8511,7 +8451,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: '✓'; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: '�?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -8519,20 +8459,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class="card"&gt;
-                    &lt;div class="version-badge"&gt;重塑版 v%1 - 标准发行版&lt;/div&gt;
+                    &lt;div class="version-badge"&gt;重塑�?v%1 - 标准发行�?lt;/div&gt;
                     &lt;h1&gt;欢迎使用 Robo 3T 中文化版&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化的 Robo 3T 版本。我们剔除了冗余干扰并修复了核心 Bug，助您更专注于数据管理。&lt;/p&gt;
+                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们剔除了冗余干扰并修复了核心 Bug，助您更专注于数据管理�?lt;/p&gt;
                     
                     &lt;ul class="feature-list"&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定至上：&lt;/strong&gt; 修复了关键的 Windows 编译冲突及内存泄漏风险。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 深度集成稳定的 OpenSSL 1.1.1u 加密套件。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 与 Ninja 构建，带来极致的响应体验。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100%% 免安装：&lt;/strong&gt; 全量依赖库已打包，实现真正的“解压即用”绿色体验。&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;稳定至上�?lt;/strong&gt; 修复了关键的 Windows 编译冲突及内存泄漏风险�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 深度集成稳定�?OpenSSL 1.1.1u 加密套件�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 构建，带来极致的响应体验�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100%% 免安装：&lt;/strong&gt; 全量依赖库已打包，实现真正的“解压即用”绿色体验�?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class="divider"&gt;&lt;/div&gt;
                     &lt;div class="footer"&gt;
-                        "数据由您掌控。感谢支持社区版。"
+                        "数据由您掌控。感谢支持社区版�?
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
@@ -8541,3 +8481,4 @@ Error:
     </message>
 </context>
 </TS>
+
