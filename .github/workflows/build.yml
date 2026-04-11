@@ -121,8 +121,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: robo-shell/build
-          # 确保这里的 Key 逻辑与之前 Job 1 存入时的逻辑完全吻合
+          # 使用用户建议的模糊匹配 Key，确保万无一失
           key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('robomongo/fix/apply_patches.py') }}
+          restore-keys: |
+            ${{ runner.os }}-robo-shell-v141-
           fail-on-cache-miss: true
 
       - name: Install OpenSSL
