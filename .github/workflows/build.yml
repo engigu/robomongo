@@ -99,14 +99,14 @@ jobs:
             exit 1
           )
           
-          # 核心修复：使用 windeployqt 自动部署所有 Qt 依赖 DLL
+          :: 核心修复：使用 windeployqt 自动部署所有 Qt 依赖 DLL
           cd /d D:\dist
           "${{ env.Qt5_Dir }}\bin\windeployqt.exe" --release --no-translations --no-opengl-sw --no-compiler-runtime robo3t.exe
           
-          # 拷贝 OpenSSL DLL
+          :: 拷贝 OpenSSL DLL
           copy "${{ env.OPENSSL_PATH }}\bin\*.dll" D:\dist\
           
-          # 打包
+          :: 打包
           powershell Compress-Archive -Path * -DestinationPath robo3t-v1.5.0-windows-x64.zip
         shell: cmd
 
