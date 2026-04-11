@@ -134,19 +134,24 @@ elseif(SYSTEM_MACOSX)
     # Install styles    
     install(FILES "${QT_STYLES_DIR}/libqmacstyle.dylib" DESTINATION ${styles_dir})
 elseif(SYSTEM_WINDOWS)
-    install_qt_plugins(
-        QWindowsIntegrationPlugin
-        QMinimalIntegrationPlugin
-        QOffscreenIntegrationPlugin)
+    # Use windeployqt for Windows dependencies
+    find_program(WINDEPLOYQT_EXECUTABLE windeployqt NAMES windeployqt HINTS "${Qt5Core_DIR}/../../../bin")
+    if(WINDEPLOYQT_EXECUTABLE)
+        install(CODE "
+            execute_process(COMMAND \"${WINDEPLOYQT_EXECUTABLE}\" 
+                --release 
+                --no-translations 
+                --no-opengl-sw 
+                --no-compiler-runtime 
+                \"\$ENV{DESTDIR}\${CMAKE_INSTALL_PREFIX}/${bin_dir}/robo3t.exe\")
+        ")
+    endif()
 
-    # Qt WebEngine dependencies
-    install(DIRECTORY ${QT_RESOURCES_DIR} DESTINATION ${resources_dir})
+    # Fixed OpenSSL installation for v1.5.0
     install(FILES 
-                "${QT_BIN_DIR}/libEGL.dll"
-                "${QT_BIN_DIR}/libGLESv2.dll" 
-                "${QT_BIN_DIR}/opengl32sw.dll" 
-                "${QT_BIN_DIR}/QtWebEngineProcess.exe" 
-            DESTINATION ${bin_dir})
+        "${OpenSSL_DIR}/bin/libssl-1_1-x64.dll"
+        "${OpenSSL_DIR}/bin/libcrypto-1_1-x64.dll"
+        DESTINATION ${bin_dir})
 
     # Install Styles
     install(FILES "${QT_STYLES_DIR}/qwindowsvistastyle.dll" DESTINATION ${styles_dir})

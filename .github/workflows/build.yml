@@ -98,59 +98,55 @@ jobs:
           ninja -v
         shell: cmd
 
-      - name: Prepare Release Package
+      - name: Build and Package Robo 3T
         run: |
-          if not exist D:\dist\robo3t.exe (
-            echo "FATAL: robo3t.exe was not created in D:\dist"
-            exit 1
-          )
+          subst S: "${{ github.workspace }}\robo-shell"
+          subst R: "${{ github.workspace }}"
+          cd /d D:\b
           
-          :: 核心修复：使用 windeployqt 自动部署所有 Qt 依赖 DLL
-          cd /d D:\dist
-          "${{ env.Qt5_Dir }}\bin\windeployqt.exe" --release --no-translations --no-opengl-sw --no-compiler-runtime robo3t.exe
+          :: 构建与安装到本地目录
+          ninja install
           
-          :: 拷贝 OpenSSL DLL (加强版：确保 libcrypto 和 libssl 被包含)
-          copy "${{ env.OPENSSL_PATH }}\bin\lib*.dll" D:\dist\ || (
-            echo "DLLs not found in bin, searching root..."
-            copy "${{ env.OPENSSL_PATH }}\lib*.dll" D:\dist\
-          )
+          :: 使用 CPack 生成打包产物 (内部会调用我们注入的 windeployqt)
+          cpack -G ZIP
+          cpack -G NSIS
           
-          :: 最后确认
-          if not exist D:\dist\libcrypto-1_1-x64.dll (
-             echo "ERROR: libcrypto-1_1-x64.dll is STILL MISSING!"
-             dir "${{ env.OPENSSL_PATH }}" /s /b | findstr /i "libcrypto.*dll"
-             exit 1
-          )
+          :: 准备产物到 dist 目录供后续上传
+          mkdir D:\dist
+          copy package\*.zip D:\dist\
+          copy package\*.exe D:\dist\
           
-          :: 打包
-          powershell Compress-Archive -Path * -DestinationPath "robo3t-${{ github.ref_name }}-windows-x64.zip"
+          dir D:\dist
         shell: cmd
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: D:/dist/robo3t-${{ github.ref_name }}-windows-x64.zip
-          name: Robo 3T ${{ github.ref_name }} Official Release
+          files: |
+            D:/dist/*.zip
+            D:/dist/*.exe
+          name: Robo 3T ${{ github.ref_name }} Reborn Release
           body: |
-            ## Robo 3T ${{ github.ref_name }}
+            ## Robo 3T ${{ github.ref_name }} Standard Release
             
-            Official stable release for Windows.
+            This release provides both **Installer (Setup)** and **Portable** versions for Windows.
             
-            ### Fixes:
-            - **Complete Dependency Bundling**: Now includes all necessary Qt and OpenSSL DLLs via `windeployqt`.
-            - **Fixed Source Compilation**: Resolved duplicate symbol and namespace ambiguity.
-            - **High Performance Build**: Ninja-linked binary for modern Windows systems.
+            ### Fixes & Features:
+            - **Chinese Localization**: Added language switching support (Options -> Language).
+            - **Modernized Welcome Page**: Rebranded welcome screen with v1.5.0 highlights.
+            - **Complete Dependency Bundling**: Fully integrated Qt and OpenSSL 1.1.1 DLLs.
+            - **Dual Distribution**: Professional NSIS installer + Plug-and-Play portable ZIP.
           draft: false
           prerelease: false
           fail_on_unmatched_files: true
 
-      - name: Upload Artifact
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: robo3t-final-binary
-          path: D:\dist\robo3t-${{ github.ref_name }}-windows-x64.zip
-          retention-days: 1
+          name: robo3t-final-packages
+          path: D:\dist\*
+          retention-days: 7
 
       - name: Cleanup Virtual Drives
         if: always()
