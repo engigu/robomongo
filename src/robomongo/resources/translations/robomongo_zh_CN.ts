@@ -44,72 +44,72 @@
         <translation>打开(&amp;O)...</translation>
     </message>
     <message>
-        <source>Load script from the file to the currently opened shell <b>(%1 + O)</b></source>
-        <translation>从文件加载脚本到当前 Shell <b>(%1 + O)</b></translation>
+        <source>Load script from the file to the currently opened shell &lt;b&gt;(%1 + O)&lt;/b&gt;</source>
+        <translation>从文件加载脚本到当前 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Save</source>
         <translation>保存(&amp;S)</translation>
     </message>
     <message>
-        <source>Save script of the currently opened shell to the file <b>(%1 + S)</b></source>
-        <translation>将当前 Shell 中的脚本保存到文件 <b>(%1 + S)</b></translation>
+        <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
+        <translation>将当前 Shell 中的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
         <translation>另存为(&amp;A)...</translation>
     </message>
     <message>
-        <source>Connect to local or remote MongoDB instance <b>(%1 + N)</b></source>
-        <translation>连接到本地或远程 MongoDB 实例 <b>(%1 + N)</b></translation>
+        <source>Connect to local or remote MongoDB instance &lt;b&gt;(%1 + N)&lt;/b&gt;</source>
+        <translation>连接到本地或远程 MongoDB 实例 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
         <translation>旋转(&amp;R)</translation>
     </message>
     <message>
-        <source>Toggle orientation of results view <b>(F10)</b></source>
-        <translation>切换结果视图的方向 <b>(F10)</b></translation>
+        <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
+        <translation>切换结果视图的方向 &lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
         <translation>文本模式(&amp;T)</translation>
     </message>
     <message>
-        <source>Show current tab in text mode, and make this mode default for all subsequent queries <b>(F4)</b></source>
-        <translation>以文本模式显示当前页签，并将其作为后续查询的默认模式 <b>(F4)</b></translation>
+        <source>Show current tab in text mode, and make this mode default for all subsequent queries &lt;b&gt;(F4)&lt;/b&gt;</source>
+        <translation>以文本模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F4)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Tree Mode</source>
         <translation>树形模式(&amp;T)</translation>
     </message>
     <message>
-        <source>Show current tab in tree mode, and make this mode default for all subsequent queries <b>(F3)</b></source>
-        <translation>以树形模式显示当前页签，并将其作为后续查询的默认模式 <b>(F3)</b></translation>
+        <source>Show current tab in tree mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
+        <translation>以树形模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>T&amp;able Mode</source>
         <translation>表格模式(&amp;A)</translation>
     </message>
     <message>
-        <source>Show current tab in table mode, and make this mode default for all subsequent queries <b>(F3)</b></source>
-        <translation>以表格模式显示当前页签，并将其作为后续查询的默认模式 <b>(F3)</b></translation>
+        <source>Show current tab in table mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
+        <translation>以表格模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Custom Mode</source>
         <translation>自定义模式(&amp;C)</translation>
     </message>
     <message>
-        <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries <b>(F2)</b></source>
-        <translation>如果可能，以自定义模式显示当前页签，并将其作为后续查询的默认模式 <b>(F2)</b></translation>
+        <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
+        <translation>如果可能，以自定义模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Execute query for current tab. If you have some selection in query text - only selection will be executed <b>(F5 </b> or <b>%1 + Enter)</b></source>
-        <translation>执行当前页签的查询。如果选择了部分文本，则只执行所选内容 <b>(F5 </b> 或 <b>%1 + Enter)</b></translation>
+        <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
+        <translation>执行当前页签的查询。如果选择了部分文本，则只执行所选内容 &lt;b&gt;(F5 &lt;/b&gt; 或 &lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Stop execution of currently running script. <b>(F6)</b></source>
-        <translation>停止执行当前运行的脚本。<b>(F6)</b></translation>
+        <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
+        <translation>停止执行当前运行的脚本。&lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -1626,16 +1626,16 @@ Error:
         <translation>系统</translation>
     </message>
     <message>
-        <source>Drop <b>%1</b> database?</source>
-        <translation>确定要删除 <b>%1</b> 数据库吗？</translation>
+        <source>Drop &lt;b&gt;%1&lt;/b&gt; database?</source>
+        <translation>确定要删除 &lt;b&gt;%1&lt;/b&gt; 数据库吗？</translation>
     </message>
     <message>
         <source>Drop Database</source>
         <translation>删除数据库</translation>
     </message>
     <message>
-        <source>Repair <b>%1</b> database?</source>
-        <translation>确定要修复 <b>%1</b> 数据库吗？</translation>
+        <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
+        <translation>确定要修复 &lt;b&gt;%1&lt;/b&gt; 数据库吗？</translation>
     </message>
     <message>
         <source>Repair Database</source>
