@@ -71,7 +71,7 @@ jobs:
           dir "C:\Program Files\OpenSSL*" /s /b | findstr "opensslconf.h"
           set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL-Win64
           if not exist "C:\Program Files\OpenSSL-Win64" set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL
-          echo OPENSSL_PATH=%OPENSSL_REAL_PATH% >> %GITHUB_ENV%
+          echo OPENSSL_PATH=%OPENSSL_REAL_PATH%>>%GITHUB_ENV%
         shell: cmd
 
       - name: Configure and Build Robo 3T
