@@ -235,7 +235,7 @@ namespace Robomongo {
 
     void MongoServer::handle(RefreshReplicaSetFolderResponse *event)
     {
-        handleReplicaSetRefreshEvents(event->isError(), event->replicaSet, event->expanded);
+        handleReplicaSetRefreshEvents(event->isError(), event->error(), event->replicaSet, event->expanded);
     }
 
     void MongoServer::handle(LoadDatabaseNamesResponse *event) 
@@ -262,18 +262,18 @@ namespace Robomongo {
             if (_connSettings->isReplicaSet()) {
                 if (ConnectionPrimary == _connectionType) { // Insert document from explorer context menu
                     if (EventError::SetPrimaryUnreachable == event->error().errorCode()) {
-                        auto refreshEvent = ReplicaSetRefreshed(this, event->error().replicaSetInfo());
+                        auto refreshEvent = ReplicaSetRefreshed(this, event->error(), event->error().replicaSetInfo());
                         handle(&refreshEvent);
                     }
                 }
                 else {  // Insert document from tab results window (Notifier, OutputWindow widget)
-                    _bus->publish(new InsertDocumentResponse(this, event->ns()));
+                    _bus->publish(new InsertDocumentResponse(this, event->error(), event->ns()));
                 }
             }
             genericEventErrorHandler(event, "Failed to insert document.", _bus, this);
         }
         else {
-            _bus->publish(new InsertDocumentResponse(this, event->ns()));
+            _bus->publish(new InsertDocumentResponse(this, event->error(), event->ns()));
             LOG_MSG("Document inserted.", mongo::logger::LogSeverity::Info());
         }
     }
@@ -295,7 +295,7 @@ namespace Robomongo {
             hideProgressBar();
             if (_connSettings->isReplicaSet() &&
                 EventError::SetPrimaryUnreachable == event->error().errorCode()) {
-                auto refreshEvent = ReplicaSetRefreshed(this, event->error().replicaSetInfo());
+                auto refreshEvent = ReplicaSetRefreshed(this, event->error(), event->error().replicaSetInfo());
                 handle(&refreshEvent);
             }
             genericEventErrorHandler(event, "Failed to remove " + subStr, _bus, this);
@@ -320,7 +320,7 @@ namespace Robomongo {
         if (event->isError()) {
             if (_connSettings->isReplicaSet() &&
                 EventError::SetPrimaryUnreachable == event->error().errorCode()) {
-                auto refreshEvent = ReplicaSetRefreshed(this, event->error().replicaSetInfo());
+                auto refreshEvent = ReplicaSetRefreshed(this, event->error(), event->error().replicaSetInfo());
                 handle(&refreshEvent);
             }
             genericEventErrorHandler(event, "Failed to create database \'" + event->database + "\'.", _bus, this);
@@ -336,7 +336,7 @@ namespace Robomongo {
         if (event->isError()) {
             if (_connSettings->isReplicaSet() &&
                 EventError::SetPrimaryUnreachable == event->error().errorCode()) {
-                auto refreshEvent = ReplicaSetRefreshed(this, event->error().replicaSetInfo());
+                auto refreshEvent = ReplicaSetRefreshed(this, event->error(), event->error().replicaSetInfo());
                 handle(&refreshEvent);
             }
             genericEventErrorHandler(event, "Failed to drop database \'" + event->database + "\'.", _bus, this);
@@ -349,7 +349,7 @@ namespace Robomongo {
 
     void MongoServer::handle(ReplicaSetRefreshed *event) 
     {
-        handleReplicaSetRefreshEvents(event->isError(), event->replicaSet, false);
+        handleReplicaSetRefreshEvents(event->isError(), event->error(), event->replicaSet, false);
     }
 
     void MongoServer::changeWorkerShellTimeout(int newTimeout)
