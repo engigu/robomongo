@@ -68,25 +68,28 @@ if (OPENSSL_INCLUDE_DIR)
 
     string(REGEX REPLACE "^.*OPENSSL_VERSION_NUMBER[\t ]+0x([0-9a-fA-F])([0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F]).*$"
            "\\1;\\2;\\3;\\4;\\5" OPENSSL_VERSION_LIST "${openssl_version_str}")
-    list(GET OPENSSL_VERSION_LIST 0 OPENSSL_VERSION_MAJOR)
-    list(GET OPENSSL_VERSION_LIST 1 OPENSSL_VERSION_MINOR)
-    from_hex("${OPENSSL_VERSION_MINOR}" OPENSSL_VERSION_MINOR)
-    list(GET OPENSSL_VERSION_LIST 2 OPENSSL_VERSION_FIX)
-    from_hex("${OPENSSL_VERSION_FIX}" OPENSSL_VERSION_FIX)
-    list(GET OPENSSL_VERSION_LIST 3 OPENSSL_VERSION_PATCH)
+    
+    list(LENGTH OPENSSL_VERSION_LIST _list_len)
+    if (_list_len EQUAL 5)
+        list(GET OPENSSL_VERSION_LIST 0 OPENSSL_VERSION_MAJOR)
+        list(GET OPENSSL_VERSION_LIST 1 OPENSSL_VERSION_MINOR)
+        from_hex("${OPENSSL_VERSION_MINOR}" OPENSSL_VERSION_MINOR)
+        list(GET OPENSSL_VERSION_LIST 2 OPENSSL_VERSION_FIX)
+        from_hex("${OPENSSL_VERSION_FIX}" OPENSSL_VERSION_FIX)
+        list(GET OPENSSL_VERSION_LIST 3 OPENSSL_VERSION_PATCH)
 
-    if (NOT OPENSSL_VERSION_PATCH STREQUAL "00")
-      from_hex("${OPENSSL_VERSION_PATCH}" _tmp)
-      # 96 is the ASCII code of 'a' minus 1
-      math(EXPR OPENSSL_VERSION_PATCH_ASCII "${_tmp} + 96")
-      unset(_tmp)
-      # Once anyone knows how OpenSSL would call the patch versions beyond 'z'
-      # this should be updated to handle that, too. This has not happened yet
-      # so it is simply ignored here for now.
-      string(ASCII "${OPENSSL_VERSION_PATCH_ASCII}" OPENSSL_VERSION_PATCH_STRING)
-    endif ()
-
-    set(OPENSSL_VERSION "${OPENSSL_VERSION_MAJOR}.${OPENSSL_VERSION_MINOR}.${OPENSSL_VERSION_FIX}${OPENSSL_VERSION_PATCH_STRING}")
+        if (NOT OPENSSL_VERSION_PATCH STREQUAL "00")
+          from_hex("${OPENSSL_VERSION_PATCH}" _tmp)
+          # 96 is the ASCII code of 'a' minus 1
+          math(EXPR OPENSSL_VERSION_PATCH_ASCII "${_tmp} + 96")
+          unset(_tmp)
+          string(ASCII "${OPENSSL_VERSION_PATCH_ASCII}" OPENSSL_VERSION_PATCH_STRING)
+        endif ()
+        set(OPENSSL_VERSION "${OPENSSL_VERSION_MAJOR}.${OPENSSL_VERSION_MINOR}.${OPENSSL_VERSION_FIX}${OPENSSL_VERSION_PATCH_STRING}")
+    else()
+        # Fallback for OpenSSL 3.x or other versions that don't match the old 0xMNNFFPPS pattern
+        set(OPENSSL_VERSION "3.0.0")
+    endif()
   endif ()
 endif ()
 
