@@ -12,13 +12,49 @@ namespace Robomongo {
         QWidget(parent), _parent(parent)
     {
         auto webView = new QWebEngineView(this);
-        QUrl const URL {
-            "http://files.studio3t.com/rm-feed_3t_io/1.4.3/index.html"        
-        };
         webView->setPage(new MyWebPage(this));
-        webView->page()->setUrl(URL);
+        webView->setHtml(R"(
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="utf-8">
+                <style>
+                    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
+                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
+                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
+                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
+                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
+                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
+                    .feature-list { padding: 0; list-style: none; margin: 0; }
+                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
+                    .feature-list li::before { content: '✓'; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
+                    .divider { height: 1px; background: #eee; margin: 30px 0; }
+                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
+                </style>
+            </head>
+            <body>
+                <div class="card">
+                    <div class="version-badge">Reborn v1.5.0 - Standard Release</div>
+                    <h1>Welcome back to Robo 3T</h1>
+                    <p>This is the community-maintained, optimized version of Robo 3T. We've removed the noise and fixed the core, so you can focus on your data.</p>
+                    
+                    <ul class="feature-list">
+                        <li><strong>Stability First:</strong> Resolved critical Windows compilation issues and memory leaks.</li>
+                        <li><strong>Security Hardened:</strong> Integrated stable OpenSSL 1.1.1u toolkit.</li>
+                        <li><strong>Modern Toolchain:</strong> Rebuilt with Qt 5.15.2 and Ninja for lightning-fast performance.</li>
+                        <li><strong>100% Portable:</strong> All dependencies are now bundled for a true zero-install experience.</li>
+                    </ul>
+
+                    <div class="divider"></div>
+                    <div class="footer">
+                        "Your data, your rules. Thank you for supporting the community edition."
+                    </div>
+                </div>
+            </body>
+            </html>
+        )");
         webView->setContextMenuPolicy(Qt::NoContextMenu);
-        webView->page()->triggerAction(QWebEnginePage::WebAction::ReloadAndBypassCache);
         webView->page()->profile()->setHttpCacheType(QWebEngineProfile::HttpCacheType::NoCache);
 
         auto mainLayout = new QHBoxLayout;
