@@ -1388,6 +1388,7 @@ Error:
         <source>Details</source>
         <translation>详情</translation>
     </message>
+</context>
 <context>
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
