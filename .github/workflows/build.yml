@@ -121,6 +121,9 @@ jobs:
           key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('fix/apply_patches.py') }}
           fail-on-cache-miss: true
 
+      - name: Install OpenSSL
+        run: choco install openssl -y --no-progress
+
       - name: Configure and Build Robo 3T
         env:
           MongoDB_OBJECTS: ${{ github.workspace }}/robo-shell
@@ -128,8 +131,8 @@ jobs:
           cd robomongo
           mkdir build
           cd build
-          # Using standard OpenSSL path on Windows runners
-          cmake -G "Visual Studio 17 2022" -A x64 -T v141 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DMongoDB_DIR="${{ github.workspace }}/robo-shell" -DOPENSSL_ROOT_DIR="C:/Program Files/OpenSSL" -DCMAKE_BUILD_TYPE=Release ..
+          # Using OpenSSL_DIR (project custom). Unit tests disabled via CMakeLists.txt edit.
+          cmake -G "Visual Studio 17 2022" -A x64 -T v141 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DMongoDB_DIR="${{ github.workspace }}/robo-shell" -DOpenSSL_DIR="C:/Program Files/OpenSSL" -DCMAKE_BUILD_TYPE=Release ..
           cmake --build . --config Release -j 2
         shell: cmd
 
