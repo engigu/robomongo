@@ -10,9 +10,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-# ==============================================================================
-# Job 2: 独立运行，直接从云端缓存拉取内核
-# ==============================================================================
   build-app:
     runs-on: windows-latest
     steps:
@@ -79,15 +76,13 @@ jobs:
         run: |
           mkdir D:\b
           cd /d D:\b
-          cmake -G "Visual Studio 17 2022" -A x64 -T v141 ^
-            -DCMAKE_CXX_USE_RESPONSE_FILE_FOR_OBJECTS=ON ^
-            -DCMAKE_CXX_USE_RESPONSE_FILE_FOR_LIBRARIES=ON ^
+          cmake -G Ninja ^
+            -DCMAKE_BUILD_TYPE=Release ^
             -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" ^
             -DMongoDB_DIR="${{ github.workspace }}/robo-shell" ^
             -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" ^
-            -DCMAKE_BUILD_TYPE=Release ^
             ${{ github.workspace }}
-          cmake --build . --config Release -j 2
+          ninja -v
         shell: cmd
 
       - name: Upload Artifact
@@ -95,5 +90,5 @@ jobs:
         with:
           name: robo3t-final-binary
           path: |
-            D:\b\src\robomongo\Release\robomongo.exe
-            D:\b\src\robomongo\Release\*.dll
+            D:\b\src\robomongo\robomongo.exe
+            D:\b\src\robomongo\*.dll
