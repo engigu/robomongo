@@ -32,13 +32,13 @@ namespace Robomongo
         : BaseClass(databaseItem), _category(category)
     {
         if (_category == Collections) {
-            QAction *createCollection = new QAction("Create Collection...", this);
+            QAction *createCollection = new QAction(tr("Create Collection..."), this);
             VERIFY(connect(createCollection, SIGNAL(triggered()), SLOT(ui_createCollection())));
 
-            QAction *dbCollectionsStats = new QAction("Collections Statistics", this);
+            QAction *dbCollectionsStats = new QAction(tr("Collections Statistics"), this);
             VERIFY(connect(dbCollectionsStats, SIGNAL(triggered()), SLOT(ui_dbCollectionsStatistics())));
 
-            QAction *refreshCollections = new QAction("Refresh", this);
+            QAction *refreshCollections = new QAction(tr("Refresh"), this);
             VERIFY(connect(refreshCollections, SIGNAL(triggered()), SLOT(ui_refreshCollections())));
 
             BaseClass::_contextMenu->addAction(dbCollectionsStats);
@@ -48,13 +48,13 @@ namespace Robomongo
         }
         else if (_category == Users) {
 
-            QAction *refreshUsers = new QAction("Refresh", this);
+            QAction *refreshUsers = new QAction(tr("Refresh"), this);
             VERIFY(connect(refreshUsers, SIGNAL(triggered()), SLOT(ui_refreshUsers())));
 
-            QAction *viewUsers = new QAction("View Users", this);
+            QAction *viewUsers = new QAction(tr("View Users"), this);
             VERIFY(connect(viewUsers, SIGNAL(triggered()), SLOT(ui_viewUsers())));
 
-            QAction *addUser = new QAction("Add User...", this);
+            QAction *addUser = new QAction(tr("Add User..."), this);
             VERIFY(connect(addUser, SIGNAL(triggered()), SLOT(ui_addUser())));
 
             BaseClass::_contextMenu->addAction(viewUsers);
@@ -64,13 +64,13 @@ namespace Robomongo
         }
         else if (_category == Functions) {
 
-            QAction *refreshFunctions = new QAction("Refresh", this);
+            QAction *refreshFunctions = new QAction(tr("Refresh"), this);
             VERIFY(connect(refreshFunctions, SIGNAL(triggered()), SLOT(ui_refreshFunctions())));
 
-            QAction *viewFunctions = new QAction("View Functions", this);
+            QAction *viewFunctions = new QAction(tr("View Functions"), this);
             VERIFY(connect(viewFunctions, SIGNAL(triggered()), SLOT(ui_viewFunctions())));
 
-            QAction *addFunction = new QAction("Add Function...", this);
+            QAction *addFunction = new QAction(tr("Add Function..."), this);
             VERIFY(connect(addFunction, SIGNAL(triggered()), SLOT(ui_addFunction())));
 
             BaseClass::_contextMenu->addAction(viewFunctions);
@@ -206,7 +206,7 @@ namespace Robomongo
             QtUtils::toQString(databaseItem->database()->server()->connectionRecord()->getFullAddress()), 
             QtUtils::toQString(databaseItem->database()->name()), MongoFunction());
 
-        dlg.setWindowTitle("Create Function");
+        dlg.setWindowTitle(tr("Create Function"));
         dlg.setCode(
             "function() {\n"
             "    // write your code here\n"

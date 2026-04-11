@@ -34,12 +34,12 @@ namespace Robomongo
         INDEX_OPTION_DEFAULTS_TAB   = 3,
     };
 
-    const QString CreateCollectionDialog::STORAGE_ENGINE_TAB_HINT = "Option available for WiredTiger storage engine only and database version 3.0 and higher.";
-    const QString CreateCollectionDialog::VALIDATOR_TAB_HINT = "Option available for database version 3.2 and higher.";
-    const QString CreateCollectionDialog::INDEX_OPTION_DEFAULTS_TAB_HINT = "Option available for database version 3.2 and higher.";
-    const QString CreateCollectionDialog::NO_PADDING_HINT = "Option available for MMAPv1 storage engine only and database version 3.0 and higher.";
-    const QString CreateCollectionDialog::USE_POWEROFTWO_HINT = "Option available for MMAPv1 storage engine only and deprecated since database version 3.0";
-    const QString CreateCollectionDialog::AUTO_INDEXID_HINT = "Option deprecated since database version 3.2";
+    const QString CreateCollectionDialog::STORAGE_ENGINE_TAB_HINT = QObject::tr("Option available for WiredTiger storage engine only and database version 3.0 and higher.");
+    const QString CreateCollectionDialog::VALIDATOR_TAB_HINT = QObject::tr("Option available for database version 3.2 and higher.");
+    const QString CreateCollectionDialog::INDEX_OPTION_DEFAULTS_TAB_HINT = QObject::tr("Option available for database version 3.2 and higher.");
+    const QString CreateCollectionDialog::NO_PADDING_HINT = QObject::tr("Option available for MMAPv1 storage engine only and database version 3.0 and higher.");
+    const QString CreateCollectionDialog::USE_POWEROFTWO_HINT = QObject::tr("Option available for MMAPv1 storage engine only and deprecated since database version 3.0");
+    const QString CreateCollectionDialog::AUTO_INDEXID_HINT = QObject::tr("Option deprecated since database version 3.2");
 
     CreateCollectionDialog::CreateCollectionDialog(const QString &serverName, const float dbVersion, const std::string& storageEngine, 
         const QString &database, const QString &collection, QWidget *parent) :
@@ -343,15 +343,15 @@ namespace Robomongo
 
         _validatorLevelLabel = new QLabel(tr("Validation Level: "));
         _validatorLevelComboBox = new QComboBox();
-        _validatorLevelComboBox->addItem(tr("off"));
-        _validatorLevelComboBox->addItem(tr("strict"));
-        _validatorLevelComboBox->addItem(tr("moderate"));
+        _validatorLevelComboBox->addItem("off");
+        _validatorLevelComboBox->addItem("strict");
+        _validatorLevelComboBox->addItem("moderate");
         _validatorLevelComboBox->setCurrentIndex(1);
 
         _validatorActionLabel = new QLabel(tr("Validation Action: "));
         _validatorActionComboBox = new QComboBox();
-        _validatorActionComboBox->addItem(tr("error"));
-        _validatorActionComboBox->addItem(tr("warn"));
+        _validatorActionComboBox->addItem("error");
+        _validatorActionComboBox->addItem("warn");
         _validatorActionComboBox->setCurrentIndex(0);
 
         _validatorFrameLabel = new QLabel(tr("Enter the validator document for this collection: "));

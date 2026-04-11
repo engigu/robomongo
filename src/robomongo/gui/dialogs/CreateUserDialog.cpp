@@ -55,7 +55,7 @@ namespace Robomongo
                                        QWidget *parent) : QDialog(parent),
         _user(user)
     {
-        setWindowTitle("Add User");
+        setWindowTitle(tr("Add User"));
         setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint); // Remove help button (?)
         setMinimumSize(minimumSize);
 
@@ -66,13 +66,13 @@ namespace Robomongo
         hline->setFrameShape(QFrame::HLine);
         hline->setFrameShadow(QFrame::Sunken);
 
-        _userNameLabel = new QLabel("Name:");
+        _userNameLabel = new QLabel(tr("Name:"));
         _userNameEdit = new QLineEdit();
         _userNameEdit->setText(QtUtils::toQString(user.name()));
-        _userPassLabel = new QLabel("Password:");
+        _userPassLabel = new QLabel(tr("Password:"));
         _userPassEdit = new QLineEdit();
         _userPassEdit->setEchoMode(QLineEdit::Password);
-        _userSourceLabel = new QLabel("UserSource:");
+        _userSourceLabel = new QLabel(tr("UserSource:"));
         _userSourceComboBox = new QComboBox();
         _userSourceComboBox->addItems(QStringList() << databases); //setText(QtUtils::toQString(user.userSource()));    
         _userSourceComboBox->setCurrentIndex(databases.indexOf(database));
@@ -84,7 +84,7 @@ namespace Robomongo
         {
             int row = i%3;
             int col = i/3;
-            _rolesArray[i] = new QCheckBox(rolesText[i], this);
+            _rolesArray[i] = new QCheckBox(tr(rolesText[i]), this);
             MongoUser::RolesVector::const_iterator it = std::find(userRoles.begin(), userRoles.end(), rolesText[i]);
             _rolesArray[i]->setChecked(it!= userRoles.end());
             gridRoles->addWidget(_rolesArray[i], row, col);
@@ -130,7 +130,7 @@ namespace Robomongo
         QWidget *parent) : QDialog(parent),
         _user(user)
     {
-        setWindowTitle("Add User");
+        setWindowTitle(tr("Add User"));
         setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint); // Remove help button (?)
         setMinimumSize(minimumSize);
 
@@ -141,13 +141,13 @@ namespace Robomongo
         hline->setFrameShape(QFrame::HLine);
         hline->setFrameShadow(QFrame::Sunken);
 
-        _userNameLabel = new QLabel("Name:");
+        _userNameLabel = new QLabel(tr("Name:"));
         _userNameEdit = new QLineEdit();
         _userNameEdit->setText(QtUtils::toQString(user.name()));
-        _userPassLabel= new QLabel("Password:");
+        _userPassLabel= new QLabel(tr("Password:"));
         _userPassEdit = new QLineEdit();
         _userPassEdit->setEchoMode(QLineEdit::Password);
-        _readOnlyCheckBox = new QCheckBox("Read Only");
+        _readOnlyCheckBox = new QCheckBox(tr("Read Only"));
         _readOnlyCheckBox->setChecked(user.readOnly());
 
         QDialogButtonBox *buttonBox = new QDialogButtonBox(this);

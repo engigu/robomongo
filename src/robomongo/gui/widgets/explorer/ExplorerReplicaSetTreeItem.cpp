@@ -42,14 +42,14 @@ namespace Robomongo
         _bus(AppRegistry::instance().bus())
     { 
         // Set connection settings of this replica member
-        _connSettings->setConnectionName(_repMemberHostAndPort.toString() + " [member of " + _connSettings->connectionName() + "]");
+        _connSettings->setConnectionName(_repMemberHostAndPort.toString() + tr(" [member of ") + _connSettings->connectionName() + "]");
         _connSettings->setServerHost(_repMemberHostAndPort.host());
         _connSettings->setServerPort(_repMemberHostAndPort.port());
         _connSettings->setReplicaSet(false);  
         _connSettings->replicaSetSettings()->deleteAllMembers();
 
         // Add Actions
-        auto openShellAction = new QAction("Open Shell", this);
+        auto openShellAction = new QAction(tr("Open Shell"), this);
 #ifdef __APPLE__
         openShellAction->setIcon(GuiRegistry::instance().mongodbIconForMAC());
 #else
@@ -57,19 +57,19 @@ namespace Robomongo
 #endif
         VERIFY(connect(openShellAction, SIGNAL(triggered()), SLOT(ui_openShell())));
 
-        auto openDirectConnection = new QAction("Open Direct Connection", this);
+        auto openDirectConnection = new QAction(tr("Open Direct Connection"), this);
         VERIFY(connect(openDirectConnection, SIGNAL(triggered()), SLOT(ui_openDirectConnection())));
 
-        auto serverStatus = new QAction("Server Status", this);
+        auto serverStatus = new QAction(tr("Server Status"), this);
         VERIFY(connect(serverStatus, SIGNAL(triggered()), SLOT(ui_serverStatus())));
 
-        auto serverVersion = new QAction("MongoDB Version", this);
+        auto serverVersion = new QAction(tr("MongoDB Version"), this);
         VERIFY(connect(serverVersion, SIGNAL(triggered()), SLOT(ui_serverVersion())));
 
-        auto serverHostInfo = new QAction("Host Info", this);
+        auto serverHostInfo = new QAction(tr("Host Info"), this);
         VERIFY(connect(serverHostInfo, SIGNAL(triggered()), SLOT(ui_serverHostInfo())));        
 
-        auto showLog = new QAction("Show Log", this);
+        auto showLog = new QAction(tr("Show Log"), this);
         VERIFY(connect(showLog, SIGNAL(triggered()), SLOT(ui_showLog()))); 
 
         BaseClass::_contextMenu->addAction(openShellAction);
@@ -92,11 +92,11 @@ namespace Robomongo
         _isUp = isUp;
         _isPrimary = isPrimary;
 
-        QString stateStr("[Unknown]");
+        QString stateStr(tr("[Unknown]"));
         if (_isUp)
-            stateStr = _isPrimary ? "[Primary]" : "[Secondary]";
+            stateStr = _isPrimary ? tr("[Primary]") : tr("[Secondary]");
         else
-            stateStr = "[Not Reachable]";
+            stateStr = tr("[Not Reachable]");
 
         setDisabled(_isUp ? false : true);
         setText(0, QString::fromStdString(_repMemberHostAndPort.toString()) + " " + stateStr);

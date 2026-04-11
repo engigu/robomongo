@@ -16,7 +16,6 @@ namespace
 {
     const unsigned port = 27017;
     const char *defaultServerHost = "localhost";
-    const char *defaultNameConnection = "New Connection";
 
     const int maxLength = 300;
 }
@@ -27,7 +26,7 @@ namespace Robomongo
      * Creates ConnectionSettings with default values
      */
     ConnectionSettings::ConnectionSettings(bool isClone) : QObject(),
-        _connectionName(defaultNameConnection),
+        _connectionName(tr("New Connection")),
         _host(defaultServerHost),
         _port(port),
         _imported(false),
@@ -39,7 +38,7 @@ namespace Robomongo
     { }
 
     ConnectionSettings::ConnectionSettings(const mongo::MongoURI& uri, bool isClone)  
-        : _connectionName(defaultNameConnection),
+        : _connectionName(tr("New Connection")),
         _host(defaultServerHost),
         _port(port),
         _imported(false),

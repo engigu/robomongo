@@ -54,13 +54,13 @@ namespace Robomongo
         */
 
         auto defaultDatabaseDescriptionLabel = new QLabel(
-            "Database, that will be default (<code>db</code> shell variable will point to this database). "
+            tr("Database, that will be default (<code>db</code> shell variable will point to this database). "
             "By default, default database will be the one you authenticate on, or <code>test</code> otherwise. "
-            "Leave this field empty, if you want default behavior.");
+            "Leave this field empty, if you want default behavior."));
         defaultDatabaseDescriptionLabel->setWordWrap(true);
         defaultDatabaseDescriptionLabel->setContentsMargins(0, -2, 0, 20);
         _defaultDatabaseName = new QLineEdit(QtUtils::toQString(_settings->defaultDatabase()));
-        auto defaultDbLabel = new QLabel("Default Database:");
+        auto defaultDbLabel = new QLabel(tr("Default Database:"));
 #ifdef _WIN32
         defaultDbLabel->setMaximumWidth(100); // Win
 #elif __APPLE__

@@ -19,9 +19,9 @@ namespace Robomongo
         ExplorerCollectionIndexesDir *parent, const IndexInfo &info)
         : BaseClass(parent), _info(info)
     {
-        auto dropIndex = new QAction("Drop Index...", this);
+        auto dropIndex = new QAction(tr("Drop Index..."), this);
         connect(dropIndex, SIGNAL(triggered()), SLOT(ui_dropIndex()));
-        auto editIndex = new QAction("Edit Index...", this);
+        auto editIndex = new QAction(tr("Edit Index..."), this);
         connect(editIndex, SIGNAL(triggered()), SLOT(ui_edit()));
 
         BaseClass::_contextMenu->addAction(editIndex);
@@ -34,7 +34,7 @@ namespace Robomongo
     void ExplorerCollectionIndexItem::ui_dropIndex()
     {
         // Ask user
-        auto const answer = utils::questionDialog(treeWidget(), "Drop", "Index", text(0));
+        auto const answer = utils::questionDialog(treeWidget(), tr("Drop"), tr("Index"), text(0));
         if (answer != QMessageBox::Yes)
             return;
 

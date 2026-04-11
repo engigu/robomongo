@@ -74,9 +74,9 @@ namespace Robomongo
 
         if (!AppRegistry::instance().settingsManager()->disableHttpsFeatures()) {
 #ifdef __APPLE__
-            addTab(scrollArea, QIcon(), "Welcome");
+            addTab(scrollArea, QIcon(), tr("Welcome"));
 #else
-            addTab(scrollArea, GuiRegistry::instance().welcomeTabIcon(), "Welcome");
+            addTab(scrollArea, GuiRegistry::instance().welcomeTabIcon(), tr("Welcome"));
 #endif        
         }
         scrollArea->setFrameShape(QFrame::NoFrame);
@@ -156,9 +156,9 @@ namespace Robomongo
         // If welcome tab is closed open it as first tab otherwise refresh on 
         // it's current place.
         if (indexOf(scrollArea) == -1)  // Welcome Tab is closed
-            insertTab(0, scrollArea, icon, "Welcome");
+            insertTab(0, scrollArea, icon, tr("Welcome"));
         else 
-            insertTab(indexOf(scrollArea), scrollArea, icon, "Welcome");
+            insertTab(indexOf(scrollArea), scrollArea, icon, tr("Welcome"));
 
         scrollArea->setFrameShape(QFrame::NoFrame);
         setCurrentIndex(indexOf(scrollArea));
@@ -292,9 +292,9 @@ namespace Robomongo
         const QString &title = event->shell->title();
         QString shellName;
         if (event->shell->isExecutable())
-            shellName = title.isEmpty() ? " Loading..." : title;
+            shellName = title.isEmpty() ? tr(" Loading...") : title;
         else
-            shellName = "New Shell";
+            shellName = tr("New Shell");
 
         auto queryWidget = new QueryWidget(event->shell, this);
         VERIFY(connect(queryWidget, SIGNAL(titleChanged(const QString &)), 

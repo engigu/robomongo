@@ -33,14 +33,14 @@ namespace
     }
 
     // Helper hint strings
-    QString const CA_FILE_HINT  = " mongo --tlsCAFile : Certificate Authority file for TLS";
-    QString const PEM_FILE_HINT = " mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS";
-    QString const PEM_PASS_HINT = " mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS";
-    QString const ALLOW_INVALID_HOSTNAME_HINT     = " mongo --tlsAllowInvalidHostnames : Allow connections "
-                                                    "to servers with non-matching hostnames";
-    QString const ALLOW_INVALID_CERTIFICATES_HINT = " mongo --tlsAllowInvalidCertificates : Allow connections "
-                                                    "to servers with invalid certificates";
-    QString const CRL_FILE_HINT = " mongo --tlsCRLFile : Certificate Revocation List file for TLS";
+    const QString CA_FILE_HINT() { return QObject::tr(" mongo --tlsCAFile : Certificate Authority file for TLS"); }
+    const QString PEM_FILE_HINT() { return QObject::tr(" mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS"); }
+    const QString PEM_PASS_HINT() { return QObject::tr(" mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS"); }
+    const QString ALLOW_INVALID_HOSTNAME_HINT() { return QObject::tr(" mongo --tlsAllowInvalidHostnames : Allow connections "
+                                                     "to servers with non-matching hostnames"); }
+    const QString ALLOW_INVALID_CERTIFICATES_HINT() { return QObject::tr(" mongo --tlsAllowInvalidCertificates : Allow connections "
+                                                     "to servers with invalid certificates"); }
+    const QString CRL_FILE_HINT() { return QObject::tr(" mongo --tlsCRLFile : Certificate Revocation List file for TLS"); }
 }
 
 namespace Robomongo
@@ -51,24 +51,24 @@ namespace Robomongo
         const SslSettings* const sslSettings = _connSettings->sslSettings();
 
         // Use TLS section
-        _useSslCheckBox = new QCheckBox("Use TLS protocol");
+        _useSslCheckBox = new QCheckBox(tr("Use TLS protocol"));
         _useSslCheckBox->setStyleSheet("margin-bottom: 7px");
         VERIFY(connect(_useSslCheckBox, SIGNAL(stateChanged(int)), this, SLOT(useSslCheckBoxStateChange(int))));
 
         // Auth. Method section
-        _authMethodLabel = new QLabel("Authentication Method: ");
+        _authMethodLabel = new QLabel(tr("Authentication Method: "));
         _authMethodComboBox = new QComboBox;
-        _authMethodComboBox->addItem("Self-signed Certificate");
-        _authMethodComboBox->addItem("Use CA Certificate");
-        _authMethodComboBox->setItemData(0, ALLOW_INVALID_CERTIFICATES_HINT, Qt::ToolTipRole);
-        _authMethodComboBox->setItemData(1, CA_FILE_HINT, Qt::ToolTipRole);
-        _selfSignedInfoStr = new QLabel("In general, avoid using self-signed certificates unless the network is trusted. "
+        _authMethodComboBox->addItem(tr("Self-signed Certificate"));
+        _authMethodComboBox->addItem(tr("Use CA Certificate"));
+        _authMethodComboBox->setItemData(0, ALLOW_INVALID_CERTIFICATES_HINT(), Qt::ToolTipRole);
+        _authMethodComboBox->setItemData(1, CA_FILE_HINT(), Qt::ToolTipRole);
+        _selfSignedInfoStr = new QLabel(tr("In general, avoid using self-signed certificates unless the network is trusted. "
             "If self-signed certificate is used, the communications channel will be encrypted however there will be "
-            "no validation of server identity.");
+            "no validation of server identity."));
         _selfSignedInfoStr->setWordWrap(true);
         _selfSignedInfoStr->setToolTip(ALLOW_INVALID_CERTIFICATES_HINT);
-        _caFileLabel = new QLabel("CA Certificate:");
-        _caFileLabel->setToolTip(CA_FILE_HINT);
+        _caFileLabel = new QLabel(tr("CA Certificate:"));
+        _caFileLabel->setToolTip(CA_FILE_HINT());
         _caFilePathLineEdit = new QLineEdit;
         _caFileBrowseButton = new QPushButton("...");
         _caFileBrowseButton->setMaximumWidth(50);
@@ -76,50 +76,50 @@ namespace Robomongo
         VERIFY(connect(_authMethodComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(on_authModeComboBox_change(int))));
 
         // PEM file section
-        _usePemFileCheckBox = new QCheckBox("Use PEM Cert./Key: ");
+        _usePemFileCheckBox = new QCheckBox(tr("Use PEM Cert./Key: "));
         _usePemFileCheckBox->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         _pemFileInfoStr = 
-            new QLabel("Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.");
+            new QLabel(tr("Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file."));
         _pemFileInfoStr->setWordWrap(true);
 #ifdef Q_OS_WIN
         _pemFileInfoStr->setContentsMargins(0,2,0,0);   // Top alignment adjustment required only for Windows
 #endif
-        _pemFileLabel = new QLabel("PEM Certificate/Key: ");
+        _pemFileLabel = new QLabel(tr("PEM Certificate/Key: "));
         _pemFileLabel->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
-        _pemFileLabel->setToolTip(PEM_FILE_HINT);
+        _pemFileLabel->setToolTip(PEM_FILE_HINT());
         _pemFilePathLineEdit = new QLineEdit;
         _pemFileBrowseButton = new QPushButton("...");
         _pemFileBrowseButton->setMaximumWidth(50);
         VERIFY(connect(_usePemFileCheckBox, SIGNAL(toggled(bool)), this, SLOT(on_usePemFileCheckBox_toggle(bool))));
         VERIFY(connect(_pemFileBrowseButton, SIGNAL(clicked()), this, SLOT(on_pemKeyFileBrowseButton_clicked())));
         // PEM Passphrase section
-        _pemPassLabel = new QLabel("Passphrase: ");    
-        _pemPassLabel->setToolTip(PEM_PASS_HINT);
+        _pemPassLabel = new QLabel(tr("Passphrase: "));    
+        _pemPassLabel->setToolTip(PEM_PASS_HINT());
         _pemPassLineEdit = new QLineEdit;
         _pemPassShowButton = new QPushButton;
         // Fix for MAC OSX: PEM pass show button was created bigger, making it same size as other pushbuttons
         _pemPassShowButton->setMaximumWidth(_pemFileBrowseButton->width());
         VERIFY(connect(_pemPassShowButton, SIGNAL(clicked()), this, SLOT(togglePassphraseShowMode())));
         togglePassphraseShowMode();
-        _askPemPassCheckBox = new QCheckBox("Ask for passphrase each time");
+        _askPemPassCheckBox = new QCheckBox(tr("Ask for passphrase each time"));
         _askPemPassCheckBox->setChecked(sslSettings->askPassphrase());
         VERIFY(connect(_askPemPassCheckBox, SIGNAL(toggled(bool)), this, SLOT(on_askPemPassCheckBox_toggle(bool))));
 
         // Advanced options
-        _useAdvancedOptionsCheckBox = new QCheckBox("Advanced Options");
+        _useAdvancedOptionsCheckBox = new QCheckBox(tr("Advanced Options"));
         _useAdvancedOptionsCheckBox->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
         VERIFY(connect(_useAdvancedOptionsCheckBox, SIGNAL(toggled(bool)), this, SLOT(on_useAdvancedOptionsCheckBox_toggle(bool))));
-        _crlFileLabel = new QLabel("CRL (Revocation List): ");
-        _crlFileLabel->setToolTip(CRL_FILE_HINT);
+        _crlFileLabel = new QLabel(tr("CRL (Revocation List): "));
+        _crlFileLabel->setToolTip(CRL_FILE_HINT());
         _crlFilePathLineEdit = new QLineEdit;
         _crlFileBrowseButton = new QPushButton("...");
         _crlFileBrowseButton->setMaximumWidth(50);
         VERIFY(connect(_crlFileBrowseButton, SIGNAL(clicked()), this, SLOT(on_crlFileBrowseButton_clicked())));
-        _allowInvalidHostnamesLabel = new QLabel("Invalid Hostnames: ");
-        _allowInvalidHostnamesLabel->setToolTip(ALLOW_INVALID_HOSTNAME_HINT);
+        _allowInvalidHostnamesLabel = new QLabel(tr("Invalid Hostnames: "));
+        _allowInvalidHostnamesLabel->setToolTip(ALLOW_INVALID_HOSTNAME_HINT());
         _allowInvalidHostnamesComboBox = new QComboBox;
-        _allowInvalidHostnamesComboBox->addItem("Not Allowed");
-        _allowInvalidHostnamesComboBox->addItem("Allowed");
+        _allowInvalidHostnamesComboBox->addItem(tr("Not Allowed"));
+        _allowInvalidHostnamesComboBox->addItem(tr("Allowed"));
         _allowInvalidHostnamesComboBox->setCurrentIndex(sslSettings->allowInvalidHostnames());
 
         // Layouts
@@ -351,7 +351,7 @@ namespace Robomongo
         {
             QString const& nonExistingFile = resultAndFileName.second;
             QMessageBox errorBox;
-            errorBox.critical(this, "Error", ("Error: " + nonExistingFile + " file does not exist"));
+            errorBox.critical(this, tr("Error"), (tr("Error: ") + nonExistingFile + tr(" file does not exist")));
             errorBox.adjustSize();
             return false;
         }
@@ -363,19 +363,19 @@ namespace Robomongo
     {
         if (_caFilePathLineEdit->isEnabled() && _caFilePathLineEdit->isVisible()) {
             if (!fileExists(_caFilePathLineEdit->text())) {
-                return {false, "CA-signed certificate"};
+                return {false, tr("CA-signed certificate")};
             }
         }
 
         if (_pemFilePathLineEdit->isVisible() && _pemFilePathLineEdit->isEnabled()) {
             if (!fileExists(_pemFilePathLineEdit->text())) {
-                return {false, "PEM Certificate/Key"};
+                return {false, tr("PEM Certificate/Key")};
             }
         }
 
         if (!_crlFilePathLineEdit->text().isEmpty()) {
             if (!fileExists(_crlFilePathLineEdit->text())) {
-                return {false, "CRL (Revocation List)"};
+                return {false, tr("CRL (Revocation List)")};
             }
         }
         return {true, ""};

@@ -27,8 +27,8 @@ namespace
     const char *tooltipTemplate =
         "%s "
         "<table>"
-        "<tr><td>Count:</td> <td><b>&nbsp;&nbsp;%lld</b></td></tr>"
-        "<tr><td>Size:</td><td><b>&nbsp;&nbsp;%s</b></td></tr>"
+        "<tr><td>%1</td> <td><b>&nbsp;&nbsp;%lld</b></td></tr>"
+        "<tr><td>%2</td><td><b>&nbsp;&nbsp;%s</b></td></tr>"
         "</table>"
         ;
 }
@@ -41,47 +41,47 @@ namespace Robomongo
         QTreeWidgetItem *parent, ExplorerDatabaseTreeItem *databaseItem, MongoCollection *collection) 
         : BaseClass(parent), _collection(collection), _databaseItem(databaseItem)
     {
-        QAction *addDocument = new QAction("Insert Document...", this);
+        QAction *addDocument = new QAction(tr("Insert Document..."), this);
         VERIFY(connect(addDocument, SIGNAL(triggered()), SLOT(ui_addDocument())));
 
-        QAction *updateDocument = new QAction("Update Documents...", this);
+        QAction *updateDocument = new QAction(tr("Update Documents..."), this);
         VERIFY(connect(updateDocument, SIGNAL(triggered()), SLOT(ui_updateDocument())));
-        QAction *removeDocument = new QAction("Remove Documents...", this);
+        QAction *removeDocument = new QAction(tr("Remove Documents..."), this);
         VERIFY(connect(removeDocument, SIGNAL(triggered()), SLOT(ui_removeDocument())));
 
-        QAction *removeAllDocuments = new QAction("Remove All Documents...", this);
+        QAction *removeAllDocuments = new QAction(tr("Remove All Documents..."), this);
         VERIFY(connect(removeAllDocuments, SIGNAL(triggered()), SLOT(ui_removeAllDocuments())));
 
-        QAction *collectionStats = new QAction("Statistics", this);
+        QAction *collectionStats = new QAction(tr("Statistics"), this);
         VERIFY(connect(collectionStats, SIGNAL(triggered()), SLOT(ui_collectionStatistics())));
 
-        QAction *storageSize = new QAction("Storage Size", this);
+        QAction *storageSize = new QAction(tr("Storage Size"), this);
         VERIFY(connect(storageSize, SIGNAL(triggered()), SLOT(ui_storageSize())));
 
-        QAction *totalIndexSize = new QAction("Total Index Size", this);
+        QAction *totalIndexSize = new QAction(tr("Total Index Size"), this);
         VERIFY(connect(totalIndexSize, SIGNAL(triggered()), SLOT(ui_totalIndexSize())));
 
-        QAction *totalSize = new QAction("Total Size", this);
+        QAction *totalSize = new QAction(tr("Total Size"), this);
         VERIFY(connect(totalSize, SIGNAL(triggered()), SLOT(ui_totalSize())));
-        QAction *shardVersion = new QAction("Shard Version", this);
+        QAction *shardVersion = new QAction(tr("Shard Version"), this);
         VERIFY(connect(shardVersion, SIGNAL(triggered()), SLOT(ui_shardVersion())));
 
-        QAction *shardDistribution = new QAction("Shard Distribution", this);
+        QAction *shardDistribution = new QAction(tr("Shard Distribution"), this);
         VERIFY(connect(shardDistribution, SIGNAL(triggered()), SLOT(ui_shardDistribution())));
 
-        QAction *dropCollection = new QAction("Drop Collection...", this);
+        QAction *dropCollection = new QAction(tr("Drop Collection..."), this);
         VERIFY(connect(dropCollection, SIGNAL(triggered()), SLOT(ui_dropCollection())));
 
-        QAction *renameCollection = new QAction("Rename Collection...", this);
+        QAction *renameCollection = new QAction(tr("Rename Collection..."), this);
         VERIFY(connect(renameCollection, SIGNAL(triggered()), SLOT(ui_renameCollection())));
-        QAction *duplicateCollection = new QAction("Duplicate Collection...", this);
+        QAction *duplicateCollection = new QAction(tr("Duplicate Collection..."), this);
         VERIFY(connect(duplicateCollection, SIGNAL(triggered()), SLOT(ui_duplicateCollection())));
 
         // Disabling for 0.8.5 release as this is currently a broken misfeature (see discussion on issue #398)
         // QAction *copyCollectionToDiffrentServer = new QAction("Copy Collection to Database...", this);
         // VERIFY(connect(copyCollectionToDiffrentServer, SIGNAL(triggered()), SLOT(ui_copyToCollectionToDiffrentServer())));
 
-        QAction *viewCollection = new QAction("View Documents", this);
+        QAction *viewCollection = new QAction(tr("View Documents"), this);
         VERIFY(connect(viewCollection, SIGNAL(triggered()), SLOT(ui_viewCollection())));
 
         BaseClass::_contextMenu->addAction(viewCollection);
@@ -120,14 +120,14 @@ namespace Robomongo
     void ExplorerCollectionTreeItem::handle(LoadCollectionIndexesResponse *event)
     {
         if (event->isError()) {
-            _indexDir->setText(0, "Indexes");
+            _indexDir->setText(0, tr("Indexes"));
             _indexDir->setExpanded(false);
             QtUtils::clearChildItems(_indexDir);
 
             std::stringstream ss;
-            ss << "Cannot load list of indexes.\n\nError:\n" << event->error().errorMessage();
+            ss << tr("Cannot load list of indexes.\n\nError:\n").toStdString() << event->error().errorMessage();
 
-            QMessageBox::information(NULL, "Error", QtUtils::toQString(ss.str()));
+            QMessageBox::information(NULL, tr("Error"), QtUtils::toQString(ss.str()));
             return;
         }
 
@@ -141,22 +141,22 @@ namespace Robomongo
         for (std::vector<IndexInfo>::const_iterator it = indexes.begin(); it != indexes.end(); ++it) {
             _indexDir->addChild(new ExplorerCollectionIndexItem(_indexDir, *it));
         }
-        _indexDir->setText(0, detail::buildName("Indexes", _indexDir->childCount()));
+        _indexDir->setText(0, detail::buildName(tr("Indexes"), _indexDir->childCount()));
     }
 
     void ExplorerCollectionTreeItem::handle(AddEditIndexResponse *event)
     {
         bool const isAddIndex{ event->oldIndex_._name.empty() };
-        QString const action{ isAddIndex ? "add" : "edit" };
+        QString const action{ isAddIndex ? tr("add") : tr("edit") };
         auto const index{ QString::fromStdString(
            isAddIndex ? event->newIndex_._name : event->oldIndex_._name
         )};
         if (event->isError()) {
-            QString const header{ "Operation failed" };
-            QString const msg{ "Failed to " + action + " index \"" + index + '\"'};
+            QString const header{ tr("Operation failed") };
+            QString const msg{ tr("Failed to %1 index \"%2\"").arg(action).arg(index) };
             auto const err{ QString::fromStdString(event->error().errorMessage()) };
             LOG_MSG((msg + ". " + err).toStdString(), mongo::logger::LogSeverity::Error());
-            QMessageBox::critical(nullptr, "Error: " + header, msg + "\n\n" + err);
+            QMessageBox::critical(nullptr, tr("Error: %1").arg(header), msg + "\n\n" + err);
             return;
         }
         LOG_MSG(("Succeeded to " + action + " index \"" + index + '\"').toStdString(), 
@@ -166,13 +166,13 @@ namespace Robomongo
     void ExplorerCollectionTreeItem::handle(DropCollectionIndexResponse *event)
     {
         if (event->isError()) {
-            QString const header{"Operation failed"};
+            QString const header{ tr("Operation failed") };
             QString const msg{ 
-                "Failed to drop index \"" + QString::fromStdString(event->index()) + '\"' 
+                tr("Failed to drop index \"%1\"").arg(QString::fromStdString(event->index())) 
             };
-            auto const err{ "Reason: " + QString::fromStdString(event->error().errorMessage()) };
+            auto const err{ tr("Reason: ") + QString::fromStdString(event->error().errorMessage()) };
             LOG_MSG((msg + ". " + err).toStdString(), mongo::logger::LogSeverity::Error());
-            QMessageBox::critical(nullptr, "Error: " + header, msg + "\n\n" + err);
+            QMessageBox::critical(nullptr, tr("Error: %1").arg(header), msg + "\n\n" + err);
             return;
         }
 
@@ -188,12 +188,12 @@ namespace Robomongo
         LOG_MSG("Succeeded to drop index \"" + event->index() + '\"', 
             mongo::logger::LogSeverity::Info());
 
-        _indexDir->setText(0, detail::buildName("Indexes", _indexDir->childCount()));
+        _indexDir->setText(0, detail::buildName(tr("Indexes"), _indexDir->childCount()));
     }
 
     void ExplorerCollectionTreeItem::handle(CollectionIndexesLoadingEvent *event)
     {
-        _indexDir->setText(0, detail::buildName("Indexes", -1));
+        _indexDir->setText(0, detail::buildName(tr("Indexes"), -1));
     }
 
     void ExplorerCollectionTreeItem::expand()
@@ -229,7 +229,7 @@ namespace Robomongo
         DocumentTextEditor editor(CollectionInfo(settings->getFullAddress(), database->name(), _collection->name()), "{\n    \n}");
 
         editor.setCursorPosition(1, 4);
-        editor.setWindowTitle("Insert Document");
+        editor.setWindowTitle(tr("Insert Document"));
         int result = editor.exec();
 
         treeWidget()->activateWindow();
@@ -251,8 +251,8 @@ namespace Robomongo
         MongoDatabase *database = _collection->database();
         // Ask user
         int answer = QMessageBox::question(treeWidget(),
-            "Remove All Documents",
-            QString("Remove all documents from <b>%1</b> collection?").arg(QtUtils::toQString(_collection->name())),
+            tr("Remove All Documents"),
+            tr("Remove all documents from <b>%1</b> collection?").arg(QtUtils::toQString(_collection->name())),
             QMessageBox::Yes, QMessageBox::No, QMessageBox::NoButton);
 
         if (answer == QMessageBox::Yes) {
@@ -294,7 +294,7 @@ namespace Robomongo
     void ExplorerCollectionTreeItem::ui_dropCollection()
     {
         // Ask user
-        int answer = utils::questionDialog(treeWidget(), "Drop", "collection", QtUtils::toQString(_collection->name()));
+        int answer = utils::questionDialog(treeWidget(), tr("Drop"), tr("collection"), QtUtils::toQString(_collection->name()));
 
         if (answer == QMessageBox::Yes) {
             MongoDatabase *database = _collection->database();
@@ -311,9 +311,9 @@ namespace Robomongo
         CreateDatabaseDialog dlg(QtUtils::toQString(settings->getFullAddress()),
             QtUtils::toQString(database->name()),
             QtUtils::toQString(_collection->name()), treeWidget());
-        dlg.setWindowTitle("Duplicate Collection");
-        dlg.setOkButtonText("&Duplicate");
-        dlg.setInputLabelText("New Collection Name:");
+        dlg.setWindowTitle(tr("Duplicate Collection"));
+        dlg.setOkButtonText(tr("&Duplicate"));
+        dlg.setInputLabelText(tr("New Collection Name:"));
         dlg.setInputText(QtUtils::toQString(_collection->name() + "_copy"));
         int result = dlg.exec();
 
@@ -347,9 +347,9 @@ namespace Robomongo
         CreateDatabaseDialog dlg(QtUtils::toQString(connSettings->getFullAddress()),
             QtUtils::toQString(database->name()),
             QtUtils::toQString(_collection->name()), treeWidget());
-        dlg.setWindowTitle("Rename Collection");
-        dlg.setOkButtonText("&Rename");
-        dlg.setInputLabelText("New Collection Name:");
+        dlg.setWindowTitle(tr("Rename Collection"));
+        dlg.setOkButtonText(tr("&Rename"));
+        dlg.setInputLabelText(tr("New Collection Name:"));
         dlg.setInputText(QtUtils::toQString(_collection->name()));
         int result = dlg.exec();
 

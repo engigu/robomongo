@@ -21,8 +21,8 @@
 #include "robomongo/gui/utils/GuiConstants.h"
 
 namespace {
-    const QString askPasswordText = "Ask for password each time";
-    const QString askPassphraseText = "Ask for passphrase each time";
+    const QString askPasswordText() { return QObject::tr("Ask for password each time"); }
+    const QString askPassphraseText() { return QObject::tr("Ask for passphrase each time"); }
     bool isFileExists(const QString &path) {
         QFileInfo fileInfo(path);
         return fileInfo.exists() && fileInfo.isFile();
@@ -35,11 +35,11 @@ namespace Robomongo
         _settings(settings)
     {
         SshSettings *info = settings->sshSettings();
-        _useSsh = new QCheckBox("Use SSH tunnel");
+        _useSsh = new QCheckBox(tr("Use SSH tunnel"));
         _useSsh->setStyleSheet("margin-bottom: 7px");
         _useSsh->setChecked(info->enabled());
 
-        _askForPassword = new QCheckBox(askPasswordText);
+        _askForPassword = new QCheckBox(askPasswordText());
         _askForPassword->setChecked(info->askPassword());
         VERIFY(connect(_askForPassword, SIGNAL(stateChanged(int)), this, SLOT(askForPasswordStateChanged(int))));
 
@@ -52,7 +52,7 @@ namespace Robomongo
         _sshPort->setValidator(new QRegExpValidator(rx, this));        
 
         _security = new QComboBox();
-        _security->addItems(QStringList() << "Password" << "Private Key");
+        _security->addItems(QStringList() << tr("Password") << tr("Private Key"));
         VERIFY(connect(_security, SIGNAL(currentIndexChanged(const QString&)), this, SLOT(securityChange(const QString&))));
 
         _passwordBox = new QLineEdit(QtUtils::toQString(info->userPassword()));
@@ -63,8 +63,8 @@ namespace Robomongo
 
         _privateKeyBox = new QLineEdit(QtUtils::toQString(info->privateKeyFile()));
         _privateKeyBox->setPlaceholderText(
-            "DSA, RSA, and on Windows/macOS ECDSA, Ed25519 keys are supported."
-            " PPK keys must be converted to OPENSSH format."
+            tr("DSA, RSA, and on Windows/macOS ECDSA, Ed25519 keys are supported."
+            " PPK keys must be converted to OPENSSH format.")
         );
 
         _passphraseBox = new QLineEdit(QtUtils::toQString(info->passphrase()));
@@ -73,12 +73,12 @@ namespace Robomongo
         _passphraseEchoModeButton->setIcon(GuiRegistry::instance().hideIcon());
         VERIFY(connect(_passphraseEchoModeButton, SIGNAL(clicked()), this, SLOT(togglePassphraseEchoMode())));
 
-        _passwordLabel = new QLabel("User Password:");
-        _sshPrivateKeyLabel = new QLabel("Private key:");
-        _sshPassphraseLabel = new QLabel("Passphrase:");
-        _sshAddressLabel = new QLabel("SSH Address:");
-        _sshUserNameLabel = new QLabel("SSH User Name:");
-        _sshAuthMethodLabel = new QLabel("SSH Auth Method:");
+        _passwordLabel = new QLabel(tr("User Password:"));
+        _sshPrivateKeyLabel = new QLabel(tr("Private key:"));
+        _sshPassphraseLabel = new QLabel(tr("Passphrase:"));
+        _sshAddressLabel = new QLabel(tr("SSH Address:"));
+        _sshUserNameLabel = new QLabel(tr("SSH User Name:"));
+        _sshAuthMethodLabel = new QLabel(tr("SSH Auth Method:"));
 
 /*
 // Commented because of this:
@@ -134,9 +134,9 @@ namespace Robomongo
         setLayout(mainLayout);
 
         if (info->authMethod() == "publickey") {
-            utils::setCurrentText(_security, "Private Key");
+            utils::setCurrentText(_security, tr("Private Key"));
         } else {
-            utils::setCurrentText(_security, "Password");
+            utils::setCurrentText(_security, tr("Password"));
         }
 
         securityChange(_security->currentText());
@@ -168,7 +168,7 @@ namespace Robomongo
     void SshTunnelTab::toggleSshCheckboxToolTip(bool isReplicaSet)
     {
         _useSsh->setToolTip(!isReplicaSet ? "" :
-            "SSH is currently not supported for Replica Set connections");
+            tr("SSH is currently not supported for Replica Set connections"));
     }
 
     void SshTunnelTab::setPasswordFieldsEnabled(bool enabled)
@@ -217,7 +217,7 @@ namespace Robomongo
 
     void SshTunnelTab::securityChange(const QString& method)
     {
-        bool isKey = method == "Private Key";
+        bool isKey = method == tr("Private Key");
 
         _sshPrivateKeyLabel->setVisible(isKey);
         _privateKeyBox->setVisible(isKey);
@@ -230,7 +230,7 @@ namespace Robomongo
         _passwordBox->setVisible(!isKey);
         _passwordLabel->setVisible(!isKey);
         _passwordEchoModeButton->setVisible(!isKey);
-        _askForPassword->setText(isKey ? askPassphraseText : askPasswordText);
+        _askForPassword->setText(isKey ? askPassphraseText() : askPasswordText());
     }
 
     void SshTunnelTab::setPrivateFile()
@@ -238,7 +238,7 @@ namespace Robomongo
         // Default location
         QString sshDir = QString("%1/.ssh").arg(QDir::homePath());
 
-        QString filepath = QFileDialog::getOpenFileName(this, "Select private key file",
+        QString filepath = QFileDialog::getOpenFileName(this, tr("Select private key file"),
             sshDir, QObject::tr("Private key files (*)"));
 
         // Some strange behaviour at least on Mac happens when you
@@ -265,7 +265,7 @@ namespace Robomongo
     bool SshTunnelTab::accept()
     {
         bool const sshEnabled = this->isEnabled() && _useSsh->isChecked();
-        QString authMethod = _security->currentText() == "Private Key" ? "publickey" : "password";
+        QString authMethod = _security->currentIndex() == 1 ? "publickey" : "password";
 
         // Check for existence of the private key file name
         // and try to expand "~" character when needed
@@ -282,8 +282,8 @@ namespace Robomongo
             }
 
             if (failed) {
-                QString message = QString("Private key file \"%1\" doesn't exist").arg(privateKey);
-                QMessageBox::information(this, "Settings are incomplete", message);
+                QString message = tr("Private key file \"%1\" doesn't exist").arg(privateKey);
+                QMessageBox::information(this, tr("Settings are incomplete"), message);
                 return false;
             }
         }

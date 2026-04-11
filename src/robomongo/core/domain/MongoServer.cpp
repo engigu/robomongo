@@ -285,10 +285,10 @@ namespace Robomongo {
 
         std::string subStr;
         switch (event->removeCount) {
-            case RemoveDocumentCount::ONE:    subStr = "document."; break;
-            case RemoveDocumentCount::MULTI:  subStr = "documents."; break;
-            case RemoveDocumentCount::ALL:    subStr = "all documents."; break;
-            default:                          subStr = "(logic error)."; break;
+            case RemoveDocumentCount::ONE:    subStr = tr("document."); break;
+            case RemoveDocumentCount::MULTI:  subStr = tr("documents."); break;
+            case RemoveDocumentCount::ALL:    subStr = tr("all documents."); break;
+            default:                          subStr = tr("(logic error)."); break;
         }
 
         if (event->isError()) {
@@ -298,12 +298,12 @@ namespace Robomongo {
                 auto refreshEvent = ReplicaSetRefreshed(this, event->error(), event->error().replicaSetInfo());
                 handle(&refreshEvent);
             }
-            genericEventErrorHandler(event, "Failed to remove " + subStr, _bus, this);
+            genericEventErrorHandler(event, tr("Failed to remove ") + subStr, _bus, this);
         }
         else {  // success
             MongoNamespace ns = event->ns();
             _bus->publish(new RemoveDocumentResponse(this, ns, event->removeCount, event->index));
-            LOG_MSG("Removed " + subStr, mongo::logger::LogSeverity::Info());
+            LOG_MSG(tr("Removed ") + subStr, mongo::logger::LogSeverity::Info());
         }
     }
 
@@ -435,18 +435,17 @@ namespace Robomongo {
                 server = "[" + _connSettings->replicaSetSettings()->members().front() + "]";
 
             if (event->error().errorCode() == EventError::ErrorCode::ServerHasDifferentMembers) {
-                ss << "Cannot connect to replica set \"" << _connSettings->connectionName() << "\"" << server
-                   << ". \n\nA primary with different host name [" << event->replicaSet.primary << 
-                   "] found in server side. "
-                   "Please double check if same host names and ports are used as in server's replica set"
-                   " configuration. \nIf same set name is used for different replica sets, this configuration"
-                   " is supported only on different instances of Robomongo. "
-                   " Please open a new Robomongo instance for each replica set which has the same set name."
-                   "\n\nReason:\n" << event->error().errorMessage();
+                ss << tr("Cannot connect to replica set \"%1\"").arg(QtUtils::toQString(_connSettings->connectionName())).toStdString() << server
+                   << tr(". \n\nA primary with different host name [%1] found in server side. ").arg(QtUtils::toQString(event->replicaSet.primary.toString())).toStdString()
+                   << tr("Please double check if same host names and ports are used as in server's replica set"
+                        " configuration. \nIf same set name is used for different replica sets, this configuration"
+                        " is supported only on different instances of Robo 3T. "
+                        " Please open a new Robo 3T instance for each replica set which has the same set name."
+                        "\n\nReason:\n").toStdString() << event->error().errorMessage();
             }
             else {
-                ss << "Cannot connect to replica set \"" << _connSettings->connectionName() << "\"" << server
-                   << ". \nSet's primary is unreachable.\n\nReason:\n" << event->error().errorMessage();
+                ss << tr("Cannot connect to replica set \"%1\"").arg(QtUtils::toQString(_connSettings->connectionName())).toStdString() << server
+                   << tr(". \nSet's primary is unreachable.\n\nReason:\n").toStdString() << event->error().errorMessage();
             }
 
             _bus->publish(new ConnectionFailedEvent(this, _handle, event->connectionType, ss.str(),
@@ -462,8 +461,7 @@ namespace Robomongo {
             {
                 auto reason = ConnectionFailedEvent::SslConnection;
                 ss.clear();
-                ss << "Cannot connect to the MongoDB at " << connectionRecord()->getFullAddress()
-                    << ".\n\nError:\n" << "TLS connection failure: " << event->error().errorMessage();
+                ss << tr("Cannot connect to the MongoDB at %1.\n\nError:\nTLS connection failure: ").arg(QtUtils::toQString(connectionRecord()->getFullAddress())).toStdString() << event->error().errorMessage();
                 _app->fireConnectionFailedEvent(_handle, _connectionType, ss.str(), reason);
             }
             else
@@ -471,8 +469,7 @@ namespace Robomongo {
                 auto reason = (EstablishConnectionResponse::ErrorReason::MongoAuth == eventErrorReason) ?
                     ConnectionFailedEvent::MongoAuth : ConnectionFailedEvent::MongoConnection;
                 ss.clear();
-                ss << "Cannot connect to the MongoDB at " << connectionRecord()->getFullAddress()
-                    << ".\n\nError:\n" << event->error().errorMessage();
+                ss << tr("Cannot connect to the MongoDB at %1.\n\nError:\n").arg(QtUtils::toQString(connectionRecord()->getFullAddress())).toStdString() << event->error().errorMessage();
                 _app->fireConnectionFailedEvent(_handle, _connectionType, ss.str(), reason);
             }
 

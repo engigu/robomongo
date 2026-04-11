@@ -22,59 +22,56 @@ namespace Robomongo
     {
         setWindowIcon(GuiRegistry::instance().mainWindowIcon());
 
-        setWindowTitle("Preferences " PROJECT_NAME_TITLE);
+        setWindowTitle(tr("Preferences %1").arg(PROJECT_NAME_TITLE));
         setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
         setFixedSize(height, width);
 
         QVBoxLayout *layout = new QVBoxLayout(this);
 
         QHBoxLayout *defLayout = new QHBoxLayout(this);
-        QLabel *defDisplayModeLabel = new QLabel("Default display mode:");
+        QLabel *defDisplayModeLabel = new QLabel(tr("Default display mode:"));
         defLayout->addWidget(defDisplayModeLabel);
         _defDisplayModeComboBox = new QComboBox();
-        QStringList modes;
         for (int i = Text; i <= Custom; ++i)
         {
-            modes.append(convertViewModeToString(static_cast<ViewMode>(i)));
+            ViewMode mode = static_cast<ViewMode>(i);
+            _defDisplayModeComboBox->addItem(tr(convertViewModeToString(mode)), mode);
         }
-        _defDisplayModeComboBox->addItems(modes);
         defLayout->addWidget(_defDisplayModeComboBox);
         layout->addLayout(defLayout);
 
         QHBoxLayout *timeZoneLayout = new QHBoxLayout(this);
-        QLabel *timeZoneLabel = new QLabel("Display Dates in:");
+        QLabel *timeZoneLabel = new QLabel(tr("Display Dates in:"));
         timeZoneLayout->addWidget(timeZoneLabel);
         _timeZoneComboBox = new QComboBox();
-        QStringList times;
         for (int i = Utc; i <= LocalTime; ++i)
         {
-            times.append(convertTimesToString(static_cast<SupportedTimes>(i)));
+            SupportedTimes time = static_cast<SupportedTimes>(i);
+            _timeZoneComboBox->addItem(tr(convertTimesToString(time)), time);
         }
-        _timeZoneComboBox->addItems(times);
         timeZoneLayout->addWidget(_timeZoneComboBox);
         layout->addLayout(timeZoneLayout);
 
         QHBoxLayout *uuidEncodingLayout = new QHBoxLayout(this);
-        QLabel *uuidEncodingLabel = new QLabel("Legacy UUID Encoding:");
+        QLabel *uuidEncodingLabel = new QLabel(tr("Legacy UUID Encoding:"));
         uuidEncodingLayout->addWidget(uuidEncodingLabel);
         _uuidEncodingComboBox = new QComboBox();
-        QStringList uuids;
         for (int i = DefaultEncoding; i <= PythonLegacy; ++i)
         {
-            uuids.append(convertUUIDEncodingToString(static_cast<UUIDEncoding>(i)));
+            UUIDEncoding encoding = static_cast<UUIDEncoding>(i);
+            _uuidEncodingComboBox->addItem(tr(convertUUIDEncodingToString(encoding)), encoding);
         }
-        _uuidEncodingComboBox->addItems(uuids);
         uuidEncodingLayout->addWidget(_uuidEncodingComboBox);
         layout->addLayout(uuidEncodingLayout);        
 
-        _loadMongoRcJsCheckBox = new QCheckBox("Load .mongorc.js");
+        _loadMongoRcJsCheckBox = new QCheckBox(tr("Load .mongorc.js"));
         layout->addWidget(_loadMongoRcJsCheckBox);
 
-        _disabelConnectionShortcutsCheckBox = new QCheckBox("Disable connection shortcuts");
+        _disabelConnectionShortcutsCheckBox = new QCheckBox(tr("Disable connection shortcuts"));
         layout->addWidget(_disabelConnectionShortcutsCheckBox);
 
         QHBoxLayout *stylesLayout = new QHBoxLayout(this);
-        QLabel *stylesLabel = new QLabel("Styles:");
+        QLabel *stylesLabel = new QLabel(tr("Styles:"));
         stylesLayout->addWidget(stylesLabel);
         _stylesComboBox = new QComboBox();
         _stylesComboBox->addItems(AppStyleUtils::getSupportedStyles());
@@ -95,9 +92,9 @@ namespace Robomongo
     void PreferencesDialog::syncWithSettings()
     {
 
-        utils::setCurrentText(_defDisplayModeComboBox, convertViewModeToString(Robomongo::AppRegistry::instance().settingsManager()->viewMode()));
-        utils::setCurrentText(_timeZoneComboBox, convertTimesToString(Robomongo::AppRegistry::instance().settingsManager()->timeZone()));
-        utils::setCurrentText(_uuidEncodingComboBox, convertUUIDEncodingToString(Robomongo::AppRegistry::instance().settingsManager()->uuidEncoding()));
+        ComboBoxUtils::setCurrentData(_defDisplayModeComboBox, Robomongo::AppRegistry::instance().settingsManager()->viewMode());
+        ComboBoxUtils::setCurrentData(_timeZoneComboBox, Robomongo::AppRegistry::instance().settingsManager()->timeZone());
+        ComboBoxUtils::setCurrentData(_uuidEncodingComboBox, Robomongo::AppRegistry::instance().settingsManager()->uuidEncoding());
         _loadMongoRcJsCheckBox->setChecked(AppRegistry::instance().settingsManager()->loadMongoRcJs());
         _disabelConnectionShortcutsCheckBox->setChecked(AppRegistry::instance().settingsManager()->disableConnectionShortcuts());
         utils::setCurrentText(_stylesComboBox, Robomongo::AppRegistry::instance().settingsManager()->currentStyle());
@@ -105,13 +102,13 @@ namespace Robomongo
 
     void PreferencesDialog::accept()
     {
-        ViewMode mode = convertStringToViewMode(QtUtils::toStdString(_defDisplayModeComboBox->currentText()).c_str());
+        ViewMode mode = static_cast<ViewMode>(_defDisplayModeComboBox->currentData().toInt());
         Robomongo::AppRegistry::instance().settingsManager()->setViewMode(mode);
 
-        SupportedTimes time = convertStringToTimes(QtUtils::toStdString(_timeZoneComboBox->currentText()).c_str());
+        SupportedTimes time = static_cast<SupportedTimes>(_timeZoneComboBox->currentData().toInt());
         Robomongo::AppRegistry::instance().settingsManager()->setTimeZone(time);
 
-        UUIDEncoding uuidC = convertStringToUUIDEncoding(QtUtils::toStdString(_uuidEncodingComboBox->currentText()).c_str());
+        UUIDEncoding uuidC = static_cast<UUIDEncoding>(_uuidEncodingComboBox->currentData().toInt());
         Robomongo::AppRegistry::instance().settingsManager()->setUuidEncoding(uuidC);
 
         AppRegistry::instance().settingsManager()->setLoadMongoRcJs(_loadMongoRcJsCheckBox->isChecked());

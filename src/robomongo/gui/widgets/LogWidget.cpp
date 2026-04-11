@@ -19,7 +19,7 @@ namespace Robomongo
         QHBoxLayout *hlayout = new QHBoxLayout;
         hlayout->setContentsMargins(0, 0, 0, 0);
         hlayout->addWidget(_logTextEdit);
-        _clear = new QAction("Clear All", this);
+        _clear = new QAction(tr("Clear All"), this);
         VERIFY(connect(_clear, SIGNAL(triggered()), _logTextEdit, SLOT(clear())));
         setLayout(hlayout);      
     }
@@ -62,7 +62,7 @@ namespace Robomongo
         if (message.length() <= maxLength) {
             _logTextEdit->insertPlainText(message.trimmed() + "\n");
         } else {
-            _logTextEdit->insertPlainText(QString("(truncated) ") + message.left(maxLength).trimmed() + "...\n");
+            _logTextEdit->insertPlainText(tr("(truncated) ") + message.left(maxLength).trimmed() + "...\n");
         }
 
         // Scroll to the bottom

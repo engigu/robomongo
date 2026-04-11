@@ -60,7 +60,7 @@ namespace Robomongo
                 setIcon(0, GuiRegistry::instance().replicaSetIcon());
                 setText(0, QtUtils::toQString(_connection->connectionName()));
                 auto const repSetSize = _connection->replicaSetSettings()->members().size();
-                auto addrText = QString::number(repSetSize) + ((repSetSize > 1) ? " nodes" : " node");
+                auto addrText = QString::number(repSetSize) + ((repSetSize > 1) ? tr(" nodes") : tr(" node"));
                 if (!_connection->replicaSetSettings()->members().empty()) {
                     addrText += QString::fromStdString(" (" + _connection->replicaSetSettings()->members().front() + ")");
                 }
@@ -77,13 +77,13 @@ namespace Robomongo
             }
 
             // Header "Attributes" (column[2])
-            setText(2, _connection->isReplicaSet() ? "Replica Set" : "");
+            setText(2, _connection->isReplicaSet() ? tr("Replica Set") : "");
             
             if (_connection->sslSettings()->sslEnabled())
-                setText(2, text(2) + (text(2).isEmpty() ? "TLS" : ", TLS"));
+                setText(2, text(2) + (text(2).isEmpty() ? tr("TLS") : tr(", TLS")));
 
             if (!_connection->isReplicaSet() && _connection->sshSettings()->enabled())
-                setText(2, text(2) + (text(2).isEmpty() ? "SSH" : ", SSH"));
+                setText(2, text(2) + (text(2).isEmpty() ? tr("SSH") : tr(", SSH")));
 
             // Header "Auth. Database/User" (column[3])
             if (_connection->hasEnabledPrimaryCredential()) {
@@ -116,21 +116,21 @@ namespace Robomongo
         : QDialog(parent), _settingsManager(settingsManager), _checkForImported(checkForImported)
     {
         setWindowIcon(GuiRegistry::instance().connectIcon());
-        setWindowTitle("MongoDB Connections");
+        setWindowTitle(tr("MongoDB Connections"));
 
         // Remove help button (?)
         setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
-        QAction *addAction = new QAction("&Add...", this);
+        QAction *addAction = new QAction(tr("&Add..."), this);
         VERIFY(connect(addAction, SIGNAL(triggered()), this, SLOT(add())));
 
-        QAction *editAction = new QAction("&Edit...", this);
+        QAction *editAction = new QAction(tr("&Edit..."), this);
         VERIFY(connect(editAction, SIGNAL(triggered()), this, SLOT(edit())));
 
-        QAction *cloneAction = new QAction("&Clone...", this);
+        QAction *cloneAction = new QAction(tr("&Clone..."), this);
         VERIFY(connect(cloneAction, SIGNAL(triggered()), this, SLOT(clone())));
 
-        QAction *removeAction = new QAction("&Remove...", this);
+        QAction *removeAction = new QAction(tr("&Remove..."), this);
         VERIFY(connect(removeAction, SIGNAL(triggered()), this, SLOT(remove())));
 
         _listWidget = new ConnectionsTreeWidget;
@@ -141,7 +141,7 @@ namespace Robomongo
         _listWidget->setIndentation(5);
 
         QStringList colums;
-        colums << "Name" << "Address" << "Attributes" << "Auth. Database / User";
+        colums << tr("Name") << tr("Address") << tr("Attributes") << tr("Auth. Database / User");
         _listWidget->setHeaderLabels(colums);
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
         _listWidget->header()->setSectionResizeMode(0, QHeaderView::Stretch);
@@ -167,7 +167,7 @@ namespace Robomongo
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel | QDialogButtonBox::Save);
         buttonBox->button(QDialogButtonBox::Save)->setIcon(GuiRegistry::instance().serverIcon());
-        buttonBox->button(QDialogButtonBox::Save)->setText("C&onnect");
+        buttonBox->button(QDialogButtonBox::Save)->setText(tr("C&onnect"));
         VERIFY(connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept())));
         VERIFY(connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject())));
 
@@ -181,8 +181,8 @@ namespace Robomongo
             QPixmap importPixmap = importIcon.pixmap(20, 20);
             QLabel *importLabelIcon = new QLabel;
             importLabelIcon->setPixmap(importPixmap);
-            QString importedRecords = importedCount > 1 ? "records" : "record";
-            QLabel *importLabelMessage = new QLabel(QString(
+            QString importedRecords = importedCount > 1 ? tr("records") : tr("record");
+            QLabel *importLabelMessage = new QLabel(tr(
                 "<span style='color: #777777;'>"
                 "Connection settings have been imported (%1 %2)"
                 "</span>").arg(importedCount).arg(importedRecords));
@@ -193,7 +193,7 @@ namespace Robomongo
 
         bottomLayout->addWidget(buttonBox, 0, Qt::AlignRight);
 
-        QLabel *intro = new QLabel(QString(
+        QLabel *intro = new QLabel(tr(
             "<a style='color: %1' href='create'>Create</a>, "
             "<a style='color: %1' href='edit'>edit</a>, "
             "<a style='color: %1' href='remove'>remove</a>, "
@@ -335,9 +335,9 @@ namespace Robomongo
         ConnectionSettings *connSettings = currentItem->connection();
 
         // Ask user
-        QString const question { "Are you sure you want to delete \"%1\" connection?" };
+        QString const question { tr("Are you sure you want to delete \"%1\" connection?") };
         int const answer = QMessageBox::question(this,
-            "Connections",
+            tr("Connections"),
             question.arg(QtUtils::toQString(connSettings->getReadableName())),
             QMessageBox::Yes, QMessageBox::No, QMessageBox::NoButton);
 
@@ -370,7 +370,7 @@ namespace Robomongo
         ConnectionSettings *connection = currentItem->connection()->clone();
         // This is a special clone which will actually be a new connection and must have unique UUID
         connection->setUuid(QUuid::createUuid().toString());    
-        std::string newConnectionName = "Copy of " + connection->connectionName();
+        std::string newConnectionName = tr("Copy of ").toStdString() + connection->connectionName();
 
         connection->setConnectionName(newConnectionName);
         connection->replicaSetSettings()->setCachedSetName("");

@@ -36,7 +36,7 @@ namespace Robomongo
         : BaseClass(view), _server(server), _bus(AppRegistry::instance().bus()), _replicaSetFolder(nullptr),
         _primaryWasUnreachable(false), _systemFolder(nullptr)
     {
-        auto openShellAction = new QAction("Open Shell", this);        
+        auto openShellAction = new QAction(tr("Open Shell"), this);        
 #ifdef __APPLE__
         openShellAction->setIcon(GuiRegistry::instance().mongodbIconForMAC());
 #else
@@ -44,26 +44,26 @@ namespace Robomongo
 #endif
         VERIFY(connect(openShellAction, SIGNAL(triggered()), SLOT(ui_openShell())));
 
-        QAction *refreshServer = new QAction("Refresh", this);
+        QAction *refreshServer = new QAction(tr("Refresh"), this);
         VERIFY(connect(refreshServer, SIGNAL(triggered()), SLOT(ui_refreshServer())));
 
-        QAction *createDatabase = new QAction("Create Database", this);
+        QAction *createDatabase = new QAction(tr("Create Database"), this);
         VERIFY(connect(createDatabase, SIGNAL(triggered()), SLOT(ui_createDatabase())));
 
-        QAction *serverStatus = new QAction("Server Status", this);
+        QAction *serverStatus = new QAction(tr("Server Status"), this);
         VERIFY(connect(serverStatus, SIGNAL(triggered()), SLOT(ui_serverStatus())));
 
-        QAction *serverVersion = new QAction("MongoDB Version", this);
+        QAction *serverVersion = new QAction(tr("MongoDB Version"), this);
         VERIFY(connect(serverVersion, SIGNAL(triggered()), SLOT(ui_serverVersion())));
 
-        QAction *serverHostInfo = new QAction("Host Info", this);
+        QAction *serverHostInfo = new QAction(tr("Host Info"), this);
         VERIFY(connect(serverHostInfo, SIGNAL(triggered()), SLOT(ui_serverHostInfo())));
 
-        QAction *showLog = new QAction("Show Log", this);
+        QAction *showLog = new QAction(tr("Show Log"), this);
         VERIFY(connect(showLog, SIGNAL(triggered()), SLOT(ui_showLog())));
 
-        QAction *disconnectAction = new QAction("Disconnect", this);
-        disconnectAction->setIconText("Disconnect");
+        QAction *disconnectAction = new QAction(tr("Disconnect"), this);
+        disconnectAction->setIconText(tr("Disconnect"));
         VERIFY(connect(disconnectAction, SIGNAL(triggered()), SLOT(ui_disconnectServer())));
 
         BaseClass::_contextMenu->addAction(openShellAction);
@@ -133,7 +133,7 @@ namespace Robomongo
         QIcon folderIcon = GuiRegistry::instance().folderIcon();
         _systemFolder = new ExplorerTreeItem(this);
         _systemFolder->setIcon(0, folderIcon);
-        _systemFolder->setText(0, "System");
+        _systemFolder->setText(0, tr("System"));
         addChild(_systemFolder);
 
         for (int i = 0; i < dbs.size(); i++)
@@ -170,10 +170,10 @@ namespace Robomongo
             // QtUtils::clearChildItems(this);
 
             std::stringstream ss;
-            ss << "Cannot load list of databases.\n\nError:\n"
+            ss << tr("Cannot load list of databases.\n\nError:\n").toStdString()
                 << event->error().errorMessage();
 
-            QMessageBox::information(NULL, "Error", QtUtils::toQString(ss.str()));
+            QMessageBox::information(NULL, tr("Error"), QtUtils::toQString(ss.str()));
             return;
         }
 
@@ -196,9 +196,9 @@ namespace Robomongo
             disableSomeContextMenuActions(true);
 
             if (event->error().showErrorWindow()) {
-                std::string const errorStr = "Replica set's primary is unreachable.\n\nReason:\n"
-                                             "Connection failure. " + event->error().errorMessage();
-                QMessageBox::critical(nullptr, "Error", QString::fromStdString(errorStr));
+                QString const errorStr = tr("Replica set's primary is unreachable.\n\nReason:\n"
+                                             "Connection failure. ") + QtUtils::toQString(event->error().errorMessage());
+                QMessageBox::critical(nullptr, tr("Error"), errorStr);
             }
             return;
         }
@@ -232,7 +232,7 @@ namespace Robomongo
         buildReplicaSetFolder(true);
         replicaSetPrimaryUnreachable();
 
-        QMessageBox::critical(nullptr, "Error", QString::fromStdString(event->message));
+        QMessageBox::critical(nullptr, tr("Error"), QString::fromStdString(event->message));
     }
 
     QString ExplorerServerTreeItem::buildServerName(int *count /* = NULL */, bool online /* = true*/)
@@ -246,7 +246,7 @@ namespace Robomongo
             return name + " ...";
 
         return online ? QString("%1 (%2)").arg(name).arg(*count) 
-                      : QString("%1").arg(name) + " [Offline]";
+                      : QString("%1").arg(name) + tr(" [Offline]");
     }
 
     void ExplorerServerTreeItem::ui_serverHostInfo()
@@ -308,8 +308,8 @@ namespace Robomongo
     {
         CreateDatabaseDialog dlg(QString::fromStdString(_server->connectionRecord()->getFullAddress()),
                                  QString(), QString(), treeWidget());
-        dlg.setOkButtonText("&Create");
-        dlg.setInputLabelText("Database Name:");
+        dlg.setOkButtonText(tr("&Create"));
+        dlg.setInputLabelText(tr("Database Name:"));
 
         if (dlg.exec() == QDialog::Accepted) {
             if (_server->connectionRecord()->isReplicaSet()) {  // Replica Set
@@ -373,7 +373,7 @@ namespace Robomongo
         // Add 'System' folder
         _systemFolder = new ExplorerTreeItem(this);
         _systemFolder->setIcon(0, GuiRegistry::instance().folderIcon());
-        _systemFolder->setText(0, "System");
+        _systemFolder->setText(0, tr("System"));
         addChild(_systemFolder);
 
         for (auto const& database : _server->databases()) {

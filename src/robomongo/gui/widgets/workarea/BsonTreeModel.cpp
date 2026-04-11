@@ -14,12 +14,12 @@ namespace
     using namespace Robomongo;
 
     QString arrayValue(int itemsCount) {
-        QString elements = itemsCount == 1 ? "element" : "elements";
+        QString elements = itemsCount == 1 ? QObject::tr("element") : QObject::tr("elements");
         return QString("[ %1 %2 ]").arg(itemsCount).arg(elements);
     }
 
     QString objectValue(int itemsCount) {
-        QString fields = itemsCount == 1 ? "field" : "fields";
+        QString fields = itemsCount == 1 ? QObject::tr("field") : QObject::tr("fields");
         return QString("{ %1 %2 }").arg(itemsCount).arg(fields);
     }
 
@@ -228,13 +228,13 @@ namespace Robomongo
 
         if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
             if (section == BsonTreeItem::eKey) {
-                return "Key";
+                return tr("Key");
             }
             else if (section == BsonTreeItem::eValue) {
-                return "Value";
+                return tr("Value");
             }
             else {
-                return "Type";
+                return tr("Type");
             }
         }
 

@@ -18,17 +18,15 @@ namespace
     auto const YEAR  { QString::number(QDate::currentDate().year()) };
     auto const MONTH { QString::number(QDate::currentDate().month()) };
 
-    const QString description {
-        "<h3>" PROJECT_NAME_TITLE " " PROJECT_VERSION 
-            " (Build " BUILD_NUMBER + QString(" - ") + MONTH + "/" + YEAR + ")</h3>"
+    const char *description =
+        "<h3>%1 %2 (Build %3 - %4/%5)</h3>"
         "Shell-centric MongoDB management tool.<br/>"
-        "<a href=\"https://" PROJECT_GITHUB_ISSUES "\">Submit</a> issues/proposals on GitHub.<br/>"
+        "<a href=\"https://%6\">Submit</a> issues/proposals on GitHub.<br/>"
         "<br/>"
 
-        "<a href=\"https://" PROJECT_DOMAIN "\">" PROJECT_DOMAIN "</a> <br/>"
-        "Copyright 2014-" + YEAR +
-        " <a href= " PROJECT_COMPANYNAME_DOMAIN " >" PROJECT_COMPANYNAME 
-        "</a>. All rights reserved.<br/>"
+        "<a href=\"https://%7\">%7</a> <br/>"
+        "Copyright 2014-%5"
+        " <a href= %8 >%9</a>. All rights reserved.<br/>"
         "<br/>"
 
         "The program is provided AS IS with NO WARRANTY OF ANY KIND, "
@@ -37,20 +35,19 @@ namespace
         "<br>"
 
         "<b>Dependencies: <br></b>"
-        "Mongo-Shell " MongoDB_VERSION "<br>"
-        "Qt " PROJECT_QT_VERSION "<br>"
-        "OpenSSL " 	   OPENSSL_VERSION "<br>"
-        "libssh2 " 	   LIBSSH2_VERSION "<br>"
-        "QJson "   	   QJSON_VERSION "<br>"
-        "QScintilla "  QSCINTILLA_VERSION_STR "<br>"
-        "Google Test " GOOGLE_TEST_VERSION "<br>"
-        "ESPRIMA "      ESPRIMA_VERSION "<br>"
+        "Mongo-Shell %10<br>"
+        "Qt %11<br>"
+        "OpenSSL %12<br>"
+        "libssh2 %13<br>"
+        "QJson %14<br>"
+        "QScintilla %15<br>"
+        "Google Test %16<br>"
+        "ESPRIMA %17<br>"
         "<br>"
 
         "<b>Credits: <br/></b>"
         "Some icons are designed by Freepik <a href=https://www.flaticon.com>www.flaticon.com</a>"
-        "<br/>"
-    };        
+        "<br/>";
 }
 
 namespace Robomongo
@@ -58,7 +55,7 @@ namespace Robomongo
     AboutDialog::AboutDialog(QWidget *parent)
         : QDialog(parent)
     {
-        setWindowTitle("About " PROJECT_NAME_TITLE);
+        setWindowTitle(tr("About ") + PROJECT_NAME_TITLE);
 
         //// About tab
         auto aboutTab = new QWidget;
@@ -67,7 +64,13 @@ namespace Robomongo
         auto layout = new QGridLayout(this);
         layout->setSizeConstraint(QLayout::SetFixedSize);
 
-        auto copyRightLabel = new QLabel(description);
+        QString const desc = tr(description)
+            .arg(PROJECT_NAME_TITLE).arg(PROJECT_VERSION).arg(BUILD_NUMBER).arg(MONTH).arg(YEAR)
+            .arg(PROJECT_GITHUB_ISSUES).arg(PROJECT_DOMAIN).arg(PROJECT_COMPANYNAME_DOMAIN).arg(PROJECT_COMPANYNAME)
+            .arg(MongoDB_VERSION).arg(PROJECT_QT_VERSION).arg(OPENSSL_VERSION).arg(LIBSSH2_VERSION).arg(QJSON_VERSION)
+            .arg(QSCINTILLA_VERSION_STR).arg(GOOGLE_TEST_VERSION).arg(ESPRIMA_VERSION);
+
+        auto copyRightLabel = new QLabel(desc);
         copyRightLabel->setWordWrap(true);
         copyRightLabel->setOpenExternalLinks(true);
         copyRightLabel->setTextInteractionFlags(Qt::TextBrowserInteraction);
@@ -103,8 +106,8 @@ namespace Robomongo
 
         //// Main layout
         auto tabWidget = new QTabWidget;
-        tabWidget->addTab(aboutTab, "About");
-        tabWidget->addTab(licenseTab, "License Agreement");
+        tabWidget->addTab(aboutTab, tr("About"));
+        tabWidget->addTab(licenseTab, tr("License Agreement"));
 
         auto mainLayout = new QVBoxLayout;
         mainLayout->addWidget(tabWidget);

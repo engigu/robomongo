@@ -17,25 +17,25 @@ namespace Robomongo
     ConnectionAuthTab::ConnectionAuthTab(ConnectionSettings *settings) :
         _settings(settings)
     {
-        _useAuth = new QCheckBox("Perform authentication");
+        _useAuth = new QCheckBox(tr("Perform authentication"));
         _useAuth->setStyleSheet("margin-bottom: 7px");
         VERIFY(connect(_useAuth, SIGNAL(toggled(bool)), this, SLOT(authChecked(bool))));
 
         _databaseNameDescriptionLabel = new QLabel(
-            "<nobr>The admin database is unique in MongoDB.</nobr> Users with normal access "
+            tr("<nobr>The admin database is unique in MongoDB.</nobr> Users with normal access "
             "to the admin database have read and write access to <b>all "
-            "databases</b>."
+            "databases</b>.")
         );
         _databaseNameDescriptionLabel->setWordWrap(true);
 
         _userName = new QLineEdit();
-        _userNameLabel = new QLabel("User Name");
-        _mechanismLabel = new QLabel("Auth Mechanism");
+        _userNameLabel = new QLabel(tr("User Name"));
+        _mechanismLabel = new QLabel(tr("Auth Mechanism"));
         _userPassword = new QLineEdit();
         _userPassword->setEchoMode(QLineEdit::Password);
-        _userPasswordLabel = new QLabel("Password");
+        _userPasswordLabel = new QLabel(tr("Password"));
         _databaseName = new QLineEdit("admin");
-        _databaseNameLabel = new QLabel("Database");
+        _databaseNameLabel = new QLabel(tr("Database"));
 
         _mechanismComboBox = new QComboBox;
         _mechanismComboBox->addItem("SCRAM-SHA-1");
@@ -43,16 +43,16 @@ namespace Robomongo
         _mechanismComboBox->addItem("MONGODB-CR");
 
         _manuallyVisibleDbs = new QLineEdit;
-        _manuallyVisibleDbs->setPlaceholderText("Comma-separated e.g. products, users");
-        _manuallyVisibleDbsLabel = new QLabel("Databases");
+        _manuallyVisibleDbs->setPlaceholderText(tr("Comma-separated e.g. products, users"));
+        _manuallyVisibleDbsLabel = new QLabel(tr("Databases"));
         _manuallyVisibleDbsInfo = new QLabel(
-            "Some MongoDB users might not have the permission to get the list of"
+            tr("Some MongoDB users might not have the permission to get the list of"
             " database names (<b>listDatabases</b> command). For this case, manually add"
-            " the name of the database(s) that this user has access to."
+            " the name of the database(s) that this user has access to.")
         );
         _manuallyVisibleDbsInfo->setWordWrap(true);
 
-        _useManuallyVisibleDbs = new QCheckBox("Manually specify visible databases");
+        _useManuallyVisibleDbs = new QCheckBox(tr("Manually specify visible databases"));
         _useManuallyVisibleDbs->setStyleSheet("margin-bottom: 7px");
         VERIFY(connect(_useManuallyVisibleDbs, SIGNAL(toggled(bool)), 
                        this, SLOT(useManuallyVisibleDbsChecked(bool))));

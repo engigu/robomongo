@@ -26,6 +26,7 @@ namespace Robomongo
     {
         setMinimumWidth(700);
         setMinimumHeight(550);
+        setWindowTitle(tr("Edit Function"));
 
         Indicator *databaseIndicator = new Indicator(GuiRegistry::instance().databaseIcon(), database);
         Indicator *serverIndicator = new Indicator(GuiRegistry::instance().serverIcon(), server);
@@ -60,9 +61,9 @@ namespace Robomongo
         QVBoxLayout *layout = new QVBoxLayout();
         layout->addLayout(hlayout);
         layout->addWidget(hline);
-        layout->addWidget(new QLabel("Name:"));
+        layout->addWidget(new QLabel(tr("Name:")));
         layout->addWidget(_nameEdit);
-        layout->addWidget(new QLabel("Code:"));
+        layout->addWidget(new QLabel(tr("Code:")));
         layout->addWidget(_queryText);
         layout->addLayout(bottomlayout);
         setLayout(layout);

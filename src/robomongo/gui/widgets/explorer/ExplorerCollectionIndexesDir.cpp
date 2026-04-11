@@ -16,16 +16,16 @@ namespace Robomongo
     ExplorerCollectionIndexesDir::ExplorerCollectionIndexesDir(QTreeWidgetItem *parent)
         :BaseClass(parent)
     {
-        QAction *addIndex = new QAction("Add Index...", this);
+        QAction *addIndex = new QAction(tr("Add Index..."), this);
         VERIFY(connect(addIndex, SIGNAL(triggered()), SLOT(ui_addIndex())));
 
-        QAction *reIndex = new QAction("Rebuild Indexes...", this);
+        QAction *reIndex = new QAction(tr("Rebuild Indexes..."), this);
         VERIFY(connect(reIndex, SIGNAL(triggered()), SLOT(ui_reIndex())));
 
-        QAction *viewIndex = new QAction("View Indexes", this);
+        QAction *viewIndex = new QAction(tr("View Indexes"), this);
         VERIFY(connect(viewIndex, SIGNAL(triggered()), SLOT(ui_viewIndex())));
 
-        QAction *refreshIndex = new QAction("Refresh", this);
+        QAction *refreshIndex = new QAction(tr("Refresh"), this);
         VERIFY(connect(refreshIndex, SIGNAL(triggered()), SLOT(ui_refreshIndex())));
 
         BaseClass::_contextMenu->addAction(viewIndex);
@@ -34,7 +34,7 @@ namespace Robomongo
         BaseClass::_contextMenu->addSeparator();
         BaseClass::_contextMenu->addAction(refreshIndex);
 
-        setText(0, "Indexes");
+        setText(0, tr("Indexes"));
         setIcon(0, Robomongo::GuiRegistry::instance().folderIcon());
 
         setExpanded(false);

@@ -32,7 +32,7 @@ namespace Robomongo
         AppRegistry::instance().bus()->subscribe(this, ConnectionEstablishedEvent::Type);
         AppRegistry::instance().bus()->subscribe(this, ConnectionFailedEvent::Type);
 
-        setWindowTitle("Diagnostic");
+        setWindowTitle(tr("Diagnostic"));
         setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint); // Remove help button (?)
 
         _yesIcon = GuiRegistry::instance().yesMarkIcon();
@@ -42,7 +42,7 @@ namespace Robomongo
         _noPixmap = _noIcon.pixmap(20, 20);
         _questionPixmap = _questionIcon.pixmap(20, 20);
 
-        QPushButton *closeButton = new QPushButton("&Close");
+        QPushButton *closeButton = new QPushButton(tr("&Close"));
         VERIFY(connect(closeButton, SIGNAL(clicked()), this, SLOT(accept())));
         _connectionIconLabel = new QLabel;
         _connectionLabel = new QLabel;
@@ -53,7 +53,7 @@ namespace Robomongo
         _listIconLabel = new QLabel;
         _listLabel = new QLabel;
 
-        _viewErrorLink = new QLabel("<a href='error' style='color: #777777;'>Show error details</a>");
+        _viewErrorLink = new QLabel(tr("<a href='error' style='color: #777777;'>Show error details</a>"));
         VERIFY(connect(_viewErrorLink, SIGNAL(linkActivated(QString)), this, SLOT(errorLinkActivated(QString))));
 
         _loadingMovie = new QMovie(":robomongo/icons/loading_ticks_40x40.gif", QByteArray(), this);
@@ -113,7 +113,7 @@ namespace Robomongo
         if (_lastErrorMessage.empty())
             return;
 
-        QMessageBox::information(this, "Error details", QtUtils::toQString(_lastErrorMessage));
+        QMessageBox::information(this, tr("Error details"), QtUtils::toQString(_lastErrorMessage));
     }
 
     void ConnectionDiagnosticDialog::sshStatus(State state)
@@ -126,17 +126,17 @@ namespace Robomongo
 
         if (state == InitialState) {
             _sshIconLabel->setMovie(_loadingMovie);
-            _sshLabel->setText(QString("Connecting to SSH server at <b>%1:%2</b>...")
+            _sshLabel->setText(tr("Connecting to SSH server at <b>%1:%2</b>...")
                 .arg(QtUtils::toQString(_connSettings->sshSettings()->host()))
                 .arg(_connSettings->sshSettings()->port()));
         } else if (state == CompletedState) {
             _sshIconLabel->setPixmap(_yesPixmap);
-            _sshLabel->setText(QString("Connected to SSH server at <b>%1:%2</b>")
+            _sshLabel->setText(tr("Connected to SSH server at <b>%1:%2</b>")
                 .arg(QtUtils::toQString(_connSettings->sshSettings()->host()))
                 .arg(_connSettings->sshSettings()->port()));
         } else if (state == FailedState) {
             _sshIconLabel->setPixmap(_noPixmap);
-            _sshLabel->setText(QString("Unable to connect to SSH server at <b>%1:%2</b>")
+            _sshLabel->setText(tr("Unable to connect to SSH server at <b>%1:%2</b>")
                 .arg(QtUtils::toQString(_connSettings->sshSettings()->host()))
                 .arg(_connSettings->sshSettings()->port()));
         }
@@ -147,9 +147,9 @@ namespace Robomongo
         // Add info about tunneling if SSH or SSL is used
         QString tunnelNote("");    // No tunnel info when neither SSH nor SSL enabled
         if (_connSettings->sshSettings()->enabled()) 
-            tunnelNote = " via SSH tunnel";
+            tunnelNote = tr(" via SSH tunnel");
         else if (_connSettings->sslSettings()->sslEnabled())
-            tunnelNote = " via TLS tunnel";
+            tunnelNote = tr(" via TLS tunnel");
         else
             tunnelNote = "";
          
@@ -167,17 +167,17 @@ namespace Robomongo
         // Set main info text at dialog
         if (state == InitialState) {
             _connectionIconLabel->setMovie(_loadingMovie);
-            _connectionLabel->setText(QString("Connecting to <b>%1</b>%2...").arg(serverAddress, tunnelNote));
+            _connectionLabel->setText(tr("Connecting to <b>%1</b>%2...").arg(serverAddress, tunnelNote));
 
         } else if (state == CompletedState) {
             _connectionIconLabel->setPixmap(_yesPixmap);
-            _connectionLabel->setText(QString("Connected to <b>%1</b>%2").arg(serverAddress, tunnelNote));
+            _connectionLabel->setText(tr("Connected to <b>%1</b>%2").arg(serverAddress, tunnelNote));
         } else if (state == FailedState) {
             _connectionIconLabel->setPixmap(_noPixmap);
-            _connectionLabel->setText(QString("Failed to connect to <b>%1</b>%2").arg(serverAddress, tunnelNote));
+            _connectionLabel->setText(tr("Failed to connect to <b>%1</b>%2").arg(serverAddress, tunnelNote));
         } else if (state == NotPerformedState) {
             _connectionIconLabel->setPixmap(_questionPixmap);
-            _connectionLabel->setText(QString("No chance to try connection to <b>%1</b>%2").
+            _connectionLabel->setText(tr("No chance to try connection to <b>%1</b>%2").
                                                arg(serverAddress, tunnelNote));
         }
     }
@@ -192,22 +192,22 @@ namespace Robomongo
 
         if (state == InitialState) {
             _authIconLabel->setMovie(_loadingMovie);
-            _authLabel->setText(QString("Authorizing on <b>%1</b> database as <b>%2</b>...")
+            _authLabel->setText(tr("Authorizing on <b>%1</b> database as <b>%2</b>...")
                 .arg(QtUtils::toQString(_connSettings->primaryCredential()->databaseName()))
                 .arg(QtUtils::toQString(_connSettings->primaryCredential()->userName())));
         } else if (state == CompletedState) {
             _authIconLabel->setPixmap(_yesPixmap);
-            _authLabel->setText(QString("Authorized on <b>%1</b> database as <b>%2</b>")
+            _authLabel->setText(tr("Authorized on <b>%1</b> database as <b>%2</b>")
                 .arg(QtUtils::toQString(_connSettings->primaryCredential()->databaseName()))
                 .arg(QtUtils::toQString(_connSettings->primaryCredential()->userName())));
         } else if (state == FailedState) {
             _authIconLabel->setPixmap(_noPixmap);
-            _authLabel->setText(QString("Authorization failed on <b>%1</b> database as <b>%2</b>")
+            _authLabel->setText(tr("Authorization failed on <b>%1</b> database as <b>%2</b>")
                 .arg(QtUtils::toQString(_connSettings->primaryCredential()->databaseName()))
                 .arg(QtUtils::toQString(_connSettings->primaryCredential()->userName())));
         } else if (state == NotPerformedState) {
             _authIconLabel->setPixmap(_questionPixmap);
-            _authLabel->setText(QString("No chance to authorize"));
+            _authLabel->setText(tr("No chance to authorize"));
         }
     }
 
@@ -221,16 +221,16 @@ namespace Robomongo
 
         if (state == InitialState) {
             _listIconLabel->setMovie(_loadingMovie);
-            _listLabel->setText(QString("Loading list of databases..."));
+            _listLabel->setText(tr("Loading list of databases..."));
         } else if (state == CompletedState) {
             _listIconLabel->setPixmap(_yesPixmap);
-            _listLabel->setText(QString("Access to databases is available"));
+            _listLabel->setText(tr("Access to databases is available"));
         } else if (state == FailedState) {
             _listIconLabel->setPixmap(_noPixmap);
-            _listLabel->setText(QString("Failed to load list of databases"));
+            _listLabel->setText(tr("Failed to load list of databases"));
         } else if (state == NotPerformedState) {
             _listIconLabel->setPixmap(_questionPixmap);
-            _listLabel->setText(QString("No chance to load list of databases"));
+            _listLabel->setText(tr("No chance to load list of databases"));
         }
     }
 

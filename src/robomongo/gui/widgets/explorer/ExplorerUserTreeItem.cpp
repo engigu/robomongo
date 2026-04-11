@@ -20,10 +20,10 @@ namespace Robomongo
         QTreeWidgetItem *parent, MongoDatabase *const database, const MongoUser &user) 
         : BaseClass(parent), _user(user), _database(database)
     {
-        auto const dropUser { new QAction("Drop User", this) };
+        auto const dropUser { new QAction(tr("Drop User"), this) };
         VERIFY(connect(dropUser, SIGNAL(triggered()), SLOT(ui_dropUser())));
 
-        auto const viewUser { new QAction("View User", this) };
+        auto const viewUser { new QAction(tr("View User"), this) };
         VERIFY(connect(viewUser, SIGNAL(triggered()), SLOT(ui_viewUser())));
 
         BaseClass::_contextMenu->addAction(viewUser);
@@ -39,7 +39,7 @@ namespace Robomongo
         // Ask user
         int const answer {
             utils::questionDialog(
-                treeWidget(), "Drop", "User", QtUtils::toQString(_user.name())
+                treeWidget(), tr("Drop"), tr("User"), QtUtils::toQString(_user.name())
             )
         };
 

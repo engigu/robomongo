@@ -35,10 +35,10 @@ namespace Robomongo
     ExplorerReplicaSetFolderItem::ExplorerReplicaSetFolderItem(ExplorerTreeItem *parent, MongoServer *const server) :
         BaseClass(parent), _server(server)
     {
-        auto repSetStatus = new QAction("Status of Replica Set", this);
+        auto repSetStatus = new QAction(tr("Status of Replica Set"), this);
         VERIFY(connect(repSetStatus, SIGNAL(triggered()), SLOT(on_repSetStatus())));
 
-        auto refresh = new QAction("Refresh", this);
+        auto refresh = new QAction(tr("Refresh"), this);
         VERIFY(connect(refresh, SIGNAL(triggered()), SLOT(on_refresh())));
 
         BaseClass::_contextMenu->addAction(repSetStatus);
@@ -48,7 +48,7 @@ namespace Robomongo
         AppRegistry::instance().bus()->subscribe(this, ReplicaSetFolderLoading::Type, _server);
 
         setIcon(0, GuiRegistry::instance().folderIcon());
-        setText(0, "Replica Set (" + QString::number(_server->replicaSetInfo()->membersAndHealths.size()) + " nodes)");
+        setText(0, tr("Replica Set (%1 nodes)").arg(_server->replicaSetInfo()->membersAndHealths.size()));
 
         setExpanded(false);
         setChildIndicatorPolicy(QTreeWidgetItem::ShowIndicator);
@@ -56,7 +56,7 @@ namespace Robomongo
 
     void ExplorerReplicaSetFolderItem::updateText()
     {
-        setText(0, "Replica Set (" + QString::number(_server->replicaSetInfo()->membersAndHealths.size()) + " nodes)");
+        setText(0, tr("Replica Set (%1 nodes)").arg(_server->replicaSetInfo()->membersAndHealths.size()));
     }
 
     void ExplorerReplicaSetFolderItem::disableSomeContextMenuActions()
@@ -124,7 +124,7 @@ namespace Robomongo
 
     void ExplorerReplicaSetFolderItem::handle(ReplicaSetFolderLoading *event)
     {
-        setText(0, "Replica Set ...");
+        setText(0, tr("Replica Set ..."));
     }
 
     void ExplorerReplicaSetFolderItem::on_refresh()

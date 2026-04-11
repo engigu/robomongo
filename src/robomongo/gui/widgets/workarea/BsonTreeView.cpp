@@ -25,7 +25,7 @@ namespace Robomongo
         setContextMenuPolicy(Qt::CustomContextMenu);
         VERIFY(connect(this, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&))));
 
-        _expandRecursive = new QAction("Expand Recursively", this);
+        _expandRecursive = new QAction(tr("Expand Recursively"), this);
         _expandRecursive->setShortcut(QKeySequence(Qt::ALT + Qt::Key_Right));
         VERIFY(connect(_expandRecursive, SIGNAL(triggered()), SLOT(onExpandRecursive())));
         

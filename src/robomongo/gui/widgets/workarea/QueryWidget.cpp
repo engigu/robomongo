@@ -253,9 +253,9 @@ namespace Robomongo
         hideProgress();
 
         if (event->isError()) {
-            QString message = QString("Failed to load documents.\n\nError:\n%1")
+            QString message = tr("Failed to load documents.\n\nError:\n%1")
                 .arg(QtUtils::toQString(event->error().errorMessage()));
-            QMessageBox::information(this, "Error", message);
+            QMessageBox::information(this, tr("Error"), message);
             return;
         }
 
@@ -288,29 +288,28 @@ namespace Robomongo
             // For some cases, event error message already contains string "Error:"
             QString const& subStr =
                 QString::fromStdString(event->error().errorMessage()).startsWith("Error", Qt::CaseInsensitive) ?
-                "" : "Error:\n";
+                tr("Error:\n");
 
-            QString const& message = "Failed to execute script.\n\n" + subStr +
+            QString const& message = tr("Failed to execute script.\n\n") + subStr +
                 QString::fromStdString((event->error().errorMessage()));
-
-            QMessageBox::critical(this, "Error", message);
+            QMessageBox::critical(this, tr("Error"), message);
         }
 
         if (event->timeoutReached()) {
             auto const shellTimeoutSec = AppRegistry::instance().settingsManager()->shellTimeoutSec();
             QString const subStr = _currentResult.results().size() > 1 ?
-                "At least one of the scripts has reached shell timeout" :
-                "The script has reached shell timeout";
-            QString const secondStr = (shellTimeoutSec > 1) ? " seconds)" : " second)";
-            QString messageShort = "Failed to execute all of the script. " + subStr + " (" +
-                                    QString::number(shellTimeoutSec) + secondStr + " limit. ";
+                tr("At least one of the scripts has reached shell timeout") :
+                tr("The script has reached shell timeout");
+            QString const secondStr = (shellTimeoutSec > 1) ? tr(" seconds)") : tr(" second)");
+            QString messageShort = tr("Failed to execute all of the script. ") + subStr + " (" +
+                                    QString::number(shellTimeoutSec) + secondStr + tr(" limit. ");
             QString messageLong = messageShort + 
-                                  "\n\nPlease increase the value of shell timeout using button below "
-                                  "or from the main window menu \"Options->Change Shell Timeout\".";
+                                  tr("\n\nPlease increase the value of shell timeout using button below "
+                                  "or from the main window menu \"Options->Change Shell Timeout\".");
             LOG_MSG(messageShort, mongo::logger::LogSeverity::Error());
 
-            auto errorDia = new QMessageBox(QMessageBox::Icon::Critical, "Error", messageLong);
-            auto but = new QPushButton("Change Shell Timeout");
+            auto errorDia = new QMessageBox(QMessageBox::Icon::Critical, tr("Error"), messageLong);
+            auto but = new QPushButton(tr("Change Shell Timeout"));
             VERIFY(connect(but, SIGNAL(clicked()), this, SLOT(changeShellTimeout())));
             errorDia->addButton(but, QMessageBox::NoRole);
             errorDia->exec();
@@ -372,7 +371,7 @@ namespace Robomongo
         }
 
         if (tabTitle.isEmpty() && shellQuery.isEmpty()) {
-            tabTitle = "New Shell";
+            tabTitle = tr("New Shell");
         }
         else {
 
@@ -399,7 +398,7 @@ namespace Robomongo
         if (!empty) {
             bool isOutVisible = results.size() == 0 && !_scriptWidget->text().isEmpty();
             if (isOutVisible) {
-                _outputLabel->setText("  Script executed successfully, but there are no results to show.");
+                _outputLabel->setText(tr("  Script executed successfully, but there are no results to show."));
             }
             _outputLabel->setVisible(isOutVisible);
         }

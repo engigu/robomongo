@@ -26,11 +26,11 @@ namespace Robomongo
     ConnectionDialog::ConnectionDialog(ConnectionSettings *connection, QWidget *parent /* = nullptr */)
         : QDialog(parent), _connection(connection)
     {
-        setWindowTitle("Connection Settings");
+        setWindowTitle(tr("Connection Settings"));
         setWindowIcon(GuiRegistry::instance().serverIcon());
         setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint); // Remove help button (?)
 
-        QPushButton *testButton = new QPushButton("&Test");
+        QPushButton *testButton = new QPushButton(tr("&Test"));
         testButton->setIcon(qApp->style()->standardIcon(QStyle::SP_MessageBoxInformation));
         VERIFY(connect(testButton, SIGNAL(clicked()), this, SLOT(testConnection())));
 
@@ -51,11 +51,11 @@ namespace Robomongo
         _sshTab      = new SshTunnelTab(_connection);
         _sslTab      = new SSLTab(_connection);
 
-        tabWidget->addTab(_basicTab,    "Connection");
-        tabWidget->addTab(_authTab,     "Authentication");
-        tabWidget->addTab(_sshTab,      "SSH");
-        tabWidget->addTab(_sslTab,      "TLS");
-        tabWidget->addTab(_advancedTab, "Advanced");
+        tabWidget->addTab(_basicTab,    tr("Connection"));
+        tabWidget->addTab(_authTab,     tr("Authentication"));
+        tabWidget->addTab(_sshTab,      tr("SSH"));
+        tabWidget->addTab(_sslTab,      tr("TLS"));
+        tabWidget->addTab(_advancedTab, tr("Advanced"));
 
         QVBoxLayout *mainLayout = new QVBoxLayout;
         mainLayout->addWidget(tabWidget);

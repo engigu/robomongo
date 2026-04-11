@@ -45,7 +45,7 @@ namespace Robomongo
         // Text mode button
         _textButton = new QPushButton(this);
         _textButton->setIcon(GuiRegistry::instance().textIcon());
-        _textButton->setToolTip("View results in text mode");
+        _textButton->setToolTip(tr("View results in text mode"));
         _textButton->setFixedSize(24, 24);
         _textButton->setFlat(true);
         _textButton->setCheckable(true);
@@ -54,7 +54,7 @@ namespace Robomongo
         _treeButton = new QPushButton(this);
         _treeButton->hide();
         _treeButton->setIcon(GuiRegistry::instance().treeIcon());
-        _treeButton->setToolTip("View results in tree mode");
+        _treeButton->setToolTip(tr("View results in tree mode"));
         _treeButton->setFixedSize(24, 24);
         _treeButton->setFlat(true);
         _treeButton->setCheckable(true);
@@ -64,7 +64,7 @@ namespace Robomongo
         _tableButton = new QPushButton(this);
         _tableButton->hide();
         _tableButton->setIcon(GuiRegistry::instance().tableIcon());
-        _tableButton->setToolTip("View results in table mode");
+        _tableButton->setToolTip(tr("View results in table mode"));
         _tableButton->setFixedSize(24, 24);
         _tableButton->setFlat(true);
         _tableButton->setCheckable(true);
@@ -74,7 +74,7 @@ namespace Robomongo
         _customButton = new QPushButton(this);
         _customButton->hide();
         _customButton->setIcon(GuiRegistry::instance().customIcon());
-        _customButton->setToolTip("View results in custom UI");
+        _customButton->setToolTip(tr("View results in custom UI"));
         _customButton->setFixedSize(24, 24);
         _customButton->setFlat(true);
         _customButton->setCheckable(true);
@@ -83,7 +83,7 @@ namespace Robomongo
         if (_multipleResults && !tabbedResults) {
             _maxButton = new QPushButton;
             _maxButton->setIcon(GuiRegistry::instance().maximizeIcon());
-            _maxButton->setToolTip("Maximize this output result (double-click on result's header)");
+            _maxButton->setToolTip(tr("Maximize this output result (double-click on result's header)"));
             _maxButton->setFixedSize(18, 18);
             _maxButton->setFlat(true);
             VERIFY(connect(_maxButton, SIGNAL(clicked()), this, SLOT(maximizeMinimizePart())));
@@ -225,11 +225,11 @@ namespace Robomongo
     {
         if (isDocking) {
             _dockUndockButton->setIcon(GuiRegistry::instance().undockIcon());
-            _dockUndockButton->setToolTip("Undock into separate window");
+            _dockUndockButton->setToolTip(tr("Undock into separate window"));
         }
         else {
             _dockUndockButton->setIcon(GuiRegistry::instance().dockIcon());
-            _dockUndockButton->setToolTip("Dock into main window");
+            _dockUndockButton->setToolTip(tr("Dock into main window"));
         }
     }
 
@@ -263,13 +263,13 @@ namespace Robomongo
         if (_maximized) {   // restoring original size
             emit restoredSize();
             _maxButton->setIcon(GuiRegistry::instance().maximizeIcon());
-            _maxButton->setToolTip("Maximize this output result (double-click on result header)");
+            _maxButton->setToolTip(tr("Maximize this output result (double-click on result header)"));
             updateDockButtonOnToggleOrientation();
         }
         else {              // maximizing
             emit maximizedPart();
             _maxButton->setIcon(GuiRegistry::instance().minimizeIcon());
-            _maxButton->setToolTip("Restore back to original size (double-click on result header)");
+            _maxButton->setToolTip(tr("Restore back to original size (double-click on result header)"));
             _verticalLine->setVisible(true);
             _dockUndockButton->setVisible(true);
         }

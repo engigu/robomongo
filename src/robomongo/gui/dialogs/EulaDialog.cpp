@@ -30,16 +30,16 @@ namespace Robomongo
     EulaDialog::EulaDialog(bool showFormPage, QWidget *parent)
         : QWizard(parent), _showFormPage(showFormPage)
     {
-        setWindowTitle("EULA");
+        setWindowTitle(tr("EULA"));
 
         //// First page
         auto firstPage = new QWizardPage;
 
-        auto agreeButton = new QRadioButton("I agree");
+        auto agreeButton = new QRadioButton(tr("I agree"));
         VERIFY(connect(agreeButton, SIGNAL(clicked()),
             this, SLOT(on_agreeButton_clicked())));
 
-        auto notAgreeButton = new QRadioButton("I don't agree");
+        auto notAgreeButton = new QRadioButton(tr("I don't agree"));
         notAgreeButton->setChecked(true);
         VERIFY(connect(notAgreeButton, SIGNAL(clicked()),
             this, SLOT(on_notAgreeButton_clicked())));
@@ -62,7 +62,7 @@ namespace Robomongo
         hline->setFrameShadow(QFrame::Sunken);
 
         auto mainLayout1 = new QVBoxLayout();
-        mainLayout1->addWidget(new QLabel("<h3>End-User License Agreement</h3>"));
+        mainLayout1->addWidget(new QLabel(tr("<h3>End-User License Agreement</h3>")));
         mainLayout1->addWidget(new QLabel(""));
         mainLayout1->addWidget(textBrowser);
         mainLayout1->addWidget(new QLabel(""));
@@ -75,28 +75,28 @@ namespace Robomongo
         //// Second page
         auto secondPage = new QWizardPage;
 
-        auto nameLabel = new QLabel("<b>First Name:</b>");
+        auto nameLabel = new QLabel(tr("<b>First Name:</b>"));
         _nameEdit = new QLineEdit;
-        auto lastNameLabel = new QLabel("<b>Last Name:</b>");
+        auto lastNameLabel = new QLabel(tr("<b>Last Name:</b>"));
         _lastNameEdit = new QLineEdit;
 
-        auto emailLabel = new QLabel("<b>Email:</b>");
+        auto emailLabel = new QLabel(tr("<b>Email:</b>"));
         _emailEdit = new QLineEdit;
 
         _phone = new QLineEdit;
         _company = new QLineEdit;
 
-        auto buttomLabel = new QLabel("By submitting this form I agree to 3T Software Labs "
-            "<a href='https://studio3t.com/privacy-policy'>Privacy Policy</a>.");
+        auto buttomLabel = new QLabel(tr("By submitting this form I agree to 3T Software Labs "
+            "<a href='https://studio3t.com/privacy-policy'>Privacy Policy</a>."));
         buttomLabel->setOpenExternalLinks(true);
 
-        auto bodyLabel = new QLabel("\nShare your email address with us and we'll keep you "
-            "up-to-date with updates from us and new features as they come out.");
+        auto bodyLabel = new QLabel(tr("\nShare your email address with us and we'll keep you "
+            "up-to-date with updates from us and new features as they come out."));
         bodyLabel->setWordWrap(true);
 
         auto mainLayout2 = new QGridLayout();
         mainLayout2->addWidget(new QLabel,                      0, 0, 1, 2);
-        mainLayout2->addWidget(new QLabel("<h3>Thank you for choosing Robo 3T!</h3>"), 1, 0, 1, 2);
+        mainLayout2->addWidget(new QLabel(tr("<h3>Thank you for choosing Robo 3T!</h3>")), 1, 0, 1, 2);
         mainLayout2->addWidget(bodyLabel,                       2, 0 , 1, 2);
         mainLayout2->addWidget(new QLabel,                      3, 0, 1, 2);
         mainLayout2->addWidget(nameLabel,                       4, 0);
@@ -105,9 +105,9 @@ namespace Robomongo
         mainLayout2->addWidget(_lastNameEdit,                   5, 1);
         mainLayout2->addWidget(emailLabel,                      6, 0);
         mainLayout2->addWidget(_emailEdit,                      6, 1);
-        mainLayout2->addWidget(new QLabel("<b>Phone: </b>"),    7, 0);
+        mainLayout2->addWidget(new QLabel(tr("<b>Phone: </b>")),    7, 0);
         mainLayout2->addWidget(_phone,                          7, 1);
-        mainLayout2->addWidget(new QLabel("<b>Company:</b>"),   8, 0);
+        mainLayout2->addWidget(new QLabel(tr("<b>Company:</b>")),   8, 0);
         mainLayout2->addWidget(_company,                        8, 1);
         mainLayout2->addWidget(new QLabel,                      9, 0, 1, 2);
         mainLayout2->addWidget(buttomLabel,                     10, 0, 1, 2);

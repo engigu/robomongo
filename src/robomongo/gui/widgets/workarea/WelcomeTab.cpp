@@ -13,7 +13,7 @@ namespace Robomongo {
     {
         auto webView = new QWebEngineView(this);
         webView->setPage(new MyWebPage(this));
-        webView->setHtml(R"(
+        webView->setHtml(tr(R"(
             <!DOCTYPE html>
             <html>
             <head>
@@ -35,7 +35,7 @@ namespace Robomongo {
             </head>
             <body>
                 <div class="card">
-                    <div class="version-badge">Reborn v1.5.0 - Standard Release</div>
+                    <div class="version-badge">Reborn v%1 - Standard Release</div>
                     <h1>Welcome back to Robo 3T</h1>
                     <p>This is the community-maintained, optimized version of Robo 3T. We've removed the noise and fixed the core, so you can focus on your data.</p>
                     
@@ -53,7 +53,7 @@ namespace Robomongo {
                 </div>
             </body>
             </html>
-        )");
+        )").arg(PROJECT_VERSION));
         webView->setContextMenuPolicy(Qt::NoContextMenu);
         webView->page()->profile()->setHttpCacheType(QWebEngineProfile::HttpCacheType::NoCache);
 
@@ -147,7 +147,7 @@ namespace Robomongo
     };
 
     QString const WhatsNew = "<p><h1><font color=\"#2d862d\">%1</h1></p>";
-    QString const BlogsHeader = "<p><h1><font color=\"#2d862d\">Blog Posts</h1></p>";
+    QString const BlogsHeader = tr("<p><h1><font color=\"#2d862d\">Blog Posts</h1></p>");
     QString const BlogLinkTemplate = "<a style = 'color: #106CD6; text-decoration: none;'"
                                      "href='%1'>%2</a>";
 
@@ -232,7 +232,7 @@ namespace Robomongo
         }
 
         //// --- Layouts
-        _allBlogsButton = new QPushButton("All Blog Posts");
+        _allBlogsButton = new QPushButton(tr("All Blog Posts"));
         _allBlogsButton->setHidden(true);
         _allBlogsButton->setStyleSheet("color: #106CD6");
         VERIFY(connect(_allBlogsButton, SIGNAL(clicked()), this, SLOT(on_allBlogsButton_clicked())));

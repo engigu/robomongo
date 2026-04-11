@@ -271,7 +271,7 @@ namespace Robomongo
             }
             else {
                 if (_documents.size() > 0) {
-                    _textView->sciScintilla()->setText("Loading...");
+                    _textView->sciScintilla()->setText(tr("Loading..."));
                     _thread = new JsonPrepareThread(_documents, AppRegistry::instance().settingsManager()->uuidEncoding(), AppRegistry::instance().settingsManager()->timeZone());
                     VERIFY(connect(_thread, SIGNAL(partReady(const QString&)), this, SLOT(jsonPartReady(const QString&))));
                     VERIFY(connect(_thread, SIGNAL(finished()), _thread, SLOT(deleteLater())));

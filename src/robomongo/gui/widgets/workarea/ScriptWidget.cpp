@@ -60,7 +60,7 @@ namespace Robomongo
 
         _queryText = new FindFrame(this);
         _topStatusBar = new TopStatusBar(_shell->server()->connectionRecord()->connectionName(), 
-                                         _shell->server()->connectionRecord()->getFullAddress(), "loading...");
+                                         _shell->server()->connectionRecord()->getFullAddress(), tr("Loading..."));
 
         QVBoxLayout *layout = new QVBoxLayout;
         layout->setSpacing(0);

@@ -1,4 +1,4 @@
-﻿#include "robomongo/gui/dialogs/ConnectionBasicTab.h"
+#include "robomongo/gui/dialogs/ConnectionBasicTab.h"
 
 #include <QLabel>
 #include <QLineEdit>
@@ -29,7 +29,7 @@ namespace Robomongo
     ConnectionBasicTab::ConnectionBasicTab(ConnectionSettings *settings, ConnectionDialog *connectionDialog) :
         _settings(settings), _connectionDialog(connectionDialog)
     {
-        _typeLabel = new QLabel("Type:");
+        _typeLabel = new QLabel(tr("Type:"));
         _connectionType = new QComboBox;
         _connectionType->addItem(tr("Direct Connection"));
         _connectionType->addItem(tr("Replica Set")); 
@@ -38,22 +38,22 @@ namespace Robomongo
                         this, SLOT(on_ConnectionTypeChange(int)))
         );
         
-        _nameLabel = new QLabel("Name:"); 
+        _nameLabel = new QLabel(tr("Name:")); 
         _connectionName = new QLineEdit(QtUtils::toQString(_settings->connectionName()));
-        _connInfoLabel = new QLabel("Choose any connection name that will help you to identify this connection.");
+        _connInfoLabel = new QLabel(tr("Choose any connection name that will help you to identify this connection."));
         _connInfoLabel->setWordWrap(true);
 
-        _addressLabel = new QLabel("Address:");
+        _addressLabel = new QLabel(tr("Address:"));
         _serverAddress = new QLineEdit(QtUtils::toQString(_settings->serverHost()));
         _colon = new QLabel(":");
         _serverPort = new QLineEdit(QString::number(_settings->serverPort()));
         _serverPort->setFixedWidth(80);
         QRegExp rx("\\d+"); //(0-65554)
         _serverPort->setValidator(new QRegExpValidator(rx, this)); 
-        _addInfoLabel = new QLabel("Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.");
+        _addInfoLabel = new QLabel(tr("Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name."));
         _addInfoLabel->setWordWrap(true);
 
-        _membersLabel = new QLabel("Members:");
+        _membersLabel = new QLabel(tr("Members:"));
         _membersLabel->setFixedWidth(_membersLabel->sizeHint().width());
         _members = new QTreeWidget;
         _members->setHeaderHidden(true);
@@ -104,7 +104,7 @@ namespace Robomongo
         _minusPlusButtonBox->addButton(_removeButton, QDialogButtonBox::NoRole);
         _minusPlusButtonBox->addButton(_addButton, QDialogButtonBox::NoRole);
 #endif
-        _setNameLabel = new QLabel("Set Name:");
+        _setNameLabel = new QLabel(tr("Set Name:"));
         _setNameEdit = new QLineEdit(QString::fromStdString(_settings->replicaSetSettings()->setNameUserEntered()));
 
         auto fakeSpacer = new QLabel("");
@@ -112,8 +112,8 @@ namespace Robomongo
         hline->setFrameShape(QFrame::HLine);
         hline->setFrameShadow(QFrame::Sunken);
         _uriEdit = new QLineEdit();
-        _uriEdit->setPlaceholderText("Import connection details from MongoDB URI connection string");
-        _uriButton = new QPushButton("From URI");
+        _uriEdit->setPlaceholderText(tr("Import connection details from MongoDB URI connection string"));
+        _uriButton = new QPushButton(tr("From URI"));
 #ifdef _WIN32
         _uriButton->setMaximumHeight(HighDpiConstants::WIN_HIGH_DPI_BUTTON_HEIGHT);
         _uriButton->setMinimumWidth(60);
@@ -167,8 +167,8 @@ namespace Robomongo
         _settings->setConnectionName(QtUtils::toStdString(_connectionName->text()));
 
         if (_settings->isReplicaSet() && _members->topLevelItemCount() == 0) {
-            QMessageBox::critical(this, "Error", "Replica set members cannot be empty. "  
-                                                 "Please enter at least one member.");
+            QMessageBox::critical(this, tr("Error"), tr("Replica set members cannot be empty. "  
+                                                 "Please enter at least one member."));
             return false;
         }
         
@@ -180,8 +180,8 @@ namespace Robomongo
                 QTreeWidgetItem const* item = _members->topLevelItem(i);
                 QStringList const hostAndPort = item->text(0).split(":");
                 if (hostAndPort.size() < 2) {
-                    QMessageBox::critical(this, "Error", "Replica set member items must all contain ':' between"
-                                                " hostname and port.");
+                    QMessageBox::critical(this, tr("Error"), tr("Replica set member items must all contain ':' between"
+                                                " hostname and port."));
                     return false;
                 }
                 if (!item->text(0).isEmpty()) 
@@ -189,8 +189,8 @@ namespace Robomongo
             }
             if (members.size() > 1) {
                 if (members.removeDuplicates() > 0) {
-                    QMessageBox::critical(this, "Error", "Please remove duplicate member, two replica"
-                                                " set members cannot have the same hostname and port.");
+                    QMessageBox::critical(this, tr("Error"), tr("Please remove duplicate member, two replica"
+                                                " set members cannot have the same hostname and port."));
                     return false;
                 }
             }
@@ -228,7 +228,7 @@ namespace Robomongo
     void ConnectionBasicTab::clearTab()
     {
         _connectionType->setCurrentIndex(0);
-        _connectionName->setText("New Connection");
+        _connectionName->setText(tr("New Connection"));
         _serverAddress->clear();
         _serverPort->clear();
         _members->clear();
@@ -337,7 +337,7 @@ namespace Robomongo
         if (!statusWithURI.isOK()) {
             QMessageBox errorBox;
             errorBox.critical(
-                this, "Error", ("MongoDB URI:\n" + statusWithURI.getStatus().toString()).c_str()
+                this, tr("Error"), (tr("MongoDB URI:\n") + statusWithURI.getStatus().toString()).c_str()
             );
             errorBox.show();
             return;
