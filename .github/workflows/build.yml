@@ -58,13 +58,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: robo-shell/build
-          key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('fix/apply_patches.py') }}
+          key: ${{ runner.os }}-robo-shell-v141-stable
           restore-keys: |
             ${{ runner.os }}-robo-shell-v141-
-          fail-on-cache-miss: true
-
-      - name: Install OpenSSL
-        run: choco install openssl --version=1.1.1.2100 -y --no-progress
+          fail-on-cache-miss: false
 
       - name: Locate OpenSSL
         run: |
