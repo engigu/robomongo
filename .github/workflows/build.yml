@@ -104,7 +104,7 @@ jobs:
           copy "${{ env.OPENSSL_PATH }}\bin\*.dll" D:\dist\
           
           :: 打包
-          powershell Compress-Archive -Path * -DestinationPath robo3t-${{ github.ref_name }}-windows-x64.zip
+          powershell Compress-Archive -Path * -DestinationPath "robo3t-${{ github.ref_name }}-windows-x64.zip"
         shell: cmd
 
       - name: Create GitHub Release
