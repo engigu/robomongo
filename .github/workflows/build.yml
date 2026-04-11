@@ -134,6 +134,7 @@ jobs:
         with:
           name: robo3t-final-binary
           path: D:\dist\robo3t-${{ github.ref_name }}-windows-x64.zip
+          retention-days: 1
 
       - name: Cleanup Virtual Drives
         if: always()
