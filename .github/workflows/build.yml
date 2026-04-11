@@ -11,61 +11,6 @@ concurrency:
 
 jobs:
 # ==============================================================================
-# Job 1: 专门负责编译内核 (已注释，因云端已有缓存)
-# ==============================================================================
-#  build-shell:
-#    runs-on: windows-latest
-#    steps:
-#      - name: Checkout Robo 3T
-#        uses: actions/checkout@v4
-#
-#      - name: Checkout Robo Shell
-#        uses: actions/checkout@v4
-#        with:
-#          repository: paralect/robomongo-shell
-#          ref: roboshell-v4.2
-#          path: robo-shell
-#
-#      - name: Setup Python
-#        uses: actions/setup-python@v5
-#        with:
-#          python-version: '3.10'
-#
-#      - name: Install MSVC v141 Toolset Component
-#        run: |
-#          $vsInstaller = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe"
-#          $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --add Microsoft.VisualStudio.Component.VC.v141.ATL --add Microsoft.VisualStudio.Component.VC.v141.MFC --quiet --norestart" -PassThru
-#          while (!$process.HasExited) { Start-Sleep -Seconds 30 }
-#        shell: powershell
-#
-#      - name: Setup MSVC (v141 Toolset)
-#        uses: ilammy/msvc-dev-cmd@v1
-#        with:
-#          toolset: '14.1'
-#          arch: x64
-#
-#      - name: Install dependencies (SCons)
-#        run: python -m pip install scons==3.1.2 Cheetah3 pywin32 regex pyyaml psutil
-#
-#      - name: Apply Minimal Env Patch
-#        run: python fix/apply_patches.py
-#        shell: pwsh
-#
-#      - name: Cache Robo Shell
-#        id: cache-shell
-#        uses: actions/cache@v4
-#        with:
-#          path: robo-shell/build
-#          key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('fix/apply_patches.py') }}
-#
-#      - name: Build Robo Shell
-#        if: steps.cache-shell.outputs.cache-hit != 'true'
-#        run: |
-#          cd robo-shell
-#          scons --ssl --opt=on mongo.exe -j 2 --link-model=object MONGO_VERSION=3.4.0
-#        shell: cmd
-
-# ==============================================================================
 # Job 2: 独立运行，直接从云端缓存拉取内核
 # ==============================================================================
   build-app:
@@ -112,7 +57,6 @@ jobs:
         uses: actions/cache@v4
         with:
           path: robo-shell/build
-          # 依然保留模糊匹配，但在根目录下路径更干净
           key: ${{ runner.os }}-robo-shell-v141-${{ hashFiles('fix/apply_patches.py') }}
           restore-keys: |
             ${{ runner.os }}-robo-shell-v141-
@@ -131,12 +75,18 @@ jobs:
 
       - name: Configure and Build Robo 3T
         env:
-          # 指向平铺后的 shell 路径
           MongoDB_OBJECTS: ${{ github.workspace }}/robo-shell
         run: |
-          mkdir build
-          cd build
-          cmake -G "Visual Studio 17 2022" -A x64 -T v141 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DMongoDB_DIR="${{ github.workspace }}/robo-shell" -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" -DCMAKE_BUILD_TYPE=Release ..
+          mkdir D:\b
+          cd /d D:\b
+          cmake -G "Visual Studio 17 2022" -A x64 -T v141 ^
+            -DCMAKE_CXX_USE_RESPONSE_FILE_FOR_OBJECTS=ON ^
+            -DCMAKE_CXX_USE_RESPONSE_FILE_FOR_LIBRARIES=ON ^
+            -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" ^
+            -DMongoDB_DIR="${{ github.workspace }}/robo-shell" ^
+            -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" ^
+            -DCMAKE_BUILD_TYPE=Release ^
+            ${{ github.workspace }}
           cmake --build . --config Release -j 2
         shell: cmd
 
@@ -145,5 +95,5 @@ jobs:
         with:
           name: robo3t-final-binary
           path: |
-            build/bin/Release/robo3t.exe
-            build/bin/Release/*.dll
+            D:\b\src\robomongo\Release\robomongo.exe
+            D:\b\src\robomongo\Release\*.dll
