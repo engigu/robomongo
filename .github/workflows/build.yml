@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    tags:
+      - 'v*'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -12,6 +14,8 @@ concurrency:
 jobs:
   build-app:
     runs-on: windows-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout Robo 3T
         uses: actions/checkout@v4
@@ -85,10 +89,38 @@ jobs:
           ninja -v
         shell: cmd
 
+      - name: Prepare Release Package
+        run: |
+          mkdir D:\dist
+          copy D:\b\src\robomongo\robomongo.exe D:\dist\
+          copy D:\b\src\robomongo\*.dll D:\dist\
+          cd /d D:\dist
+          powershell Compress-Archive -Path * -DestinationPath robo3t-v1.5.0-windows-x64.zip
+        shell: cmd
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: D:/dist/robo3t-v1.5.0-windows-x64.zip
+          name: Robo 3T v1.5.0 Official Release
+          body: |
+            ## Robo 3T v1.5.0
+            
+            This is the official 1.5.0 release for Windows.
+            
+            ### Key Changes:
+            - **Fixed Windows Build Pipeline**: Resolved LNK1170 and path length issues using Ninja and virtual drive mapping.
+            - **Fixed Source Compilation**: Resolved duplicate symbol and namespace ambiguity in `MongoServer.cpp`.
+            - **OpenSSL 1.1.1 Support**: Locked dependencies to stable OpenSSL 1.1.1u.
+            - **Qt 5.15.2 Integration**.
+            
+            *Note: This build is optimized for stable performance on modern Windows systems.*
+          draft: false
+          prerelease: false
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: robo3t-final-binary
-          path: |
-            D:\b\src\robomongo\robomongo.exe
-            D:\b\src\robomongo\*.dll
+          path: D:\dist\robo3t-v1.5.0-windows-x64.zip
