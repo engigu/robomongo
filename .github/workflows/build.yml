@@ -92,15 +92,19 @@ jobs:
       - name: Prepare Release Package
         run: |
           mkdir D:\dist
-          echo "Scanning D:\b for output files..."
-          dir /s D:\b\robomongo.exe
-          dir /s D:\b\*.dll
+          echo "Scanning all logical drives for robomongo.exe..."
+          dir D:\ /s /b | findstr "robomongo.exe"
+          dir R:\ /s /b | findstr "robomongo.exe"
           
-          # 鲁棒性拷贝：直接从查找到的位置拷贝
-          for /r D:\b %%f in (robomongo.exe) do if exist "%%f" copy "%%f" D:\dist\
-          for /r D:\b %%f in (Qt5*.dll) do if exist "%%f" copy "%%f" D:\dist\
-          for /r D:\b %%f in (libssl*.dll) do if exist "%%f" copy "%%f" D:\dist\
-          for /r D:\b %%f in (libcrypto*.dll) do if exist "%%f" copy "%%f" D:\dist\
+          # 直接动态捕捉：将找到的第一个 robomongo.exe 作为主程序
+          for /f "tokens=*" %%i in ('dir D:\b\robomongo.exe /s /b 2^>nul') do copy "%%i" D:\dist\
+          for /f "tokens=*" %%i in ('dir D:\b\*.dll /s /b 2^>nul') do copy "%%i" D:\dist\
+          
+          # 检查是否真的拷到了
+          if not exist D:\dist\robomongo.exe (
+            echo "FATAL: robomongo.exe not found in build directory!"
+            exit 1
+          )
           
           cd /d D:\dist
           powershell Compress-Archive -Path * -DestinationPath robo3t-v1.5.0-windows-x64.zip
@@ -114,8 +118,7 @@ jobs:
           name: Robo 3T v1.5.0 Official Release
           body: |
             ## Robo 3T v1.5.0
-            
-            Official release for Windows with performance fixes.
+            Official release for Windows with critical bug fixes and build optimizations.
           draft: false
           prerelease: false
           fail_on_unmatched_files: true
