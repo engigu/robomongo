@@ -79,33 +79,25 @@ jobs:
           subst S: "${{ github.workspace }}\robo-shell"
           subst R: "${{ github.workspace }}"
           mkdir D:\b
+          mkdir D:\dist
           cd /d D:\b
           cmake -G Ninja ^
             -DCMAKE_BUILD_TYPE=Release ^
             -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" ^
             -DMongoDB_DIR="S:" ^
             -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" ^
+            -DCMAKE_RUNTIME_OUTPUT_DIRECTORY="D:\dist" ^
+            -DCMAKE_LIBRARY_OUTPUT_DIRECTORY="D:\dist" ^
             R:
           ninja -v
         shell: cmd
 
       - name: Prepare Release Package
         run: |
-          mkdir D:\dist
-          echo "Scanning all logical drives for robomongo.exe..."
-          dir D:\ /s /b | findstr "robomongo.exe"
-          dir R:\ /s /b | findstr "robomongo.exe"
-          
-          # 直接动态捕捉：将找到的第一个 robomongo.exe 作为主程序
-          for /f "tokens=*" %%i in ('dir D:\b\robomongo.exe /s /b 2^>nul') do copy "%%i" D:\dist\
-          for /f "tokens=*" %%i in ('dir D:\b\*.dll /s /b 2^>nul') do copy "%%i" D:\dist\
-          
-          # 检查是否真的拷到了
           if not exist D:\dist\robomongo.exe (
-            echo "FATAL: robomongo.exe not found in build directory!"
+            echo "FATAL: robomongo.exe was not created in D:\dist"
             exit 1
           )
-          
           cd /d D:\dist
           powershell Compress-Archive -Path * -DestinationPath robo3t-v1.5.0-windows-x64.zip
         shell: cmd
@@ -118,7 +110,7 @@ jobs:
           name: Robo 3T v1.5.0 Official Release
           body: |
             ## Robo 3T v1.5.0
-            Official release for Windows with critical bug fixes and build optimizations.
+            Official release for Windows with performance fixes and environment optimizations.
           draft: false
           prerelease: false
           fail_on_unmatched_files: true
