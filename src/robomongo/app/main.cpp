@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QTranslator>
 #include <QDesktopWidget>
 
 #include <locale.h>
@@ -95,6 +96,14 @@ int main(int argc, char *argv[], char** envp)
 
     // Init GUI style
     Robomongo::AppStyleUtils::initStyle();
+
+    // Load translation
+    static QTranslator translator;
+    if (settings->language() == "zh") {
+        if (translator.load("robomongo_zh_CN", ":/translations")) {
+            app.installTranslator(&translator);
+        }
+    }
 
     // To be set true at normal program exit
     settings->setProgramExitedNormally(false);

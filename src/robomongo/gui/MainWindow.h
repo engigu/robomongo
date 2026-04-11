@@ -62,6 +62,7 @@ namespace Robomongo
         void save();
         void saveAs();
         void changeStyle(QAction *);
+        void changeLanguage(QAction *);
         void exit();
 
         void setDefaultUuidEncoding();
@@ -122,6 +123,7 @@ namespace Robomongo
         void createDatabaseExplorer();
         void createTabs();
         void createStylesMenu();
+        void createLanguageMenu();
         void createStatusBar();
         void restoreWindowSettings();
         void saveWindowSettings() const;

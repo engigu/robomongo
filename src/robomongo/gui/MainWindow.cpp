@@ -168,12 +168,12 @@ namespace Robomongo
         VERIFY(connect(_saveAsAction, SIGNAL(triggered()), this, SLOT(saveAs())));
 
         // Exit action
-        QAction *exitAction = new QAction("&Exit", this);
+        QAction *exitAction = new QAction(tr("&Exit"), this);
         exitAction->setShortcuts(QKeySequence::Quit);
         VERIFY(connect(exitAction, SIGNAL(triggered()), this, SLOT(exit())));
 
         // Connect action
-        _connectAction = new QAction("&Connect...", this);
+        _connectAction = new QAction(tr("&Connect..."), this);
         _connectAction->setShortcuts(QKeySequence::New);
         _connectAction->setIcon(GuiRegistry::instance().connectIcon());
         _connectAction->setIconText("Connect");
@@ -185,7 +185,7 @@ namespace Robomongo
         updateConnectionsMenu();
 
         _connectButton = new QToolButton();
-        _connectButton->setText("&Connect...");
+        _connectButton->setText(tr("&Connect..."));
         _connectButton->setIcon(GuiRegistry::instance().connectIcon());
         _connectButton->setFocusPolicy(Qt::NoFocus);
         _connectButton->setToolTip(QString("Connect to local or remote MongoDB instance <b>(%1 + N)</b>").arg(controlKey));
@@ -207,10 +207,10 @@ namespace Robomongo
         VERIFY(connect(_trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), 
                        this, SLOT(trayActivated(QSystemTrayIcon::ActivationReason))));
 
-        auto trayMinimizeAction = new QAction("Minimize to Tray", _trayIcon);
+        auto trayMinimizeAction = new QAction(tr("Minimize to Tray"), _trayIcon);
         VERIFY(connect(trayMinimizeAction, SIGNAL(triggered()), this, SLOT(toggleMinimize())));
 
-        auto trayExitAction = new QAction("Exit", _trayIcon);
+        auto trayExitAction = new QAction(tr("Exit"), _trayIcon);
         VERIFY(connect(trayExitAction, SIGNAL(triggered()), this, SLOT(exit())));
        
         auto contextMenu = new QMenu();
@@ -222,7 +222,7 @@ namespace Robomongo
     #endif
 
         // Orientation action
-        _orientationAction = new QAction("&Rotate", this);
+        _orientationAction = new QAction(tr("&Rotate"), this);
         _orientationAction->setShortcut(Qt::Key_F10);
         _orientationAction->setIcon(GuiRegistry::instance().rotateIcon());
         _orientationAction->setToolTip("Toggle orientation of results view <b>(F10)</b>");
@@ -232,7 +232,7 @@ namespace Robomongo
         ViewMode viewMode = AppRegistry::instance().settingsManager()->viewMode();
 
         // Text mode action
-        auto textModeAction = new QAction("&Text Mode", this);
+        auto textModeAction = new QAction(tr("&Text Mode"), this);
         textModeAction->setShortcut(Qt::Key_F4);
         textModeAction->setIcon(GuiRegistry::instance().textHighlightedIcon());
         textModeAction->setToolTip("Show current tab in text mode, and make this mode default for all subsequent queries <b>(F4)</b>");
@@ -241,7 +241,7 @@ namespace Robomongo
         VERIFY(connect(textModeAction, SIGNAL(triggered()), this, SLOT(enterTextMode())));
 
         // Tree mode action
-        QAction *treeModeAction = new QAction("&Tree Mode", this);
+        QAction *treeModeAction = new QAction(tr("&Tree Mode"), this);
         treeModeAction->setShortcut(Qt::Key_F2);
         treeModeAction->setIcon(GuiRegistry::instance().treeHighlightedIcon());
         treeModeAction->setToolTip("Show current tab in tree mode, and make this mode default for all subsequent queries <b>(F3)</b>");
@@ -250,7 +250,7 @@ namespace Robomongo
         VERIFY(connect(treeModeAction, SIGNAL(triggered()), this, SLOT(enterTreeMode())));
 
         // Tree mode action
-        QAction *tableModeAction = new QAction("T&able Mode", this);
+        QAction *tableModeAction = new QAction(tr("T&able Mode"), this);
         tableModeAction->setShortcut(Qt::Key_F3);
         tableModeAction->setIcon(GuiRegistry::instance().tableHighlightedIcon());
         tableModeAction->setToolTip("Show current tab in table mode, and make this mode default for all subsequent queries <b>(F3)</b>");
@@ -259,7 +259,7 @@ namespace Robomongo
         VERIFY(connect(tableModeAction, SIGNAL(triggered()), this, SLOT(enterTableMode())));
 
         // Custom mode action
-        QAction *customModeAction = new QAction("&Custom Mode", this);
+        QAction *customModeAction = new QAction(tr("&Custom Mode"), this);
         //customModeAction->setShortcut(Qt::Key_F2);
         customModeAction->setIcon(GuiRegistry::instance().customHighlightedIcon());
         customModeAction->setToolTip("Show current tab in custom mode if possible, and make this mode default for all subsequent queries <b>(F2)</b>");
@@ -291,7 +291,7 @@ namespace Robomongo
 
 
     /*** File menu ***/
-        QMenu *fileMenu = menuBar()->addMenu("File");
+        QMenu *fileMenu = menuBar()->addMenu(tr("File"));
         fileMenu->addAction(_connectAction);
         fileMenu->addSeparator();
         fileMenu->addAction(_openAction);
@@ -312,10 +312,10 @@ namespace Robomongo
 
     /*** Options menu ***/
 
-        QMenu *optionsMenu = menuBar()->addMenu("Options");
+        QMenu *optionsMenu = menuBar()->addMenu(tr("Options"));
 
         // View Mode
-        QMenu *defaultViewModeMenu = optionsMenu->addMenu("Default View Mode");
+        QMenu *defaultViewModeMenu = optionsMenu->addMenu(tr("Default View Mode"));
         defaultViewModeMenu->addAction(customModeAction);
         defaultViewModeMenu->addAction(treeModeAction);
         defaultViewModeMenu->addAction(tableModeAction);
@@ -340,7 +340,7 @@ namespace Robomongo
         localTime->setChecked(AppRegistry::instance().settingsManager()->timeZone() == LocalTime);
         VERIFY(connect(localTime, SIGNAL(triggered()), this, SLOT(setLocalTimeZone())));
 
-        QMenu *timeMenu = optionsMenu->addMenu("Display Dates In...");
+        QMenu *timeMenu = optionsMenu->addMenu(tr("Display Dates In..."));
         timeMenu->addAction(utcTime);
         timeMenu->addAction(localTime);
 
@@ -410,6 +410,8 @@ namespace Robomongo
         VERIFY(connect(loadMongoRcJs, SIGNAL(triggered()), this, SLOT(setLoadMongoRcJs())));
         optionsMenu->addSeparator();
         optionsMenu->addAction(loadMongoRcJs);
+
+        createLanguageMenu();
 
         optionsMenu->addSeparator();
 
@@ -508,7 +510,7 @@ namespace Robomongo
         VERIFY(connect(duplicateAction, SIGNAL(triggered()), SLOT(duplicateTab())));
 
         // Window menu
-        QMenu *windowMenu = menuBar()->addMenu("Window");
+        QMenu *windowMenu = menuBar()->addMenu(tr("Window"));
         //minimize
         windowMenu->addAction(fullScreenAction);
         windowMenu->addAction(minimizeAction);
@@ -538,7 +540,7 @@ namespace Robomongo
         VERIFY(connect(aboutRobomongoAction, SIGNAL(triggered()), this, SLOT(aboutRobomongo())));
 
         // Options menu
-        QMenu *helpMenu = menuBar()->addMenu("Help");
+        QMenu *helpMenu = menuBar()->addMenu(tr("Help"));
         helpMenu->addAction(aboutRobomongoAction);
 
         // Toolbar
@@ -662,6 +664,41 @@ namespace Robomongo
              styleGroup->addAction(styleAction);
              styles->addAction(styleAction);             
          }
+    }
+
+    void MainWindow::createLanguageMenu()
+    {
+         QMenu *optionsMenu = nullptr;
+         // Find Options menu - unfortunately it's local in constructor usually, 
+         // so we look for it in the menuBar
+         for (auto menu : menuBar()->findChildren<QMenu*>()) {
+             if (menu->title() == "Options") {
+                 optionsMenu = menu;
+                 break;
+             }
+         }
+
+         if (!optionsMenu) return;
+
+         QMenu *langMenu = optionsMenu->addMenu("Language / 语言");
+         QActionGroup *langGroup = new QActionGroup(this);
+         VERIFY(connect(langGroup, SIGNAL(triggered(QAction *)), this, SLOT(changeLanguage(QAction *))));
+
+         QString currentLang = AppRegistry::instance().settingsManager()->language();
+
+         QAction *enAction = new QAction("English", this);
+         enAction->setCheckable(true);
+         enAction->setChecked(currentLang == "en");
+         enAction->setData("en");
+         langGroup->addAction(enAction);
+         langMenu->addAction(enAction);
+
+         QAction *zhAction = new QAction("简体中文", this);
+         zhAction->setCheckable(true);
+         zhAction->setChecked(currentLang == "zh");
+         zhAction->setData("zh");
+         langGroup->addAction(zhAction);
+         langMenu->addAction(zhAction);
     }
 
     void MainWindow::createStatusBar()
@@ -1416,6 +1453,19 @@ namespace Robomongo
         _updateLabel->setText(str);
         _updateBar->setVisible(true);
         adjustUpdatesBarHeight();
+    }
+
+    void MainWindow::changeLanguage(QAction *ac)
+    {
+        QString lang = ac->data().toString();
+        auto settings = AppRegistry::instance().settingsManager();
+        if (settings->language() != lang) {
+            settings->setLanguage(lang);
+            settings->save();
+            QMessageBox::information(this, "Language Changed", 
+                "Language setting updated. Please restart Robo 3T to apply the changes.\n\n"
+                "语言设置已更新。请重启 Robo 3T 以应用更改。");
+        }
     }
 
     void MainWindow::on_closeButton_clicked()

@@ -141,6 +141,16 @@ set(SOURCES
     gui/resources/gui.qrc
 )
 
+# Translation build logic
+set(TS_FILES resources/translations/robomongo_zh_CN.ts)
+qt5_add_translation(QM_FILES ${TS_FILES})
+
+# Generate a temporary qrc file for translations to be embedded
+set(TRANSLATIONS_QRC "${CMAKE_CURRENT_BINARY_DIR}/translations.qrc")
+file(WRITE ${TRANSLATIONS_QRC} "<RCC><qresource prefix=\"/\"><file alias=\"translations/robomongo_zh_CN.qm\">${CMAKE_CURRENT_BINARY_DIR}/robomongo_zh_CN.qm</file></qresource></RCC>")
+
+list(APPEND SOURCES ${QM_FILES} ${TRANSLATIONS_QRC})
+
 # Robomongo target
 add_executable(robomongo MACOSX_BUNDLE WIN32 app/main.cpp ${SOURCES})
 

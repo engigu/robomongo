@@ -141,6 +141,9 @@ namespace Robomongo
 
         void setBatchSize(int batchSize) { _batchSize = batchSize; }
         int batchSize() const { return _batchSize; }
+        
+        QString language() const { return _language; }
+        void setLanguage(const QString& lang) { _language = lang; }
 
         QString currentStyle() const { return _currentStyle; }
         void setCurrentStyle(const QString& style);
@@ -225,6 +228,7 @@ namespace Robomongo
         QSet<QString> _dbVersionsConnected;
         int _batchSize;
         bool _checkForUpdates = true;
+        QString _language;
         QString _currentStyle;
         QString _textFontFamily;
         int _textFontPointSize;

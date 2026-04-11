@@ -264,9 +264,9 @@ namespace Robomongo
             _batchSize = 50;
 
         if (map.contains("checkForUpdates"))
-            _checkForUpdates = map.value("checkForUpdates").toBool();
-
-        _currentStyle = map.value("style").toString();
+            _checkForUpdates = map.value("checkForUpdates", true).toBool();
+        _language = map.value("language", "en").toString();
+        _currentStyle = map.value("currentStyle", "Normal").toString();
         if (_currentStyle.isEmpty()) {
             _currentStyle = AppStyle::StyleName;
         }
@@ -366,7 +366,9 @@ namespace Robomongo
 
         // 9. Save batchSize
         map.insert("batchSize", _batchSize);
-        map.insert("checkForUpdates", _checkForUpdates);
+        map["checkForUpdates"] = _checkForUpdates;
+        map["language"] = _language;
+        map["currentStyle"] = _currentStyle;
         map.insert("mongoTimeoutSec", _mongoTimeoutSec);
         map.insert("shellTimeoutSec", _shellTimeoutSec);
 
