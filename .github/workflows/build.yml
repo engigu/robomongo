@@ -63,11 +63,20 @@ jobs:
             ${{ runner.os }}-robo-shell-v141-
           fail-on-cache-miss: false
 
+      - name: Install OpenSSL
+        run: choco install openssl --version=1.1.1.2100 -y --no-progress
+
       - name: Locate OpenSSL
         run: |
-          dir "C:\Program Files\OpenSSL*" /s /b | findstr "opensslconf.h"
-          set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL-Win64
-          if not exist "C:\Program Files\OpenSSL-Win64" set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL
+          :: 优先尝试 Choco 默认路径，否则全盘搜索
+          set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL
+          if not exist "%OPENSSL_REAL_PATH%\bin\libcrypto-1_1-x64.dll" (
+            dir "C:\Program Files\OpenSSL*" /s /b | findstr /i "libcrypto-1_1-x64.dll"
+            set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL-Win64
+          )
+          if not exist "C:\Program Files\OpenSSL-Win64" (
+             if not exist "C:\Program Files\OpenSSL" set OPENSSL_REAL_PATH=C:\OpenSSL-Win64
+          )
           echo OPENSSL_PATH=%OPENSSL_REAL_PATH%>>%GITHUB_ENV%
         shell: cmd
 
@@ -100,8 +109,18 @@ jobs:
           cd /d D:\dist
           "${{ env.Qt5_Dir }}\bin\windeployqt.exe" --release --no-translations --no-opengl-sw --no-compiler-runtime robo3t.exe
           
-          :: 拷贝 OpenSSL DLL
-          copy "${{ env.OPENSSL_PATH }}\bin\*.dll" D:\dist\
+          :: 拷贝 OpenSSL DLL (加强版：确保 libcrypto 和 libssl 被包含)
+          copy "${{ env.OPENSSL_PATH }}\bin\lib*.dll" D:\dist\ || (
+            echo "DLLs not found in bin, searching root..."
+            copy "${{ env.OPENSSL_PATH }}\lib*.dll" D:\dist\
+          )
+          
+          :: 最后确认
+          if not exist D:\dist\libcrypto-1_1-x64.dll (
+             echo "ERROR: libcrypto-1_1-x64.dll is STILL MISSING!"
+             dir "${{ env.OPENSSL_PATH }}" /s /b | findstr /i "libcrypto.*dll"
+             exit 1
+          )
           
           :: 打包
           powershell Compress-Archive -Path * -DestinationPath "robo3t-${{ github.ref_name }}-windows-x64.zip"
