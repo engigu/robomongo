@@ -94,19 +94,19 @@ jobs:
 
       - name: Prepare Release Package
         run: |
-          # 检查确切的产物名称：在现代版本中它是 robo3t.exe
           if not exist D:\dist\robo3t.exe (
-            if exist D:\dist\robomongo.exe (
-              echo "Found robomongo.exe, renaming to robo3t.exe"
-              copy D:\dist\robomongo.exe D:\dist\robo3t.exe
-            ) else (
-              echo "FATAL: Neither robo3t.exe nor robomongo.exe exist in D:\dist"
-              dir D:\dist
-              exit 1
-            )
+            echo "FATAL: robo3t.exe was not created in D:\dist"
+            exit 1
           )
           
+          # 核心修复：使用 windeployqt 自动部署所有 Qt 依赖 DLL
           cd /d D:\dist
+          "${{ env.Qt5_Dir }}\bin\windeployqt.exe" --release --no-translations --no-opengl-sw --no-compiler-runtime robo3t.exe
+          
+          # 拷贝 OpenSSL DLL
+          copy "${{ env.OPENSSL_PATH }}\bin\*.dll" D:\dist\
+          
+          # 打包
           powershell Compress-Archive -Path * -DestinationPath robo3t-v1.5.0-windows-x64.zip
         shell: cmd
 
@@ -118,7 +118,13 @@ jobs:
           name: Robo 3T v1.5.0 Official Release
           body: |
             ## Robo 3T v1.5.0
-            Official release for Windows with performance fixes and environment optimizations.
+            
+            Official stable release for Windows.
+            
+            ### Fixes:
+            - **Complete Dependency Bundling**: Now includes all necessary Qt and OpenSSL DLLs via `windeployqt`.
+            - **Fixed Source Compilation**: Resolved duplicate symbol and namespace ambiguity.
+            - **High Performance Build**: Ninja-linked binary for modern Windows systems.
           draft: false
           prerelease: false
           fail_on_unmatched_files: true
