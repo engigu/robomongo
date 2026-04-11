@@ -92,8 +92,16 @@ jobs:
       - name: Prepare Release Package
         run: |
           mkdir D:\dist
-          copy D:\b\src\robomongo\robomongo.exe D:\dist\
-          copy D:\b\src\robomongo\*.dll D:\dist\
+          echo "Scanning D:\b for output files..."
+          dir /s D:\b\robomongo.exe
+          dir /s D:\b\*.dll
+          
+          # 鲁棒性拷贝：直接从查找到的位置拷贝
+          for /r D:\b %%f in (robomongo.exe) do if exist "%%f" copy "%%f" D:\dist\
+          for /r D:\b %%f in (Qt5*.dll) do if exist "%%f" copy "%%f" D:\dist\
+          for /r D:\b %%f in (libssl*.dll) do if exist "%%f" copy "%%f" D:\dist\
+          for /r D:\b %%f in (libcrypto*.dll) do if exist "%%f" copy "%%f" D:\dist\
+          
           cd /d D:\dist
           powershell Compress-Archive -Path * -DestinationPath robo3t-v1.5.0-windows-x64.zip
         shell: cmd
@@ -107,17 +115,10 @@ jobs:
           body: |
             ## Robo 3T v1.5.0
             
-            This is the official 1.5.0 release for Windows.
-            
-            ### Key Changes:
-            - **Fixed Windows Build Pipeline**: Resolved LNK1170 and path length issues using Ninja and virtual drive mapping.
-            - **Fixed Source Compilation**: Resolved duplicate symbol and namespace ambiguity in `MongoServer.cpp`.
-            - **OpenSSL 1.1.1 Support**: Locked dependencies to stable OpenSSL 1.1.1u.
-            - **Qt 5.15.2 Integration**.
-            
-            *Note: This build is optimized for stable performance on modern Windows systems.*
+            Official release for Windows with performance fixes.
           draft: false
           prerelease: false
+          fail_on_unmatched_files: true
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
