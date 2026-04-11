@@ -107,11 +107,11 @@ add_library(crypto SHARED IMPORTED)
 if(SYSTEM_WINDOWS)
     set_target_properties(ssl PROPERTIES
         INTERFACE_INCLUDE_DIRECTORIES   "${OpenSSL_DIR}/include"
-        IMPORTED_IMPLIB                 "${OpenSSL_DIR}/libssl.lib"
+        IMPORTED_IMPLIB                 "${OpenSSL_DIR}/lib/libssl.lib"
     )
     set_target_properties(crypto PROPERTIES
         INTERFACE_INCLUDE_DIRECTORIES   "${OpenSSL_DIR}/include"
-        IMPORTED_IMPLIB                 "${OpenSSL_DIR}/libcrypto.lib"
+        IMPORTED_IMPLIB                 "${OpenSSL_DIR}/lib/libcrypto.lib"
     )
 else()
   if(SYSTEM_MACOSX)
