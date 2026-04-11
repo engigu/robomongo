@@ -134,3 +134,10 @@ jobs:
         with:
           name: robo3t-final-binary
           path: D:\dist\robo3t-v1.5.0-windows-x64.zip
+
+      - name: Cleanup Virtual Drives
+        if: always()
+        run: |
+          subst S: /D || echo "S: already unmapped"
+          subst R: /D || echo "R: already unmapped"
+        shell: cmd
