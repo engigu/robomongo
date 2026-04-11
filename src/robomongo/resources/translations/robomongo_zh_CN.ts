@@ -5,341 +5,341 @@
     <name>Robomongo::MainWindow</name>
     <message>
         <source>&amp;Connect...</source>
-        <translation>连接(&amp;C)...</translation>
+        <translation>杩炴帴(&amp;C)...</translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
-        <translation>关于 Robo 3T(&amp;A)...</translation>
+        <translation>鍏充簬 Robo 3T(&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Manage Connections...</source>
-        <translation>连接管理�?&amp;M)...</translation>
+        <translation>杩炴帴绠＄悊鍣?&amp;M)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退�?&amp;E)</translation>
+        <translation>閫€鍑?&amp;E)</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>文件</translation>
+        <translation>鏂囦欢</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>视图</translation>
+        <translation>瑙嗗浘</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>选项</translation>
+        <translation>閫夐」</translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>窗口</translation>
+        <translation>绐楀彛</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>帮助</translation>
+        <translation>甯姪</translation>
     </message>
     <message>
         <source>&amp;Open...</source>
-        <translation>打开(&amp;O)...</translation>
+        <translation>鎵撳紑(&amp;O)...</translation>
     </message>
     <message>
         <source>Load script from the file to the currently opened shell &lt;b&gt;(%1 + O)&lt;/b&gt;</source>
-        <translation>从文件加载脚本到当前 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
+        <translation>浠庢枃浠跺姞杞借剼鏈埌褰撳墠 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Save</source>
-        <translation>保存(&amp;S)</translation>
+        <translation>淇濆瓨(&amp;S)</translation>
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当�?Shell 中的脚本保存到文�?&lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>灏嗗綋鍓?Shell 涓殑鑴氭湰淇濆瓨鍒版枃浠?&lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存�?&amp;A)...</translation>
+        <translation>鍙﹀瓨涓?&amp;A)...</translation>
     </message>
     <message>
         <source>Connect to local or remote MongoDB instance &lt;b&gt;(%1 + N)&lt;/b&gt;</source>
-        <translation>连接到本地或远程 MongoDB 实例 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
+        <translation>杩炴帴鍒版湰鍦版垨杩滅▼ MongoDB 瀹炰緥 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
-        <translation>旋转(&amp;R)</translation>
+        <translation>鏃嬭浆(&amp;R)</translation>
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换结果视图的方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>鍒囨崲缁撴灉瑙嗗浘鐨勬柟鍚?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
-        <translation>文本模式(&amp;T)</translation>
+        <translation>鏂囨湰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in text mode, and make this mode default for all subsequent queries &lt;b&gt;(F4)&lt;/b&gt;</source>
-        <translation>以文本模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F4)&lt;/b&gt;</translation>
+        <translation>浠ユ枃鏈ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏朵綔涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F4)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Tree Mode</source>
-        <translation>树形模式(&amp;T)</translation>
+        <translation>鏍戝舰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in tree mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以树形模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>浠ユ爲褰㈡ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏朵綔涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>T&amp;able Mode</source>
-        <translation>表格模式(&amp;A)</translation>
+        <translation>琛ㄦ牸妯″紡(&amp;A)</translation>
     </message>
     <message>
         <source>Show current tab in table mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以表格模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>浠ヨ〃鏍兼ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏朵綔涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模�?&amp;C)</translation>
+        <translation>鑷畾涔夋ā寮?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
-        <translation>如果可能，以自定义模式显示当前页签，并将其作为后续查询的默认模式 &lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>濡傛灉鍙兘锛屼互鑷畾涔夋ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏朵綔涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前页签的查询。如果选择了部分文本，则只执行所选内�?&lt;b&gt;(F5 &lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>鎵ц褰撳墠椤电鐨勬煡璇€傚鏋滈€夋嫨浜嗛儴鍒嗘枃鏈紝鍒欏彧鎵ц鎵€閫夊唴瀹?&lt;b&gt;(F5 &lt;/b&gt; 鎴?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止执行当前运行的脚本�?lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>鍋滄鎵ц褰撳墠杩愯鐨勮剼鏈€?lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Default View Mode</source>
-        <translation>默认视图模式</translation>
+        <translation>榛樿瑙嗗浘妯″紡</translation>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解�?(原样显示)</translation>
+        <translation>涓嶈В鐮?(鍘熸牱鏄剧ず)</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
-        <translation>使用 Java 编码</translation>
+        <translation>浣跨敤 Java 缂栫爜</translation>
     </message>
     <message>
         <source>Use .NET Encoding</source>
-        <translation>使用 .NET 编码</translation>
+        <translation>浣跨敤 .NET 缂栫爜</translation>
     </message>
     <message>
         <source>Use Python Encoding</source>
-        <translation>使用 Python 编码</translation>
+        <translation>浣跨敤 Python 缂栫爜</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding</source>
-        <translation>遗留 UUID 编码</translation>
+        <translation>閬楃暀 UUID 缂栫爜</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>全部</translation>
+        <translation>鍏ㄩ儴</translation>
     </message>
     <message>
         <source>All (Except Collection Names)</source>
-        <translation>全部 (除了集合名称)</translation>
+        <translation>鍏ㄩ儴 (闄や簡闆嗗悎鍚嶇О)</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>�?/translation>
+        <translation>鏃?/translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
-        <translation>自动补全模式</translation>
+        <translation>鑷姩琛ュ叏妯″紡</translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文�?/translation>
+        <translation>鑷姩灞曞紑绗竴涓枃妗?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
-        <translation>默认显示行号</translation>
+        <translation>榛樿鏄剧ず琛屽彿</translation>
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷�?/translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?/translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>关闭按钮应最小化到系统托�?/translation>
+        <translation>鍏抽棴鎸夐挳搴旀渶灏忓寲鍒扮郴缁熸墭鐩?/translation>
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托�?/translation>
+        <translation>鏈€灏忓寲鍒版墭鐩?/translation>
     </message>
     <message>
         <source>Preferences</source>
-        <translation>首选项</translation>
+        <translation>棣栭€夐」</translation>
     </message>
     <message>
         <source>&amp;Full Screen</source>
-        <translation>全屏(&amp;F)</translation>
+        <translation>鍏ㄥ睆(&amp;F)</translation>
     </message>
     <message>
         <source>&amp;Minimize</source>
-        <translation>最小化(&amp;M)</translation>
+        <translation>鏈€灏忓寲(&amp;M)</translation>
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择下一个页�?/translation>
+        <translation>閫夋嫨涓嬩竴涓〉绛?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择上一个页�?/translation>
+        <translation>閫夋嫨涓婁竴涓〉绛?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
-        <translation>在当前页签重新执行查�?/translation>
+        <translation>鍦ㄥ綋鍓嶉〉绛鹃噸鏂版墽琛屾煡璇?/translation>
     </message>
     <message>
         <source>Duplicate Query in New Tab</source>
-        <translation>在新页签中复制查�?/translation>
+        <translation>鍦ㄦ柊椤电涓鍒舵煡璇?/translation>
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>打开/刷新欢迎页签</translation>
+        <translation>鎵撳紑/鍒锋柊娆㈣繋椤电</translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新工具�?/translation>
+        <translation>鏇存柊宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Theme</source>
-        <translation>主题</translation>
+        <translation>涓婚</translation>
     </message>
     <message>
         <source>Logs</source>
-        <translation>日志</translation>
+        <translation>鏃ュ織</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退�?/translation>
+        <translation>閫€鍑?/translation>
     </message>
     <message>
         <source>Connect to MongoDB</source>
-        <translation>连接�?MongoDB</translation>
+        <translation>杩炴帴鍒?MongoDB</translation>
     </message>
     <message>
         <source>Cannot connect to MongoDB (%1)</source>
-        <translation>无法连接�?MongoDB (%1)</translation>
+        <translation>鏃犳硶杩炴帴鍒?MongoDB (%1)</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Refresh not working yet... : &lt;br/&gt;  &lt;b&gt;Ctrl+D&lt;/b&gt; : push Button</source>
-        <translation>刷新功能暂不可用... : &lt;br/&gt;  &lt;b&gt;Ctrl+D&lt;/b&gt; : 点击按钮</translation>
+        <translation>鍒锋柊鍔熻兘鏆備笉鍙敤... : &lt;br/&gt;  &lt;b&gt;Ctrl+D&lt;/b&gt; : 鐐瑰嚮鎸夐挳</translation>
     </message>
     <message>
         <source>Cannot connect to the MongoDB at %1.</source>
-        <translation>无法连接�?%1 处的 MongoDB�?/translation>
+        <translation>鏃犳硶杩炴帴鍒?%1 澶勭殑 MongoDB銆?/translation>
     </message>
     <message>
         <source>Operation failed</source>
-        <translation>操作失败</translation>
+        <translation>鎿嶄綔澶辫触</translation>
     </message>
     <message>
         <source>Show Robo 3T</source>
-        <translation>显示 Robo 3T</translation>
+        <translation>鏄剧ず Robo 3T</translation>
     </message>
     <message>
         <source>&amp;Explorer</source>
-        <translation>资源管理�?&amp;E)</translation>
+        <translation>璧勬簮绠＄悊鍣?&amp;E)</translation>
     </message>
     <message>
         <source>Press to show/hide Database Explorer panel.</source>
-        <translation>点击显示/隐藏数据库资源管理器面板�?/translation>
+        <translation>鐐瑰嚮鏄剧ず/闅愯棌鏁版嵁搴撹祫婧愮鐞嗗櫒闈㈡澘銆?/translation>
     </message>
     <message>
         <source>&amp;Logs</source>
-        <translation>日志(&amp;L)</translation>
+        <translation>鏃ュ織(&amp;L)</translation>
     </message>
     <message>
         <source>Language Changed</source>
-        <translation>语言已更�?/translation>
+        <translation>璇█宸叉洿鏀?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source>MongoDB Connections</source>
-        <translation>MongoDB 连接管理�?/translation>
+        <translation>MongoDB 杩炴帴绠＄悊鍣?/translation>
     </message>
     <message>
         <source>&amp;Add...</source>
-        <translation>添加(&amp;A)...</translation>
+        <translation>娣诲姞(&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Edit...</source>
-        <translation>编辑(&amp;E)...</translation>
+        <translation>缂栬緫(&amp;E)...</translation>
     </message>
     <message>
         <source>&amp;Clone...</source>
-        <translation>克隆(&amp;C)...</translation>
+        <translation>鍏嬮殕(&amp;C)...</translation>
     </message>
     <message>
         <source>&amp;Remove...</source>
-        <translation>删除(&amp;R)...</translation>
+        <translation>鍒犻櫎(&amp;R)...</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名称</translation>
+        <translation>鍚嶇О</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>地址</translation>
+        <translation>鍦板潃</translation>
     </message>
     <message>
         <source>Attributes</source>
-        <translation>特�?/translation>
+        <translation>鐗规€?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>认证数据�?/ 用户</translation>
+        <translation>璁よ瘉鏁版嵁搴?/ 鐢ㄦ埛</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
-        <translation>连接(&amp;O)</translation>
+        <translation>杩炴帴(&amp;O)</translation>
     </message>
     <message>
         <source>Are you sure you want to delete "%1" connection?</source>
-        <translation>确定要删除连�?"%1" 吗？</translation>
+        <translation>纭畾瑕佸垹闄よ繛鎺?"%1" 鍚楋紵</translation>
     </message>
     <message>
         <source>Connections</source>
-        <translation>连接</translation>
+        <translation>杩炴帴</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDialog</name>
     <message>
         <source>Connection Settings</source>
-        <translation>连接设置</translation>
+        <translation>杩炴帴璁剧疆</translation>
     </message>
     <message>
         <source>&amp;Test</source>
-        <translation>测试(&amp;T)</translation>
+        <translation>娴嬭瘯(&amp;T)</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>连接</translation>
+        <translation>杩炴帴</translation>
     </message>
     <message>
         <source>Authentication</source>
-        <translation>认证</translation>
+        <translation>璁よ瘉</translation>
     </message>
     <message>
         <source>SSH</source>
@@ -351,383 +351,383 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级</translation>
+        <translation>楂樼骇</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::BsonTreeModel</name>
     <message>
         <source>Key</source>
-        <translation>�?(Key)</translation>
+        <translation>閿?(Key)</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>�?(Value)</translation>
+        <translation>鍊?(Value)</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>类型 (Type)</translation>
+        <translation>绫诲瀷 (Type)</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>element</source>
-        <translation>个元�?/translation>
+        <translation>涓厓绱?/translation>
     </message>
     <message>
         <source>elements</source>
-        <translation>个元�?/translation>
+        <translation>涓厓绱?/translation>
     </message>
     <message>
         <source>field</source>
-        <translation>个字�?/translation>
+        <translation>涓瓧娈?/translation>
     </message>
     <message>
         <source>fields</source>
-        <translation>个字�?/translation>
+        <translation>涓瓧娈?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerServerTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>创建数据�?/translation>
+        <translation>鍒涘缓鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状�?/translation>
+        <translation>鏈嶅姟鍣ㄧ姸鎬?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>MongoDB 版本</translation>
+        <translation>MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>主机信息</translation>
+        <translation>涓绘満淇℃伅</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>显示日志</translation>
+        <translation>鏄剧ず鏃ュ織</translation>
     </message>
     <message>
         <source>Disconnect</source>
-        <translation>断开连接</translation>
+        <translation>鏂紑杩炴帴</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统</translation>
+        <translation>绯荤粺</translation>
     </message>
     <message>
         <source> [Offline]</source>
-        <translation> [离线]</translation>
+        <translation> [绂荤嚎]</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerDatabaseTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>数据库统�?/translation>
+        <translation>鏁版嵁搴撶粺璁?/translation>
     </message>
     <message>
         <source>Current Operations</source>
-        <translation>当前操作</translation>
+        <translation>褰撳墠鎿嶄綔</translation>
     </message>
     <message>
         <source>Kill Operation...</source>
-        <translation>结束操作...</translation>
+        <translation>缁撴潫鎿嶄綔...</translation>
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据�?..</translation>
+        <translation>鍒犻櫎鏁版嵁搴?..</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据�?..</translation>
+        <translation>淇鏁版嵁搴?..</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Collections</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>函数</translation>
+        <translation>鍑芥暟</translation>
     </message>
     <message>
         <source>Users</source>
-        <translation>用户</translation>
+        <translation>鐢ㄦ埛</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统</translation>
+        <translation>绯荤粺</translation>
     </message>
     <message>
         <source>Drop &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要删除数据库 &lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>纭畾瑕佸垹闄ゆ暟鎹簱 &lt;b&gt;%1&lt;/b&gt; 鍚楋紵</translation>
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据�?/translation>
+        <translation>鍒犻櫎鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要修复数据库 &lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>纭畾瑕佷慨澶嶆暟鎹簱 &lt;b&gt;%1&lt;/b&gt; 鍚楋紵</translation>
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据�?/translation>
+        <translation>淇鏁版嵁搴?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionTreeItem</name>
     <message>
         <source>Insert Document...</source>
-        <translation>插入文档...</translation>
+        <translation>鎻掑叆鏂囨。...</translation>
     </message>
     <message>
         <source>Update Documents...</source>
-        <translation>更新文档...</translation>
+        <translation>鏇存柊鏂囨。...</translation>
     </message>
     <message>
         <source>Remove Documents...</source>
-        <translation>删除文档...</translation>
+        <translation>鍒犻櫎鏂囨。...</translation>
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>删除所有文�?..</translation>
+        <translation>鍒犻櫎鎵€鏈夋枃妗?..</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation>统计信息</translation>
+        <translation>缁熻淇℃伅</translation>
     </message>
     <message>
         <source>Storage Size</source>
-        <translation>存储大小</translation>
+        <translation>瀛樺偍澶у皬</translation>
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大�?/translation>
+        <translation>绱㈠紩鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大�?/translation>
+        <translation>鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Shard Version</source>
-        <translation>分片版本</translation>
+        <translation>鍒嗙墖鐗堟湰</translation>
     </message>
     <message>
         <source>Shard Distribution</source>
-        <translation>分片分布</translation>
+        <translation>鍒嗙墖鍒嗗竷</translation>
     </message>
     <message>
         <source>Drop Collection...</source>
-        <translation>删除集合...</translation>
+        <translation>鍒犻櫎闆嗗悎...</translation>
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集�?..</translation>
+        <translation>閲嶅懡鍚嶉泦鍚?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
-        <translation>克隆集合...</translation>
+        <translation>鍏嬮殕闆嗗悎...</translation>
     </message>
     <message>
         <source>View Documents</source>
-        <translation>查看文档</translation>
+        <translation>鏌ョ湅鏂囨。</translation>
     </message>
     <message>
         <source>Indexes</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
     <message>
         <source>Insert Document</source>
-        <translation>插入文档</translation>
+        <translation>鎻掑叆鏂囨。</translation>
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>删除所有文�?/translation>
+        <translation>鍒犻櫎鎵€鏈夋枃妗?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>确定要删除集�?&lt;b&gt;%1&lt;/b&gt; 下的所有文档吗�?/translation>
+        <translation>纭畾瑕佸垹闄ら泦鍚?&lt;b&gt;%1&lt;/b&gt; 涓嬬殑鎵€鏈夋枃妗ｅ悧锛?/translation>
     </message>
     <message>
         <source>Duplicate Collection</source>
-        <translation>克隆集合</translation>
+        <translation>鍏嬮殕闆嗗悎</translation>
     </message>
     <message>
         <source>&amp;Duplicate</source>
-        <translation>克隆(&amp;D)</translation>
+        <translation>鍏嬮殕(&amp;D)</translation>
     </message>
     <message>
         <source>New Collection Name:</source>
-        <translation>新集合名称：</translation>
+        <translation>鏂伴泦鍚堝悕绉帮細</translation>
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集�?/translation>
+        <translation>閲嶅懡鍚嶉泦鍚?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命�?&amp;R)</translation>
+        <translation>閲嶅懡鍚?&amp;R)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::BsonTreeView</name>
     <message>
         <source>Expand Recursively</source>
-        <translation>递归展开</translation>
+        <translation>閫掑綊灞曞紑</translation>
     </message>
     <message>
         <source>Collapse Recursively</source>
-        <translation>递归折叠</translation>
+        <translation>閫掑綊鎶樺彔</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::Notifier</name>
     <message>
         <source>Delete Document...</source>
-        <translation>删除文档...</translation>
+        <translation>鍒犻櫎鏂囨。...</translation>
     </message>
     <message>
         <source>Delete Documents...</source>
-        <translation>删除多个文档...</translation>
+        <translation>鍒犻櫎澶氫釜鏂囨。...</translation>
     </message>
     <message>
         <source>Edit Document...</source>
-        <translation>编辑文档...</translation>
+        <translation>缂栬緫鏂囨。...</translation>
     </message>
     <message>
         <source>View Document...</source>
-        <translation>查看文档...</translation>
+        <translation>鏌ョ湅鏂囨。...</translation>
     </message>
     <message>
         <source>Insert Document...</source>
-        <translation>插入文档...</translation>
+        <translation>鎻掑叆鏂囨。...</translation>
     </message>
     <message>
         <source>Copy Value</source>
-        <translation>复制�?/translation>
+        <translation>澶嶅埗鍊?/translation>
     </message>
     <message>
         <source>Copy Name</source>
-        <translation>复制名称</translation>
+        <translation>澶嶅埗鍚嶇О</translation>
     </message>
     <message>
         <source>Copy Path</source>
-        <translation>复制路径</translation>
+        <translation>澶嶅埗璺緞</translation>
     </message>
     <message>
         <source>Copy Timestamp from ObjectId</source>
-        <translation>�?ObjectId 复制时间�?/translation>
+        <translation>浠?ObjectId 澶嶅埗鏃堕棿鎴?/translation>
     </message>
     <message>
         <source>Copy JSON</source>
-        <translation>复制 JSON</translation>
+        <translation>澶嶅埗 JSON</translation>
     </message>
     <message>
         <source>Cannot delete</source>
-        <translation>无法删除</translation>
+        <translation>鏃犳硶鍒犻櫎</translation>
     </message>
     <message>
         <source>Selected document doesn&apos;t have _id field. 
 Maybe this is a system document that should be managed in a special way?</source>
-        <translation>所选文档不包含 _id 字段�?这可能是一个系统文档，需要通过特殊方式进行管理�?/translation>
+        <translation>鎵€閫夋枃妗ｄ笉鍖呭惈 _id 瀛楁銆?杩欏彲鑳芥槸涓€涓郴缁熸枃妗ｏ紝闇€瑕侀€氳繃鐗规畩鏂瑰紡杩涜绠＄悊銆?/translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>文档</translation>
+        <translation>鏂囨。</translation>
     </message>
     <message>
         <source>Database Error</source>
-        <translation>数据库错�?/translation>
+        <translation>鏁版嵁搴撻敊璇?/translation>
     </message>
     <message>
         <source>Do you want to delete %1 selected documents?</source>
-        <translation>您确定要删除所选的 %1 个文档吗�?/translation>
+        <translation>鎮ㄧ‘瀹氳鍒犻櫎鎵€閫夌殑 %1 涓枃妗ｅ悧锛?/translation>
     </message>
     <message>
         <source>Error extracting ISODate()</source>
-        <translation>提取 ISODate() 出错</translation>
+        <translation>鎻愬彇 ISODate() 鍑洪敊</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AboutDialog</name>
     <message>
         <source>About </source>
-        <translation>关于 </translation>
+        <translation>鍏充簬 </translation>
     </message>
     <message>
         <source>About</source>
-        <translation>关于</translation>
+        <translation>鍏充簬</translation>
     </message>
     <message>
         <source>License Agreement</source>
-        <translation>许可协议</translation>
+        <translation>璁稿彲鍗忚</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateDatabaseDialog</name>
     <message>
         <source>Create Database</source>
-        <translation>创建数据�?/translation>
+        <translation>鍒涘缓鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称：</translation>
+        <translation>鏁版嵁搴撳悕绉帮細</translation>
     </message>
     <message>
         <source>C&amp;reate</source>
-        <translation>创建(&amp;R)</translation>
+        <translation>鍒涘缓(&amp;R)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::DocumentTextEditor</name>
     <message>
         <source>Validate</source>
-        <translation>验证 (Validate)</translation>
+        <translation>楠岃瘉 (Validate)</translation>
     </message>
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>文档已被修改�?是否保存更改�?/translation>
+        <translation>鏂囨。宸茶淇敼銆?鏄惁淇濆瓨鏇存敼锛?/translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位�?(%2, %3)�?/translation>
+        <translation>鏃犳硶瑙ｆ瀽 JSON锛?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;锛屼綅浜?(%2, %3)銆?/translation>
     </message>
     <message>
         <source>Parsing error</source>
-        <translation>解析错误</translation>
+        <translation>瑙ｆ瀽閿欒</translation>
     </message>
     <message>
         <source>Validation</source>
-        <translation>验证结果</translation>
+        <translation>楠岃瘉缁撴灉</translation>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效�?/translation>
+        <translation>JSON 鏍煎紡鏈夋晥锛?/translation>
     </message>
 </context>
 <context>
@@ -735,65 +735,65 @@ Do you want to save your changes?</source>
     <message>
         <source>Enter new value for Robo 3T shell timeout in seconds:
 </source>
-        <translation>请输入新�?Robo 3T Shell 超时时间 (单位：秒)�?</translation>
+        <translation>璇疯緭鍏ユ柊鐨?Robo 3T Shell 瓒呮椂鏃堕棿 (鍗曚綅锛氱)锛?</translation>
     </message>
     <message>
         <source>Current Value: </source>
-        <translation>当前值： </translation>
+        <translation>褰撳墠鍊硷細 </translation>
     </message>
     <message>
         <source>New Value: </source>
-        <translation>新值： </translation>
+        <translation>鏂板€硷細 </translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
-        <translation>更改 Shell 超时设置</translation>
+        <translation>鏇存敼 Shell 瓒呮椂璁剧疆</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::OutputItemHeaderWidget</name>
     <message>
         <source>View results in text mode</source>
-        <translation>以文本模式查看结�?/translation>
+        <translation>浠ユ枃鏈ā寮忔煡鐪嬬粨鏋?/translation>
     </message>
     <message>
         <source>View results in tree mode</source>
-        <translation>以树状图模式查看结果</translation>
+        <translation>浠ユ爲鐘跺浘妯″紡鏌ョ湅缁撴灉</translation>
     </message>
     <message>
         <source>View results in table mode</source>
-        <translation>以表格模式查看结�?/translation>
+        <translation>浠ヨ〃鏍兼ā寮忔煡鐪嬬粨鏋?/translation>
     </message>
     <message>
         <source>View results in custom UI</source>
-        <translation>以自定义模式查看结果</translation>
+        <translation>浠ヨ嚜瀹氫箟妯″紡鏌ョ湅缁撴灉</translation>
     </message>
     <message>
         <source>Maximize this output result (double-click on result's header)</source>
-        <translation>最大化此输出结�?(双击页眉也可实现)</translation>
+        <translation>鏈€澶у寲姝よ緭鍑虹粨鏋?(鍙屽嚮椤电湁涔熷彲瀹炵幇)</translation>
     </message>
     <message>
         <source>Undock into separate window</source>
-        <translation>取消停靠到独立窗�?/translation>
+        <translation>鍙栨秷鍋滈潬鍒扮嫭绔嬬獥鍙?/translation>
     </message>
     <message>
         <source>Dock into main window</source>
-        <translation>停靠到主窗口</translation>
+        <translation>鍋滈潬鍒颁富绐楀彛</translation>
     </message>
     <message>
         <source>Maximize this output result (double-click on result header)</source>
-        <translation>最大化此输出结�?(双击页眉也可实现)</translation>
+        <translation>鏈€澶у寲姝よ緭鍑虹粨鏋?(鍙屽嚮椤电湁涔熷彲瀹炵幇)</translation>
     </message>
     <message>
         <source>Restore back to original size (double-click on result header)</source>
-        <translation>还原窗口大小 (双击页眉也可实现)</translation>
+        <translation>杩樺師绐楀彛澶у皬 (鍙屽嚮椤电湁涔熷彲瀹炵幇)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::OutputItemContentWidget</name>
     <message>
         <source>Loading...</source>
-        <translation>正在加载...</translation>
+        <translation>姝ｅ湪鍔犺浇...</translation>
     </message>
 </context>
 <context>
@@ -803,471 +803,471 @@ Do you want to save your changes?</source>
 
 Error:
 %1</source>
-        <translation>加载文档失败�?
-错误�?%1</translation>
+        <translation>鍔犺浇鏂囨。澶辫触銆?
+閿欒锛?%1</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Failed to execute script.
 
 </source>
-        <translation>执行脚本失败�?
+        <translation>鎵ц鑴氭湰澶辫触銆?
 </translation>
     </message>
     <message>
         <source>At least one of the scripts has reached shell timeout</source>
-        <translation>至少有一个脚本已达到 Shell 超时限制</translation>
+        <translation>鑷冲皯鏈変竴涓剼鏈凡杈惧埌 Shell 瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达�?Shell 超时限制</translation>
+        <translation>鑴氭湰宸茶揪鍒?Shell 瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
-        <translation>更改 Shell 超时设置</translation>
+        <translation>鏇存敼 Shell 瓒呮椂璁剧疆</translation>
     </message>
     <message>
         <source>New Shell</source>
-        <translation>�?Shell</translation>
+        <translation>鏂?Shell</translation>
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
+        <translation>  鑴氭湰鎵ц鎴愬姛锛屼絾娌℃湁鍙樉绀虹殑缁撴灉銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::PagingWidget</name>
     <message>
         <source>Skip</source>
-        <translation>跳过 (Skip)</translation>
+        <translation>璺宠繃 (Skip)</translation>
     </message>
     <message>
         <source>Batch Size (number of documents shown at once)</source>
-        <translation>分批大小 (每页显示的文档数�?</translation>
+        <translation>鍒嗘壒澶у皬 (姣忛〉鏄剧ず鐨勬枃妗ｆ暟閲?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::FindFrame</name>
     <message>
         <source>Next</source>
-        <translation>下一�?/translation>
+        <translation>涓嬩竴涓?/translation>
     </message>
     <message>
         <source>Previous</source>
-        <translation>上一�?/translation>
+        <translation>涓婁竴涓?/translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>区分大小�?/translation>
+        <translation>鍖哄垎澶у皬鍐?/translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>搜索</translation>
+        <translation>鎼滅储</translation>
     </message>
     <message>
         <source>The specified text was not found.</source>
-        <translation>未找到指定的文本�?/translation>
+        <translation>鏈壘鍒版寚瀹氱殑鏂囨湰銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionBasicTab</name>
     <message>
         <source>Type:</source>
-        <translation>类型�?/translation>
+        <translation>绫诲瀷锛?/translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称�?/translation>
+        <translation>鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>选择任何有助于您识别此连接的名称�?/translation>
+        <translation>閫夋嫨浠讳綍鏈夊姪浜庢偍璇嗗埆姝よ繛鎺ョ殑鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>地址�?/translation>
+        <translation>鍦板潃锛?/translation>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>指定 MongoDB 服务器的主机和端口。主机可以是 IPv4、IPv6 或域名�?/translation>
+        <translation>鎸囧畾 MongoDB 鏈嶅姟鍣ㄧ殑涓绘満鍜岀鍙ｃ€備富鏈哄彲浠ユ槸 IPv4銆両Pv6 鎴栧煙鍚嶃€?/translation>
     </message>
     <message>
         <source>Members:</source>
-        <translation>成员�?/translation>
+        <translation>鎴愬憳锛?/translation>
     </message>
     <message>
         <source>Set Name:</source>
-        <translation>集名称：</translation>
+        <translation>闆嗗悕绉帮細</translation>
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>�?MongoDB URI 连接字符串导入连接详�?/translation>
+        <translation>浠?MongoDB URI 杩炴帴瀛楃涓插鍏ヨ繛鎺ヨ鎯?/translation>
     </message>
     <message>
         <source>From URI</source>
-        <translation>�?URI 导入</translation>
+        <translation>浠?URI 瀵煎叆</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>副本集成员不能为空。请输入至少一个成员�?/translation>
+        <translation>鍓湰闆嗘垚鍛樹笉鑳戒负绌恒€傝杈撳叆鑷冲皯涓€涓垚鍛樸€?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain &apos;:&apos; between hostname and port.</source>
-        <translation>项副本集成员必须在主机名和端口之间包含�?”�?/translation>
+        <translation>椤瑰壇鏈泦鎴愬憳蹇呴』鍦ㄤ富鏈哄悕鍜岀鍙ｄ箣闂村寘鍚€?鈥濄€?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请删除重复成员，两个副本集成员不能具有相同的主机名和端口�?/translation>
+        <translation>璇峰垹闄ら噸澶嶆垚鍛橈紝涓や釜鍓湰闆嗘垚鍛樹笉鑳藉叿鏈夌浉鍚岀殑涓绘満鍚嶅拰绔彛銆?/translation>
     </message>
     <message>
         <source>New Connection</source>
-        <translation>新建连接</translation>
+        <translation>鏂板缓杩炴帴</translation>
     </message>
     <message>
         <source>MongoDB URI:
 </source>
-        <translation>MongoDB URI�?</translation>
+        <translation>MongoDB URI锛?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAuthTab</name>
     <message>
         <source>Perform authentication</source>
-        <translation>执行认证</translation>
+        <translation>鎵ц璁よ瘉</translation>
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 具有 admin 数据库标准访问权限的用户�?lt;b&gt;所有数据库&lt;/b&gt;都有读写权限�?/translation>
+        <translation>&lt;nobr&gt;admin 鏁版嵁搴撳湪 MongoDB 涓槸鍞竴鐨勩€?lt;/nobr&gt; 鍏锋湁 admin 鏁版嵁搴撴爣鍑嗚闂潈闄愮殑鐢ㄦ埛瀵?lt;b&gt;鎵€鏈夋暟鎹簱&lt;/b&gt;閮芥湁璇诲啓鏉冮檺銆?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户�?/translation>
+        <translation>鐢ㄦ埛鍚?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
-        <translation>认证机制</translation>
+        <translation>璁よ瘉鏈哄埗</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码</translation>
+        <translation>瀵嗙爜</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>数据�?/translation>
+        <translation>鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
-        <translation>逗号分隔，例�?products, users</translation>
+        <translation>閫楀彿鍒嗛殧锛屼緥濡?products, users</translation>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库列�?/translation>
+        <translation>鏁版嵁搴撳垪琛?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有获取数据库名称列表（&lt;b&gt;listDatabases&lt;/b&gt; 命令）的权限。在这种情况下，请手动添加该用户有权访问的数据库名称�?/translation>
+        <translation>鏌愪簺 MongoDB 鐢ㄦ埛鍙兘娌℃湁鑾峰彇鏁版嵁搴撳悕绉板垪琛紙&lt;b&gt;listDatabases&lt;/b&gt; 鍛戒护锛夌殑鏉冮檺銆傚湪杩欑鎯呭喌涓嬶紝璇锋墜鍔ㄦ坊鍔犺鐢ㄦ埛鏈夋潈璁块棶鐨勬暟鎹簱鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
-        <translation>手动指定可见数据�?/translation>
+        <translation>鎵嬪姩鎸囧畾鍙鏁版嵁搴?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SshTunnelTab</name>
     <message>
         <source>Use SSH tunnel</source>
-        <translation>使用 SSH 隧道</translation>
+        <translation>浣跨敤 SSH 闅ч亾</translation>
     </message>
     <message>
         <source>SSH Address:</source>
-        <translation>SSH 地址�?/translation>
+        <translation>SSH 鍦板潃锛?/translation>
     </message>
     <message>
         <source>SSH User Name:</source>
-        <translation>SSH 用户名：</translation>
+        <translation>SSH 鐢ㄦ埛鍚嶏細</translation>
     </message>
     <message>
         <source>SSH Auth Method:</source>
-        <translation>SSH 认证方式�?/translation>
+        <translation>SSH 璁よ瘉鏂瑰紡锛?/translation>
     </message>
     <message>
         <source>User Password:</source>
-        <translation>用户密码�?/translation>
+        <translation>鐢ㄦ埛瀵嗙爜锛?/translation>
     </message>
     <message>
         <source>Private key:</source>
-        <translation>私钥�?/translation>
+        <translation>绉侀挜锛?/translation>
     </message>
     <message>
         <source>Passphrase:</source>
-        <translation>短语 (Passphrase)�?/translation>
+        <translation>鐭 (Passphrase)锛?/translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码</translation>
+        <translation>瀵嗙爜</translation>
     </message>
     <message>
         <source>Private Key</source>
-        <translation>私钥</translation>
+        <translation>绉侀挜</translation>
     </message>
     <message>
         <source>DSA, RSA, and on Windows/macOS ECDSA, Ed25519 keys are supported. PPK keys must be converted to OPENSSH format.</source>
-        <translation>支持 DSA, RSA 以及 Windows/macOS 下的 ECDSA, Ed25519 密钥。PPK 密钥必须转换�?OPENSSH 格式�?/translation>
+        <translation>鏀寔 DSA, RSA 浠ュ強 Windows/macOS 涓嬬殑 ECDSA, Ed25519 瀵嗛挜銆侾PK 瀵嗛挜蹇呴』杞崲涓?OPENSSH 鏍煎紡銆?/translation>
     </message>
     <message>
         <source>SSH is currently not supported for Replica Set connections</source>
-        <translation>目前副本集连接暂不支持使�?SSH</translation>
+        <translation>鐩墠鍓湰闆嗚繛鎺ユ殏涓嶆敮鎸佷娇鐢?SSH</translation>
     </message>
     <message>
         <source>Select private key file</source>
-        <translation>选择私钥文件</translation>
+        <translation>閫夋嫨绉侀挜鏂囦欢</translation>
     </message>
     <message>
         <source>Settings are incomplete</source>
-        <translation>设置不完�?/translation>
+        <translation>璁剧疆涓嶅畬鏁?/translation>
     </message>
     <message>
         <source>Private key file &quot;%1&quot; doesn&apos;t exist</source>
-        <translation>私钥文件�?1”不存在</translation>
+        <translation>绉侀挜鏂囦欢鈥?1鈥濅笉瀛樺湪</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSLTab</name>
     <message>
         <source>Use TLS protocol</source>
-        <translation>使用 TLS 协议</translation>
+        <translation>浣跨敤 TLS 鍗忚</translation>
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>认证方式�?/translation>
+        <translation>璁よ瘉鏂瑰紡锛?/translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证�?/translation>
+        <translation>鑷鍚嶈瘉涔?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
-        <translation>使用 CA 证书</translation>
+        <translation>浣跨敤 CA 璇佷功</translation>
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络环境可信，否则请避免使用自签名证书。如果使用自签名证书，通信频道将被加密，但不会验证服务器身份�?/translation>
+        <translation>閫氬父鎯呭喌涓嬶紝闄ら潪缃戠粶鐜鍙俊锛屽惁鍒欒閬垮厤浣跨敤鑷鍚嶈瘉涔︺€傚鏋滀娇鐢ㄨ嚜绛惧悕璇佷功锛岄€氫俊棰戦亾灏嗚鍔犲瘑锛屼絾涓嶄細楠岃瘉鏈嶅姟鍣ㄨ韩浠姐€?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书�?/translation>
+        <translation>CA 璇佷功锛?/translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/私钥�?/translation>
+        <translation>浣跨敤 PEM 璇佷功/绉侀挜锛?/translation>
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>连接到要�?CA 签名的客户端证书/私钥文件�?MongoDB 时，请启用此选项�?/translation>
+        <translation>杩炴帴鍒拌姹?CA 绛惧悕鐨勫鎴风璇佷功/绉侀挜鏂囦欢鐨?MongoDB 鏃讹紝璇峰惎鐢ㄦ閫夐」銆?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/私钥�?/translation>
+        <translation>PEM 璇佷功/绉侀挜锛?/translation>
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>短语 (Passphrase)�?/translation>
+        <translation>鐭 (Passphrase)锛?/translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次都询问短�?/translation>
+        <translation>姣忔閮借闂煭璇?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
-        <translation>高级选项</translation>
+        <translation>楂樼骇閫夐」</translation>
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>CRL (吊销列表)�?/translation>
+        <translation>CRL (鍚婇攢鍒楄〃)锛?/translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
-        <translation>无效主机名：</translation>
+        <translation>鏃犳晥涓绘満鍚嶏細</translation>
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允�?/translation>
+        <translation>涓嶅厑璁?/translation>
     </message>
     <message>
         <source>Allowed</source>
-        <translation>允许</translation>
+        <translation>鍏佽</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation>错误�?/translation>
+        <translation>閿欒锛?/translation>
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存�?/translation>
+        <translation> 鏂囦欢涓嶅瓨鍦?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
-        <translation>CA 签名证书</translation>
+        <translation>CA 绛惧悕璇佷功</translation>
     </message>
     <message>
         <source>PEM Certificate/Key</source>
-        <translation>PEM 证书/私钥</translation>
+        <translation>PEM 璇佷功/绉侀挜</translation>
     </message>
     <message>
         <source>CRL (Revocation List)</source>
-        <translation>CRL (吊销列表)</translation>
+        <translation>CRL (鍚婇攢鍒楄〃)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAdvancedTab</name>
     <message>
         <source>Default Database:</source>
-        <translation>默认数据库：</translation>
+        <translation>榛樿鏁版嵁搴擄細</translation>
     </message>
     <message>
         <source>Database, that will be default (&lt;code&gt;db&lt;/code&gt; shell variable will point to this database). By default, default database will be the one you authenticate on, or &lt;code&gt;test&lt;/code&gt; otherwise. Leave this field empty, if you want default behavior.</source>
-        <translation>默认数据库（Shell 变量 &lt;code&gt;db&lt;/code&gt; 将指向此数据库）。默认情况下，默认数据库将是您认证时使用的数据库，否则为 &lt;code&gt;test&lt;/code&gt;。如果您希望使用默认行为，请将此字段留空�?/translation>
+        <translation>榛樿鏁版嵁搴擄紙Shell 鍙橀噺 &lt;code&gt;db&lt;/code&gt; 灏嗘寚鍚戞鏁版嵁搴擄級銆傞粯璁ゆ儏鍐典笅锛岄粯璁ゆ暟鎹簱灏嗘槸鎮ㄨ璇佹椂浣跨敤鐨勬暟鎹簱锛屽惁鍒欎负 &lt;code&gt;test&lt;/code&gt;銆傚鏋滄偍甯屾湜浣跨敤榛樿琛屼负锛岃灏嗘瀛楁鐣欑┖銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDiagnosticDialog</name>
     <message>
         <source>Diagnostic</source>
-        <translation>测试诊断</translation>
+        <translation>娴嬭瘯璇婃柇</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation>关闭(&amp;C)</translation>
+        <translation>鍏抽棴(&amp;C)</translation>
     </message>
     <message>
         <source>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;Show error details&lt;/a&gt;</source>
-        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;显示详细错误信息&lt;/a&gt;</translation>
+        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;鏄剧ず璇︾粏閿欒淇℃伅&lt;/a&gt;</translation>
     </message>
     <message>
         <source>Error details</source>
-        <translation>错误详情</translation>
+        <translation>閿欒璇︽儏</translation>
     </message>
     <message>
         <source>Connecting to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;...</source>
-        <translation>正在连接�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;...</translation>
+        <translation>姝ｅ湪杩炴帴鍒?SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;...</translation>
     </message>
     <message>
         <source>Connected to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>已连接到 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>宸茶繛鎺ュ埌 SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Unable to connect to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>无法连接�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>鏃犳硶杩炴帴鍒?SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source> via SSH tunnel</source>
-        <translation> 通过 SSH 隧道</translation>
+        <translation> 閫氳繃 SSH 闅ч亾</translation>
     </message>
     <message>
         <source> via TLS tunnel</source>
-        <translation> 通过 TLS 隧道</translation>
+        <translation> 閫氳繃 TLS 闅ч亾</translation>
     </message>
     <message>
         <source>Connecting to &lt;b&gt;%1&lt;/b&gt;%2...</source>
-        <translation>正在连接�?&lt;b&gt;%1&lt;/b&gt;%2...</translation>
+        <translation>姝ｅ湪杩炴帴鍒?&lt;b&gt;%1&lt;/b&gt;%2...</translation>
     </message>
     <message>
         <source>Connected to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>已连接到 &lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>宸茶繛鎺ュ埌 &lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Failed to connect to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>连接 &lt;b&gt;%1&lt;/b&gt;%2 失败</translation>
+        <translation>杩炴帴 &lt;b&gt;%1&lt;/b&gt;%2 澶辫触</translation>
     </message>
     <message>
         <source>No chance to try connection to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>没有机会尝试连接�?&lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>娌℃湁鏈轰細灏濊瘯杩炴帴鍒?&lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Authorizing on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;...</source>
-        <translation>正在使用用户 &lt;b&gt;%2&lt;/b&gt; �?&lt;b&gt;%1&lt;/b&gt; 数据库上进行认证...</translation>
+        <translation>姝ｅ湪浣跨敤鐢ㄦ埛 &lt;b&gt;%2&lt;/b&gt; 鍦?&lt;b&gt;%1&lt;/b&gt; 鏁版嵁搴撲笂杩涜璁よ瘉...</translation>
     </message>
     <message>
         <source>Authorized on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>已使用用�?&lt;b&gt;%2&lt;/b&gt; �?&lt;b&gt;%1&lt;/b&gt; 数据库上完成认证</translation>
+        <translation>宸蹭娇鐢ㄧ敤鎴?&lt;b&gt;%2&lt;/b&gt; 鍦?&lt;b&gt;%1&lt;/b&gt; 鏁版嵁搴撲笂瀹屾垚璁よ瘉</translation>
     </message>
     <message>
         <source>Authorization failed on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>用户 &lt;b&gt;%2&lt;/b&gt; �?&lt;b&gt;%1&lt;/b&gt; 数据库上认证失败</translation>
+        <translation>鐢ㄦ埛 &lt;b&gt;%2&lt;/b&gt; 鍦?&lt;b&gt;%1&lt;/b&gt; 鏁版嵁搴撲笂璁よ瘉澶辫触</translation>
     </message>
     <message>
         <source>No chance to authorize</source>
-        <translation>没有机会尝试认证</translation>
+        <translation>娌℃湁鏈轰細灏濊瘯璁よ瘉</translation>
     </message>
     <message>
         <source>Loading list of databases...</source>
-        <translation>正在加载数据库列�?..</translation>
+        <translation>姝ｅ湪鍔犺浇鏁版嵁搴撳垪琛?..</translation>
     </message>
     <message>
         <source>Access to databases is available</source>
-        <translation>数据库访问可�?/translation>
+        <translation>鏁版嵁搴撹闂彲鐢?/translation>
     </message>
     <message>
         <source>Failed to load list of databases</source>
-        <translation>加载数据库列表失�?/translation>
+        <translation>鍔犺浇鏁版嵁搴撳垪琛ㄥけ璐?/translation>
     </message>
     <message>
         <source>No chance to load list of databases</source>
-        <translation>没有机会尝试加载数据库列�?/translation>
+        <translation>娌℃湁鏈轰細灏濊瘯鍔犺浇鏁版嵁搴撳垪琛?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExportDialog</name>
     <message>
         <source>Export Collection</source>
-        <translation>导出集合</translation>
+        <translation>瀵煎嚭闆嗗悎</translation>
     </message>
     <message>
         <source>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;Show details&lt;/a&gt;</source>
-        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;显示详情&lt;/a&gt;</translation>
+        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;鏄剧ず璇︽儏&lt;/a&gt;</translation>
     </message>
     <message>
         <source>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;Hide details&lt;/a&gt;</source>
-        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;隐藏详情&lt;/a&gt;</translation>
+        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;闅愯棌璇︽儏&lt;/a&gt;</translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称：</translation>
+        <translation>鏁版嵁搴撳悕绉帮細</translation>
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称�?/translation>
+        <translation>闆嗗悎鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Server: </source>
-        <translation>服务器：</translation>
+        <translation>鏈嶅姟鍣細</translation>
     </message>
     <message>
         <source>Database: </source>
-        <translation>数据库：</translation>
+        <translation>鏁版嵁搴擄細</translation>
     </message>
     <message>
         <source>Collection: </source>
-        <translation>集合�?/translation>
+        <translation>闆嗗悎锛?/translation>
     </message>
     <message>
         <source>JSON</source>
@@ -1279,282 +1279,282 @@ Error:
     </message>
     <message>
         <source>Fields:</source>
-        <translation>字段�?/translation>
+        <translation>瀛楁锛?/translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation>格式�?/translation>
+        <translation>鏍煎紡锛?/translation>
     </message>
     <message>
         <source>Query:</source>
-        <translation>查询�?/translation>
+        <translation>鏌ヨ锛?/translation>
     </message>
     <message>
         <source>File Name:</source>
-        <translation>文件名：</translation>
+        <translation>鏂囦欢鍚嶏細</translation>
     </message>
     <message>
         <source>Directory:</source>
-        <translation>目录�?/translation>
+        <translation>鐩綍锛?/translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>命令�?/translation>
+        <translation>鍛戒护锛?/translation>
     </message>
     <message>
         <source>Manual Mode</source>
-        <translation>手动模式</translation>
+        <translation>鎵嬪姩妯″紡</translation>
     </message>
     <message>
         <source>Auto Mode</source>
-        <translation>自动模式</translation>
+        <translation>鑷姩妯″紡</translation>
     </message>
     <message>
         <source>E&amp;xport</source>
-        <translation>导出(&amp;X)</translation>
+        <translation>瀵煎嚭(&amp;X)</translation>
     </message>
     <message>
         <source>Selected Collection</source>
-        <translation>所选集�?/translation>
+        <translation>鎵€閫夐泦鍚?/translation>
     </message>
     <message>
         <source>Selected Server</source>
-        <translation>所选服务器</translation>
+        <translation>鎵€閫夋湇鍔″櫒</translation>
     </message>
     <message>
         <source>Output Properties</source>
-        <translation>输出属�?/translation>
+        <translation>杈撳嚭灞炴€?/translation>
     </message>
     <message>
         <source>Manual Export</source>
-        <translation>手动导出</translation>
+        <translation>鎵嬪姩瀵煎嚭</translation>
     </message>
     <message>
         <source>Export Summary</source>
-        <translation>导出摘要</translation>
+        <translation>瀵煎嚭鎽樿</translation>
     </message>
     <message>
         <source>Exporting...</source>
-        <translation>正在导出...</translation>
+        <translation>姝ｅ湪瀵煎嚭...</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>&quot;Fields&quot; option is required in CSV mode.</source>
-        <translation>CSV 模式下必须配置“字�?(Fields)”选项�?/translation>
+        <translation>CSV 妯″紡涓嬪繀椤婚厤缃€滃瓧娈?(Fields)鈥濋€夐」銆?/translation>
     </message>
     <message>
         <source>Export Successful: \n</source>
-        <translation>导出成功：\n</translation>
+        <translation>瀵煎嚭鎴愬姛锛歕n</translation>
     </message>
     <message>
         <source>Exported file: </source>
-        <translation>导出的文件：</translation>
+        <translation>瀵煎嚭鐨勬枃浠讹細</translation>
     </message>
     <message>
         <source>Number of records exported:</source>
-        <translation>导出的记录数量：</translation>
+        <translation>瀵煎嚭鐨勮褰曟暟閲忥細</translation>
     </message>
     <message>
         <source>Export Failed.\n</source>
-        <translation>导出失败。\n</translation>
+        <translation>瀵煎嚭澶辫触銆俓n</translation>
     </message>
     <message>
         <source>Output:\n</source>
-        <translation>输出信息：\n</translation>
+        <translation>杈撳嚭淇℃伅锛歕n</translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed to start. Either the invoked program is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>错误：“mongoexport”进程启动失败。可能是调用的程序缺失，或您没有足够的权限来调用该程序�?/translation>
+        <translation>閿欒锛氣€渕ongoexport鈥濊繘绋嬪惎鍔ㄥけ璐ャ€傚彲鑳芥槸璋冪敤鐨勭▼搴忕己澶憋紝鎴栨偍娌℃湁瓒冲鐨勬潈闄愭潵璋冪敤璇ョ▼搴忋€?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process crashed some time after starting successfully..</source>
-        <translation>错误：“mongoexport”进程在成功启动后发生崩溃�?/translation>
+        <translation>閿欒锛氣€渕ongoexport鈥濊繘绋嬪湪鎴愬姛鍚姩鍚庡彂鐢熷穿婧冦€?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed. Error code: </source>
-        <translation>错误：“mongoexport”进程失败。错误代码：</translation>
+        <translation>閿欒锛氣€渕ongoexport鈥濊繘绋嬪け璐ャ€傞敊璇唬鐮侊細</translation>
     </message>
     <message>
         <source>Details</source>
-        <translation>详情</translation>
+        <translation>璇︽儏</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>仅适用�?WiredTiger 存储引擎且数据库版本�?3.0 及以上�?/translation>
+        <translation>浠呴€傜敤浜?WiredTiger 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰涓?3.0 鍙婁互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>仅适用于数据库版本�?3.2 及以上�?/translation>
+        <translation>浠呴€傜敤浜庢暟鎹簱鐗堟湰涓?3.2 鍙婁互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>仅适用�?MMAPv1 存储引擎且数据库版本�?3.0 及以上�?/translation>
+        <translation>浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰涓?3.0 鍙婁互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>仅适用�?MMAPv1 存储引擎，自 3.0 版本起已弃用�?/translation>
+        <translation>浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸锛岃嚜 3.0 鐗堟湰璧峰凡寮冪敤銆?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>�?3.2 版本起已弃用�?/translation>
+        <translation>鑷?3.2 鐗堟湰璧峰凡寮冪敤銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateUserDialog</name>
     <message>
         <source>Add User</source>
-        <translation>添加用户</translation>
+        <translation>娣诲姞鐢ㄦ埛</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称�?/translation>
+        <translation>鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Password:</source>
-        <translation>密码�?/translation>
+        <translation>瀵嗙爜锛?/translation>
     </message>
     <message>
         <source>UserSource:</source>
-        <translation>用户源：</translation>
+        <translation>鐢ㄦ埛婧愶細</translation>
     </message>
     <message>
         <source>Read Only</source>
-        <translation>只读</translation>
+        <translation>鍙</translation>
     </message>
     <message>
         <source>read</source>
-        <translation>读取</translation>
+        <translation>璇诲彇</translation>
     </message>
     <message>
         <source>readWrite</source>
-        <translation>读写</translation>
+        <translation>璇诲啓</translation>
     </message>
     <message>
         <source>dbAdmin</source>
-        <translation>数据库管�?/translation>
+        <translation>鏁版嵁搴撶鐞?/translation>
     </message>
     <message>
         <source>userAdmin</source>
-        <translation>用户管理</translation>
+        <translation>鐢ㄦ埛绠＄悊</translation>
     </message>
     <message>
         <source>clusterAdmin</source>
-        <translation>集群管理</translation>
+        <translation>闆嗙兢绠＄悊</translation>
     </message>
     <message>
         <source>readAnyDatabase</source>
-        <translation>读取任意数据�?/translation>
+        <translation>璇诲彇浠绘剰鏁版嵁搴?/translation>
     </message>
     <message>
         <source>readWriteAnyDatabase</source>
-        <translation>读写任意数据�?/translation>
+        <translation>璇诲啓浠绘剰鏁版嵁搴?/translation>
     </message>
     <message>
         <source>userAdminAnyDatabase</source>
-        <translation>管理任意数据库用�?/translation>
+        <translation>绠＄悊浠绘剰鏁版嵁搴撶敤鎴?/translation>
     </message>
     <message>
         <source>dbAdminAnyDatabase</source>
-        <translation>管理任意数据�?/translation>
+        <translation>绠＄悊浠绘剰鏁版嵁搴?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AddEditIndexDialog</name>
     <message>
         <source>Index Properties</source>
-        <translation>索引属�?/translation>
+        <translation>绱㈠紩灞炴€?/translation>
     </message>
     <message>
         <source>Choose any name that will help you to identify this index.</source>
-        <translation>选择一个能帮助您识别此索引的名称�?/translation>
+        <translation>閫夋嫨涓€涓兘甯姪鎮ㄨ瘑鍒绱㈠紩鐨勫悕绉般€?/translation>
     </message>
     <message>
         <source>Document that contains pairs with the name of the field or fields to index and order of the index. A 1 specifies ascending and a -1 specifies descending.</source>
-        <translation>包含要索引的一个或多个字段名称及索引方向的文档�? 表示升序�?1 表示降序�?/translation>
+        <translation>鍖呭惈瑕佺储寮曠殑涓€涓垨澶氫釜瀛楁鍚嶇О鍙婄储寮曟柟鍚戠殑鏂囨。銆? 琛ㄧず鍗囧簭锛?1 琛ㄧず闄嶅簭銆?/translation>
     </message>
     <message>
         <source>If set, creates a unique index so that the collection will not accept insertion of documents where the index key or keys match an existing value in the index.</source>
-        <translation>如果设置，将创建一个唯一索引，这样集合将不接受索引键与现有值匹配的文档插入�?/translation>
+        <translation>濡傛灉璁剧疆锛屽皢鍒涘缓涓€涓敮涓€绱㈠紩锛岃繖鏍烽泦鍚堝皢涓嶆帴鍙楃储寮曢敭涓庣幇鏈夊€煎尮閰嶇殑鏂囨。鎻掑叆銆?/translation>
     </message>
     <message>
         <source>Name:   </source>
-        <translation>名称�?/translation>
+        <translation>鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Keys:   </source>
-        <translation>键值：</translation>
+        <translation>閿€硷細</translation>
     </message>
     <message>
         <source>If set, the index only references documents with the specified field. These indexes use less space but behave differently in some situations (particularly sorts).</source>
-        <translation>如果设置，索引仅引用针对包含指定字段的文档。这些索引占用空间较少，但在某些情况下（特别是排序）表现不同�?/translation>
+        <translation>濡傛灉璁剧疆锛岀储寮曚粎寮曠敤閽堝鍖呭惈鎸囧畾瀛楁鐨勬枃妗ｃ€傝繖浜涚储寮曞崰鐢ㄧ┖闂磋緝灏戯紝浣嗗湪鏌愪簺鎯呭喌涓嬶紙鐗瑰埆鏄帓搴忥級琛ㄧ幇涓嶅悓銆?/translation>
     </message>
     <message>
         <source>Builds the index in the background so that building an index does not block other database activities.</source>
-        <translation>在后台构建索引，这样构建索引就不会阻塞其他数据库活动�?/translation>
+        <translation>鍦ㄥ悗鍙版瀯寤虹储寮曪紝杩欐牱鏋勫缓绱㈠紩灏变笉浼氶樆濉炲叾浠栨暟鎹簱娲诲姩銆?/translation>
     </message>
     <message>
         <source>Specifies a &lt;i&gt;time to live&lt;/i&gt;, in seconds, to control how long MongoDB retains documents in this collection</source>
-        <translation>指定&lt;i&gt;生存时间&lt;/i&gt;（单位：秒），以控制 MongoDB 在此集合中保留文档的时间</translation>
+        <translation>鎸囧畾&lt;i&gt;鐢熷瓨鏃堕棿&lt;/i&gt;锛堝崟浣嶏細绉掞級锛屼互鎺у埗 MongoDB 鍦ㄦ闆嗗悎涓繚鐣欐枃妗ｇ殑鏃堕棿</translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, the language that determines the list of stop words and the rules for the stemmer and tokenizer. The default value is &lt;b&gt;english&lt;/b&gt;</source>
-        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，该语言决定了停用词列表以及词干提取器和分词器的规则。默认值为 &lt;b&gt;english&lt;/b&gt;</translation>
+        <translation>瀵逛簬&lt;i&gt;鏂囨湰&lt;/i&gt;绱㈠紩锛岃璇█鍐冲畾浜嗗仠鐢ㄨ瘝鍒楄〃浠ュ強璇嶅共鎻愬彇鍣ㄥ拰鍒嗚瘝鍣ㄧ殑瑙勫垯銆傞粯璁ゅ€间负 &lt;b&gt;english&lt;/b&gt;</translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, specify the name of the field in the document that contains, for that document, the language to override the default language. The default value is &lt;b&gt;language&lt;/b&gt;</source>
-        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，指定文档中的字段名称，该字段包含用于覆盖默认语言的语言。默认值为 &lt;b&gt;language&lt;/b&gt;</translation>
+        <translation>瀵逛簬&lt;i&gt;鏂囨湰&lt;/i&gt;绱㈠紩锛屾寚瀹氭枃妗ｄ腑鐨勫瓧娈靛悕绉帮紝璇ュ瓧娈靛寘鍚敤浜庤鐩栭粯璁よ瑷€鐨勮瑷€銆傞粯璁ゅ€间负 &lt;b&gt;language&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Document that contains field and weight pairs. The weight is a number ranging from 1 to 99,999 and denotes the significance of the field relative to the other indexed fields. </source>
-        <translation>包含字段和权重对的文档。权重是一个介�?1 �?99,999 之间的数字，表示该字段相对于其他索引字段的重要性�?/translation>
+        <translation>鍖呭惈瀛楁鍜屾潈閲嶅鐨勬枃妗ｃ€傛潈閲嶆槸涓€涓粙浜?1 鍒?99,999 涔嬮棿鐨勬暟瀛楋紝琛ㄧず璇ュ瓧娈电浉瀵逛簬鍏朵粬绱㈠紩瀛楁鐨勯噸瑕佹€с€?/translation>
     </message>
     <message>
         <source>Invalid json</source>
-        <translation>无效�?JSON</translation>
+        <translation>鏃犳晥鐨?JSON</translation>
     </message>
     <message>
         <source>Please check json text.\n</source>
-        <translation>请检�?JSON 文本。\n</translation>
+        <translation>璇锋鏌?JSON 鏂囨湰銆俓n</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>警告</translation>
+        <translation>璀﹀憡</translation>
     </message>
     <message>
         <source>MongoDB does not support direct (one step) edit index. \nTo edit an existing index, the index must be dropped and recreated. This means if the recreate step fails, the index being edited might have already been dropped. In this case, Robo 3T will try to recover (recreate) the index being edited. Please consider backing up your index first. \n\nAre you sure you want to proceed?</source>
-        <translation>MongoDB 不支持直接（单步）编辑索引。\n要编辑现有索引，必须删除并重新创建。这意味着如果重新创建步骤失败，正在编辑的索引可能已经被删除。\n在这种情况下，Robo 3T 将尝试恢复（重新创建）正在编辑的索引。请考虑先备份您的索引。\n\n您确定要继续吗？</translation>
+        <translation>MongoDB 涓嶆敮鎸佺洿鎺ワ紙鍗曟锛夌紪杈戠储寮曘€俓n瑕佺紪杈戠幇鏈夌储寮曪紝蹇呴』鍒犻櫎骞堕噸鏂板垱寤恒€傝繖鎰忓懗鐫€濡傛灉閲嶆柊鍒涘缓姝ラ澶辫触锛屾鍦ㄧ紪杈戠殑绱㈠紩鍙兘宸茬粡琚垹闄ゃ€俓n鍦ㄨ繖绉嶆儏鍐典笅锛孯obo 3T 灏嗗皾璇曟仮澶嶏紙閲嶆柊鍒涘缓锛夋鍦ㄧ紪杈戠殑绱㈠紩銆傝鑰冭檻鍏堝浠芥偍鐨勭储寮曘€俓n\n鎮ㄧ‘瀹氳缁х画鍚楋紵</translation>
     </message>
 </context>
 <context>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Open Direct Connection</source>
-        <translation>打开直接连接</translation>
+        <translation>鎵撳紑鐩存帴杩炴帴</translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状�?/translation>
+        <translation>鏈嶅姟鍣ㄧ姸鎬?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>MongoDB 版本</translation>
+        <translation>MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>主机信息</translation>
+        <translation>涓绘満淇℃伅</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>显示日志</translation>
+        <translation>鏄剧ず鏃ュ織</translation>
     </message>
     <message>
         <source>[Primary]</source>
@@ -1566,259 +1566,259 @@ Error:
     </message>
     <message>
         <source>[Not Reachable]</source>
-        <translation>[不可达]</translation>
+        <translation>[涓嶅彲杈綸</translation>
     </message>
     <message>
         <source>[Unknown]</source>
-        <translation>[未知状态]</translation>
+        <translation>[鏈煡鐘舵€乚</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerDatabaseTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>数据库统计信�?/translation>
+        <translation>鏁版嵁搴撶粺璁′俊鎭?/translation>
     </message>
     <message>
         <source>Current Operations</source>
-        <translation>当前操作</translation>
+        <translation>褰撳墠鎿嶄綔</translation>
     </message>
     <message>
         <source>Kill Operation...</source>
-        <translation>结束操作...</translation>
+        <translation>缁撴潫鎿嶄綔...</translation>
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据�?..</translation>
+        <translation>鍒犻櫎鏁版嵁搴?..</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据�?..</translation>
+        <translation>淇鏁版嵁搴?..</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Collections</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>函数</translation>
+        <translation>鍑芥暟</translation>
     </message>
     <message>
         <source>Users</source>
-        <translation>用户</translation>
+        <translation>鐢ㄦ埛</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统</translation>
+        <translation>绯荤粺</translation>
     </message>
     <message>
         <source>Drop &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要删�?&lt;b&gt;%1&lt;/b&gt; 数据库吗�?/translation>
+        <translation>纭畾瑕佸垹闄?&lt;b&gt;%1&lt;/b&gt; 鏁版嵁搴撳悧锛?/translation>
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据�?/translation>
+        <translation>鍒犻櫎鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要修�?&lt;b&gt;%1&lt;/b&gt; 数据库吗�?/translation>
+        <translation>纭畾瑕佷慨澶?&lt;b&gt;%1&lt;/b&gt; 鏁版嵁搴撳悧锛?/translation>
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据�?/translation>
+        <translation>淇鏁版嵁搴?/translation>
     </message>
 </context>
 <context>
     <message>
         <source>Replica Set (%1 nodes)</source>
-        <translation>副本�?(%1 个节�?</translation>
+        <translation>鍓湰闆?(%1 涓妭鐐?</translation>
     </message>
     <message>
         <source>Replica Set ...</source>
-        <translation>副本集加载中 ...</translation>
+        <translation>鍓湰闆嗗姞杞戒腑 ...</translation>
     </message>
     <message>
         <source>Status of Replica Set</source>
-        <translation>副本集状�?/translation>
+        <translation>鍓湰闆嗙姸鎬?/translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerDatabaseCategoryTreeItem</name>
     <message>
         <source>Create Collection...</source>
-        <translation>创建集合...</translation>
+        <translation>鍒涘缓闆嗗悎...</translation>
     </message>
     <message>
         <source>Collections Statistics</source>
-        <translation>集合统计信息</translation>
+        <translation>闆嗗悎缁熻淇℃伅</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>View Users</source>
-        <translation>查看用户列表</translation>
+        <translation>鏌ョ湅鐢ㄦ埛鍒楄〃</translation>
     </message>
     <message>
         <source>Add User...</source>
-        <translation>添加用户...</translation>
+        <translation>娣诲姞鐢ㄦ埛...</translation>
     </message>
     <message>
         <source>View Functions</source>
-        <translation>查看函数列表</translation>
+        <translation>鏌ョ湅鍑芥暟鍒楄〃</translation>
     </message>
     <message>
         <source>Add Function...</source>
-        <translation>添加函数...</translation>
+        <translation>娣诲姞鍑芥暟...</translation>
     </message>
     <message>
         <source>Create Function</source>
-        <translation>创建函数</translation>
+        <translation>鍒涘缓鍑芥暟</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionIndexesDir</name>
     <message>
         <source>Add Index...</source>
-        <translation>添加索引...</translation>
+        <translation>娣诲姞绱㈠紩...</translation>
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索�?..</translation>
+        <translation>閲嶅缓鎵€鏈夌储寮?..</translation>
     </message>
     <message>
         <source>View Indexes</source>
-        <translation>查看索引列表</translation>
+        <translation>鏌ョ湅绱㈠紩鍒楄〃</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>EULA</source>
-        <translation>最终用户许可协�?(EULA)</translation>
+        <translation>鏈€缁堢敤鎴疯鍙崗璁?(EULA)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::OutputItemContentWidget</name>
     <message>
         <source>Loading...</source>
-        <translation>加载�?..</translation>
+        <translation>鍔犺浇涓?..</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExportDialog</name>
     <message>
         <source>Exporting...</source>
-        <translation>导出�?..</translation>
+        <translation>瀵煎嚭涓?..</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionIndexItem</name>
     <message>
         <source>Drop Index...</source>
-        <translation>删除索引...</translation>
+        <translation>鍒犻櫎绱㈠紩...</translation>
     </message>
     <message>
         <source>Edit Index...</source>
-        <translation>编辑索引...</translation>
+        <translation>缂栬緫绱㈠紩...</translation>
     </message>
     <message>
         <source>Index</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerUserTreeItem</name>
     <message>
         <source>Drop User</source>
-        <translation>删除用户</translation>
+        <translation>鍒犻櫎鐢ㄦ埛</translation>
     </message>
     <message>
         <source>View User</source>
-        <translation>查看用户</translation>
+        <translation>鏌ョ湅鐢ㄦ埛</translation>
     </message>
     <message>
         <source>User</source>
-        <translation>用户</translation>
+        <translation>鐢ㄦ埛</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerFunctionTreeItem</name>
     <message>
         <source>Remove Function</source>
-        <translation>删除函数</translation>
+        <translation>鍒犻櫎鍑芥暟</translation>
     </message>
     <message>
         <source>Edit Function</source>
-        <translation>编辑函数</translation>
+        <translation>缂栬緫鍑芥暟</translation>
     </message>
     <message>
         <source>Function</source>
-        <translation>函数</translation>
+        <translation>鍑芥暟</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::PreferencesDialog</name>
     <message>
         <source>Preferences %1</source>
-        <translation>首选项 %1</translation>
+        <translation>棣栭€夐」 %1</translation>
     </message>
     <message>
         <source>Default display mode:</source>
-        <translation>默认显示模式�?/translation>
+        <translation>榛樿鏄剧ず妯″紡锛?/translation>
     </message>
     <message>
         <source>Display Dates in: </source>
-        <translation>日期显示时区�?/translation>
+        <translation>鏃ユ湡鏄剧ず鏃跺尯锛?/translation>
     </message>
     <message>
         <source>Legacy UUID Encoding:</source>
-        <translation>传统 UUID 编码�?/translation>
+        <translation>浼犵粺 UUID 缂栫爜锛?/translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷�?/translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?/translation>
     </message>
     <message>
         <source>Styles:</source>
-        <translation>主题样式�?/translation>
+        <translation>涓婚鏍峰紡锛?/translation>
     </message>
     <message>
         <source>Text mode</source>
-        <translation>文本模式</translation>
+        <translation>鏂囨湰妯″紡</translation>
     </message>
     <message>
         <source>Tree mode</source>
-        <translation>树形模式</translation>
+        <translation>鏍戝舰妯″紡</translation>
     </message>
     <message>
         <source>Table mode</source>
-        <translation>表格模式</translation>
+        <translation>琛ㄦ牸妯″紡</translation>
     </message>
     <message>
         <source>Custom mode</source>
-        <translation>自定义模�?/translation>
+        <translation>鑷畾涔夋ā寮?/translation>
     </message>
     <message>
         <source>UTC</source>
@@ -1826,38 +1826,38 @@ Error:
     </message>
     <message>
         <source>Local Timezone</source>
-        <translation>本地时区</translation>
+        <translation>鏈湴鏃跺尯</translation>
     </message>
     <message>
         <source>Default encoding</source>
-        <translation>默认编码</translation>
+        <translation>榛樿缂栫爜</translation>
     </message>
     <message>
         <source>Java encoding</source>
-        <translation>Java 编码</translation>
+        <translation>Java 缂栫爜</translation>
     </message>
     <message>
         <source>CSharp encoding</source>
-        <translation>C# 编码</translation>
+        <translation>C# 缂栫爜</translation>
     </message>
     <message>
         <source>Python encoding</source>
-        <translation>Python 编码</translation>
+        <translation>Python 缂栫爜</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source> nodes</source>
-        <translation> 节点</translation>
+        <translation> 鑺傜偣</translation>
     </message>
     <message>
         <source> node</source>
-        <translation> 节点</translation>
+        <translation> 鑺傜偣</translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本�?/translation>
+        <translation>鍓湰闆?/translation>
     </message>
     <message>
         <source>TLS</source>
@@ -1877,41 +1877,41 @@ Error:
     </message>
     <message>
         <source>records</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>&lt;span style=&apos;color: #777777;&apos;&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导�?(%1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;杩炴帴璁剧疆宸插鍏?(%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;Create&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;edit&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;remove&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;clone&lt;/a&gt; or reorder connections via drag&apos;n&amp;drop.</source>
-        <translation>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;创建&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;删除&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;，或通过拖拽重排序�?/translation>
+        <translation>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;鍒涘缓&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;缂栬緫&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;鍒犻櫎&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;鍏嬮殕&lt;/a&gt;锛屾垨閫氳繃鎷栨嫿閲嶆帓搴忋€?/translation>
     </message>
     <message>
         <source>Copy of </source>
-        <translation>副本�?/translation>
+        <translation>鍓湰锛?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AboutDialog</name>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=&quot;https://%6&quot;&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://%7&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href=&quot;%8&quot;&gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=&quot;https://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;�?Shell 为中心的 MongoDB 管理工具�?lt;br/&gt;�?GitHub �?&lt;a href=&quot;https://%6&quot;&gt;提交&lt;/a&gt; 问题/建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://%7&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href=&quot;%8&quot;&gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不附带任何形式的保证，包括但不限于设计、适销性和针对特定用途的适用性保证�?lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项：&lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;鸣谢�?lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=&quot;https://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;浠?Shell 涓轰腑蹇冪殑 MongoDB 绠＄悊宸ュ叿銆?lt;br/&gt;鍦?GitHub 涓?&lt;a href=&quot;https://%6&quot;&gt;鎻愪氦&lt;/a&gt; 闂/寤鸿銆?lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://%7&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;鐗堟潈鎵€鏈?2014-%5 &lt;a href=&quot;%8&quot;&gt;%9&lt;/a&gt;銆備繚鐣欐墍鏈夋潈鍒┿€?lt;br/&gt;&lt;br/&gt;鏈▼搴忔寜鈥滃師鏍封€濇彁渚涳紝涓嶉檮甯︿换浣曞舰寮忕殑淇濊瘉锛屽寘鎷絾涓嶉檺浜庤璁°€侀€傞攢鎬у拰閽堝鐗瑰畾鐢ㄩ€旂殑閫傜敤鎬т繚璇併€?lt;br/&gt;&lt;br&gt;&lt;b&gt;渚濊禆椤癸細&lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;楦ｈ阿锛?lt;br/&gt;&lt;/b&gt;閮ㄥ垎鍥炬爣鐢?Freepik 璁捐 &lt;a href=&quot;https://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::WelcomeTab</name>
     <message>
         <source>&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;博客帖子&lt;/h1&gt;&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;鍗氬甯栧瓙&lt;/h1&gt;&lt;/p&gt;</translation>
     </message>
     <message>
         <source>All Blog Posts</source>
-        <translation>查看所有博客项</translation>
+        <translation>鏌ョ湅鎵€鏈夊崥瀹㈤」</translation>
     </message>
     <message>
         <source>
@@ -1928,7 +1928,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -1969,7 +1969,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -1977,20 +1977,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重生�?v1.5.0 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎使用 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们剔除了冗余功能并修复了核心 Bug，助您专注于数据处理�?lt;/p&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;閲嶇敓鐗?v1.5.0 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋浣跨敤 Robo 3T&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ苟娣卞害浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠墧闄や簡鍐椾綑鍔熻兘骞朵慨澶嶄簡鏍稿績 Bug锛屽姪鎮ㄤ笓娉ㄤ簬鏁版嵁澶勭悊銆?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决 Windows 编译兼容性及内存泄漏问题�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 集成最新的稳定�?OpenSSL 1.1.1u 工具包�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重构，性能大幅提升�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt; 国内绿色版，所有依赖项已打包，真正实现零安装�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾鎬т紭鍏堬細&lt;/strong&gt; 褰诲簳瑙ｅ喅 Windows 缂栬瘧鍏煎鎬у強鍐呭瓨娉勬紡闂銆?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt; 闆嗘垚鏈€鏂扮殑绋冲畾鐗?OpenSSL 1.1.1u 宸ュ叿鍖呫€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt; 鍩轰簬 Qt 5.15.2 鍜?Ninja 閲嶆瀯锛屾€ц兘澶у箙鎻愬崌銆?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 渚挎惡锛?lt;/strong&gt; 鍥藉唴缁胯壊鐗堬紝鎵€鏈変緷璧栭」宸叉墦鍖咃紝鐪熸瀹炵幇闆跺畨瑁呫€?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        “您的数据，由您掌控。感谢支持社区版。�?                    &lt;/div&gt;
+                        鈥滄偍鐨勬暟鎹紝鐢辨偍鎺屾帶銆傛劅璋㈡敮鎸佺ぞ鍖虹増銆傗€?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -2004,48 +2004,48 @@ Error:
 
 Error:
 %1</source>
-        <translation>加载文档失败�?
-错误�?%1</translation>
+        <translation>鍔犺浇鏂囨。澶辫触銆?
+閿欒锛?%1</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Error:
 </source>
-        <translation>错误�?</translation>
+        <translation>閿欒锛?</translation>
     </message>
     <message>
         <source>Failed to execute script.
 
 </source>
-        <translation>执行脚本失败�?
+        <translation>鎵ц鑴氭湰澶辫触銆?
 </translation>
     </message>
     <message>
         <source>At least one of the scripts has reached shell timeout</source>
-        <translation>至少有一个脚本已达到 Shell 超时限制</translation>
+        <translation>鑷冲皯鏈変竴涓剼鏈凡杈惧埌 Shell 瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达�?Shell 超时限制</translation>
+        <translation>鑴氭湰宸茶揪鍒?Shell 瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>执行所有脚本失败�?</translation>
+        <translation>鎵ц鎵€鏈夎剼鏈け璐ャ€?</translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制�?</translation>
+        <translation> 闄愬埗銆?</translation>
     </message>
     <message>
         <source>
@@ -2053,84 +2053,84 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu &quot;Options-&gt;Change Shell Timeout&quot;.</source>
         <translation>
 
-请使用下方的按钮，或者通过主窗口菜单“选项 -&gt; 更改 Shell 超时”来增加 Shell 超时值�?/translation>
+璇蜂娇鐢ㄤ笅鏂圭殑鎸夐挳锛屾垨鑰呴€氳繃涓荤獥鍙ｈ彍鍗曗€滈€夐」 -&gt; 鏇存敼 Shell 瓒呮椂鈥濇潵澧炲姞 Shell 瓒呮椂鍊笺€?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
-        <translation>更改 Shell 超时</translation>
+        <translation>鏇存敼 Shell 瓒呮椂</translation>
     </message>
     <message>
         <source>New Shell</source>
-        <translation>新建 Shell</translation>
+        <translation>鏂板缓 Shell</translation>
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
+        <translation>  鑴氭湰鎵ц鎴愬姛锛屼絾娌℃湁鍙樉绀虹殑缁撴灉銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::WorkAreaTabBar</name>
     <message>
         <source>&amp;New Shell</source>
-        <translation>新建 Shell(&amp;N)</translation>
+        <translation>鏂板缓 Shell(&amp;N)</translation>
     </message>
     <message>
         <source>&amp;Re-execute Query</source>
-        <translation>重新执行查询(&amp;R)</translation>
+        <translation>閲嶆柊鎵ц鏌ヨ(&amp;R)</translation>
     </message>
     <message>
         <source>&amp;Duplicate Query In New Tab</source>
-        <translation>在新页签中复制查�?&amp;D)</translation>
+        <translation>鍦ㄦ柊椤电涓鍒舵煡璇?&amp;D)</translation>
     </message>
     <message>
         <source>&amp;Pin Shell</source>
-        <translation>固定 Shell(&amp;P)</translation>
+        <translation>鍥哄畾 Shell(&amp;P)</translation>
     </message>
     <message>
         <source>&amp;Close Shell</source>
-        <translation>关闭 Shell(&amp;C)</translation>
+        <translation>鍏抽棴 Shell(&amp;C)</translation>
     </message>
     <message>
         <source>Close &amp;Other Shells</source>
-        <translation>关闭其他 Shell(&amp;O)</translation>
+        <translation>鍏抽棴鍏朵粬 Shell(&amp;O)</translation>
     </message>
     <message>
         <source>Close Shells to the R&amp;ight</source>
-        <translation>关闭右侧所�?Shell(&amp;I)</translation>
+        <translation>鍏抽棴鍙充晶鎵€鏈?Shell(&amp;I)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::LogWidget</name>
     <message>
         <source>Clear All</source>
-        <translation>全部清除</translation>
+        <translation>鍏ㄩ儴娓呴櫎</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerReplicaSetTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Open Direct Connection</source>
-        <translation>打开直接连接</translation>
+        <translation>鎵撳紑鐩存帴杩炴帴</translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状�?/translation>
+        <translation>鏈嶅姟鍣ㄧ姸鎬?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>MongoDB 版本</translation>
+        <translation>MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>主机信息</translation>
+        <translation>涓绘満淇℃伅</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>显示日志</translation>
+        <translation>鏄剧ず鏃ュ織</translation>
     </message>
     <message>
         <source>[Primary]</source>
@@ -2142,151 +2142,151 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>[Not Reachable]</source>
-        <translation>[不可达]</translation>
+        <translation>[涓嶅彲杈綸</translation>
     </message>
     <message>
         <source>[Unknown]</source>
-        <translation>[未知状态]</translation>
+        <translation>[鏈煡鐘舵€乚</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerReplicaSetFolderItem</name>
     <message>
         <source>Replica Set (%1 nodes)</source>
-        <translation>副本�?(%1 个节�?</translation>
+        <translation>鍓湰闆?(%1 涓妭鐐?</translation>
     </message>
     <message>
         <source>Replica Set ...</source>
-        <translation>副本集加载中 ...</translation>
+        <translation>鍓湰闆嗗姞杞戒腑 ...</translation>
     </message>
     <message>
         <source>Status of Replica Set</source>
-        <translation>副本集状�?/translation>
+        <translation>鍓湰闆嗙姸鎬?/translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerDatabaseCategoryTreeItem</name>
     <message>
         <source>Create Collection...</source>
-        <translation>创建集合...</translation>
+        <translation>鍒涘缓闆嗗悎...</translation>
     </message>
     <message>
         <source>Collections Statistics</source>
-        <translation>集合统计信息</translation>
+        <translation>闆嗗悎缁熻淇℃伅</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>View Users</source>
-        <translation>查看用户列表</translation>
+        <translation>鏌ョ湅鐢ㄦ埛鍒楄〃</translation>
     </message>
     <message>
         <source>Add User...</source>
-        <translation>添加用户...</translation>
+        <translation>娣诲姞鐢ㄦ埛...</translation>
     </message>
     <message>
         <source>View Functions</source>
-        <translation>查看函数列表</translation>
+        <translation>鏌ョ湅鍑芥暟鍒楄〃</translation>
     </message>
     <message>
         <source>Add Function...</source>
-        <translation>添加函数...</translation>
+        <translation>娣诲姞鍑芥暟...</translation>
     </message>
     <message>
         <source>Create Function</source>
-        <translation>创建函数</translation>
+        <translation>鍒涘缓鍑芥暟</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionIndexesDir</name>
     <message>
         <source>Add Index...</source>
-        <translation>添加索引...</translation>
+        <translation>娣诲姞绱㈠紩...</translation>
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索�?..</translation>
+        <translation>閲嶅缓鎵€鏈夌储寮?..</translation>
     </message>
     <message>
         <source>View Indexes</source>
-        <translation>查看索引列表</translation>
+        <translation>鏌ョ湅绱㈠紩鍒楄〃</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>EULA</source>
-        <translation>最终用户许可协�?(EULA)</translation>
+        <translation>鏈€缁堢敤鎴疯鍙崗璁?(EULA)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::OutputItemContentWidget</name>
     <message>
         <source>Loading...</source>
-        <translation>加载�?..</translation>
+        <translation>鍔犺浇涓?..</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExportDialog</name>
     <message>
         <source>Exporting...</source>
-        <translation>导出�?..</translation>
+        <translation>瀵煎嚭涓?..</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CollectionStatsTreeWidget</name>
     <message>
         <source>Name</source>
-        <translation>名称</translation>
+        <translation>鍚嶇О</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>计数</translation>
+        <translation>璁℃暟</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>澶у皬</translation>
     </message>
     <message>
         <source>Storage</source>
-        <translation>存储</translation>
+        <translation>瀛樺偍</translation>
     </message>
     <message>
         <source>Index</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
     <message>
         <source>Average Object</source>
-        <translation>平均对象</translation>
+        <translation>骞冲潎瀵硅薄</translation>
     </message>
     <message>
         <source>Padding</source>
-        <translation>填充</translation>
+        <translation>濉厖</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source> nodes</source>
-        <translation> 个节�?/translation>
+        <translation> 涓妭鐐?/translation>
     </message>
     <message>
         <source> node</source>
-        <translation> 个节�?/translation>
+        <translation> 涓妭鐐?/translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本�?(Replica Set)</translation>
+        <translation>鍓湰闆?(Replica Set)</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -2306,452 +2306,452 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>MongoDB Connections</source>
-        <translation>MongoDB 连接管理�?/translation>
+        <translation>MongoDB 杩炴帴绠＄悊鍣?/translation>
     </message>
     <message>
         <source>&amp;Add...</source>
-        <translation>添加(&amp;A)...</translation>
+        <translation>娣诲姞(&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Edit...</source>
-        <translation>编辑(&amp;E)...</translation>
+        <translation>缂栬緫(&amp;E)...</translation>
     </message>
     <message>
         <source>&amp;Clone...</source>
-        <translation>克隆(&amp;C)...</translation>
+        <translation>鍏嬮殕(&amp;C)...</translation>
     </message>
     <message>
         <source>&amp;Remove...</source>
-        <translation>删除(&amp;R)...</translation>
+        <translation>鍒犻櫎(&amp;R)...</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名称</translation>
+        <translation>鍚嶇О</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>地址</translation>
+        <translation>鍦板潃</translation>
     </message>
     <message>
         <source>Attributes</source>
-        <translation>属�?/translation>
+        <translation>灞炴€?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>认证数据�?/ 用户</translation>
+        <translation>璁よ瘉鏁版嵁搴?/ 鐢ㄦ埛</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
-        <translation>连接(&amp;O)</translation>
+        <translation>杩炴帴(&amp;O)</translation>
     </message>
     <message>
         <source>records</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>&lt;span style=&apos;color: #777777;&apos;&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导�?(%1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;杩炴帴璁剧疆宸插鍏?(%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;Create&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;edit&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;remove&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;clone&lt;/a&gt; or reorder connections via drag&apos;n&apos;drop.</source>
-        <translation>通过拖拽可以进行&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;创建&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;删除&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;或重新排序连接�?/translation>
+        <translation>閫氳繃鎷栨嫿鍙互杩涜&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;鍒涘缓&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;缂栬緫&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;鍒犻櫎&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;鍏嬮殕&lt;/a&gt;鎴栭噸鏂版帓搴忚繛鎺ャ€?/translation>
     </message>
     <message>
         <source>Are you sure you want to delete &quot;%1&quot; connection?</source>
-        <translation>您确定要删除�?1”连接吗�?/translation>
+        <translation>鎮ㄧ‘瀹氳鍒犻櫎鈥?1鈥濊繛鎺ュ悧锛?/translation>
     </message>
     <message>
         <source>Connections</source>
-        <translation>连接</translation>
+        <translation>杩炴帴</translation>
     </message>
     <message>
         <source>Copy of </source>
-        <translation>副本 - </translation>
+        <translation>鍓湰 - </translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSLTab</name>
     <message>
         <source> mongo --tlsCAFile : Certificate Authority file for TLS</source>
-        <translation> mongo --tlsCAFile : 用于 TLS 的证书颁发机�?(CA) 文件</translation>
+        <translation> mongo --tlsCAFile : 鐢ㄤ簬 TLS 鐨勮瘉涔﹂鍙戞満鏋?(CA) 鏂囦欢</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFile : 用于 TLS �?PEM 证书/密钥文件</translation>
+        <translation> mongo --tlsCertificateKeyFile : 鐢ㄤ簬 TLS 鐨?PEM 璇佷功/瀵嗛挜鏂囦欢</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFilePassword : 用于 TLS �?PEM 文件中密钥的密码</translation>
+        <translation> mongo --tlsCertificateKeyFilePassword : 鐢ㄤ簬 TLS 鐨?PEM 鏂囦欢涓瘑閽ョ殑瀵嗙爜</translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidHostnames : Allow connections to servers with non-matching hostnames</source>
-        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务�?/translation>
+        <translation> mongo --tlsAllowInvalidHostnames : 鍏佽杩炴帴鍒颁富鏈哄悕涓嶅尮閰嶇殑鏈嶅姟鍣?/translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidCertificates : Allow connections to servers with invalid certificates</source>
-        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到证书无效的服务�?/translation>
+        <translation> mongo --tlsAllowInvalidCertificates : 鍏佽杩炴帴鍒拌瘉涔︽棤鏁堢殑鏈嶅姟鍣?/translation>
     </message>
     <message>
         <source> mongo --tlsCRLFile : Certificate Revocation List file for TLS</source>
-        <translation> mongo --tlsCRLFile : 用于 TLS 的证书吊销列表 (CRL) 文件</translation>
+        <translation> mongo --tlsCRLFile : 鐢ㄤ簬 TLS 鐨勮瘉涔﹀悐閿€鍒楄〃 (CRL) 鏂囦欢</translation>
     </message>
     <message>
         <source>Use TLS protocol</source>
-        <translation>使用 TLS 协议</translation>
+        <translation>浣跨敤 TLS 鍗忚</translation>
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>验证方法�?</translation>
+        <translation>楠岃瘉鏂规硶锛?</translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证�?/translation>
+        <translation>鑷鍚嶈瘉涔?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
-        <translation>使用 CA 证书</translation>
+        <translation>浣跨敤 CA 璇佷功</translation>
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络是受信任的，否则请避免使用自签名证书。如果使用自签名证书，通信通道将被加密，但不会对服务器身份进行验证�?/translation>
+        <translation>閫氬父鎯呭喌涓嬶紝闄ら潪缃戠粶鏄彈淇′换鐨勶紝鍚﹀垯璇烽伩鍏嶄娇鐢ㄨ嚜绛惧悕璇佷功銆傚鏋滀娇鐢ㄨ嚜绛惧悕璇佷功锛岄€氫俊閫氶亾灏嗚鍔犲瘑锛屼絾涓嶄細瀵规湇鍔″櫒韬唤杩涜楠岃瘉銆?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书�?/translation>
+        <translation>CA 璇佷功锛?/translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/密钥�?</translation>
+        <translation>浣跨敤 PEM 璇佷功/瀵嗛挜锛?</translation>
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>启用此选项以连接到需�?CA 签名客户端证�?密钥文件�?MongoDB�?/translation>
+        <translation>鍚敤姝ら€夐」浠ヨ繛鎺ュ埌闇€瑕?CA 绛惧悕瀹㈡埛绔瘉涔?瀵嗛挜鏂囦欢鐨?MongoDB銆?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/密钥�?</translation>
+        <translation>PEM 璇佷功/瀵嗛挜锛?</translation>
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>密码�?</translation>
+        <translation>瀵嗙爜锛?</translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次都询问密�?/translation>
+        <translation>姣忔閮借闂瘑鐮?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
-        <translation>高级选项</translation>
+        <translation>楂樼骇閫夐」</translation>
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>CRL (吊销列表)�?</translation>
+        <translation>CRL (鍚婇攢鍒楄〃)锛?</translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
-        <translation>无效主机名： </translation>
+        <translation>鏃犳晥涓绘満鍚嶏細 </translation>
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允�?/translation>
+        <translation>涓嶅厑璁?/translation>
     </message>
     <message>
         <source>Allowed</source>
-        <translation>允许</translation>
+        <translation>鍏佽</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation>错误�?</translation>
+        <translation>閿欒锛?</translation>
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存�?/translation>
+        <translation> 鏂囦欢涓嶅瓨鍦?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
-        <translation>CA 签名证书</translation>
+        <translation>CA 绛惧悕璇佷功</translation>
     </message>
     <message>
         <source>PEM Certificate/Key</source>
-        <translation>PEM 证书/密钥</translation>
+        <translation>PEM 璇佷功/瀵嗛挜</translation>
     </message>
     <message>
         <source>CRL (Revocation List)</source>
-        <translation>CRL (吊销列表)</translation>
+        <translation>CRL (鍚婇攢鍒楄〃)</translation>
     </message>
     <message>
         <source>Choose File</source>
-        <translation>选择文件</translation>
+        <translation>閫夋嫨鏂囦欢</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::WorkAreaTabWidget</name>
     <message>
         <source>Welcome</source>
-        <translation>欢迎</translation>
+        <translation>娆㈣繋</translation>
     </message>
     <message>
         <source> Loading...</source>
-        <translation> 加载�?..</translation>
+        <translation> 鍔犺浇涓?..</translation>
     </message>
     <message>
         <source>New Shell</source>
-        <translation>新建 Shell</translation>
+        <translation>鏂板缓 Shell</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionBasicTab</name>
     <message>
         <source>Type:</source>
-        <translation>类型�?/translation>
+        <translation>绫诲瀷锛?/translation>
     </message>
     <message>
         <source>Direct Connection</source>
-        <translation>直接连接</translation>
+        <translation>鐩存帴杩炴帴</translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本�?/translation>
+        <translation>鍓湰闆?/translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称�?/translation>
+        <translation>鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>选择任意连接名称，以帮助您识别此连接�?/translation>
+        <translation>閫夋嫨浠绘剰杩炴帴鍚嶇О锛屼互甯姪鎮ㄨ瘑鍒杩炴帴銆?/translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>地址�?/translation>
+        <translation>鍦板潃锛?/translation>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>指定 MongoDB 服务器的主机和端口。主机可以是 IPv4、IPv6 或域名�?/translation>
+        <translation>鎸囧畾 MongoDB 鏈嶅姟鍣ㄧ殑涓绘満鍜岀鍙ｃ€備富鏈哄彲浠ユ槸 IPv4銆両Pv6 鎴栧煙鍚嶃€?/translation>
     </message>
     <message>
         <source>Members:</source>
-        <translation>成员�?/translation>
+        <translation>鎴愬憳锛?/translation>
     </message>
     <message>
         <source>Set Name:</source>
-        <translation>集名称：</translation>
+        <translation>闆嗗悕绉帮細</translation>
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>�?MongoDB URI 连接字符串导入连接详�?/translation>
+        <translation>浠?MongoDB URI 杩炴帴瀛楃涓插鍏ヨ繛鎺ヨ鎯?/translation>
     </message>
     <message>
         <source>From URI</source>
-        <translation>来自 URI</translation>
+        <translation>鏉ヨ嚜 URI</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>副本集成员不能为空。请输入至少一个成员�?/translation>
+        <translation>鍓湰闆嗘垚鍛樹笉鑳戒负绌恒€傝杈撳叆鑷冲皯涓€涓垚鍛樸€?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain &apos;:&apos; between hostname and port.</source>
-        <translation>副本集成员项必须在主机名和端口之间包含�?”�?/translation>
+        <translation>鍓湰闆嗘垚鍛橀」蹇呴』鍦ㄤ富鏈哄悕鍜岀鍙ｄ箣闂村寘鍚€?鈥濄€?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请删除重复成员，两个副本集成员不能具有相同的主机名和端口�?/translation>
+        <translation>璇峰垹闄ら噸澶嶆垚鍛橈紝涓や釜鍓湰闆嗘垚鍛樹笉鑳藉叿鏈夌浉鍚岀殑涓绘満鍚嶅拰绔彛銆?/translation>
     </message>
     <message>
         <source>New Connection</source>
-        <translation>新连�?/translation>
+        <translation>鏂拌繛鎺?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAuthTab</name>
     <message>
         <source>Perform authentication</source>
-        <translation>执行身份验证</translation>
+        <translation>鎵ц韬唤楠岃瘉</translation>
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 拥有 admin 数据库常规访问权限的用户�?lt;b&gt;所有数据库&lt;/b&gt;都拥有读写权限�?/translation>
+        <translation>&lt;nobr&gt;admin 鏁版嵁搴撳湪 MongoDB 涓槸鍞竴鐨勩€?lt;/nobr&gt; 鎷ユ湁 admin 鏁版嵁搴撳父瑙勮闂潈闄愮殑鐢ㄦ埛瀵?lt;b&gt;鎵€鏈夋暟鎹簱&lt;/b&gt;閮芥嫢鏈夎鍐欐潈闄愩€?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户�?/translation>
+        <translation>鐢ㄦ埛鍚?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
-        <translation>认证机制</translation>
+        <translation>璁よ瘉鏈哄埗</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码</translation>
+        <translation>瀵嗙爜</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>数据�?/translation>
+        <translation>鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
-        <translation>以逗号分隔，例如：products, users</translation>
+        <translation>浠ラ€楀彿鍒嗛殧锛屼緥濡傦細products, users</translation>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据�?/translation>
+        <translation>鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有获取数据库名称列表（&lt;b&gt;listDatabases&lt;/b&gt; 命令）的权限。在这种情况下，请手动添加该用户有权访问的数据库名称�?/translation>
+        <translation>鏌愪簺 MongoDB 鐢ㄦ埛鍙兘娌℃湁鑾峰彇鏁版嵁搴撳悕绉板垪琛紙&lt;b&gt;listDatabases&lt;/b&gt; 鍛戒护锛夌殑鏉冮檺銆傚湪杩欑鎯呭喌涓嬶紝璇锋墜鍔ㄦ坊鍔犺鐢ㄦ埛鏈夋潈璁块棶鐨勬暟鎹簱鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
-        <translation>手动指定可见数据�?/translation>
+        <translation>鎵嬪姩鎸囧畾鍙鏁版嵁搴?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SshTunnelTab</name>
     <message>
         <source>Use SSH tunnel</source>
-        <translation>使用 SSH 隧道</translation>
+        <translation>浣跨敤 SSH 闅ч亾</translation>
     </message>
     <message>
         <source>Ask for password each time</source>
-        <translation>每次都询问密�?/translation>
+        <translation>姣忔閮借闂瘑鐮?/translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次都询问密码短�?/translation>
+        <translation>姣忔閮借闂瘑鐮佺煭璇?/translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码</translation>
+        <translation>瀵嗙爜</translation>
     </message>
     <message>
         <source>Private Key</source>
-        <translation>私钥</translation>
+        <translation>绉侀挜</translation>
     </message>
     <message>
         <source>User Password:</source>
-        <translation>用户密码�?/translation>
+        <translation>鐢ㄦ埛瀵嗙爜锛?/translation>
     </message>
     <message>
         <source>Private key:</source>
-        <translation>私钥�?/translation>
+        <translation>绉侀挜锛?/translation>
     </message>
     <message>
         <source>Passphrase:</source>
-        <translation>密码短语�?/translation>
+        <translation>瀵嗙爜鐭锛?/translation>
     </message>
     <message>
         <source>SSH Address:</source>
-        <translation>SSH 地址�?/translation>
+        <translation>SSH 鍦板潃锛?/translation>
     </message>
     <message>
         <source>SSH User Name:</source>
-        <translation>SSH 用户名：</translation>
+        <translation>SSH 鐢ㄦ埛鍚嶏細</translation>
     </message>
     <message>
         <source>SSH Auth Method:</source>
-        <translation>SSH 认证方式�?/translation>
+        <translation>SSH 璁よ瘉鏂瑰紡锛?/translation>
     </message>
     <message>
         <source>Select private key file</source>
-        <translation>选择私钥文件</translation>
+        <translation>閫夋嫨绉侀挜鏂囦欢</translation>
     </message>
     <message>
         <source>Private key files (*)</source>
-        <translation>私钥文件 (*)</translation>
+        <translation>绉侀挜鏂囦欢 (*)</translation>
     </message>
     <message>
         <source>Settings are incomplete</source>
-        <translation>设置不完�?/translation>
+        <translation>璁剧疆涓嶅畬鏁?/translation>
     </message>
     <message>
         <source>SSH is currently not supported for Replica Set connections</source>
-        <translation>副本集连接目前不支持 SSH 隧道</translation>
+        <translation>鍓湰闆嗚繛鎺ョ洰鍓嶄笉鏀寔 SSH 闅ч亾</translation>
     </message>
     <message>
         <source>Private key file &quot;%1&quot; doesn&apos;t exist</source>
-        <translation>私钥文件�?1”不存在</translation>
+        <translation>绉侀挜鏂囦欢鈥?1鈥濅笉瀛樺湪</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSLTab</name>
     <message>
         <source>Use TLS protocol</source>
-        <translation>使用 TLS 协议</translation>
+        <translation>浣跨敤 TLS 鍗忚</translation>
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>验证方式�?/translation>
+        <translation>楠岃瘉鏂瑰紡锛?/translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证�?/translation>
+        <translation>鑷鍚嶈瘉涔?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
-        <translation>使用 CA 证书</translation>
+        <translation>浣跨敤 CA 璇佷功</translation>
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络是可信的，否则请避免使用自签名证书。如果使用自签名证书，通信通道将被加密，但不会验证服务器身份�?/translation>
+        <translation>閫氬父鎯呭喌涓嬶紝闄ら潪缃戠粶鏄彲淇＄殑锛屽惁鍒欒閬垮厤浣跨敤鑷鍚嶈瘉涔︺€傚鏋滀娇鐢ㄨ嚜绛惧悕璇佷功锛岄€氫俊閫氶亾灏嗚鍔犲瘑锛屼絾涓嶄細楠岃瘉鏈嶅姟鍣ㄨ韩浠姐€?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书�?/translation>
+        <translation>CA 璇佷功锛?/translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/秘钥�?/translation>
+        <translation>浣跨敤 PEM 璇佷功/绉橀挜锛?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/秘钥�?/translation>
+        <translation>PEM 璇佷功/绉橀挜锛?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
-        <translation>高级选项</translation>
+        <translation>楂樼骇閫夐」</translation>
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>CRL (吊销列表)�?/translation>
+        <translation>CRL (鍚婇攢鍒楄〃)锛?/translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
-        <translation>无效主机名：</translation>
+        <translation>鏃犳晥涓绘満鍚嶏細</translation>
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允�?/translation>
+        <translation>涓嶅厑璁?/translation>
     </message>
     <message>
         <source>Allowed</source>
-        <translation>允许</translation>
+        <translation>鍏佽</translation>
     </message>
     <message>
         <source>Choose File</source>
-        <translation>选择文件</translation>
+        <translation>閫夋嫨鏂囦欢</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAdvancedTab</name>
     <message>
         <source>Database, that will be default (&lt;code&gt;db&lt;/code&gt; shell variable will point to this database). By default, default database will be the one you authenticate on, or &lt;code&gt;test&lt;/code&gt; otherwise. Leave this field empty, if you want default behavior.</source>
-        <translation>将作为默认值的数据库（&lt;code&gt;db&lt;/code&gt; shell 变量将指向此数据库）。默认情况下，默认数据库将是您进行身份验证的数据库，否则�?&lt;code&gt;test&lt;/code&gt;。如果您想要默认行为，请将此字段留空�?/translation>
+        <translation>灏嗕綔涓洪粯璁ゅ€肩殑鏁版嵁搴擄紙&lt;code&gt;db&lt;/code&gt; shell 鍙橀噺灏嗘寚鍚戞鏁版嵁搴擄級銆傞粯璁ゆ儏鍐典笅锛岄粯璁ゆ暟鎹簱灏嗘槸鎮ㄨ繘琛岃韩浠介獙璇佺殑鏁版嵁搴擄紝鍚﹀垯涓?&lt;code&gt;test&lt;/code&gt;銆傚鏋滄偍鎯宠榛樿琛屼负锛岃灏嗘瀛楁鐣欑┖銆?/translation>
     </message>
     <message>
         <source>Default Database:</source>
-        <translation>默认数据库：</translation>
+        <translation>榛樿鏁版嵁搴擄細</translation>
     </message>
 </context>
 
@@ -2759,263 +2759,263 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::MainWindow</name>
     <message>
         <source>&amp;Open...</source>
-        <translation>打开(&amp;O)...</translation>
+        <translation>鎵撳紑(&amp;O)...</translation>
     </message>
     <message>
         <source>Load script from the file to the currently opened shell &lt;b&gt;(%1 + O)&lt;/b&gt;</source>
-        <translation>从文件加载脚本到当前开启的 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
+        <translation>浠庢枃浠跺姞杞借剼鏈埌褰撳墠寮€鍚殑 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Save</source>
-        <translation>保存(&amp;S)</translation>
+        <translation>淇濆瓨(&amp;S)</translation>
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当�?Shell 的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>灏嗗綋鍓?Shell 鐨勮剼鏈繚瀛樺埌鏂囦欢 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存�?&amp;A)...</translation>
+        <translation>鍙﹀瓨涓?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退�?&amp;E)</translation>
+        <translation>閫€鍑?&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
-        <translation>连接(&amp;C)...</translation>
+        <translation>杩炴帴(&amp;C)...</translation>
     </message>
     <message>
         <source>Connect to local or remote MongoDB instance &lt;b&gt;(%1 + N)&lt;/b&gt;</source>
-        <translation>连接到本地或远程 MongoDB 实例 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
+        <translation>杩炴帴鍒版湰鍦版垨杩滅▼ MongoDB 瀹炰緥 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托�?/translation>
+        <translation>鏈€灏忓寲鍒版墭鐩?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退�?/translation>
+        <translation>閫€鍑?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
-        <translation>旋转视图(&amp;R)</translation>
+        <translation>鏃嬭浆瑙嗗浘(&amp;R)</translation>
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换结果视图的布局方向 &lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>鍒囨崲缁撴灉瑙嗗浘鐨勫竷灞€鏂瑰悜 &lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
-        <translation>文本模式(&amp;T)</translation>
+        <translation>鏂囨湰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in text mode, and make this mode default for all subsequent queries &lt;b&gt;(F4)&lt;/b&gt;</source>
-        <translation>以文本模式显示当前选项卡，并将此模式设为后续查询的默认模式 &lt;b&gt;(F4)&lt;/b&gt;</translation>
+        <translation>浠ユ枃鏈ā寮忔樉绀哄綋鍓嶉€夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F4)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Tree Mode</source>
-        <translation>树形模式(&amp;T)</translation>
+        <translation>鏍戝舰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in tree mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以树形模式显示当前选项卡，并将此模式设为后续查询的默认模式 &lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>浠ユ爲褰㈡ā寮忔樉绀哄綋鍓嶉€夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>T&amp;able Mode</source>
-        <translation>表格模式(&amp;A)</translation>
+        <translation>琛ㄦ牸妯″紡(&amp;A)</translation>
     </message>
     <message>
         <source>Show current tab in table mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以表格模式显示当前选项卡，并将此模式设为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>浠ヨ〃鏍兼ā寮忔樉绀哄綋鍓嶉€夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模�?&amp;C)</translation>
+        <translation>鑷畾涔夋ā寮?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
-        <translation>如果可能，以自定义模式显示当前选项卡，并将此模式设为后续查询的默认模式</translation>
+        <translation>濡傛灉鍙兘锛屼互鑷畾涔夋ā寮忔樉绀哄綋鍓嶉€夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿妯″紡</translation>
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前选项卡的查询。如果选择了部分文本，则只执行选中的部�?&lt;b&gt;(F5 &lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>鎵ц褰撳墠閫夐」鍗＄殑鏌ヨ銆傚鏋滈€夋嫨浜嗛儴鍒嗘枃鏈紝鍒欏彧鎵ц閫変腑鐨勯儴鍒?&lt;b&gt;(F5 &lt;/b&gt; 鎴?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止执行当前正在运行的脚�?&lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>鍋滄鎵ц褰撳墠姝ｅ湪杩愯鐨勮剼鏈?&lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>文件</translation>
+        <translation>鏂囦欢</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>视图</translation>
+        <translation>瑙嗗浘</translation>
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具�?/translation>
+        <translation>宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>选项</translation>
+        <translation>閫夐」</translation>
     </message>
     <message>
         <source>Default View Mode</source>
-        <translation>默认视图模式</translation>
+        <translation>榛樿瑙嗗浘妯″紡</translation>
     </message>
     <message>
         <source>UTC (Coordinated Universal Time)</source>
-        <translation>UTC (协调世界�?</translation>
+        <translation>UTC (鍗忚皟涓栫晫鏃?</translation>
     </message>
     <message>
         <source>Local Time</source>
-        <translation>本地时间</translation>
+        <translation>鏈湴鏃堕棿</translation>
     </message>
     <message>
         <source>Display Dates In...</source>
-        <translation>显示日期格式�?..</translation>
+        <translation>鏄剧ず鏃ユ湡鏍煎紡涓?..</translation>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解�?(按原样显�?</translation>
+        <translation>涓嶈В鐮?(鎸夊師鏍锋樉绀?</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
-        <translation>使用 Java 编码</translation>
+        <translation>浣跨敤 Java 缂栫爜</translation>
     </message>
     <message>
         <source>Use .NET Encoding</source>
-        <translation>使用 .NET 编码</translation>
+        <translation>浣跨敤 .NET 缂栫爜</translation>
     </message>
     <message>
         <source>Use Python Encoding</source>
-        <translation>使用 Python 编码</translation>
+        <translation>浣跨敤 Python 缂栫爜</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding</source>
-        <translation>旧版 UUID 编码方式</translation>
+        <translation>鏃х増 UUID 缂栫爜鏂瑰紡</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>全部</translation>
+        <translation>鍏ㄩ儴</translation>
     </message>
     <message>
         <source>All (Except Collection Names)</source>
-        <translation>全部 (除集合名称外)</translation>
+        <translation>鍏ㄩ儴 (闄ら泦鍚堝悕绉板)</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>�?/translation>
+        <translation>鏃?/translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
-        <translation>自动补全模式</translation>
+        <translation>鑷姩琛ュ叏妯″紡</translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文�?/translation>
+        <translation>鑷姩灞曞紑绗竴涓枃妗?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
-        <translation>默认显示行号</translation>
+        <translation>榛樿鏄剧ず琛屽彿</translation>
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷�?/translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?/translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
-        <translation>在新选项卡中自动执行代码</translation>
+        <translation>鍦ㄦ柊閫夐」鍗′腑鑷姩鎵ц浠ｇ爜</translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>点击关闭按钮应最小化到系统托�?/translation>
+        <translation>鐐瑰嚮鍏抽棴鎸夐挳搴旀渶灏忓寲鍒扮郴缁熸墭鐩?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更�?/translation>
+        <translation>妫€鏌ユ洿鏂?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
-        <translation>更改 Shell 超时时间...</translation>
+        <translation>鏇存敼 Shell 瓒呮椂鏃堕棿...</translation>
     </message>
     <message>
         <source>Preferences</source>
-        <translation>首选项</translation>
+        <translation>棣栭€夐」</translation>
     </message>
     <message>
         <source>&amp;Full Screen</source>
-        <translation>全屏(&amp;F)</translation>
+        <translation>鍏ㄥ睆(&amp;F)</translation>
     </message>
     <message>
         <source>&amp;Minimize</source>
-        <translation>最小化(&amp;M)</translation>
+        <translation>鏈€灏忓寲(&amp;M)</translation>
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择下一个选项�?/translation>
+        <translation>閫夋嫨涓嬩竴涓€夐」鍗?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择上一个选项�?/translation>
+        <translation>閫夋嫨涓婁竴涓€夐」鍗?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
-        <translation>在当前选项卡中重新执行查询</translation>
+        <translation>鍦ㄥ綋鍓嶉€夐」鍗′腑閲嶆柊鎵ц鏌ヨ</translation>
     </message>
     <message>
         <source>Duplicate Query in New Tab</source>
-        <translation>在新选项卡中复制查询</translation>
+        <translation>鍦ㄦ柊閫夐」鍗′腑澶嶅埗鏌ヨ</translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>窗口</translation>
+        <translation>绐楀彛</translation>
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>开�?刷新欢迎�?/translation>
+        <translation>寮€鍚?鍒锋柊娆㈣繋椤?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
-        <translation>关于 Robo 3T(&amp;A)...</translation>
+        <translation>鍏充簬 Robo 3T(&amp;A)...</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>帮助</translation>
+        <translation>甯姪</translation>
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具�?/translation>
+        <translation>杩炴帴宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存工具�?/translation>
+        <translation>鎵撳紑/淇濆瓨宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具�?/translation>
+        <translation>鎵ц宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新工具�?/translation>
+        <translation>鏇存柊宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Theme</source>
-        <translation>主题</translation>
+        <translation>涓婚</translation>
     </message>
     <message>
         <source>Logs</source>
-        <translation>日志</translation>
+        <translation>鏃ュ織</translation>
     </message>
     <message>
         <source>Robo 3T - </source>
@@ -3026,37 +3026,37 @@ Please increase the value of shell timeout using button below or from the main w
     <name>Robomongo::CreateUserDialog</name>
     <message>
         <source>Name:</source>
-        <translation>名称�?/translation>
+        <translation>鍚嶇О锛?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>I agree</source>
-        <translation>我同�?/translation>
+        <translation>鎴戝悓鎰?/translation>
     </message>
     <message>
         <source>I don&apos;t agree</source>
-        <translation>我不同意</translation>
+        <translation>鎴戜笉鍚屾剰</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDialog</name>
     <message>
         <source>Connection Settings</source>
-        <translation>连接设置</translation>
+        <translation>杩炴帴璁剧疆</translation>
     </message>
     <message>
         <source>&amp;Test</source>
-        <translation>测试(&amp;T)</translation>
+        <translation>娴嬭瘯(&amp;T)</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>连接</translation>
+        <translation>杩炴帴</translation>
     </message>
     <message>
         <source>Authentication</source>
-        <translation>身份验证</translation>
+        <translation>韬唤楠岃瘉</translation>
     </message>
     <message>
         <source>SSH</source>
@@ -3068,25 +3068,25 @@ Please increase the value of shell timeout using button below or from the main w
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级</translation>
+        <translation>楂樼骇</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::PagingWidget</name>
     <message>
         <source>Skip</source>
-        <translation>跳过</translation>
+        <translation>璺宠繃</translation>
     </message>
     <message>
         <source>Batch Size (number of documents shown at once)</source>
-        <translation>批量大小（一次显示的文档数量�?/translation>
+        <translation>鎵归噺澶у皬锛堜竴娆℃樉绀虹殑鏂囨。鏁伴噺锛?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::DocumentTextEditor</name>
     <message>
         <source>Validate</source>
-        <translation>验证</translation>
+        <translation>楠岃瘉</translation>
     </message>
     <message>
         <source>Robo 3T</source>
@@ -3095,43 +3095,43 @@ Please increase the value of shell timeout using button below or from the main w
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>该文档已被修改�?您是否要保存更改�?/translation>
+        <translation>璇ユ枃妗ｅ凡琚慨鏀广€?鎮ㄦ槸鍚﹁淇濆瓨鏇存敼锛?/translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位�?(%2, %3)�?/translation>
+        <translation>鏃犳硶瑙ｆ瀽 JSON锛?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;锛屼綅浜?(%2, %3)銆?/translation>
     </message>
     <message>
         <source>Parsing error</source>
-        <translation>解析错误</translation>
+        <translation>瑙ｆ瀽閿欒</translation>
     </message>
     <message>
         <source>Validation</source>
-        <translation>验证</translation>
+        <translation>楠岃瘉</translation>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效�?/translation>
+        <translation>JSON 鏍煎紡鏈夋晥锛?/translation>
     </message>
     <message>
         <source>Edit Document</source>
-        <translation>编辑文档</translation>
+        <translation>缂栬緫鏂囨。</translation>
     </message>
     <message>
         <source>View Document</source>
-        <translation>查看文档</translation>
+        <translation>鏌ョ湅鏂囨。</translation>
     </message>
     <message>
         <source>Insert Document</source>
-        <translation>插入文档</translation>
+        <translation>鎻掑叆鏂囨。</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>淇濆瓨</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>关闭</translation>
+        <translation>鍏抽棴</translation>
     </message>
     <message>
         <source>JSON</source>
@@ -3145,48 +3145,48 @@ Do you want to save your changes?</source>
 
 Error:
 %1</source>
-        <translation>加载文档失败�?
-错误�?%1</translation>
+        <translation>鍔犺浇鏂囨。澶辫触銆?
+閿欒锛?%1</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Failed to execute script.
 
 </source>
-        <translation>执行脚本失败�?
+        <translation>鎵ц鑴氭湰澶辫触銆?
 </translation>
     </message>
     <message>
         <source>Error:
 </source>
-        <translation>错误�?</translation>
+        <translation>閿欒锛?</translation>
     </message>
     <message>
         <source>At least one of the scripts has reached shell timeout</source>
-        <translation>至少有一个脚本已达到 Shell 超时限制</translation>
+        <translation>鑷冲皯鏈変竴涓剼鏈凡杈惧埌 Shell 瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达�?Shell 超时限制</translation>
+        <translation>鑴氭湰宸茶揪鍒?Shell 瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>执行所有脚本失败�?/translation>
+        <translation>鎵ц鎵€鏈夎剼鏈け璐ャ€?/translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制�?/translation>
+        <translation> 闄愬埗銆?/translation>
     </message>
     <message>
         <source>
@@ -3194,169 +3194,169 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu &quot;Options-&gt;Change Shell Timeout&quot;.</source>
         <translation>
 
-请使用下方的按钮或通过主窗口菜单“选项-&gt;更改 Shell 超时”来增加 Shell 超时值�?/translation>
+璇蜂娇鐢ㄤ笅鏂圭殑鎸夐挳鎴栭€氳繃涓荤獥鍙ｈ彍鍗曗€滈€夐」-&gt;鏇存敼 Shell 瓒呮椂鈥濇潵澧炲姞 Shell 瓒呮椂鍊笺€?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
-        <translation>更改 Shell 超时</translation>
+        <translation>鏇存敼 Shell 瓒呮椂</translation>
     </message>
     <message>
         <source>New Shell</source>
-        <translation>新建 Shell</translation>
+        <translation>鏂板缓 Shell</translation>
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
+        <translation>  鑴氭湰鎵ц鎴愬姛锛屼絾娌℃湁鍙樉绀虹殑缁撴灉銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ScriptWidget</name>
     <message>
         <source>Loading...</source>
-        <translation>加载�?..</translation>
+        <translation>鍔犺浇涓?..</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionTreeItem</name>
     <message>
         <source>Insert Document...</source>
-        <translation>插入文档...</translation>
+        <translation>鎻掑叆鏂囨。...</translation>
     </message>
     <message>
         <source>Update Documents...</source>
-        <translation>更新多个文档...</translation>
+        <translation>鏇存柊澶氫釜鏂囨。...</translation>
     </message>
     <message>
         <source>Remove Documents...</source>
-        <translation>删除多个文档...</translation>
+        <translation>鍒犻櫎澶氫釜鏂囨。...</translation>
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>删除所有文�?..</translation>
+        <translation>鍒犻櫎鎵€鏈夋枃妗?..</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation>统计信息</translation>
+        <translation>缁熻淇℃伅</translation>
     </message>
     <message>
         <source>Storage Size</source>
-        <translation>存储大小</translation>
+        <translation>瀛樺偍澶у皬</translation>
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大�?/translation>
+        <translation>绱㈠紩鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大�?/translation>
+        <translation>鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Shard Version</source>
-        <translation>分片版本</translation>
+        <translation>鍒嗙墖鐗堟湰</translation>
     </message>
     <message>
         <source>Shard Distribution</source>
-        <translation>分片分布</translation>
+        <translation>鍒嗙墖鍒嗗竷</translation>
     </message>
     <message>
         <source>Drop Collection...</source>
-        <translation>删除集合...</translation>
+        <translation>鍒犻櫎闆嗗悎...</translation>
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集�?..</translation>
+        <translation>閲嶅懡鍚嶉泦鍚?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
-        <translation>复制集合...</translation>
+        <translation>澶嶅埗闆嗗悎...</translation>
     </message>
     <message>
         <source>View Documents</source>
-        <translation>查看文档</translation>
+        <translation>鏌ョ湅鏂囨。</translation>
     </message>
     <message>
         <source>Indexes</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
     <message>
         <source>Cannot load list of indexes.
 
 Error:
 </source>
-        <translation>无法加载索引列表�?
-错误�?</translation>
+        <translation>鏃犳硶鍔犺浇绱㈠紩鍒楄〃銆?
+閿欒锛?</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>add</source>
-        <translation>添加</translation>
+        <translation>娣诲姞</translation>
     </message>
     <message>
         <source>edit</source>
-        <translation>编辑</translation>
+        <translation>缂栬緫</translation>
     </message>
     <message>
         <source>Operation failed</source>
-        <translation>操作失败</translation>
+        <translation>鎿嶄綔澶辫触</translation>
     </message>
     <message>
         <source>Failed to %1 index &quot;%2&quot;</source>
-        <translation>无法%1索引 &quot;%2&quot;</translation>
+        <translation>鏃犳硶%1绱㈠紩 &quot;%2&quot;</translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>错误�?1</translation>
+        <translation>閿欒锛?1</translation>
     </message>
     <message>
         <source>Failed to drop index &quot;%1&quot;</source>
-        <translation>无法删除索引 &quot;%1&quot;</translation>
+        <translation>鏃犳硶鍒犻櫎绱㈠紩 &quot;%1&quot;</translation>
     </message>
     <message>
         <source>Reason: </source>
-        <translation>原因�?</translation>
+        <translation>鍘熷洜锛?</translation>
     </message>
     <message>
         <source>Insert Document</source>
-        <translation>插入文档</translation>
+        <translation>鎻掑叆鏂囨。</translation>
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>删除所有文�?/translation>
+        <translation>鍒犻櫎鎵€鏈夋枃妗?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>是否�?&lt;b&gt;%1&lt;/b&gt; 集合中删除所有文档？</translation>
+        <translation>鏄惁浠?&lt;b&gt;%1&lt;/b&gt; 闆嗗悎涓垹闄ゆ墍鏈夋枃妗ｏ紵</translation>
     </message>
     <message>
         <source>Drop</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>collection</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Duplicate Collection</source>
-        <translation>复制集合</translation>
+        <translation>澶嶅埗闆嗗悎</translation>
     </message>
     <message>
         <source>&amp;Duplicate</source>
-        <translation>复制(&amp;D)</translation>
+        <translation>澶嶅埗(&amp;D)</translation>
     </message>
     <message>
         <source>New Collection Name:</source>
-        <translation>新集合名称：</translation>
+        <translation>鏂伴泦鍚堝悕绉帮細</translation>
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集�?/translation>
+        <translation>閲嶅懡鍚嶉泦鍚?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命�?&amp;R)</translation>
+        <translation>閲嶅懡鍚?&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -3376,7 +3376,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -3384,20 +3384,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎使用 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护和优化�?Robo 3T 版本。我们去冗存精，修复了核心问题，让您可以专注于数据处理�?lt;/p&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;閲嶅埗鐗?v1.5.0 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋浣跨敤 Robo 3T&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ拰浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠幓鍐楀瓨绮撅紝淇浜嗘牳蹇冮棶棰橈紝璁╂偍鍙互涓撴敞浜庢暟鎹鐞嗐€?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定优先�?lt;/strong&gt;解决了关键的 Windows 编译问题和内存泄漏�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt;集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt;使用 Qt 5.15.2 �?Ninja 重新构建，性能更卓越�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt;所有依赖项现已封装，实现真正的免安装体验�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾浼樺厛锛?lt;/strong&gt;瑙ｅ喅浜嗗叧閿殑 Windows 缂栬瘧闂鍜屽唴瀛樻硠婕忋€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt;闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿鍖呫€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt;浣跨敤 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇村崜瓒娿€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 渚挎惡锛?lt;/strong&gt;鎵€鏈変緷璧栭」鐜板凡灏佽锛屽疄鐜扮湡姝ｇ殑鍏嶅畨瑁呬綋楠屻€?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        “数据由你掌控。感谢支持社区版本。�?                    &lt;/div&gt;
+                        鈥滄暟鎹敱浣犳帉鎺с€傛劅璋㈡敮鎸佺ぞ鍖虹増鏈€傗€?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -3416,7 +3416,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -3424,20 +3424,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎回来，Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护和优化�?Robo 3T 版本。我们去冗存精，修复了核心问题，让您可以专注于数据处理�?lt;/p&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;閲嶅埗鐗?v1.5.0 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋鍥炴潵锛孯obo 3T&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ拰浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠幓鍐楀瓨绮撅紝淇浜嗘牳蹇冮棶棰橈紝璁╂偍鍙互涓撴敞浜庢暟鎹鐞嗐€?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定优先�?lt;/strong&gt;解决了关键的 Windows 编译问题和内存泄漏�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt;集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt;使用 Qt 5.15.2 �?Ninja 重新构建，性能更卓越�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt;所有依赖项现已封装，实现真正的免安装体验�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾浼樺厛锛?lt;/strong&gt;瑙ｅ喅浜嗗叧閿殑 Windows 缂栬瘧闂鍜屽唴瀛樻硠婕忋€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt;闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿鍖呫€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt;浣跨敤 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇村崜瓒娿€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 渚挎惡锛?lt;/strong&gt;鎵€鏈変緷璧栭」鐜板凡灏佽锛屽疄鐜扮湡姝ｇ殑鍏嶅畨瑁呬綋楠屻€?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        “数据由你掌控。感谢支持社区版本。�?                    &lt;/div&gt;
+                        鈥滄暟鎹敱浣犳帉鎺с€傛劅璋㈡敮鎸佺ぞ鍖虹増鏈€傗€?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -3445,405 +3445,405 @@ Error:
     </message>
     &lt;message&gt;
         &lt;source&gt;&lt;p&gt;&lt;h1&gt;&lt;font color=&quot;#2d862d&quot;&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;&lt;/source&gt;
-        &lt;translation&gt;&lt;p&gt;&lt;h1&gt;&lt;font color=&quot;#2d862d&quot;&gt;博客文章&lt;/h1&gt;&lt;/p&gt;&lt;/translation&gt;
+        &lt;translation&gt;&lt;p&gt;&lt;h1&gt;&lt;font color=&quot;#2d862d&quot;&gt;鍗氬鏂囩珷&lt;/h1&gt;&lt;/p&gt;&lt;/translation&gt;
     &lt;/message&gt;
     &lt;message&gt;
         &lt;source&gt;All Blog Posts&lt;/source&gt;
-        &lt;translation&gt;所有博客文�?lt;/translation&gt;
+        &lt;translation&gt;鎵€鏈夊崥瀹㈡枃绔?lt;/translation&gt;
     &lt;/message&gt;
 </context>
 <context>
     <name>Robomongo::AddEditIndexDialog</name>
     <message>
         <source>Index Properties</source>
-        <translation>索引属�?/translation>
+        <translation>绱㈠紩灞炴€?/translation>
     </message>
     <message>
         <source>Basic</source>
-        <translation>基础</translation>
+        <translation>鍩虹</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级</translation>
+        <translation>楂樼骇</translation>
     </message>
     <message>
         <source>Text Search</source>
-        <translation>文本搜索</translation>
+        <translation>鏂囨湰鎼滅储</translation>
     </message>
     <message>
         <source>Unique</source>
-        <translation>唯一�?/translation>
+        <translation>鍞竴鎬?/translation>
     </message>
     <message>
         <source>Choose any name that will help you to identify this index.</source>
-        <translation>选择任何能帮助您识别此索引的名称�?/translation>
+        <translation>閫夋嫨浠讳綍鑳藉府鍔╂偍璇嗗埆姝ょ储寮曠殑鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Document that contains pairs with the name of the field or fields to index and order of the index. A 1 specifies ascending and a -1 specifies descending.</source>
-        <translation>包含要建立索引的一个或多个字段名称及其顺序的文档�? 表示升序�?1 表示降序�?/translation>
+        <translation>鍖呭惈瑕佸缓绔嬬储寮曠殑涓€涓垨澶氫釜瀛楁鍚嶇О鍙婂叾椤哄簭鐨勬枃妗ｃ€? 琛ㄧず鍗囧簭锛?1 琛ㄧず闄嶅簭銆?/translation>
     </message>
     <message>
         <source>If set, creates a unique index so that the collection will not accept insertion of documents where the index key or keys match an existing value in the index.</source>
-        <translation>如果设置，将创建唯一索引，使集合不接受索引键值与索引中现有值匹配的文档插入�?/translation>
+        <translation>濡傛灉璁剧疆锛屽皢鍒涘缓鍞竴绱㈠紩锛屼娇闆嗗悎涓嶆帴鍙楃储寮曢敭鍊间笌绱㈠紩涓幇鏈夊€煎尮閰嶇殑鏂囨。鎻掑叆銆?/translation>
     </message>
     <message>
         <source>Name:   </source>
-        <translation>名称�?  </translation>
+        <translation>鍚嶇О锛?  </translation>
     </message>
     <message>
         <source>Keys:   </source>
-        <translation>键：   </translation>
+        <translation>閿細   </translation>
     </message>
     <message>
         <source>Sparse</source>
-        <translation>稀疏索�?(Sparse)</translation>
+        <translation>绋€鐤忕储寮?(Sparse)</translation>
     </message>
     <message>
         <source>Create index in background</source>
-        <translation>在后台创建索�?/translation>
+        <translation>鍦ㄥ悗鍙板垱寤虹储寮?/translation>
     </message>
     <message>
         <source>seconds</source>
-        <translation>�?/translation>
+        <translation>绉?/translation>
     </message>
     <message>
         <source>Expire after</source>
-        <translation>在该时长后过�?/translation>
+        <translation>鍦ㄨ鏃堕暱鍚庤繃鏈?/translation>
     </message>
     <message>
         <source>If set, the index only references documents with the specified field. These indexes use less space but behave differently in some situations (particularly sorts).</source>
-        <translation>如果设置，索引只引用包含指定字段的文档。这些索引占用空间较少，但在某些情况下（特别是排序）表现不同�?/translation>
+        <translation>濡傛灉璁剧疆锛岀储寮曞彧寮曠敤鍖呭惈鎸囧畾瀛楁鐨勬枃妗ｃ€傝繖浜涚储寮曞崰鐢ㄧ┖闂磋緝灏戯紝浣嗗湪鏌愪簺鎯呭喌涓嬶紙鐗瑰埆鏄帓搴忥級琛ㄧ幇涓嶅悓銆?/translation>
     </message>
     <message>
         <source>Builds the index in the background so that building an index does not block other database activities.</source>
-        <translation>在后台构建索引，这样构建索引就不会阻塞其他数据库活动�?/translation>
+        <translation>鍦ㄥ悗鍙版瀯寤虹储寮曪紝杩欐牱鏋勫缓绱㈠紩灏变笉浼氶樆濉炲叾浠栨暟鎹簱娲诲姩銆?/translation>
     </message>
     <message>
         <source>Specifies a &lt;i&gt;time to live&lt;/i&gt;, in seconds, to control how long MongoDB retains documents in this collection</source>
-        <translation>指定 &lt;i&gt;存活时间&lt;/i&gt;（以秒为单位），用于控制 MongoDB 在此集合中保留文档的时间</translation>
+        <translation>鎸囧畾 &lt;i&gt;瀛樻椿鏃堕棿&lt;/i&gt;锛堜互绉掍负鍗曚綅锛夛紝鐢ㄤ簬鎺у埗 MongoDB 鍦ㄦ闆嗗悎涓繚鐣欐枃妗ｇ殑鏃堕棿</translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, the language that determines the list of stop words and the rules for the stemmer and tokenizer. The default value is &lt;b&gt;english&lt;/b&gt;</source>
-        <translation>对于 &lt;i&gt;文本&lt;/i&gt; 索引，该语言决定了停用词列表以及词干提取器和分词器的规则。默认值为 &lt;b&gt;english&lt;/b&gt;</translation>
+        <translation>瀵逛簬 &lt;i&gt;鏂囨湰&lt;/i&gt; 绱㈠紩锛岃璇█鍐冲畾浜嗗仠鐢ㄨ瘝鍒楄〃浠ュ強璇嶅共鎻愬彇鍣ㄥ拰鍒嗚瘝鍣ㄧ殑瑙勫垯銆傞粯璁ゅ€间负 &lt;b&gt;english&lt;/b&gt;</translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, specify the name of the field in the document that contains, for that document, the language to override the default language. The default value is &lt;b&gt;language&lt;/b&gt;</source>
-        <translation>对于 &lt;i&gt;文本&lt;/i&gt; 索引，请指定文档中的字段名称，该字段包含该文档用于覆盖默认语言的语言。默认值为 &lt;b&gt;language&lt;/b&gt;</translation>
+        <translation>瀵逛簬 &lt;i&gt;鏂囨湰&lt;/i&gt; 绱㈠紩锛岃鎸囧畾鏂囨。涓殑瀛楁鍚嶇О锛岃瀛楁鍖呭惈璇ユ枃妗ｇ敤浜庤鐩栭粯璁よ瑷€鐨勮瑷€銆傞粯璁ゅ€间负 &lt;b&gt;language&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Document that contains field and weight pairs. The weight is a number ranging from 1 to 99,999 and denotes the significance of the field relative to the other indexed fields. </source>
-        <translation>包含字段和权重对的文档。权重是 1 �?99,999 之间的数字，表示该字段相对于其他索引字段的重要性�?</translation>
+        <translation>鍖呭惈瀛楁鍜屾潈閲嶅鐨勬枃妗ｃ€傛潈閲嶆槸 1 鍒?99,999 涔嬮棿鐨勬暟瀛楋紝琛ㄧず璇ュ瓧娈电浉瀵逛簬鍏朵粬绱㈠紩瀛楁鐨勯噸瑕佹€с€?</translation>
     </message>
     <message>
         <source>Default language:</source>
-        <translation>默认语言�?/translation>
+        <translation>榛樿璇█锛?/translation>
     </message>
     <message>
         <source>Language override:</source>
-        <translation>语言覆盖 (Override)�?/translation>
+        <translation>璇█瑕嗙洊 (Override)锛?/translation>
     </message>
     <message>
         <source>Text weights</source>
-        <translation>文本权重</translation>
+        <translation>鏂囨湰鏉冮噸</translation>
     </message>
     <message>
         <source>Invalid json</source>
-        <translation>无效�?JSON</translation>
+        <translation>鏃犳晥鐨?JSON</translation>
     </message>
     <message>
         <source>Please check json text.
 </source>
-        <translation>请检�?JSON 文本�?</translation>
+        <translation>璇锋鏌?JSON 鏂囨湰銆?</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>警告</translation>
+        <translation>璀﹀憡</translation>
     </message>
     <message>
         <source>MongoDB does not support direct (one step) edit index. 
 To edit an existing index, the index must be dropped and recreated. This means if the recreate step fails, the index being edited might have already been dropped. In this case, Robo 3T will try to recover (recreate) the index being edited. Please consider backing up your index first. 
 
 Are you sure you want to proceed?</source>
-        <translation>MongoDB 不支持直接（一步到位）编辑索引�?要编辑现有索引，必须先删除索引然后重新创建。这意味着如果重建步骤失败，正在编辑的索引可能已被删除。在这种情况下，Robo 3T 将尝试恢复（重新创建）正在编辑的索引。请考虑先备份您的索引�?
-您确定要继续吗？</translation>
+        <translation>MongoDB 涓嶆敮鎸佺洿鎺ワ紙涓€姝ュ埌浣嶏級缂栬緫绱㈠紩銆?瑕佺紪杈戠幇鏈夌储寮曪紝蹇呴』鍏堝垹闄ょ储寮曠劧鍚庨噸鏂板垱寤恒€傝繖鎰忓懗鐫€濡傛灉閲嶅缓姝ラ澶辫触锛屾鍦ㄧ紪杈戠殑绱㈠紩鍙兘宸茶鍒犻櫎銆傚湪杩欑鎯呭喌涓嬶紝Robo 3T 灏嗗皾璇曟仮澶嶏紙閲嶆柊鍒涘缓锛夋鍦ㄧ紪杈戠殑绱㈠紩銆傝鑰冭檻鍏堝浠芥偍鐨勭储寮曘€?
+鎮ㄧ‘瀹氳缁х画鍚楋紵</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerReplicaSetTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>开�?Shell</translation>
+        <translation>寮€鍚?Shell</translation>
     </message>
     <message>
         <source>Open Direct Connection</source>
-        <translation>开启直接连�?/translation>
+        <translation>寮€鍚洿鎺ヨ繛鎺?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状�?/translation>
+        <translation>鏈嶅姟鍣ㄧ姸鎬?/translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>MongoDB 版本</translation>
+        <translation>MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>主机信息</translation>
+        <translation>涓绘満淇℃伅</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>显示日志</translation>
+        <translation>鏄剧ず鏃ュ織</translation>
     </message>
     <message>
         <source>[Unknown]</source>
-        <translation>[未知]</translation>
+        <translation>[鏈煡]</translation>
     </message>
     <message>
         <source>[Primary]</source>
-        <translation>[主要节点 (Primary)]</translation>
+        <translation>[涓昏鑺傜偣 (Primary)]</translation>
     </message>
     <message>
         <source>[Secondary]</source>
-        <translation>[次要节点 (Secondary)]</translation>
+        <translation>[娆¤鑺傜偣 (Secondary)]</translation>
     </message>
     <message>
         <source>[Not Reachable]</source>
-        <translation>[不可达]</translation>
+        <translation>[涓嶅彲杈綸</translation>
     </message>
     <message>
         <source> [member of </source>
-        <translation> [成员属于 </translation>
+        <translation> [鎴愬憳灞炰簬 </translation>
     </message>
 </context>
 <context>
     <name>Robomongo::LogWidget</name>
     <message>
         <source>Clear All</source>
-        <translation>清除全部</translation>
+        <translation>娓呴櫎鍏ㄩ儴</translation>
     </message>
     <message>
         <source>(truncated) </source>
-        <translation>(已截�? </translation>
+        <translation>(宸叉埅鏂? </translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CollectionStatsTreeWidget</name>
     <message>
         <source>Name</source>
-        <translation>名称</translation>
+        <translation>鍚嶇О</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>文档计数</translation>
+        <translation>鏂囨。璁℃暟</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>澶у皬</translation>
     </message>
     <message>
         <source>Storage</source>
-        <translation>存储空间</translation>
+        <translation>瀛樺偍绌洪棿</translation>
     </message>
     <message>
         <source>Index</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
     <message>
         <source>Average Object</source>
-        <translation>平均对象大小</translation>
+        <translation>骞冲潎瀵硅薄澶у皬</translation>
     </message>
     <message>
         <source>Padding</source>
-        <translation>填充因子 (Padding)</translation>
+        <translation>濉厖鍥犲瓙 (Padding)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AboutDialog</name>
     <message>
         <source>About </source>
-        <translation>关于 </translation>
+        <translation>鍏充簬 </translation>
     </message>
     <message>
         <source>About</source>
-        <translation>关于</translation>
+        <translation>鍏充簬</translation>
     </message>
     <message>
         <source>License Agreement</source>
-        <translation>许可协议</translation>
+        <translation>璁稿彲鍗忚</translation>
     </message>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=\&quot;https://%6\&quot;&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (构建版本 %3 - %4/%5)&lt;/h3&gt;�?Shell 为核心的 MongoDB 管理工具�?lt;br/&gt;您可以在 GitHub �?lt;a href=\&quot;https://%6\&quot;&gt;提交&lt;/a&gt;问题或建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性或特定用途适用性的担保�?lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项目�?lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;致谢�?lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (鏋勫缓鐗堟湰 %3 - %4/%5)&lt;/h3&gt;浠?Shell 涓烘牳蹇冪殑 MongoDB 绠＄悊宸ュ叿銆?lt;br/&gt;鎮ㄥ彲浠ュ湪 GitHub 涓?lt;a href=\&quot;https://%6\&quot;&gt;鎻愪氦&lt;/a&gt;闂鎴栧缓璁€?lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;鐗堟潈鎵€鏈?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;銆備繚鐣欐墍鏈夋潈鍒┿€?lt;br/&gt;&lt;br/&gt;鏈▼搴忔寜鈥滃師鏍封€濇彁渚涳紝涓嶆彁渚涗换浣曞舰寮忕殑鎷呬繚锛屽寘鎷絾涓嶉檺浜庡璁捐銆侀€傞攢鎬ф垨鐗瑰畾鐢ㄩ€旈€傜敤鎬х殑鎷呬繚銆?lt;br/&gt;&lt;br&gt;&lt;b&gt;渚濊禆椤圭洰锛?lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;鑷磋阿锛?lt;br/&gt;&lt;/b&gt;閮ㄥ垎鍥炬爣鐢?Freepik 璁捐 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionTreeItem</name>
     <message>
         <source>Insert Document...</source>
-        <translation>插入文档...</translation>
+        <translation>鎻掑叆鏂囨。...</translation>
     </message>
     <message>
         <source>Update Documents...</source>
-        <translation>更新文档...</translation>
+        <translation>鏇存柊鏂囨。...</translation>
     </message>
     <message>
         <source>Remove Documents...</source>
-        <translation>删除文档...</translation>
+        <translation>鍒犻櫎鏂囨。...</translation>
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>删除所有文�?..</translation>
+        <translation>鍒犻櫎鎵€鏈夋枃妗?..</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation>统计信息</translation>
+        <translation>缁熻淇℃伅</translation>
     </message>
     <message>
         <source>Storage Size</source>
-        <translation>存储大小</translation>
+        <translation>瀛樺偍澶у皬</translation>
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大�?/translation>
+        <translation>绱㈠紩鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大�?/translation>
+        <translation>鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Shard Version</source>
-        <translation>分片版本</translation>
+        <translation>鍒嗙墖鐗堟湰</translation>
     </message>
     <message>
         <source>Shard Distribution</source>
-        <translation>分片分布</translation>
+        <translation>鍒嗙墖鍒嗗竷</translation>
     </message>
     <message>
         <source>Drop Collection...</source>
-        <translation>删除集合...</translation>
+        <translation>鍒犻櫎闆嗗悎...</translation>
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集�?..</translation>
+        <translation>閲嶅懡鍚嶉泦鍚?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
-        <translation>克隆集合...</translation>
+        <translation>鍏嬮殕闆嗗悎...</translation>
     </message>
     <message>
         <source>View Documents</source>
-        <translation>查看文档</translation>
+        <translation>鏌ョ湅鏂囨。</translation>
     </message>
     <message>
         <source>Indexes</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
     <message>
         <source>Cannot load list of indexes.
 
 Error:
 </source>
-        <translation>无法加载索引列表�?
-错误�?</translation>
+        <translation>鏃犳硶鍔犺浇绱㈠紩鍒楄〃銆?
+閿欒锛?</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>add</source>
-        <translation>添加</translation>
+        <translation>娣诲姞</translation>
     </message>
     <message>
         <source>edit</source>
-        <translation>编辑</translation>
+        <translation>缂栬緫</translation>
     </message>
     <message>
         <source>Operation failed</source>
-        <translation>操作失败</translation>
+        <translation>鎿嶄綔澶辫触</translation>
     </message>
     <message>
         <source>Failed to %1 index &quot;%2&quot;</source>
-        <translation>无法%1索引�?2�?/translation>
+        <translation>鏃犳硶%1绱㈠紩鈥?2鈥?/translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>错误�?1</translation>
+        <translation>閿欒锛?1</translation>
     </message>
     <message>
         <source>Failed to drop index &quot;%1&quot;</source>
-        <translation>删除索引�?1”失�?/translation>
+        <translation>鍒犻櫎绱㈠紩鈥?1鈥濆け璐?/translation>
     </message>
     <message>
         <source>Reason: </source>
-        <translation>原因�?</translation>
+        <translation>鍘熷洜锛?</translation>
     </message>
     <message>
         <source>Insert Document</source>
-        <translation>插入文档</translation>
+        <translation>鎻掑叆鏂囨。</translation>
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>删除所有文�?/translation>
+        <translation>鍒犻櫎鎵€鏈夋枃妗?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>您确定要删除集合 &lt;b&gt;%1&lt;/b&gt; 中的所有文档吗�?/translation>
+        <translation>鎮ㄧ‘瀹氳鍒犻櫎闆嗗悎 &lt;b&gt;%1&lt;/b&gt; 涓殑鎵€鏈夋枃妗ｅ悧锛?/translation>
     </message>
     <message>
         <source>Drop</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>collection</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Duplicate Collection</source>
-        <translation>克隆集合</translation>
+        <translation>鍏嬮殕闆嗗悎</translation>
     </message>
     <message>
         <source>&amp;Duplicate</source>
-        <translation>克隆(&amp;D)</translation>
+        <translation>鍏嬮殕(&amp;D)</translation>
     </message>
     <message>
         <source>New Collection Name:</source>
-        <translation>新集合名称：</translation>
+        <translation>鏂伴泦鍚堝悕绉帮細</translation>
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集�?/translation>
+        <translation>閲嶅懡鍚嶉泦鍚?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命�?&amp;R)</translation>
+        <translation>閲嶅懡鍚?&amp;R)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExportDialog</name>
     <message>
         <source>Export Collection</source>
-        <translation>导出集合</translation>
+        <translation>瀵煎嚭闆嗗悎</translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称：</translation>
+        <translation>鏁版嵁搴撳悕绉帮細</translation>
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称�?/translation>
+        <translation>闆嗗悎鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Server: </source>
-        <translation>服务器： </translation>
+        <translation>鏈嶅姟鍣細 </translation>
     </message>
     <message>
         <source>Database: </source>
-        <translation>数据库： </translation>
+        <translation>鏁版嵁搴擄細 </translation>
     </message>
     <message>
         <source>Collection: </source>
-        <translation>集合�?</translation>
+        <translation>闆嗗悎锛?</translation>
     </message>
     <message>
         <source>JSON</source>
@@ -3855,296 +3855,296 @@ Error:
     </message>
     <message>
         <source>Fields:</source>
-        <translation>字段�?/translation>
+        <translation>瀛楁锛?/translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation>格式�?/translation>
+        <translation>鏍煎紡锛?/translation>
     </message>
     <message>
         <source>Query:</source>
-        <translation>查询 (Query)�?/translation>
+        <translation>鏌ヨ (Query)锛?/translation>
     </message>
     <message>
         <source>File Name:</source>
-        <translation>文件名：</translation>
+        <translation>鏂囦欢鍚嶏細</translation>
     </message>
     <message>
         <source>Directory:</source>
-        <translation>目录�?/translation>
+        <translation>鐩綍锛?/translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>命令�?/translation>
+        <translation>鍛戒护锛?/translation>
     </message>
     <message>
         <source>Manual Mode</source>
-        <translation>手动模式</translation>
+        <translation>鎵嬪姩妯″紡</translation>
     </message>
     <message>
         <source>E&amp;xport</source>
-        <translation>导出(&amp;X)</translation>
+        <translation>瀵煎嚭(&amp;X)</translation>
     </message>
     <message>
         <source>Selected Collection</source>
-        <translation>选中的集�?/translation>
+        <translation>閫変腑鐨勯泦鍚?/translation>
     </message>
     <message>
         <source>Output Properties</source>
-        <translation>输出属�?/translation>
+        <translation>杈撳嚭灞炴€?/translation>
     </message>
     <message>
         <source>Manual Export</source>
-        <translation>手动导出</translation>
+        <translation>鎵嬪姩瀵煎嚭</translation>
     </message>
     <message>
         <source>Export Summary</source>
-        <translation>导出摘要</translation>
+        <translation>瀵煎嚭鎽樿</translation>
     </message>
     <message>
         <source>Exporting...</source>
-        <translation>正在导出...</translation>
+        <translation>姝ｅ湪瀵煎嚭...</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>&quot;Fields&quot; option is required in CSV mode.</source>
-        <translation>CSV 模式下必须提供“字段”选项�?/translation>
+        <translation>CSV 妯″紡涓嬪繀椤绘彁渚涒€滃瓧娈碘€濋€夐」銆?/translation>
     </message>
     <message>
         <source>Select Directory</source>
-        <translation>选择目录</translation>
+        <translation>閫夋嫨鐩綍</translation>
     </message>
     <message>
         <source>Auto Mode</source>
-        <translation>自动模式</translation>
+        <translation>鑷姩妯″紡</translation>
     </message>
     <message>
         <source>Selected Server</source>
-        <translation>选中的服务器</translation>
+        <translation>閫変腑鐨勬湇鍔″櫒</translation>
     </message>
     <message>
         <source>Export Successful: 
 </source>
-        <translation>导出成功�?</translation>
+        <translation>瀵煎嚭鎴愬姛锛?</translation>
     </message>
     <message>
         <source>Exported file: </source>
-        <translation>导出的文件： </translation>
+        <translation>瀵煎嚭鐨勬枃浠讹細 </translation>
     </message>
     <message>
         <source>Number of records exported:</source>
-        <translation>导出的记录数量：</translation>
+        <translation>瀵煎嚭鐨勮褰曟暟閲忥細</translation>
     </message>
     <message>
         <source>Export Failed.
 </source>
-        <translation>导出失败�?</translation>
+        <translation>瀵煎嚭澶辫触銆?</translation>
     </message>
     <message>
         <source>Output:
 </source>
-        <translation>输出�?</translation>
+        <translation>杈撳嚭锛?</translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed to start. Either the invoked program is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>错误：“mongoexport”进程启动失败。可能是程序文件缺失，或者您没有足够的执行权限�?/translation>
+        <translation>閿欒锛氣€渕ongoexport鈥濊繘绋嬪惎鍔ㄥけ璐ャ€傚彲鑳芥槸绋嬪簭鏂囦欢缂哄け锛屾垨鑰呮偍娌℃湁瓒冲鐨勬墽琛屾潈闄愩€?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process crashed some time after starting successfully..</source>
-        <translation>错误：“mongoexport”进程在启动后意外崩溃�?/translation>
+        <translation>閿欒锛氣€渕ongoexport鈥濊繘绋嬪湪鍚姩鍚庢剰澶栧穿婧冦€?/translation>
     </message>
     <message>
         <source>Error: &quot;mongoexport&quot; process failed. Error code: </source>
-        <translation>错误：“mongoexport”进程失败。错误代码： </translation>
+        <translation>閿欒锛氣€渕ongoexport鈥濊繘绋嬪け璐ャ€傞敊璇唬鐮侊細 </translation>
     </message>
     <message>
         <source>Details</source>
-        <translation>详情</translation>
+        <translation>璇︽儏</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用�?WiredTiger 存储引擎且数据库版本需�?3.0 或更高�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜?WiredTiger 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰闇€涓?3.0 鎴栨洿楂樸€?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>该选项仅适用于数据库版本 3.2 或更高�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜庢暟鎹簱鐗堟湰 3.2 鎴栨洿楂樸€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用�?MMAPv1 存储引擎且数据库版本需�?3.0 或更高�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰闇€涓?3.0 鎴栨洿楂樸€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>该选项仅适用�?MMAPv1 存储引擎，并�?3.0 版本起已弃用�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸锛屽苟鑷?3.0 鐗堟湰璧峰凡寮冪敤銆?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>该选项自数据库版本 3.2 起已弃用�?/translation>
+        <translation>璇ラ€夐」鑷暟鎹簱鐗堟湰 3.2 璧峰凡寮冪敤銆?/translation>
     </message>
     <message>
         <source>Create Collection</source>
-        <translation>创建集合</translation>
+        <translation>鍒涘缓闆嗗悎</translation>
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称�?/translation>
+        <translation>闆嗗悎鍚嶇О锛?/translation>
     </message>
     <message>
         <source>C&amp;reate</source>
-        <translation>创建(&amp;R)</translation>
+        <translation>鍒涘缓(&amp;R)</translation>
     </message>
     <message>
         <source>Validate JSON</source>
-        <translation>验证 JSON</translation>
+        <translation>楠岃瘉 JSON</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>选项</translation>
+        <translation>閫夐」</translation>
     </message>
     <message>
         <source>Storage Engine</source>
-        <translation>存储引擎</translation>
+        <translation>瀛樺偍寮曟搸</translation>
     </message>
     <message>
         <source>Validator</source>
-        <translation>验证�?/translation>
+        <translation>楠岃瘉鍣?/translation>
     </message>
     <message>
         <source>Index Option Defaults</source>
-        <translation>索引选项默认�?/translation>
+        <translation>绱㈠紩閫夐」榛樿鍊?/translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级</translation>
+        <translation>楂樼骇</translation>
     </message>
     <message>
         <source>Create capped collection</source>
-        <translation>创建上限集合 (Capped)</translation>
+        <translation>鍒涘缓涓婇檺闆嗗悎 (Capped)</translation>
     </message>
     <message>
         <source>Maximum size in bytes: </source>
-        <translation>最大容�?(字节)�?</translation>
+        <translation>鏈€澶у閲?(瀛楄妭)锛?</translation>
     </message>
     <message>
         <source>Maximum number of documents: </source>
-        <translation>最大文档数量： </translation>
+        <translation>鏈€澶ф枃妗ｆ暟閲忥細 </translation>
     </message>
     <message>
         <source>Auto index _id</source>
-        <translation>自动�?_id 创建索引</translation>
+        <translation>鑷姩涓?_id 鍒涘缓绱㈠紩</translation>
     </message>
     <message>
         <source>Use power-of-2 sizes</source>
-        <translation>使用 2 的幂次大小空�?/translation>
+        <translation>浣跨敤 2 鐨勫箓娆″ぇ灏忕┖闂?/translation>
     </message>
     <message>
         <source>No Padding</source>
-        <translation>无填�?(No Padding)</translation>
+        <translation>鏃犲～鍏?(No Padding)</translation>
     </message>
     <message>
         <source>Enter the configuration for the storage engine: </source>
-        <translation>输入存储引擎的配置信息： </translation>
+        <translation>杈撳叆瀛樺偍寮曟搸鐨勯厤缃俊鎭細 </translation>
     </message>
     <message>
         <source>Validation Level: </source>
-        <translation>验证级别�?</translation>
+        <translation>楠岃瘉绾у埆锛?</translation>
     </message>
     <message>
         <source>Validation Action: </source>
-        <translation>验证动作�?</translation>
+        <translation>楠岃瘉鍔ㄤ綔锛?</translation>
     </message>
     <message>
         <source>Enter the validator document for this collection: </source>
-        <translation>输入此集合的验证文档�?</translation>
+        <translation>杈撳叆姝ら泦鍚堢殑楠岃瘉鏂囨。锛?</translation>
     </message>
     <message>
         <source>Enter a default configuration for indexes when creating a collection: </source>
-        <translation>输入创建集合时的索引默认配置�?</translation>
+        <translation>杈撳叆鍒涘缓闆嗗悎鏃剁殑绱㈠紩榛樿閰嶇疆锛?</translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位�?(%2, %3)�?/translation>
+        <translation>鏃犳硶瑙ｆ瀽 JSON锛?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;锛屼綅浜?(%2, %3)銆?/translation>
     </message>
     <message>
         <source>Parsing error</source>
-        <translation>解析错误</translation>
+        <translation>瑙ｆ瀽閿欒</translation>
     </message>
     <message>
         <source>Validation</source>
-        <translation>验证</translation>
+        <translation>楠岃瘉</translation>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效�?/translation>
+        <translation>JSON 鏍煎紡鏈夋晥锛?/translation>
     </message>
     <message>
         <source>Maximum size is required for capped collections</source>
-        <translation>上限集合必须设置最大容�?/translation>
+        <translation>涓婇檺闆嗗悎蹇呴』璁剧疆鏈€澶у閲?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateUserDialog</name>
     <message>
         <source>Add User</source>
-        <translation>添加用户</translation>
+        <translation>娣诲姞鐢ㄦ埛</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称�?/translation>
+        <translation>鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Password:</source>
-        <translation>密码�?/translation>
+        <translation>瀵嗙爜锛?/translation>
     </message>
     <message>
         <source>UserSource:</source>
-        <translation>用户�?(UserSource)�?/translation>
+        <translation>鐢ㄦ埛婧?(UserSource)锛?/translation>
     </message>
     <message>
         <source>read</source>
-        <translation>读取 (read)</translation>
+        <translation>璇诲彇 (read)</translation>
     </message>
     <message>
         <source>readWrite</source>
-        <translation>读写 (readWrite)</translation>
+        <translation>璇诲啓 (readWrite)</translation>
     </message>
     <message>
         <source>dbAdmin</source>
-        <translation>数据库管�?(dbAdmin)</translation>
+        <translation>鏁版嵁搴撶鐞?(dbAdmin)</translation>
     </message>
     <message>
         <source>userAdmin</source>
-        <translation>用户管理 (userAdmin)</translation>
+        <translation>鐢ㄦ埛绠＄悊 (userAdmin)</translation>
     </message>
     <message>
         <source>clusterAdmin</source>
-        <translation>集群管理 (clusterAdmin)</translation>
+        <translation>闆嗙兢绠＄悊 (clusterAdmin)</translation>
     </message>
     <message>
         <source>readAnyDatabase</source>
-        <translation>读取任意数据�?(readAnyDatabase)</translation>
+        <translation>璇诲彇浠绘剰鏁版嵁搴?(readAnyDatabase)</translation>
     </message>
     <message>
         <source>readWriteAnyDatabase</source>
-        <translation>读写任意数据�?(readWriteAnyDatabase)</translation>
+        <translation>璇诲啓浠绘剰鏁版嵁搴?(readWriteAnyDatabase)</translation>
     </message>
     <message>
         <source>userAdminAnyDatabase</source>
-        <translation>用户管理任意数据�?(userAdminAnyDatabase)</translation>
+        <translation>鐢ㄦ埛绠＄悊浠绘剰鏁版嵁搴?(userAdminAnyDatabase)</translation>
     </message>
     <message>
         <source>dbAdminAnyDatabase</source>
-        <translation>数据库管理任意数据库 (dbAdminAnyDatabase)</translation>
+        <translation>鏁版嵁搴撶鐞嗕换鎰忔暟鎹簱 (dbAdminAnyDatabase)</translation>
     </message>
     <message>
         <source>Read Only</source>
-        <translation>只读</translation>
+        <translation>鍙</translation>
     </message>
 </context>
 <context>
@@ -4152,97 +4152,97 @@ Error:
     <message>
         <source>Enter new value for Robo 3T shell timeout in seconds:
 </source>
-        <translation>输入 Robo 3T 的新 Shell 超时时间 (以秒为单�?�?</translation>
+        <translation>杈撳叆 Robo 3T 鐨勬柊 Shell 瓒呮椂鏃堕棿 (浠ョ涓哄崟浣?锛?</translation>
     </message>
     <message>
         <source>Current Value: </source>
-        <translation>当前值： </translation>
+        <translation>褰撳墠鍊硷細 </translation>
     </message>
     <message>
         <source>New Value: </source>
-        <translation>新值： </translation>
+        <translation>鏂板€硷細 </translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
-        <translation>修改 Shell 超时</translation>
+        <translation>淇敼 Shell 瓒呮椂</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::PreferencesDialog</name>
     <message>
         <source>Preferences %1</source>
-        <translation>%1 首选项</translation>
+        <translation>%1 棣栭€夐」</translation>
     </message>
     <message>
         <source>Default display mode:</source>
-        <translation>默认显示模式�?/translation>
+        <translation>榛樿鏄剧ず妯″紡锛?/translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>文本 (Text)</translation>
+        <translation>鏂囨湰 (Text)</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>树形 (Tree)</translation>
+        <translation>鏍戝舰 (Tree)</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>表格 (Table)</translation>
+        <translation>琛ㄦ牸 (Table)</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation>自定�?/translation>
+        <translation>鑷畾涔?/translation>
     </message>
     <message>
         <source>Display Dates in:</source>
-        <translation>日期显示方式�?/translation>
+        <translation>鏃ユ湡鏄剧ず鏂瑰紡锛?/translation>
     </message>
     <message>
         <source>UTC</source>
-        <translation>UTC (世界标准时间)</translation>
+        <translation>UTC (涓栫晫鏍囧噯鏃堕棿)</translation>
     </message>
     <message>
         <source>Local Time</source>
-        <translation>本地时间</translation>
+        <translation>鏈湴鏃堕棿</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding:</source>
-        <translation>旧版 UUID 编码�?/translation>
+        <translation>鏃х増 UUID 缂栫爜锛?/translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷�?/translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?/translation>
     </message>
     <message>
         <source>Styles:</source>
-        <translation>界面样式�?/translation>
+        <translation>鐣岄潰鏍峰紡锛?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDialog</name>
     <message>
         <source>Connection Settings</source>
-        <translation>连接设置</translation>
+        <translation>杩炴帴璁剧疆</translation>
     </message>
     <message>
         <source>&amp;Test</source>
-        <translation>测试(&amp;T)</translation>
+        <translation>娴嬭瘯(&amp;T)</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>连接</translation>
+        <translation>杩炴帴</translation>
     </message>
     <message>
         <source>Authentication</source>
-        <translation>身份验证</translation>
+        <translation>韬唤楠岃瘉</translation>
     </message>
     <message>
         <source>SSH</source>
-        <translation>SSH 隧道</translation>
+        <translation>SSH 闅ч亾</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -4250,151 +4250,151 @@ Error:
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级</translation>
+        <translation>楂樼骇</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDiagnosticDialog</name>
     <message>
         <source>Diagnostic</source>
-        <translation>连接诊断</translation>
+        <translation>杩炴帴璇婃柇</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation>关闭(&amp;C)</translation>
+        <translation>鍏抽棴(&amp;C)</translation>
     </message>
     <message>
         <source>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;Show error details&lt;/a&gt;</source>
-        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;显示详细错误信息&lt;/a&gt;</translation>
+        <translation>&lt;a href=&apos;error&apos; style=&apos;color: #777777;&apos;&gt;鏄剧ず璇︾粏閿欒淇℃伅&lt;/a&gt;</translation>
     </message>
     <message>
         <source>Error details</source>
-        <translation>错误详情</translation>
+        <translation>閿欒璇︽儏</translation>
     </message>
     <message>
         <source>Connecting to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;...</source>
-        <translation>正在连接 SSH 服务器于 &lt;b&gt;%1:%2&lt;/b&gt;...</translation>
+        <translation>姝ｅ湪杩炴帴 SSH 鏈嶅姟鍣ㄤ簬 &lt;b&gt;%1:%2&lt;/b&gt;...</translation>
     </message>
     <message>
         <source>Connected to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>已连接到 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>宸茶繛鎺ュ埌 SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Unable to connect to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>无法连接�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>鏃犳硶杩炴帴鍒?SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source> via SSH tunnel</source>
-        <translation> (通过 SSH 隧道)</translation>
+        <translation> (閫氳繃 SSH 闅ч亾)</translation>
     </message>
     <message>
         <source> via TLS tunnel</source>
-        <translation> (通过 TLS 隧道)</translation>
+        <translation> (閫氳繃 TLS 闅ч亾)</translation>
     </message>
     <message>
         <source>Connecting to &lt;b&gt;%1&lt;/b&gt;%2...</source>
-        <translation>正在连接�?&lt;b&gt;%1&lt;/b&gt;%2...</translation>
+        <translation>姝ｅ湪杩炴帴鍒?&lt;b&gt;%1&lt;/b&gt;%2...</translation>
     </message>
     <message>
         <source>Connected to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>已成功连接到 &lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>宸叉垚鍔熻繛鎺ュ埌 &lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Failed to connect to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>连接�?&lt;b&gt;%1&lt;/b&gt;%2 失败</translation>
+        <translation>杩炴帴鍒?&lt;b&gt;%1&lt;/b&gt;%2 澶辫触</translation>
     </message>
     <message>
         <source>No chance to try connection to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>由于前置步骤失败，未尝试连接�?&lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>鐢变簬鍓嶇疆姝ラ澶辫触锛屾湭灏濊瘯杩炴帴鍒?&lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Authorizing on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;...</source>
-        <translation>正在以用�?&lt;b&gt;%2&lt;/b&gt; 身份�?&lt;b&gt;%1&lt;/b&gt; 数据库进行验�?..</translation>
+        <translation>姝ｅ湪浠ョ敤鎴?&lt;b&gt;%2&lt;/b&gt; 韬唤鍦?&lt;b&gt;%1&lt;/b&gt; 鏁版嵁搴撹繘琛岄獙璇?..</translation>
     </message>
     <message>
         <source>Authorized on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>身份验证成功：用�?&lt;b&gt;%2&lt;/b&gt; 已登录数据库 &lt;b&gt;%1&lt;/b&gt;</translation>
+        <translation>韬唤楠岃瘉鎴愬姛锛氱敤鎴?&lt;b&gt;%2&lt;/b&gt; 宸茬櫥褰曟暟鎹簱 &lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Authorization failed on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>身份验证失败：用�?&lt;b&gt;%2&lt;/b&gt; 无法登录数据�?&lt;b&gt;%1&lt;/b&gt;</translation>
+        <translation>韬唤楠岃瘉澶辫触锛氱敤鎴?&lt;b&gt;%2&lt;/b&gt; 鏃犳硶鐧诲綍鏁版嵁搴?&lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
         <source>No chance to authorize</source>
-        <translation>未尝试身份验�?(因连接失�?</translation>
+        <translation>鏈皾璇曡韩浠介獙璇?(鍥犺繛鎺ュけ璐?</translation>
     </message>
     <message>
         <source>Loading list of databases...</source>
-        <translation>正在加载数据库列�?..</translation>
+        <translation>姝ｅ湪鍔犺浇鏁版嵁搴撳垪琛?..</translation>
     </message>
     <message>
         <source>Access to databases is available</source>
-        <translation>可以访问数据库列�?/translation>
+        <translation>鍙互璁块棶鏁版嵁搴撳垪琛?/translation>
     </message>
     <message>
         <source>Failed to load list of databases</source>
-        <translation>加载数据库列表失�?/translation>
+        <translation>鍔犺浇鏁版嵁搴撳垪琛ㄥけ璐?/translation>
     </message>
     <message>
         <source>No chance to load list of databases</source>
-        <translation>未尝试加载数据库列表</translation>
+        <translation>鏈皾璇曞姞杞芥暟鎹簱鍒楄〃</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AboutDialog</name>
     <message>
         <source>About </source>
-        <translation>关于 </translation>
+        <translation>鍏充簬 </translation>
     </message>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=\&quot;https://%6\&quot;&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (构建版本 %3 - %4/%5)&lt;/h3&gt;�?Shell 为核心的 MongoDB 管理工具�?lt;br/&gt;您可以在 GitHub �?lt;a href=\&quot;https://%6\&quot;&gt;提交&lt;/a&gt;问题或建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性或特定用途适用性的担保�?lt;br/&gt;&lt;br&gt;&lt;b&gt;依赖项目�?lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;致谢�?lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (鏋勫缓鐗堟湰 %3 - %4/%5)&lt;/h3&gt;浠?Shell 涓烘牳蹇冪殑 MongoDB 绠＄悊宸ュ叿銆?lt;br/&gt;鎮ㄥ彲浠ュ湪 GitHub 涓?lt;a href=\&quot;https://%6\&quot;&gt;鎻愪氦&lt;/a&gt;闂鎴栧缓璁€?lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;鐗堟潈鎵€鏈?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;銆備繚鐣欐墍鏈夋潈鍒┿€?lt;br/&gt;&lt;br/&gt;鏈▼搴忔寜鈥滃師鏍封€濇彁渚涳紝涓嶆彁渚涗换浣曞舰寮忕殑鎷呬繚锛屽寘鎷絾涓嶉檺浜庡璁捐銆侀€傞攢鎬ф垨鐗瑰畾鐢ㄩ€旈€傜敤鎬х殑鎷呬繚銆?lt;br/&gt;&lt;br&gt;&lt;b&gt;渚濊禆椤圭洰锛?lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;鑷磋阿锛?lt;br/&gt;&lt;/b&gt;閮ㄥ垎鍥炬爣鐢?Freepik 璁捐 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>关于</translation>
+        <translation>鍏充簬</translation>
     </message>
     <message>
         <source>License Agreement</source>
-        <translation>许可协议</translation>
+        <translation>璁稿彲鍗忚</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CopyCollection</name>
     <message>
         <source>Copy Collection</source>
-        <translation>复制集合</translation>
+        <translation>澶嶅埗闆嗗悎</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>复制</translation>
+        <translation>澶嶅埗</translation>
     </message>
     <message>
         <source>Select server:</source>
-        <translation>选择服务器：</translation>
+        <translation>閫夋嫨鏈嶅姟鍣細</translation>
     </message>
     <message>
         <source>Copy &lt;b&gt;%1&lt;/b&gt; collection to database on this or another server. You need to be already connected to destination server, in order to see this server in the list below. This operation will &lt;i&gt;not&lt;/i&gt; overwrite existing documents with the same _id.</source>
-        <translation>将集�?&lt;b&gt;%1&lt;/b&gt; 复制到当前服务器或其他服务器的数据库。您需要先连接到目标服务器，才能在下方列表中看到它。此操作&lt;i&gt;不会&lt;/i&gt;覆盖具有相同 _id 的现有文档�?/translation>
+        <translation>灏嗛泦鍚?&lt;b&gt;%1&lt;/b&gt; 澶嶅埗鍒板綋鍓嶆湇鍔″櫒鎴栧叾浠栨湇鍔″櫒鐨勬暟鎹簱銆傛偍闇€瑕佸厛杩炴帴鍒扮洰鏍囨湇鍔″櫒锛屾墠鑳藉湪涓嬫柟鍒楄〃涓湅鍒板畠銆傛鎿嶄綔&lt;i&gt;涓嶄細&lt;/i&gt;瑕嗙洊鍏锋湁鐩稿悓 _id 鐨勭幇鏈夋枃妗ｃ€?/translation>
     </message>
     <message>
         <source>Select database:</source>
-        <translation>选择数据库：</translation>
+        <translation>閫夋嫨鏁版嵁搴擄細</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::FunctionTextEditor</name>
     <message>
         <source>Edit Function</source>
-        <translation>编辑函数</translation>
+        <translation>缂栬緫鍑芥暟</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称�?/translation>
+        <translation>鍚嶇О锛?/translation>
     </message>
     <message>
         <source>Code:</source>
-        <translation>代码�?/translation>
+        <translation>浠ｇ爜锛?/translation>
     </message>
 </context>
 <context>
@@ -4414,7 +4414,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -4422,20 +4422,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们移除了多余的干扰并修复了核心底层，只为让您更专注地管理数据�?lt;/p&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;閲嶅埗鐗?v1.5.0 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋鍥炲埌 Robo 3T&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ苟娣卞害浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠Щ闄や簡澶氫綑鐨勫共鎵板苟淇浜嗘牳蹇冨簳灞傦紝鍙负璁╂偍鏇翠笓娉ㄥ湴绠＄悊鏁版嵁銆?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及内存泄漏�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt; 所有依赖现已内部打包，实现真正的“零安装”体验�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾鎬т紭鍏堬細&lt;/strong&gt; 褰诲簳瑙ｅ喅浜嗗叧閿殑 Windows 缂栬瘧闂鍙婂唴瀛樻硠婕忋€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt; 闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿鍖呫€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt; 鍩轰簬 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇存瀬鑷淬€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 渚挎惡锛?lt;/strong&gt; 鎵€鏈変緷璧栫幇宸插唴閮ㄦ墦鍖咃紝瀹炵幇鐪熸鐨勨€滈浂瀹夎鈥濅綋楠屻€?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        &quot;您的数据，由您掌控。感谢支持社区版�?quot;
+                        &quot;鎮ㄧ殑鏁版嵁锛岀敱鎮ㄦ帉鎺с€傛劅璋㈡敮鎸佺ぞ鍖虹増銆?quot;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
@@ -4455,7 +4455,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;�?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -4463,20 +4463,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;重制�?v1.5.0 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们移除了多余的干扰并修复了核心底层，只为让您更专注地管理数据�?lt;/p&gt;
+                    &lt;div class=&quot;version-badge&quot;&gt;閲嶅埗鐗?v1.5.0 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋鍥炲埌 Robo 3T&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ苟娣卞害浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠Щ闄や簡澶氫綑鐨勫共鎵板苟淇浜嗘牳蹇冨簳灞傦紝鍙负璁╂偍鏇翠笓娉ㄥ湴绠＄悊鏁版嵁銆?lt;/p&gt;
                     
                     &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及内存泄漏�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 集成了稳定的 OpenSSL 1.1.1u 工具包�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 便携�?lt;/strong&gt; 所有依赖现已内部打包，实现真正的“零安装”体验�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾鎬т紭鍏堬細&lt;/strong&gt; 褰诲簳瑙ｅ喅浜嗗叧閿殑 Windows 缂栬瘧闂鍙婂唴瀛樻硠婕忋€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt; 闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿鍖呫€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt; 鍩轰簬 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇存瀬鑷淬€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100% 渚挎惡锛?lt;/strong&gt; 鎵€鏈変緷璧栫幇宸插唴閮ㄦ墦鍖咃紝瀹炵幇鐪熸鐨勨€滈浂瀹夎鈥濅綋楠屻€?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;footer&quot;&gt;
-                        &quot;您的数据，由您掌控。感谢支持社区版�?quot;
+                        &quot;鎮ㄧ殑鏁版嵁锛岀敱鎮ㄦ帉鎺с€傛劅璋㈡敮鎸佺ぞ鍖虹増銆?quot;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
@@ -4485,108 +4485,108 @@ Error:
     &lt;/message&gt;
     &lt;message&gt;
         &lt;source&gt;&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;&lt;/source&gt;
-        &lt;translation&gt;&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;博客文章&lt;/h1&gt;&lt;/p&gt;&lt;/translation&gt;
+        &lt;translation&gt;&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;鍗氬鏂囩珷&lt;/h1&gt;&lt;/p&gt;&lt;/translation&gt;
     &lt;/message&gt;
     &lt;message&gt;
         &lt;source&gt;All Blog Posts&lt;/source&gt;
-        &lt;translation&gt;所有博客文�?lt;/translation&gt;
+        &lt;translation&gt;鎵€鏈夊崥瀹㈡枃绔?lt;/translation&gt;
     </message>
 </context>
 <context>
     <name>Robomongo::PagingWidget</name>
     <message>
         <source>Skip</source>
-        <translation>跳过 (Skip)</translation>
+        <translation>璺宠繃 (Skip)</translation>
     </message>
     <message>
         <source>Batch Size (number of documents shown at once)</source>
-        <translation>批量大小 (一次显示的文档数量)</translation>
+        <translation>鎵归噺澶у皬 (涓€娆℃樉绀虹殑鏂囨。鏁伴噺)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerServerTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell 窗口</translation>
+        <translation>鎵撳紑 Shell 绐楀彛</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>新建数据�?/translation>
+        <translation>鏂板缓鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>查看服务器状�?(serverStatus)</translation>
+        <translation>鏌ョ湅鏈嶅姟鍣ㄧ姸鎬?(serverStatus)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>查看 MongoDB 版本</translation>
+        <translation>鏌ョ湅 MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>查看主机信息 (hostInfo)</translation>
+        <translation>鏌ョ湅涓绘満淇℃伅 (hostInfo)</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>查看运行日志</translation>
+        <translation>鏌ョ湅杩愯鏃ュ織</translation>
     </message>
     <message>
         <source>Disconnect</source>
-        <translation>断开连接</translation>
+        <translation>鏂紑杩炴帴</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统</translation>
+        <translation>绯荤粺</translation>
     </message>
     <message>
         <source>Cannot load list of databases.
 
 Error:
 </source>
-        <translation>无法加载数据库列表�?
-错误信息�?</translation>
+        <translation>鏃犳硶鍔犺浇鏁版嵁搴撳垪琛ㄣ€?
+閿欒淇℃伅锛?</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Replica set&apos;s primary is unreachable.
 
 Reason:
 Connection failure. </source>
-        <translation>副本集的主节�?(Primary) 不可达�?
-原因�?连接失败�?</translation>
+        <translation>鍓湰闆嗙殑涓昏妭鐐?(Primary) 涓嶅彲杈俱€?
+鍘熷洜锛?杩炴帴澶辫触銆?</translation>
     </message>
     <message>
         <source> [Offline]</source>
-        <translation> [离线]</translation>
+        <translation> [绂荤嚎]</translation>
     </message>
     <message>
         <source>&amp;Create</source>
-        <translation>创建(&amp;C)</translation>
+        <translation>鍒涘缓(&amp;C)</translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名称：</translation>
+        <translation>鏁版嵁搴撳悕绉帮細</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source> nodes</source>
-        <translation> 个节�?/translation>
+        <translation> 涓妭鐐?/translation>
     </message>
     <message>
         <source> node</source>
-        <translation> 个节�?/translation>
+        <translation> 涓妭鐐?/translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本�?(Replica Set)</translation>
+        <translation>鍓湰闆?(Replica Set)</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -4598,133 +4598,133 @@ Connection failure. </source>
     </message>
     <message>
         <source>SSH</source>
-        <translation>SSH 隧道</translation>
+        <translation>SSH 闅ч亾</translation>
     </message>
     <message>
         <source>, SSH</source>
-        <translation>, SSH 隧道</translation>
+        <translation>, SSH 闅ч亾</translation>
     </message>
     <message>
         <source>MongoDB Connections</source>
-        <translation>MongoDB 连接管理</translation>
+        <translation>MongoDB 杩炴帴绠＄悊</translation>
     </message>
     <message>
         <source>&amp;Add...</source>
-        <translation>添加(&amp;A)...</translation>
+        <translation>娣诲姞(&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Edit...</source>
-        <translation>编辑(&amp;E)...</translation>
+        <translation>缂栬緫(&amp;E)...</translation>
     </message>
     <message>
         <source>&amp;Clone...</source>
-        <translation>克隆(&amp;C)...</translation>
+        <translation>鍏嬮殕(&amp;C)...</translation>
     </message>
     <message>
         <source>&amp;Remove...</source>
-        <translation>移除(&amp;R)...</translation>
+        <translation>绉婚櫎(&amp;R)...</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名称</translation>
+        <translation>鍚嶇О</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>地址</translation>
+        <translation>鍦板潃</translation>
     </message>
     <message>
         <source>Attributes</source>
-        <translation>属�?/translation>
+        <translation>灞炴€?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>验证数据�?/ 用户</translation>
+        <translation>楠岃瘉鏁版嵁搴?/ 鐢ㄦ埛</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
-        <translation>连接(&amp;O)</translation>
+        <translation>杩炴帴(&amp;O)</translation>
     </message>
     <message>
         <source>records</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>&lt;span style=&apos;color: #777777;&apos;&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;连接设置已导�?(�?%1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style=&apos;color: #777777;&apos;&gt;杩炴帴璁剧疆宸插鍏?(鍏?%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;Create&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;edit&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;remove&lt;/a&gt;, &lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;clone&lt;/a&gt; or reorder connections via drag&apos;n&apos;drop.</source>
-        <translation>通过拖放�?lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;新建&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;编辑&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;移除&lt;/a&gt;�?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;克隆&lt;/a&gt;或重排连接�?/translation>
+        <translation>閫氳繃鎷栨斁鏉?lt;a style=&apos;color: %1&apos; href=&apos;create&apos;&gt;鏂板缓&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;edit&apos;&gt;缂栬緫&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;remove&apos;&gt;绉婚櫎&lt;/a&gt;銆?lt;a style=&apos;color: %1&apos; href=&apos;clone&apos;&gt;鍏嬮殕&lt;/a&gt;鎴栭噸鎺掕繛鎺ャ€?/translation>
     </message>
     <message>
         <source>Are you sure you want to delete &quot;%1&quot; connection?</source>
-        <translation>您确定要删除连接�?1”吗�?/translation>
+        <translation>鎮ㄧ‘瀹氳鍒犻櫎杩炴帴鈥?1鈥濆悧锛?/translation>
     </message>
     <message>
         <source>Connections</source>
-        <translation>连接</translation>
+        <translation>杩炴帴</translation>
     </message>
     <message>
         <source>Copy of </source>
-        <translation>复本 - </translation>
+        <translation>澶嶆湰 - </translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAuthTab</name>
     <message>
         <source>Perform authentication</source>
-        <translation>执行身份验证</translation>
+        <translation>鎵ц韬唤楠岃瘉</translation>
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 拥有 admin 数据库普通访问权限的用户，通常�?lt;b&gt;所有数据库&lt;/b&gt;均拥有读写权限�?/translation>
+        <translation>&lt;nobr&gt;admin 鏁版嵁搴撳湪 MongoDB 涓槸鍞竴鐨勩€?lt;/nobr&gt; 鎷ユ湁 admin 鏁版嵁搴撴櫘閫氳闂潈闄愮殑鐢ㄦ埛锛岄€氬父瀵?lt;b&gt;鎵€鏈夋暟鎹簱&lt;/b&gt;鍧囨嫢鏈夎鍐欐潈闄愩€?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户�?/translation>
+        <translation>鐢ㄦ埛鍚?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
-        <translation>验证机制</translation>
+        <translation>楠岃瘉鏈哄埗</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码</translation>
+        <translation>瀵嗙爜</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>数据�?/translation>
+        <translation>鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
-        <translation>以逗号分隔，例如：products, users</translation>
+        <translation>浠ラ€楀彿鍒嗛殧锛屼緥濡傦細products, users</translation>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库列�?/translation>
+        <translation>鏁版嵁搴撳垪琛?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有权限获取数据库列�?(执行 &lt;b&gt;listDatabases&lt;/b&gt; 命令)。在这种情况下，请手动添加该用户有权访问的数据库名称�?/translation>
+        <translation>鏌愪簺 MongoDB 鐢ㄦ埛鍙兘娌℃湁鏉冮檺鑾峰彇鏁版嵁搴撳垪琛?(鎵ц &lt;b&gt;listDatabases&lt;/b&gt; 鍛戒护)銆傚湪杩欑鎯呭喌涓嬶紝璇锋墜鍔ㄦ坊鍔犺鐢ㄦ埛鏈夋潈璁块棶鐨勬暟鎹簱鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
-        <translation>手动指定可见的数据库</translation>
+        <translation>鎵嬪姩鎸囧畾鍙鐨勬暟鎹簱</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::DocumentTextEditor</name>
     <message>
         <source>Edit Document</source>
-        <translation>编辑文档</translation>
+        <translation>缂栬緫鏂囨。</translation>
     </message>
     <message>
         <source>Validate</source>
-        <translation>校验 JSON 格式</translation>
+        <translation>鏍￠獙 JSON 鏍煎紡</translation>
     </message>
     <message>
         <source>Robo 3T</source>
@@ -4733,270 +4733,270 @@ Connection failure. </source>
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>该文档已被修改�?您要保存更改吗？</translation>
+        <translation>璇ユ枃妗ｅ凡琚慨鏀广€?鎮ㄨ淇濆瓨鏇存敼鍚楋紵</translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON 数据�?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于第 %2 行、第 %3 列�?/translation>
+        <translation>鏃犳硶瑙ｆ瀽 JSON 鏁版嵁锛?lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;锛屼綅浜庣 %2 琛屻€佺 %3 鍒椼€?/translation>
     </message>
     <message>
         <source>Parsing error</source>
-        <translation>解析错误</translation>
+        <translation>瑙ｆ瀽閿欒</translation>
     </message>
     <message>
         <source>Validation</source>
-        <translation>校验结果</translation>
+        <translation>鏍￠獙缁撴灉</translation>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效�?/translation>
+        <translation>JSON 鏍煎紡鏈夋晥锛?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::MainWindow</name>
     <message>
         <source>&amp;Open...</source>
-        <translation>打开(&amp;O)...</translation>
+        <translation>鎵撳紑(&amp;O)...</translation>
     </message>
     <message>
         <source>Load script from the file to the currently opened shell &lt;b&gt;(%1 + O)&lt;/b&gt;</source>
-        <translation>从文件加载脚本到当前打开�?Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
+        <translation>浠庢枃浠跺姞杞借剼鏈埌褰撳墠鎵撳紑鐨?Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Save</source>
-        <translation>保存(&amp;S)</translation>
+        <translation>淇濆瓨(&amp;S)</translation>
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当�?Shell 的脚本保存到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>灏嗗綋鍓?Shell 鐨勮剼鏈繚瀛樺埌鏂囦欢 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存�?&amp;A)...</translation>
+        <translation>鍙﹀瓨涓?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退�?&amp;E)</translation>
+        <translation>閫€鍑?&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
-        <translation>连接(&amp;C)...</translation>
+        <translation>杩炴帴(&amp;C)...</translation>
     </message>
     <message>
         <source>Connect to local or remote MongoDB instance &lt;b&gt;(%1 + N)&lt;/b&gt;</source>
-        <translation>连接到本地或远程 MongoDB 实例 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
+        <translation>杩炴帴鍒版湰鍦版垨杩滅▼ MongoDB 瀹炰緥 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托�?/translation>
+        <translation>鏈€灏忓寲鍒版墭鐩?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退�?/translation>
+        <translation>閫€鍑?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
-        <translation>旋转布局(&amp;R)</translation>
+        <translation>鏃嬭浆甯冨眬(&amp;R)</translation>
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换结果视图的排列方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>鍒囨崲缁撴灉瑙嗗浘鐨勬帓鍒楁柟鍚?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
-        <translation>文本模式(&amp;T)</translation>
+        <translation>鏂囨湰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in text mode, and make this mode default for all subsequent queries &lt;b&gt;(F4)&lt;/b&gt;</source>
-        <translation>在文本模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F4)&lt;/b&gt;</translation>
+        <translation>鍦ㄦ枃鏈ā寮忎笅鏄剧ず褰撳墠閫夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿鍊?&lt;b&gt;(F4)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Tree Mode</source>
-        <translation>树形模式(&amp;T)</translation>
+        <translation>鏍戝舰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in tree mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>在树形模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>鍦ㄦ爲褰㈡ā寮忎笅鏄剧ず褰撳墠閫夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿鍊?&lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>T&amp;able Mode</source>
-        <translation>表格模式(&amp;A)</translation>
+        <translation>琛ㄦ牸妯″紡(&amp;A)</translation>
     </message>
     <message>
         <source>Show current tab in table mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>在表格模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>鍦ㄨ〃鏍兼ā寮忎笅鏄剧ず褰撳墠閫夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿鍊?&lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模�?&amp;C)</translation>
+        <translation>鑷畾涔夋ā寮?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
-        <translation>如果可能，在自定义模式下显示当前选项卡，并将此模式设为后续查询的默认�?&lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>濡傛灉鍙兘锛屽湪鑷畾涔夋ā寮忎笅鏄剧ず褰撳墠閫夐」鍗★紝骞跺皢姝ゆā寮忚涓哄悗缁煡璇㈢殑榛樿鍊?&lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前选项卡的查询。如果选中了部分脚本，则仅执行选中部分 &lt;b&gt;(F5 &lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>鎵ц褰撳墠閫夐」鍗＄殑鏌ヨ銆傚鏋滈€変腑浜嗛儴鍒嗚剼鏈紝鍒欎粎鎵ц閫変腑閮ㄥ垎 &lt;b&gt;(F5 &lt;/b&gt; 鎴?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止当前正运行的脚本 &lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>鍋滄褰撳墠姝ｈ繍琛岀殑鑴氭湰 &lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>文件</translation>
+        <translation>鏂囦欢</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>视图</translation>
+        <translation>瑙嗗浘</translation>
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具�?/translation>
+        <translation>宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>选项</translation>
+        <translation>閫夐」</translation>
     </message>
     <message>
         <source>Default View Mode</source>
-        <translation>默认视图模式</translation>
+        <translation>榛樿瑙嗗浘妯″紡</translation>
     </message>
     <message>
         <source>Display Dates In...</source>
-        <translation>时间显示格式...</translation>
+        <translation>鏃堕棿鏄剧ず鏍煎紡...</translation>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解�?(原样显示)</translation>
+        <translation>涓嶈В鐮?(鍘熸牱鏄剧ず)</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
-        <translation>使用 Java 编码</translation>
+        <translation>浣跨敤 Java 缂栫爜</translation>
     </message>
     <message>
         <source>Use .NET Encoding</source>
-        <translation>使用 .NET (CSharp) 编码</translation>
+        <translation>浣跨敤 .NET (CSharp) 缂栫爜</translation>
     </message>
     <message>
         <source>Use Python Encoding</source>
-        <translation>使用 Python 编码</translation>
+        <translation>浣跨敤 Python 缂栫爜</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding</source>
-        <translation>旧版 UUID 编码兼容</translation>
+        <translation>鏃х増 UUID 缂栫爜鍏煎</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>全量补全 (All)</translation>
+        <translation>鍏ㄩ噺琛ュ叏 (All)</translation>
     </message>
     <message>
         <source>All (Except Collection Names)</source>
-        <translation>全量补全 (不包括集合名�?</translation>
+        <translation>鍏ㄩ噺琛ュ叏 (涓嶅寘鎷泦鍚堝悕绉?</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>禁用补全 (None)</translation>
+        <translation>绂佺敤琛ュ叏 (None)</translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
-        <translation>代码补全模式</translation>
+        <translation>浠ｇ爜琛ュ叏妯″紡</translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文�?/translation>
+        <translation>鑷姩灞曞紑绗竴涓枃妗?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
-        <translation>默认显示行号</translation>
+        <translation>榛樿鏄剧ず琛屽彿</translation>
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷�?/translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?/translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
-        <translation>在新选项卡中自动执行代码</translation>
+        <translation>鍦ㄦ柊閫夐」鍗′腑鑷姩鎵ц浠ｇ爜</translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>关闭按钮应最小化到系统托�?/translation>
+        <translation>鍏抽棴鎸夐挳搴旀渶灏忓寲鍒扮郴缁熸墭鐩?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更�?/translation>
+        <translation>妫€鏌ユ洿鏂?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
-        <translation>修改 Shell 超时时间...</translation>
+        <translation>淇敼 Shell 瓒呮椂鏃堕棿...</translation>
     </message>
     <message>
         <source>Preferences</source>
-        <translation>首选项</translation>
+        <translation>棣栭€夐」</translation>
     </message>
     <message>
         <source>&amp;Full Screen</source>
-        <translation>全屏(&amp;F)</translation>
+        <translation>鍏ㄥ睆(&amp;F)</translation>
     </message>
     <message>
         <source>&amp;Minimize</source>
-        <translation>最小化(&amp;M)</translation>
+        <translation>鏈€灏忓寲(&amp;M)</translation>
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择下一个选项�?/translation>
+        <translation>閫夋嫨涓嬩竴涓€夐」鍗?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择上一个选项�?/translation>
+        <translation>閫夋嫨涓婁竴涓€夐」鍗?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
-        <translation>在当前选项卡中重新执行</translation>
+        <translation>鍦ㄥ綋鍓嶉€夐」鍗′腑閲嶆柊鎵ц</translation>
     </message>
     <message>
         <source>Duplicate Query in New Tab</source>
-        <translation>在新选项卡中克隆当前查询</translation>
+        <translation>鍦ㄦ柊閫夐」鍗′腑鍏嬮殕褰撳墠鏌ヨ</translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>窗口</translation>
+        <translation>绐楀彛</translation>
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>打开/刷新欢迎�?/translation>
+        <translation>鎵撳紑/鍒锋柊娆㈣繋椤?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
-        <translation>关于 Robo 3T(&amp;A)...</translation>
+        <translation>鍏充簬 Robo 3T(&amp;A)...</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>帮助</translation>
+        <translation>甯姪</translation>
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具�?/translation>
+        <translation>杩炴帴宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存工具�?/translation>
+        <translation>鎵撳紑/淇濆瓨宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具�?/translation>
+        <translation>鎵ц宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新提示工具�?/translation>
+        <translation>鏇存柊鎻愮ず宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Robo 3T - </source>
@@ -5004,104 +5004,104 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Theme</source>
-        <translation>主题</translation>
+        <translation>涓婚</translation>
     </message>
     <message>
         <source>Logs</source>
-        <translation>运行日志</translation>
+        <translation>杩愯鏃ュ織</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerDatabaseTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell 窗口</translation>
+        <translation>鎵撳紑 Shell 绐楀彛</translation>
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>查看数据库统�?(db.stats)</translation>
+        <translation>鏌ョ湅鏁版嵁搴撶粺璁?(db.stats)</translation>
     </message>
     <message>
         <source>Current Operations</source>
-        <translation>查看当前操作 (db.currentOp)</translation>
+        <translation>鏌ョ湅褰撳墠鎿嶄綔 (db.currentOp)</translation>
     </message>
     <message>
         <source>Kill Operation...</source>
-        <translation>结束指定操作 (db.killOp)...</translation>
+        <translation>缁撴潫鎸囧畾鎿嶄綔 (db.killOp)...</translation>
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据�?(Drop)...</translation>
+        <translation>鍒犻櫎鏁版嵁搴?(Drop)...</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据�?(Repair)...</translation>
+        <translation>淇鏁版嵁搴?(Repair)...</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Collections</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>函数/脚本</translation>
+        <translation>鍑芥暟/鑴氭湰</translation>
     </message>
     <message>
         <source>Users</source>
-        <translation>用户</translation>
+        <translation>鐢ㄦ埛</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统</translation>
+        <translation>绯荤粺</translation>
     </message>
     <message>
         <source>Drop &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要删除数据库 &lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>纭畾瑕佸垹闄ゆ暟鎹簱 &lt;b&gt;%1&lt;/b&gt; 鍚楋紵</translation>
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据�?/translation>
+        <translation>鍒犻櫎鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>确定要修复数据库 &lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>纭畾瑕佷慨澶嶆暟鎹簱 &lt;b&gt;%1&lt;/b&gt; 鍚楋紵</translation>
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据�?/translation>
+        <translation>淇鏁版嵁搴?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionSettings</name>
     <message>
         <source>New Connection</source>
-        <translation>新建连接</translation>
+        <translation>鏂板缓杩炴帴</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDialog</name>
     <message>
         <source>Connection Settings</source>
-        <translation>连接设置</translation>
+        <translation>杩炴帴璁剧疆</translation>
     </message>
     <message>
         <source>&amp;Test</source>
-        <translation>测试连接(&amp;T)</translation>
+        <translation>娴嬭瘯杩炴帴(&amp;T)</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>常规</translation>
+        <translation>甯歌</translation>
     </message>
     <message>
         <source>Authentication</source>
-        <translation>认证</translation>
+        <translation>璁よ瘉</translation>
     </message>
     <message>
         <source>SSH</source>
-        <translation>SSH 隧道</translation>
+        <translation>SSH 闅ч亾</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -5109,74 +5109,74 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级</translation>
+        <translation>楂樼骇</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionBasicTab</name>
     <message>
         <source>Type:</source>
-        <translation>类型:</translation>
+        <translation>绫诲瀷:</translation>
     </message>
     <message>
         <source>Direct Connection</source>
-        <translation>直接连接</translation>
+        <translation>鐩存帴杩炴帴</translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>复本�?(Replica Set)</translation>
+        <translation>澶嶆湰闆?(Replica Set)</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>名称:</translation>
+        <translation>鍚嶇О:</translation>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>请输入任何方便您识别此连接的名称�?/translation>
+        <translation>璇疯緭鍏ヤ换浣曟柟渚挎偍璇嗗埆姝よ繛鎺ョ殑鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>地址:</translation>
+        <translation>鍦板潃:</translation>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>请指�?MongoDB 服务器的主机名和端口。主机名可以�?IPv4、IPv6 或域名�?/translation>
+        <translation>璇锋寚瀹?MongoDB 鏈嶅姟鍣ㄧ殑涓绘満鍚嶅拰绔彛銆備富鏈哄悕鍙互鏄?IPv4銆両Pv6 鎴栧煙鍚嶃€?/translation>
     </message>
     <message>
         <source>Members:</source>
-        <translation>成员列表:</translation>
+        <translation>鎴愬憳鍒楄〃:</translation>
     </message>
     <message>
         <source>Set Name:</source>
-        <translation>集名 (SetName):</translation>
+        <translation>闆嗗悕 (SetName):</translation>
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>�?MongoDB URI 连接字符串导入详细信�?/translation>
+        <translation>浠?MongoDB URI 杩炴帴瀛楃涓插鍏ヨ缁嗕俊鎭?/translation>
     </message>
     <message>
         <source>From URI</source>
-        <translation>�?URI 获取</translation>
+        <translation>浠?URI 鑾峰彇</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>复本集成组成员不能为空。请至少输入一个成员地址�?/translation>
+        <translation>澶嶆湰闆嗘垚缁勬垚鍛樹笉鑳戒负绌恒€傝鑷冲皯杈撳叆涓€涓垚鍛樺湴鍧€銆?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain ':' between hostname and port.</source>
-        <translation>复本集成组成员项必须在主机名和端口之间包含冒号�?”�?/translation>
+        <translation>澶嶆湰闆嗘垚缁勬垚鍛橀」蹇呴』鍦ㄤ富鏈哄悕鍜岀鍙ｄ箣闂村寘鍚啋鍙封€?鈥濄€?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请删除重复的成员，两个复本集成组成员不能拥有相同的主机名和端口�?/translation>
+        <translation>璇峰垹闄ら噸澶嶇殑鎴愬憳锛屼袱涓鏈泦鎴愮粍鎴愬憳涓嶈兘鎷ユ湁鐩稿悓鐨勪富鏈哄悕鍜岀鍙ｃ€?/translation>
     </message>
     <message>
         <source>New Connection</source>
-        <translation>新建连接</translation>
+        <translation>鏂板缓杩炴帴</translation>
     </message>
     <message>
         <source>MongoDB URI:
@@ -5189,36 +5189,36 @@ Do you want to save your changes?</source>
     <name>Robomongo::MongoServer</name>
     <message>
         <source>document.</source>
-        <translation>文档�?/translation>
+        <translation>鏂囨。銆?/translation>
     </message>
     <message>
         <source>documents.</source>
-        <translation>个文档�?/translation>
+        <translation>涓枃妗ｃ€?/translation>
     </message>
     <message>
         <source>all documents.</source>
-        <translation>所有文档�?/translation>
+        <translation>鎵€鏈夋枃妗ｃ€?/translation>
     </message>
     <message>
         <source>(logic error).</source>
-        <translation>(逻辑错误)�?/translation>
+        <translation>(閫昏緫閿欒)銆?/translation>
     </message>
     <message>
         <source>Failed to remove </source>
-        <translation>删除失败: </translation>
+        <translation>鍒犻櫎澶辫触: </translation>
     </message>
     <message>
         <source>Removed </source>
-        <translation>已删�? </translation>
+        <translation>宸插垹闄? </translation>
     </message>
     <message>
         <source>Cannot connect to replica set "%1"</source>
-        <translation>无法连接到复本集 "%1"</translation>
+        <translation>鏃犳硶杩炴帴鍒板鏈泦 "%1"</translation>
     </message>
     <message>
         <source>. 
 A primary with different host name [%1] found in server side. </source>
-        <translation>�?在服务端发现了一个具有不同主机名 [%1] �?Primary 节点�?/translation>
+        <translation>銆?鍦ㄦ湇鍔＄鍙戠幇浜嗕竴涓叿鏈変笉鍚屼富鏈哄悕 [%1] 鐨?Primary 鑺傜偣銆?/translation>
     </message>
     <message>
         <source>Please double check if same host names and ports are used as in server's replica set configuration. 
@@ -5226,8 +5226,8 @@ If same set name is used for different replica sets, this configuration is suppo
 
 Reason:
 </source>
-        <translation>请仔细检查是否使用了与服务端复本集配置相同的主机名和端口�?如果不同的复本集使用了相同的集名(Set Name)，则仅在运行多个 Robo 3T 实例时才支持此类配置。请为每个具有相同集名的复本集开启一个新�?Robo 3T 窗口�?
-原因:
+        <translation>璇蜂粩缁嗘鏌ユ槸鍚︿娇鐢ㄤ簡涓庢湇鍔＄澶嶆湰闆嗛厤缃浉鍚岀殑涓绘満鍚嶅拰绔彛銆?濡傛灉涓嶅悓鐨勫鏈泦浣跨敤浜嗙浉鍚岀殑闆嗗悕(Set Name)锛屽垯浠呭湪杩愯澶氫釜 Robo 3T 瀹炰緥鏃舵墠鏀寔姝ょ被閰嶇疆銆傝涓烘瘡涓叿鏈夌浉鍚岄泦鍚嶇殑澶嶆湰闆嗗紑鍚竴涓柊鐨?Robo 3T 绐楀彛銆?
+鍘熷洜:
 </translation>
     </message>
     <message>
@@ -5236,8 +5236,8 @@ Set's primary is unreachable.
 
 Reason:
 </source>
-        <translation>�?该复本集�?Primary 节点不可达�?
-原因:
+        <translation>銆?璇ュ鏈泦鐨?Primary 鑺傜偣涓嶅彲杈俱€?
+鍘熷洜:
 </translation>
     </message>
     <message>
@@ -5245,17 +5245,17 @@ Reason:
 
 Error:
 TLS connection failure: </source>
-        <translation>无法连接到位�?%1 �?MongoDB�?
-错误:
-TLS 连接失败: </translation>
+        <translation>鏃犳硶杩炴帴鍒颁綅浜?%1 鐨?MongoDB銆?
+閿欒:
+TLS 杩炴帴澶辫触: </translation>
     </message>
     <message>
         <source>Cannot connect to the MongoDB at %1.
 
 Error:
 </source>
-        <translation>无法连接到位�?%1 �?MongoDB�?
-错误:
+        <translation>鏃犳硶杩炴帴鍒颁綅浜?%1 鐨?MongoDB銆?
+閿欒:
 </translation>
     </message>
 </context>
@@ -5263,144 +5263,144 @@ Error:
     <name>Robomongo::ExplorerCollectionTreeItem</name>
     <message>
         <source>Insert Document...</source>
-        <translation>插入文档...</translation>
+        <translation>鎻掑叆鏂囨。...</translation>
     </message>
     <message>
         <source>Update Documents...</source>
-        <translation>更新文档...</translation>
+        <translation>鏇存柊鏂囨。...</translation>
     </message>
     <message>
         <source>Remove Documents...</source>
-        <translation>删除文档...</translation>
+        <translation>鍒犻櫎鏂囨。...</translation>
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>清空所有文�?..</translation>
+        <translation>娓呯┖鎵€鏈夋枃妗?..</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation>统计信息</translation>
+        <translation>缁熻淇℃伅</translation>
     </message>
     <message>
         <source>Storage Size</source>
-        <translation>存储空间大小</translation>
+        <translation>瀛樺偍绌洪棿澶у皬</translation>
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大�?/translation>
+        <translation>绱㈠紩鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大�?/translation>
+        <translation>鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Shard Version</source>
-        <translation>分片版本 (Shard Version)</translation>
+        <translation>鍒嗙墖鐗堟湰 (Shard Version)</translation>
     </message>
     <message>
         <source>Shard Distribution</source>
-        <translation>分片分布 (Shard Distribution)</translation>
+        <translation>鍒嗙墖鍒嗗竷 (Shard Distribution)</translation>
     </message>
     <message>
         <source>Drop Collection...</source>
-        <translation>删除集合...</translation>
+        <translation>鍒犻櫎闆嗗悎...</translation>
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集�?..</translation>
+        <translation>閲嶅懡鍚嶉泦鍚?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
-        <translation>复制集合...</translation>
+        <translation>澶嶅埗闆嗗悎...</translation>
     </message>
     <message>
         <source>View Documents</source>
-        <translation>查看文档</translation>
+        <translation>鏌ョ湅鏂囨。</translation>
     </message>
     <message>
         <source>Indexes</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
     <message>
         <source>Cannot load list of indexes.
 
 Error:
 </source>
-        <translation>无法加载索引列表�?
-错误:
+        <translation>鏃犳硶鍔犺浇绱㈠紩鍒楄〃銆?
+閿欒:
 </translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>add</source>
-        <translation>添加</translation>
+        <translation>娣诲姞</translation>
     </message>
     <message>
         <source>edit</source>
-        <translation>编辑</translation>
+        <translation>缂栬緫</translation>
     </message>
     <message>
         <source>Operation failed</source>
-        <translation>操作失败</translation>
+        <translation>鎿嶄綔澶辫触</translation>
     </message>
     <message>
         <source>Failed to %1 index "%2"</source>
-        <translation>%1 索引 "%2" 失败</translation>
+        <translation>%1 绱㈠紩 "%2" 澶辫触</translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>错误: %1</translation>
+        <translation>閿欒: %1</translation>
     </message>
     <message>
         <source>Failed to drop index "%1"</source>
-        <translation>删除索引 "%1" 失败</translation>
+        <translation>鍒犻櫎绱㈠紩 "%1" 澶辫触</translation>
     </message>
     <message>
         <source>Reason: </source>
-        <translation>原因: </translation>
+        <translation>鍘熷洜: </translation>
     </message>
     <message>
         <source>Insert Document</source>
-        <translation>插入文档</translation>
+        <translation>鎻掑叆鏂囨。</translation>
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>清空所有文�?/translation>
+        <translation>娓呯┖鎵€鏈夋枃妗?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>确定要清空集�?&lt;b&gt;%1&lt;/b&gt; 中的所有文档吗�?/translation>
+        <translation>纭畾瑕佹竻绌洪泦鍚?&lt;b&gt;%1&lt;/b&gt; 涓殑鎵€鏈夋枃妗ｅ悧锛?/translation>
     </message>
     <message>
         <source>Drop</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>collection</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Duplicate Collection</source>
-        <translation>复制集合</translation>
+        <translation>澶嶅埗闆嗗悎</translation>
     </message>
     <message>
         <source>&amp;Duplicate</source>
-        <translation>复制(&amp;D)</translation>
+        <translation>澶嶅埗(&amp;D)</translation>
     </message>
     <message>
         <source>New Collection Name:</source>
-        <translation>新集合名�?</translation>
+        <translation>鏂伴泦鍚堝悕绉?</translation>
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集�?/translation>
+        <translation>閲嶅懡鍚嶉泦鍚?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命�?&amp;R)</translation>
+        <translation>閲嶅懡鍚?&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -5410,50 +5410,50 @@ Error:
 
 Error:
 %1</source>
-        <translation>加载文档失败�?
-错误:
+        <translation>鍔犺浇鏂囨。澶辫触銆?
+閿欒:
 %1</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Error:
 </source>
-        <translation>错误:
+        <translation>閿欒:
 </translation>
     </message>
     <message>
         <source>Failed to execute script.
 
 </source>
-        <translation>脚本执行失败�?
+        <translation>鑴氭湰鎵ц澶辫触銆?
 </translation>
     </message>
     <message>
         <source>At least one of the scripts has reached shell timeout</source>
-        <translation>至少有一个脚本已达到 Shell 执行超时上限</translation>
+        <translation>鑷冲皯鏈変竴涓剼鏈凡杈惧埌 Shell 鎵ц瓒呮椂涓婇檺</translation>
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达�?Shell 执行超时上限</translation>
+        <translation>鑴氭湰宸茶揪鍒?Shell 鎵ц瓒呮椂涓婇檺</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>未能执行所有脚本�?</translation>
+        <translation>鏈兘鎵ц鎵€鏈夎剼鏈€?</translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制�?</translation>
+        <translation> 闄愬埗銆?</translation>
     </message>
     <message>
         <source>
@@ -5461,374 +5461,374 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu "Options-&gt;Change Shell Timeout".</source>
         <translation>
 
-请使用下方按钮或通过主窗口菜单“选项-&gt;更改 Shell 超时”来增加超时时长�?/translation>
+璇蜂娇鐢ㄤ笅鏂规寜閽垨閫氳繃涓荤獥鍙ｈ彍鍗曗€滈€夐」-&gt;鏇存敼 Shell 瓒呮椂鈥濇潵澧炲姞瓒呮椂鏃堕暱銆?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
-        <translation>更改 Shell 超时时长</translation>
+        <translation>鏇存敼 Shell 瓒呮椂鏃堕暱</translation>
     </message>
     <message>
         <source>New Shell</source>
-        <translation>新建 Shell</translation>
+        <translation>鏂板缓 Shell</translation>
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
+        <translation>  鑴氭湰鎵ц鎴愬姛锛屼絾娌℃湁鍙樉绀虹殑缁撴灉銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAuthTab</name>
     <message>
         <source>Perform authentication</source>
-        <translation>执行身份验证</translation>
+        <translation>鎵ц韬唤楠岃瘉</translation>
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt;拥有 admin 数据库常规访问权限的用户，将自动获得�?lt;b&gt;所有数据库&lt;/b&gt;的读写权限�?/translation>
+        <translation>&lt;nobr&gt;admin 鏁版嵁搴撳湪 MongoDB 涓槸鍞竴鐨勩€?lt;/nobr&gt;鎷ユ湁 admin 鏁版嵁搴撳父瑙勮闂潈闄愮殑鐢ㄦ埛锛屽皢鑷姩鑾峰緱瀵?lt;b&gt;鎵€鏈夋暟鎹簱&lt;/b&gt;鐨勮鍐欐潈闄愩€?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户�?/translation>
+        <translation>鐢ㄦ埛鍚?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
-        <translation>认证机制</translation>
+        <translation>璁よ瘉鏈哄埗</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码</translation>
+        <translation>瀵嗙爜</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>数据�?/translation>
+        <translation>鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
-        <translation>逗号分隔，例如：products, users</translation>
+        <translation>閫楀彿鍒嗛殧锛屼緥濡傦細products, users</translation>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据�?/translation>
+        <translation>鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>某些 MongoDB 用户可能没有获取数据库列表的权限（未授权 &lt;b&gt;listDatabases&lt;/b&gt; 命令）。在这种情况下，请手动输入该用户有权访问的数据库名称�?/translation>
+        <translation>鏌愪簺 MongoDB 鐢ㄦ埛鍙兘娌℃湁鑾峰彇鏁版嵁搴撳垪琛ㄧ殑鏉冮檺锛堟湭鎺堟潈 &lt;b&gt;listDatabases&lt;/b&gt; 鍛戒护锛夈€傚湪杩欑鎯呭喌涓嬶紝璇锋墜鍔ㄨ緭鍏ヨ鐢ㄦ埛鏈夋潈璁块棶鐨勬暟鎹簱鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
-        <translation>手动指定可见的数据库</translation>
+        <translation>鎵嬪姩鎸囧畾鍙鐨勬暟鎹簱</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::EulaDialog</name>
     <message>
         <source>EULA</source>
-        <translation>最终用户许可协�?(EULA)</translation>
+        <translation>鏈€缁堢敤鎴疯鍙崗璁?(EULA)</translation>
     </message>
     <message>
         <source>I agree</source>
-        <translation>我同�?/translation>
+        <translation>鎴戝悓鎰?/translation>
     </message>
     <message>
         <source>I don't agree</source>
-        <translation>我不同意</translation>
+        <translation>鎴戜笉鍚屾剰</translation>
     </message>
     <message>
         <source>&lt;h3&gt;End-User License Agreement&lt;/h3&gt;</source>
-        <translation>&lt;h3&gt;最终用户许可协�?lt;/h3&gt;</translation>
+        <translation>&lt;h3&gt;鏈€缁堢敤鎴疯鍙崗璁?lt;/h3&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;First Name:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;�?&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;鍚?&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Last Name:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;�?&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;濮?&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Email:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;电子邮箱:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;鐢靛瓙閭:&lt;/b&gt;</translation>
     </message>
     <message>
         <source>By submitting this form I agree to 3T Software Labs &lt;a href='https://studio3t.com/privacy-policy'&gt;Privacy Policy&lt;/a&gt;.</source>
-        <translation>提交此表单即表示我同�?3T Software Labs �?lt;a href='https://studio3t.com/privacy-policy'&gt;隐私政策&lt;/a&gt;�?/translation>
+        <translation>鎻愪氦姝よ〃鍗曞嵆琛ㄧず鎴戝悓鎰?3T Software Labs 鐨?lt;a href='https://studio3t.com/privacy-policy'&gt;闅愮鏀跨瓥&lt;/a&gt;銆?/translation>
     </message>
     <message>
         <source>
 Share your email address with us and we'll keep you up-to-date with updates from us and new features as they come out.</source>
         <translation>
-向我们提供您的电子邮箱地址，我们将为您提供最新的功能更新和版本咨询�?/translation>
+鍚戞垜浠彁渚涙偍鐨勭數瀛愰偖绠卞湴鍧€锛屾垜浠皢涓烘偍鎻愪緵鏈€鏂扮殑鍔熻兘鏇存柊鍜岀増鏈挩璇€?/translation>
     </message>
     <message>
         <source>&lt;h3&gt;Thank you for choosing Robo 3T!&lt;/h3&gt;</source>
-        <translation>&lt;h3&gt;感谢您选择 Robo 3T�?lt;/h3&gt;</translation>
+        <translation>&lt;h3&gt;鎰熻阿鎮ㄩ€夋嫨 Robo 3T锛?lt;/h3&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Phone: &lt;/b&gt;</source>
-        <translation>&lt;b&gt;电话: &lt;/b&gt;</translation>
+        <translation>&lt;b&gt;鐢佃瘽: &lt;/b&gt;</translation>
     </message>
     <message>
         <source>&lt;b&gt;Company:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;公司:&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;鍏徃:&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>上一�?/translation>
+        <translation>涓婁竴姝?/translation>
     </message>
     <message>
         <source>Next</source>
-        <translation>下一�?/translation>
+        <translation>涓嬩竴姝?/translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation>完成</translation>
+        <translation>瀹屾垚</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::MainWindow</name>
     <message>
         <source>&amp;Open...</source>
-        <translation>打开(&amp;O)...</translation>
+        <translation>鎵撳紑(&amp;O)...</translation>
     </message>
     <message>
         <source>Load script from the file to the currently opened shell &lt;b&gt;(%1 + O)&lt;/b&gt;</source>
-        <translation>从文件加载脚本到当前 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
+        <translation>浠庢枃浠跺姞杞借剼鏈埌褰撳墠 Shell &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Save</source>
-        <translation>保存(&amp;S)</translation>
+        <translation>淇濆瓨(&amp;S)</translation>
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>保存当前 Shell 的脚本到文件 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>淇濆瓨褰撳墠 Shell 鐨勮剼鏈埌鏂囦欢 &lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存�?&amp;A)...</translation>
+        <translation>鍙﹀瓨涓?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退�?&amp;E)</translation>
+        <translation>閫€鍑?&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
-        <translation>连接(&amp;C)...</translation>
+        <translation>杩炴帴(&amp;C)...</translation>
     </message>
     <message>
         <source>Connect to local or remote MongoDB instance &lt;b&gt;(%1 + N)&lt;/b&gt;</source>
-        <translation>连接到本地或远程 MongoDB 实例 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
+        <translation>杩炴帴鍒版湰鍦版垨杩滅▼ MongoDB 瀹炰緥 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化到托�?/translation>
+        <translation>鏈€灏忓寲鍒版墭鐩?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退�?/translation>
+        <translation>閫€鍑?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
-        <translation>旋转布局(&amp;R)</translation>
+        <translation>鏃嬭浆甯冨眬(&amp;R)</translation>
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换结果视图的排列方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>鍒囨崲缁撴灉瑙嗗浘鐨勬帓鍒楁柟鍚?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
-        <translation>文本模式(&amp;T)</translation>
+        <translation>鏂囨湰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in text mode, and make this mode default for all subsequent queries &lt;b&gt;(F4)&lt;/b&gt;</source>
-        <translation>以文本模式显示当前选项卡，并将其设为后续查询的默认模式 &lt;b&gt;(F4)&lt;/b&gt;</translation>
+        <translation>浠ユ枃鏈ā寮忔樉绀哄綋鍓嶉€夐」鍗★紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F4)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Tree Mode</source>
-        <translation>树状模式(&amp;T)</translation>
+        <translation>鏍戠姸妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in tree mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以树状模式显示当前选项卡，并将其设为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>浠ユ爲鐘舵ā寮忔樉绀哄綋鍓嶉€夐」鍗★紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>T&amp;able Mode</source>
-        <translation>列表模式(&amp;A)</translation>
+        <translation>鍒楄〃妯″紡(&amp;A)</translation>
     </message>
     <message>
         <source>Show current tab in table mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以列表模式显示当前选项卡，并将其设为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>浠ュ垪琛ㄦā寮忔樉绀哄綋鍓嶉€夐」鍗★紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模�?&amp;C)</translation>
+        <translation>鑷畾涔夋ā寮?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
-        <translation>（如果可能）以自定义模式显示当前选项卡，并将其设为后续查询的默认模式 &lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>锛堝鏋滃彲鑳斤級浠ヨ嚜瀹氫箟妯″紡鏄剧ず褰撳墠閫夐」鍗★紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前选项卡的查询。如果您在查询文本中有选定内容，则仅执行选定内容 &lt;b&gt;(F5&lt;/b&gt; �?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
+        <translation>鎵ц褰撳墠閫夐」鍗＄殑鏌ヨ銆傚鏋滄偍鍦ㄦ煡璇㈡枃鏈腑鏈夐€夊畾鍐呭锛屽垯浠呮墽琛岄€夊畾鍐呭 &lt;b&gt;(F5&lt;/b&gt; 鎴?&lt;b&gt;%1 + Enter)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止当前正在运行的脚本�?lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>鍋滄褰撳墠姝ｅ湪杩愯鐨勮剼鏈€?lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>文件</translation>
+        <translation>鏂囦欢</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>视图</translation>
+        <translation>瑙嗗浘</translation>
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具�?/translation>
+        <translation>宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>选项</translation>
+        <translation>閫夐」</translation>
     </message>
     <message>
         <source>Default View Mode</source>
-        <translation>默认视图模式</translation>
+        <translation>榛樿瑙嗗浘妯″紡</translation>
     </message>
     <message>
         <source>Display Dates In...</source>
-        <translation>日期显示方式...</translation>
+        <translation>鏃ユ湡鏄剧ず鏂瑰紡...</translation>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>保持原样（不解码�?/translation>
+        <translation>淇濇寔鍘熸牱锛堜笉瑙ｇ爜锛?/translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
-        <translation>使用 Java 编码</translation>
+        <translation>浣跨敤 Java 缂栫爜</translation>
     </message>
     <message>
         <source>Use .NET Encoding</source>
-        <translation>使用 .NET 编码</translation>
+        <translation>浣跨敤 .NET 缂栫爜</translation>
     </message>
     <message>
         <source>Use Python Encoding</source>
-        <translation>使用 Python 编码</translation>
+        <translation>浣跨敤 Python 缂栫爜</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding</source>
-        <translation>旧版 UUID 编码映射</translation>
+        <translation>鏃х増 UUID 缂栫爜鏄犲皠</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>全部</translation>
+        <translation>鍏ㄩ儴</translation>
     </message>
     <message>
         <source>All (Except Collection Names)</source>
-        <translation>全部 (集合名称除外)</translation>
+        <translation>鍏ㄩ儴 (闆嗗悎鍚嶇О闄ゅ)</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>无限�?/translation>
+        <translation>鏃犻檺鍒?/translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
-        <translation>代码自动补全模式</translation>
+        <translation>浠ｇ爜鑷姩琛ュ叏妯″紡</translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文�?/translation>
+        <translation>鑷姩灞曞紑绗竴涓枃妗?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
-        <translation>默认显示行号</translation>
+        <translation>榛樿鏄剧ず琛屽彿</translation>
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷�?(Alt+1...9)</translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?(Alt+1...9)</translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
-        <translation>新标签页中自动执行代�?/translation>
+        <translation>鏂版爣绛鹃〉涓嚜鍔ㄦ墽琛屼唬鐮?/translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>点击关闭按钮时最小化到系统托�?/translation>
+        <translation>鐐瑰嚮鍏抽棴鎸夐挳鏃舵渶灏忓寲鍒扮郴缁熸墭鐩?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更�?/translation>
+        <translation>妫€鏌ユ洿鏂?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
-        <translation>更改 Shell 超时时长...</translation>
+        <translation>鏇存敼 Shell 瓒呮椂鏃堕暱...</translation>
     </message>
     <message>
         <source>Preferences</source>
-        <translation>首选项</translation>
+        <translation>棣栭€夐」</translation>
     </message>
     <message>
         <source>&amp;Full Screen</source>
-        <translation>全屏(&amp;F)</translation>
+        <translation>鍏ㄥ睆(&amp;F)</translation>
     </message>
     <message>
         <source>&amp;Minimize</source>
-        <translation>最小化(&amp;M)</translation>
+        <translation>鏈€灏忓寲(&amp;M)</translation>
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择后一个标签页</translation>
+        <translation>閫夋嫨鍚庝竴涓爣绛鹃〉</translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择前一个标签页</translation>
+        <translation>閫夋嫨鍓嶄竴涓爣绛鹃〉</translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
-        <translation>在当前标签页重新执行查询</translation>
+        <translation>鍦ㄥ綋鍓嶆爣绛鹃〉閲嶆柊鎵ц鏌ヨ</translation>
     </message>
     <message>
         <source>Duplicate Query in New Tab</source>
-        <translation>在新标签页复制该查询</translation>
+        <translation>鍦ㄦ柊鏍囩椤靛鍒惰鏌ヨ</translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>窗口</translation>
+        <translation>绐楀彛</translation>
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>打开/刷新欢迎�?/translation>
+        <translation>鎵撳紑/鍒锋柊娆㈣繋椤?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
-        <translation>关于 Robo 3T(&amp;A)...</translation>
+        <translation>鍏充簬 Robo 3T(&amp;A)...</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>帮助</translation>
+        <translation>甯姪</translation>
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具�?/translation>
+        <translation>杩炴帴宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存工具�?/translation>
+        <translation>鎵撳紑/淇濆瓨宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具�?/translation>
+        <translation>鎵ц宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新提示�?/translation>
+        <translation>鏇存柊鎻愮ず鏍?/translation>
     </message>
     <message>
         <source>Robo 3T - </source>
@@ -5836,370 +5836,370 @@ Share your email address with us and we'll keep you up-to-date with updates from
     </message>
     <message>
         <source>Theme</source>
-        <translation>主题</translation>
+        <translation>涓婚</translation>
     </message>
     <message>
         <source>Logs</source>
-        <translation>日志</translation>
+        <translation>鏃ュ織</translation>
     </message>
     <message>
         <source>&amp;Manage Connections...</source>
-        <translation>管理连接(&amp;M)...</translation>
+        <translation>绠＄悊杩炴帴(&amp;M)...</translation>
     </message>
     <message>
         <source>Connect to MongoDB</source>
-        <translation>连接�?MongoDB</translation>
+        <translation>杩炴帴鍒?MongoDB</translation>
     </message>
     <message>
         <source>Cannot connect to MongoDB (%1)</source>
-        <translation>无法连接�?MongoDB (%1)</translation>
+        <translation>鏃犳硶杩炴帴鍒?MongoDB (%1)</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Refresh not working yet... : &lt;br/&gt;  &lt;b&gt;Ctrl+D&lt;/b&gt; : push Button</source>
-        <translation>刷新功能尚未实现... : &lt;br/&gt;  &lt;b&gt;Ctrl+D&lt;/b&gt; : 按下按钮</translation>
+        <translation>鍒锋柊鍔熻兘灏氭湭瀹炵幇... : &lt;br/&gt;  &lt;b&gt;Ctrl+D&lt;/b&gt; : 鎸変笅鎸夐挳</translation>
     </message>
     <message>
         <source>Cannot connect to the MongoDB at %1.</source>
-        <translation>无法连接到位�?%1 �?MongoDB�?/translation>
+        <translation>鏃犳硶杩炴帴鍒颁綅浜?%1 鐨?MongoDB銆?/translation>
     </message>
     <message>
         <source>Operation failed</source>
-        <translation>操作失败</translation>
+        <translation>鎿嶄綔澶辫触</translation>
     </message>
     <message>
         <source>Show Robo 3T</source>
-        <translation>显示 Robo 3T</translation>
+        <translation>鏄剧ず Robo 3T</translation>
     </message>
     <message>
         <source>Database Explorer</source>
-        <translation>数据库资源管理器</translation>
+        <translation>鏁版嵁搴撹祫婧愮鐞嗗櫒</translation>
     </message>
     <message>
         <source>&amp;Explorer</source>
-        <translation>资源管理�?&amp;E)</translation>
+        <translation>璧勬簮绠＄悊鍣?&amp;E)</translation>
     </message>
     <message>
         <source>Press to show/hide Database Explorer panel.</source>
-        <translation>点击以显�?隐藏资源管理器面板�?/translation>
+        <translation>鐐瑰嚮浠ユ樉绀?闅愯棌璧勬簮绠＄悊鍣ㄩ潰鏉裤€?/translation>
     </message>
     <message>
         <source>&amp;Logs</source>
-        <translation>日志(&amp;L)</translation>
+        <translation>鏃ュ織(&amp;L)</translation>
     </message>
     <message>
         <source>Language Changed</source>
-        <translation>语言已更�?/translation>
+        <translation>璇█宸叉洿鏀?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerServerTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>创建数据�?/translation>
+        <translation>鍒涘缓鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状�?(Server Status)</translation>
+        <translation>鏈嶅姟鍣ㄧ姸鎬?(Server Status)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>MongoDB 版本</translation>
+        <translation>MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>主机信息 (Host Info)</translation>
+        <translation>涓绘満淇℃伅 (Host Info)</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>查看日志</translation>
+        <translation>鏌ョ湅鏃ュ織</translation>
     </message>
     <message>
         <source>Disconnect</source>
-        <translation>断开连接</translation>
+        <translation>鏂紑杩炴帴</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统数据�?(System)</translation>
+        <translation>绯荤粺鏁版嵁搴?(System)</translation>
     </message>
     <message>
         <source>Cannot load list of databases.
 
 Error:
 </source>
-        <translation>无法加载数据库列表�?
-错误:
+        <translation>鏃犳硶鍔犺浇鏁版嵁搴撳垪琛ㄣ€?
+閿欒:
 </translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Replica set's primary is unreachable.
 
 Reason:
 Connection failure. </source>
-        <translation>复本集的 Primary 节点不可达�?
-原因:
-连接失败�?</translation>
+        <translation>澶嶆湰闆嗙殑 Primary 鑺傜偣涓嶅彲杈俱€?
+鍘熷洜:
+杩炴帴澶辫触銆?</translation>
     </message>
     <message>
         <source> [Offline]</source>
-        <translation> [离线]</translation>
+        <translation> [绂荤嚎]</translation>
     </message>
     <message>
         <source>&amp;Create</source>
-        <translation>创建(&amp;C)</translation>
+        <translation>鍒涘缓(&amp;C)</translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名�?</translation>
+        <translation>鏁版嵁搴撳悕绉?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::Notifier</name>
     <message>
         <source>Delete Document...</source>
-        <translation>删除文档...</translation>
+        <translation>鍒犻櫎鏂囨。...</translation>
     </message>
     <message>
         <source>Delete Documents...</source>
-        <translation>删除多个文档...</translation>
+        <translation>鍒犻櫎澶氫釜鏂囨。...</translation>
     </message>
     <message>
         <source>Edit Document...</source>
-        <translation>编辑文档...</translation>
+        <translation>缂栬緫鏂囨。...</translation>
     </message>
     <message>
         <source>View Document...</source>
-        <translation>查看文档...</translation>
+        <translation>鏌ョ湅鏂囨。...</translation>
     </message>
     <message>
         <source>Insert Document...</source>
-        <translation>插入文档...</translation>
+        <translation>鎻掑叆鏂囨。...</translation>
     </message>
     <message>
         <source>Copy Value</source>
-        <translation>复制�?/translation>
+        <translation>澶嶅埗鍊?/translation>
     </message>
     <message>
         <source>Copy Name</source>
-        <translation>复制名称</translation>
+        <translation>澶嶅埗鍚嶇О</translation>
     </message>
     <message>
         <source>Copy Path</source>
-        <translation>复制路径</translation>
+        <translation>澶嶅埗璺緞</translation>
     </message>
     <message>
         <source>Copy Timestamp from ObjectId</source>
-        <translation>�?ObjectId 复制时间�?/translation>
+        <translation>浠?ObjectId 澶嶅埗鏃堕棿鎴?/translation>
     </message>
     <message>
         <source>Copy JSON</source>
-        <translation>复制�?JSON</translation>
+        <translation>澶嶅埗涓?JSON</translation>
     </message>
     <message>
         <source>Cannot delete</source>
-        <translation>无法删除</translation>
+        <translation>鏃犳硶鍒犻櫎</translation>
     </message>
     <message>
         <source>Selected document doesn't have _id field. 
 Maybe this is a system document that should be managed in a special way?</source>
-        <translation>选定的文档不包含 _id 字段�?这可能是一个需要特殊管理方式的系统文档�?/translation>
+        <translation>閫夊畾鐨勬枃妗ｄ笉鍖呭惈 _id 瀛楁銆?杩欏彲鑳芥槸涓€涓渶瑕佺壒娈婄鐞嗘柟寮忕殑绯荤粺鏂囨。銆?/translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>文档</translation>
+        <translation>鏂囨。</translation>
     </message>
     <message>
         <source>%1 %2 with id:&lt;br&gt;&lt;b&gt;%3&lt;/b&gt;?</source>
-        <translation>确定要删�?ID �?&lt;br&gt;&lt;b&gt;%3&lt;/b&gt; �?%1 %2 吗？</translation>
+        <translation>纭畾瑕佸垹闄?ID 涓?&lt;br&gt;&lt;b&gt;%3&lt;/b&gt; 鐨?%1 %2 鍚楋紵</translation>
     </message>
     <message>
         <source>Database Error</source>
-        <translation>数据库错�?/translation>
+        <translation>鏁版嵁搴撻敊璇?/translation>
     </message>
     <message>
         <source>Do you want to delete %1 selected documents?</source>
-        <translation>确定要删除所选的 %1 个文档吗�?/translation>
+        <translation>纭畾瑕佸垹闄ゆ墍閫夌殑 %1 涓枃妗ｅ悧锛?/translation>
     </message>
     <message>
         <source>Edit Document</source>
-        <translation>编辑文档</translation>
+        <translation>缂栬緫鏂囨。</translation>
     </message>
     <message>
         <source>View Document</source>
-        <translation>查看文档</translation>
+        <translation>鏌ョ湅鏂囨。</translation>
     </message>
     <message>
         <source>Insert Document</source>
-        <translation>插入文档</translation>
+        <translation>鎻掑叆鏂囨。</translation>
     </message>
     <message>
         <source>Error extracting ISODate()</source>
-        <translation>提取 ISODate() 时出�?/translation>
+        <translation>鎻愬彇 ISODate() 鏃跺嚭閿?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSLTab</name>
     <message>
         <source>Use TLS protocol</source>
-        <translation>使用 TLS 协议</translation>
+        <translation>浣跨敤 TLS 鍗忚</translation>
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>验证方法: </translation>
+        <translation>楠岃瘉鏂规硶: </translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证�?/translation>
+        <translation>鑷鍚嶈瘉涔?/translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
-        <translation>使用 CA 证书</translation>
+        <translation>浣跨敤 CA 璇佷功</translation>
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络环境完全可信，否则应避免使用自签名证书。如果使用自签名证书，通信频道虽会被加密，但无法验证服务器身份的真实性�?/translation>
+        <translation>閫氬父鎯呭喌涓嬶紝闄ら潪缃戠粶鐜瀹屽叏鍙俊锛屽惁鍒欏簲閬垮厤浣跨敤鑷鍚嶈瘉涔︺€傚鏋滀娇鐢ㄨ嚜绛惧悕璇佷功锛岄€氫俊棰戦亾铏戒細琚姞瀵嗭紝浣嗘棤娉曢獙璇佹湇鍔″櫒韬唤鐨勭湡瀹炴€с€?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书:</translation>
+        <translation>CA 璇佷功:</translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/密钥: </translation>
+        <translation>浣跨敤 PEM 璇佷功/瀵嗛挜: </translation>
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>如果 MongoDB 服务器要求客户端提供�?CA 签名的证书或密钥文件，请开启此选项�?/translation>
+        <translation>濡傛灉 MongoDB 鏈嶅姟鍣ㄨ姹傚鎴风鎻愪緵缁?CA 绛惧悕鐨勮瘉涔︽垨瀵嗛挜鏂囦欢锛岃寮€鍚閫夐」銆?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/密钥: </translation>
+        <translation>PEM 璇佷功/瀵嗛挜: </translation>
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>密码短语 (Passphrase): </translation>
+        <translation>瀵嗙爜鐭 (Passphrase): </translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次连接时询问密�?/translation>
+        <translation>姣忔杩炴帴鏃惰闂瘑鐮?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
-        <translation>高级选项</translation>
+        <translation>楂樼骇閫夐」</translation>
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>CRL (证书吊销列表): </translation>
+        <translation>CRL (璇佷功鍚婇攢鍒楄〃): </translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
-        <translation>无效的主机名: </translation>
+        <translation>鏃犳晥鐨勪富鏈哄悕: </translation>
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允�?/translation>
+        <translation>涓嶅厑璁?/translation>
     </message>
     <message>
         <source>Allowed</source>
-        <translation>允许</translation>
+        <translation>鍏佽</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation>错误: </translation>
+        <translation>閿欒: </translation>
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存�?/translation>
+        <translation> 鏂囦欢涓嶅瓨鍦?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
-        <translation>CA 签名证书</translation>
+        <translation>CA 绛惧悕璇佷功</translation>
     </message>
     <message>
         <source>PEM Certificate/Key</source>
-        <translation>PEM 证书/密钥</translation>
+        <translation>PEM 璇佷功/瀵嗛挜</translation>
     </message>
     <message>
         <source>CRL (Revocation List)</source>
-        <translation>CRL (证书吊销列表)</translation>
+        <translation>CRL (璇佷功鍚婇攢鍒楄〃)</translation>
     </message>
     <message>
         <source>Choose File</source>
-        <translation>选择文件</translation>
+        <translation>閫夋嫨鏂囦欢</translation>
     </message>
     <message>
         <source> mongo --tlsCAFile : Certificate Authority file for TLS</source>
-        <translation> mongo --tlsCAFile : 用于 TLS �?CA 证书颁发机构文件</translation>
+        <translation> mongo --tlsCAFile : 鐢ㄤ簬 TLS 鐨?CA 璇佷功棰佸彂鏈烘瀯鏂囦欢</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFile : 用于 TLS �?PEM 证书/密钥文件</translation>
+        <translation> mongo --tlsCertificateKeyFile : 鐢ㄤ簬 TLS 鐨?PEM 璇佷功/瀵嗛挜鏂囦欢</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFilePassword : 用于 TLS �?PEM 文件密钥密码</translation>
+        <translation> mongo --tlsCertificateKeyFilePassword : 鐢ㄤ簬 TLS 鐨?PEM 鏂囦欢瀵嗛挜瀵嗙爜</translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidHostnames : Allow connections to servers with non-matching hostnames</source>
-        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务�?/translation>
+        <translation> mongo --tlsAllowInvalidHostnames : 鍏佽杩炴帴鍒颁富鏈哄悕涓嶅尮閰嶇殑鏈嶅姟鍣?/translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidCertificates : Allow connections to servers with invalid certificates</source>
-        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到包含无效证书的服务�?/translation>
+        <translation> mongo --tlsAllowInvalidCertificates : 鍏佽杩炴帴鍒板寘鍚棤鏁堣瘉涔︾殑鏈嶅姟鍣?/translation>
     </message>
     <message>
         <source> mongo --tlsCRLFile : Certificate Revocation List file for TLS</source>
-        <translation> mongo --tlsCRLFile : 用于 TLS 的证书吊销列表 (CRL) 文件</translation>
+        <translation> mongo --tlsCRLFile : 鐢ㄤ簬 TLS 鐨勮瘉涔﹀悐閿€鍒楄〃 (CRL) 鏂囦欢</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExportDialog</name>
     <message>
         <source>Export Collection</source>
-        <translation>导出集合</translation>
+        <translation>瀵煎嚭闆嗗悎</translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名�?</translation>
+        <translation>鏁版嵁搴撳悕绉?</translation>
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称:</translation>
+        <translation>闆嗗悎鍚嶇О:</translation>
     </message>
     <message>
         <source>Server: </source>
-        <translation>服务�? </translation>
+        <translation>鏈嶅姟鍣? </translation>
     </message>
     <message>
         <source>Database: </source>
-        <translation>数据�? </translation>
+        <translation>鏁版嵁搴? </translation>
     </message>
     <message>
         <source>Collection: </source>
-        <translation>集合: </translation>
+        <translation>闆嗗悎: </translation>
     </message>
     <message>
         <source>JSON</source>
@@ -6211,739 +6211,739 @@ Maybe this is a system document that should be managed in a special way?</source
     </message>
     <message>
         <source>Fields:</source>
-        <translation>字段:</translation>
+        <translation>瀛楁:</translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation>格式:</translation>
+        <translation>鏍煎紡:</translation>
     </message>
     <message>
         <source>Query:</source>
-        <translation>查询条件 (Query):</translation>
+        <translation>鏌ヨ鏉′欢 (Query):</translation>
     </message>
     <message>
         <source>File Name:</source>
-        <translation>文件�?</translation>
+        <translation>鏂囦欢鍚?</translation>
     </message>
     <message>
         <source>Directory:</source>
-        <translation>目录:</translation>
+        <translation>鐩綍:</translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>命令:</translation>
+        <translation>鍛戒护:</translation>
     </message>
     <message>
         <source>Manual Mode</source>
-        <translation>手动模式</translation>
+        <translation>鎵嬪姩妯″紡</translation>
     </message>
     <message>
         <source>E&amp;xport</source>
-        <translation>导出(&amp;X)</translation>
+        <translation>瀵煎嚭(&amp;X)</translation>
     </message>
     <message>
         <source>Selected Collection</source>
-        <translation>选定的集�?/translation>
+        <translation>閫夊畾鐨勯泦鍚?/translation>
     </message>
     <message>
         <source>Output Properties</source>
-        <translation>导出属�?/translation>
+        <translation>瀵煎嚭灞炴€?/translation>
     </message>
     <message>
         <source>Manual Export</source>
-        <translation>手动导出</translation>
+        <translation>鎵嬪姩瀵煎嚭</translation>
     </message>
     <message>
         <source>Export Summary</source>
-        <translation>导出摘要</translation>
+        <translation>瀵煎嚭鎽樿</translation>
     </message>
     <message>
         <source>Exporting...</source>
-        <translation>正在导出...</translation>
+        <translation>姝ｅ湪瀵煎嚭...</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>"Fields" option is required in CSV mode.</source>
-        <translation>�?CSV 模式下，必须指定“字段”选项�?/translation>
+        <translation>鍦?CSV 妯″紡涓嬶紝蹇呴』鎸囧畾鈥滃瓧娈碘€濋€夐」銆?/translation>
     </message>
     <message>
         <source>Select Directory</source>
-        <translation>选择目录</translation>
+        <translation>閫夋嫨鐩綍</translation>
     </message>
     <message>
         <source>Auto Mode</source>
-        <translation>自动模式</translation>
+        <translation>鑷姩妯″紡</translation>
     </message>
     <message>
         <source>Selected Server</source>
-        <translation>选定的服务器</translation>
+        <translation>閫夊畾鐨勬湇鍔″櫒</translation>
     </message>
     <message>
         <source>Export Successful: 
 </source>
-        <translation>导出成功: 
+        <translation>瀵煎嚭鎴愬姛: 
 </translation>
     </message>
     <message>
         <source>Exported file: </source>
-        <translation>导出的文�? </translation>
+        <translation>瀵煎嚭鐨勬枃浠? </translation>
     </message>
     <message>
         <source>Number of records exported:</source>
-        <translation>导出的记录条�?</translation>
+        <translation>瀵煎嚭鐨勮褰曟潯鏁?</translation>
     </message>
     <message>
         <source>Export Failed.
 </source>
-        <translation>导出失败�?</translation>
+        <translation>瀵煎嚭澶辫触銆?</translation>
     </message>
     <message>
         <source>Output:
 </source>
-        <translation>输出内容:
+        <translation>杈撳嚭鍐呭:
 </translation>
     </message>
     <message>
         <source>Error: "mongoexport" process failed to start. Either the invoked program is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>错误: “mongoexport�?进程启动失败。可能是调用的程序丢失，或者您没有足够的权限来调用该程序�?/translation>
+        <translation>閿欒: 鈥渕ongoexport鈥?杩涚▼鍚姩澶辫触銆傚彲鑳芥槸璋冪敤鐨勭▼搴忎涪澶憋紝鎴栬€呮偍娌℃湁瓒冲鐨勬潈闄愭潵璋冪敤璇ョ▼搴忋€?/translation>
     </message>
     <message>
         <source>Error: "mongoexport" process crashed some time after starting successfully..</source>
-        <translation>错误: “mongoexport�?进程在成功启动后发生崩溃�?/translation>
+        <translation>閿欒: 鈥渕ongoexport鈥?杩涚▼鍦ㄦ垚鍔熷惎鍔ㄥ悗鍙戠敓宕╂簝銆?/translation>
     </message>
     <message>
         <source>Error: "mongoexport" process failed. Error code: </source>
-        <translation>错误: “mongoexport�?进程失败。错误码: </translation>
+        <translation>閿欒: 鈥渕ongoexport鈥?杩涚▼澶辫触銆傞敊璇爜: </translation>
     </message>
     <message>
         <source>Details</source>
-        <translation>详情</translation>
+        <translation>璇︽儏</translation>
     </message>
     <message>
         <source>&lt;a href='error' style='color: #777777;'&gt;Show details&lt;/a&gt;</source>
-        <translation>&lt;a href='error' style='color: #777777;'&gt;显示详情&lt;/a&gt;</translation>
+        <translation>&lt;a href='error' style='color: #777777;'&gt;鏄剧ず璇︽儏&lt;/a&gt;</translation>
     </message>
     <message>
         <source>&lt;a href='error' style='color: #777777;'&gt;Hide details&lt;/a&gt;</source>
-        <translation>&lt;a href='error' style='color: #777777;'&gt;隐藏详情&lt;/a&gt;</translation>
+        <translation>&lt;a href='error' style='color: #777777;'&gt;闅愯棌璇︽儏&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::PreferencesDialog</name>
     <message>
         <source>Preferences %1</source>
-        <translation>%1 首选项</translation>
+        <translation>%1 棣栭€夐」</translation>
     </message>
     <message>
         <source>Default display mode:</source>
-        <translation>默认显示模式:</translation>
+        <translation>榛樿鏄剧ず妯″紡:</translation>
     </message>
     <message>
         <source>Display Dates in:</source>
-        <translation>日期显示方式:</translation>
+        <translation>鏃ユ湡鏄剧ず鏂瑰紡:</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding:</source>
-        <translation>旧版 UUID 编码映射:</translation>
+        <translation>鏃х増 UUID 缂栫爜鏄犲皠:</translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷�?(Alt+1...9)</translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?(Alt+1...9)</translation>
     </message>
     <message>
         <source>Styles:</source>
-        <translation>样式 (主题):</translation>
+        <translation>鏍峰紡 (涓婚):</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>文本模式</translation>
+        <translation>鏂囨湰妯″紡</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>树状模式</translation>
+        <translation>鏍戠姸妯″紡</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>列表模式</translation>
+        <translation>鍒楄〃妯″紡</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation>自定义模�?/translation>
+        <translation>鑷畾涔夋ā寮?/translation>
     </message>
     <message>
         <source>UTC</source>
-        <translation>UTC (协调世界�?</translation>
+        <translation>UTC (鍗忚皟涓栫晫鏃?</translation>
     </message>
     <message>
         <source>Local Time</source>
-        <translation>本地时间</translation>
+        <translation>鏈湴鏃堕棿</translation>
     </message>
     <message>
         <source>Default (Do not decode)</source>
-        <translation>默认 (保持原样)</translation>
+        <translation>榛樿 (淇濇寔鍘熸牱)</translation>
     </message>
     <message>
         <source>Java</source>
-        <translation>Java 编码</translation>
+        <translation>Java 缂栫爜</translation>
     </message>
     <message>
         <source>C# / .NET</source>
-        <translation>C# / .NET 编码</translation>
+        <translation>C# / .NET 缂栫爜</translation>
     </message>
     <message>
         <source>Python</source>
-        <translation>Python 编码</translation>
+        <translation>Python 缂栫爜</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerDatabaseCategoryTreeItem</name>
     <message>
         <source>Create Collection...</source>
-        <translation>创建集合...</translation>
+        <translation>鍒涘缓闆嗗悎...</translation>
     </message>
     <message>
         <source>Collections Statistics</source>
-        <translation>集合统计信息 (Stats)</translation>
+        <translation>闆嗗悎缁熻淇℃伅 (Stats)</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>View Users</source>
-        <translation>查看用户</translation>
+        <translation>鏌ョ湅鐢ㄦ埛</translation>
     </message>
     <message>
         <source>Add User...</source>
-        <translation>添加用户...</translation>
+        <translation>娣诲姞鐢ㄦ埛...</translation>
     </message>
     <message>
         <source>View Functions</source>
-        <translation>查看函数 (system.js)</translation>
+        <translation>鏌ョ湅鍑芥暟 (system.js)</translation>
     </message>
     <message>
         <source>Add Function...</source>
-        <translation>添加函数...</translation>
+        <translation>娣诲姞鍑芥暟...</translation>
     </message>
     <message>
         <source>Create Function</source>
-        <translation>创建函数</translation>
+        <translation>鍒涘缓鍑芥暟</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
         <source>Create Collection</source>
-        <translation>创建集合</translation>
+        <translation>鍒涘缓闆嗗悎</translation>
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称:</translation>
+        <translation>闆嗗悎鍚嶇О:</translation>
     </message>
     <message>
         <source>C&amp;reate</source>
-        <translation>创建(&amp;R)</translation>
+        <translation>鍒涘缓(&amp;R)</translation>
     </message>
     <message>
         <source>Validate JSON</source>
-        <translation>验证 JSON</translation>
+        <translation>楠岃瘉 JSON</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>基本选项</translation>
+        <translation>鍩烘湰閫夐」</translation>
     </message>
     <message>
         <source>Storage Engine</source>
-        <translation>存储引擎 (Storage Engine)</translation>
+        <translation>瀛樺偍寮曟搸 (Storage Engine)</translation>
     </message>
     <message>
         <source>Validator</source>
-        <translation>验证�?(Validator)</translation>
+        <translation>楠岃瘉鍣?(Validator)</translation>
     </message>
     <message>
         <source>Index Option Defaults</source>
-        <translation>默认索引选项</translation>
+        <translation>榛樿绱㈠紩閫夐」</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级选项</translation>
+        <translation>楂樼骇閫夐」</translation>
     </message>
     <message>
         <source>Create capped collection</source>
-        <translation>创建固定大小集合 (Capped Collection)</translation>
+        <translation>鍒涘缓鍥哄畾澶у皬闆嗗悎 (Capped Collection)</translation>
     </message>
     <message>
         <source>Maximum size in bytes: </source>
-        <translation>最大字节数 (bytes): </translation>
+        <translation>鏈€澶у瓧鑺傛暟 (bytes): </translation>
     </message>
     <message>
         <source>Maximum number of documents: </source>
-        <translation>最大文档数�? </translation>
+        <translation>鏈€澶ф枃妗ｆ暟閲? </translation>
     </message>
     <message>
         <source>Auto index _id</source>
-        <translation>自动�?_id 创建索引</translation>
+        <translation>鑷姩涓?_id 鍒涘缓绱㈠紩</translation>
     </message>
     <message>
         <source>Use power-of-2 sizes</source>
-        <translation>使用 2 的幂次方大小 (Power-of-2)</translation>
+        <translation>浣跨敤 2 鐨勫箓娆℃柟澶у皬 (Power-of-2)</translation>
     </message>
     <message>
         <source>No Padding</source>
-        <translation>禁用填充 (No Padding)</translation>
+        <translation>绂佺敤濉厖 (No Padding)</translation>
     </message>
     <message>
         <source>Enter the configuration for the storage engine: </source>
-        <translation>请输入存储引擎的相关配置: </translation>
+        <translation>璇疯緭鍏ュ瓨鍌ㄥ紩鎿庣殑鐩稿叧閰嶇疆: </translation>
     </message>
     <message>
         <source>Validation Level: </source>
-        <translation>验证级别 (Level): </translation>
+        <translation>楠岃瘉绾у埆 (Level): </translation>
     </message>
     <message>
         <source>Validation Action: </source>
-        <translation>验证动作 (Action): </translation>
+        <translation>楠岃瘉鍔ㄤ綔 (Action): </translation>
     </message>
     <message>
         <source>Enter the validator document for this collection: </source>
-        <translation>请输入该集合的验证文�?(Validator): </translation>
+        <translation>璇疯緭鍏ヨ闆嗗悎鐨勯獙璇佹枃妗?(Validator): </translation>
     </message>
     <message>
         <source>Enter a default configuration for indexes when creating a collection: </source>
-        <translation>请输入创建集合时的索引默认配�? </translation>
+        <translation>璇疯緭鍏ュ垱寤洪泦鍚堟椂鐨勭储寮曢粯璁ら厤缃? </translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, 位于 �?%2 �? �?%3 列�?/translation>
+        <translation>鏃犳硶瑙ｆ瀽 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, 浣嶄簬 绗?%2 琛? 绗?%3 鍒椼€?/translation>
     </message>
     <message>
         <source>Parsing error</source>
-        <translation>解析错误</translation>
+        <translation>瑙ｆ瀽閿欒</translation>
     </message>
     <message>
         <source>Validation</source>
-        <translation>验证结果</translation>
+        <translation>楠岃瘉缁撴灉</translation>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效�?/translation>
+        <translation>JSON 鏍煎紡鏈夋晥锛?/translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Maximum size is required for capped collections</source>
-        <translation>固定大小集合必须指定最大字节数</translation>
+        <translation>鍥哄畾澶у皬闆嗗悎蹇呴』鎸囧畾鏈€澶у瓧鑺傛暟</translation>
     </message>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>此选项仅适用�?WiredTiger 存储引擎且数据库版本需�?3.0 及以上�?/translation>
+        <translation>姝ら€夐」浠呴€傜敤浜?WiredTiger 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰闇€鍦?3.0 鍙婁互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>此选项仅适用于数据库版本 3.2 及以上�?/translation>
+        <translation>姝ら€夐」浠呴€傜敤浜庢暟鎹簱鐗堟湰 3.2 鍙婁互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>此选项仅适用�?MMAPv1 存储引擎且数据库版本需�?3.0 及以上�?/translation>
+        <translation>姝ら€夐」浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰闇€鍦?3.0 鍙婁互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>此选项仅适用�?MMAPv1 存储引擎，且自数据库版本 3.0 起已被弃用�?/translation>
+        <translation>姝ら€夐」浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸锛屼笖鑷暟鎹簱鐗堟湰 3.0 璧峰凡琚純鐢ㄣ€?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>自数据库版本 3.2 起该选项已被弃用�?/translation>
+        <translation>鑷暟鎹簱鐗堟湰 3.2 璧疯閫夐」宸茶寮冪敤銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateUserDialog</name>
     <message>
         <source>Add User</source>
-        <translation>添加用户</translation>
+        <translation>娣诲姞鐢ㄦ埛</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>用户�?</translation>
+        <translation>鐢ㄦ埛鍚?</translation>
     </message>
     <message>
         <source>Password:</source>
-        <translation>密码:</translation>
+        <translation>瀵嗙爜:</translation>
     </message>
     <message>
         <source>UserSource:</source>
-        <translation>认证�?(Auth Source):</translation>
+        <translation>璁よ瘉婧?(Auth Source):</translation>
     </message>
     <message>
         <source>Read Only</source>
-        <translation>只读 (Read Only)</translation>
+        <translation>鍙 (Read Only)</translation>
     </message>
     <message>
         <source>read</source>
-        <translation>read (只读)</translation>
+        <translation>read (鍙)</translation>
     </message>
     <message>
         <source>readWrite</source>
-        <translation>readWrite (读写)</translation>
+        <translation>readWrite (璇诲啓)</translation>
     </message>
     <message>
         <source>dbAdmin</source>
-        <translation>dbAdmin (数据库管�?</translation>
+        <translation>dbAdmin (鏁版嵁搴撶鐞?</translation>
     </message>
     <message>
         <source>userAdmin</source>
-        <translation>userAdmin (用户管理)</translation>
+        <translation>userAdmin (鐢ㄦ埛绠＄悊)</translation>
     </message>
     <message>
         <source>clusterAdmin</source>
-        <translation>clusterAdmin (集群管理)</translation>
+        <translation>clusterAdmin (闆嗙兢绠＄悊)</translation>
     </message>
     <message>
         <source>readAnyDatabase</source>
-        <translation>readAnyDatabase (任意数据库只�?</translation>
+        <translation>readAnyDatabase (浠绘剰鏁版嵁搴撳彧璇?</translation>
     </message>
     <message>
         <source>readWriteAnyDatabase</source>
-        <translation>readWriteAnyDatabase (任意数据库读�?</translation>
+        <translation>readWriteAnyDatabase (浠绘剰鏁版嵁搴撹鍐?</translation>
     </message>
     <message>
         <source>userAdminAnyDatabase</source>
-        <translation>userAdminAnyDatabase (任意数据库用户管�?</translation>
+        <translation>userAdminAnyDatabase (浠绘剰鏁版嵁搴撶敤鎴风鐞?</translation>
     </message>
     <message>
         <source>dbAdminAnyDatabase</source>
-        <translation>dbAdminAnyDatabase (任意数据库管�?</translation>
+        <translation>dbAdminAnyDatabase (浠绘剰鏁版嵁搴撶鐞?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerReplicaSetTreeItem</name>
     <message>
         <source> [member of </source>
-        <translation> [成员属于 </translation>
+        <translation> [鎴愬憳灞炰簬 </translation>
     </message>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Open Direct Connection</source>
-        <translation>打开直接连接 (Direct Connection)</translation>
+        <translation>鎵撳紑鐩存帴杩炴帴 (Direct Connection)</translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>服务器状�?(Server Status)</translation>
+        <translation>鏈嶅姟鍣ㄧ姸鎬?(Server Status)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>MongoDB 版本</translation>
+        <translation>MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>主机信息 (Host Info)</translation>
+        <translation>涓绘満淇℃伅 (Host Info)</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>查看日志</translation>
+        <translation>鏌ョ湅鏃ュ織</translation>
     </message>
     <message>
         <source>[Unknown]</source>
-        <translation>[未知]</translation>
+        <translation>[鏈煡]</translation>
     </message>
     <message>
         <source>[Primary]</source>
-        <translation>[主节�?Primary]</translation>
+        <translation>[涓昏妭鐐?Primary]</translation>
     </message>
     <message>
         <source>[Secondary]</source>
-        <translation>[副本节点 Secondary]</translation>
+        <translation>[鍓湰鑺傜偣 Secondary]</translation>
     </message>
     <message>
         <source>[Not Reachable]</source>
-        <translation>[不可达]</translation>
+        <translation>[涓嶅彲杈綸</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionIndexesDir</name>
     <message>
         <source>Add Index...</source>
-        <translation>添加索引...</translation>
+        <translation>娣诲姞绱㈠紩...</translation>
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索�?(ReIndex)...</translation>
+        <translation>閲嶅缓鎵€鏈夌储寮?(ReIndex)...</translation>
     </message>
     <message>
         <source>View Indexes</source>
-        <translation>查看索引 (getIndexes)</translation>
+        <translation>鏌ョ湅绱㈠紩 (getIndexes)</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Indexes</source>
-        <translation>索引 (Indexes)</translation>
+        <translation>绱㈠紩 (Indexes)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionIndexesDir</name>
     <message>
         <source>Add Index...</source>
-        <translation>添加索引...</translation>
+        <translation>娣诲姞绱㈠紩...</translation>
     </message>
     <message>
         <source>Rebuild Indexes...</source>
-        <translation>重建所有索�?(ReIndex)...</translation>
+        <translation>閲嶅缓鎵€鏈夌储寮?(ReIndex)...</translation>
     </message>
     <message>
         <source>View Indexes</source>
-        <translation>查看索引 (getIndexes)</translation>
+        <translation>鏌ョ湅绱㈠紩 (getIndexes)</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Indexes</source>
-        <translation>索引 (Indexes)</translation>
+        <translation>绱㈠紩 (Indexes)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AddEditIndexDialog</name>
     <message>
         <source>Index Properties</source>
-        <translation>索引属�?/translation>
+        <translation>绱㈠紩灞炴€?/translation>
     </message>
     <message>
         <source>Basic</source>
-        <translation>基本配置</translation>
+        <translation>鍩烘湰閰嶇疆</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级属�?(Advanced)</translation>
+        <translation>楂樼骇灞炴€?(Advanced)</translation>
     </message>
     <message>
         <source>Text Search</source>
-        <translation>文本搜索 (Text Search)</translation>
+        <translation>鏂囨湰鎼滅储 (Text Search)</translation>
     </message>
     <message>
         <source>Unique</source>
-        <translation>唯一索引 (Unique)</translation>
+        <translation>鍞竴绱㈠紩 (Unique)</translation>
     </message>
     <message>
         <source>Choose any name that will help you to identify this index.</source>
-        <translation>请选择一个有助于您识别该索引的名称�?/translation>
+        <translation>璇烽€夋嫨涓€涓湁鍔╀簬鎮ㄨ瘑鍒绱㈠紩鐨勫悕绉般€?/translation>
     </message>
     <message>
         <source>Document that contains pairs with the name of the field or fields to index and order of the index. A 1 specifies ascending and a -1 specifies descending.</source>
-        <translation>包含要索引的字段名称及其顺序的文档�? 表示升序�?1 表示降序�?/translation>
+        <translation>鍖呭惈瑕佺储寮曠殑瀛楁鍚嶇О鍙婂叾椤哄簭鐨勬枃妗ｃ€? 琛ㄧず鍗囧簭锛?1 琛ㄧず闄嶅簭銆?/translation>
     </message>
     <message>
         <source>If set, creates a unique index so that the collection will not accept insertion of documents where the index key or keys match an existing value in the index.</source>
-        <translation>如果开启，将创建唯一索引，使集合不接受索引键值与现有值重复的文档插入�?/translation>
+        <translation>濡傛灉寮€鍚紝灏嗗垱寤哄敮涓€绱㈠紩锛屼娇闆嗗悎涓嶆帴鍙楃储寮曢敭鍊间笌鐜版湁鍊奸噸澶嶇殑鏂囨。鎻掑叆銆?/translation>
     </message>
     <message>
         <source>Name:   </source>
-        <translation>名称:   </translation>
+        <translation>鍚嶇О:   </translation>
     </message>
     <message>
         <source>Keys:   </source>
-        <translation>索引�?(Keys): </translation>
+        <translation>绱㈠紩閿?(Keys): </translation>
     </message>
     <message>
         <source>Sparse</source>
-        <translation>稀疏索�?(Sparse)</translation>
+        <translation>绋€鐤忕储寮?(Sparse)</translation>
     </message>
     <message>
         <source>Create index in background</source>
-        <translation>在后台创建索�?(Background)</translation>
+        <translation>鍦ㄥ悗鍙板垱寤虹储寮?(Background)</translation>
     </message>
     <message>
         <source>seconds</source>
-        <translation>�?/translation>
+        <translation>绉?/translation>
     </message>
     <message>
         <source>Expire after</source>
-        <translation>过期时间 (TTL): </translation>
+        <translation>杩囨湡鏃堕棿 (TTL): </translation>
     </message>
     <message>
         <source>If set, the index only references documents with the specified field. These indexes use less space but behave differently in some situations (particularly sorts).</source>
-        <translation>如果开启，索引仅引用包含指定字段的文档。此类索引占用空间较少，但在某些情况下（特别是排序）行为会有所不同�?/translation>
+        <translation>濡傛灉寮€鍚紝绱㈠紩浠呭紩鐢ㄥ寘鍚寚瀹氬瓧娈电殑鏂囨。銆傛绫荤储寮曞崰鐢ㄧ┖闂磋緝灏戯紝浣嗗湪鏌愪簺鎯呭喌涓嬶紙鐗瑰埆鏄帓搴忥級琛屼负浼氭湁鎵€涓嶅悓銆?/translation>
     </message>
     <message>
         <source>Builds the index in the background so that building an index does not block other database activities.</source>
-        <translation>在后台构建索引，这样构建过程不会阻塞其他的数据库活动（如正常的读写操作）�?/translation>
+        <translation>鍦ㄥ悗鍙版瀯寤虹储寮曪紝杩欐牱鏋勫缓杩囩▼涓嶄細闃诲鍏朵粬鐨勬暟鎹簱娲诲姩锛堝姝ｅ父鐨勮鍐欐搷浣滐級銆?/translation>
     </message>
     <message>
         <source>Specifies a &lt;i&gt;time to live&lt;/i&gt;, in seconds, to control how long MongoDB retains documents in this collection</source>
-        <translation>指定 &lt;i&gt;生存时间 (TTL)&lt;/i&gt;（单位：秒），用于控�?MongoDB 在该集合中保留文档的时长�?/translation>
+        <translation>鎸囧畾 &lt;i&gt;鐢熷瓨鏃堕棿 (TTL)&lt;/i&gt;锛堝崟浣嶏細绉掞級锛岀敤浜庢帶鍒?MongoDB 鍦ㄨ闆嗗悎涓繚鐣欐枃妗ｇ殑鏃堕暱銆?/translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, the language that determines the list of stop words and the rules for the stemmer and tokenizer. The default value is &lt;b&gt;english&lt;/b&gt;</source>
-        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，决定停用词列表以及分词器和词干规则的语言。默认值为 &lt;b&gt;english&lt;/b&gt;�?/translation>
+        <translation>瀵逛簬&lt;i&gt;鏂囨湰&lt;/i&gt;绱㈠紩锛屽喅瀹氬仠鐢ㄨ瘝鍒楄〃浠ュ強鍒嗚瘝鍣ㄥ拰璇嶅共瑙勫垯鐨勮瑷€銆傞粯璁ゅ€间负 &lt;b&gt;english&lt;/b&gt;銆?/translation>
     </message>
     <message>
         <source>For a &lt;i&gt;text&lt;/i&gt; index, specify the name of the field in the document that contains, for that document, the language to override the default language. The default value is &lt;b&gt;language&lt;/b&gt;</source>
-        <translation>对于&lt;i&gt;文本&lt;/i&gt;索引，指定文档中的字段名，该字段包含用于覆盖默认语言的特定语言设置。默认值为 &lt;b&gt;language&lt;/b&gt;�?/translation>
+        <translation>瀵逛簬&lt;i&gt;鏂囨湰&lt;/i&gt;绱㈠紩锛屾寚瀹氭枃妗ｄ腑鐨勫瓧娈靛悕锛岃瀛楁鍖呭惈鐢ㄤ簬瑕嗙洊榛樿璇█鐨勭壒瀹氳瑷€璁剧疆銆傞粯璁ゅ€间负 &lt;b&gt;language&lt;/b&gt;銆?/translation>
     </message>
     <message>
         <source>Document that contains field and weight pairs. The weight is a number ranging from 1 to 99,999 and denotes the significance of the field relative to the other indexed fields. </source>
-        <translation>包含字段和权重配对的文档。权重的取值范围为 1 �?99,999，表示该字段相对于其他索引字段的重要性�?/translation>
+        <translation>鍖呭惈瀛楁鍜屾潈閲嶉厤瀵圭殑鏂囨。銆傛潈閲嶇殑鍙栧€艰寖鍥翠负 1 鍒?99,999锛岃〃绀鸿瀛楁鐩稿浜庡叾浠栫储寮曞瓧娈电殑閲嶈鎬с€?/translation>
     </message>
     <message>
         <source>Default language:</source>
-        <translation>默认语言:</translation>
+        <translation>榛樿璇█:</translation>
     </message>
     <message>
         <source>Language override:</source>
-        <translation>语言覆盖字段:</translation>
+        <translation>璇█瑕嗙洊瀛楁:</translation>
     </message>
     <message>
         <source>Text weights</source>
-        <translation>文本权重 (Weights):</translation>
+        <translation>鏂囨湰鏉冮噸 (Weights):</translation>
     </message>
     <message>
         <source>Invalid json</source>
-        <translation>无效�?JSON</translation>
+        <translation>鏃犳晥鐨?JSON</translation>
     </message>
     <message>
         <source>Please check json text.
 </source>
-        <translation>请检�?JSON 文本�?</translation>
+        <translation>璇锋鏌?JSON 鏂囨湰銆?</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>警告</translation>
+        <translation>璀﹀憡</translation>
     </message>
     <message>
         <source>MongoDB does not support direct (one step) edit index. 
 To edit an existing index, the index must be dropped and recreated. This means if the recreate step fails, the index being edited might have already been dropped. In this case, Robo 3T will try to recover (recreate) the index being edited. Please consider backing up your index first. 
 
 Are you sure you want to proceed?</source>
-        <translation>MongoDB 不支持直接（一步式）编辑索引�?要修改现有索引，必须先删除再重新创建。这意味着如果重建步骤失败，正在编辑的索引可能已经被删除了。在这种情况下，Robo 3T 将尝试恢复（重新创建）原索引。请考虑在操作前先备份索引�?
-确定要继续吗�?/translation>
+        <translation>MongoDB 涓嶆敮鎸佺洿鎺ワ紙涓€姝ュ紡锛夌紪杈戠储寮曘€?瑕佷慨鏀圭幇鏈夌储寮曪紝蹇呴』鍏堝垹闄ゅ啀閲嶆柊鍒涘缓銆傝繖鎰忓懗鐫€濡傛灉閲嶅缓姝ラ澶辫触锛屾鍦ㄧ紪杈戠殑绱㈠紩鍙兘宸茬粡琚垹闄や簡銆傚湪杩欑鎯呭喌涓嬶紝Robo 3T 灏嗗皾璇曟仮澶嶏紙閲嶆柊鍒涘缓锛夊師绱㈠紩銆傝鑰冭檻鍦ㄦ搷浣滃墠鍏堝浠界储寮曘€?
+纭畾瑕佺户缁悧锛?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::AboutDialog</name>
     <message>
         <source>About </source>
-        <translation>关于 </translation>
+        <translation>鍏充簬 </translation>
     </message>
     <message>
         <source>&lt;h3&gt;%1 %2 (Build %3 - %4/%5)&lt;/h3&gt;Shell-centric MongoDB management tool.&lt;br/&gt;&lt;a href=\"https://%6\"&gt;Submit&lt;/a&gt; issues/proposals on GitHub.&lt;br/&gt;&lt;br/&gt;&lt;a href=\"https://%7\"&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;. All rights reserved.&lt;br/&gt;&lt;br/&gt;The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&lt;br/&gt;&lt;br&gt;&lt;b&gt;Dependencies: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;Credits: &lt;br/&gt;&lt;/b&gt;Some icons are designed by Freepik &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;h3&gt;%1 %2 (内部版本 %3 - %4/%5)&lt;/h3&gt;�?Shell 为中心的 MongoDB 管理工具�?lt;br/&gt;前往 GitHub &lt;a href=\"https://%6\"&gt;提交&lt;/a&gt; 问题反馈或功能建议�?lt;br/&gt;&lt;br/&gt;&lt;a href=\"https://%7\"&gt;%7&lt;/a&gt; &lt;br/&gt;版权所�?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;。保留所有权利�?lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不提供任何形式的担保，包括但不限于对设计、适销性及特定用途适用性的担保�?lt;br/&gt;&lt;br&gt;&lt;b&gt;核心依赖: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;项目致谢: &lt;br/&gt;&lt;/b&gt;部分图标�?Freepik 设计 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
+        <translation>&lt;h3&gt;%1 %2 (鍐呴儴鐗堟湰 %3 - %4/%5)&lt;/h3&gt;浠?Shell 涓轰腑蹇冪殑 MongoDB 绠＄悊宸ュ叿銆?lt;br/&gt;鍓嶅線 GitHub &lt;a href=\"https://%6\"&gt;鎻愪氦&lt;/a&gt; 闂鍙嶉鎴栧姛鑳藉缓璁€?lt;br/&gt;&lt;br/&gt;&lt;a href=\"https://%7\"&gt;%7&lt;/a&gt; &lt;br/&gt;鐗堟潈鎵€鏈?2014-%5 &lt;a href= %8 &gt;%9&lt;/a&gt;銆備繚鐣欐墍鏈夋潈鍒┿€?lt;br/&gt;&lt;br/&gt;鏈▼搴忔寜鈥滃師鏍封€濇彁渚涳紝涓嶆彁渚涗换浣曞舰寮忕殑鎷呬繚锛屽寘鎷絾涓嶉檺浜庡璁捐銆侀€傞攢鎬у強鐗瑰畾鐢ㄩ€旈€傜敤鎬х殑鎷呬繚銆?lt;br/&gt;&lt;br&gt;&lt;b&gt;鏍稿績渚濊禆: &lt;br&gt;&lt;/b&gt;Mongo-Shell %10&lt;br&gt;Qt %11&lt;br&gt;OpenSSL %12&lt;br&gt;libssh2 %13&lt;br&gt;QJson %14&lt;br&gt;QScintilla %15&lt;br&gt;Google Test %16&lt;br&gt;ESPRIMA %17&lt;br&gt;&lt;br&gt;&lt;b&gt;椤圭洰鑷磋阿: &lt;br/&gt;&lt;/b&gt;閮ㄥ垎鍥炬爣鐢?Freepik 璁捐 &lt;a href=https://www.flaticon.com&gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>关于</translation>
+        <translation>鍏充簬</translation>
     </message>
     <message>
         <source>License Agreement</source>
-        <translation>许可协议</translation>
+        <translation>璁稿彲鍗忚</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionIndexItem</name>
     <message>
         <source>Drop Index...</source>
-        <translation>删除索引...</translation>
+        <translation>鍒犻櫎绱㈠紩...</translation>
     </message>
     <message>
         <source>Edit Index...</source>
-        <translation>编辑索引...</translation>
+        <translation>缂栬緫绱㈠紩...</translation>
     </message>
     <message>
         <source>Drop</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>Index</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerUserTreeItem</name>
     <message>
         <source>Drop User</source>
-        <translation>删除用户</translation>
+        <translation>鍒犻櫎鐢ㄦ埛</translation>
     </message>
     <message>
         <source>View User</source>
-        <translation>查看用户</translation>
+        <translation>鏌ョ湅鐢ㄦ埛</translation>
     </message>
     <message>
         <source>Drop</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>User</source>
-        <translation>用户</translation>
+        <translation>鐢ㄦ埛</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerFunctionTreeItem</name>
     <message>
         <source>Remove Function</source>
-        <translation>移除函数</translation>
+        <translation>绉婚櫎鍑芥暟</translation>
     </message>
     <message>
         <source>Edit Function</source>
-        <translation>编辑函数</translation>
+        <translation>缂栬緫鍑芥暟</translation>
     </message>
     <message>
         <source>Drop</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>Function</source>
-        <translation>函数</translation>
+        <translation>鍑芥暟</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::FindFrame</name>
     <message>
         <source>Next</source>
-        <translation>下一�?/translation>
+        <translation>涓嬩竴涓?/translation>
     </message>
     <message>
         <source>Previous</source>
-        <translation>上一�?/translation>
+        <translation>涓婁竴涓?/translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>区分大小�?/translation>
+        <translation>鍖哄垎澶у皬鍐?/translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>查找</translation>
+        <translation>鏌ユ壘</translation>
     </message>
     <message>
         <source>The specified text was not found.</source>
-        <translation>未找到指定的文本�?/translation>
+        <translation>鏈壘鍒版寚瀹氱殑鏂囨湰銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionsDialog</name>
     <message>
         <source> nodes</source>
-        <translation> 个节�?/translation>
+        <translation> 涓妭鐐?/translation>
     </message>
     <message>
         <source> node</source>
-        <translation> 个节�?/translation>
+        <translation> 涓妭鐐?/translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本�?(Replica Set)</translation>
+        <translation>鍓湰闆?(Replica Set)</translation>
     </message>
     <message>
         <source>TLS</source>
@@ -6963,101 +6963,101 @@ Are you sure you want to proceed?</source>
     </message>
     <message>
         <source>MongoDB Connections</source>
-        <translation>MongoDB 连接管理</translation>
+        <translation>MongoDB 杩炴帴绠＄悊</translation>
     </message>
     <message>
         <source>&amp;Add...</source>
-        <translation>添加(&amp;A)...</translation>
+        <translation>娣诲姞(&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Edit...</source>
-        <translation>编辑(&amp;E)...</translation>
+        <translation>缂栬緫(&amp;E)...</translation>
     </message>
     <message>
         <source>&amp;Clone...</source>
-        <translation>克隆(&amp;C)...</translation>
+        <translation>鍏嬮殕(&amp;C)...</translation>
     </message>
     <message>
         <source>&amp;Remove...</source>
-        <translation>删除(&amp;R)...</translation>
+        <translation>鍒犻櫎(&amp;R)...</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名称</translation>
+        <translation>鍚嶇О</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>地址</translation>
+        <translation>鍦板潃</translation>
     </message>
     <message>
         <source>Attributes</source>
-        <translation>属�?/translation>
+        <translation>灞炴€?/translation>
     </message>
     <message>
         <source>Auth. Database / User</source>
-        <translation>认证�?/ 用户</translation>
+        <translation>璁よ瘉搴?/ 鐢ㄦ埛</translation>
     </message>
     <message>
         <source>C&amp;onnect</source>
-        <translation>连接(&amp;O)</translation>
+        <translation>杩炴帴(&amp;O)</translation>
     </message>
     <message>
         <source>records</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>record</source>
-        <translation>条记�?/translation>
+        <translation>鏉¤褰?/translation>
     </message>
     <message>
         <source>&lt;span style='color: #777777;'&gt;Connection settings have been imported (%1 %2)&lt;/span&gt;</source>
-        <translation>&lt;span style='color: #777777;'&gt;连接设置已导�?(�?%1 %2)&lt;/span&gt;</translation>
+        <translation>&lt;span style='color: #777777;'&gt;杩炴帴璁剧疆宸插鍏?(鍏?%1 %2)&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;a style='color: %1' href='create'&gt;Create&lt;/a&gt;, &lt;a style='color: %1' href='edit'&gt;edit&lt;/a&gt;, &lt;a style='color: %1' href='remove'&gt;remove&lt;/a&gt;, &lt;a style='color: %1' href='clone'&gt;clone&lt;/a&gt; or reorder connections via drag'n'drop.</source>
-        <translation>&lt;a style='color: %1' href='create'&gt;创建&lt;/a&gt;�?lt;a style='color: %1' href='edit'&gt;编辑&lt;/a&gt;�?lt;a style='color: %1' href='remove'&gt;删除&lt;/a&gt;�?lt;a style='color: %1' href='clone'&gt;克隆&lt;/a&gt;连接。支持通过拖拽重新排序�?/translation>
+        <translation>&lt;a style='color: %1' href='create'&gt;鍒涘缓&lt;/a&gt;銆?lt;a style='color: %1' href='edit'&gt;缂栬緫&lt;/a&gt;銆?lt;a style='color: %1' href='remove'&gt;鍒犻櫎&lt;/a&gt;銆?lt;a style='color: %1' href='clone'&gt;鍏嬮殕&lt;/a&gt;杩炴帴銆傛敮鎸侀€氳繃鎷栨嫿閲嶆柊鎺掑簭銆?/translation>
     </message>
     <message>
         <source>Are you sure you want to delete "%1" connection?</source>
-        <translation>您确定要删除连接 "%1" 吗？</translation>
+        <translation>鎮ㄧ‘瀹氳鍒犻櫎杩炴帴 "%1" 鍚楋紵</translation>
     </message>
     <message>
         <source>Connections</source>
-        <translation>连接</translation>
+        <translation>杩炴帴</translation>
     </message>
     <message>
         <source>Copy of </source>
-        <translation>复件 - </translation>
+        <translation>澶嶄欢 - </translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerReplicaSetFolderItem</name>
     <message>
         <source>Status of Replica Set</source>
-        <translation>查看副本集状�?(rs.status)</translation>
+        <translation>鏌ョ湅鍓湰闆嗙姸鎬?(rs.status)</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Replica Set (%1 nodes)</source>
-        <translation>副本�?(%1 个节�?</translation>
+        <translation>鍓湰闆?(%1 涓妭鐐?</translation>
     </message>
     <message>
         <source>Replica Set ...</source>
-        <translation>副本�?(加载�?..)</translation>
+        <translation>鍓湰闆?(鍔犺浇涓?..)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::DocumentTextEditor</name>
     <message>
         <source>Edit Document</source>
-        <translation>编辑文档</translation>
+        <translation>缂栬緫鏂囨。</translation>
     </message>
     <message>
         <source>Validate</source>
-        <translation>验证 (Validate)</translation>
+        <translation>楠岃瘉 (Validate)</translation>
     </message>
     <message>
         <source>Robo 3T</source>
@@ -7066,23 +7066,23 @@ Are you sure you want to proceed?</source>
     <message>
         <source>The document has been modified.
 Do you want to save your changes?</source>
-        <translation>文档已被修改�?您想要保存更改吗�?/translation>
+        <translation>鏂囨。宸茶淇敼銆?鎮ㄦ兂瑕佷繚瀛樻洿鏀瑰悧锛?/translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于第 %2 行，�?%3 列�?/translation>
+        <translation>鏃犳硶瑙ｆ瀽 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;锛屼綅浜庣 %2 琛岋紝绗?%3 鍒椼€?/translation>
     </message>
     <message>
         <source>Parsing error</source>
-        <translation>解析错误</translation>
+        <translation>瑙ｆ瀽閿欒</translation>
     </message>
     <message>
         <source>Validation</source>
-        <translation>验证结果</translation>
+        <translation>楠岃瘉缁撴灉</translation>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效�?/translation>
+        <translation>JSON 鏍煎紡鏈夋晥锛?/translation>
     </message>
 </context>
 <context>
@@ -7101,7 +7101,7 @@ Do you want to save your changes?</source>
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: '�?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: '鉁?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -7109,20 +7109,20 @@ Do you want to save your changes?</source>
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=\"card\"&gt;
-                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护、深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注于数据管理�?lt;/p&gt;
+                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋鍥炲埌 Robo 3T&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゃ€佹繁搴︿紭鍖栫殑 Robo 3T 澧炲己鐗堛€傛垜浠慨澶嶄簡鏍稿績缁勪欢骞舵竻鐞嗕簡鍐椾綑锛岃鎮ㄥ彲浠ユ洿涓撴敞浜庢暟鎹鐞嗐€?lt;/p&gt;
                     
                     &lt;ul class=\"feature-list\"&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 修复了关键的 Windows 编译问题及严重的内存泄漏�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心�?lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携�?lt;/strong&gt; 所有的依赖库已打包内置，实现真正的零安装即点即用�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾鎬т紭鍏堬細&lt;/strong&gt; 淇浜嗗叧閿殑 Windows 缂栬瘧闂鍙婁弗閲嶇殑鍐呭瓨娉勬紡銆?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt; 娣卞害闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿閾俱€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬鏍稿績锛?lt;/strong&gt; 鍩轰簬 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇存瀬鑷淬€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹屽叏缁胯壊渚挎惡锛?lt;/strong&gt; 鎵€鏈夌殑渚濊禆搴撳凡鎵撳寘鍐呯疆锛屽疄鐜扮湡姝ｇ殑闆跺畨瑁呭嵆鐐瑰嵆鐢ㄣ€?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=\"divider\"&gt;&lt;/div&gt;
                     &lt;div class=\"footer\"&gt;
-                        “您的数据，由您掌控。感谢支持社区版。�?                    &lt;/div&gt;
+                        鈥滄偍鐨勬暟鎹紝鐢辨偍鎺屾帶銆傛劅璋㈡敮鎸佺ぞ鍖虹増銆傗€?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -7140,7 +7140,7 @@ Do you want to save your changes?</source>
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: '�?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: '鉁?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -7148,20 +7148,20 @@ Do you want to save your changes?</source>
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class=\"card\"&gt;
-                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护、深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注于数据管理�?lt;/p&gt;
+                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.0 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋鍥炲埌 Robo 3T&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゃ€佹繁搴︿紭鍖栫殑 Robo 3T 澧炲己鐗堛€傛垜浠慨澶嶄簡鏍稿績缁勪欢骞舵竻鐞嗕簡鍐椾綑锛岃鎮ㄥ彲浠ユ洿涓撴敞浜庢暟鎹鐞嗐€?lt;/p&gt;
                     
                     &lt;ul class=\"feature-list\"&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 修复了关键的 Windows 编译问题及严重的内存泄漏�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心�?lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 重新构建，性能更极致�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携�?lt;/strong&gt; 所有的依赖库已打包内置，实现真正的零安装即点即用�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾鎬т紭鍏堬細&lt;/strong&gt; 淇浜嗗叧閿殑 Windows 缂栬瘧闂鍙婁弗閲嶇殑鍐呭瓨娉勬紡銆?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt; 娣卞害闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿閾俱€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬鏍稿績锛?lt;/strong&gt; 鍩轰簬 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇存瀬鑷淬€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹屽叏缁胯壊渚挎惡锛?lt;/strong&gt; 鎵€鏈夌殑渚濊禆搴撳凡鎵撳寘鍐呯疆锛屽疄鐜扮湡姝ｇ殑闆跺畨瑁呭嵆鐐瑰嵆鐢ㄣ€?lt;/li&gt;
                     &lt;/ul&gt;
  
                     &lt;div class=\"divider\"&gt;&lt;/div&gt;
                     &lt;div class=\"footer\"&gt;
-                        “您的数据，由您掌控。感谢支持社区版。�?                    &lt;/div&gt;
+                        鈥滄偍鐨勬暟鎹紝鐢辨偍鎺屾帶銆傛劅璋㈡敮鎸佺ぞ鍖虹増銆傗€?                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
@@ -7169,83 +7169,83 @@ Do you want to save your changes?</source>
     </message>
     <message>
         <source>&lt;p&gt;&lt;h1&gt;&lt;font color=\"#2d862d\"&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\"#2d862d\"&gt;官方博客动�?lt;/h1&gt;&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\"#2d862d\"&gt;瀹樻柟鍗氬鍔ㄦ€?lt;/h1&gt;&lt;/p&gt;</translation>
     </message>
     <message>
         <source>All Blog Posts</source>
-        <translation>查看所有博客文�?/translation>
+        <translation>鏌ョ湅鎵€鏈夊崥瀹㈡枃绔?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionBasicTab</name>
     <message>
         <source>Type:</source>
-        <translation>连接类型:</translation>
+        <translation>杩炴帴绫诲瀷:</translation>
     </message>
     <message>
         <source>Direct Connection</source>
-        <translation>直接连接 (Standalone)</translation>
+        <translation>鐩存帴杩炴帴 (Standalone)</translation>
     </message>
     <message>
         <source>Replica Set</source>
-        <translation>副本�?(Replica Set)</translation>
+        <translation>鍓湰闆?(Replica Set)</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>连接名称:</translation>
+        <translation>杩炴帴鍚嶇О:</translation>
     </message>
     <message>
         <source>Choose any connection name that will help you to identify this connection.</source>
-        <translation>请选择一个有助于您识别该连接的名称�?/translation>
+        <translation>璇烽€夋嫨涓€涓湁鍔╀簬鎮ㄨ瘑鍒杩炴帴鐨勫悕绉般€?/translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation>地址:</translation>
+        <translation>鍦板潃:</translation>
     </message>
     <message>
         <source>Specify host and port of MongoDB server. Host can be either IPv4, IPv6 or domain name.</source>
-        <translation>指定 MongoDB 服务器的主机地址和端口。主机可以是 IPv4、IPv6 地址或域名�?/translation>
+        <translation>鎸囧畾 MongoDB 鏈嶅姟鍣ㄧ殑涓绘満鍦板潃鍜岀鍙ｃ€備富鏈哄彲浠ユ槸 IPv4銆両Pv6 鍦板潃鎴栧煙鍚嶃€?/translation>
     </message>
     <message>
         <source>Members:</source>
-        <translation>成员列表:</translation>
+        <translation>鎴愬憳鍒楄〃:</translation>
     </message>
     <message>
         <source>Set Name:</source>
-        <translation>副本集名�?</translation>
+        <translation>鍓湰闆嗗悕绉?</translation>
     </message>
     <message>
         <source>Import connection details from MongoDB URI connection string</source>
-        <translation>�?MongoDB URI 连接字符串中导入连接细节</translation>
+        <translation>浠?MongoDB URI 杩炴帴瀛楃涓蹭腑瀵煎叆杩炴帴缁嗚妭</translation>
     </message>
     <message>
         <source>From URI</source>
-        <translation>�?URI 导入</translation>
+        <translation>浠?URI 瀵煎叆</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误提示</translation>
+        <translation>閿欒鎻愮ず</translation>
     </message>
     <message>
         <source>Replica set members cannot be empty. Please enter at least one member.</source>
-        <translation>副本集成员列表不能为空。请至少输入一个节点地址�?/translation>
+        <translation>鍓湰闆嗘垚鍛樺垪琛ㄤ笉鑳戒负绌恒€傝鑷冲皯杈撳叆涓€涓妭鐐瑰湴鍧€銆?/translation>
     </message>
     <message>
         <source>Replica set member items must all contain ':' between hostname and port.</source>
-        <translation>副本集成员条目必须在主机名和端口之间包含�?”分隔符�?/translation>
+        <translation>鍓湰闆嗘垚鍛樻潯鐩繀椤诲湪涓绘満鍚嶅拰绔彛涔嬮棿鍖呭惈鈥?鈥濆垎闅旂銆?/translation>
     </message>
     <message>
         <source>Please remove duplicate member, two replica set members cannot have the same hostname and port.</source>
-        <translation>请移除重复的成员。两个副本集节点不能拥有相同的主机名和端口�?/translation>
+        <translation>璇风Щ闄ら噸澶嶇殑鎴愬憳銆備袱涓壇鏈泦鑺傜偣涓嶈兘鎷ユ湁鐩稿悓鐨勪富鏈哄悕鍜岀鍙ｃ€?/translation>
     </message>
     <message>
         <source>New Connection</source>
-        <translation>新建连接</translation>
+        <translation>鏂板缓杩炴帴</translation>
     </message>
     <message>
         <source>MongoDB URI:
 </source>
-        <translation>MongoDB URI 格式错误:
+        <translation>MongoDB URI 鏍煎紡閿欒:
 </translation>
     </message>
 </context>
@@ -7253,235 +7253,235 @@ Do you want to save your changes?</source>
     <name>Robomongo::ConnectionAuthTab</name>
     <message>
         <source>Perform authentication</source>
-        <translation>执行身份验证</translation>
+        <translation>鎵ц韬唤楠岃瘉</translation>
     </message>
     <message>
         <source>&lt;nobr&gt;The admin database is unique in MongoDB.&lt;/nobr&gt; Users with normal access to the admin database have read and write access to &lt;b&gt;all databases&lt;/b&gt;.</source>
-        <translation>&lt;nobr&gt;admin 数据库在 MongoDB 中是唯一的�?lt;/nobr&gt; 拥有 admin 库正常访问权限的用户，将自动获得�?lt;b&gt;所有数据库&lt;/b&gt;的读写访问权�?/translation>
+        <translation>&lt;nobr&gt;admin 鏁版嵁搴撳湪 MongoDB 涓槸鍞竴鐨勩€?lt;/nobr&gt; 鎷ユ湁 admin 搴撴甯歌闂潈闄愮殑鐢ㄦ埛锛屽皢鑷姩鑾峰緱瀵?lt;b&gt;鎵€鏈夋暟鎹簱&lt;/b&gt;鐨勮鍐欒闂潈銆?/translation>
     </message>
     <message>
         <source>User Name</source>
-        <translation>用户�?/translation>
+        <translation>鐢ㄦ埛鍚?/translation>
     </message>
     <message>
         <source>Auth Mechanism</source>
-        <translation>认证机制</translation>
+        <translation>璁よ瘉鏈哄埗</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码</translation>
+        <translation>瀵嗙爜</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>认证数据�?/translation>
+        <translation>璁よ瘉鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Comma-separated e.g. products, users</source>
-        <translation>以逗号分隔，例如：products, users</translation>
+        <translation>浠ラ€楀彿鍒嗛殧锛屼緥濡傦細products, users</translation>
     </message>
     <message>
         <source>Databases</source>
-        <translation>数据库列�?/translation>
+        <translation>鏁版嵁搴撳垪琛?/translation>
     </message>
     <message>
         <source>Some MongoDB users might not have the permission to get the list of database names (&lt;b&gt;listDatabases&lt;/b&gt; command). For this case, manually add the name of the database(s) that this user has access to.</source>
-        <translation>部分 MongoDB 用户可能没有获取数据库列表的权限（缺�?&lt;b&gt;listDatabases&lt;/b&gt; 命令权限）。在这种情况下，请手动输入该用户有权访问的数据库名称�?/translation>
+        <translation>閮ㄥ垎 MongoDB 鐢ㄦ埛鍙兘娌℃湁鑾峰彇鏁版嵁搴撳垪琛ㄧ殑鏉冮檺锛堢己灏?&lt;b&gt;listDatabases&lt;/b&gt; 鍛戒护鏉冮檺锛夈€傚湪杩欑鎯呭喌涓嬶紝璇锋墜鍔ㄨ緭鍏ヨ鐢ㄦ埛鏈夋潈璁块棶鐨勬暟鎹簱鍚嶇О銆?/translation>
     </message>
     <message>
         <source>Manually specify visible databases</source>
-        <translation>手动指定可见的数据库</translation>
+        <translation>鎵嬪姩鎸囧畾鍙鐨勬暟鎹簱</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerServerTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>创建数据�?/translation>
+        <translation>鍒涘缓鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Server Status</source>
-        <translation>查看服务器状�?(serverStatus)</translation>
+        <translation>鏌ョ湅鏈嶅姟鍣ㄧ姸鎬?(serverStatus)</translation>
     </message>
     <message>
         <source>MongoDB Version</source>
-        <translation>查看 MongoDB 版本</translation>
+        <translation>鏌ョ湅 MongoDB 鐗堟湰</translation>
     </message>
     <message>
         <source>Host Info</source>
-        <translation>查看主机信息 (hostInfo)</translation>
+        <translation>鏌ョ湅涓绘満淇℃伅 (hostInfo)</translation>
     </message>
     <message>
         <source>Show Log</source>
-        <translation>查看系统日志</translation>
+        <translation>鏌ョ湅绯荤粺鏃ュ織</translation>
     </message>
     <message>
         <source>Disconnect</source>
-        <translation>断开连接</translation>
+        <translation>鏂紑杩炴帴</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统 (System)</translation>
+        <translation>绯荤粺 (System)</translation>
     </message>
     <message>
         <source>Cannot load list of databases.
 
 Error:
 </source>
-        <translation>无法加载数据库列表�?
-错误详情:
+        <translation>鏃犳硶鍔犺浇鏁版嵁搴撳垪琛ㄣ€?
+閿欒璇︽儏:
 </translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误提示</translation>
+        <translation>閿欒鎻愮ず</translation>
     </message>
     <message>
         <source>Replica set's primary is unreachable.
 
 Reason:
 Connection failure. </source>
-        <translation>副本集的主节�?(Primary) 不可达�?
-可能的原�?
-连接失败�?</translation>
+        <translation>鍓湰闆嗙殑涓昏妭鐐?(Primary) 涓嶅彲杈俱€?
+鍙兘鐨勫師鍥?
+杩炴帴澶辫触銆?</translation>
     </message>
     <message>
         <source> [Offline]</source>
-        <translation> [离线]</translation>
+        <translation> [绂荤嚎]</translation>
     </message>
     <message>
         <source>&amp;Create</source>
-        <translation>创建(&amp;C)</translation>
+        <translation>鍒涘缓(&amp;C)</translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名�?</translation>
+        <translation>鏁版嵁搴撳悕绉?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSLTab</name>
     <message>
         <source> mongo --tlsCAFile : Certificate Authority file for TLS</source>
-        <translation> mongo --tlsCAFile : TLS �?CA 根证书文�?/translation>
+        <translation> mongo --tlsCAFile : TLS 鐨?CA 鏍硅瘉涔︽枃浠?/translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFile : PEM certificate/key file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFile : TLS �?PEM 证书/私钥文件</translation>
+        <translation> mongo --tlsCertificateKeyFile : TLS 鐨?PEM 璇佷功/绉侀挜鏂囦欢</translation>
     </message>
     <message>
         <source> mongo --tlsCertificateKeyFilePassword : Password for key in PEM file for TLS</source>
-        <translation> mongo --tlsCertificateKeyFilePassword : TLS �?PEM 文件私钥密码</translation>
+        <translation> mongo --tlsCertificateKeyFilePassword : TLS 鐨?PEM 鏂囦欢绉侀挜瀵嗙爜</translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidHostnames : Allow connections to servers with non-matching hostnames</source>
-        <translation> mongo --tlsAllowInvalidHostnames : 允许连接到主机名不匹配的服务�?/translation>
+        <translation> mongo --tlsAllowInvalidHostnames : 鍏佽杩炴帴鍒颁富鏈哄悕涓嶅尮閰嶇殑鏈嶅姟鍣?/translation>
     </message>
     <message>
         <source> mongo --tlsAllowInvalidCertificates : Allow connections to servers with invalid certificates</source>
-        <translation> mongo --tlsAllowInvalidCertificates : 允许连接到证书无效的服务�?/translation>
+        <translation> mongo --tlsAllowInvalidCertificates : 鍏佽杩炴帴鍒拌瘉涔︽棤鏁堢殑鏈嶅姟鍣?/translation>
     </message>
     <message>
         <source> mongo --tlsCRLFile : Certificate Revocation List file for TLS</source>
-        <translation> mongo --tlsCRLFile : TLS 的证书吊销列表文件 (CRL)</translation>
+        <translation> mongo --tlsCRLFile : TLS 鐨勮瘉涔﹀悐閿€鍒楄〃鏂囦欢 (CRL)</translation>
     </message>
     <message>
         <source>Use TLS protocol</source>
-        <translation>使用 TLS 协议</translation>
+        <translation>浣跨敤 TLS 鍗忚</translation>
     </message>
     <message>
         <source>Authentication Method: </source>
-        <translation>验证方法: </translation>
+        <translation>楠岃瘉鏂规硶: </translation>
     </message>
     <message>
         <source>Self-signed Certificate</source>
-        <translation>自签名证�?(Self-signed)</translation>
+        <translation>鑷鍚嶈瘉涔?(Self-signed)</translation>
     </message>
     <message>
         <source>Use CA Certificate</source>
-        <translation>使用 CA 根证�?/translation>
+        <translation>浣跨敤 CA 鏍硅瘉涔?/translation>
     </message>
     <message>
         <source>In general, avoid using self-signed certificates unless the network is trusted. If self-signed certificate is used, the communications channel will be encrypted however there will be no validation of server identity.</source>
-        <translation>通常情况下，除非网络环境完全可信，否则应避免使用自签名证书。如果使用自签名证书，通信频道虽会被加密，但将无法验证服务器的身份真实性�?/translation>
+        <translation>閫氬父鎯呭喌涓嬶紝闄ら潪缃戠粶鐜瀹屽叏鍙俊锛屽惁鍒欏簲閬垮厤浣跨敤鑷鍚嶈瘉涔︺€傚鏋滀娇鐢ㄨ嚜绛惧悕璇佷功锛岄€氫俊棰戦亾铏戒細琚姞瀵嗭紝浣嗗皢鏃犳硶楠岃瘉鏈嶅姟鍣ㄧ殑韬唤鐪熷疄鎬с€?/translation>
     </message>
     <message>
         <source>CA Certificate:</source>
-        <translation>CA 证书文件:</translation>
+        <translation>CA 璇佷功鏂囦欢:</translation>
     </message>
     <message>
         <source>Use PEM Cert./Key: </source>
-        <translation>使用 PEM 证书/私钥: </translation>
+        <translation>浣跨敤 PEM 璇佷功/绉侀挜: </translation>
     </message>
     <message>
         <source>Enable this option to connect to a MongoDB that requires CA-signed client certificates/key file.</source>
-        <translation>如果 MongoDB 服务器要求提供由 CA 签名的客户端证书/私钥文件，请启用此选项�?/translation>
+        <translation>濡傛灉 MongoDB 鏈嶅姟鍣ㄨ姹傛彁渚涚敱 CA 绛惧悕鐨勫鎴风璇佷功/绉侀挜鏂囦欢锛岃鍚敤姝ら€夐」銆?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key: </source>
-        <translation>PEM 证书/私钥: </translation>
+        <translation>PEM 璇佷功/绉侀挜: </translation>
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>私钥密码: </translation>
+        <translation>绉侀挜瀵嗙爜: </translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次连接时询问密�?/translation>
+        <translation>姣忔杩炴帴鏃惰闂瘑鐮?/translation>
     </message>
     <message>
         <source>Advanced Options</source>
-        <translation>高级选项</translation>
+        <translation>楂樼骇閫夐」</translation>
     </message>
     <message>
         <source>CRL (Revocation List): </source>
-        <translation>吊销列表 (CRL): </translation>
+        <translation>鍚婇攢鍒楄〃 (CRL): </translation>
     </message>
     <message>
         <source>Invalid Hostnames: </source>
-        <translation>主机名不匹配�? </translation>
+        <translation>涓绘満鍚嶄笉鍖归厤鏃? </translation>
     </message>
     <message>
         <source>Not Allowed</source>
-        <translation>不允许连�?/translation>
+        <translation>涓嶅厑璁歌繛鎺?/translation>
     </message>
     <message>
         <source>Allowed</source>
-        <translation>允许连接 (不安�?</translation>
+        <translation>鍏佽杩炴帴 (涓嶅畨鍏?</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误提示</translation>
+        <translation>閿欒鎻愮ず</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation>错误: </translation>
+        <translation>閿欒: </translation>
     </message>
     <message>
         <source> file does not exist</source>
-        <translation> 文件不存�?/translation>
+        <translation> 鏂囦欢涓嶅瓨鍦?/translation>
     </message>
     <message>
         <source>CA-signed certificate</source>
-        <translation>CA 根证�?/translation>
+        <translation>CA 鏍硅瘉涔?/translation>
     </message>
     <message>
         <source>PEM Certificate/Key</source>
-        <translation>PEM 证书/私钥</translation>
+        <translation>PEM 璇佷功/绉侀挜</translation>
     </message>
     <message>
         <source>CRL (Revocation List)</source>
-        <translation>证书吊销列表 (CRL)</translation>
+        <translation>璇佷功鍚婇攢鍒楄〃 (CRL)</translation>
     </message>
     <message>
         <source>Choose File</source>
-        <translation>选择文件</translation>
+        <translation>閫夋嫨鏂囦欢</translation>
     </message>
 </context>
 <context>
@@ -7491,50 +7491,50 @@ Connection failure. </source>
 
 Error:
 %1</source>
-        <translation>加载文档失败�?
-错误详情:
+        <translation>鍔犺浇鏂囨。澶辫触銆?
+閿欒璇︽儏:
 %1</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误提示</translation>
+        <translation>閿欒鎻愮ず</translation>
     </message>
     <message>
         <source>Error:
 </source>
-        <translation>错误详情:
+        <translation>閿欒璇︽儏:
 </translation>
     </message>
     <message>
         <source>Failed to execute script.
 
 </source>
-        <translation>脚本执行失败�?
+        <translation>鑴氭湰鎵ц澶辫触銆?
 </translation>
     </message>
     <message>
         <source>At least one of the scripts has reached shell timeout</source>
-        <translation>至少有一个脚本已达到 Shell 执行超时限制</translation>
+        <translation>鑷冲皯鏈変竴涓剼鏈凡杈惧埌 Shell 鎵ц瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source>The script has reached shell timeout</source>
-        <translation>脚本已达�?Shell 执行超时限制</translation>
+        <translation>鑴氭湰宸茶揪鍒?Shell 鎵ц瓒呮椂闄愬埗</translation>
     </message>
     <message>
         <source> seconds)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source> second)</source>
-        <translation> �?</translation>
+        <translation> 绉?</translation>
     </message>
     <message>
         <source> limit. </source>
-        <translation> 限制�?</translation>
+        <translation> 闄愬埗銆?</translation>
     </message>
     <message>
         <source>Failed to execute all of the script. </source>
-        <translation>未能执行所有脚本�?</translation>
+        <translation>鏈兘鎵ц鎵€鏈夎剼鏈€?</translation>
     </message>
     <message>
         <source>
@@ -7542,555 +7542,555 @@ Error:
 Please increase the value of shell timeout using button below or from the main window menu "Options-&gt;Change Shell Timeout".</source>
         <translation>
 
-请使用下方按钮或通过主窗口菜单“选项 -&gt; 更改 Shell 超时时间”来增加超时阈值�?/translation>
+璇蜂娇鐢ㄤ笅鏂规寜閽垨閫氳繃涓荤獥鍙ｈ彍鍗曗€滈€夐」 -&gt; 鏇存敼 Shell 瓒呮椂鏃堕棿鈥濇潵澧炲姞瓒呮椂闃堝€笺€?/translation>
     </message>
     <message>
         <source>Change Shell Timeout</source>
-        <translation>更改 Shell 超时时间</translation>
+        <translation>鏇存敼 Shell 瓒呮椂鏃堕棿</translation>
     </message>
     <message>
         <source>New Shell</source>
-        <translation>新查询窗�?/translation>
+        <translation>鏂版煡璇㈢獥鍙?/translation>
     </message>
     <message>
         <source>  Script executed successfully, but there are no results to show.</source>
-        <translation>  脚本执行成功，但没有可显示的结果�?/translation>
+        <translation>  鑴氭湰鎵ц鎴愬姛锛屼絾娌℃湁鍙樉绀虹殑缁撴灉銆?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerCollectionTreeItem</name>
     <message>
         <source>Insert Document...</source>
-        <translation>插入文档...</translation>
+        <translation>鎻掑叆鏂囨。...</translation>
     </message>
     <message>
         <source>Update Documents...</source>
-        <translation>更新所有文�?..</translation>
+        <translation>鏇存柊鎵€鏈夋枃妗?..</translation>
     </message>
     <message>
         <source>Remove Documents...</source>
-        <translation>删除文档 (带条�?...</translation>
+        <translation>鍒犻櫎鏂囨。 (甯︽潯浠?...</translation>
     </message>
     <message>
         <source>Remove All Documents...</source>
-        <translation>清空所有文�?..</translation>
+        <translation>娓呯┖鎵€鏈夋枃妗?..</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation>集合统计信息 (stats)</translation>
+        <translation>闆嗗悎缁熻淇℃伅 (stats)</translation>
     </message>
     <message>
         <source>Storage Size</source>
-        <translation>存储大小</translation>
+        <translation>瀛樺偍澶у皬</translation>
     </message>
     <message>
         <source>Total Index Size</source>
-        <translation>索引总大�?/translation>
+        <translation>绱㈠紩鎬诲ぇ灏?/translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation>总大�?(含索�?</translation>
+        <translation>鎬诲ぇ灏?(鍚储寮?</translation>
     </message>
     <message>
         <source>Shard Version</source>
-        <translation>分片版本 (Shard Version)</translation>
+        <translation>鍒嗙墖鐗堟湰 (Shard Version)</translation>
     </message>
     <message>
         <source>Shard Distribution</source>
-        <translation>分片分布 (Shard Distribution)</translation>
+        <translation>鍒嗙墖鍒嗗竷 (Shard Distribution)</translation>
     </message>
     <message>
         <source>Drop Collection...</source>
-        <translation>删除集合 (Drop)...</translation>
+        <translation>鍒犻櫎闆嗗悎 (Drop)...</translation>
     </message>
     <message>
         <source>Rename Collection...</source>
-        <translation>重命名集�?..</translation>
+        <translation>閲嶅懡鍚嶉泦鍚?..</translation>
     </message>
     <message>
         <source>Duplicate Collection...</source>
-        <translation>克隆集合...</translation>
+        <translation>鍏嬮殕闆嗗悎...</translation>
     </message>
     <message>
         <source>View Documents</source>
-        <translation>查看文档 (find)</translation>
+        <translation>鏌ョ湅鏂囨。 (find)</translation>
     </message>
     <message>
         <source>Indexes</source>
-        <translation>索引</translation>
+        <translation>绱㈠紩</translation>
     </message>
     <message>
         <source>Cannot load list of indexes.
 
 Error:
 </source>
-        <translation>无法加载索引列表�?
-错误详情:
+        <translation>鏃犳硶鍔犺浇绱㈠紩鍒楄〃銆?
+閿欒璇︽儏:
 </translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误提示</translation>
+        <translation>閿欒鎻愮ず</translation>
     </message>
     <message>
         <source>add</source>
-        <translation>添加</translation>
+        <translation>娣诲姞</translation>
     </message>
     <message>
         <source>edit</source>
-        <translation>编辑</translation>
+        <translation>缂栬緫</translation>
     </message>
     <message>
         <source>Operation failed</source>
-        <translation>操作失败</translation>
+        <translation>鎿嶄綔澶辫触</translation>
     </message>
     <message>
         <source>Failed to %1 index "%2"</source>
-        <translation>无法 %1 索引 "%2"</translation>
+        <translation>鏃犳硶 %1 绱㈠紩 "%2"</translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>错误: %1</translation>
+        <translation>閿欒: %1</translation>
     </message>
     <message>
         <source>Failed to drop index "%1"</source>
-        <translation>无法删除索引 "%1"</translation>
+        <translation>鏃犳硶鍒犻櫎绱㈠紩 "%1"</translation>
     </message>
     <message>
         <source>Reason: </source>
-        <translation>原因: </translation>
+        <translation>鍘熷洜: </translation>
     </message>
     <message>
         <source>Insert Document</source>
-        <translation>插入文档</translation>
+        <translation>鎻掑叆鏂囨。</translation>
     </message>
     <message>
         <source>Remove All Documents</source>
-        <translation>清空所有文�?/translation>
+        <translation>娓呯┖鎵€鏈夋枃妗?/translation>
     </message>
     <message>
         <source>Remove all documents from &lt;b&gt;%1&lt;/b&gt; collection?</source>
-        <translation>您确定要清空集合 &lt;b&gt;%1&lt;/b&gt; 中的所有文档吗�?/translation>
+        <translation>鎮ㄧ‘瀹氳娓呯┖闆嗗悎 &lt;b&gt;%1&lt;/b&gt; 涓殑鎵€鏈夋枃妗ｅ悧锛?/translation>
     </message>
     <message>
         <source>Drop</source>
-        <translation>删除</translation>
+        <translation>鍒犻櫎</translation>
     </message>
     <message>
         <source>collection</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Duplicate Collection</source>
-        <translation>克隆集合</translation>
+        <translation>鍏嬮殕闆嗗悎</translation>
     </message>
     <message>
         <source>&amp;Duplicate</source>
-        <translation>克隆(&amp;D)</translation>
+        <translation>鍏嬮殕(&amp;D)</translation>
     </message>
     <message>
         <source>New Collection Name:</source>
-        <translation>新集合名�?</translation>
+        <translation>鏂伴泦鍚堝悕绉?</translation>
     </message>
     <message>
         <source>Rename Collection</source>
-        <translation>重命名集�?/translation>
+        <translation>閲嶅懡鍚嶉泦鍚?/translation>
     </message>
     <message>
         <source>&amp;Rename</source>
-        <translation>重命�?&amp;R)</translation>
+        <translation>閲嶅懡鍚?&amp;R)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::SSHTunnelTab</name>
     <message>
         <source>Ask for password each time</source>
-        <translation>每次连接时询问密�?/translation>
+        <translation>姣忔杩炴帴鏃惰闂瘑鐮?/translation>
     </message>
     <message>
         <source>Ask for passphrase each time</source>
-        <translation>每次连接时询问私钥密�?/translation>
+        <translation>姣忔杩炴帴鏃惰闂閽ュ瘑鐮?/translation>
     </message>
     <message>
         <source>Use SSH tunnel</source>
-        <translation>使用 SSH 隧道</translation>
+        <translation>浣跨敤 SSH 闅ч亾</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>密码认证</translation>
+        <translation>瀵嗙爜璁よ瘉</translation>
     </message>
     <message>
         <source>Private Key</source>
-        <translation>私钥认证</translation>
+        <translation>绉侀挜璁よ瘉</translation>
     </message>
     <message>
         <source>DSA, RSA, and on Windows/macOS ECDSA, Ed25519 keys are supported. PPK keys must be converted to OPENSSH format.</source>
-        <translation>支持 DSA, RSA 格式，在 Windows/macOS 上还支持 ECDSA, Ed25519 私钥。PPK 格式私钥必须先转换为 OPENSSH 格式�?/translation>
+        <translation>鏀寔 DSA, RSA 鏍煎紡锛屽湪 Windows/macOS 涓婅繕鏀寔 ECDSA, Ed25519 绉侀挜銆侾PK 鏍煎紡绉侀挜蹇呴』鍏堣浆鎹负 OPENSSH 鏍煎紡銆?/translation>
     </message>
     <message>
         <source>User Password:</source>
-        <translation>用户密码:</translation>
+        <translation>鐢ㄦ埛瀵嗙爜:</translation>
     </message>
     <message>
         <source>Private key:</source>
-        <translation>私钥文件路径:</translation>
+        <translation>绉侀挜鏂囦欢璺緞:</translation>
     </message>
     <message>
         <source>Passphrase:</source>
-        <translation>私钥密码 (Passphrase):</translation>
+        <translation>绉侀挜瀵嗙爜 (Passphrase):</translation>
     </message>
     <message>
         <source>SSH Address:</source>
-        <translation>SSH 服务器地址:</translation>
+        <translation>SSH 鏈嶅姟鍣ㄥ湴鍧€:</translation>
     </message>
     <message>
         <source>SSH User Name:</source>
-        <translation>SSH 用户�?</translation>
+        <translation>SSH 鐢ㄦ埛鍚?</translation>
     </message>
     <message>
         <source>SSH Auth Method:</source>
-        <translation>SSH 认证方式:</translation>
+        <translation>SSH 璁よ瘉鏂瑰紡:</translation>
     </message>
     <message>
         <source>SSH is currently not supported for Replica Set connections</source>
-        <translation>SSH 隧道目前不支持副本集 (Replica Set) 连接</translation>
+        <translation>SSH 闅ч亾鐩墠涓嶆敮鎸佸壇鏈泦 (Replica Set) 杩炴帴</translation>
     </message>
     <message>
         <source>Select private key file</source>
-        <translation>选择私钥文件</translation>
+        <translation>閫夋嫨绉侀挜鏂囦欢</translation>
     </message>
     <message>
         <source>Private key files (*)</source>
-        <translation>私钥文件 (*)</translation>
+        <translation>绉侀挜鏂囦欢 (*)</translation>
     </message>
     <message>
         <source>Private key file "%1" doesn't exist</source>
-        <translation>私钥文件 "%1" 不存�?/translation>
+        <translation>绉侀挜鏂囦欢 "%1" 涓嶅瓨鍦?/translation>
     </message>
     <message>
         <source>Settings are incomplete</source>
-        <translation>配置不完�?/translation>
+        <translation>閰嶇疆涓嶅畬鏁?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionAdvancedTab</name>
     <message>
         <source>Database, that will be default (&lt;code&gt;db&lt;/code&gt; shell variable will point to this database). By default, default database will be the one you authenticate on, or &lt;code&gt;test&lt;/code&gt; otherwise. Leave this field empty, if you want default behavior.</source>
-        <translation>指定连接后的默认数据库（Shell 中的 &lt;code&gt;db&lt;/code&gt; 变量将指向此数据库）。默认情况下，系统会指向您认证时所在的数据库，否则指向 &lt;code&gt;test&lt;/code&gt;。如需保持默认行为，请将此字段留空�?/translation>
+        <translation>鎸囧畾杩炴帴鍚庣殑榛樿鏁版嵁搴擄紙Shell 涓殑 &lt;code&gt;db&lt;/code&gt; 鍙橀噺灏嗘寚鍚戞鏁版嵁搴擄級銆傞粯璁ゆ儏鍐典笅锛岀郴缁熶細鎸囧悜鎮ㄨ璇佹椂鎵€鍦ㄧ殑鏁版嵁搴擄紝鍚﹀垯鎸囧悜 &lt;code&gt;test&lt;/code&gt;銆傚闇€淇濇寔榛樿琛屼负锛岃灏嗘瀛楁鐣欑┖銆?/translation>
     </message>
     <message>
         <source>Default Database:</source>
-        <translation>默认数据�?</translation>
+        <translation>榛樿鏁版嵁搴?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ExplorerDatabaseTreeItem</name>
     <message>
         <source>Open Shell</source>
-        <translation>打开 Shell</translation>
+        <translation>鎵撳紑 Shell</translation>
     </message>
     <message>
         <source>Database Statistics</source>
-        <translation>数据库统计信�?(db.stats)</translation>
+        <translation>鏁版嵁搴撶粺璁′俊鎭?(db.stats)</translation>
     </message>
     <message>
         <source>Current Operations</source>
-        <translation>当前操作 (currentOp)</translation>
+        <translation>褰撳墠鎿嶄綔 (currentOp)</translation>
     </message>
     <message>
         <source>Kill Operation...</source>
-        <translation>终止操作 (killOp)...</translation>
+        <translation>缁堟鎿嶄綔 (killOp)...</translation>
     </message>
     <message>
         <source>Drop Database...</source>
-        <translation>删除数据�?(Drop)...</translation>
+        <translation>鍒犻櫎鏁版嵁搴?(Drop)...</translation>
     </message>
     <message>
         <source>Repair Database...</source>
-        <translation>修复数据�?..</translation>
+        <translation>淇鏁版嵁搴?..</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>Collections</source>
-        <translation>集合</translation>
+        <translation>闆嗗悎</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>函数</translation>
+        <translation>鍑芥暟</translation>
     </message>
     <message>
         <source>Users</source>
-        <translation>用户</translation>
+        <translation>鐢ㄦ埛</translation>
     </message>
     <message>
         <source>System</source>
-        <translation>系统 (System)</translation>
+        <translation>绯荤粺 (System)</translation>
     </message>
     <message>
         <source>Drop &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>您确定要删除数据�?&lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>鎮ㄧ‘瀹氳鍒犻櫎鏁版嵁搴?&lt;b&gt;%1&lt;/b&gt; 鍚楋紵</translation>
     </message>
     <message>
         <source>Drop Database</source>
-        <translation>删除数据�?/translation>
+        <translation>鍒犻櫎鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Repair &lt;b&gt;%1&lt;/b&gt; database?</source>
-        <translation>您确定要修复数据�?&lt;b&gt;%1&lt;/b&gt; 吗？</translation>
+        <translation>鎮ㄧ‘瀹氳淇鏁版嵁搴?&lt;b&gt;%1&lt;/b&gt; 鍚楋紵</translation>
     </message>
     <message>
         <source>Repair Database</source>
-        <translation>修复数据�?/translation>
+        <translation>淇鏁版嵁搴?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::MainWindow</name>
     <message>
         <source>&amp;Open...</source>
-        <translation>打开文件(&amp;O)...</translation>
+        <translation>鎵撳紑鏂囦欢(&amp;O)...</translation>
     </message>
     <message>
         <source>Load script from the file to the currently opened shell &lt;b&gt;(%1 + O)&lt;/b&gt;</source>
-        <translation>从文件加载脚本到当前查询窗口 &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
+        <translation>浠庢枃浠跺姞杞借剼鏈埌褰撳墠鏌ヨ绐楀彛 &lt;b&gt;(%1 + O)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Save</source>
-        <translation>保存(&amp;S)</translation>
+        <translation>淇濆瓨(&amp;S)</translation>
     </message>
     <message>
         <source>Save script of the currently opened shell to the file &lt;b&gt;(%1 + S)&lt;/b&gt;</source>
-        <translation>将当前查询窗口的脚本保存到文�?&lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
+        <translation>灏嗗綋鍓嶆煡璇㈢獥鍙ｇ殑鑴氭湰淇濆瓨鍒版枃浠?&lt;b&gt;(%1 + S)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Save &amp;As...</source>
-        <translation>另存�?&amp;A)...</translation>
+        <translation>鍙﹀瓨涓?&amp;A)...</translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>退�?&amp;X)</translation>
+        <translation>閫€鍑?&amp;X)</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
-        <translation>连接(&amp;C)...</translation>
+        <translation>杩炴帴(&amp;C)...</translation>
     </message>
     <message>
         <source>Connect to local or remote MongoDB instance &lt;b&gt;(%1 + N)&lt;/b&gt;</source>
-        <translation>连接到本地或远程 MongoDB 实例 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
+        <translation>杩炴帴鍒版湰鍦版垨杩滅▼ MongoDB 瀹炰緥 &lt;b&gt;(%1 + N)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Minimize to Tray</source>
-        <translation>最小化至托�?/translation>
+        <translation>鏈€灏忓寲鑷虫墭鐩?/translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退�?/translation>
+        <translation>閫€鍑?/translation>
     </message>
     <message>
         <source>&amp;Rotate</source>
-        <translation>旋转布局(&amp;R)</translation>
+        <translation>鏃嬭浆甯冨眬(&amp;R)</translation>
     </message>
     <message>
         <source>Toggle orientation of results view &lt;b&gt;(F10)&lt;/b&gt;</source>
-        <translation>切换查询结果视图的方�?&lt;b&gt;(F10)&lt;/b&gt;</translation>
+        <translation>鍒囨崲鏌ヨ缁撴灉瑙嗗浘鐨勬柟鍚?&lt;b&gt;(F10)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Text Mode</source>
-        <translation>文本模式(&amp;T)</translation>
+        <translation>鏂囨湰妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in text mode, and make this mode default for all subsequent queries &lt;b&gt;(F4)&lt;/b&gt;</source>
-        <translation>以文本模式显示当前页签，并将其设为后续查询的默认模式 &lt;b&gt;(F4)&lt;/b&gt;</translation>
+        <translation>浠ユ枃鏈ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F4)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Tree Mode</source>
-        <translation>树状模式(&amp;T)</translation>
+        <translation>鏍戠姸妯″紡(&amp;T)</translation>
     </message>
     <message>
         <source>Show current tab in tree mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以树状模式显示当前页签，并将其设为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>浠ユ爲鐘舵ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>T&amp;able Mode</source>
-        <translation>表格模式(&amp;A)</translation>
+        <translation>琛ㄦ牸妯″紡(&amp;A)</translation>
     </message>
     <message>
         <source>Show current tab in table mode, and make this mode default for all subsequent queries &lt;b&gt;(F3)&lt;/b&gt;</source>
-        <translation>以表格模式显示当前页签，并将其设为后续查询的默认模式 &lt;b&gt;(F3)&lt;/b&gt;</translation>
+        <translation>浠ヨ〃鏍兼ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F3)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Custom Mode</source>
-        <translation>自定义模�?&amp;C)</translation>
+        <translation>鑷畾涔夋ā寮?&amp;C)</translation>
     </message>
     <message>
         <source>Show current tab in custom mode if possible, and make this mode default for all subsequent queries &lt;b&gt;(F2)&lt;/b&gt;</source>
-        <translation>如果可能，以自定义模式显示当前页签，并将其设为后续查询的默认模式 &lt;b&gt;(F2)&lt;/b&gt;</translation>
+        <translation>濡傛灉鍙兘锛屼互鑷畾涔夋ā寮忔樉绀哄綋鍓嶉〉绛撅紝骞跺皢鍏惰涓哄悗缁煡璇㈢殑榛樿妯″紡 &lt;b&gt;(F2)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Execute query for current tab. If you have some selection in query text - only selection will be executed &lt;b&gt;(F5 &lt;/b&gt; or &lt;b&gt;%1 + Enter)&lt;/b&gt;</source>
-        <translation>执行当前页签的查询。如果选中了部分代码，则仅执行选中的代�?&lt;b&gt;(F5&lt;/b&gt; �?&lt;b&gt;%1 + 回车)&lt;/b&gt;</translation>
+        <translation>鎵ц褰撳墠椤电鐨勬煡璇€傚鏋滈€変腑浜嗛儴鍒嗕唬鐮侊紝鍒欎粎鎵ц閫変腑鐨勪唬鐮?&lt;b&gt;(F5&lt;/b&gt; 鎴?&lt;b&gt;%1 + 鍥炶溅)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Stop execution of currently running script. &lt;b&gt;(F6)&lt;/b&gt;</source>
-        <translation>停止当前正在运行的脚本�?lt;b&gt;(F6)&lt;/b&gt;</translation>
+        <translation>鍋滄褰撳墠姝ｅ湪杩愯鐨勮剼鏈€?lt;b&gt;(F6)&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>刷新</translation>
+        <translation>鍒锋柊</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>文件</translation>
+        <translation>鏂囦欢</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>查看</translation>
+        <translation>鏌ョ湅</translation>
     </message>
     <message>
         <source>Toolbars</source>
-        <translation>工具�?/translation>
+        <translation>宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>选项</translation>
+        <translation>閫夐」</translation>
     </message>
     <message>
         <source>Default View Mode</source>
-        <translation>默认视图模式</translation>
+        <translation>榛樿瑙嗗浘妯″紡</translation>
     </message>
     <message>
         <source>Display Dates In...</source>
-        <translation>显示日期格式�?..</translation>
+        <translation>鏄剧ず鏃ユ湡鏍煎紡涓?..</translation>
     </message>
     <message>
         <source>Do not decode (show as is)</source>
-        <translation>不解�?(按原样显�?</translation>
+        <translation>涓嶈В鐮?(鎸夊師鏍锋樉绀?</translation>
     </message>
     <message>
         <source>Use Java Encoding</source>
-        <translation>使用 Java 编码 (UUID)</translation>
+        <translation>浣跨敤 Java 缂栫爜 (UUID)</translation>
     </message>
     <message>
         <source>Use .NET Encoding</source>
-        <translation>使用 .NET 编码 (UUID)</translation>
+        <translation>浣跨敤 .NET 缂栫爜 (UUID)</translation>
     </message>
     <message>
         <source>Use Python Encoding</source>
-        <translation>使用 Python 编码 (UUID)</translation>
+        <translation>浣跨敤 Python 缂栫爜 (UUID)</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding</source>
-        <translation>旧版 UUID 编码兼容</translation>
+        <translation>鏃х増 UUID 缂栫爜鍏煎</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>全部开�?/translation>
+        <translation>鍏ㄩ儴寮€鍚?/translation>
     </message>
     <message>
         <source>All (Except Collection Names)</source>
-        <translation>全部 (排除集合名称)</translation>
+        <translation>鍏ㄩ儴 (鎺掗櫎闆嗗悎鍚嶇О)</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>关闭</translation>
+        <translation>鍏抽棴</translation>
     </message>
     <message>
         <source>Autocompletion Mode</source>
-        <translation>自动补全模式</translation>
+        <translation>鑷姩琛ュ叏妯″紡</translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>加载 .mongorc.js</translation>
+        <translation>鍔犺浇 .mongorc.js</translation>
     </message>
     <message>
         <source>Auto Expand First Document</source>
-        <translation>自动展开第一个文�?/translation>
+        <translation>鑷姩灞曞紑绗竴涓枃妗?/translation>
     </message>
     <message>
         <source>Show Line Numbers By Default</source>
-        <translation>默认显示行号</translation>
+        <translation>榛樿鏄剧ず琛屽彿</translation>
     </message>
     <message>
         <source>Disable Connection Shortcuts</source>
-        <translation>禁用连接快捷�?/translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?/translation>
     </message>
     <message>
         <source>Automatically execute code in new tab</source>
-        <translation>在新页签中自动执行代�?/translation>
+        <translation>鍦ㄦ柊椤电涓嚜鍔ㄦ墽琛屼唬鐮?/translation>
     </message>
     <message>
         <source>Close button should minimize to system tray</source>
-        <translation>关闭按钮应最小化至系统托�?/translation>
+        <translation>鍏抽棴鎸夐挳搴旀渶灏忓寲鑷崇郴缁熸墭鐩?/translation>
     </message>
     <message>
         <source>Check For Updates</source>
-        <translation>检查更�?/translation>
+        <translation>妫€鏌ユ洿鏂?/translation>
     </message>
     <message>
         <source>Change Shell Timeout...</source>
-        <translation>更改 Shell 超时时间...</translation>
+        <translation>鏇存敼 Shell 瓒呮椂鏃堕棿...</translation>
     </message>
     <message>
         <source>Preferences</source>
-        <translation>首选项</translation>
+        <translation>棣栭€夐」</translation>
     </message>
     <message>
         <source>&amp;Full Screen</source>
-        <translation>全屏模式(&amp;F)</translation>
+        <translation>鍏ㄥ睆妯″紡(&amp;F)</translation>
     </message>
     <message>
         <source>&amp;Minimize</source>
-        <translation>最小化(&amp;M)</translation>
+        <translation>鏈€灏忓寲(&amp;M)</translation>
     </message>
     <message>
         <source>Select Next Tab</source>
-        <translation>选择后一个页�?/translation>
+        <translation>閫夋嫨鍚庝竴涓〉绛?/translation>
     </message>
     <message>
         <source>Select Previous Tab</source>
-        <translation>选择前一个页�?/translation>
+        <translation>閫夋嫨鍓嶄竴涓〉绛?/translation>
     </message>
     <message>
         <source>Re-execute Query in Current Tab</source>
-        <translation>在当前页签重新执行查�?/translation>
+        <translation>鍦ㄥ綋鍓嶉〉绛鹃噸鏂版墽琛屾煡璇?/translation>
     </message>
     <message>
         <source>Duplicate Query in New Tab</source>
-        <translation>在新页签克隆当前查询</translation>
+        <translation>鍦ㄦ柊椤电鍏嬮殕褰撳墠鏌ヨ</translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>窗口</translation>
+        <translation>绐楀彛</translation>
     </message>
     <message>
         <source>Open/Refresh Welcome Tab</source>
-        <translation>打开/刷新 欢迎�?/translation>
+        <translation>鎵撳紑/鍒锋柊 娆㈣繋椤?/translation>
     </message>
     <message>
         <source>&amp;About Robo 3T...</source>
-        <translation>关于 Robo 3T(&amp;A)...</translation>
+        <translation>鍏充簬 Robo 3T(&amp;A)...</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>帮助</translation>
+        <translation>甯姪</translation>
     </message>
     <message>
         <source>Connections Toolbar</source>
-        <translation>连接工具�?/translation>
+        <translation>杩炴帴宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Open/Save Toolbar</source>
-        <translation>打开/保存 工具�?/translation>
+        <translation>鎵撳紑/淇濆瓨 宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Execution Toolbar</source>
-        <translation>执行工具�?/translation>
+        <translation>鎵ц宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Updates Toolbar</source>
-        <translation>更新工具�?/translation>
+        <translation>鏇存柊宸ュ叿鏍?/translation>
     </message>
     <message>
         <source>Robo 3T - </source>
@@ -8098,343 +8098,343 @@ Error:
     </message>
     <message>
         <source>Theme</source>
-        <translation>主题切换</translation>
+        <translation>涓婚鍒囨崲</translation>
     </message>
     <message>
         <source>Logs</source>
-        <translation>系统日志</translation>
+        <translation>绯荤粺鏃ュ織</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::PreferencesDialog</name>
     <message>
         <source>Preferences %1</source>
-        <translation>首选项 %1</translation>
+        <translation>棣栭€夐」 %1</translation>
     </message>
     <message>
         <source>Default display mode:</source>
-        <translation>默认显示模式:</translation>
+        <translation>榛樿鏄剧ず妯″紡:</translation>
     </message>
     <message>
         <source>Display Dates in:</source>
-        <translation>日期显示时区:</translation>
+        <translation>鏃ユ湡鏄剧ず鏃跺尯:</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding:</source>
-        <translation>旧版 UUID 编码方案:</translation>
+        <translation>鏃х増 UUID 缂栫爜鏂规:</translation>
     </message>
     <message>
         <source>Load .mongorc.js</source>
-        <translation>启动时加�?.mongorc.js</translation>
+        <translation>鍚姩鏃跺姞杞?.mongorc.js</translation>
     </message>
     <message>
         <source>Disable connection shortcuts</source>
-        <translation>禁用连接快捷�?/translation>
+        <translation>绂佺敤杩炴帴蹇嵎閿?/translation>
     </message>
     <message>
         <source>Styles:</source>
-        <translation>皮肤样式 (Styles):</translation>
+        <translation>鐨偆鏍峰紡 (Styles):</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::PagingWidget</name>
     <message>
         <source>Skip</source>
-        <translation>跳过个数 (Skip)</translation>
+        <translation>璺宠繃涓暟 (Skip)</translation>
     </message>
     <message>
         <source>Batch Size (number of documents shown at once)</source>
-        <translation>批处理大�?(单页显示的文档条�?</translation>
+        <translation>鎵瑰鐞嗗ぇ灏?(鍗曢〉鏄剧ず鐨勬枃妗ｆ潯鏁?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDialog</name>
     <message>
         <source>Connection Settings</source>
-        <translation>连接设置</translation>
+        <translation>杩炴帴璁剧疆</translation>
     </message>
     <message>
         <source>&amp;Test</source>
-        <translation>测试连接(&amp;T)</translation>
+        <translation>娴嬭瘯杩炴帴(&amp;T)</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>常规</translation>
+        <translation>甯歌</translation>
     </message>
     <message>
         <source>Authentication</source>
-        <translation>身份认证</translation>
+        <translation>韬唤璁よ瘉</translation>
     </message>
     <message>
         <source>SSH</source>
-        <translation>SSH 隧道</translation>
+        <translation>SSH 闅ч亾</translation>
     </message>
     <message>
         <source>TLS</source>
-        <translation>SSL 加密 (TLS)</translation>
+        <translation>SSL 鍔犲瘑 (TLS)</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级设置</translation>
+        <translation>楂樼骇璁剧疆</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::ConnectionDiagnosticDialog</name>
     <message>
         <source>Diagnostic</source>
-        <translation>连接测试诊断</translation>
+        <translation>杩炴帴娴嬭瘯璇婃柇</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation>关闭(&amp;C)</translation>
+        <translation>鍏抽棴(&amp;C)</translation>
     </message>
     <message>
         <source>&lt;a href='error' style='color: #777777;'&gt;Show error details&lt;/a&gt;</source>
-        <translation>&lt;a href='error' style='color: #777777;'&gt;显示错误详情&lt;/a&gt;</translation>
+        <translation>&lt;a href='error' style='color: #777777;'&gt;鏄剧ず閿欒璇︽儏&lt;/a&gt;</translation>
     </message>
     <message>
         <source>Error details</source>
-        <translation>详细错误信息</translation>
+        <translation>璇︾粏閿欒淇℃伅</translation>
     </message>
     <message>
         <source>Connecting to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;...</source>
-        <translation>正在连接 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;...</translation>
+        <translation>姝ｅ湪杩炴帴 SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;...</translation>
     </message>
     <message>
         <source>Connected to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>已成功连�?SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>宸叉垚鍔熻繛鎺?SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Unable to connect to SSH server at &lt;b&gt;%1:%2&lt;/b&gt;</source>
-        <translation>无法连接 SSH 服务�?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
+        <translation>鏃犳硶杩炴帴 SSH 鏈嶅姟鍣?&lt;b&gt;%1:%2&lt;/b&gt;</translation>
     </message>
     <message>
         <source> via SSH tunnel</source>
-        <translation> (通过 SSH 隧道)</translation>
+        <translation> (閫氳繃 SSH 闅ч亾)</translation>
     </message>
     <message>
         <source> via TLS tunnel</source>
-        <translation> (通过 TLS 隧道)</translation>
+        <translation> (閫氳繃 TLS 闅ч亾)</translation>
     </message>
     <message>
         <source>Connecting to &lt;b&gt;%1&lt;/b&gt;%2...</source>
-        <translation>正在连接 &lt;b&gt;%1&lt;/b&gt;%2...</translation>
+        <translation>姝ｅ湪杩炴帴 &lt;b&gt;%1&lt;/b&gt;%2...</translation>
     </message>
     <message>
         <source>Connected to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>已成功连�?&lt;b&gt;%1&lt;/b&gt;%2</translation>
+        <translation>宸叉垚鍔熻繛鎺?&lt;b&gt;%1&lt;/b&gt;%2</translation>
     </message>
     <message>
         <source>Failed to connect to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>连接 &lt;b&gt;%1&lt;/b&gt;%2 失败</translation>
+        <translation>杩炴帴 &lt;b&gt;%1&lt;/b&gt;%2 澶辫触</translation>
     </message>
     <message>
         <source>No chance to try connection to &lt;b&gt;%1&lt;/b&gt;%2</source>
-        <translation>未尝试连接到 &lt;b&gt;%1&lt;/b&gt;%2 (由于前置步骤失败)</translation>
+        <translation>鏈皾璇曡繛鎺ュ埌 &lt;b&gt;%1&lt;/b&gt;%2 (鐢变簬鍓嶇疆姝ラ澶辫触)</translation>
     </message>
     <message>
         <source>Authorizing on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;...</source>
-        <translation>正在认证数据�?&lt;b&gt;%1&lt;/b&gt; (用户: &lt;b&gt;%2&lt;/b&gt;)...</translation>
+        <translation>姝ｅ湪璁よ瘉鏁版嵁搴?&lt;b&gt;%1&lt;/b&gt; (鐢ㄦ埛: &lt;b&gt;%2&lt;/b&gt;)...</translation>
     </message>
     <message>
         <source>Authorized on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>数据�?&lt;b&gt;%1&lt;/b&gt; 认证成功 (用户: &lt;b&gt;%2&lt;/b&gt;)</translation>
+        <translation>鏁版嵁搴?&lt;b&gt;%1&lt;/b&gt; 璁よ瘉鎴愬姛 (鐢ㄦ埛: &lt;b&gt;%2&lt;/b&gt;)</translation>
     </message>
     <message>
         <source>Authorization failed on &lt;b&gt;%1&lt;/b&gt; database as &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>数据�?&lt;b&gt;%1&lt;/b&gt; 认证失败 (用户: &lt;b&gt;%2&lt;/b&gt;)</translation>
+        <translation>鏁版嵁搴?&lt;b&gt;%1&lt;/b&gt; 璁よ瘉澶辫触 (鐢ㄦ埛: &lt;b&gt;%2&lt;/b&gt;)</translation>
     </message>
     <message>
         <source>No chance to authorize</source>
-        <translation>未进行身份认�?/translation>
+        <translation>鏈繘琛岃韩浠借璇?/translation>
     </message>
     <message>
         <source>Loading list of databases...</source>
-        <translation>正在加载数据库列�?..</translation>
+        <translation>姝ｅ湪鍔犺浇鏁版嵁搴撳垪琛?..</translation>
     </message>
     <message>
         <source>Access to databases is available</source>
-        <translation>数据库访问正�?/translation>
+        <translation>鏁版嵁搴撹闂甯?/translation>
     </message>
     <message>
         <source>Failed to load list of databases</source>
-        <translation>无法加载数据库列�?/translation>
+        <translation>鏃犳硶鍔犺浇鏁版嵁搴撳垪琛?/translation>
     </message>
     <message>
         <source>No chance to load list of databases</source>
-        <translation>未尝试加载数据库列表</translation>
+        <translation>鏈皾璇曞姞杞芥暟鎹簱鍒楄〃</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateCollectionDialog</name>
     <message>
         <source>Option available for WiredTiger storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用�?WiredTiger 存储引擎且数据库版本需�?3.0 或以上�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜?WiredTiger 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰闇€鍦?3.0 鎴栦互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for database version 3.2 and higher.</source>
-        <translation>该选项仅适用于数据库版本 3.2 或以上�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜庢暟鎹簱鐗堟湰 3.2 鎴栦互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and database version 3.0 and higher.</source>
-        <translation>该选项仅适用�?MMAPv1 存储引擎且数据库版本需�?3.0 或以上�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸涓旀暟鎹簱鐗堟湰闇€鍦?3.0 鎴栦互涓娿€?/translation>
     </message>
     <message>
         <source>Option available for MMAPv1 storage engine only and deprecated since database version 3.0</source>
-        <translation>该选项仅适用�?MMAPv1 存储引擎，且在数据库 3.0 版本后已弃用�?/translation>
+        <translation>璇ラ€夐」浠呴€傜敤浜?MMAPv1 瀛樺偍寮曟搸锛屼笖鍦ㄦ暟鎹簱 3.0 鐗堟湰鍚庡凡寮冪敤銆?/translation>
     </message>
     <message>
         <source>Option deprecated since database version 3.2</source>
-        <translation>该选项自数据库 3.2 版本起已弃用�?/translation>
+        <translation>璇ラ€夐」鑷暟鎹簱 3.2 鐗堟湰璧峰凡寮冪敤銆?/translation>
     </message>
     <message>
         <source>Create Collection</source>
-        <translation>创建集合</translation>
+        <translation>鍒涘缓闆嗗悎</translation>
     </message>
     <message>
         <source>Collection Name:</source>
-        <translation>集合名称:</translation>
+        <translation>闆嗗悎鍚嶇О:</translation>
     </message>
     <message>
         <source>C&amp;reate</source>
-        <translation>创建(&amp;R)</translation>
+        <translation>鍒涘缓(&amp;R)</translation>
     </message>
     <message>
         <source>Validate JSON</source>
-        <translation>校验 JSON 语法</translation>
+        <translation>鏍￠獙 JSON 璇硶</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>基本选项</translation>
+        <translation>鍩烘湰閫夐」</translation>
     </message>
     <message>
         <source>Storage Engine</source>
-        <translation>存储引擎配置</translation>
+        <translation>瀛樺偍寮曟搸閰嶇疆</translation>
     </message>
     <message>
         <source>Validator</source>
-        <translation>文档验证�?(Validator)</translation>
+        <translation>鏂囨。楠岃瘉鍣?(Validator)</translation>
     </message>
     <message>
         <source>Index Option Defaults</source>
-        <translation>默认索引配置</translation>
+        <translation>榛樿绱㈠紩閰嶇疆</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>高级选项</translation>
+        <translation>楂樼骇閫夐」</translation>
     </message>
     <message>
         <source>Create capped collection</source>
-        <translation>创建固定集合 (Capped Collection)</translation>
+        <translation>鍒涘缓鍥哄畾闆嗗悎 (Capped Collection)</translation>
     </message>
     <message>
         <source>Maximum size in bytes: </source>
-        <translation>最大尺�?(Bytes): </translation>
+        <translation>鏈€澶у昂瀵?(Bytes): </translation>
     </message>
     <message>
         <source>Maximum number of documents: </source>
-        <translation>最大文档数�? </translation>
+        <translation>鏈€澶ф枃妗ｆ暟閲? </translation>
     </message>
     <message>
         <source>Auto index _id</source>
-        <translation>自动�?_id 创建索引</translation>
+        <translation>鑷姩涓?_id 鍒涘缓绱㈠紩</translation>
     </message>
     <message>
         <source>Use power-of-2 sizes</source>
-        <translation>使用 power-of-2 填充策略</translation>
+        <translation>浣跨敤 power-of-2 濉厖绛栫暐</translation>
     </message>
     <message>
         <source>No Padding</source>
-        <translation>禁用填充 (No Padding)</translation>
+        <translation>绂佺敤濉厖 (No Padding)</translation>
     </message>
     <message>
         <source>Enter the configuration for the storage engine: </source>
-        <translation>请输入存储引擎的具体配置 (JSON): </translation>
+        <translation>璇疯緭鍏ュ瓨鍌ㄥ紩鎿庣殑鍏蜂綋閰嶇疆 (JSON): </translation>
     </message>
     <message>
         <source>Validation Level: </source>
-        <translation>验证级别 (Validation Level): </translation>
+        <translation>楠岃瘉绾у埆 (Validation Level): </translation>
     </message>
     <message>
         <source>Validation Action: </source>
-        <translation>验证触发动作 (Validation Action): </translation>
+        <translation>楠岃瘉瑙﹀彂鍔ㄤ綔 (Validation Action): </translation>
     </message>
     <message>
         <source>Enter the validator document for this collection: </source>
-        <translation>请输入此集合的验证规则文�?(JSON): </translation>
+        <translation>璇疯緭鍏ユ闆嗗悎鐨勯獙璇佽鍒欐枃妗?(JSON): </translation>
     </message>
     <message>
         <source>Enter a default configuration for indexes when creating a collection: </source>
-        <translation>请输入创建集合时的默认索引配�?(JSON): </translation>
+        <translation>璇疯緭鍏ュ垱寤洪泦鍚堟椂鐨勯粯璁ょ储寮曢厤缃?(JSON): </translation>
     </message>
     <message>
         <source>Unable to parse JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;, at (%2, %3).</source>
-        <translation>无法解析 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;，位于行 %2, �?%3�?/translation>
+        <translation>鏃犳硶瑙ｆ瀽 JSON:&lt;br /&gt; &lt;b&gt;%1&lt;/b&gt;锛屼綅浜庤 %2, 鍒?%3銆?/translation>
     </message>
     <message>
         <source>Parsing error</source>
-        <translation>解析错误</translation>
+        <translation>瑙ｆ瀽閿欒</translation>
     </message>
     <message>
         <source>Validation</source>
-        <translation>语法校验</translation>
+        <translation>璇硶鏍￠獙</translation>
     </message>
     <message>
         <source>JSON is valid!</source>
-        <translation>JSON 格式有效�?/translation>
+        <translation>JSON 鏍煎紡鏈夋晥锛?/translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>错误</translation>
+        <translation>閿欒</translation>
     </message>
     <message>
         <source>Maximum size is required for capped collections</source>
-        <translation>创建固定集合 (Capped) 时必须指定最大尺�?/translation>
+        <translation>鍒涘缓鍥哄畾闆嗗悎 (Capped) 鏃跺繀椤绘寚瀹氭渶澶у昂瀵?/translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CreateDatabaseDialog</name>
     <message>
         <source>Create Database</source>
-        <translation>创建数据�?/translation>
+        <translation>鍒涘缓鏁版嵁搴?/translation>
     </message>
     <message>
         <source>Database Name:</source>
-        <translation>数据库名�?</translation>
+        <translation>鏁版嵁搴撳悕绉?</translation>
     </message>
     <message>
         <source>C&amp;reate</source>
-        <translation>创建(&amp;R)</translation>
+        <translation>鍒涘缓(&amp;R)</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::CopyCollection</name>
     <message>
         <source>Copy Collection</source>
-        <translation>克隆集合</translation>
+        <translation>鍏嬮殕闆嗗悎</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>执行克隆</translation>
+        <translation>鎵ц鍏嬮殕</translation>
     </message>
     <message>
         <source>Select server:</source>
-        <translation>选择目标服务�?</translation>
+        <translation>閫夋嫨鐩爣鏈嶅姟鍣?</translation>
     </message>
     <message>
         <source>Copy &lt;b&gt;%1&lt;/b&gt; collection to database on this or another server. You need to be already connected to destination server, in order to see this server in the list below. This operation will &lt;i&gt;not&lt;/i&gt; overwrite existing documents with the same _id.</source>
-        <translation>将集�?&lt;b&gt;%1&lt;/b&gt; 克隆到当前服务器或其它已连接服务器的数据库中。您需要先连接到目标服务器，才能在下方列表中看到它。此操作&lt;i&gt;不会&lt;/i&gt;覆盖已具有相�?_id 的现有文档�?/translation>
+        <translation>灏嗛泦鍚?&lt;b&gt;%1&lt;/b&gt; 鍏嬮殕鍒板綋鍓嶆湇鍔″櫒鎴栧叾瀹冨凡杩炴帴鏈嶅姟鍣ㄧ殑鏁版嵁搴撲腑銆傛偍闇€瑕佸厛杩炴帴鍒扮洰鏍囨湇鍔″櫒锛屾墠鑳藉湪涓嬫柟鍒楄〃涓湅鍒板畠銆傛鎿嶄綔&lt;i&gt;涓嶄細&lt;/i&gt;瑕嗙洊宸插叿鏈夌浉鍚?_id 鐨勭幇鏈夋枃妗ｃ€?/translation>
     </message>
     <message>
         <source>Select database:</source>
-        <translation>选择目标数据�?</translation>
+        <translation>閫夋嫨鐩爣鏁版嵁搴?</translation>
     </message>
 </context>
 <context>
     <name>Robomongo::WelcomeTab</name>
     <message>
         <source>All Blog Posts</source>
-        <translation>查看所有博客文�?/translation>
+        <translation>鏌ョ湅鎵€鏈夊崥瀹㈡枃绔?/translation>
     </message>
     <message>
         <source>
@@ -8451,7 +8451,7 @@ Error:
                     p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
                     .feature-list { padding: 0; list-style: none; margin: 0; }
                     .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: '�?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
+                    .feature-list li::before { content: '鉁?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
                     .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
                     .divider { height: 1px; background: #eee; margin: 30px 0; }
                     .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
@@ -8459,20 +8459,20 @@ Error:
             &lt;/head&gt;
             &lt;body&gt;
                 &lt;div class="card"&gt;
-                    &lt;div class="version-badge"&gt;重塑�?v%1 - 标准发行�?lt;/div&gt;
-                    &lt;h1&gt;欢迎使用 Robo 3T 中文化版&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并深度优化�?Robo 3T 版本。我们剔除了冗余干扰并修复了核心 Bug，助您更专注于数据管理�?lt;/p&gt;
+                    &lt;div class="version-badge"&gt;閲嶅鐗?v%1 - 鏍囧噯鍙戣鐗?lt;/div&gt;
+                    &lt;h1&gt;娆㈣繋浣跨敤 Robo 3T 涓枃鍖栫増&lt;/h1&gt;
+                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ苟娣卞害浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠墧闄や簡鍐椾綑骞叉壈骞朵慨澶嶄簡鏍稿績 Bug锛屽姪鎮ㄦ洿涓撴敞浜庢暟鎹鐞嗐€?lt;/p&gt;
                     
                     &lt;ul class="feature-list"&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定至上�?lt;/strong&gt; 修复了关键的 Windows 编译冲突及内存泄漏风险�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固�?lt;/strong&gt; 深度集成稳定�?OpenSSL 1.1.1u 加密套件�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代工具链：&lt;/strong&gt; 基于 Qt 5.15.2 �?Ninja 构建，带来极致的响应体验�?lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100%% 免安装：&lt;/strong&gt; 全量依赖库已打包，实现真正的“解压即用”绿色体验�?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;绋冲畾鑷充笂锛?lt;/strong&gt; 淇浜嗗叧閿殑 Windows 缂栬瘧鍐茬獊鍙婂唴瀛樻硠婕忛闄┿€?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛?lt;/strong&gt; 娣卞害闆嗘垚绋冲畾鐨?OpenSSL 1.1.1u 鍔犲瘑濂椾欢銆?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt; 鍩轰簬 Qt 5.15.2 涓?Ninja 鏋勫缓锛屽甫鏉ユ瀬鑷寸殑鍝嶅簲浣撻獙銆?lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;100%% 鍏嶅畨瑁咃細&lt;/strong&gt; 鍏ㄩ噺渚濊禆搴撳凡鎵撳寘锛屽疄鐜扮湡姝ｇ殑鈥滆В鍘嬪嵆鐢ㄢ€濈豢鑹蹭綋楠屻€?lt;/li&gt;
                     &lt;/ul&gt;
 
                     &lt;div class="divider"&gt;&lt;/div&gt;
                     &lt;div class="footer"&gt;
-                        "数据由您掌控。感谢支持社区版�?
+                        "鏁版嵁鐢辨偍鎺屾帶銆傛劅璋㈡敮鎸佺ぞ鍖虹増銆?
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/body&gt;
