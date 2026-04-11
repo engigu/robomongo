@@ -94,10 +94,18 @@ jobs:
 
       - name: Prepare Release Package
         run: |
-          if not exist D:\dist\robomongo.exe (
-            echo "FATAL: robomongo.exe was not created in D:\dist"
-            exit 1
+          # 检查确切的产物名称：在现代版本中它是 robo3t.exe
+          if not exist D:\dist\robo3t.exe (
+            if exist D:\dist\robomongo.exe (
+              echo "Found robomongo.exe, renaming to robo3t.exe"
+              copy D:\dist\robomongo.exe D:\dist\robo3t.exe
+            ) else (
+              echo "FATAL: Neither robo3t.exe nor robomongo.exe exist in D:\dist"
+              dir D:\dist
+              exit 1
+            )
           )
+          
           cd /d D:\dist
           powershell Compress-Archive -Path * -DestinationPath robo3t-v1.5.0-windows-x64.zip
         shell: cmd
