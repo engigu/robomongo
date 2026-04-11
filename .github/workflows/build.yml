@@ -121,6 +121,14 @@ jobs:
       - name: Install OpenSSL
         run: choco install openssl --version=1.1.1.2100 -y --no-progress
 
+      - name: Locate OpenSSL
+        run: |
+          dir "C:\Program Files\OpenSSL*" /s /b | findstr "opensslconf.h"
+          set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL-Win64
+          if not exist "C:\Program Files\OpenSSL-Win64" set OPENSSL_REAL_PATH=C:\Program Files\OpenSSL
+          echo OPENSSL_PATH=%OPENSSL_REAL_PATH% >> %GITHUB_ENV%
+        shell: cmd
+
       - name: Configure and Build Robo 3T
         env:
           # 指向平铺后的 shell 路径
@@ -128,7 +136,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake -G "Visual Studio 17 2022" -A x64 -T v141 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DMongoDB_DIR="${{ github.workspace }}/robo-shell" -DOpenSSL_DIR="C:/Program Files/OpenSSL-Win64" -DCMAKE_BUILD_TYPE=Release ..
+          cmake -G "Visual Studio 17 2022" -A x64 -T v141 -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" -DMongoDB_DIR="${{ github.workspace }}/robo-shell" -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" -DCMAKE_BUILD_TYPE=Release ..
           cmake --build . --config Release -j 2
         shell: cmd
 
