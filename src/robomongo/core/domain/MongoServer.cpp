@@ -301,7 +301,8 @@ namespace Robomongo {
             genericEventErrorHandler(event, "Failed to remove " + subStr, _bus, this);
         }
         else {  // success
-            _bus->publish(new RemoveDocumentResponse(this, event->ns(), event->removeCount(), event->index));
+            MongoNamespace ns = event->ns();
+            _bus->publish(new RemoveDocumentResponse(this, ns, event->removeCount(), event->index));
             LOG_MSG("Removed " + subStr, mongo::logger::LogSeverity::Info());
         }
     }
