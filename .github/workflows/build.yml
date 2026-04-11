@@ -71,17 +71,17 @@ jobs:
         shell: cmd
 
       - name: Configure and Build Robo 3T
-        env:
-          MongoDB_OBJECTS: ${{ github.workspace }}/robo-shell
         run: |
+          subst S: "${{ github.workspace }}\robo-shell"
+          subst R: "${{ github.workspace }}"
           mkdir D:\b
           cd /d D:\b
           cmake -G Ninja ^
             -DCMAKE_BUILD_TYPE=Release ^
             -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" ^
-            -DMongoDB_DIR="${{ github.workspace }}/robo-shell" ^
+            -DMongoDB_DIR="S:" ^
             -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" ^
-            ${{ github.workspace }}
+            R:
           ninja -v
         shell: cmd
 
