@@ -107,14 +107,36 @@ jobs:
           :: 构建与安装到本地目录
           ninja install
           
-          :: 使用 CPack 生成打包产物 (内部会调用我们注入的 windeployqt)
+          :: 确保 Qt bin 目录在 PATH 中，以便 windeployqt 能运行
+          set "PATH=${{ env.Qt5_Dir }}\bin;%PATH%"
+          
+          :: 确保 OpenSSL bin 也在系统中以便搜寻
+          set "PATH=${{ env.OPENSSL_PATH }}\bin;%PATH%"
+          
+          :: 检查关键依赖是否存在
+          if exist "${{ env.Qt5_Dir }}\bin\Qt5Core.dll" (echo Qt5Core found) else (echo Qt5Core NOT found)
+          if exist "${{ env.OPENSSL_PATH }}\bin\libssl-1_1-x64.dll" (echo SSL found) else (echo SSL NOT found)
+
+          :: 使用 CPack 生成打包产物
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 准备产物到 dist 目录供后续上传
-          mkdir D:\dist
-          copy package\*.zip D:\dist\
-          copy package\*.exe D:\dist\
+          :: 准备产物到 dist 目录
+          if not exist D:\dist mkdir D:\dist
+          
+          :: 检查并拷贝 ZIP 产物
+          dir package\*.zip
+          copy /y package\*.zip D:\dist\
+          
+          :: 检查并拷贝 EXE 产物 (安装包)
+          dir package\*.exe
+          copy /y package\*.exe D:\dist\
+          
+          :: 如果 D:\dist 还是空的，说明 CPack 路径可能有误，尝试搜索
+          if not exist D:\dist\*.zip (
+            dir /s /b *.zip
+            for /f "delims=" %%i in ('dir /s /b *.zip') do copy /y "%%i" D:\dist\
+          )
           
           dir D:\dist
         shell: cmd
