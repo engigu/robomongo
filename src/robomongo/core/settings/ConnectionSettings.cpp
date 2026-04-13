@@ -26,7 +26,7 @@ namespace Robomongo
      * Creates ConnectionSettings with default values
      */
     ConnectionSettings::ConnectionSettings(bool isClone) : QObject(),
-        _connectionName(tr("New Connection")),
+        _connectionName(QtUtils::toStdString(tr("New Connection"))),
         _host(defaultServerHost),
         _port(port),
         _imported(false),
@@ -38,7 +38,7 @@ namespace Robomongo
     { }
 
     ConnectionSettings::ConnectionSettings(const mongo::MongoURI& uri, bool isClone)  
-        : _connectionName(tr("New Connection")),
+        : _connectionName(QtUtils::toStdString(tr("New Connection"))),
         _host(defaultServerHost),
         _port(port),
         _imported(false),
