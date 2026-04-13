@@ -135,23 +135,43 @@ elseif(SYSTEM_MACOSX)
     install(FILES "${QT_STYLES_DIR}/libqmacstyle.dylib" DESTINATION ${styles_dir})
 elseif(SYSTEM_WINDOWS)
     # Use windeployqt for Windows dependencies
-    find_program(WINDEPLOYQT_EXECUTABLE windeployqt NAMES windeployqt HINTS "${Qt5Core_DIR}/../../../bin")
+    message(STATUS "Searching for windeployqt...")
+    find_program(WINDEPLOYQT_EXECUTABLE windeployqt NAMES windeployqt HINTS "$ENV{Qt5_Dir}/bin" "${Qt5Core_DIR}/../../../bin")
+    
     if(WINDEPLOYQT_EXECUTABLE)
+        message(STATUS "Found windeployqt: ${WINDEPLOYQT_EXECUTABLE}")
         install(CODE "
+            message(STATUS \"Running windeployqt on robo3t.exe...\")
             execute_process(COMMAND \"${WINDEPLOYQT_EXECUTABLE}\" 
                 --release 
                 --no-translations 
                 --no-opengl-sw 
                 --no-compiler-runtime 
-                \"\$ENV{DESTDIR}\${CMAKE_INSTALL_PREFIX}/${bin_dir}/robo3t.exe\")
+                --verbose 1
+                \"\$ENV{DESTDIR}\${CMAKE_INSTALL_PREFIX}/${bin_dir}/robo3t.exe\"
+                RESULT_VARIABLE res)
+            if(NOT res EQUAL 0)
+                message(FATAL_ERROR \"windeployqt failed with error: \${res}\")
+            endif()
         ")
+    else()
+        message(WARNING "windeployqt NOT found! Dependencies will be missing.")
     endif()
 
     # Fixed OpenSSL installation for v1.5.0
-    install(FILES 
-        "${OpenSSL_DIR}/bin/libssl-1_1-x64.dll"
-        "${OpenSSL_DIR}/bin/libcrypto-1_1-x64.dll"
-        DESTINATION ${bin_dir})
+    # Try to find OpenSSL DLLs in bin directory
+    install(CODE "
+        file(GLOB ssl_dlls \"$ENV{OPENSSL_PATH}/bin/*.dll\")
+        if(NOT ssl_dlls)
+             file(GLOB ssl_dlls \"$ENV{OPENSSL_PATH}/*.dll\")
+        endif()
+        if(ssl_dlls)
+            message(STATUS \"Found OpenSSL DLLs: \${ssl_dlls}, installing to ${bin_dir}\")
+            file(INSTALL \${ssl_dlls} DESTINATION \"\$ENV{DESTDIR}\${CMAKE_INSTALL_PREFIX}/${bin_dir}\")
+        else()
+            message(WARNING \"OpenSSL DLLs NOT found at $ENV{OPENSSL_PATH}!\")
+        endif()
+    ")
 
     # Install Styles
     install(FILES "${QT_STYLES_DIR}/qwindowsvistastyle.dll" DESTINATION ${styles_dir})

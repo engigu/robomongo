@@ -104,42 +104,22 @@ jobs:
           subst R: "${{ github.workspace }}"
           cd /d D:\b
           
-          :: 1. 编译并安装到 D:\b\install
+          :: 准备环境 PATH，供 CMake install 过程中的 windeployqt 使用
+          set "PATH=${{ env.Qt5_Dir }}\bin;${{ env.OPENSSL_PATH }}\bin;%PATH%"
+          
+          :: 1. 尝试构建并执行安装（此步会触发 windeployqt 和 DLL 拷贝）
           ninja install
           
-          :: 2. 环境准备
-          set "PATH=${{ env.Qt5_Dir }}\bin;${{ env.OPENSSL_PATH }}\bin;%PATH%"
-          if not exist D:\dist mkdir D:\dist
-          
-          :: 3. 核心依赖手动补全 (确保 bin 目录下有所有依赖)
-          echo "Deploying Qt dependencies manually..."
-          windeployqt --release --no-translations --no-opengl-sw --no-compiler-runtime "D:\b\install\robo3t.exe"
-          
-          echo "Copying OpenSSL dependencies..."
-          copy /y "${{ env.OPENSSL_PATH }}\bin\libssl-1_1-x64.dll" "D:\b\install\"
-          copy /y "${{ env.OPENSSL_PATH }}\bin\libcrypto-1_1-x64.dll" "D:\b\install\"
-          
-          :: 4. 验证安装目录内容
-          dir D:\b\install
-          
-          :: 5. 执行 CPack 打包 (它会基于 D:\b\install 的内容进行打包)
+          :: 2. 执行 CPack 打包
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 6. 整理产物到 D:\dist
-          echo "Collecting artifacts..."
+          :: 3. 整理产物到 D:\dist
+          if not exist D:\dist mkdir D:\dist
           xcopy /y /s package\*.zip D:\dist\
           xcopy /y /s package\*.exe D:\dist\
           
-          :: 兜底搜索：如果在 package 没找到，全盘搜索
-          if not exist D:\dist\*.zip (
-             echo "Artifacts not found in package/, searching D:\..."
-             for /f "delims=" %%i in ('dir /s /b D:\*.zip') do copy /y "%%i" D:\dist\
-             for /f "delims=" %%i in ('dir /s /b D:\*.exe') do copy /y "%%i" D:\dist\
-          )
-          
-          :: 最终确认
-          echo "Final D:\dist content:"
+          :: 验证产物是否存在
           dir D:\dist
         shell: cmd
 
