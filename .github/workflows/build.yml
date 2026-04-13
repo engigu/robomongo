@@ -137,8 +137,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            ${{ github.workspace }}\dist\*.zip
-            ${{ github.workspace }}\dist\*.exe
+            ${{ github.workspace }}/dist/*.zip
+            ${{ github.workspace }}/dist/*.exe
           fail_on_unmatched_files: false
           name: Robo 3T ${{ github.ref_name }} Reborn Release
           body: |
