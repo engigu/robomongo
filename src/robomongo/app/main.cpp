@@ -103,7 +103,7 @@ int main(int argc, char *argv[], char** envp)
         QStringList modules = { "core", "gui", "explorer" };
         for (const QString &module : modules) {
             QTranslator *translator = new QTranslator(&app);
-            if (translator->load("robomongo_zh_CN_" + module, ":/translations")) {
+            if (translator->load("robomongo_zh_CN_" + module, ":/")) {
                 app.installTranslator(translator);
             }
         }

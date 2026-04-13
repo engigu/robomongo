@@ -16,7 +16,7 @@ namespace Robomongo {
         static bool welcomeLoaded = false;
         if (!welcomeLoaded) {
             QTranslator *translator = new QTranslator(qApp);
-            if (translator->load("robomongo_zh_CN_welcome", ":/translations")) {
+            if (translator->load("robomongo_zh_CN_welcome", ":/")) {
                 qApp->installTranslator(translator);
             }
             welcomeLoaded = true;

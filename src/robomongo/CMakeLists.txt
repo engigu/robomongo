@@ -153,7 +153,7 @@ qt5_add_translation(QM_FILES ${TS_FILES})
 
 # Generate a temporary qrc file for translations to be embedded
 set(TRANSLATIONS_QRC "${CMAKE_CURRENT_BINARY_DIR}/translations.qrc")
-file(WRITE ${TRANSLATIONS_QRC} "<RCC><qresource prefix=\"/translations\">\n")
+file(WRITE ${TRANSLATIONS_QRC} "<RCC><qresource prefix=\"/\">\n")
 foreach(QM_FILE ${QM_FILES})
     get_filename_component(QM_NAME ${QM_FILE} NAME)
     file(APPEND ${TRANSLATIONS_QRC} "    <file alias=\"${QM_NAME}\">${QM_FILE}</file>\n")
