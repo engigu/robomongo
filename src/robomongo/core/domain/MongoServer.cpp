@@ -303,7 +303,7 @@ namespace Robomongo {
         else {  // success
             MongoNamespace ns = event->ns();
             _bus->publish(new RemoveDocumentResponse(this, ns, event->removeCount, event->index));
-            LOG_MSG(tr("Removed ") + subStr, mongo::logger::LogSeverity::Info());
+            LOG_MSG((tr("Removed ") + QtUtils::toQString(subStr)).toStdString(), mongo::logger::LogSeverity::Info());
         }
     }
 
