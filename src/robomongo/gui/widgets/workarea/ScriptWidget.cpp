@@ -74,7 +74,7 @@ namespace Robomongo
 
         _queryText = new FindFrame(this);
         _topStatusBar = new TopStatusBar(_shell->server()->connectionRecord()->connectionName(), 
-                                         _shell->server()->connectionRecord()->getFullAddress(), tr("Loading..."));
+                                         _shell->server()->connectionRecord()->getFullAddress(), tr("Loading...").toStdString());
 
         QVBoxLayout *layout = new QVBoxLayout;
         layout->setSpacing(0);
@@ -154,10 +154,14 @@ namespace Robomongo
                 if (metaFileOut.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
                     QJson::Serializer serializer;
                     serializer.setIndentMode(QJson::IndentFull);
-                    serializer.serialize(metadata, &metaFileOut);
+                    bool okSerialize = false;
+                    QByteArray jsonBytes = serializer.serialize(metadata, &okSerialize);
+                    if (okSerialize) {
+                        metaFileOut.write(jsonBytes);
+                    }
                     metaFileOut.close();
 
-                    AppRegistry::instance().eventBus()->publish(new FavoritesChangedEvent(this));
+                    AppRegistry::instance().bus()->publish(new FavoritesChangedEvent(this));
                     QMessageBox::information(this, tr("Favorites"), tr("Snippet '%1' saved successfully.").arg(name));
                 } else {
                     QMessageBox::critical(this, tr("Favorites"), tr("Could not update metadata file."));
