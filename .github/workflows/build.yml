@@ -110,23 +110,23 @@ jobs:
           :: 1. 编译并安装（核心依赖已集成在 CMake install 中）
           ninja install
           
-          :: 2. 执行 CPack 打包
+          :: 2. 执行 CPack 打包 (强制执行 ZIP 和 NSIS)
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 3. 整理产物 (指定大致目录 + 模糊匹配)
-          if not exist "${{ github.workspace }}\dist" mkdir "${{ github.workspace }}\dist"
+          :: 3. 整理产物 (使用绝对路径确保 Release 步可见)
+          set "DIST_DIR=${{ github.workspace }}\dist"
+          if not exist "%DIST_DIR%" mkdir "%DIST_DIR%"
           
-          echo "Collecting packages from D:\b\package..."
-          :: 仅在 CPack 确定的产物目录进行局部模糊匹配，确保精准且高效
-          if exist "D:\b\package" (
-            copy /y "D:\b\package\*.zip" "${{ github.workspace }}\dist\"
-            copy /y "D:\b\package\*.exe" "${{ github.workspace }}\dist\"
+          echo "Capturing packages from D:\b\package to %DIST_DIR%..."
+          for /r "D:\b\package" %%f in (*.zip *.exe) do (
+              echo Found: %%f
+              copy /y "%%f" "%DIST_DIR%\"
           )
           
           :: 验证 dist 目录
-          echo "Verified artifacts in dist folders:"
-          dir "${{ github.workspace }}\dist"
+          echo "Final artifacts at ${{ github.workspace }}\dist :"
+          dir "%DIST_DIR%"
         shell: cmd
 
       - name: Create GitHub Release
@@ -134,8 +134,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            dist/*.zip
-            dist/*.exe
+            ${{ github.workspace }}\dist\*.zip
+            ${{ github.workspace }}\dist\*.exe
           name: Robo 3T ${{ github.ref_name }} Reborn Release
           body: |
             ## Robo 3T ${{ github.ref_name }} Standard Release
