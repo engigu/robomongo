@@ -85,6 +85,7 @@ namespace Robomongo
         void onTextChanged();
         void onCursorPositionChanged(int line, int index);
         void onCompletionActivated(const QString&);
+        void onSaveToFavoritesRequested();
 
     private:
         void configureQueryText();
