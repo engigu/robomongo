@@ -11,6 +11,8 @@
 #include <QMessageBox>
 
 #include "robomongo/core/AppRegistry.h"
+#include "robomongo/core/EventBus.h"
+#include "robomongo/core/events/MongoEvents.h"
 #include "robomongo/core/settings/SettingsManager.h"
 #include <QDir>
 #include <QFile>
