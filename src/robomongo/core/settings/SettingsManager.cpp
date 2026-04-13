@@ -315,6 +315,7 @@ namespace Robomongo
             _toolbars["logs"] = false;
 
         _cacheData = map.value("cacheData").toMap();
+        _favorites = map.value("favorites").toMap();
 
         // Load connection settings from previous versions of Robomongo
         importFromOldVersion();
@@ -391,6 +392,7 @@ namespace Robomongo
         map.insert("imported", _imported);
         map.insert("anonymousID", _anonymousID);
         map.insert("cacheData", _cacheData);
+        map.insert("favorites", _favorites);
         map.insert("programExitedNormally", _programExitedNormally);
         map.insert("disableHttpsFeatures", _disableHttpsFeatures);
         map.insert("debugMode", _debugMode);

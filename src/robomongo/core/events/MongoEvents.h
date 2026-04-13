@@ -1312,4 +1312,10 @@ namespace Robomongo
         StopScriptRequest(QObject *sender) :
             Event(sender) {}
     };
+
+    struct FavoritesChangedEvent : public Event
+    {
+        R_EVENT
+        FavoritesChangedEvent(QObject *sender) : Event(sender) {}
+    };
 }

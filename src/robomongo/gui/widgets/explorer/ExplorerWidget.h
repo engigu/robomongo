@@ -12,6 +12,7 @@ QT_END_NAMESPACE
 namespace Robomongo
 {
     class MainWindow;
+    class ExplorerFavoritesRootItem;
 
     /**
      * @brief Explorer widget (usually you'll see it at the left of main window)
@@ -31,6 +32,7 @@ namespace Robomongo
         void handle(ConnectingEvent *event);
         void handle(ConnectionEstablishedEvent *event);
         void handle(ConnectionFailedEvent *event);
+        void handle(FavoritesChangedEvent *event);
     private Q_SLOTS:
         void ui_itemExpanded(QTreeWidgetItem *item);
         void ui_itemDoubleClicked(QTreeWidgetItem *item, int column);
@@ -46,5 +48,6 @@ namespace Robomongo
         void decreaseProgress();
         QLabel *_progressLabel;
         QTreeWidget *_treeWidget;
+        ExplorerFavoritesRootItem *_favoritesRoot;
     };
 }

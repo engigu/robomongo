@@ -103,6 +103,7 @@ set(SOURCES
 
     # Isolated scope #7
     gui/widgets/explorer/ExplorerServerTreeItem.cpp
+    gui/widgets/explorer/ExplorerFavoritesItem.cpp
     gui/widgets/explorer/ExplorerTreeWidget.cpp
     gui/widgets/explorer/ExplorerWidget.cpp
     gui/widgets/workarea/BsonTableModel.cpp

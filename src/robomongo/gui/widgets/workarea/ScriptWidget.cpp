@@ -6,7 +6,12 @@
 #include <QStringListModel>
 #include <Qsci/qscilexerjavascript.h>
 #include <Qsci/qsciscintilla.h>
+#include <QPushButton>
+#include <QInputDialog>
+#include <QMessageBox>
 
+#include "robomongo/core/AppRegistry.h"
+#include "robomongo/core/settings/SettingsManager.h"
 #include "robomongo/core/domain/MongoShell.h"
 #include "robomongo/core/domain/MongoServer.h"
 #include "robomongo/core/settings/ConnectionSettings.h"
@@ -89,6 +94,31 @@ namespace Robomongo
 
         setText(QtUtils::toQString(shell->query()));
         setTextCursor(shell->cursor());
+
+        VERIFY(connect(_topStatusBar, SIGNAL(saveToFavoritesRequested()), this, SLOT(onSaveToFavoritesRequested())));
+    }
+
+    void ScriptWidget::onSaveToFavoritesRequested()
+    {
+        QString script = text();
+        if (script.trimmed().isEmpty()) {
+            QMessageBox::warning(this, tr("Favorites"), tr("Cannot save an empty script."));
+            return;
+        }
+
+        bool ok;
+        QString name = QInputDialog::getText(this, tr("Add to Favorites"),
+                                             tr("Enter a name for this snippet:"), QLineEdit::Normal,
+                                             tr("My Query"), &ok);
+        if (ok && !name.isEmpty()) {
+            auto settings = AppRegistry::instance().settingsManager();
+            QVariantMap favorites = settings->favorites();
+            favorites.insert(name, script);
+            settings->setFavorites(favorites);
+            settings->save();
+            AppRegistry::instance().eventBus()->publish(new FavoritesChangedEvent(this));
+            QMessageBox::information(this, tr("Favorites"), tr("Snippet '%1' saved to favorites.").arg(name));
+        }
     }
 
     bool ScriptWidget::eventFilter(QObject *obj, QEvent *event)
@@ -417,7 +447,22 @@ namespace Robomongo
         topLayout->addWidget(_currentDatabaseLabel, 0, Qt::AlignLeft);
         topLayout->addStretch(1);
 
+        _saveButton = new QPushButton(this);
+        _saveButton->setIcon(QIcon(":robomongo/icons/bson_object_16x16.png"));
+        _saveButton->setToolTip(tr("Add to Favorites"));
+        _saveButton->setFlat(true);
+        _saveButton->setCursor(Qt::PointingHandCursor);
+        _saveButton->setFixedSize(24, 24);
+        _saveButton->setStyleSheet("QPushButton { border: none; padding: 2px; } QPushButton:hover { background-color: rgba(255, 255, 255, 30); border-radius: 4px; }");
+        VERIFY(connect(_saveButton, SIGNAL(clicked()), this, SLOT(onSaveButtonClicked())));
+        topLayout->addWidget(_saveButton, 0, Qt::AlignRight);
+
         setLayout(topLayout);
+    }
+
+    void TopStatusBar::onSaveButtonClicked()
+    {
+        emit saveToFavoritesRequested();
     }
 
     void TopStatusBar::setCurrentDatabase(const std::string &database, bool isValid)

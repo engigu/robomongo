@@ -4,6 +4,7 @@
 #include <QLabel>
 #include <QMovie>
 #include <QKeyEvent>
+#include <QMessageBox>
 
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/domain/App.h"
@@ -17,6 +18,7 @@
 #include "robomongo/gui/widgets/explorer/ExplorerReplicaSetTreeItem.h"
 #include "robomongo/gui/widgets/explorer/ExplorerReplicaSetFolderItem.h"
 #include "robomongo/gui/widgets/explorer/ExplorerUserTreeItem.h"
+#include "robomongo/gui/widgets/explorer/ExplorerFavoritesItem.h"
 #include "robomongo/utils/common.h"
 
 namespace Robomongo
@@ -26,6 +28,10 @@ namespace Robomongo
         _progress(0)
     {
         _treeWidget = new ExplorerTreeWidget(this);
+        
+        // Add Favorites root node
+        _favoritesRoot = new ExplorerFavoritesRootItem(_treeWidget);
+        _treeWidget->addTopLevelItem(_favoritesRoot);
 
         QHBoxLayout *vlaout = new QHBoxLayout();
         vlaout->setMargin(0);
@@ -131,6 +137,11 @@ namespace Robomongo
         decreaseProgress();
     }
 
+    void ExplorerWidget::handle(FavoritesChangedEvent *event)
+    {
+        _favoritesRoot->refresh();
+    }
+
     void ExplorerWidget::ui_itemExpanded(QTreeWidgetItem *item)
     {
         auto categoryItem = dynamic_cast<ExplorerDatabaseCategoryTreeItem *>(item);
@@ -166,6 +177,36 @@ namespace Robomongo
 
         if (auto userItem = dynamic_cast<ExplorerUserTreeItem *>(item)) {
             userItem->ui_viewUser();
+            return;
+        }
+
+        if (auto favoriteItem = dynamic_cast<ExplorerFavoriteItem *>(item)) {
+            // Logic to find an active query widget or use the current server
+            MainWindow *mainWin = dynamic_cast<MainWindow *>(parentWidget()->parentWidget()); // Usually MainWindow is the grandparent
+            
+            // Actually, we can use AppRegistry to find the active shell
+            auto script = favoriteItem->script();
+            
+            // Try to use a better way: 
+            // If the user is double clicking, they probably want to open it.
+            // If we have a selected server in the tree, use it.
+            
+            // Let's find the first available server if none is selected
+            MongoServer *server = nullptr;
+            QTreeWidgetItem *current = _treeWidget->currentItem();
+            while (current) {
+                if (auto serverItem = dynamic_cast<ExplorerServerTreeItem *>(current)) {
+                    server = serverItem->server();
+                    break;
+                }
+                current = current->parent();
+            }
+
+            if (server) {
+                AppRegistry::instance().app()->openShell(server, script);
+            } else {
+                QMessageBox::information(this, tr("Favorites"), tr("Please select a server or database in the tree first to open this script."));
+            }
             return;
         }
 

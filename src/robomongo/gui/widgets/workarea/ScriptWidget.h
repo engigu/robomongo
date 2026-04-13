@@ -134,10 +134,17 @@ namespace Robomongo
         void showProgress();
         void hideProgress();
 
+    Q_SIGNALS:
+        void saveToFavoritesRequested();
+
+    private Q_SLOTS:
+        void onSaveButtonClicked();
+
     private:
         Indicator *_currentDatabaseLabel;
         Indicator *_currentServerLabel;
         Indicator *_currentConnectionLabel;
+        class QPushButton *_saveButton;
         QColor _textColor;
     };
 }
