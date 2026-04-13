@@ -104,23 +104,27 @@ jobs:
           subst R: "${{ github.workspace }}"
           cd /d D:\b
           
-          :: 准备环境 PATH，供 CMake install 过程中的 windeployqt 使用
+          :: 准备环境 PATH
           set "PATH=${{ env.Qt5_Dir }}\bin;${{ env.OPENSSL_PATH }}\bin;%PATH%"
           
-          :: 1. 尝试构建并执行安装（此步会触发 windeployqt 和 DLL 拷贝）
+          :: 1. 尝试构建并执行安装
           ninja install
           
           :: 2. 执行 CPack 打包
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 3. 整理产物到 D:\dist
-          if not exist D:\dist mkdir D:\dist
-          xcopy /y /s package\*.zip D:\dist\
-          xcopy /y /s package\*.exe D:\dist\
+          :: 3. 整理产物到 dist 目录
+          if not exist "${{ github.workspace }}\dist" mkdir "${{ github.workspace }}\dist"
           
-          :: 验证产物是否存在
-          dir D:\dist
+          :: 全盘搜索 ZIP 和 EXE 并拷贝到 dist (排除 _CPack_Packages 目录下的临时文件)
+          echo "Searching and collecting final packages..."
+          for /f "delims=" %%i in ('dir /s /b D:\b\package\*.zip') do copy /y "%%i" "${{ github.workspace }}\dist\"
+          for /f "delims=" %%i in ('dir /s /b D:\b\package\*.exe') do copy /y "%%i" "${{ github.workspace }}\dist\"
+          
+          :: 最终确认产物目录
+          echo "Verified artifacts in dist/:"
+          dir "${{ github.workspace }}\dist"
         shell: cmd
 
       - name: Create GitHub Release
@@ -128,8 +132,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            D:\dist\*.zip
-            D:\dist\*.exe
+            dist/*.zip
+            dist/*.exe
           name: Robo 3T ${{ github.ref_name }} Reborn Release
           body: |
             ## Robo 3T ${{ github.ref_name }} Standard Release

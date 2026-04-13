@@ -377,7 +377,7 @@
     </message>
     <message>
         <source>elements</source>
-        <translation>元素丛</translation>
+        <translation>个元素</translation>
     </message>
     <message>
         <source>field</source>
@@ -385,7 +385,7 @@
     </message>
     <message>
         <source>fields</source>
-        <translation>字段群</translation>
+        <translation>个字段</translation>
     </message>
 </context>
 <context>
