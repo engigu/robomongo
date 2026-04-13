@@ -4,12 +4,24 @@
 #include <QVBoxLayout>
 #include <QDesktopServices>
 #include <QScrollArea>
+#include <QTranslator>
+#include <QApplication>
 
 namespace Robomongo {
 
     WelcomeTab::WelcomeTab(QScrollArea *parent) :
         QWidget(parent), _parent(parent)
     {
+        // Lazy Load Welcome Translation
+        static bool welcomeLoaded = false;
+        if (!welcomeLoaded) {
+            QTranslator *translator = new QTranslator(qApp);
+            if (translator->load("robomongo_zh_CN_welcome", ":/translations")) {
+                qApp->installTranslator(translator);
+            }
+            welcomeLoaded = true;
+        }
+
         _browser = new QTextBrowser(this);
         _browser->setOpenExternalLinks(true);
         _browser->setFrameStyle(QFrame::NoFrame);

@@ -142,7 +142,12 @@ set(SOURCES
 )
 
 # Translation build logic
-set(TS_FILES resources/translations/robomongo_zh_CN.ts)
+set(TS_FILES 
+    resources/translations/robomongo_zh_CN_core.ts
+    resources/translations/robomongo_zh_CN_gui.ts
+    resources/translations/robomongo_zh_CN_explorer.ts
+    resources/translations/robomongo_zh_CN_welcome.ts
+)
 qt5_add_translation(QM_FILES ${TS_FILES})
 
 # Generate a temporary qrc file for translations to be embedded

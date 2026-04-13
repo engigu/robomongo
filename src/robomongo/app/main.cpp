@@ -98,10 +98,14 @@ int main(int argc, char *argv[], char** envp)
     Robomongo::AppStyleUtils::initStyle();
 
     // Load translation
-    static QTranslator translator;
+    // Load translation (Fine-grained splitting)
     if (settings->language() == "zh") {
-        if (translator.load("robomongo_zh_CN", ":/translations")) {
-            app.installTranslator(&translator);
+        QStringList modules = { "core", "gui", "explorer" };
+        for (const QString &module : modules) {
+            QTranslator *translator = new QTranslator(&app);
+            if (translator->load("robomongo_zh_CN_" + module, ":/translations")) {
+                app.installTranslator(translator);
+            }
         }
     }
 
