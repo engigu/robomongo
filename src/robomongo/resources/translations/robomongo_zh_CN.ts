@@ -1913,99 +1913,7 @@ Error:
         <translation>&lt;h3&gt;%1 %2 (构建版本 %3 - %4/%5)&lt;/h3&gt;以 Shell 为核心的 MongoDB 管理工具。&lt;br/&gt;&lt;a href=\&quot;https://%6\&quot;&gt;在 GitHub 上提交&lt;/a&gt; 问题/建议。&lt;br/&gt;&lt;br/&gt;&lt;a href=\&quot;https://%7\&quot;&gt;%7&lt;/a&gt; &lt;br/&gt;Copyright 2014-%5 &lt;a href=&amp;quot;%8&amp;quot;&amp;gt;%9&lt;/a&gt;. 保留所有权利。&lt;br/&gt;&lt;br/&gt;本程序按“原样”提供，不包含任何形式的保证，包括但不限于对设计、适销性和特定用途适用性的保证。&lt;br/&gt;&lt;br/&gt;&lt;b&gt;依赖项: &lt;br/&gt;&lt;/b&gt;Mongo-Shell %10&lt;br/&gt;Qt %11&lt;br/&gt;OpenSSL %12&lt;br/&gt;libssh2 %13&lt;br/&gt;QJson %14&lt;br/&gt;QScintilla %15&lt;br/&gt;Google Test %16&lt;br/&gt;ESPRIMA %17&lt;br/&gt;&lt;br/&gt;&lt;b&gt;致谢: &lt;br/&gt;&lt;/b&gt;部分图标由 Freepik 设计 &lt;a href=&amp;quot;https://www.flaticon.com&amp;quot;&amp;gt;www.flaticon.com&lt;/a&gt;&lt;br/&gt;</translation>
     </message>
 </context>
-<context>
-    <name>Robomongo::WelcomeTab</name>
-    <message>
-        <source>&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;博客文章&lt;/h1&gt;&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>All Blog Posts</source>
-        <translation>所有博客文章</translation>
-    </message>
-    <message>
-        <source>
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;style&gt;
-                    body { font-family: &apos;Segoe UI&apos;, system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;Reborn v1.5.1 - Standard Release&lt;/div&gt;
-                    &lt;h1&gt;Welcome back to Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;This is the community-maintained, optimized version of Robo 3T. We&apos;ve removed the noise and fixed the core, so you can focus on your data.&lt;/p&gt;
-                    
-                    &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;Stability First:&lt;/strong&gt; Resolved critical Windows compilation issues and memory leaks.&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;Security Hardened:&lt;/strong&gt; Integrated stable OpenSSL 1.1.1u toolkit.&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;Modern Toolchain:&lt;/strong&gt; Rebuilt with Qt 5.15.2 and Ninja for lightning-fast performance.&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% Portable:&lt;/strong&gt; All dependencies are now bundled for a true zero-install experience.&lt;/li&gt;
-                    &lt;/ul&gt;
 
-                    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;footer&quot;&gt;
-                        &quot;Your data, your rules. Thank you for supporting the community edition.&quot;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-        </source>
-        <translation>&lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;style&gt;
-                    body { font-family: &apos;Segoe UI&apos;, system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✔️&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;版本 v1.5.1 - 标准发布版&lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并经过深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注地管理数据。&lt;/p&gt;
-                    
-                    &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及严重的内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携：&lt;/strong&gt; 所有的依赖库已打包内置，实现真正的“零安装”即点即用。&lt;/li&gt;
-                    &lt;/ul&gt;
-
-                    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;footer&quot;&gt;
-                        “您的数据，由您掌控。感谢支持社区版。”
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;</translation>
-    </message>
-</context>
 <context>
     <name>Robomongo::QueryWidget</name>
     <message>
@@ -3379,98 +3287,7 @@ Error:
         <translation>重命名(&amp;R)</translation>
     </message>
 </context>
-<context>
-    <name>Robomongo::WelcomeTab</name>
-    <message>
-        <source>
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;style&gt;
-                    body { font-family: &apos;Segoe UI&apos;, system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;閲嶅埗鐗?v1.5.1 - 鏍囧噯鍙戣鐗&lt;/div&gt;
-                    &lt;h1&gt;娆㈣繋浣跨敤 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ拰浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠幓鍐楀瓨绮撅紝淇浜嗘牳蹇冮棶棰橈紝璁╂偍鍙互涓撴敞浜庢暟鎹鐞嗐€&lt;/p&gt;
-                    
-                    &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;绋冲畾浼樺厛锛&lt;/strong&gt;瑙ｅ喅浜嗗叧閿殑 Windows 缂栬瘧闂鍜屽唴瀛樻硠婕忋€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛&lt;/strong&gt;闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿鍖呫€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt;浣跨敤 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇村崜瓒娿€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 渚挎惡锛&lt;/strong&gt;鎵€鏈変緷璧栭」鐜板凡灏佽锛屽疄鐜扮湡姝ｇ殑鍏嶅畨瑁呬綋楠屻€&lt;/li&gt;
-                    &lt;/ul&gt;
 
-                    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;footer&quot;&gt;
-                        鈥滄暟鎹敱浣犳帉鎺с€傛劅璋㈡敮鎸佺ぞ鍖虹増鏈€傗€?                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-        </source>
-        <translation>&lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;style&gt;
-                    body { font-family: &apos;Segoe UI&apos;, system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✔️&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;版本 v1.5.1 - 标准发布版&lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并经过深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注地管理数据。&lt;/p&gt;
-                    
-                    &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及严重的内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携：&lt;/strong&gt; 所有的依赖库已打包内置，实现真正的“零安装”即点即用。&lt;/li&gt;
-                    &lt;/ul&gt;
-
-                    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;footer&quot;&gt;
-                        “您的数据，由您掌控。感谢支持社区版。”
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;&lt;h1&gt;&lt;font color=&quot;#2d862d&quot;&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=&quot;#2d862d&quot;&gt;博客文章&lt;/h1&gt;&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>All Blog Posts</source>
-        <translation>所有博客文章</translation>
-    </message>
-</context>
 <context>
     <name>Robomongo::AddEditIndexDialog</name>
     <message>
@@ -4425,99 +4242,7 @@ Error:
         <translation>代码:</translation>
     </message>
 </context>
-<context>
-    <name>Robomongo::WelcomeTab</name>
-    <message>
-        <source>
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;style&gt;
-                    body { font-family: &apos;Segoe UI&apos;, system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;鉁?apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;閲嶅埗鐗?v1.5.1 - 鏍囧噯鍙戣鐗&lt;/div&gt;
-                    &lt;h1&gt;娆㈣繋鍥炲埌 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゅ苟娣卞害浼樺寲鐨?Robo 3T 鐗堟湰銆傛垜浠Щ闄や簡澶氫綑鐨勫共鎵板苟淇浜嗘牳蹇冨簳灞傦紝鍙负璁╂偍鏇翠笓娉ㄥ湴绠＄悊鏁版嵁銆&lt;/p&gt;
-                    
-                    &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;绋冲畾鎬т紭鍏堬細&lt;/strong&gt; 褰诲簳瑙ｅ喅浜嗗叧閿殑 Windows 缂栬瘧闂鍙婂唴瀛樻硠婕忋€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛&lt;/strong&gt; 闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿鍖呫€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;鐜颁唬宸ュ叿閾撅細&lt;/strong&gt; 鍩轰簬 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇存瀬鑷淬€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;100% 渚挎惡锛&lt;/strong&gt; 鎵€鏈変緷璧栫幇宸插唴閮ㄦ墦鍖咃紝瀹炵幇鐪熸鐨勨€滈浂瀹夎鈥濅綋楠屻€&lt;/li&gt;
-                    &lt;/ul&gt;
- 
-                    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;footer&quot;&gt;
-                        &quot;鎮ㄧ殑鏁版嵁锛岀敱鎮ㄦ帉鎺с€傛劅璋㈡敮鎸佺ぞ鍖虹増銆?quot;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-        </source>
-        <translation>&lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;style&gt;
-                    body { font-family: &apos;Segoe UI&apos;, system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✔️&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;版本 v1.5.1 - 标准发布版&lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并经过深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注地管理数据。&lt;/p&gt;
-                    
-                    &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及严重的内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携：&lt;/strong&gt; 所有的依赖库已打包内置，实现真正的“零安装”即点即用。&lt;/li&gt;
-                    &lt;/ul&gt;
 
-                    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;footer&quot;&gt;
-                        “您的数据，由您掌控。感谢支持社区版。”
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=\&quot;#2d862d\&quot;&gt;博客文章&lt;/h1&gt;&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>All Blog Posts</source>
-        <translation>所有博客文章</translation>
-    </message>
-</context>
 <context>
     <name>Robomongo::PagingWidget</name>
     <message>
@@ -7134,97 +6859,7 @@ Do you want to save your changes?</source>
         <translation>JSON 无误!</translation>
     </message>
 </context>
-<context>
-    <name>Robomongo::WelcomeTab</name>
-    <message>
-        <source>&lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=\"utf-8\"&gt;
-                &lt;style&gt;
-                    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: '鉁?; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=\"card\"&gt;
-                    &lt;div class=\"version-badge\"&gt;Reborn v1.5.1 - 鏍囧噯鍙戣鐗&lt;/div&gt;
-                    &lt;h1&gt;娆㈣繋鍥炲埌 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;杩欐槸鐢辩ぞ鍖虹淮鎶ゃ€佹繁搴︿紭鍖栫殑 Robo 3T 澧炲己鐗堛€傛垜浠慨澶嶄簡鏍稿績缁勪欢骞舵竻鐞嗕簡鍐椾綑锛岃鎮ㄥ彲浠ユ洿涓撴敞浜庢暟鎹鐞嗐€&lt;/p&gt;
-                    
-                    &lt;ul class=\"feature-list\"&gt;
-                        &lt;li&gt;&lt;strong&gt;绋冲畾鎬т紭鍏堬細&lt;/strong&gt; 淇浜嗗叧閿殑 Windows 缂栬瘧闂鍙婁弗閲嶇殑鍐呭瓨娉勬紡銆&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;瀹夊叏鍔犲浐锛&lt;/strong&gt; 娣卞害闆嗘垚浜嗙ǔ瀹氱殑 OpenSSL 1.1.1u 宸ュ叿閾俱€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;鐜颁唬鏍稿績锛&lt;/strong&gt; 鍩轰簬 Qt 5.15.2 鍜?Ninja 閲嶆柊鏋勫缓锛屾€ц兘鏇存瀬鑷淬€&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;瀹屽叏缁胯壊渚挎惡锛&lt;/strong&gt; 鎵€鏈夌殑渚濊禆搴撳凡鎵撳寘鍐呯疆锛屽疄鐜扮湡姝ｇ殑闆跺畨瑁呭嵆鐐瑰嵆鐢ㄣ€&lt;/li&gt;
-                    &lt;/ul&gt;
- 
-                    &lt;div class=\"divider\"&gt;&lt;/div&gt;
-                    &lt;div class=\"footer\"&gt;
-                        鈥滄偍鐨勬暟鎹紝鐢辨偍鎺屾帶銆傛劅璋㈡敮鎸佺ぞ鍖虹増銆傗€?                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-        </source>
-        <translation>&lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;style&gt;
-                    body { font-family: &apos;Segoe UI&apos;, system-ui, sans-serif; background: #f9fbf9; color: #333; margin: 0; padding: 60px 40px; display: flex; justify-content: center; }
-                    .card { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); max-width: 650px; width: 100%; border-left: 6px solid #2d862d; }
-                    .logo-area { display: flex; align-items: center; margin-bottom: 25px; }
-                    .logo-text { font-size: 32px; font-weight: 700; color: #2d862d; margin-left: 10px; }
-                    h1 { font-size: 26px; margin: 0 0 15px 0; color: #1a1a1a; }
-                    p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
-                    .feature-list { padding: 0; list-style: none; margin: 0; }
-                    .feature-list li { margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
-                    .feature-list li::before { content: &apos;✔️&apos;; position: absolute; left: 0; color: #2d862d; font-weight: 900; }
-                    .version-badge { display: inline-block; padding: 4px 12px; background: #e8f5e8; color: #2d862d; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
-                    .divider { height: 1px; background: #eee; margin: 30px 0; }
-                    .footer { font-size: 13px; color: #999; text-align: left; font-style: italic; }
-                &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                    &lt;div class=&quot;version-badge&quot;&gt;版本 v1.5.1 - 标准发布版&lt;/div&gt;
-                    &lt;h1&gt;欢迎回到 Robo 3T&lt;/h1&gt;
-                    &lt;p&gt;这是由社区维护并经过深度优化的 Robo 3T 增强版。我们修复了核心组件并清理了冗余，让您可以更专注地管理数据。&lt;/p&gt;
-                    
-                    &lt;ul class=&quot;feature-list&quot;&gt;
-                        &lt;li&gt;&lt;strong&gt;稳定性优先：&lt;/strong&gt; 彻底解决了关键的 Windows 编译问题及严重的内存泄漏。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;安全加固：&lt;/strong&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;现代核心：&lt;/strong&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。&lt;/li&gt;
-                        &lt;li&gt;&lt;strong&gt;完全绿色便携：&lt;/strong&gt; 所有的依赖库已打包内置，实现真正的“零安装”即点即用。&lt;/li&gt;
-                    &lt;/ul&gt;
 
-                    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;footer&quot;&gt;
-                        “您的数据，由您掌控。感谢支持社区版。”
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;&lt;h1&gt;&lt;font color=\"#2d862d\"&gt;Blog Posts&lt;/h1&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;h1&gt;&lt;font color=&quot;#2d862d&quot;&gt;博客文章&lt;/h1&gt;&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>All Blog Posts</source>
-        <translation>所有博客文章</translation>
-    </message>
-</context>
 <context>
     <name>Robomongo::ConnectionBasicTab</name>
     <message>
@@ -8482,6 +8117,46 @@ Error:
     <message>
         <source>Select database:</source>
         <translation>选择数据库:</translation>
+    </message>
+</context>
+
+<context>
+    <name>Robomongo::WelcomeTab</name>
+    <message>
+        <source>Reborn v%1 - Standard Release</source>
+        <translation>版本 v%1 - 标准发布版</translation>
+    </message>
+    <message>
+        <source>Welcome back to Robo 3T</source>
+        <translation>欢迎回来使用 Robo 3T</translation>
+    </message>
+    <message>
+        <source>This is the community-maintained, optimized version of Robo 3T. We've removed the noise and fixed the core, so you can focus on your data.</source>
+        <translation>这是由社区维护并深度优化的 Robo 3T 版本。我们移除了多余的干扰并修复了核心底层，只为您能更专注于管理数据。</translation>
+    </message>
+    <message>
+        <source>Key Highlights:</source>
+        <translation>核心亮点：</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Stability First:&lt;/b&gt; Resolved critical Windows compilation issues and memory leaks.</source>
+        <translation>&lt;b&gt;稳定性优先：&lt;/b&gt; 彻底解决了关键的 Windows 编译问题及内存泄漏。</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Security Hardened:&lt;/b&gt; Integrated stable OpenSSL 1.1.1u toolkit.</source>
+        <translation>&lt;b&gt;安全加固：&lt;/b&gt; 深度集成了稳定的 OpenSSL 1.1.1u 工具链。</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Modern Toolchain:&lt;/b&gt; Rebuilt with Qt 5.15.2 and Ninja for lightning-fast performance.</source>
+        <translation>&lt;b&gt;现代工具链：&lt;/b&gt; 基于 Qt 5.15.2 和 Ninja 重新构建，性能更极致。</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;100% Native:&lt;/b&gt; Removed Chromium kernel for minimum memory footprint.</source>
+        <translation>&lt;b&gt;100% 原生：&lt;/b&gt; 彻底移除 Chromium 内核，实现极低内存占用。</translation>
+    </message>
+    <message>
+        <source>Your data, your rules. Thank you for supporting the community edition.</source>
+        <translation>“您的数据，由您掌控。感谢支持社区版。”</translation>
     </message>
 </context>
 </TS>
