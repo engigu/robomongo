@@ -107,24 +107,21 @@ jobs:
           :: 准备环境 PATH
           set "PATH=${{ env.Qt5_Dir }}\bin;${{ env.OPENSSL_PATH }}\bin;%PATH%"
           
-          :: 1. 编译并安装（核心依赖已集成在 CMake install 中）
+          :: 1. 编译并安装
           ninja install
           
           :: 2. 执行 CPack 打包 (生成最终产物)
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 3. 整理产物 (使用绝对路径，且只保留大体积的打包成果)
+          :: 3. 整理产物 (直接抓取 D:\b\package 下的文件，不进子目录，避开中间产物)
           set "DIST_DIR=${{ github.workspace }}\dist"
           if not exist "%DIST_DIR%" mkdir "%DIST_DIR%"
           
-          echo "Capturing final packages from D:\b\package..."
-          :: 仅拷贝 zip 和真正的安装包 exe (通常带版本号)，排除掉中间生成的裸可执行文件
-          for /r "D:\b\package" %%f in (*-portable.zip *.exe) do (
-              if %%~zf GTR 50000000 (
-                  echo Found Packaged File: %%f
-                  copy /y "%%f" "%DIST_DIR%\"
-              )
+          echo "Capturing final packages from D:\b\package (root level only)..."
+          for %%f in (D:\b\package\*.zip D:\b\package\*.exe) do (
+              echo Found Package: %%~nxf
+              copy /y "%%f" "%DIST_DIR%\"
           )
           
           :: 验证 dist 目录
