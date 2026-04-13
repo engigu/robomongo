@@ -145,7 +145,7 @@ namespace Robomongo
     void ExplorerDatabaseTreeItem::handle(MongoDatabaseCollectionListLoadedEvent *event)
     {
         if (event->isError()) {
-        _collectionFolderItem->setText(0, detail::buildName(tr("Collections"), count));
+            _collectionFolderItem->setText(0, tr("Collections"));
             _collectionFolderItem->setExpanded(false);
             return;
         }
