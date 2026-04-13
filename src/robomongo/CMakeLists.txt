@@ -154,18 +154,13 @@ list(APPEND SOURCES ${QM_FILES} ${TRANSLATIONS_QRC})
 # Robomongo target
 add_executable(robomongo MACOSX_BUNDLE WIN32 app/main.cpp ${SOURCES})
 
-# Disable WebEngineWidgets for Linux
-SET(WebEngineWidgets "Qt5::WebEngineWidgets") 
-if(SYSTEM_LINUX)
-   SET(WebEngineWidgets)  
-endif()
+
  
 target_link_libraries(robomongo
     PRIVATE
         Qt5::Widgets
         Qt5::Network
         Qt5::Xml
-        ${WebEngineWidgets}
         qjson
         qscintilla
         mongodb

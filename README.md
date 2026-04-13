@@ -8,9 +8,9 @@ Robo 3T is no longer being developed by Studio 3T. Studio 3T recommends users lo
 
 Read more about the changes on the [Robo 3T Blog](https://blog.robomongo.org/studio3t-free/).
 
-The latest release of Robo 3T is version 1.5.0, featuring build pipeline optimizations and critical compilation fixes. You can download it directly from:
+The latest release of Robo 3T is version 1.5.1, featuring build pipeline optimizations and critical compilation fixes. You can download it directly from:
 
-* [Robo 3T v1.5.0 Official Release (GitHub)](https://github.com/engigu/robomongo/releases/tag/v1.5.0)
+* [Robo 3T v1.5.1 Official Release (GitHub)](https://github.com/engigu/robomongo/releases/tag/v1.5.1)
 
 The previous legacy releases (1.4.4) are still available here:
 
@@ -27,7 +27,7 @@ About Robo 3T
 
 [Robo 3T](http://www.robomongo.org) (formerly Robomongo *) is a shell-centric cross-platform MongoDB management tool. Unlike most other MongoDB admin UI tools, Robo 3T embeds the actual `mongo` shell in a tabbed interface with access to a shell command line as well as GUI interaction.
 
-The latest stable release **Robo 3T 1.5** embeds **MongoDB 4.2** shell.   
+The latest stable release **Robo 3T 1.5.1** embeds **MongoDB 4.2** shell.   
 
 Blog:     http://blog.robomongo.org/robo-3t-1-4/  
 Download: https://robomongo.org/download  
@@ -36,7 +36,7 @@ Watch: [Robo 3T Youtube channel](https://www.youtube.com/channel/UCM_7WAseRWeeiB
 Follow: https://twitter.com/Robomongo
 
 **Embedded MongoDB shell history:**  
-Robo 3T 1.5 -> MongoDB 4.2     
+Robo 3T 1.5.1 -> MongoDB 4.2     
 Robo 3T 1.4 -> MongoDB 4.2     
 Robo 3T 1.3 -> MongoDB 4.0     
 Robo 3T 1.1 -> MongoDB 3.4    
@@ -45,7 +45,7 @@ Robo 3T 0.8.x -> MongoDB 2.4.0
 
 \* [Robomongo has been acquired by 3T](https://studio3t.com/press/3t-software-labs-acquires-robomongo-the-most-widely-used-mongodb-tool/)
 
-What's new in latest Robo 3T 1.5?
+What's new in latest Robo 3T 1.5.1?
 ====================================
 
 Key Fixes & Updates:
@@ -59,7 +59,7 @@ New Features:
   - Support for Ubuntu 20.04, macOS Big Sur and  macOS 10.15 (Catalina)   
   - SSH: ECDSA and Ed25519 keys support on Windows & macOS (issues #1719, #1530, #1590)  
   - Manually specify visible databases (issues #1696, #1368, #389)  
-  - New Welcome Tab - embeds Chromium using QtWebEngine (Windows, macOS only)  
+  - New Welcome Tab - 100% Native implementation (Removed Chromium/QtWebEngine for better performance and memory)  
   - Import keys from old version: autoExpand, lineNumbers, debugMode and shellTimeoutSec  
    
 Improvements:  

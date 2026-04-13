@@ -63,15 +63,6 @@ jobs:
             ${{ runner.os }}-robo-shell-v141-
           fail-on-cache-miss: false
 
-      # [STANDBY: FULL SHELL BUILD LOGIC - Currently using Cloud Cache]
-      # - name: Build Robo Shell (if not cached)
-      #   if: steps.cache-shell.outputs.cache-hit != 'true'
-      #   run: |
-      #     cd robo-shell
-      #     python -m pip install scons==4.4.0
-      #     .\bin\build.bat
-      #   shell: cmd
-
       - name: Install OpenSSL
         run: choco install openssl --version=1.1.1.2100 -y --no-progress
 
