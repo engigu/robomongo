@@ -107,29 +107,25 @@ jobs:
           :: 准备环境 PATH
           set "PATH=${{ env.Qt5_Dir }}\bin;${{ env.OPENSSL_PATH }}\bin;%PATH%"
           
-          :: 1. 尝试构建并执行安装
+          :: 1. 编译并安装（核心依赖已集成在 CMake install 中）
           ninja install
           
           :: 2. 执行 CPack 打包
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 3. 整理产物到 dist 目录 (终极强力搜索)
+          :: 3. 整理产物 (指定大致目录 + 模糊匹配)
           if not exist "${{ github.workspace }}\dist" mkdir "${{ github.workspace }}\dist"
           
-          echo "Deep scanning D:\b for packages..."
-          :: 搜索所有超过 1MB 的 zip 和 exe (过滤掉源码小文件)
-          for /f "delims=" %%i in ('dir /s /b D:\b\*.zip') do (
-             echo Found ZIP: %%i
-             copy /y "%%i" "${{ github.workspace }}\dist\"
-          )
-          for /f "delims=" %%i in ('dir /s /b D:\b\*.exe') do (
-             echo Found EXE: %%i
-             if %%~zi GTR 1000000 copy /y "%%i" "${{ github.workspace }}\dist\"
+          echo "Collecting packages from D:\b\package..."
+          :: 仅在 CPack 确定的产物目录进行局部模糊匹配，确保精准且高效
+          if exist "D:\b\package" (
+            copy /y "D:\b\package\*.zip" "${{ github.workspace }}\dist\"
+            copy /y "D:\b\package\*.exe" "${{ github.workspace }}\dist\"
           )
           
-          :: 最终确认产物目录
-          echo "Verified artifacts in dist/:"
+          :: 验证 dist 目录
+          echo "Verified artifacts in dist folders:"
           dir "${{ github.workspace }}\dist"
         shell: cmd
 
