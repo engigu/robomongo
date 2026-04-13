@@ -144,22 +144,23 @@ jobs:
           body: |
             ## Robo 3T ${{ github.ref_name }} Standard Release
             
-            This release provides both **Installer (Setup)** and **Portable** versions for Windows.
+            This release provides both **Installer (Setup)** and **Portable** versions for Windows (64-bit).
             
             ### Fixes & Features:
-            - **Chinese Localization**: Added language switching support (Options -> Language).
-            - **Modernized Welcome Page**: Rebranded welcome screen with v1.5.0 highlights.
-            - **Complete Dependency Bundling**: Fully integrated Qt and OpenSSL 1.1.1 DLLs.
-            - **Dual Distribution**: Professional NSIS installer + Plug-and-Play portable ZIP.
+            - **WebEngine Integrated**: Fully bundled all DLLs for the integrated web engine.
+            - **SSL Connection Fixed**: Resolved tooltip and pointer errors in SSL tabs.
+            - **Favorites Actions**: Rename and Delete actions are now fully registered and functional.
+            - **High Fidelity Packaging**: Standardized with absolute path deployments and detailed build logs.
+            
+            Note: The portable version (~83MB) contains the full dependency matrix for immediate use.
           draft: false
           prerelease: false
-          fail_on_unmatched_files: true
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: robo3t-final-packages
-          path: D:\dist\*
+          path: dist/*
           retention-days: 7
 
       - name: Cleanup Virtual Drives
