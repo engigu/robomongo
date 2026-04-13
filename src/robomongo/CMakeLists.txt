@@ -152,9 +152,17 @@ qt5_add_translation(QM_FILES ${TS_FILES})
 
 # Generate a temporary qrc file for translations to be embedded
 set(TRANSLATIONS_QRC "${CMAKE_CURRENT_BINARY_DIR}/translations.qrc")
-file(WRITE ${TRANSLATIONS_QRC} "<RCC><qresource prefix=\"/\"><file alias=\"translations/robomongo_zh_CN.qm\">${CMAKE_CURRENT_BINARY_DIR}/robomongo_zh_CN.qm</file></qresource></RCC>")
+file(WRITE ${TRANSLATIONS_QRC} "<RCC><qresource prefix=\"/translations\">\n")
+foreach(QM_FILE ${QM_FILES})
+    get_filename_component(QM_NAME ${QM_FILE} NAME)
+    file(APPEND ${TRANSLATIONS_QRC} "    <file alias=\"${QM_NAME}\">${QM_FILE}</file>\n")
+endforeach()
+file(APPEND ${TRANSLATIONS_QRC} "</qresource></RCC>")
 
-list(APPEND SOURCES ${QM_FILES} ${TRANSLATIONS_QRC})
+# We must process the generated QRC file
+qt5_add_resources(TRANSLATIONS_QRC_SRC ${TRANSLATIONS_QRC})
+
+list(APPEND SOURCES ${QM_FILES} ${TRANSLATIONS_QRC_SRC})
 
 # Robomongo target
 add_executable(robomongo MACOSX_BUNDLE WIN32 app/main.cpp ${SOURCES})
