@@ -66,7 +66,7 @@ namespace Robomongo
             "If self-signed certificate is used, the communications channel will be encrypted however there will be "
             "no validation of server identity."));
         _selfSignedInfoStr->setWordWrap(true);
-        _selfSignedInfoStr->setToolTip(ALLOW_INVALID_CERTIFICATES_HINT);
+        _selfSignedInfoStr->setToolTip(ALLOW_INVALID_CERTIFICATES_HINT());
         _caFileLabel = new QLabel(tr("CA Certificate:"));
         _caFileLabel->setToolTip(CA_FILE_HINT());
         _caFilePathLineEdit = new QLineEdit;
