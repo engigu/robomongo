@@ -191,10 +191,15 @@ namespace Robomongo
             // If the user is double clicking, they probably want to open it.
             // If we have a selected server in the tree, use it.
             
-            // Let's find the first available server if none is selected
+            // Let's find the first available server or database if none is selected
             MongoServer *server = nullptr;
+            MongoDatabase *database = nullptr;
             QTreeWidgetItem *current = _treeWidget->currentItem();
             while (current) {
+                if (auto dbItem = dynamic_cast<ExplorerDatabaseTreeItem *>(current)) {
+                    database = dbItem->database();
+                    break;
+                }
                 if (auto serverItem = dynamic_cast<ExplorerServerTreeItem *>(current)) {
                     server = serverItem->server();
                     break;
@@ -202,7 +207,9 @@ namespace Robomongo
                 current = current->parent();
             }
 
-            if (server) {
+            if (database) {
+                AppRegistry::instance().app()->openShell(database, script);
+            } else if (server) {
                 AppRegistry::instance().app()->openShell(server, script);
             } else {
                 QMessageBox::information(this, tr("Favorites"), tr("Please select a server or database in the tree first to open this script."));

@@ -31,6 +31,8 @@ namespace Robomongo
         // always enabled, according to replica set status (online or offline).
         void disableSomeContextMenuActions(bool disable);
 
+        MongoServer *server() const { return _server; }
+
     public Q_SLOTS:
         void databaseRefreshed(const QList<MongoDatabase *> &dbs);
         void handle(DatabaseListLoadedEvent *event);
