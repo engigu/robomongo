@@ -4,6 +4,7 @@
 QT_BEGIN_NAMESPACE
 class QLabel;
 class QCompleter;
+class QPushButton;
 QT_END_NAMESPACE
 
 #include "robomongo/core/domain/MongoShellResult.h"
@@ -144,7 +145,7 @@ namespace Robomongo
         Indicator *_currentDatabaseLabel;
         Indicator *_currentServerLabel;
         Indicator *_currentConnectionLabel;
-        class QPushButton *_saveButton;
+        QPushButton *_saveButton;
         QColor _textColor;
     };
 }
