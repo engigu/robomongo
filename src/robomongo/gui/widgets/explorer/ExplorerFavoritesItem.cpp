@@ -2,15 +2,30 @@
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/settings/SettingsManager.h"
 
+#include <QDir>
+#include <QFile>
+#include <QTextStream>
+
 namespace Robomongo
 {
-    ExplorerFavoriteItem::ExplorerFavoriteItem(QTreeWidgetItem *parent, const QString &name, const QString &script) :
+    ExplorerFavoriteItem::ExplorerFavoriteItem(QTreeWidgetItem *parent, const QString &name, const QString &filePath) :
         ExplorerTreeItem(parent),
         _name(name),
-        _script(script)
+        _filePath(filePath)
     {
         setText(0, _name);
         setIcon(0, QIcon(":robomongo/icons/bson_object_16x16.png"));
+    }
+
+    QString ExplorerFavoriteItem::script() const
+    {
+        QFile file(_filePath);
+        if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            QTextStream in(&file);
+            in.setCodec("UTF-8");
+            return in.readAll();
+        }
+        return QString();
     }
 
     ExplorerFavoritesRootItem::ExplorerFavoritesRootItem(QTreeWidget *view) :
@@ -26,11 +41,12 @@ namespace Robomongo
         // Clear existing children
         qDeleteAll(takeChildren());
 
-        auto settings = AppRegistry::instance().settingsManager();
-        QVariantMap favorites = settings->favorites();
+        QDir dir(FavoritesDir);
+        dir.setNameFilters(QStringList() << "*.js");
+        QFileInfoList files = dir.entryInfoList(QDir::Files, QDir::Name);
 
-        for (auto it = favorites.begin(); it != favorites.end(); ++it) {
-            new ExplorerFavoriteItem(this, it.key(), it.value().toString());
+        for (const QFileInfo &fileInfo : files) {
+            new ExplorerFavoriteItem(this, fileInfo.baseName(), fileInfo.absoluteFilePath());
         }
         
         setExpanded(true);

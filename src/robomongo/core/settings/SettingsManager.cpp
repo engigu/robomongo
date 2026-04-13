@@ -117,6 +117,9 @@ namespace Robomongo
         if (!QDir().mkpath(ConfigDir))
             LOG_MSG("ERROR: Could not create settings path: " + ConfigDir, mongo::logger::LogSeverity::Error());
 
+        if (!QDir().mkpath(FavoritesDir))
+            LOG_MSG("ERROR: Could not create favorites path: " + FavoritesDir, mongo::logger::LogSeverity::Error());
+
         RoboCrypt::initKey();
         if (!load()) {  // if load fails (probably due to non-existing config. file or directory)
             save();     // create empty settings file
@@ -315,7 +318,6 @@ namespace Robomongo
             _toolbars["logs"] = false;
 
         _cacheData = map.value("cacheData").toMap();
-        _favorites = map.value("favorites").toMap();
 
         // Load connection settings from previous versions of Robomongo
         importFromOldVersion();
@@ -392,7 +394,6 @@ namespace Robomongo
         map.insert("imported", _imported);
         map.insert("anonymousID", _anonymousID);
         map.insert("cacheData", _cacheData);
-        map.insert("favorites", _favorites);
         map.insert("programExitedNormally", _programExitedNormally);
         map.insert("disableHttpsFeatures", _disableHttpsFeatures);
         map.insert("debugMode", _debugMode);

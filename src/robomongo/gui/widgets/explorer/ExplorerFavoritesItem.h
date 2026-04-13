@@ -8,13 +8,13 @@ namespace Robomongo
     {
         Q_OBJECT
     public:
-        ExplorerFavoriteItem(QTreeWidgetItem *parent, const QString &name, const QString &script);
-        QString script() const { return _script; }
+        ExplorerFavoriteItem(QTreeWidgetItem *parent, const QString &name, const QString &filePath);
+        QString script() const;
         QString name() const { return _name; }
 
     private:
         QString _name;
-        QString _script;
+        QString _filePath;
     };
 
     class ExplorerFavoritesRootItem : public ExplorerTreeItem

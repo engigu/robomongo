@@ -111,13 +111,19 @@ namespace Robomongo
                                              tr("Enter a name for this snippet:"), QLineEdit::Normal,
                                              tr("My Query"), &ok);
         if (ok && !name.isEmpty()) {
-            auto settings = AppRegistry::instance().settingsManager();
-            QVariantMap favorites = settings->favorites();
-            favorites.insert(name, script);
-            settings->setFavorites(favorites);
-            settings->save();
-            AppRegistry::instance().eventBus()->publish(new FavoritesChangedEvent(this));
-            QMessageBox::information(this, tr("Favorites"), tr("Snippet '%1' saved to favorites.").arg(name));
+            QString fileName = FavoritesDir + name + ".js";
+            QFile file(fileName);
+            if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+                QTextStream out(&file);
+                out.setCodec("UTF-8");
+                out << script;
+                file.close();
+
+                AppRegistry::instance().eventBus()->publish(new FavoritesChangedEvent(this));
+                QMessageBox::information(this, tr("Favorites"), tr("Snippet '%1' saved to file.").arg(name));
+            } else {
+                QMessageBox::critical(this, tr("Favorites"), tr("Could not create file: %1").arg(fileName));
+            }
         }
     }
 

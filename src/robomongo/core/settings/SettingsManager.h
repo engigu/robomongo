@@ -25,6 +25,9 @@ namespace Robomongo
     auto const ConfigDir = QString("%1/.3T/robo-3t/%2/").arg(QDir::homePath())
                                                         .arg(PROJECT_VERSION);  
 
+    // Directory for favorite scripts
+    auto const FavoritesDir = ConfigDir + "favorites/";
+
 /* ----------------------------- SettingsManager ------------------------------ */
 
     /**
@@ -171,9 +174,6 @@ namespace Robomongo
         void setProgramExitedNormally(bool value) { _programExitedNormally = value; }
         bool programExitedNormally() const { return _programExitedNormally; }
 
-        QVariantMap favorites() const { return _favorites; }
-        void setFavorites(const QVariantMap &favorites) { _favorites = favorites; }
-
         // Designed to be set only by human users
         bool disableHttpsFeatures() const { return _disableHttpsFeatures; }
         bool debugMode() const { return _debugMode; }
@@ -251,8 +251,6 @@ namespace Robomongo
 
         // Various cache data
         QMap<QString, QVariant> _cacheData;
-
-        QVariantMap _favorites;
 
         /**
          * @brief List of connections
