@@ -285,10 +285,10 @@ namespace Robomongo {
 
         std::string subStr;
         switch (event->removeCount) {
-            case RemoveDocumentCount::ONE:    subStr = tr("document."); break;
-            case RemoveDocumentCount::MULTI:  subStr = tr("documents."); break;
-            case RemoveDocumentCount::ALL:    subStr = tr("all documents."); break;
-            default:                          subStr = tr("(logic error)."); break;
+            case RemoveDocumentCount::ONE:    subStr = tr("document.").toStdString(); break;
+            case RemoveDocumentCount::MULTI:  subStr = tr("documents.").toStdString(); break;
+            case RemoveDocumentCount::ALL:    subStr = tr("all documents.").toStdString(); break;
+            default:                          subStr = tr("(logic error).").toStdString(); break;
         }
 
         if (event->isError()) {
@@ -298,7 +298,7 @@ namespace Robomongo {
                 auto refreshEvent = ReplicaSetRefreshed(this, event->error(), event->error().replicaSetInfo());
                 handle(&refreshEvent);
             }
-            genericEventErrorHandler(event, tr("Failed to remove ") + subStr, _bus, this);
+            genericEventErrorHandler(event, (tr("Failed to remove ") + QtUtils::toQString(subStr)).toStdString(), _bus, this);
         }
         else {  // success
             MongoNamespace ns = event->ns();
