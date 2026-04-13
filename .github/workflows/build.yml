@@ -52,7 +52,7 @@ jobs:
           host: 'windows'
           target: 'desktop'
           arch: 'win64_msvc2019_64'
-          modules: 'qtcharts'
+          modules: 'qtcharts qtquickcontrols2 qtwebengine qtwebchannel qtpositioning'
 
       - name: Cache Robo Shell (Restoring from Cloud)
         uses: actions/cache@v4
