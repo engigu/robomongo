@@ -114,13 +114,19 @@ jobs:
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 3. 整理产物到 dist 目录
+          :: 3. 整理产物到 dist 目录 (终极强力搜索)
           if not exist "${{ github.workspace }}\dist" mkdir "${{ github.workspace }}\dist"
           
-          :: 全盘搜索 ZIP 和 EXE 并拷贝到 dist (排除 _CPack_Packages 目录下的临时文件)
-          echo "Searching and collecting final packages..."
-          for /f "delims=" %%i in ('dir /s /b D:\b\package\*.zip') do copy /y "%%i" "${{ github.workspace }}\dist\"
-          for /f "delims=" %%i in ('dir /s /b D:\b\package\*.exe') do copy /y "%%i" "${{ github.workspace }}\dist\"
+          echo "Deep scanning D:\b for packages..."
+          :: 搜索所有超过 1MB 的 zip 和 exe (过滤掉源码小文件)
+          for /f "delims=" %%i in ('dir /s /b D:\b\*.zip') do (
+             echo Found ZIP: %%i
+             copy /y "%%i" "${{ github.workspace }}\dist\"
+          )
+          for /f "delims=" %%i in ('dir /s /b D:\b\*.exe') do (
+             echo Found EXE: %%i
+             if %%~zi GTR 1000000 copy /y "%%i" "${{ github.workspace }}\dist\"
+          )
           
           :: 最终确认产物目录
           echo "Verified artifacts in dist/:"
