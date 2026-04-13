@@ -12,6 +12,12 @@
 
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/settings/SettingsManager.h"
+#include <QTextStream>
+#include <QUuid>
+#include <QJsonArray>
+#include <parser.h>
+#include <serializer.h>
+
 #include "robomongo/core/domain/MongoShell.h"
 #include "robomongo/core/domain/MongoServer.h"
 #include "robomongo/core/settings/ConnectionSettings.h"
@@ -111,18 +117,50 @@ namespace Robomongo
                                              tr("Enter a name for this snippet:"), QLineEdit::Normal,
                                              tr("My Query"), &ok);
         if (ok && !name.isEmpty()) {
-            QString fileName = FavoritesDir + name + ".js";
-            QFile file(fileName);
+            // 1. Generate unique file name
+            QString uuid = QUuid::createUuid().toString().remove('{').remove('}');
+            QString scriptFile = uuid + ".js";
+            QString fullScriptPath = FavoritesScriptsDir + scriptFile;
+
+            // 2. Save script file
+            QFile file(fullScriptPath);
             if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
                 QTextStream out(&file);
                 out.setCodec("UTF-8");
                 out << script;
                 file.close();
 
-                AppRegistry::instance().eventBus()->publish(new FavoritesChangedEvent(this));
-                QMessageBox::information(this, tr("Favorites"), tr("Snippet '%1' saved to file.").arg(name));
+                // 3. Update metadata.json
+                QVariantList metadata;
+                if (QFile::exists(FavoritesMetadataPath)) {
+                    QFile metaFile(FavoritesMetadataPath);
+                    if (metaFile.open(QIODevice::ReadOnly)) {
+                        QJson::Parser parser;
+                        bool okMeta;
+                        metadata = parser.parse(metaFile.readAll(), &okMeta).toList();
+                        metaFile.close();
+                    }
+                }
+
+                QVariantMap entry;
+                entry.insert("name", name);
+                entry.insert("file", scriptFile);
+                metadata.append(entry);
+
+                QFile metaFileOut(FavoritesMetadataPath);
+                if (metaFileOut.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
+                    QJson::Serializer serializer;
+                    serializer.setIndentMode(QJson::IndentFull);
+                    serializer.serialize(metadata, &metaFileOut);
+                    metaFileOut.close();
+
+                    AppRegistry::instance().eventBus()->publish(new FavoritesChangedEvent(this));
+                    QMessageBox::information(this, tr("Favorites"), tr("Snippet '%1' saved successfully.").arg(name));
+                } else {
+                    QMessageBox::critical(this, tr("Favorites"), tr("Could not update metadata file."));
+                }
             } else {
-                QMessageBox::critical(this, tr("Favorites"), tr("Could not create file: %1").arg(fileName));
+                QMessageBox::critical(this, tr("Favorites"), tr("Could not create script file: %1").arg(fullScriptPath));
             }
         }
     }

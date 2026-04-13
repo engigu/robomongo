@@ -120,6 +120,9 @@ namespace Robomongo
         if (!QDir().mkpath(FavoritesDir))
             LOG_MSG("ERROR: Could not create favorites path: " + FavoritesDir, mongo::logger::LogSeverity::Error());
 
+        if (!QDir().mkpath(FavoritesScriptsDir))
+            LOG_MSG("ERROR: Could not create favorites scripts path: " + FavoritesScriptsDir, mongo::logger::LogSeverity::Error());
+
         RoboCrypt::initKey();
         if (!load()) {  // if load fails (probably due to non-existing config. file or directory)
             save();     // create empty settings file

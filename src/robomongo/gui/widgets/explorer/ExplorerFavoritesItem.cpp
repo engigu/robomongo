@@ -5,6 +5,7 @@
 #include <QDir>
 #include <QFile>
 #include <QTextStream>
+#include <parser.h>
 
 namespace Robomongo
 {
@@ -41,12 +42,25 @@ namespace Robomongo
         // Clear existing children
         qDeleteAll(takeChildren());
 
-        QDir dir(FavoritesDir);
-        dir.setNameFilters(QStringList() << "*.js");
-        QFileInfoList files = dir.entryInfoList(QDir::Files, QDir::Name);
+        if (QFile::exists(FavoritesMetadataPath)) {
+            QFile metaFile(FavoritesMetadataPath);
+            if (metaFile.open(QIODevice::ReadOnly)) {
+                QJson::Parser parser;
+                bool okMeta;
+                QVariantList metadata = parser.parse(metaFile.readAll(), &okMeta).toList();
+                metaFile.close();
 
-        for (const QFileInfo &fileInfo : files) {
-            new ExplorerFavoriteItem(this, fileInfo.baseName(), fileInfo.absoluteFilePath());
+                if (okMeta) {
+                    for (const QVariant &v : metadata) {
+                        QVariantMap entry = v.toMap();
+                        QString name = entry.value("name").toString();
+                        QString fileName = entry.value("file").toString();
+                        QString fullPath = FavoritesScriptsDir + fileName;
+                        
+                        new ExplorerFavoriteItem(this, name, fullPath);
+                    }
+                }
+            }
         }
         
         setExpanded(true);

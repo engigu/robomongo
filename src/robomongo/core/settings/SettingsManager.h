@@ -27,6 +27,8 @@ namespace Robomongo
 
     // Directory for favorite scripts
     auto const FavoritesDir = ConfigDir + "favorites/";
+    auto const FavoritesMetadataPath = FavoritesDir + "metadata.json";
+    auto const FavoritesScriptsDir = FavoritesDir + "scripts/";
 
 /* ----------------------------- SettingsManager ------------------------------ */
 
