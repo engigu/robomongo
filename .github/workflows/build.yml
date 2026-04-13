@@ -104,40 +104,42 @@ jobs:
           subst R: "${{ github.workspace }}"
           cd /d D:\b
           
-          :: 构建与安装到本地目录
+          :: 1. 编译并安装到 D:\b\install
           ninja install
           
-          :: 确保 Qt bin 目录在 PATH 中，以便 windeployqt 能运行
-          set "PATH=${{ env.Qt5_Dir }}\bin;%PATH%"
+          :: 2. 环境准备
+          set "PATH=${{ env.Qt5_Dir }}\bin;${{ env.OPENSSL_PATH }}\bin;%PATH%"
+          if not exist D:\dist mkdir D:\dist
           
-          :: 确保 OpenSSL bin 也在系统中以便搜寻
-          set "PATH=${{ env.OPENSSL_PATH }}\bin;%PATH%"
+          :: 3. 核心依赖手动补全 (确保 bin 目录下有所有依赖)
+          echo "Deploying Qt dependencies manually..."
+          windeployqt --release --no-translations --no-opengl-sw --no-compiler-runtime "D:\b\install\robo3t.exe"
           
-          :: 检查关键依赖是否存在
-          if exist "${{ env.Qt5_Dir }}\bin\Qt5Core.dll" (echo Qt5Core found) else (echo Qt5Core NOT found)
-          if exist "${{ env.OPENSSL_PATH }}\bin\libssl-1_1-x64.dll" (echo SSL found) else (echo SSL NOT found)
-
-          :: 使用 CPack 生成打包产物
+          echo "Copying OpenSSL dependencies..."
+          copy /y "${{ env.OPENSSL_PATH }}\bin\libssl-1_1-x64.dll" "D:\b\install\"
+          copy /y "${{ env.OPENSSL_PATH }}\bin\libcrypto-1_1-x64.dll" "D:\b\install\"
+          
+          :: 4. 验证安装目录内容
+          dir D:\b\install
+          
+          :: 5. 执行 CPack 打包 (它会基于 D:\b\install 的内容进行打包)
           cpack -G ZIP
           cpack -G NSIS
           
-          :: 准备产物到 dist 目录
-          if not exist D:\dist mkdir D:\dist
+          :: 6. 整理产物到 D:\dist
+          echo "Collecting artifacts..."
+          xcopy /y /s package\*.zip D:\dist\
+          xcopy /y /s package\*.exe D:\dist\
           
-          :: 检查并拷贝 ZIP 产物
-          dir package\*.zip
-          copy /y package\*.zip D:\dist\
-          
-          :: 检查并拷贝 EXE 产物 (安装包)
-          dir package\*.exe
-          copy /y package\*.exe D:\dist\
-          
-          :: 如果 D:\dist 还是空的，说明 CPack 路径可能有误，尝试搜索
+          :: 兜底搜索：如果在 package 没找到，全盘搜索
           if not exist D:\dist\*.zip (
-            dir /s /b *.zip
-            for /f "delims=" %%i in ('dir /s /b *.zip') do copy /y "%%i" D:\dist\
+             echo "Artifacts not found in package/, searching D:\..."
+             for /f "delims=" %%i in ('dir /s /b D:\*.zip') do copy /y "%%i" D:\dist\
+             for /f "delims=" %%i in ('dir /s /b D:\*.exe') do copy /y "%%i" D:\dist\
           )
           
+          :: 最终确认
+          echo "Final D:\dist content:"
           dir D:\dist
         shell: cmd
 
@@ -146,8 +148,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            D:/dist/*.zip
-            D:/dist/*.exe
+            D:\dist\*.zip
+            D:\dist\*.exe
           name: Robo 3T ${{ github.ref_name }} Reborn Release
           body: |
             ## Robo 3T ${{ github.ref_name }} Standard Release
