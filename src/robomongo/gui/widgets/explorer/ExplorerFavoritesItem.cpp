@@ -4,6 +4,7 @@
 
 #include <QDir>
 #include <QFile>
+#include <QVariant>
 #include <QTextStream>
 #include <parser.h>
 

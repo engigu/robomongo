@@ -12,6 +12,9 @@
 
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/settings/SettingsManager.h"
+#include <QDir>
+#include <QFile>
+#include <QVariant>
 #include <QTextStream>
 #include <QUuid>
 #include <QJsonArray>
