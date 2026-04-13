@@ -60,7 +60,7 @@ namespace Robomongo
                 setIcon(0, GuiRegistry::instance().replicaSetIcon());
                 setText(0, QtUtils::toQString(_connection->connectionName()));
                 auto const repSetSize = _connection->replicaSetSettings()->members().size();
-                auto addrText = QString::number(repSetSize) + ((repSetSize > 1) ? tr(" nodes") : tr(" node"));
+                auto addrText = QString::number(repSetSize) + ((repSetSize > 1) ? QObject::tr(" nodes") : QObject::tr(" node"));
                 if (!_connection->replicaSetSettings()->members().empty()) {
                     addrText += QString::fromStdString(" (" + _connection->replicaSetSettings()->members().front() + ")");
                 }
@@ -77,13 +77,13 @@ namespace Robomongo
             }
 
             // Header "Attributes" (column[2])
-            setText(2, _connection->isReplicaSet() ? tr("Replica Set") : "");
+            setText(2, _connection->isReplicaSet() ? QObject::tr("Replica Set") : "");
             
             if (_connection->sslSettings()->sslEnabled())
-                setText(2, text(2) + (text(2).isEmpty() ? tr("TLS") : tr(", TLS")));
+                setText(2, text(2) + (text(2).isEmpty() ? QObject::tr("TLS") : QObject::tr(", TLS")));
 
             if (!_connection->isReplicaSet() && _connection->sshSettings()->enabled())
-                setText(2, text(2) + (text(2).isEmpty() ? tr("SSH") : tr(", SSH")));
+                setText(2, text(2) + (text(2).isEmpty() ? QObject::tr("SSH") : QObject::tr(", SSH")));
 
             // Header "Auth. Database/User" (column[3])
             if (_connection->hasEnabledPrimaryCredential()) {
