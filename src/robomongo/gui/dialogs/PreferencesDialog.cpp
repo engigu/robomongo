@@ -92,9 +92,14 @@ namespace Robomongo
     void PreferencesDialog::syncWithSettings()
     {
 
-        ComboBoxUtils::setCurrentData(_defDisplayModeComboBox, Robomongo::AppRegistry::instance().settingsManager()->viewMode());
-        ComboBoxUtils::setCurrentData(_timeZoneComboBox, Robomongo::AppRegistry::instance().settingsManager()->timeZone());
-        ComboBoxUtils::setCurrentData(_uuidEncodingComboBox, Robomongo::AppRegistry::instance().settingsManager()->uuidEncoding());
+        int modeIndex = _defDisplayModeComboBox->findData(Robomongo::AppRegistry::instance().settingsManager()->viewMode());
+        if (modeIndex >= 0) _defDisplayModeComboBox->setCurrentIndex(modeIndex);
+
+        int timeIndex = _timeZoneComboBox->findData(Robomongo::AppRegistry::instance().settingsManager()->timeZone());
+        if (timeIndex >= 0) _timeZoneComboBox->setCurrentIndex(timeIndex);
+
+        int uuidIndex = _uuidEncodingComboBox->findData(Robomongo::AppRegistry::instance().settingsManager()->uuidEncoding());
+        if (uuidIndex >= 0) _uuidEncodingComboBox->setCurrentIndex(uuidIndex);
         _loadMongoRcJsCheckBox->setChecked(AppRegistry::instance().settingsManager()->loadMongoRcJs());
         _disabelConnectionShortcutsCheckBox->setChecked(AppRegistry::instance().settingsManager()->disableConnectionShortcuts());
         utils::setCurrentText(_stylesComboBox, Robomongo::AppRegistry::instance().settingsManager()->currentStyle());
