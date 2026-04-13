@@ -42,7 +42,7 @@ namespace Robomongo
         _bus(AppRegistry::instance().bus())
     { 
         // Set connection settings of this replica member
-        _connSettings->setConnectionName(_repMemberHostAndPort.toString() + tr(" [member of ") + _connSettings->connectionName() + "]");
+        _connSettings->setConnectionName((QtUtils::toQString(_repMemberHostAndPort.toString()) + tr(" [member of ") + QtUtils::toQString(_connSettings->connectionName()) + "]").toStdString());
         _connSettings->setServerHost(_repMemberHostAndPort.host());
         _connSettings->setServerPort(_repMemberHostAndPort.port());
         _connSettings->setReplicaSet(false);  

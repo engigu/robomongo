@@ -286,9 +286,9 @@ namespace Robomongo
 
         if (event->isError()) {
             // For some cases, event error message already contains string "Error:"
-            QString const& subStr =
+            QString const subStr =
                 QString::fromStdString(event->error().errorMessage()).startsWith("Error", Qt::CaseInsensitive) ?
-                tr("Error:\n");
+                "" : tr("Error:\n");
 
             QString const& message = tr("Failed to execute script.\n\n") + subStr +
                 QString::fromStdString((event->error().errorMessage()));

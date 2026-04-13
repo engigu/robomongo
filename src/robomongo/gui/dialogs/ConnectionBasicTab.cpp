@@ -335,11 +335,8 @@ namespace Robomongo
         uriStr.replace(" ", "");
         auto const statusWithURI = mongo::MongoURI::parse(uriStr.toStdString());
         if (!statusWithURI.isOK()) {
-            QMessageBox errorBox;
-            errorBox.critical(
-                this, tr("Error"), (tr("MongoDB URI:\n") + statusWithURI.getStatus().toString()).c_str()
-            );
-            errorBox.show();
+            QMessageBox::critical(this, tr("Error"), 
+                                  tr("MongoDB URI:\n") + QtUtils::toQString(statusWithURI.getStatus().toString()));
             return;
         }
         auto const mongoUri = statusWithURI.getValue();
