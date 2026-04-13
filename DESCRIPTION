@@ -1,0 +1,6 @@
+Robo 3T is a shell-centric cross-platform MongoDB management tool.
+This is the community-maintained, optimized version (v1.5.1).
+Features:
+- 100% Native implementation (Chromium removed)
+- Full Chinese localization support
+- Modern toolchain & security hardened
