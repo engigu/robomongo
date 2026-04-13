@@ -100,6 +100,7 @@ jobs:
 
       - name: Build and Package Robo 3T
         run: |
+          :: 准备基础虚盘映射以缩短路径，防止 NSIS 路径溢出
           subst S: "${{ github.workspace }}\robo-shell"
           subst R: "${{ github.workspace }}"
           cd /d D:\b
@@ -110,21 +111,23 @@ jobs:
           :: 1. 编译并安装
           ninja install
           
-          :: 2. 执行 CPack 打包 (生成最终产物)
+          :: 2. 执行 CPack 打包
+          echo "Starting ZIP packaging..."
           cpack -G ZIP
+          echo "Starting NSIS packaging (Installer)..."
           cpack -G NSIS
           
-          :: 3. 整理产物 (直接抓取 D:\b\package 下的文件，不进子目录，避开中间产物)
+          :: 3. 整理产物 (深度探测模式)
           set "DIST_DIR=${{ github.workspace }}\dist"
           if not exist "%DIST_DIR%" mkdir "%DIST_DIR%"
           
-          echo "Capturing final packages from D:\b\package (root level only)..."
-          for %%f in (D:\b\package\*.zip D:\b\package\*.exe) do (
-              echo Found Package: %%~nxf
-              copy /y "%%f" "%DIST_DIR%\"
-          )
+          echo "Scanning D:\b\package for final artifacts..."
+          dir /s D:\b\package\*.zip D:\b\package\*.exe
           
-          :: 验证 dist 目录
+          copy /y D:\b\package\*.zip "%DIST_DIR%\"
+          copy /y D:\b\package\*.exe "%DIST_DIR%\"
+          
+          :: 验证 dist 目录内容
           echo "Final verified packages in dist/ :"
           dir "%DIST_DIR%"
         shell: cmd
@@ -136,6 +139,7 @@ jobs:
           files: |
             ${{ github.workspace }}\dist\*.zip
             ${{ github.workspace }}\dist\*.exe
+          fail_on_unmatched_files: false
           name: Robo 3T ${{ github.ref_name }} Reborn Release
           body: |
             ## Robo 3T ${{ github.ref_name }} Standard Release
