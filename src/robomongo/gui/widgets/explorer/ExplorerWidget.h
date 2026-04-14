@@ -36,6 +36,7 @@ namespace Robomongo
     private Q_SLOTS:
         void ui_itemExpanded(QTreeWidgetItem *item);
         void ui_itemDoubleClicked(QTreeWidgetItem *item, int column);
+        void ui_currentItemChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous);
 
     protected:
         void keyPressEvent(QKeyEvent *event) override;   
@@ -49,5 +50,8 @@ namespace Robomongo
         QLabel *_progressLabel;
         QTreeWidget *_treeWidget;
         ExplorerFavoritesRootItem *_favoritesRoot;
+
+        MongoServer *_lastServer = nullptr;
+        MongoDatabase *_lastDatabase = nullptr;
     };
 }

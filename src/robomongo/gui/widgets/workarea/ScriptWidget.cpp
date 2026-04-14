@@ -107,6 +107,7 @@ namespace Robomongo
         setTextCursor(shell->cursor());
 
         VERIFY(connect(_topStatusBar, SIGNAL(saveToFavoritesRequested()), this, SLOT(onSaveToFavoritesRequested())));
+        updateSaveButtonStatus();
     }
 
     void ScriptWidget::onSaveToFavoritesRequested()
@@ -310,6 +311,12 @@ namespace Robomongo
         _queryText->sciScintilla()->setFocus();
     }
 
+    void ScriptWidget::updateSaveButtonStatus()
+    {
+        bool isFav = !_shell->filePath().isEmpty() && _shell->filePath().startsWith(FavoritesScriptsDir);
+        _topStatusBar->setSaveEnabled(!isFav);
+    }
+
     void ScriptWidget::ui_queryLinesCountChanged()
     {
         // Set fixed size only if output widget is docked
@@ -501,7 +508,7 @@ namespace Robomongo
         topLayout->addStretch(1);
 
         _saveButton = new QPushButton(this);
-        _saveButton->setIcon(QIcon(":robomongo/icons/bson_object_16x16.png"));
+        _saveButton->setIcon(QIcon(":robomongo/icons/star_16x16.png"));
         _saveButton->setToolTip(tr("Add to Favorites"));
         _saveButton->setFlat(true);
         _saveButton->setCursor(Qt::PointingHandCursor);
@@ -538,5 +545,11 @@ namespace Robomongo
                 .arg(detail::prepareServerAddress(address).c_str());
 
         _currentServerLabel->setText(text);
+    }
+
+    void TopStatusBar::setSaveEnabled(bool enabled)
+    {
+        _saveButton->setEnabled(enabled);
+        _saveButton->setToolTip(enabled ? tr("Add to Favorites") : tr("Already in Favorites"));
     }
 }

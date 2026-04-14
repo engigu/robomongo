@@ -81,5 +81,6 @@
         <file>icons/delete_red_color.png</file>
         <file>icons/delete_mouse_hovered.png</file>
         <file>icons/welcome_tab_icon.png</file>
+        <file>icons/star_16x16.png</file>
     </qresource>
 </RCC>

@@ -107,6 +107,16 @@ namespace Robomongo
         _scriptWidget->setCurrentDatabase(dbname);
     }
 
+    void QueryWidget::applyFavorite(const QString &script, const QString &filePath)
+    {
+        _scriptWidget->setText(script);
+        _shell->setScript(script);
+        _shell->setFilePath(filePath);
+        _isTextChanged = false;
+        updateCurrentTab();
+        _scriptWidget->updateSaveButtonStatus();
+    }
+
     void QueryWidget::bringDockToFront()
     {
         _dock->raise(); // required for MAC only; possible Qt bug

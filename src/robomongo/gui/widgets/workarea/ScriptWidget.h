@@ -73,6 +73,7 @@ namespace Robomongo
         void setDisableTextAndCursorNotifications(const bool value) { _disableTextAndCursorNotifications = value; }
 
         void disableFixedHeight() const;
+        void updateSaveButtonStatus();
 
     Q_SIGNALS:
         void textChanged();
@@ -135,6 +136,7 @@ namespace Robomongo
         void setCurrentServer(const std::string &address, bool isValid = true);
         void showProgress();
         void hideProgress();
+        void setSaveEnabled(bool enabled);
 
     Q_SIGNALS:
         void saveToFavoritesRequested();

@@ -21,6 +21,7 @@ namespace Robomongo
         const CursorPosition &cursor() const { return _cursor; }
         void setScript(const QString &script) { _script = script; }
         QString filePath() const { return _filePath; }
+        void setFilePath(const QString &filePath) { _filePath = filePath; }
         bool loadFromFile(const QString &filePath);
         bool loadFromFile();
         bool saveToFileAs();

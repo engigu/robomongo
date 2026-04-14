@@ -6,7 +6,76 @@
 #include <QFile>
 #include <QVariant>
 #include <QTextStream>
+#include <QMenu>
+#include <QAction>
+#include <QInputDialog>
+#include <QMessageBox>
+#include <QFileInfo>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
 #include <parser.h>
+#include <serializer.h>
+
+namespace
+{
+    using namespace Robomongo;
+
+    QVariantList serializeFavorites(QTreeWidgetItem *parent)
+    {
+        QVariantList list;
+        for (int i = 0; i < parent->childCount(); ++i) {
+            QTreeWidgetItem *child = parent->child(i);
+            QVariantMap entry;
+            if (auto folder = dynamic_cast<ExplorerFavoritesFolderItem *>(child)) {
+                entry.insert("name", folder->name());
+                entry.insert("type", "folder");
+                entry.insert("children", serializeFavorites(folder));
+            } else if (auto favorite = dynamic_cast<ExplorerFavoriteItem *>(child)) {
+                entry.insert("name", favorite->name());
+                QFileInfo info(favorite->filePath());
+                entry.insert("file", info.fileName());
+            }
+            list.append(entry);
+        }
+        return list;
+    }
+
+    void saveFavoritesTree(ExplorerFavoritesRootItem *root)
+    {
+        QVariantList metadata = serializeFavorites(root);
+        QFile metaFileOut(FavoritesMetadataPath);
+        if (metaFileOut.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
+            QJson::Serializer serializer;
+            serializer.setIndentMode(QJson::IndentFull);
+            bool okSerialize = false;
+            QByteArray jsonBytes = serializer.serialize(metadata, &okSerialize);
+            if (okSerialize) {
+                metaFileOut.write(jsonBytes);
+            }
+            metaFileOut.close();
+            AppRegistry::instance().bus()->publish(new FavoritesChangedEvent(nullptr));
+        }
+    }
+
+    void buildFavorites(QTreeWidgetItem *parent, const QVariantList &list)
+    {
+        for (const QVariant &v : list) {
+            QVariantMap entry = v.toMap();
+            QString name = entry.value("name").toString();
+            QString type = entry.value("type").toString();
+
+            if (type == "folder") {
+                auto folder = new ExplorerFavoritesFolderItem(parent, name);
+                buildFavorites(folder, entry.value("children").toList());
+            } else {
+                QString fileName = entry.value("file").toString();
+                QString fullPath = FavoritesScriptsDir + fileName;
+                new ExplorerFavoriteItem(parent, name, fullPath);
+            }
+        }
+    }
+}
 
 namespace Robomongo
 {
@@ -28,6 +97,14 @@ namespace Robomongo
             return in.readAll();
         }
         return QString();
+    }
+
+    ExplorerFavoritesFolderItem::ExplorerFavoritesFolderItem(QTreeWidgetItem *parent, const QString &name) :
+        ExplorerTreeItem(parent),
+        _name(name)
+    {
+        setText(0, _name);
+        setIcon(0, QIcon(":robomongo/icons/database_16x16.png")); // Folder-like icon
     }
 
     ExplorerFavoritesRootItem::ExplorerFavoritesRootItem(QTreeWidget *view) :
@@ -52,18 +129,80 @@ namespace Robomongo
                 metaFile.close();
 
                 if (okMeta) {
-                    for (const QVariant &v : metadata) {
-                        QVariantMap entry = v.toMap();
-                        QString name = entry.value("name").toString();
-                        QString fileName = entry.value("file").toString();
-                        QString fullPath = FavoritesScriptsDir + fileName;
-                        
-                        new ExplorerFavoriteItem(this, name, fullPath);
-                    }
+                    buildFavorites(this, metadata);
                 }
             }
         }
-        
+
         setExpanded(true);
+    }
+
+    void ExplorerFavoriteItem::showContextMenuAtPos(const QPoint &pos)
+    {
+        QTreeWidgetItem *curr = this;
+        while (curr->parent()) curr = curr->parent();
+        if (auto root = dynamic_cast<ExplorerFavoritesRootItem *>(curr))
+            root->showContextMenuAtPos(pos);
+    }
+
+    void ExplorerFavoritesFolderItem::showContextMenuAtPos(const QPoint &pos)
+    {
+        QTreeWidgetItem *curr = this;
+        while (curr->parent()) curr = curr->parent();
+        if (auto root = dynamic_cast<ExplorerFavoritesRootItem *>(curr))
+            root->showContextMenuAtPos(pos);
+    }
+
+    void ExplorerFavoritesRootItem::showContextMenuAtPos(const QPoint &pos)
+    {
+        QTreeWidgetItem *item = treeWidget()->itemAt(pos);
+        if (!item) return;
+
+        QMenu menu;
+        
+        QAction *renameAction = nullptr;
+        QAction *deleteAction = nullptr;
+        
+        if (item != this) {
+            renameAction = menu.addAction(tr("Rename"));
+            deleteAction = menu.addAction(tr("Delete"));
+            menu.addSeparator();
+        }
+        
+        auto newFolderAction = menu.addAction(tr("New Folder"));
+
+        QAction *selectedAction = menu.exec(treeWidget()->mapToGlobal(pos));
+
+        if (selectedAction && selectedAction == renameAction) {
+            QString oldName;
+            if (auto fav = dynamic_cast<ExplorerFavoriteItem *>(item)) oldName = fav->name();
+            else if (auto fol = dynamic_cast<ExplorerFavoritesFolderItem *>(item)) oldName = fol->name();
+
+            bool ok;
+            QString newName = QInputDialog::getText(treeWidget(), tr("Rename"), tr("Enter new name:"), QLineEdit::Normal, oldName, &ok);
+            if (ok && !newName.isEmpty()) {
+                if (auto fav = dynamic_cast<ExplorerFavoriteItem *>(item)) fav->setName(newName);
+                else if (auto fol = dynamic_cast<ExplorerFavoritesFolderItem *>(item)) fol->setName(newName);
+                saveFavoritesTree(this);
+            }
+        } else if (selectedAction && selectedAction == deleteAction) {
+            auto res = QMessageBox::question(treeWidget(), tr("Delete"), tr("Are you sure you want to delete this item?"), QMessageBox::Yes | QMessageBox::No);
+            if (res == QMessageBox::Yes) {
+                delete item;
+                saveFavoritesTree(this);
+            }
+        } else if (selectedAction && selectedAction == newFolderAction) {
+            bool ok;
+            QString folderName = QInputDialog::getText(treeWidget(), tr("New Folder"), tr("Enter folder name:"), QLineEdit::Normal, tr("New Group"), &ok);
+            if (ok && !folderName.isEmpty()) {
+                QTreeWidgetItem *parent = item;
+                // If clicked on favorite, add to its parent. If root or folder, add as child.
+                if (dynamic_cast<ExplorerFavoriteItem *>(item)) parent = item->parent();
+                
+                auto folder = new ExplorerFavoritesFolderItem(parent, folderName);
+                folder->setExpanded(true);
+                saveFavoritesTree(this);
+            }
+        }
     }
 }
