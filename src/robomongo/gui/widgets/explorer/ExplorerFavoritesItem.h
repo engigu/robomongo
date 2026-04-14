@@ -12,7 +12,8 @@ namespace Robomongo
         QString script() const;
         QString filePath() const { return _filePath; }
         QString name() const { return _name; }
-        void setName(const QString &name) { _name = name; setText(0, name); }
+        void setName(const QString &name);
+        void setFilePath(const QString &path) { _filePath = path; }
         void showContextMenuAtPos(const QPoint &pos) override;
 
     private:
@@ -26,8 +27,9 @@ namespace Robomongo
     public:
         ExplorerFavoritesFolderItem(QTreeWidgetItem *parent, const QString &name);
         QString name() const { return _name; }
-        void setName(const QString &name) { _name = name; setText(0, name); }
+        void setName(const QString &name);
         void showContextMenuAtPos(const QPoint &pos) override;
+        QString physicalPath() const;
 
     private:
         QString _name;

@@ -411,7 +411,7 @@ namespace Robomongo
         optionsMenu->addSeparator();
         optionsMenu->addAction(loadMongoRcJs);
 
-        createLanguageMenu();
+        createLanguageMenu(optionsMenu);
 
         optionsMenu->addSeparator();
 
@@ -666,18 +666,8 @@ namespace Robomongo
          }
     }
 
-    void MainWindow::createLanguageMenu()
+    void MainWindow::createLanguageMenu(QMenu *optionsMenu)
     {
-         QMenu *optionsMenu = nullptr;
-         // Find Options menu - unfortunately it's local in constructor usually, 
-         // so we look for it in the menuBar
-         for (auto menu : menuBar()->findChildren<QMenu*>()) {
-             if (menu->title() == "Options") {
-                 optionsMenu = menu;
-                 break;
-             }
-         }
-
          if (!optionsMenu) return;
 
          QMenu *langMenu = optionsMenu->addMenu("Language / 语言");

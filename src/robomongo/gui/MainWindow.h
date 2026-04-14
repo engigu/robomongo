@@ -123,7 +123,7 @@ namespace Robomongo
         void createDatabaseExplorer();
         void createTabs();
         void createStylesMenu();
-        void createLanguageMenu();
+        void createLanguageMenu(QMenu *optionsMenu);
         void createStatusBar();
         void restoreWindowSettings();
         void saveWindowSettings() const;

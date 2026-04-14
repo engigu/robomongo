@@ -35,8 +35,12 @@ namespace
                 entry.insert("children", serializeFavorites(folder));
             } else if (auto favorite = dynamic_cast<ExplorerFavoriteItem *>(child)) {
                 entry.insert("name", favorite->name());
-                QFileInfo info(favorite->filePath());
-                entry.insert("file", info.fileName());
+                // Store path relative to FavoritesScriptsDir
+                QString path = favorite->filePath();
+                if (path.startsWith(FavoritesScriptsDir)) {
+                    path = path.mid(FavoritesScriptsDir.length());
+                }
+                entry.insert("file", path);
             }
             list.append(entry);
         }
@@ -71,8 +75,8 @@ namespace
                 auto folder = new ExplorerFavoritesFolderItem(parent, name);
                 buildFavorites(folder, entry.value("children").toList());
             } else {
-                QString fileName = entry.value("file").toString();
-                QString fullPath = FavoritesScriptsDir + fileName;
+                QString relativePath = entry.value("file").toString();
+                QString fullPath = FavoritesScriptsDir + relativePath;
                 new ExplorerFavoriteItem(parent, name, fullPath);
             }
         }
@@ -88,6 +92,21 @@ namespace Robomongo
     {
         setText(0, _name);
         setIcon(0, QIcon(":robomongo/icons/bson_object_16x16.png"));
+    }
+
+    void ExplorerFavoriteItem::setName(const QString &name)
+    {
+        QString oldPath = _filePath;
+        QFileInfo info(oldPath);
+        QString newPath = info.dir().absolutePath() + "/" + name + ".js";
+
+        if (oldPath != newPath && QFile::exists(oldPath)) {
+            if (QFile::rename(oldPath, newPath)) {
+                _filePath = newPath;
+            }
+        }
+        _name = name;
+        setText(0, _name);
     }
 
     QString ExplorerFavoriteItem::script() const
@@ -106,7 +125,34 @@ namespace Robomongo
         _name(name)
     {
         setText(0, _name);
-        setIcon(0, QIcon(":robomongo/icons/database_16x16.png")); // Folder-like icon
+        setIcon(0, QIcon(":robomongo/icons/database_16x16.png")); 
+    }
+
+    void ExplorerFavoritesFolderItem::setName(const QString &name)
+    {
+        QString oldPath = physicalPath();
+        _name = name;
+        setText(0, _name);
+        QString newPath = physicalPath();
+
+        if (oldPath != newPath && QDir().exists(oldPath)) {
+            QDir().rename(oldPath, newPath);
+        }
+    }
+
+    QString ExplorerFavoritesFolderItem::physicalPath() const
+    {
+        QString path = name();
+        QTreeWidgetItem *curr = parent();
+        while (curr) {
+            if (auto folder = dynamic_cast<ExplorerFavoritesFolderItem *>(curr)) {
+                path = folder->name() + "/" + path;
+            } else if (dynamic_cast<ExplorerFavoritesRootItem *>(curr)) {
+                break;
+            }
+            curr = curr->parent();
+        }
+        return FavoritesScriptsDir + path;
     }
 
     ExplorerFavoritesRootItem::ExplorerFavoritesRootItem(QTreeWidget *view) :
@@ -190,6 +236,11 @@ namespace Robomongo
         } else if (selectedAction && selectedAction == deleteAction) {
             auto res = QMessageBox::question(treeWidget(), tr("Delete"), tr("Are you sure you want to delete this item?"), QMessageBox::Yes | QMessageBox::No);
             if (res == QMessageBox::Yes) {
+                if (auto fol = dynamic_cast<ExplorerFavoritesFolderItem *>(item)) {
+                    QDir(fol->physicalPath()).removeRecursively();
+                } else if (auto fav = dynamic_cast<ExplorerFavoriteItem *>(item)) {
+                    QFile::remove(fav->filePath());
+                }
                 delete item;
                 saveFavoritesTree(this);
             }
@@ -198,10 +249,10 @@ namespace Robomongo
             QString folderName = QInputDialog::getText(treeWidget(), tr("New Folder"), tr("Enter folder name:"), QLineEdit::Normal, tr("New Group"), &ok);
             if (ok && !folderName.isEmpty()) {
                 QTreeWidgetItem *parent = item;
-                // If clicked on favorite, add to its parent. If root or folder, add as child.
                 if (dynamic_cast<ExplorerFavoriteItem *>(item)) parent = item->parent();
                 
                 auto folder = new ExplorerFavoritesFolderItem(parent, folderName);
+                QDir().mkpath(folder->physicalPath());
                 folder->setExpanded(true);
                 saveFavoritesTree(this);
             }

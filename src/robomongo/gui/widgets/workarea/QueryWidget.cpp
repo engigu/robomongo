@@ -107,13 +107,16 @@ namespace Robomongo
         _scriptWidget->setCurrentDatabase(dbname);
     }
 
-    void QueryWidget::applyFavorite(const QString &script, const QString &filePath)
+    void QueryWidget::applyFavorite(const QString &script, const QString &filePath, const QString &name)
     {
         _scriptWidget->setText(script);
         _shell->setScript(script);
         _shell->setFilePath(filePath);
         _isTextChanged = false;
-        updateCurrentTab();
+
+        // Use the favorite name for the tab title
+        emit titleChanged(name);
+
         _scriptWidget->updateSaveButtonStatus();
     }
 

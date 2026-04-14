@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
@@ -5133,6 +5133,40 @@ Please increase the value of shell timeout using button below or from the main w
     <message>
         <source>Select database:</source>
         <translation>选择数据库:</translation>
+    </message>
+</context>
+<context>
+    <name>Robomongo::TopStatusBar</name>
+    <message>
+        <source>Add to Favorites</source>
+        <translation>添加收藏</translation>
+    </message>
+    <message>
+        <source>Already in Favorites</source>
+        <translation>已在收藏夹中</translation>
+    </message>
+</context>
+<context>
+    <name>Robomongo::ScriptWidget</name>
+    <message>
+        <source>Favorites</source>
+        <translation>收藏夹</translation>
+    </message>
+    <message>
+        <source>Cannot save an empty script.</source>
+        <translation>无法保存空脚本。</translation>
+    </message>
+    <message>
+        <source>Add to Favorites</source>
+        <translation>添加收藏</translation>
+    </message>
+    <message>
+        <source>Enter a name for this snippet:</source>
+        <translation>为该片段输入一个名称:</translation>
+    </message>
+    <message>
+        <source>My Query</source>
+        <translation>我的查询</translation>
     </message>
 </context>
 </TS>

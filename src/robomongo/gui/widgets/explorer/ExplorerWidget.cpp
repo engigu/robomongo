@@ -211,7 +211,7 @@ namespace Robomongo
                             QMessageBox::Yes | QMessageBox::No);
 
                         if (result == QMessageBox::Yes) {
-                            currentQW->applyFavorite(script, filePath);
+                            currentQW->applyFavorite(script, filePath, favoriteItem->name());
                             return;
                         }
                     }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
@@ -1660,6 +1660,60 @@ Error:
     <message>
         <source>Repair Database</source>
         <translation>修复数据库</translation>
+    </message>
+</context>
+<context>
+    <name>Robomongo::ExplorerFavoritesRootItem</name>
+    <message>
+        <source>Favorites (⭐️)</source>
+        <translation>收藏夹 (⭐️)</translation>
+    </message>
+    <message>
+        <source>Rename</source>
+        <translation>重命名</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <source>New Folder</source>
+        <translation>新建分组</translation>
+    </message>
+    <message>
+        <source>Enter new name:</source>
+        <translation>输入新名称:</translation>
+    </message>
+    <message>
+        <source>Enter folder name:</source>
+        <translation>输入分组名称:</translation>
+    </message>
+    <message>
+        <source>New Group</source>
+        <translation>新分组</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete this item?</source>
+        <translation>确定要删除此项吗？</translation>
+    </message>
+</context>
+<context>
+    <name>Robomongo::ExplorerWidget</name>
+    <message>
+        <source>Apply Favorite</source>
+        <translation>应用收藏</translation>
+    </message>
+    <message>
+        <source>Do you want to apply this favorite to the current tab?\n(This will allow you to edit and save it directly.)</source>
+        <translation>是否将此收藏应用到当前标签页？\n(这将允许你直接编辑并保存。)</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation>收藏夹</translation>
+    </message>
+    <message>
+        <source>Please select a server or database in the tree first to open this script.</source>
+        <translation>请先在树中选择一个服务器或数据库以打开此脚本。</translation>
     </message>
 </context>
 </TS>
