@@ -39,8 +39,6 @@ namespace Robomongo
     public:
         ExplorerFavoritesRootItem(QTreeWidget *view);
         void refresh();
-
-    protected:
         void showContextMenuAtPos(const QPoint &pos) override;
     };
 }
