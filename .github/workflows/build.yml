@@ -63,8 +63,10 @@ jobs:
             ${{ runner.os }}-robo-shell-v141-
           fail-on-cache-miss: false
 
-      - name: Install OpenSSL
-        run: choco install openssl --version=1.1.1.2100 -y --no-progress
+      - name: Install Dependencies (OpenSSL, NSIS)
+        run: |
+          choco install openssl --version=1.1.1.2100 -y --no-progress
+          choco install nsis -y --no-progress
 
       - name: Locate OpenSSL
         run: |
