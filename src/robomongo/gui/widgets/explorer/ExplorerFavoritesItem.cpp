@@ -190,7 +190,7 @@ namespace Robomongo
         QTreeWidgetItem *curr = this;
         while (curr->parent()) curr = curr->parent();
         if (auto root = dynamic_cast<ExplorerFavoritesRootItem *>(curr))
-            root->showContextMenuAtPos(pos);
+            root->showContextMenuAtPos(treeWidget()->mapFromGlobal(pos));
     }
 
     void ExplorerFavoritesFolderItem::showContextMenuAtPos(const QPoint &pos)
@@ -198,7 +198,7 @@ namespace Robomongo
         QTreeWidgetItem *curr = this;
         while (curr->parent()) curr = curr->parent();
         if (auto root = dynamic_cast<ExplorerFavoritesRootItem *>(curr))
-            root->showContextMenuAtPos(pos);
+            root->showContextMenuAtPos(treeWidget()->mapFromGlobal(pos));
     }
 
     void ExplorerFavoritesRootItem::showContextMenuAtPos(const QPoint &pos)
@@ -219,7 +219,7 @@ namespace Robomongo
         
         auto newFolderAction = menu.addAction(tr("New Folder"));
 
-        QAction *selectedAction = menu.exec(treeWidget()->mapToGlobal(pos));
+        QAction *selectedAction = menu.exec(QCursor::pos());
 
         if (selectedAction && selectedAction == renameAction) {
             QString oldName;

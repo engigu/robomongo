@@ -99,6 +99,7 @@ namespace Robomongo
 
         MongoShellExecResult _currentResult;
         bool _isTextChanged;
+        QString _favoriteName;
     };
 
     /* ------- class CustomDockWidget -------- */

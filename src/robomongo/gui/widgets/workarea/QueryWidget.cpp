@@ -45,7 +45,8 @@ namespace Robomongo
         _shell(shell),
         _viewer(nullptr),
         _dock(nullptr),
-        _isTextChanged(false)
+        _isTextChanged(false),
+        _favoriteName("")
     {
         AppRegistry::instance().bus()->subscribe(this, DocumentListLoadedEvent::Type, shell);
         AppRegistry::instance().bus()->subscribe(this, ScriptExecutedEvent::Type, shell);
@@ -113,6 +114,7 @@ namespace Robomongo
         _shell->setScript(script);
         _shell->setFilePath(filePath);
         _isTextChanged = false;
+        _favoriteName = name;
 
         // Use the favorite name for the tab title
         emit titleChanged(name);
@@ -375,7 +377,11 @@ namespace Robomongo
         QString toolTipQuery = shellQuery.left(700);
 
         QString tabTitle, toolTipText;
-        if (_shell) {
+        if (!_favoriteName.isEmpty()) {
+            tabTitle = _favoriteName;
+        }
+
+        if (_shell && tabTitle.isEmpty()) {
             QFileInfo fileInfo(_shell->filePath());
             if (fileInfo.isFile()) {
                     tabTitle = fileInfo.fileName();

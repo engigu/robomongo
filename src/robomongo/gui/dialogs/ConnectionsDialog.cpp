@@ -201,7 +201,7 @@ namespace Robomongo
             "or reorder connections via drag'n'drop.").arg("#106CD6"));
         intro->setWordWrap(true);
 
-        VERIFY(connect(intro, SIGNAL(linkActivated(QString)), this, SLOT(linkActivated(QString))));
+        VERIFY(connect(intro, SIGNAL(linkActivated(QString)), this, SLOT(linkActivated(QString)), Qt::UniqueConnection));
 
         QVBoxLayout *firstColumnLayout = new QVBoxLayout;
         firstColumnLayout->addWidget(intro);
