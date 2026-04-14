@@ -1,6 +1,8 @@
 #include "robomongo/gui/widgets/explorer/ExplorerFavoritesItem.h"
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/settings/SettingsManager.h"
+#include "robomongo/core/EventBus.h"
+#include "robomongo/core/events/MongoEvents.h"
 
 #include <QDir>
 #include <QFile>

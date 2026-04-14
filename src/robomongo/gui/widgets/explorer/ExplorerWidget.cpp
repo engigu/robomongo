@@ -11,6 +11,8 @@
 #include "robomongo/core/domain/MongoServer.h"
 #include "robomongo/core/domain/MongoDatabase.h"
 #include "robomongo/core/utils/QtUtils.h"
+#include "robomongo/core/EventBus.h"
+#include "robomongo/core/events/MongoEvents.h"
 #include "robomongo/gui/MainWindow.h"
 #include "robomongo/gui/widgets/explorer/ExplorerTreeWidget.h"
 #include "robomongo/gui/widgets/explorer/ExplorerServerTreeItem.h"
