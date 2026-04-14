@@ -254,14 +254,18 @@ namespace Robomongo
 
     void ConnectionsDialog::linkActivated(const QString &link)
     {
-        if (link == "create")
-            add();
-        else if (link == "edit")
-            edit();
-        else if (link == "remove")
-            remove();
-        else if (link == "clone")
-            clone();
+        // Defer execution to avoid double-processing and coordinate with Qt's event loop
+        // when opening modal dialogs from a link label.
+        QMetaObject::invokeMethod(this, [=]() {
+            if (link == "create")
+                add();
+            else if (link == "edit")
+                edit();
+            else if (link == "remove")
+                remove();
+            else if (link == "clone")
+                clone();
+        }, Qt::QueuedConnection);
     }
 
     /**

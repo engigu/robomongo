@@ -6,79 +6,37 @@
 
 #include <QDir>
 #include <QFile>
-#include <QVariant>
 #include <QTextStream>
 #include <QMenu>
 #include <QAction>
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QFileInfo>
-#include <QJsonDocument>
-#include <QJsonObject>
-#include <QJsonArray>
-#include <parser.h>
-#include <serializer.h>
+#include <QDirIterator>
 
 namespace
 {
     using namespace Robomongo;
 
-    QVariantList serializeFavorites(QTreeWidgetItem *parent)
+    void buildLocalTree(QTreeWidgetItem *parent, const QString &dirPath)
     {
-        QVariantList list;
-        for (int i = 0; i < parent->childCount(); ++i) {
-            QTreeWidgetItem *child = parent->child(i);
-            QVariantMap entry;
-            if (auto folder = dynamic_cast<ExplorerFavoritesFolderItem *>(child)) {
-                entry.insert("name", folder->name());
-                entry.insert("type", "folder");
-                entry.insert("children", serializeFavorites(folder));
-            } else if (auto favorite = dynamic_cast<ExplorerFavoriteItem *>(child)) {
-                entry.insert("name", favorite->name());
-                // Store path relative to FavoritesScriptsDir
-                QString path = favorite->filePath();
-                if (path.startsWith(FavoritesScriptsDir)) {
-                    path = path.mid(FavoritesScriptsDir.length());
-                }
-                entry.insert("file", path);
-            }
-            list.append(entry);
+        QDir dir(dirPath);
+        
+        // Add folders first
+        QStringList folders = dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot, QDir::Name);
+        for (const QString &folderName : folders) {
+            auto folder = new ExplorerFavoritesFolderItem(parent, folderName);
+            buildLocalTree(folder, dir.absoluteFilePath(folderName));
         }
-        return list;
-    }
 
-    void saveFavoritesTree(ExplorerFavoritesRootItem *root)
-    {
-        QVariantList metadata = serializeFavorites(root);
-        QFile metaFileOut(FavoritesMetadataPath);
-        if (metaFileOut.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
-            QJson::Serializer serializer;
-            serializer.setIndentMode(QJson::IndentFull);
-            bool okSerialize = false;
-            QByteArray jsonBytes = serializer.serialize(metadata, &okSerialize);
-            if (okSerialize) {
-                metaFileOut.write(jsonBytes);
+        // Add files
+        QStringList files = dir.entryList(QStringList() << "*.js", QDir::Files, QDir::Name);
+        for (const QString &fileName : files) {
+            QString name = fileName;
+            if (name.endsWith(".js")) {
+                name = name.left(name.length() - 3);
             }
-            metaFileOut.close();
-            AppRegistry::instance().bus()->publish(new FavoritesChangedEvent(nullptr));
-        }
-    }
-
-    void buildFavorites(QTreeWidgetItem *parent, const QVariantList &list)
-    {
-        for (const QVariant &v : list) {
-            QVariantMap entry = v.toMap();
-            QString name = entry.value("name").toString();
-            QString type = entry.value("type").toString();
-
-            if (type == "folder") {
-                auto folder = new ExplorerFavoritesFolderItem(parent, name);
-                buildFavorites(folder, entry.value("children").toList());
-            } else {
-                QString relativePath = entry.value("file").toString();
-                QString fullPath = FavoritesScriptsDir + relativePath;
-                new ExplorerFavoriteItem(parent, name, fullPath);
-            }
+            new ExplorerFavoriteItem(parent, name, dir.absoluteFilePath(fileName));
         }
     }
 }
@@ -168,18 +126,8 @@ namespace Robomongo
         // Clear existing children
         qDeleteAll(takeChildren());
 
-        if (QFile::exists(FavoritesMetadataPath)) {
-            QFile metaFile(FavoritesMetadataPath);
-            if (metaFile.open(QIODevice::ReadOnly)) {
-                QJson::Parser parser;
-                bool okMeta;
-                QVariantList metadata = parser.parse(metaFile.readAll(), &okMeta).toList();
-                metaFile.close();
-
-                if (okMeta) {
-                    buildFavorites(this, metadata);
-                }
-            }
+        if (QDir(FavoritesScriptsDir).exists()) {
+            buildLocalTree(this, FavoritesScriptsDir);
         }
 
         setExpanded(true);
@@ -210,6 +158,8 @@ namespace Robomongo
         
         QAction *renameAction = nullptr;
         QAction *deleteAction = nullptr;
+        QAction *refreshAction = menu.addAction(tr("Refresh"));
+        menu.addSeparator();
         
         if (item != this) {
             renameAction = menu.addAction(tr("Rename"));
@@ -221,7 +171,9 @@ namespace Robomongo
 
         QAction *selectedAction = menu.exec(QCursor::pos());
 
-        if (selectedAction && selectedAction == renameAction) {
+        if (selectedAction && selectedAction == refreshAction) {
+            refresh();
+        } else if (selectedAction && selectedAction == renameAction) {
             QString oldName;
             if (auto fav = dynamic_cast<ExplorerFavoriteItem *>(item)) oldName = fav->name();
             else if (auto fol = dynamic_cast<ExplorerFavoritesFolderItem *>(item)) oldName = fol->name();
@@ -231,7 +183,6 @@ namespace Robomongo
             if (ok && !newName.isEmpty()) {
                 if (auto fav = dynamic_cast<ExplorerFavoriteItem *>(item)) fav->setName(newName);
                 else if (auto fol = dynamic_cast<ExplorerFavoritesFolderItem *>(item)) fol->setName(newName);
-                saveFavoritesTree(this);
             }
         } else if (selectedAction && selectedAction == deleteAction) {
             auto res = QMessageBox::question(treeWidget(), tr("Delete"), tr("Are you sure you want to delete this item?"), QMessageBox::Yes | QMessageBox::No);
@@ -242,7 +193,6 @@ namespace Robomongo
                     QFile::remove(fav->filePath());
                 }
                 delete item;
-                saveFavoritesTree(this);
             }
         } else if (selectedAction && selectedAction == newFolderAction) {
             bool ok;
@@ -254,7 +204,6 @@ namespace Robomongo
                 auto folder = new ExplorerFavoritesFolderItem(parent, folderName);
                 QDir().mkpath(folder->physicalPath());
                 folder->setExpanded(true);
-                saveFavoritesTree(this);
             }
         }
     }
