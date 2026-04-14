@@ -83,7 +83,7 @@ namespace Robomongo
         _name(name)
     {
         setText(0, _name);
-        setIcon(0, QIcon(":robomongo/icons/database_16x16.png")); 
+        setIcon(0, QIcon(":robomongo/icons/collection_16x16.png")); 
     }
 
     void ExplorerFavoritesFolderItem::setName(const QString &name)
@@ -110,7 +110,12 @@ namespace Robomongo
             }
             curr = curr->parent();
         }
-        return FavoritesScriptsDir + path;
+
+        QString fullPath = FavoritesScriptsDir + path;
+        if (!fullPath.endsWith("/")) {
+            fullPath += "/";
+        }
+        return fullPath;
     }
 
     ExplorerFavoritesRootItem::ExplorerFavoritesRootItem(QTreeWidget *view) :

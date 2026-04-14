@@ -113,7 +113,7 @@ namespace Robomongo
      * @brief Creates dialog
      */
     ConnectionsDialog::ConnectionsDialog(SettingsManager *settingsManager, bool checkForImported, QWidget *parent)
-        : QDialog(parent), _settingsManager(settingsManager), _checkForImported(checkForImported)
+        : QDialog(parent), _settingsManager(settingsManager), _checkForImported(checkForImported), _isExecutingLink(false)
     {
         setWindowIcon(GuiRegistry::instance().connectIcon());
         setWindowTitle(tr("MongoDB Connections"));
@@ -254,6 +254,11 @@ namespace Robomongo
 
     void ConnectionsDialog::linkActivated(const QString &link)
     {
+        if (_isExecutingLink)
+            return;
+
+        _isExecutingLink = true;
+
         // Defer execution to avoid double-processing and coordinate with Qt's event loop
         // when opening modal dialogs from a link label.
         QMetaObject::invokeMethod(this, [=]() {
@@ -265,6 +270,8 @@ namespace Robomongo
                 remove();
             else if (link == "clone")
                 clone();
+            
+            _isExecutingLink = false;
         }, Qt::QueuedConnection);
     }
 

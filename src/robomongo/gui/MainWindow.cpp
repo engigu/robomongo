@@ -875,6 +875,10 @@ namespace Robomongo
     
     void MainWindow::manageConnections()
     {
+        static bool isManaging = false;
+        if (isManaging) return;
+        isManaging = true;
+
     #if defined(Q_OS_WIN)
         _trayIcon->hide(); // hide the tray icon so the main window can't be hidden behind the connections dialog
     #endif
@@ -913,6 +917,8 @@ namespace Robomongo
     #if defined(Q_OS_WIN)
         _trayIcon->show(); // show the tray icon once the connections dialog is gone
     #endif
+
+        isManaging = false;
 
         // on linux focus is lost - we need to activate main window back
         activateWindow();

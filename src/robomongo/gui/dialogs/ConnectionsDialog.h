@@ -103,6 +103,7 @@ namespace Robomongo
         ConnectionListItemContainerType _connectionItems;
 
         bool _checkForImported;
+        bool _isExecutingLink;
     };    
 
     class ConnectionsTreeWidget : public QTreeWidget
