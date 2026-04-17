@@ -31,15 +31,6 @@ jobs:
         with:
           arch: x64
 
-      - name: Install Qt
-        uses: jurplel/install-qt-action/action@v3
-        with:
-          version: '5.15.2'
-          host: 'windows'
-          target: 'desktop'
-          arch: 'win64_msvc2019_64'
-          modules: qtcharts qtwebengine
-
       - name: Cache Robo Shell (Restoring from Cloud)
         id: cache-robo-shell
         uses: actions/cache@v4
@@ -64,6 +55,15 @@ jobs:
           cd robomongo-shell-roboshell-v4.2
           python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j2 --link-model=object
         shell: cmd
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action/action@v3
+        with:
+          version: '5.15.2'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2019_64'
+          modules: qtcharts qtwebengine
 
       - name: Install Dependencies (OpenSSL, NSIS)
         run: |
