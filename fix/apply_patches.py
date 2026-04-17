@@ -47,9 +47,45 @@ except:
                     pass
     print(f"Patched {patched_count} files in {target_dir}")
 
+def patch_cpp_syntax(target_dir):
+    print(f"--- Fixing CPP Syntax in: {target_dir} ---")
+    fixed_count = 0
+    for root, dirs, files in os.walk(target_dir):
+        for file in files:
+            if file == 's2cellid.cc':
+                path = os.path.join(root, file)
+                try:
+                    with open(path, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
+                    
+                    # Fix stdext::hash_value specialization for VS 2022
+                    old_line = "template<> size_t stdext::hash_value<S2CellId>(const S2CellId &id) {"
+                    if old_line in content:
+                        new_content = content.replace(
+                            old_line,
+                            "namespace stdext { template<> size_t hash_value<S2CellId>(const S2CellId &id) {"
+                        )
+                        # We need to close the namespace. In s2cellid.cc, this is usually at the end of the block.
+                        # For simplicity, we just add the closing brace if we did the replacement.
+                        # Actually, s2cellid.cc usually has this at the very end of the file.
+                        if "namespace stdext {" in new_content and not new_content.strip().endswith("}"):
+                             new_content += "\n}\n"
+                        
+                        with open(path, 'w', encoding='utf-8') as f:
+                            f.write(new_content)
+                        fixed_count += 1
+                        print(f"Fixed: {path}")
+                except Exception as e:
+                    print(f"Failed to fix {path}: {e}")
+    print(f"Fixed {fixed_count} CPP files.")
+
 if __name__ == "__main__":
-    # Patch current dir (robomongo), sibling (robo-shell), and local subfolder (robomongo-shell-roboshell-v4.2)
+    # Patch build environments
     patch_directory('.')
     patch_directory('../robo-shell')
     patch_directory('./robomongo-shell-roboshell-v4.2')
+    # Fix CPP syntax for VS 2022
+    patch_cpp_syntax('.')
+    patch_cpp_syntax('../robo-shell')
+    patch_cpp_syntax('./robomongo-shell-roboshell-v4.2')
     print("--- GLOBAL HIJACK COMPLETE ---")
