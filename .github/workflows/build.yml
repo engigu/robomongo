@@ -153,6 +153,7 @@ jobs:
             - **SSL Connection Fixed**: Resolved tooltip and pointer errors in SSL tabs.
             - **Favorites Actions**: Rename and Delete actions are now fully registered and functional.
             - **High Fidelity Packaging**: Standardized with absolute path deployments and detailed build logs.
+            - **Tree Duplication Fixed**: Resolved the issue where clicking "Connect" triggered duplicate entries in the database explorer.
             
             Note: The portable version (~83MB) contains the full dependency matrix for immediate use.
           draft: false
