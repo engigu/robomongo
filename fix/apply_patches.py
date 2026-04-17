@@ -22,6 +22,9 @@ try:
         orig_init(self, *args, **kwargs)
         self['CC'] = 'cl'
         self['CXX'] = 'cl'
+        # COMPATIBILITY HACKS FOR MOZJS-60 AND VS 2022
+        self.Append(CPPDEFINES=['_HAS_STD_BYTE=0', '_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS', '_SILENCE_ALL_CXX20_DEPRECATION_WARNINGS'])
+        self.Append(CCFLAGS=['/Zc:__cplusplus', '/D_HAS_STD_BYTE=0'])
     SCons.Environment.Base.__init__ = new_init
 except:
     pass
