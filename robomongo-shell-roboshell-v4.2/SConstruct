@@ -1051,10 +1051,12 @@ env.AddMethod(mongo_platform.env_get_os_name_wrapper, 'GetTargetOSName')
 
 # VS 2022 COMPATIBILITY HACKS (PERMANENT)
 if mongo_platform.is_running_os('windows'):
+    env['ENV'] = os.environ
     env['MSVC_VERSION'] = '14.3'
+    env['MSVC_USE_SCRIPT'] = False
     env.Prepend(CPPDEFINES=[
         '_HAS_STD_BYTE=0', 
-        '_HAS_AUTO_PTR_ETC=1',
+        '_HAS_AUTO_PTR_ETC=1', 
         '_HAS_OLD_IOSTREAMS_MEMBERS=1',
         '_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS', 
         '_SILENCE_ALL_CXX20_DEPRECATION_WARNINGS'
