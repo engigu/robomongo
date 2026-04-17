@@ -61,7 +61,7 @@ jobs:
         if: steps.cache-robo-shell.outputs.cache-hit != 'true'
         run: |
           :: Install SCons and dependencies
-          python -m pip install scons==4.5.2 pyyaml
+          python -m pip install scons==4.5.2 pyyaml Cheetah3
           
           :: Apply hijacks to force v143
           python fix/apply_patches.py
