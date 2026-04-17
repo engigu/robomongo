@@ -91,6 +91,20 @@ public:
         invariant(end >= begin);
     }
 
+    // Explicit non-template version for pointer pairs (const char*)
+    ConstDataRange(const char* begin, const char* end, std::ptrdiff_t debug_offset = 0)
+        : _begin(begin), _end(end), _debug_offset(debug_offset) {
+        invariant(end >= begin);
+    }
+
+    // Explicit non-template version for pointer pairs (const unsigned char*)
+    ConstDataRange(const unsigned char* begin, const unsigned char* end, std::ptrdiff_t debug_offset = 0)
+        : _begin(reinterpret_cast<const byte_type*>(begin)),
+          _end(reinterpret_cast<const byte_type*>(end)),
+          _debug_offset(debug_offset) {
+        invariant(end >= begin);
+    }
+
     // Constructing from nullptr, nullptr initializes an empty ConstDataRange.
     ConstDataRange(std::nullptr_t, std::nullptr_t, std::ptrdiff_t debug_offset = 0)
         : _begin(nullptr), _end(nullptr), _debug_offset(debug_offset) {}
@@ -196,6 +210,10 @@ public:
     // arguments may not be const (since this is the mutable version of ConstDataRange).
     template <typename ByteLike>
     DataRange(ByteLike* begin, ByteLike* end, std::ptrdiff_t debug_offset = 0)
+        : ConstDataRange(begin, end, debug_offset) {}
+
+    // Explicit non-template version for pointer pairs (char*)
+    DataRange(char* begin, char* end, std::ptrdiff_t debug_offset = 0)
         : ConstDataRange(begin, end, debug_offset) {}
 
     template <typename ByteLike>
