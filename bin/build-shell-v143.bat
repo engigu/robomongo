@@ -52,7 +52,7 @@ python -m pip install scons==4.5.2 pyyaml Cheetah3 psutil
 echo [4/4] Building...
 cd /d "%SHELL_DIR%"
 echo Starting SCons build. This will take a while...
-python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j%NUMBER_OF_PROCESSORS% --link-model=object --disable-warnings-as-errors --cxx-std=14
+python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j%NUMBER_OF_PROCESSORS% --link-model=object --disable-warnings-as-errors --cxx-std=17
 
 if %ERRORLEVEL% equ 0 (
     echo.
