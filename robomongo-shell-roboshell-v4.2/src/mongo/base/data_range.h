@@ -72,17 +72,44 @@ protected:
 public:
     using byte_type = char;
 
-    // You can construct a ConstDataRange from any byte-like sequence. Byte-like means an
-    // integral type with a size of one.
-    //
-    // begin and end should point to the first and one past last bytes in
-    // the range you wish to view.
-    //
-    // debug_offset provides a way to indicate that the ConstDataRange is
-    // located at an offset into some larger logical buffer. By setting it
-    // to a non-zero value, you'll change the Status messages that are
-    // returned on failure to be offset by the amount passed to this
-    // constructor.
+    // Non-template constructors come FIRST to ensure priority in VS 2022
+    inline ConstDataRange(const char* begin, const char* end, std::ptrdiff_t debug_offset = 0)
+        : _begin(begin), _end(end), _debug_offset(debug_offset) {
+        invariant(end >= begin);
+    }
+
+    inline ConstDataRange(const unsigned char* begin, const unsigned char* end, std::ptrdiff_t debug_offset = 0)
+        : _begin(reinterpret_cast<const byte_type*>(begin)),
+          _end(reinterpret_cast<const byte_type*>(end)),
+          _debug_offset(debug_offset) {
+        invariant(end >= begin);
+    }
+
+    inline ConstDataRange(unsigned char* begin, unsigned char* end, std::ptrdiff_t debug_offset = 0)
+        : _begin(reinterpret_cast<const byte_type*>(begin)),
+          _end(reinterpret_cast<const byte_type*>(end)),
+          _debug_offset(debug_offset) {
+        invariant(end >= begin);
+    }
+
+    inline ConstDataRange(const char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : _begin(begin),
+          _end(begin + length),
+          _debug_offset(debug_offset) {}
+
+    inline ConstDataRange(const unsigned char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : _begin(reinterpret_cast<const byte_type*>(begin)),
+          _end(reinterpret_cast<const byte_type*>(begin + length)),
+          _debug_offset(debug_offset) {}
+
+    inline ConstDataRange(unsigned char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : _begin(reinterpret_cast<const byte_type*>(begin)),
+          _end(reinterpret_cast<const byte_type*>(begin + length)),
+          _debug_offset(debug_offset) {}
+
+    inline ConstDataRange(std::nullptr_t, std::nullptr_t, std::ptrdiff_t debug_offset = 0)
+        : _begin(nullptr), _end(nullptr), _debug_offset(debug_offset) {}
+
     template <typename ByteLike, typename std::enable_if_t<isByteV<ByteLike>, int> = 0>
     ConstDataRange(const ByteLike* begin, const ByteLike* end, std::ptrdiff_t debug_offset = 0)
         : _begin(reinterpret_cast<const byte_type*>(begin)),
@@ -91,53 +118,17 @@ public:
         invariant(end >= begin);
     }
 
-    // Explicit non-template version for pointer pairs (const char*)
-    ConstDataRange(const char* begin, const char* end, std::ptrdiff_t debug_offset = 0)
-        : _begin(begin), _end(end), _debug_offset(debug_offset) {
-        invariant(end >= begin);
-    }
-
-    // Explicit non-template version for pointer pairs (const unsigned char*)
-    ConstDataRange(const unsigned char* begin, const unsigned char* end, std::ptrdiff_t debug_offset = 0)
-        : _begin(reinterpret_cast<const byte_type*>(begin)),
-          _end(reinterpret_cast<const byte_type*>(end)),
-          _debug_offset(debug_offset) {
-        invariant(end >= begin);
-    }
-
-    // Constructing from nullptr, nullptr initializes an empty ConstDataRange.
-    ConstDataRange(std::nullptr_t, std::nullptr_t, std::ptrdiff_t debug_offset = 0)
-        : _begin(nullptr), _end(nullptr), _debug_offset(debug_offset) {}
-
-    // You can also construct from a pointer to a byte-like type and a size.
     template <typename ByteLike, typename std::enable_if_t<isByteV<ByteLike>, int> = 0>
     ConstDataRange(const ByteLike* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
         : _begin(reinterpret_cast<const byte_type*>(begin)),
           _end(reinterpret_cast<const byte_type*>(_begin + length)),
           _debug_offset(debug_offset) {}
 
-    ConstDataRange(const char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
-        : _begin(begin),
-          _end(begin + length),
-          _debug_offset(debug_offset) {}
-
-    // Explicit non-template version for unsigned char (uint8_t)
-    ConstDataRange(const unsigned char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
-        : _begin(reinterpret_cast<const byte_type*>(begin)),
-          _end(reinterpret_cast<const byte_type*>(begin + length)),
-          _debug_offset(debug_offset) {}
-
-    // ConstDataRange can also act as a view of a container of byte-like values, such as a
-    // std::vector<uint8_t> or a std::array<char, size>. The requirements are that the
-    // value_type of the container is byte-like and that the values be contiguous - the container
-    // must have a data() function that returns a pointer to the front and a size() function
-    // that returns the number of elements.
     template <typename Container,
               typename std::enable_if_t<ContiguousContainerOfByteLike<Container>::value, int> = 0>
     ConstDataRange(const Container& container, std::ptrdiff_t debug_offset = 0)
         : ConstDataRange(container.data(), container.size(), debug_offset) {}
 
-    // You can also construct from a C-style array, including string literals.
     template <typename ByteLike, size_t N, typename std::enable_if_t<isByteV<ByteLike>, int> = 0>
     ConstDataRange(const ByteLike (&arr)[N], std::ptrdiff_t debug_offset = 0)
         : ConstDataRange(arr, N, debug_offset) {}
@@ -206,14 +197,23 @@ protected:
 
 class DataRange : public ConstDataRange {
 public:
-    // You can construct a DataRange from all the same types as ConstDataRange, except that the
-    // arguments may not be const (since this is the mutable version of ConstDataRange).
-    template <typename ByteLike>
-    DataRange(ByteLike* begin, ByteLike* end, std::ptrdiff_t debug_offset = 0)
+    inline DataRange(char* begin, char* end, std::ptrdiff_t debug_offset = 0)
         : ConstDataRange(begin, end, debug_offset) {}
 
-    // Explicit non-template version for pointer pairs (char*)
-    DataRange(char* begin, char* end, std::ptrdiff_t debug_offset = 0)
+    inline DataRange(unsigned char* begin, unsigned char* end, std::ptrdiff_t debug_offset = 0)
+        : ConstDataRange(begin, end, debug_offset) {}
+
+    inline DataRange(char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : ConstDataRange(begin, length, debug_offset) {}
+
+    inline DataRange(unsigned char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : ConstDataRange(begin, length, debug_offset) {}
+
+    inline DataRange(std::nullptr_t, std::nullptr_t, std::ptrdiff_t debug_offset = 0)
+        : ConstDataRange(nullptr, nullptr, debug_offset) {}
+
+    template <typename ByteLike>
+    DataRange(ByteLike* begin, ByteLike* end, std::ptrdiff_t debug_offset = 0)
         : ConstDataRange(begin, end, debug_offset) {}
 
     template <typename ByteLike>
@@ -226,18 +226,11 @@ public:
     DataRange(ByteLike* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
         : ConstDataRange(begin, length, debug_offset) {}
 
-    // Explicit non-template version to satisfy VS 2022 / C++17 ambiguities
-    DataRange(char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
-        : ConstDataRange(begin, length, debug_offset) {}
-
     template <typename ByteLike>
     DataRange(const ByteLike*, size_t, std::ptrdiff_t debug_offset) = delete;
 
     template <typename ByteLike>
     DataRange(const ByteLike*, size_t) = delete;
-
-    DataRange(std::nullptr_t, std::nullptr_t, std::ptrdiff_t debug_offset = 0)
-        : ConstDataRange(nullptr, nullptr, debug_offset) {}
 
     template <typename Container,
               typename std::enable_if_t<ContiguousContainerOfByteLike<Container>::value, int> = 0>
@@ -292,11 +285,6 @@ struct DataType::Handler<T,
     static Status load(
         T* t, const char* ptr, size_t length, size_t* advanced, std::ptrdiff_t debug_offset) {
         if (t) {
-            // Assuming you know what you're doing at the read above this
-            // is fine.  Either you're reading into a readable buffer, so
-            // ptr started off non-const, or the const_cast will feed back
-            // to const char* taking Const variants.  So it'll get tossed
-            // out again.
             *t = T(const_cast<char*>(ptr), const_cast<char*>(ptr) + length);
         }
 
