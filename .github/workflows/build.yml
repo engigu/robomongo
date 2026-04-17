@@ -72,7 +72,7 @@ jobs:
             exit /b 1
           )
           cd robo-shell
-          python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j2 --link-model=object --disable-minimum-compiler-version-enforcement
+          python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j2 --link-model=object
         shell: cmd
 
       - name: Install Dependencies (OpenSSL, NSIS)

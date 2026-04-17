@@ -55,7 +55,7 @@ python fix\apply_patches.py
 
 cd /d "%SHELL_DIR%"
 echo Starting SCons build. This will take a while...
-python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j%NUMBER_OF_PROCESSORS% --link-model=object --disable-minimum-compiler-version-enforcement
+python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j%NUMBER_OF_PROCESSORS% --link-model=object
 
 if %ERRORLEVEL% equ 0 (
     echo.
