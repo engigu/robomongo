@@ -314,7 +314,7 @@ struct cpuid_t {
     { }
 };
 #else
-    typedef struct {} cpuid_t;
+    struct cpuid_t {};
 #endif // defined(WINVER >= 0x0600)
 
 /**
