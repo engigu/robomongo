@@ -60,48 +60,59 @@ except:
 def patch_cpp_syntax(target_dir):
     print(f"--- Fixing CPP Syntax in: {target_dir} ---")
     fixed_count = 0
+    if not os.path.exists(target_dir):
+        return
+
     for root, dirs, files in os.walk(target_dir):
         for file in files:
+            path = os.path.join(root, file)
+            
+            # 1. Fix s2cellid.cc (stdext::hash_value specialization)
             if file == 's2cellid.cc':
-                path = os.path.join(root, file)
                 try:
                     with open(path, 'r', encoding='utf-8', errors='ignore') as f:
                         lines = f.readlines()
-                    
                     new_lines = []
                     found = False
                     for line in lines:
-                        # Find the problematic specialization
                         if "template<> size_t stdext::hash_value<S2CellId>(const S2CellId" in line:
-                            # Replace with a simpler overload that works in VS 2022
                             new_lines.append("namespace stdext {\n")
                             new_lines.append("    inline size_t hash_value(const S2CellId& id) {\n")
                             found = True
                         elif found and line.strip() == "}":
-                            new_lines.append("    }\n")
-                            new_lines.append("}\n")
+                            new_lines.append("    }\n}\n")
                             found = False
                         else:
                             new_lines.append(line)
-                    
-                    if found: # Fallback if closing brace wasn't found exactly as expected
-                         new_lines.append("    }\n}\n")
-
                     with open(path, 'w', encoding='utf-8') as f:
                         f.writelines(new_lines)
                     fixed_count += 1
-                    print(f"Fixed (Overload Style): {path}")
-                except Exception as e:
-                    print(f"Failed to fix {path}: {e}")
-    print(f"Fixed {fixed_count} CPP files.")
+                    print(f"Fixed (S2 Hash): {path}")
+                except: pass
+
+            # 2. Fix UUID::fromCDR brace initialization
+            if file.endswith('.cpp') or file.endswith('.h'):
+                try:
+                    with open(path, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
+                    if 'UUID::fromCDR({' in content:
+                        new_content = content.replace('UUID::fromCDR({', 'UUID::fromCDR(ConstDataRange{')
+                        with open(path, 'w', encoding='utf-8') as f:
+                            f.write(new_content)
+                        fixed_count += 1
+                        print(f"Fixed (UUID Brace): {path}")
+                except: pass
+                
+    print(f"Fixed {fixed_count} CPP syntax issues.")
 
 if __name__ == "__main__":
-    # Patch build environments
     patch_directory('.')
     patch_directory('../robo-shell')
+    patch_directory('./robo-shell')
     patch_directory('./robomongo-shell-roboshell-v4.2')
-    # Fix CPP syntax for VS 2022
+    
     patch_cpp_syntax('.')
     patch_cpp_syntax('../robo-shell')
+    patch_cpp_syntax('./robo-shell')
     patch_cpp_syntax('./robomongo-shell-roboshell-v4.2')
     print("--- GLOBAL HIJACK COMPLETE ---")
