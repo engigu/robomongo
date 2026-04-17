@@ -26,7 +26,7 @@ jobs:
         with:
           repository: paralect/robomongo-shell
           ref: roboshell-v4.2
-          path: robo-shell
+          path: robomongo-shell-roboshell-v4.2
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -51,7 +51,7 @@ jobs:
         id: cache-robo-shell
         uses: actions/cache@v4
         with:
-          path: robo-shell/build
+          path: robomongo-shell-roboshell-v4.2/build
           key: ${{ runner.os }}-robo-shell-v143-stable
           restore-keys: |
             ${{ runner.os }}-robo-shell-v143-
@@ -67,11 +67,11 @@ jobs:
           python fix/apply_patches.py
           
           :: Build
-          if not exist "robo-shell" (
-            echo "Error: robo-shell directory not found!"
+          if not exist "robomongo-shell-roboshell-v4.2" (
+            echo "Error: robomongo-shell-roboshell-v4.2 directory not found!"
             exit /b 1
           )
-          cd robo-shell
+          cd robomongo-shell-roboshell-v4.2
           python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j2 --link-model=object
         shell: cmd
 
@@ -96,8 +96,8 @@ jobs:
 
       - name: Configure and Build Robo 3T
         run: |
-          if not exist "robo-shell\build" mkdir "robo-shell\build"
-          subst S: "%GITHUB_WORKSPACE%\robo-shell"
+          if not exist "robomongo-shell-roboshell-v4.2\build" mkdir "robomongo-shell-roboshell-v4.2\build"
+          subst S: "%GITHUB_WORKSPACE%\robomongo-shell-roboshell-v4.2"
           subst R: "%GITHUB_WORKSPACE%"
           mkdir D:\b
           mkdir D:\dist
@@ -116,7 +116,7 @@ jobs:
       - name: Build and Package Robo 3T
         run: |
           :: 准备基础虚盘映射以缩短路径，防止 NSIS 路径溢出
-          subst S: "%GITHUB_WORKSPACE%\robo-shell" 2>nul || echo S: already mapped
+          subst S: "%GITHUB_WORKSPACE%\robomongo-shell-roboshell-v4.2" 2>nul || echo S: already mapped
           subst R: "%GITHUB_WORKSPACE%" 2>nul || echo R: already mapped
           cd /d D:\b
           

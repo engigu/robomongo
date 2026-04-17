@@ -6,14 +6,14 @@ rem Robo Shell Build Script for VS 2022 (v143)
 rem ===========================================================================
 
 set "PROJECT_ROOT=%~dp0.."
-set "SHELL_DIR=%PROJECT_ROOT%\robo-shell"
+set "SHELL_DIR=%PROJECT_ROOT%\robomongo-shell-roboshell-v4.2"
 set "REPO_URL=https://github.com/paralect/robomongo-shell.git"
 set "REPO_BRANCH=roboshell-v4.2"
 
 if not exist "%SHELL_DIR%" (
     echo [0/4] Cloning Robo Shell from remote (!REPO_BRANCH!)...
     cd /d "%PROJECT_ROOT%"
-    git clone --depth 1 -b !REPO_BRANCH! !REPO_URL! robo-shell
+    git clone --depth 1 -b !REPO_BRANCH! !REPO_URL! robomongo-shell-roboshell-v4.2
     if %ERRORLEVEL% neq 0 (
         echo Error: Failed to clone repository.
         exit /b 1
