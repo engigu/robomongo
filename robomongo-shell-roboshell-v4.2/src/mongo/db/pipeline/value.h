@@ -479,7 +479,7 @@ inline long long Value::getLong() const {
 inline UUID Value::getUuid() const {
     verify(_storage.binDataType() == BinDataType::newUUID);
     auto stringData = _storage.getString();
-    return UUID::fromCDR(ConstDataRange{stringData.rawData(), stringData.size()});
+    return UUID::fromCDR(ConstDataRange(stringData.rawData(), stringData.size()));
 }
 
 inline BSONBinData Value::getBinData() const {

@@ -491,8 +491,8 @@ add_option('cache-dir',
 )
 
 add_option("cxx-std",
-    choices=["17"],
-    default="17",
+    choices=["14", "17"],
+    default="14",
     help="Select the C++ langauge standard to build with",
 )
 
@@ -1054,14 +1054,14 @@ if mongo_platform.is_running_os('windows'):
     env['ENV'] = os.environ
     env['MSVC_VERSION'] = '14.3'
     env['MSVC_USE_SCRIPT'] = False
-    env.Prepend(CPPDEFINES=[
+    env.Append(CPPDEFINES=[
         '_HAS_STD_BYTE=0', 
         '_HAS_AUTO_PTR_ETC=1', 
         '_HAS_OLD_IOSTREAMS_MEMBERS=1',
         '_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS', 
         '_SILENCE_ALL_CXX20_DEPRECATION_WARNINGS'
     ])
-    env.Prepend(CCFLAGS=['/Zc:__cplusplus', '/D_HAS_STD_BYTE=0', '/WX-', '/std:c++14', '/wd4819', '/wd4005', '/wd4996', '/wd5033'])
+    env.Append(CCFLAGS=['/Zc:__cplusplus', '/D_HAS_STD_BYTE=0', '/WX-', '/std:c++14', '/wd4819', '/wd4005', '/wd4996', '/wd5033'])
 
 def fatal_error(env, msg, *args):
     print((msg.format(*args)))

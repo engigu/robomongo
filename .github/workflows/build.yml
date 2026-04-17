@@ -53,7 +53,7 @@ jobs:
             exit /b 1
           )
           cd robomongo-shell-roboshell-v4.2
-          python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j2 --link-model=object
+          python -m SCons mongo.exe MONGO_VERSION=4.2.0 --release -j2 --link-model=object --disable-warnings-as-errors --cxx-std=14
         shell: cmd
 
       - name: Install Qt
