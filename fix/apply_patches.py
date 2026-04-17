@@ -56,25 +56,31 @@ def patch_cpp_syntax(target_dir):
                 path = os.path.join(root, file)
                 try:
                     with open(path, 'r', encoding='utf-8', errors='ignore') as f:
-                        content = f.read()
+                        lines = f.readlines()
                     
-                    # Fix stdext::hash_value specialization for VS 2022
-                    old_line = "template<> size_t stdext::hash_value<S2CellId>(const S2CellId &id) {"
-                    if old_line in content:
-                        new_content = content.replace(
-                            old_line,
-                            "namespace stdext { template<> size_t hash_value<S2CellId>(const S2CellId &id) {"
-                        )
-                        # We need to close the namespace. In s2cellid.cc, this is usually at the end of the block.
-                        # For simplicity, we just add the closing brace if we did the replacement.
-                        # Actually, s2cellid.cc usually has this at the very end of the file.
-                        if "namespace stdext {" in new_content and not new_content.strip().endswith("}"):
-                             new_content += "\n}\n"
-                        
-                        with open(path, 'w', encoding='utf-8') as f:
-                            f.write(new_content)
-                        fixed_count += 1
-                        print(f"Fixed: {path}")
+                    new_lines = []
+                    found = False
+                    for line in lines:
+                        # Find the problematic specialization
+                        if "template<> size_t stdext::hash_value<S2CellId>(const S2CellId" in line:
+                            # Replace with a simpler overload that works in VS 2022
+                            new_lines.append("namespace stdext {\n")
+                            new_lines.append("    inline size_t hash_value(const S2CellId& id) {\n")
+                            found = True
+                        elif found and line.strip() == "}":
+                            new_lines.append("    }\n")
+                            new_lines.append("}\n")
+                            found = False
+                        else:
+                            new_lines.append(line)
+                    
+                    if found: # Fallback if closing brace wasn't found exactly as expected
+                         new_lines.append("    }\n}\n")
+
+                    with open(path, 'w', encoding='utf-8') as f:
+                        f.writelines(new_lines)
+                    fixed_count += 1
+                    print(f"Fixed (Overload Style): {path}")
                 except Exception as e:
                     print(f"Failed to fix {path}: {e}")
     print(f"Fixed {fixed_count} CPP files.")
