@@ -213,6 +213,9 @@ namespace Robomongo
                         if (result == QMessageBox::Yes) {
                             currentQW->applyFavorite(script, filePath, favoriteItem->name());
                             return;
+                        } else {
+                            // User clicked 'No', abort the operation
+                            return;
                         }
                     }
                 }

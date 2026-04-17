@@ -13,6 +13,7 @@
 #include <QMessageBox>
 #include <QFileInfo>
 #include <QDirIterator>
+#include "robomongo/gui/GuiRegistry.h"
 
 namespace
 {
@@ -50,6 +51,7 @@ namespace Robomongo
     {
         setText(0, _name);
         setIcon(0, QIcon(":robomongo/icons/bson_object_16x16.png"));
+        setFlags(flags() | Qt::ItemIsDragEnabled);
     }
 
     void ExplorerFavoriteItem::setName(const QString &name)
@@ -83,7 +85,8 @@ namespace Robomongo
         _name(name)
     {
         setText(0, _name);
-        setIcon(0, QIcon(":robomongo/icons/collection_16x16.png")); 
+        setIcon(0, GuiRegistry::instance().folderIcon()); 
+        setFlags(flags() | Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled);
     }
 
     void ExplorerFavoritesFolderItem::setName(const QString &name)
@@ -123,6 +126,7 @@ namespace Robomongo
     {
         setText(0, tr("Favorites (⭐️)"));
         setIcon(0, QIcon(":robomongo/icons/mongodb_16x16.png"));
+        setFlags(flags() | Qt::ItemIsDropEnabled);
         refresh();
     }
 

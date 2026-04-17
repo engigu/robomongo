@@ -10,6 +10,7 @@ namespace Robomongo
     public:
         explicit ExplorerTreeWidget(QWidget *parent = 0);
     protected:
-        virtual void contextMenuEvent(QContextMenuEvent *event);
+        virtual void contextMenuEvent(QContextMenuEvent *event) override;
+        virtual void dropEvent(QDropEvent *event) override;
     };
 }
