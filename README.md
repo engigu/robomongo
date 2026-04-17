@@ -8,9 +8,9 @@ Robo 3T is no longer being developed by Studio 3T. Studio 3T recommends users lo
 
 Read more about the changes on the [Robo 3T Blog](https://blog.robomongo.org/studio3t-free/).
 
-The latest release of Robo 3T is version 1.5.1, featuring build pipeline optimizations and critical compilation fixes. You can download it directly from:
+The latest release of Robo 3T is version 1.5.2, featuring modern VS 2022 toolchain support and C++17 standardization. You can download it directly from:
 
-* [Robo 3T v1.5.1 Official Release (GitHub)](https://github.com/engigu/robomongo/releases/tag/v1.5.1)
+* [Robo 3T v1.5.2 Official Release (GitHub)](https://github.com/engigu/robomongo/releases/tag/v1.5.2)
 
 The previous legacy releases (1.4.4) are still available here:
 
@@ -27,7 +27,7 @@ About Robo 3T
 
 [Robo 3T](http://www.robomongo.org) (formerly Robomongo *) is a shell-centric cross-platform MongoDB management tool. Unlike most other MongoDB admin UI tools, Robo 3T embeds the actual `mongo` shell in a tabbed interface with access to a shell command line as well as GUI interaction.
 
-The latest stable release **Robo 3T 1.5.1** embeds **MongoDB 4.2** shell.   
+The latest stable release **Robo 3T 1.5.2** embeds **MongoDB 4.2** shell.   
 
 Blog:     http://blog.robomongo.org/robo-3t-1-4/  
 Download: https://robomongo.org/download  
@@ -36,6 +36,7 @@ Watch: [Robo 3T Youtube channel](https://www.youtube.com/channel/UCM_7WAseRWeeiB
 Follow: https://twitter.com/Robomongo
 
 **Embedded MongoDB shell history:**  
+Robo 3T 1.5.2 -> MongoDB 4.2     
 Robo 3T 1.5.1 -> MongoDB 4.2     
 Robo 3T 1.4 -> MongoDB 4.2     
 Robo 3T 1.3 -> MongoDB 4.0     
@@ -45,14 +46,15 @@ Robo 3T 0.8.x -> MongoDB 2.4.0
 
 \* [Robomongo has been acquired by 3T](https://studio3t.com/press/3t-software-labs-acquires-robomongo-the-most-widely-used-mongodb-tool/)
 
-What's new in latest Robo 3T 1.5.1?
+What's new in latest Robo 3T 1.5.2?
 ====================================
 
 Key Fixes & Updates:
-  - Fixed Windows Build Pipeline (Ninja & Virtual Drive mapping)
-  - Resolved C2064/C2661 compilation errors in MongoServer.cpp
-  - Fully bundled library distribution (windeployqt support)
-  - OpenSSL 1.1.1u integration
+  - Full migration to **Visual Studio 2022 (v143 Toolset)**
+  - Enforced **C++17 Standard** for all components
+  - Resolved `ConstDataRange` and `OID` template ambiguities
+  - Refactored `mozjs-60` for modern C++ compatibility
+  - Integrated OpenSSL 1.1.1u and Qt 5.15.2
 
 New Features:   
   - Mongo shell 4.2 upgrade  
