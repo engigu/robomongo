@@ -15,6 +15,7 @@ namespace
         QFile file(filePath);
         if (file.open(QFile::ReadOnly | QFile::Text)) {
             QTextStream in(&file);
+            in.setCodec("UTF-8");
             QApplication::setOverrideCursor(Qt::WaitCursor);
             text = in.readAll();
             QApplication::restoreOverrideCursor();
@@ -44,6 +45,7 @@ namespace
         QFile file(filePath);
         if (file.open(QFile::WriteOnly | QFile::Text)) {
             QTextStream out(&file);
+            out.setCodec("UTF-8");
             QApplication::setOverrideCursor(Qt::WaitCursor);
             out << text;
             QApplication::restoreOverrideCursor();
