@@ -182,7 +182,7 @@ void BinDataInfo::Functions::toString::call(JSContext* cx, JS::CallArgs args) {
 
         // If this is in fact a UUID, use a more friendly string representation.
         if (decoded.length() == mongo::UUID::kNumBytes) {
-            mongo::UUID uuid = mongo::UUID::fromCDR(ConstDataRange{decoded.data(), decoded.length()});
+            mongo::UUID uuid = mongo::UUID::fromCDR(ConstDataRange(decoded.data(), decoded.length()));
             ss << "UUID(\"" << uuid.toString() << "\")";
             ValueReader(cx, args.rval()).fromStringData(ss.operator std::string());
             return;
