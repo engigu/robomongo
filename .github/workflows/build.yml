@@ -21,13 +21,6 @@ jobs:
       - name: Checkout Robo 3T
         uses: actions/checkout@v4
 
-      - name: Checkout Robo Shell
-        uses: actions/checkout@v4
-        with:
-          repository: paralect/robomongo-shell
-          ref: roboshell-v4.2
-          path: robomongo-shell-roboshell-v4.2
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -62,9 +55,6 @@ jobs:
         run: |
           :: Install SCons and dependencies
           python -m pip install scons==4.5.2 pyyaml Cheetah3
-          
-          :: Apply hijacks to force v143
-          python fix/apply_patches.py
           
           :: Build
           if not exist "robomongo-shell-roboshell-v4.2" (

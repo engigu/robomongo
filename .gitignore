@@ -21,7 +21,7 @@ libs/
 
 .idea/
 /robo-shell/
-/robomongo-shell-*/
+# /robomongo-shell-*/
 
 # Created by http://www.gitignore.io
 
