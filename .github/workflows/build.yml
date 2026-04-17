@@ -45,7 +45,7 @@ jobs:
         if: steps.cache-robo-shell.outputs.cache-hit != 'true'
         run: |
           :: Install SCons and dependencies
-          python -m pip install scons==4.5.2 pyyaml Cheetah3
+          python -m pip install scons==4.5.2 pyyaml Cheetah3 psutil
           
           :: Build
           if not exist "robomongo-shell-roboshell-v4.2" (
