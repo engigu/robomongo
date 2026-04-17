@@ -84,7 +84,7 @@ public:
     FLEEncryptionFrame() : _plaintext(ConstDataRange(nullptr, 0)){};
 
     const ConstDataRange get() const& {
-        return ConstDataRange(_data);
+        return ConstDataRange(_data.data(), _data.size());
     }
 
     std::shared_ptr<SymmetricKey> getKey() const {
@@ -162,7 +162,7 @@ public:
     }
 
     ConstDataRange getPlaintext() const {
-        return ConstDataRange(_plaintext);
+        return ConstDataRange(_plaintext.data(), _plaintext.size());
     }
 
     std::vector<uint8_t>& getPlaintextMutable() {

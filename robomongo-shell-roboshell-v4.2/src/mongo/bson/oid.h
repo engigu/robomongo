@@ -226,7 +226,7 @@ public:
     }
 
     ConstDataRange toCDR() const {
-        return ConstDataRange(_data);
+        return ConstDataRange(_data.data(), _data.size());
     }
 
 private:
