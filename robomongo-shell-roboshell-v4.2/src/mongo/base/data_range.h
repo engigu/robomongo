@@ -102,6 +102,17 @@ public:
           _end(reinterpret_cast<const byte_type*>(_begin + length)),
           _debug_offset(debug_offset) {}
 
+    ConstDataRange(const char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : _begin(begin),
+          _end(begin + length),
+          _debug_offset(debug_offset) {}
+
+    // Explicit non-template version for unsigned char (uint8_t)
+    ConstDataRange(const unsigned char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : _begin(reinterpret_cast<const byte_type*>(begin)),
+          _end(reinterpret_cast<const byte_type*>(begin + length)),
+          _debug_offset(debug_offset) {}
+
     // ConstDataRange can also act as a view of a container of byte-like values, such as a
     // std::vector<uint8_t> or a std::array<char, size>. The requirements are that the
     // value_type of the container is byte-like and that the values be contiguous - the container
@@ -195,6 +206,10 @@ public:
 
     template <typename ByteLike>
     DataRange(ByteLike* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
+        : ConstDataRange(begin, length, debug_offset) {}
+
+    // Explicit non-template version to satisfy VS 2022 / C++17 ambiguities
+    DataRange(char* begin, std::size_t length, std::ptrdiff_t debug_offset = 0)
         : ConstDataRange(begin, length, debug_offset) {}
 
     template <typename ByteLike>
