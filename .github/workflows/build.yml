@@ -60,13 +60,17 @@ jobs:
       - name: Build Robo Shell (Fallback)
         if: steps.cache-robo-shell.outputs.cache-hit != 'true'
         run: |
-          :: Install SCons
+          :: Install SCons and dependencies
           python -m pip install scons==4.5.2 pyyaml
           
           :: Apply hijacks to force v143
           python fix/apply_patches.py
           
           :: Build
+          if not exist "robo-shell" (
+            echo "Error: robo-shell directory not found!"
+            exit /b 1
+          )
           cd robo-shell
           python -m SCons mongo.exe --release -j2 --link-model=object --disable-minimum-compiler-version-enforcement
         shell: cmd
@@ -92,8 +96,9 @@ jobs:
 
       - name: Configure and Build Robo 3T
         run: |
-          subst S: "${{ github.workspace }}\robo-shell"
-          subst R: "${{ github.workspace }}"
+          if not exist "robo-shell\build" mkdir "robo-shell\build"
+          subst S: "%GITHUB_WORKSPACE%\robo-shell"
+          subst R: "%GITHUB_WORKSPACE%"
           mkdir D:\b
           mkdir D:\dist
           cd /d D:\b
@@ -111,8 +116,8 @@ jobs:
       - name: Build and Package Robo 3T
         run: |
           :: 准备基础虚盘映射以缩短路径，防止 NSIS 路径溢出
-          subst S: "${{ github.workspace }}\robo-shell"
-          subst R: "${{ github.workspace }}"
+          subst S: "%GITHUB_WORKSPACE%\robo-shell" 2>nul || echo S: already mapped
+          subst R: "%GITHUB_WORKSPACE%" 2>nul || echo R: already mapped
           cd /d D:\b
           
           :: 准备环境 PATH
@@ -128,7 +133,7 @@ jobs:
           cpack -G NSIS
           
           :: 3. 整理产物 (深度探测模式)
-          set "DIST_DIR=${{ github.workspace }}\dist"
+          set "DIST_DIR=%GITHUB_WORKSPACE%\dist"
           if not exist "%DIST_DIR%" mkdir "%DIST_DIR%"
           
           echo "Scanning D:\b\package for final artifacts..."
@@ -177,6 +182,7 @@ jobs:
       - name: Cleanup Virtual Drives
         if: always()
         run: |
-          subst S: /D || echo "S: already unmapped"
-          subst R: /D || echo "R: already unmapped"
+          subst S: /D 2>nul || echo S: not mapped
+          subst R: /D 2>nul || echo R: not mapped
+          exit 0
         shell: cmd
