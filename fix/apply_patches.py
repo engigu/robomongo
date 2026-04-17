@@ -22,10 +22,16 @@ try:
         orig_init(self, *args, **kwargs)
         self['CC'] = 'cl'
         self['CXX'] = 'cl'
-        # COMPATIBILITY HACKS FOR MOZJS-60 AND VS 2022
-        self.Append(CPPDEFINES=['_HAS_STD_BYTE=0', '_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS', '_SILENCE_ALL_CXX20_DEPRECATION_WARNINGS'])
+        # COMPATIBILITY HACKS FOR MOZJS-60 AND VS 2022 - FORCE PREPEND FOR PRIORITY
+        self.Prepend(CPPDEFINES=[
+            '_HAS_STD_BYTE=0', 
+            '_HAS_AUTO_PTR_ETC=1',
+            '_HAS_OLD_IOSTREAMS_MEMBERS=1',
+            '_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS', 
+            '_SILENCE_ALL_CXX20_DEPRECATION_WARNINGS'
+        ])
         # Disable /WX (Warnings as Errors) and force C++14 standard
-        self.Append(CCFLAGS=['/Zc:__cplusplus', '/D_HAS_STD_BYTE=0', '/WX-', '/std:c++14', '/wd4819', '/wd4005', '/wd4996', '/wd5033'])
+        self.Prepend(CCFLAGS=['/Zc:__cplusplus', '/D_HAS_STD_BYTE=0', '/WX-', '/std:c++14', '/wd4819', '/wd4005', '/wd4996', '/wd5033'])
     SCons.Environment.Base.__init__ = new_init
 except:
     pass
