@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - dev
     tags:
       - 'v*'
 
@@ -32,17 +33,10 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install MSVC v141 Toolset Component
-        run: |
-          $vsInstaller = "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe"
-          $process = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath ""C:\Program Files\Microsoft Visual Studio\2022\Enterprise"" --add Microsoft.VisualStudio.Component.VC.v141.x86.x64 --add Microsoft.VisualStudio.Component.VC.v141.ATL --add Microsoft.VisualStudio.Component.VC.v141.MFC --quiet --norestart" -PassThru
-          while (!$process.HasExited) { Start-Sleep -Seconds 30 }
-        shell: powershell
-
-      - name: Setup MSVC (v141 Toolset)
+      - name: Setup MSVC (v143 Toolset)
         uses: ilammy/msvc-dev-cmd@v1
         with:
-          toolset: '14.1'
+          toolset: '14.3'
           arch: x64
 
       - name: Install Qt
@@ -55,13 +49,28 @@ jobs:
           modules: qtcharts qtwebengine
 
       - name: Cache Robo Shell (Restoring from Cloud)
+        id: cache-robo-shell
         uses: actions/cache@v4
         with:
           path: robo-shell/build
-          key: ${{ runner.os }}-robo-shell-v141-stable
+          key: ${{ runner.os }}-robo-shell-v143-stable
           restore-keys: |
-            ${{ runner.os }}-robo-shell-v141-
+            ${{ runner.os }}-robo-shell-v143-
           fail-on-cache-miss: false
+
+      - name: Build Robo Shell (Fallback)
+        if: steps.cache-robo-shell.outputs.cache-hit != 'true'
+        run: |
+          :: Install SCons
+          python -m pip install scons==4.5.2 pyyaml
+          
+          :: Apply hijacks to force v143
+          python fix/apply_patches.py
+          
+          :: Build
+          cd robo-shell
+          python -m SCons mongo.exe --release -j2 --link-model=object --disable-minimum-compiler-version-enforcement
+        shell: cmd
 
       - name: Install Dependencies (OpenSSL, NSIS)
         run: |

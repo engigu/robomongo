@@ -20,6 +20,8 @@ libs/
 /src/robomongo/robomongo.pro.user.1.3
 
 .idea/
+/robo-shell/
+/robomongo-shell-*/
 
 # Created by http://www.gitignore.io
 
