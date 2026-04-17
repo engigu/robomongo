@@ -226,7 +226,7 @@ public:
     }
 
     ConstDataRange toCDR() const {
-        return ConstDataRange(_data.data(), _data.size());
+        return ConstDataRange(_data, static_cast<std::size_t>(kOIDSize));
     }
 
 private:
