@@ -137,6 +137,19 @@ jobs:
           dir "%DIST_DIR%"
         shell: cmd
 
+      - name: Prepare Release Notes
+        run: |
+          set "VERSION_FILE=RELEASE_NOTES_${{ github.ref_name }}.md"
+          echo "Looking for %VERSION_FILE%..."
+          if exist "%VERSION_FILE%" (
+            copy /y "%VERSION_FILE%" "release_notes_final.md"
+            echo "Using %VERSION_FILE%"
+          ) else (
+            echo "## Robo 3T ${{ github.ref_name }} (Modern Infrastructure Release)" > "release_notes_final.md"
+            echo "Standard release notes generated."
+          )
+        shell: cmd
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
@@ -146,19 +159,7 @@ jobs:
             dist/*.exe
           fail_on_unmatched_files: false
           name: Robo 3T ${{ github.ref_name }} Reborn Release
-          body: |
-            ## Robo 3T ${{ github.ref_name }} (Modern Infrastructure Release)
-            
-            This version marks a major milestone in Robo 3T's lifecycle by fully migrating the build infrastructure to modern standards.
-            
-            ### v1.5.2 Key Highlights:
-            - **VS 2022 Migration**: Rebuilt using the v143 toolset for improved optimization and security.
-            - **C++17 Standarization**: Resolved long-standing source-level incompatibilities in MongoDB 4.2 components.
-            - **DataRange/OID Refactoring**: Fixed critical template deduction ambiguities for robust binary parsing.
-            - **mozjs-60 Hardening**: Refactored scripting engine internals to comply with C++17 unnamed class restrictions.
-            - **Automated CI/CD**: 100% cloud-native build process with integrated shell components.
-            
-            Note: The portable version (~83MB) contains the full dependency matrix for immediate use.
+          body_path: release_notes_final.md
           draft: false
           prerelease: false
 
