@@ -95,7 +95,11 @@ namespace Robomongo
         const QBrush& typeBrush() const;
 
         const QFont& font() const;
+        void refreshFont();
+
     private:
+        mutable QFont _textFont;
+
         /**
          * @brief Private, because this is singleton
          */

@@ -7,6 +7,9 @@
 #include <QComboBox>
 #include <QPushButton>
 #include <QCheckBox>
+#include <QFontComboBox>
+#include <QSpinBox>
+#include <QFontDatabase>
 
 #include "robomongo/gui/GuiRegistry.h"
 #include "robomongo/gui/AppStyle.h"
@@ -24,7 +27,7 @@ namespace Robomongo
 
         setWindowTitle(tr("Preferences %1").arg(PROJECT_NAME_TITLE));
         setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
-        setFixedSize(height, width);
+        setFixedSize(550, 500); 
 
         QVBoxLayout *layout = new QVBoxLayout(this);
 
@@ -76,7 +79,25 @@ namespace Robomongo
         _stylesComboBox = new QComboBox();
         _stylesComboBox->addItems(AppStyleUtils::getSupportedStyles());
         stylesLayout->addWidget(_stylesComboBox);
-        layout->addLayout(stylesLayout);   
+        layout->addLayout(stylesLayout);
+
+        QHBoxLayout *fontLayout = new QHBoxLayout(this);
+        QLabel *fontFamilyLabel = new QLabel(tr("Font Family:"));
+        fontLayout->addWidget(fontFamilyLabel);
+        _fontFamilyComboBox = new QFontComboBox();
+        _fontFamilyComboBox->setFontFilters(QFontComboBox::MonospacedFonts);
+        fontLayout->addWidget(_fontFamilyComboBox);
+
+        QLabel *fontSizeLabel = new QLabel(tr("Size:"));
+        fontLayout->addWidget(fontSizeLabel);
+        _fontSizeSpinBox = new QSpinBox();
+        _fontSizeSpinBox->setRange(6, 72);
+        fontLayout->addWidget(_fontSizeSpinBox);
+        layout->addLayout(fontLayout);
+
+        _restoreDefaultsButton = new QPushButton(tr("Restore Defaults"));
+        VERIFY(connect(_restoreDefaultsButton, SIGNAL(clicked()), this, SLOT(onRestoreDefaultsRequested())));
+        layout->addWidget(_restoreDefaultsButton);   
 
         QDialogButtonBox *buttonBox = new QDialogButtonBox(this);
         buttonBox->setOrientation(Qt::Horizontal);
@@ -103,6 +124,9 @@ namespace Robomongo
         _loadMongoRcJsCheckBox->setChecked(AppRegistry::instance().settingsManager()->loadMongoRcJs());
         _disabelConnectionShortcutsCheckBox->setChecked(AppRegistry::instance().settingsManager()->disableConnectionShortcuts());
         utils::setCurrentText(_stylesComboBox, Robomongo::AppRegistry::instance().settingsManager()->currentStyle());
+
+        _fontFamilyComboBox->setCurrentFont(GuiRegistry::instance().font());
+        _fontSizeSpinBox->setValue(GuiRegistry::instance().font().pointSize());
     }
 
     void PreferencesDialog::accept()
@@ -120,8 +144,29 @@ namespace Robomongo
         AppRegistry::instance().settingsManager()->setDisableConnectionShortcuts(_disabelConnectionShortcutsCheckBox->isChecked());
         Robomongo::AppRegistry::instance().settingsManager()->setCurrentStyle(_stylesComboBox->currentText());
         AppStyleUtils::applyStyle(_stylesComboBox->currentText());
+
+        Robomongo::AppRegistry::instance().settingsManager()->setTextFontFamily(_fontFamilyComboBox->currentFont().family());
+        Robomongo::AppRegistry::instance().settingsManager()->setTextFontPointSize(_fontSizeSpinBox->value());
+        GuiRegistry::instance().refreshFont();
+
         Robomongo::AppRegistry::instance().settingsManager()->save();
 
         return BaseClass::accept();
+    }
+
+    void PreferencesDialog::onRestoreDefaultsRequested()
+    {
+        _fontFamilyComboBox->setCurrentIndex(-1); // Will use default logic in syncWithSettings if I reset settings
+        // Actually, better to just set the defaults here:
+#if defined(Q_OS_MAC)
+        _fontFamilyComboBox->setCurrentFont(QFont("Monaco"));
+        _fontSizeSpinBox->setValue(12);
+#elif defined(Q_OS_UNIX)
+        _fontFamilyComboBox->setCurrentFont(QFont("Monospace"));
+        _fontSizeSpinBox->setValue(10); // Assume a reasonable default
+#elif defined(Q_OS_WIN)
+        _fontFamilyComboBox->setCurrentFont(QFont("Courier"));
+        _fontSizeSpinBox->setValue(10);
+#endif
     }
 }

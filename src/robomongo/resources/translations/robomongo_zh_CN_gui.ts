@@ -1163,8 +1163,8 @@ Error:
         <translation>默认显示模式:</translation>
     </message>
     <message>
-        <source>Display Dates in: </source>
-        <translation>日期显示格式: </translation>
+        <source>Display Dates in:</source>
+        <translation>日期显示格式:</translation>
     </message>
     <message>
         <source>Legacy UUID Encoding:</source>
@@ -1181,6 +1181,18 @@ Error:
     <message>
         <source>Styles:</source>
         <translation>样式:</translation>
+    </message>
+    <message>
+        <source>Font Family:</source>
+        <translation>字体系列:</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>大小:</translation>
+    </message>
+    <message>
+        <source>Restore Defaults</source>
+        <translation>恢复默认设置</translation>
     </message>
     <message>
         <source>Text mode</source>

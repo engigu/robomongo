@@ -18,6 +18,7 @@ namespace Robomongo
         enum { height = 640, width = 480};
     public Q_SLOTS:
         virtual void accept();
+        void onRestoreDefaultsRequested();
     private:
         void syncWithSettings();
     private:
@@ -27,5 +28,8 @@ namespace Robomongo
         QCheckBox *_loadMongoRcJsCheckBox;
         QCheckBox *_disabelConnectionShortcutsCheckBox;
         QComboBox *_stylesComboBox;
+        class QFontComboBox *_fontFamilyComboBox;
+        class QSpinBox *_fontSizeSpinBox;
+        QPushButton *_restoreDefaultsButton;
     };
 }
