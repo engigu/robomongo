@@ -5161,12 +5161,24 @@ Please increase the value of shell timeout using button below or from the main w
         <translation>添加收藏</translation>
     </message>
     <message>
-        <source>Enter a name for this snippet:</source>
-        <translation>为该片段输入一个名称:</translation>
+        <source>Enter a name (use / for folders):</source>
+        <translation>输入名称 (使用 / 表示文件夹):</translation>
     </message>
     <message>
         <source>My Query</source>
         <translation>我的查询</translation>
+    </message>
+    <message>
+        <source>Snippet &apos;%1&apos; saved successfully.</source>
+        <translation>片段 &apos;%1&apos; 已成功保存。</translation>
+    </message>
+    <message>
+        <source>Could not create script file: %1</source>
+        <translation>无法创建脚本文件: %1</translation>
+    </message>
+    <message>
+        <source>Loading...</source>
+        <translation>正在加载...</translation>
     </message>
 </context>
 </TS>
