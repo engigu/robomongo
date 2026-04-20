@@ -206,9 +206,15 @@ namespace Robomongo
                 if (workArea) {
                     QueryWidget *currentQW = workArea->currentQueryWidget();
                     if (currentQW) {
-                        auto result = QMessageBox::question(this, tr("Apply Favorite"),
-                            tr("Do you want to apply this favorite to the current tab?\n(This will allow you to edit and save it directly.)"),
-                            QMessageBox::Yes | QMessageBox::No);
+                        QMessageBox msgBox(this);
+                        msgBox.setWindowTitle(tr("Apply Favorite"));
+                        msgBox.setText(tr("Do you want to apply this favorite to the current tab?\n(This will allow you to edit and save it directly.)"));
+                        msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+                        msgBox.setButtonText(QMessageBox::Yes, tr("确定"));
+                        msgBox.setButtonText(QMessageBox::No, tr("取消"));
+                        msgBox.setIcon(QMessageBox::Question);
+                        
+                        int result = msgBox.exec();
 
                         if (result == QMessageBox::Yes) {
                             currentQW->applyFavorite(script, filePath, favoriteItem->name());

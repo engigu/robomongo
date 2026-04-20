@@ -1708,8 +1708,18 @@ Error:
         <translation>应用收藏</translation>
     </message>
     <message>
-        <source>Do you want to apply this favorite to the current tab?\n(This will allow you to edit and save it directly.)</source>
-        <translation>是否将此收藏应用到当前标签页？\n(这将允许你直接编辑并保存。)</translation>
+        <source>Do you want to apply this favorite to the current tab?
+(This will allow you to edit and save it directly.)</source>
+        <translation>是否将此收藏应用到当前标签页？
+(这将允许您直接编辑并保存。)</translation>
+    </message>
+    <message>
+        <source>确定</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <source>取消</source>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Favorites</source>
