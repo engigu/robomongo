@@ -129,8 +129,8 @@ jobs:
           echo "Scanning D:\b\package for final artifacts..."
           dir /s D:\b\package\*.zip D:\b\package\*.exe
           
-          copy /y D:\b\package\*.zip "%DIST_DIR%\"
-          copy /y D:\b\package\*.exe "%DIST_DIR%\"
+          copy /y D:\b\package\*.zip "%DIST_DIR%\robo3t-${{ github.ref_name }}-windows-portable.zip"
+          copy /y D:\b\package\*.exe "%DIST_DIR%\robo3t-${{ github.ref_name }}-windows-setup.exe"
           
           :: 验证 dist 目录内容
           echo "Final verified packages in dist/ :"
@@ -139,16 +139,14 @@ jobs:
 
       - name: Prepare Release Notes
         run: |
-          set "VERSION_FILE=RELEASE_NOTES_${{ github.ref_name }}.md"
-          echo "Looking for %VERSION_FILE%..."
-          if exist "%VERSION_FILE%" (
-            copy /y "%VERSION_FILE%" "release_notes_final.md"
-            echo "Using %VERSION_FILE%"
-          ) else (
-            echo "## Robo 3T ${{ github.ref_name }} (Modern Infrastructure Release)" > "release_notes_final.md"
-            echo "Standard release notes generated."
-          )
-        shell: cmd
+          $versionFile = "RELEASE_NOTES_${{ github.ref_name }}.md"
+          if (Test-Path $versionFile) {
+              Get-Content $versionFile -Encoding UTF8 | Set-Content "release_notes_final.md" -Encoding UTF8
+              Write-Host "Using $versionFile (UTF8)"
+          } else {
+              "## Robo 3T ${{ github.ref_name }} (Modern Infrastructure Release)" | Set-Content "release_notes_final.md" -Encoding UTF8
+          }
+        shell: powershell
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
