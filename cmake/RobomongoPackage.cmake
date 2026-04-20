@@ -50,7 +50,7 @@ string(TOLOWER ${CPACK_PACKAGE_VERSION} package_file_version)
 target_architecture(target_arch)
 
 # Package file name
-if (CPACK_GENERATOR STREQUAL "NSIS")
+if (CPACK_GENERATOR MATCHES "NSIS")
     set(CPACK_PACKAGE_FILE_NAME "${package_file_name}-${package_file_version}-${system_name}-setup")
 else()
     set(CPACK_PACKAGE_FILE_NAME "${package_file_name}-${package_file_version}-${system_name}-portable")
