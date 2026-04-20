@@ -1,12 +1,10 @@
-#pragma  once
+#pragma once
 
 #include <QDialog>
 QT_BEGIN_NAMESPACE
-class QComboBox;
-class QCheckBox;
-class QPushButton;
 class QFontComboBox;
 class QSpinBox;
+class QPushButton;
 QT_END_NAMESPACE
 
 namespace Robomongo
@@ -14,23 +12,17 @@ namespace Robomongo
     class PreferencesDialog : public QDialog
     {
         Q_OBJECT
-
-    public:
         typedef QDialog BaseClass;
-        explicit PreferencesDialog(QWidget *parent);
-        enum { height = 640, width = 480};
-    public Q_SLOTS:
-        virtual void accept();
+    public:
+        explicit PreferencesDialog(QWidget *parent = nullptr);
+
+    public slots:
+        void accept() override;
         void onRestoreDefaultsRequested();
+
     private:
         void syncWithSettings();
     private:
-        QComboBox *_defDisplayModeComboBox;
-        QComboBox *_timeZoneComboBox;
-        QComboBox *_uuidEncodingComboBox;
-        QCheckBox *_loadMongoRcJsCheckBox;
-        QCheckBox *_disabelConnectionShortcutsCheckBox;
-        QComboBox *_stylesComboBox;
         QFontComboBox *_fontFamilyComboBox;
         QSpinBox *_fontSizeSpinBox;
         QPushButton *_restoreDefaultsButton;

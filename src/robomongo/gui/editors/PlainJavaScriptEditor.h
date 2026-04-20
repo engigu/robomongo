@@ -27,6 +27,7 @@ namespace Robomongo
 
     private Q_SLOTS:
         void updateLineNumbersMarginWidth();
+        void updateFont();
 
     private:
         void setLineNumbers(bool displayNumbers);

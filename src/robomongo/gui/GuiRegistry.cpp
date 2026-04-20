@@ -12,8 +12,10 @@ namespace Robomongo
     /**
      * @brief This is a private constructor, because GuiRegistry is a singleton
      */
-    GuiRegistry::GuiRegistry()
+    GuiRegistry::GuiRegistry() : QObject(NULL)
     {
+        // Initial setup of the font to avoid lazy loading later
+        refreshFont();
     }
 
     /**
@@ -422,9 +424,6 @@ namespace Robomongo
 
     const QFont &GuiRegistry::font() const
     {
-        if (_textFont.family().isEmpty()) {
-            const_cast<GuiRegistry*>(this)->refreshFont();
-        }
         return _textFont;
     }
 
@@ -456,5 +455,6 @@ namespace Robomongo
 #if defined(Q_OS_UNIX)
         _textFont.setFixedPitch(true);
 #endif
+        emit fontChanged();
     }
 }

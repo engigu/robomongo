@@ -3,6 +3,7 @@
 #include <QPainter>
 #include <QApplication>
 #include <QKeyEvent>
+#include <Qsci/qscilexer.h>
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/settings/SettingsManager.h"
 #include "robomongo/gui/GuiRegistry.h"
@@ -91,6 +92,7 @@ namespace Robomongo
         setLineNumbers(AppRegistry::instance().settingsManager()->lineNumbers());
         setUtf8(true);
         VERIFY(connect(this, SIGNAL(linesChanged()), this, SLOT(updateLineNumbersMarginWidth())));
+        VERIFY(connect(&GuiRegistry::instance(), SIGNAL(fontChanged()), this, SLOT(updateFont())));
     }
 
     int RoboScintilla::lineNumberMarginWidth() const
@@ -195,5 +197,19 @@ namespace Robomongo
 #endif
     }
 
+    void RoboScintilla::updateFont()
+    {
+        QFont ourFont = GuiRegistry::instance().font();
+        setFont(ourFont);
+        setMarginsFont(ourFont);
+        
+        if (lexer()) {
+            lexer()->setFont(ourFont);
+        }
 
+        // Sync Scintilla internal styles
+        QByteArray family = ourFont.family().toUtf8();
+        SendScintilla(QsciScintilla::SCI_STYLESETFONT, QsciScintilla::STYLE_DEFAULT, family.constData());
+        SendScintilla(QsciScintilla::SCI_STYLESETSIZE, QsciScintilla::STYLE_DEFAULT, ourFont.pointSize());
+    }
 }

@@ -4,6 +4,7 @@
 #include <QFont>
 #include <QBrush>
 #include <QAbstractItemView>
+#include <QObject>
 
 namespace Robomongo
 {
@@ -12,8 +13,9 @@ namespace Robomongo
      *        to another various singletons (including access to the data that is stored in
      *        resources (i.e. gui.qrc) and caches it, if needed)
      */
-    class GuiRegistry
+    class GuiRegistry : public QObject
     {
+        Q_OBJECT
     public:
         /**
          * @brief Returns single instance of GuiRegistry
@@ -97,6 +99,9 @@ namespace Robomongo
 
         const QFont& font() const;
         void refreshFont();
+
+    signals:
+        void fontChanged();
 
     private:
         mutable QFont _textFont;

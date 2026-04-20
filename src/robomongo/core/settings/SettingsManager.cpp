@@ -75,7 +75,9 @@ namespace Robomongo
     //            be defined and placed into the vector initializer list below in order.
     std::vector<QString> const SettingsManager::_configFilesOfOldVersions
     {
-        QString("%1/.3T/robo-3t/1.4.3/robo3t.json").arg(QDir::homePath()), // CONFIG_FILE_1_4_3
+        QString("%1/.3T/robo-3t/1.5.3/robo3t.json").arg(QDir::homePath()), 
+        QString("%1/.3T/robo-3t/1.5.2/robo3t.json").arg(QDir::homePath()), 
+        QString("%1/.3T/robo-3t/1.4.3/robo3t.json").arg(QDir::homePath()), 
         QString("%1/.3T/robo-3t/1.4.2/robo3t.json").arg(QDir::homePath()), // CONFIG_FILE_1_4_2
         QString("%1/.3T/robo-3t/1.4.1/robo3t.json").arg(QDir::homePath()), // CONFIG_FILE_1_4_1
         QString("%1/.3T/robo-3t/1.4.0/robo3t.json").arg(QDir::homePath()), // CONFIG_FILE_1_4_0
@@ -277,9 +279,13 @@ namespace Robomongo
             _currentStyle = AppStyle::StyleName;
         }
 
-        // Load font information
-        _textFontFamily = map.value("textFontFamily").toString();
-        _textFontPointSize = map.value("textFontPointSize").toInt();
+        // Load font information (only if present in the map)
+        if (map.contains("textFontFamily")) {
+            _textFontFamily = map.value("textFontFamily").toString();
+        }
+        if (map.contains("textFontPointSize")) {
+            _textFontPointSize = map.value("textFontPointSize").toInt();
+        }
 
         if (map.contains("mongoTimeoutSec")) {
             _mongoTimeoutSec = map.value("mongoTimeoutSec").toInt();
@@ -323,7 +329,10 @@ namespace Robomongo
         _cacheData = map.value("cacheData").toMap();
 
         // Load connection settings from previous versions of Robomongo
-        importFromOldVersion();
+        // Only trigger import if this is a fresh start (no connections and not imported)
+        if (!_imported && _connections.empty()) {
+            importFromOldVersion();
+        }
     }
 
     /**
@@ -536,7 +545,7 @@ namespace Robomongo
 
     void SettingsManager::importFromOldVersion()
     {
-        if (_imported)
+        if (_imported || !_connections.empty())
             return;
 
         // Import only from the latest version
@@ -684,7 +693,13 @@ namespace Robomongo
         _debugMode       = vmap.value("debugMode").toBool();
         _shellTimeoutSec = vmap.value("shellTimeoutSec").toInt();
         
-        //// Import connections
+        //// Import font settings
+        if (vmap.contains("textFontFamily")) {
+            _textFontFamily = vmap.value("textFontFamily").toString();
+        }
+        if (vmap.contains("textFontPointSize")) {
+            _textFontPointSize = vmap.value("textFontPointSize").toInt();
+        }
         for (auto const& vcon : vmap.value("connections").toList()) {
             QVariantMap const& vconn = vcon.toMap();
             auto connSettings = new ConnectionSettings(false);

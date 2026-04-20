@@ -459,7 +459,7 @@ namespace Robomongo
 
         QAction *preferencesAction = new QAction(tr("Preferences"), this);
         VERIFY(connect(preferencesAction, SIGNAL(triggered()), this, SLOT(openPreferences())));
-        preferencesAction->setVisible(false);
+        preferencesAction->setVisible(true);
         optionsMenu->addAction(preferencesAction);
 
         QActionGroup *uuidEncodingGroup = new QActionGroup(this);
