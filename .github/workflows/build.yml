@@ -122,20 +122,35 @@ jobs:
           echo "Starting NSIS packaging (Installer)..."
           cpack -G NSIS
           
-          :: 3. 整理产物 (深度探测模式)
+          :: 3. 整理产物 (PowerShell 安全模式)
           set "DIST_DIR=%GITHUB_WORKSPACE%\dist"
-          if not exist "%DIST_DIR%" mkdir "%DIST_DIR%"
+          if exist "%DIST_DIR%" rd /s /q "%DIST_DIR%"
+          mkdir "%DIST_DIR%"
           
-          echo "Scanning D:\b\package for final artifacts..."
-          dir /s D:\b\package\*.zip D:\b\package\*.exe
-          
-          copy /y D:\b\package\*.zip "%DIST_DIR%\robo3t-${{ github.ref_name }}-windows-portable.zip"
-          copy /y D:\b\package\*.exe "%DIST_DIR%\robo3t-${{ github.ref_name }}-windows-setup.exe"
-          
-          :: 验证 dist 目录内容
-          echo "Final verified packages in dist/ :"
-          dir "%DIST_DIR%"
+          echo "Verifying package directory content:"
+          dir D:\b\package\*.zip D:\b\package\*.exe
         shell: cmd
+
+      - name: Organize Artifacts
+        run: |
+          $dist = "$env:GITHUB_WORKSPACE\dist"
+          $tag = $env:GITHUB_REF_NAME
+          
+          # 安全拷贝并重命名，防止 Windows copy 合并文件
+          $zip = Get-ChildItem D:\b\package\*.zip | Select-Object -First 1
+          $exe = Get-ChildItem D:\b\package\*.exe | Select-Object -First 1
+          
+          if ($zip) { 
+              Copy-Item $zip.FullName -Destination "$dist\robo3t-$tag-windows-portable.zip" 
+              Write-Host "Organized ZIP: $($zip.Name)"
+          }
+          if ($exe) { 
+              Copy-Item $exe.FullName -Destination "$dist\robo3t-$tag-windows-setup.exe" 
+              Write-Host "Organized EXE: $($exe.Name)"
+          }
+          
+          Get-ChildItem $dist
+        shell: powershell
 
       - name: Prepare Release Notes
         run: |
