@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QIcon>
+#include <QFont>
 #include <QBrush>
 #include <QAbstractItemView>
 

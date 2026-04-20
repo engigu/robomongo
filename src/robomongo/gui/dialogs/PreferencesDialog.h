@@ -4,6 +4,9 @@
 QT_BEGIN_NAMESPACE
 class QComboBox;
 class QCheckBox;
+class QPushButton;
+class QFontComboBox;
+class QSpinBox;
 QT_END_NAMESPACE
 
 namespace Robomongo
@@ -28,8 +31,8 @@ namespace Robomongo
         QCheckBox *_loadMongoRcJsCheckBox;
         QCheckBox *_disabelConnectionShortcutsCheckBox;
         QComboBox *_stylesComboBox;
-        class QFontComboBox *_fontFamilyComboBox;
-        class QSpinBox *_fontSizeSpinBox;
+        QFontComboBox *_fontFamilyComboBox;
+        QSpinBox *_fontSizeSpinBox;
         QPushButton *_restoreDefaultsButton;
     };
 }
