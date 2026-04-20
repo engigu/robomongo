@@ -1669,6 +1669,10 @@ Error:
         <translation>收藏夹 (⭐️)</translation>
     </message>
     <message>
+        <source>Refresh</source>
+        <translation>刷新</translation>
+    </message>
+    <message>
         <source>Rename</source>
         <translation>重命名</translation>
     </message>
