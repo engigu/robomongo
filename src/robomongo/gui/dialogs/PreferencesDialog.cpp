@@ -10,6 +10,7 @@
 #include <QFontComboBox>
 #include <QSpinBox>
 #include <QFontDatabase>
+#include <QFont>
 
 #include "robomongo/gui/GuiRegistry.h"
 #include "robomongo/gui/AppStyle.h"
