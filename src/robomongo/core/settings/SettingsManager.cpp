@@ -137,10 +137,7 @@ namespace Robomongo
             save();     // create empty settings file
             load();     // try loading again for the purpose of import from previous Robomongo versions
             save();     // save imported settings (or at least the 'imported' status)
-        } else {
         }
-    }
-
         LOG_MSG("SettingsManager initialized. Config path: " + _configFilePath, mongo::logger::LogSeverity::Info(), false);
     }
 
