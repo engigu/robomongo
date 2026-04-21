@@ -312,12 +312,12 @@ namespace Robomongo
                 editorTotalHeight = maxHeight;
             }
 
-            // Remove setFixedHeight to allow manual resizing via Splitter
-            _queryText->setMinimumHeight(editorHeight(1)); 
-            _queryText->setMaximumHeight(editorTotalHeight + FindFrame::HeightFindPanel);
+            // Remove fixed and maximum height constraints to allow manual resizing via Splitter
+            _queryText->setMinimumHeight(editorHeight(1) + FindFrame::HeightFindPanel); 
+            _queryText->setMaximumHeight(16777215); // QWIDGETSIZE_MAX
             
-            // If it's very small, we might want to ensure it's at least visible
             _queryText->sciScintilla()->setMinimumHeight(editorHeight(1));
+            _queryText->sciScintilla()->setMaximumHeight(16777215);
         }
     }
 
