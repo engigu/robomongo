@@ -116,6 +116,12 @@ namespace Robomongo
 
         VERIFY(connect(_topStatusBar, SIGNAL(saveToFavoritesRequested()), this, SLOT(onSaveToFavoritesRequested())));
         updateSaveButtonStatus();
+
+        // Connect find panel visibility changes to trigger layout recalculation
+        connect(_queryText, SIGNAL(findPanelVisibilityChanged(bool)), this, SLOT(ui_queryLinesCountChanged()));
+
+        // Trigger initial resize to match content height
+        ui_queryLinesCountChanged();
     }
 
     void ScriptWidget::onSaveToFavoritesRequested()
@@ -317,11 +323,15 @@ namespace Robomongo
             int editorTotalHeight = editorHeight(lines);
             int maxHeight = editorHeight(18);
 
-            // Calculate target height for the editor (content height capped at 18 lines) + Find Panel
-            int targetHeight = std::min(editorTotalHeight, maxHeight) + FindFrame::HeightFindPanel;
+            // Calculate target height for the editor. 
+            // Only add Find Panel height if it is actually visible to avoid unpleasant gaps.
+            int targetHeight = std::min(editorTotalHeight, maxHeight);
+            if (_queryText->isFindPanelVisible()) {
+                targetHeight += FindFrame::HeightFindPanel;
+            }
 
             // Reset constraints to allow free movement via Splitter
-            _queryText->setMinimumHeight(editorHeight(1) + FindFrame::HeightFindPanel); 
+            _queryText->setMinimumHeight(editorHeight(1)); 
             _queryText->setMaximumHeight(16777215);
             _queryText->sciScintilla()->setMinimumHeight(editorHeight(1));
             _queryText->sciScintilla()->setMaximumHeight(16777215);
@@ -441,7 +451,7 @@ namespace Robomongo
      */
     int ScriptWidget::editorHeight(int lines) const
     {
-        return lines * lineHeight() + 8;
+        return lines * lineHeight() + 4;
     }
 
     AutoCompletionInfo ScriptWidget::sanitizeForAutocompletion()

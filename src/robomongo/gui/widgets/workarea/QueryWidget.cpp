@@ -95,8 +95,8 @@ namespace Robomongo
         mainLayout->addWidget(_splitter);
         setLayout(mainLayout);
 
-        // Set initial sizes: 30% for script, 70% for results
-        _splitter->setSizes(QList<int>() << 300 << 700);
+        // Set initial sizes: more compact for script initially (auto-grow will refine)
+        _splitter->setSizes(QList<int>() << 100 << 900);
     }
 
     void QueryWidget::setScriptFocus()

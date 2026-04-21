@@ -62,6 +62,11 @@ namespace Robomongo
         VERIFY(connect(_prev, SIGNAL(clicked()), this, SLOT(goToPrevElement())));
     }
 
+    bool FindFrame::isFindPanelVisible() const
+    {
+        return _findPanel->isVisible();
+    }
+
     void FindFrame::wheelEvent(QWheelEvent *e)
     {
         return BaseClass::wheelEvent(e);
@@ -75,6 +80,7 @@ namespace Robomongo
             // Hide & Show of Scintilla widget solves problem of UI blinking
             _scin->hide();
             _findPanel->hide();
+            emit findPanelVisibilityChanged(false);
             _scin->setFocus();
             _scin->show();
             return keyEvent->accept();
@@ -84,6 +90,7 @@ namespace Robomongo
             goToNextElement();
         } else if (((keyEvent->modifiers() & Qt::ControlModifier) && keyEvent->key() == Qt::Key_F) && isFocusScin) {
             _findPanel->show();
+            emit findPanelVisibilityChanged(true);
             _findLine->setFocus();
             _findLine->selectAll();
             return keyEvent->accept();

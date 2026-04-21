@@ -25,12 +25,19 @@ namespace Robomongo
         };
         typedef QFrame BaseClass;
         explicit FindFrame(QWidget *parent);
+
         RoboScintilla *const sciScintilla() const
         {
             return _scin;
         }
+
+        bool isFindPanelVisible() const;
         void toggleComments();
         virtual ~FindFrame();
+        
+    Q_SIGNALS:
+        void findPanelVisibilityChanged(bool visible);
+
     protected:
         virtual void wheelEvent(QWheelEvent *e);
         virtual void keyPressEvent(QKeyEvent *e);
@@ -54,4 +61,3 @@ namespace Robomongo
         QWidget *_parent;
     };
 }
-
