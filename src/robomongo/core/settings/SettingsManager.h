@@ -13,9 +13,6 @@
 namespace Robomongo
 {
     class ConnectionSettings;
-    struct ConfigFileAndImportFunction;
-        
-/* ----------------------------- SettingsManager ------------------------------ */
 
 /* ----------------------------- SettingsManager ------------------------------ */
 

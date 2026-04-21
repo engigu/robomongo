@@ -1,4 +1,5 @@
 #include "robomongo/gui/widgets/explorer/ExplorerTreeWidget.h"
+#include "robomongo/core/AppRegistry.h"
 
 #include "robomongo/gui/widgets/explorer/ExplorerTreeItem.h"
 #include "robomongo/gui/widgets/explorer/ExplorerDatabaseTreeItem.h"
