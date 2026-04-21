@@ -342,8 +342,15 @@ namespace Robomongo
                 QList<int> sizes = _parent->splitter()->sizes();
                 if (sizes.size() >= 2) {
                     int oldTotal = sizes[0] + sizes[1];
-                    sizes[0] = targetHeight;
-                    sizes[1] = oldTotal - targetHeight;
+                    
+                    // The splitter size should reflect the WHOLE ScriptWidget height, 
+                    // not just the editor area inside it.
+                    // Total = EditorHeight + FindPanel(if visible) + TopStatusBar(~30px) + Margins(6px)
+                    int overhead = 36; 
+                    int totalScriptHeight = targetHeight + overhead;
+                    
+                    sizes[0] = totalScriptHeight;
+                    sizes[1] = oldTotal - totalScriptHeight;
                     _parent->splitter()->setSizes(sizes);
                 }
             }
