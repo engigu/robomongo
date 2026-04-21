@@ -98,8 +98,9 @@ namespace Robomongo
         mainLayout->addWidget(_splitter);
         setLayout(mainLayout);
 
-        // Set initial sizes: more compact for script initially
-        _splitter->setSizes(QList<int>() << 100 << 900);
+        // Set stretch factors: 0 for script (don't stretch), 1 for results (take extra space)
+        _splitter->setStretchFactor(0, 0);
+        _splitter->setStretchFactor(1, 1);
 
         // Now that the whole hierarchy is built, tell the script widget to perform its first auto-resize
         _scriptWidget->ui_queryLinesCountChanged();

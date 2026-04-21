@@ -138,16 +138,8 @@ namespace Robomongo
             load();     // try loading again for the purpose of import from previous Robomongo versions
             save();     // save imported settings (or at least the 'imported' status)
         } else {
-            // Case where load() succeeded but we might have imported data in memory 
-            // that isn't persisted yet (if we didn't have a 1.5.4 config but had 1.5.3)
-            // Or if _imported was false in the existing file.
-            if (!_imported) {
-                 importFromOldVersion();
-                 if (_imported) {
-                     save();
-                 }
-            }
         }
+    }
 
         LOG_MSG("SettingsManager initialized. Config path: " + _configFilePath, mongo::logger::LogSeverity::Info(), false);
     }
@@ -346,11 +338,6 @@ namespace Robomongo
 
         _cacheData = map.value("cacheData").toMap();
 
-        // Load connection settings from previous versions of Robomongo
-        // Only trigger import if this is a fresh start (no connections and not imported)
-        if (!_imported && _connections.empty()) {
-            importFromOldVersion();
-        }
     }
 
     /**
@@ -721,16 +708,16 @@ namespace Robomongo
         if (vmap.contains("shellTimeoutSec"))
             _shellTimeoutSec = vmap.value("shellTimeoutSec").toInt();
         
-        //// Import font settings
+        //// Import font settings (only if not already set in the current config)
         if (vmap.contains("textFontFamily")) {
             QString importedFamily = vmap.value("textFontFamily").toString();
-            if (!importedFamily.isEmpty()) {
+            if (!importedFamily.isEmpty() && _textFontFamily.isEmpty()) {
                 _textFontFamily = importedFamily;
             }
         }
         if (vmap.contains("textFontPointSize")) {
             int importedSize = vmap.value("textFontPointSize").toInt();
-            if (importedSize > 0) {
+            if (importedSize > 0 && _textFontPointSize <= 0) {
                 _textFontPointSize = importedSize;
             }
         }

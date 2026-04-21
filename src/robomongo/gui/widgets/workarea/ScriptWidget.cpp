@@ -349,9 +349,15 @@ namespace Robomongo
                     int overhead = 36; 
                     int totalScriptHeight = targetHeight + overhead;
                     
-                    sizes[0] = totalScriptHeight;
-                    sizes[1] = oldTotal - totalScriptHeight;
-                    _parent->splitter()->setSizes(sizes);
+                    if (oldTotal > 0) {
+                        // Regular case: redistribute existing space
+                        sizes[0] = totalScriptHeight;
+                        sizes[1] = std::max(10, oldTotal - totalScriptHeight); // Ensure at least 10px for results
+                        _parent->splitter()->setSizes(sizes);
+                    } else {
+                        // Initial load case: use a sensible total for proportional scaling
+                        _parent->splitter()->setSizes(QList<int>() << totalScriptHeight << 1000 - totalScriptHeight);
+                    }
                 }
             }
         }
