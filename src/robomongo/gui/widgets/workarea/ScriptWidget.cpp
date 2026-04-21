@@ -10,6 +10,9 @@
 #include <QInputDialog>
 #include <QMessageBox>
 
+#include <QSplitter>
+#include <algorithm>
+
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/EventBus.h"
 #include "robomongo/core/events/MongoEvents.h"
