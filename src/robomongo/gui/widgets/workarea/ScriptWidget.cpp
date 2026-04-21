@@ -72,12 +72,8 @@ namespace Robomongo
         _shell(shell),
         _parent(parent),
         _textChanged(false),
-        _disableTextAndCursorNotifications(false),
-        _manuallyResized(false)
+        _disableTextAndCursorNotifications(false)
     {
-        if (_parent->splitter()) {
-            connect(_parent->splitter(), SIGNAL(splitterMoved(int, int)), this, SLOT(onSplitterMoved(int, int)));
-        }
 
         setStyleSheet("QFrame {background-color: rgb(255, 255, 255); border: 0px solid #c7c5c4;"
                       "border-radius: 0px; margin: 0px; padding: 0px;}");
@@ -313,62 +309,34 @@ namespace Robomongo
 
     void ScriptWidget::ui_queryLinesCountChanged()
     {
-        // When docked, we support "Smart Auto-Grow":
-        // 1. Auto-expand as you type, up to 18 lines.
-        // 2. Beyond 18 lines, scrollbar appears.
-        // 3. User can manually resize at any time. Once resized manually, auto-scaling is disabled to respect user choice.
+        // Set fixed size only if output widget is docked
         if (_parent->outputWindowDocked())
         {
             int lines = _queryText->sciScintilla()->lines();
             int editorTotalHeight = editorHeight(lines);
+
             int maxHeight = editorHeight(18);
+            if (editorTotalHeight > maxHeight) {
+                editorTotalHeight = maxHeight;
+            }
 
-            // Calculate target height for the editor. 
-            // Only add Find Panel height if it is actually visible to avoid unpleasant gaps.
-            int targetHeight = std::min(editorTotalHeight, maxHeight);
+            // Apply fixed height to the editor to provide stable layout
+            // (Traditional Robo 3T behavior)
+            _queryText->sciScintilla()->setFixedHeight(editorTotalHeight);
+            
+            // The FindFrame should accommodate the editor + potentially the find panel
+            int frameHeight = editorTotalHeight;
             if (_queryText->isFindPanelVisible()) {
-                targetHeight += FindFrame::HeightFindPanel;
+                frameHeight += FindFrame::HeightFindPanel;
             }
-
-            // Reset constraints to allow free movement via Splitter
-            _queryText->setMinimumHeight(editorHeight(1)); 
-            _queryText->setMaximumHeight(16777215);
-            _queryText->sciScintilla()->setMinimumHeight(editorHeight(1));
-            _queryText->sciScintilla()->setMaximumHeight(16777215);
-
-            // If user hasn't manually resized, apply the auto-scaling
-            if (!_manuallyResized && _parent->splitter())
-            {
-                QList<int> sizes = _parent->splitter()->sizes();
-                if (sizes.size() >= 2) {
-                    int oldTotal = sizes[0] + sizes[1];
-                    
-                    // The splitter size should reflect the WHOLE ScriptWidget height, 
-                    // not just the editor area inside it.
-                    // Total = EditorHeight + FindPanel(if visible) + TopStatusBar(~30px) + Margins(6px)
-                    int overhead = 36; 
-                    int totalScriptHeight = targetHeight + overhead;
-                    
-                    if (oldTotal > 0) {
-                        // Regular case: redistribute existing space
-                        sizes[0] = totalScriptHeight;
-                        sizes[1] = std::max(10, oldTotal - totalScriptHeight); // Ensure at least 10px for results
-                        _parent->splitter()->setSizes(sizes);
-                    } else {
-                        // Initial load case: use a sensible total for proportional scaling
-                        _parent->splitter()->setSizes(QList<int>() << totalScriptHeight << 1000 - totalScriptHeight);
-                    }
-                }
-            }
+            
+            _queryText->setFixedHeight(frameHeight);
         }
     }
 
     void ScriptWidget::onSplitterMoved(int pos, int index)
     {
-        // index 1 is the handle below index 0 (the script area)
-        if (index == 1) {
-            _manuallyResized = true;
-        }
+        // No-op in fixed height mode
     }
 
     void ScriptWidget::onTextChanged()
