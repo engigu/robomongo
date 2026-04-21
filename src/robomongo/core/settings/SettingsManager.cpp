@@ -116,23 +116,40 @@ namespace Robomongo
         _shellTimeoutSec(15),
         _imported(false)        
     {
-        if (!QDir().mkpath(ConfigDir))
-            LOG_MSG("ERROR: Could not create settings path: " + ConfigDir, mongo::logger::LogSeverity::Error());
+        // Initialize paths at runtime, AFTER QApplication is initialized
+        _configDir = QString("%1/.3T/robo-3t/%2/").arg(QDir::homePath()).arg(PROJECT_VERSION);
+        _configFilePath = _configDir + "robo3t.json";
+        _favoritesDir = _configDir + "favorites/";
+        _favoritesScriptsDir = _favoritesDir + "scripts/";
+        _favoritesMetadataPath = _favoritesDir + "metadata.json";
 
-        if (!QDir().mkpath(FavoritesDir))
-            LOG_MSG("ERROR: Could not create favorites path: " + FavoritesDir, mongo::logger::LogSeverity::Error());
+        if (!QDir().mkpath(_configDir))
+            LOG_MSG("ERROR: Could not create settings path: " + _configDir, mongo::logger::LogSeverity::Error());
 
-        if (!QDir().mkpath(FavoritesScriptsDir))
-            LOG_MSG("ERROR: Could not create favorites scripts path: " + FavoritesScriptsDir, mongo::logger::LogSeverity::Error());
+        if (!QDir().mkpath(_favoritesDir))
+            LOG_MSG("ERROR: Could not create favorites path: " + _favoritesDir, mongo::logger::LogSeverity::Error());
+
+        if (!QDir().mkpath(_favoritesScriptsDir))
+            LOG_MSG("ERROR: Could not create favorites scripts path: " + _favoritesScriptsDir, mongo::logger::LogSeverity::Error());
 
         RoboCrypt::initKey();
         if (!load()) {  // if load fails (probably due to non-existing config. file or directory)
             save();     // create empty settings file
             load();     // try loading again for the purpose of import from previous Robomongo versions
             save();     // save imported settings (or at least the 'imported' status)
+        } else {
+            // Case where load() succeeded but we might have imported data in memory 
+            // that isn't persisted yet (if we didn't have a 1.5.4 config but had 1.5.3)
+            // Or if _imported was false in the existing file.
+            if (!_imported) {
+                 importFromOldVersion();
+                 if (_imported) {
+                     save();
+                 }
+            }
         }
 
-        LOG_MSG("SettingsManager initialized in " + ConfigFilePath, mongo::logger::LogSeverity::Info(), false);
+        LOG_MSG("SettingsManager initialized. Config path: " + _configFilePath, mongo::logger::LogSeverity::Info(), false);
     }
 
     SettingsManager::~SettingsManager()
@@ -146,10 +163,10 @@ namespace Robomongo
      */
     bool SettingsManager::load()
     {
-        if (!QFile::exists(ConfigFilePath))
+        if (!QFile::exists(_configFilePath))
             return false;
 
-        QFile f(ConfigFilePath);
+        QFile f(_configFilePath);
         if (!f.open(QIODevice::ReadOnly))
             return false;
 
@@ -172,9 +189,9 @@ namespace Robomongo
     {
         QVariantMap const& map = convertToMap();
 
-        QFile f(ConfigFilePath);
+        QFile f(_configFilePath);
         if (!f.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
-            LOG_MSG("ERROR: Could not write settings to: " + ConfigFilePath, mongo::logger::LogSeverity::Error());
+            LOG_MSG("ERROR: Could not write settings to: " + _configFilePath, mongo::logger::LogSeverity::Error());
             return false;
         }
 
@@ -183,7 +200,7 @@ namespace Robomongo
         s.setIndentMode(QJson::IndentFull);
         s.serialize(map, &f, &ok);
 
-        LOG_MSG("Settings saved to: " + ConfigFilePath, mongo::logger::LogSeverity::Info());
+        LOG_MSG("Settings saved to: " + _configFilePath, mongo::logger::LogSeverity::Info());
 
         return ok;
     }
@@ -706,10 +723,16 @@ namespace Robomongo
         
         //// Import font settings
         if (vmap.contains("textFontFamily")) {
-            _textFontFamily = vmap.value("textFontFamily").toString();
+            QString importedFamily = vmap.value("textFontFamily").toString();
+            if (!importedFamily.isEmpty()) {
+                _textFontFamily = importedFamily;
+            }
         }
         if (vmap.contains("textFontPointSize")) {
-            _textFontPointSize = vmap.value("textFontPointSize").toInt();
+            int importedSize = vmap.value("textFontPointSize").toInt();
+            if (importedSize > 0) {
+                _textFontPointSize = importedSize;
+            }
         }
         for (auto const& vcon : vmap.value("connections").toList()) {
             QVariantMap const& vconn = vcon.toMap();

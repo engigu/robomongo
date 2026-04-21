@@ -104,7 +104,7 @@ namespace Robomongo
                 else if (folderSource) sourcePath = folderSource->physicalPath();
 
                 if (folderTarget) targetDirPath = folderTarget->physicalPath();
-                else if (rootTarget) targetDirPath = FavoritesScriptsDir;
+                else if (rootTarget) targetDirPath = AppRegistry::instance().settingsManager()->favoritesScriptsDir();
 
                 if (!sourcePath.isEmpty() && !targetDirPath.isEmpty()) {
                     QFileInfo sourceInfo(sourcePath);

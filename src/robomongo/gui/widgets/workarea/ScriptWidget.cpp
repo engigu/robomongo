@@ -132,7 +132,7 @@ namespace Robomongo
                 relativePath += ".js";
             }
             
-            QString fullScriptPath = FavoritesScriptsDir + relativePath;
+            QString fullScriptPath = AppRegistry::instance().settingsManager()->favoritesScriptsDir() + relativePath;
             QFileInfo fileInfo(fullScriptPath);
 
             // 2. Ensure parent directory exists
@@ -293,7 +293,7 @@ namespace Robomongo
 
     void ScriptWidget::updateSaveButtonStatus()
     {
-        bool isFav = !_shell->filePath().isEmpty() && _shell->filePath().startsWith(FavoritesScriptsDir);
+        bool isFav = !_shell->filePath().isEmpty() && _shell->filePath().startsWith(AppRegistry::instance().settingsManager()->favoritesScriptsDir());
         _topStatusBar->setSaveEnabled(!isFav);
     }
 

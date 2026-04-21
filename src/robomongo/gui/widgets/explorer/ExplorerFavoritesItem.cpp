@@ -114,7 +114,7 @@ namespace Robomongo
             curr = curr->parent();
         }
 
-        QString fullPath = FavoritesScriptsDir + path;
+        QString fullPath = AppRegistry::instance().settingsManager()->favoritesScriptsDir() + path;
         if (!fullPath.endsWith("/")) {
             fullPath += "/";
         }
@@ -135,8 +135,8 @@ namespace Robomongo
         // Clear existing children
         qDeleteAll(takeChildren());
 
-        if (QDir(FavoritesScriptsDir).exists()) {
-            buildLocalTree(this, FavoritesScriptsDir);
+        if (QDir(AppRegistry::instance().settingsManager()->favoritesScriptsDir()).exists()) {
+            buildLocalTree(this, AppRegistry::instance().settingsManager()->favoritesScriptsDir());
         }
 
         setExpanded(true);

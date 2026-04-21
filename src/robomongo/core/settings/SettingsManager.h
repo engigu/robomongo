@@ -15,20 +15,7 @@ namespace Robomongo
     class ConnectionSettings;
     struct ConfigFileAndImportFunction;
         
-    // Current cache directory
-    auto const CacheDir = QString("%1/.3T/robo-3t/%2/cache/").arg(QDir::homePath())
-                                                             .arg(PROJECT_VERSION);
-    // Current config file
-    auto const ConfigFilePath = QString("%1/.3T/robo-3t/%2/robo3t.json").arg(QDir::homePath())
-                                                                        .arg(PROJECT_VERSION);  
-    // Current config file directory
-    auto const ConfigDir = QString("%1/.3T/robo-3t/%2/").arg(QDir::homePath())
-                                                        .arg(PROJECT_VERSION);  
-
-    // Directory for favorite scripts
-    auto const FavoritesDir = ConfigDir + "favorites/";
-    auto const FavoritesMetadataPath = FavoritesDir + "metadata.json";
-    auto const FavoritesScriptsDir = FavoritesDir + "scripts/";
+/* ----------------------------- SettingsManager ------------------------------ */
 
 /* ----------------------------- SettingsManager ------------------------------ */
 
@@ -185,6 +172,12 @@ namespace Robomongo
          */
         int importedConnectionsCount();
 
+        QString configDir() const { return _configDir; }
+        QString configFilePath() const { return _configFilePath; }
+        QString favoritesDir() const { return _favoritesDir; }
+        QString favoritesScriptsDir() const { return _favoritesScriptsDir; }
+        QString favoritesMetadataPath() const { return _favoritesMetadataPath; }
+
     private:
 
         /**
@@ -264,5 +257,11 @@ namespace Robomongo
         // List of config. file absolute paths of old versions
         // Must be updated with care and with every new version. Details on cpp file.       
         static std::vector<QString> const _configFilesOfOldVersions;
+
+        QString _configDir;
+        QString _configFilePath;
+        QString _favoritesDir;
+        QString _favoritesScriptsDir;
+        QString _favoritesMetadataPath;
     };
 }
