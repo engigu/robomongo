@@ -334,10 +334,6 @@ namespace Robomongo
         }
     }
 
-    void ScriptWidget::onSplitterMoved(int pos, int index)
-    {
-        // No-op in fixed height mode
-    }
 
     void ScriptWidget::onTextChanged()
     {
