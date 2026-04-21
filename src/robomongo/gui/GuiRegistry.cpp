@@ -14,8 +14,6 @@ namespace Robomongo
      */
     GuiRegistry::GuiRegistry() : QObject(NULL)
     {
-        // Initial setup of the font to avoid lazy loading later
-        refreshFont();
     }
 
     /**
@@ -424,6 +422,9 @@ namespace Robomongo
 
     const QFont &GuiRegistry::font() const
     {
+        if (_textFont.family().isEmpty()) {
+            const_cast<GuiRegistry*>(this)->refreshFont();
+        }
         return _textFont;
     }
 

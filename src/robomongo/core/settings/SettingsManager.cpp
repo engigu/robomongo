@@ -129,6 +129,7 @@ namespace Robomongo
         if (!load()) {  // if load fails (probably due to non-existing config. file or directory)
             save();     // create empty settings file
             load();     // try loading again for the purpose of import from previous Robomongo versions
+            save();     // save imported settings (or at least the 'imported' status)
         }
 
         LOG_MSG("SettingsManager initialized in " + ConfigFilePath, mongo::logger::LogSeverity::Info(), false);
@@ -556,6 +557,9 @@ namespace Robomongo
                 return;
             }
         }
+
+        // Even if no old settings are found, mark as imported to avoid constant scanning
+        setImported(true);
     }
 
     bool SettingsManager::importConnectionsFrom_0_8_5()
@@ -688,10 +692,17 @@ namespace Robomongo
             return false;
 
         //// Import keys
-        _autoExpand      = vmap.value("autoExpand").toBool();
-        _lineNumbers     = vmap.value("lineNumbers").toBool();
-        _debugMode       = vmap.value("debugMode").toBool();
-        _shellTimeoutSec = vmap.value("shellTimeoutSec").toInt();
+        if (vmap.contains("autoExpand"))
+            _autoExpand = vmap.value("autoExpand").toBool();
+
+        if (vmap.contains("lineNumbers"))
+            _lineNumbers = vmap.value("lineNumbers").toBool();
+
+        if (vmap.contains("debugMode"))
+            _debugMode = vmap.value("debugMode").toBool();
+
+        if (vmap.contains("shellTimeoutSec"))
+            _shellTimeoutSec = vmap.value("shellTimeoutSec").toInt();
         
         //// Import font settings
         if (vmap.contains("textFontFamily")) {
