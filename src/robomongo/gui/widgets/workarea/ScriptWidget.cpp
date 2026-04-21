@@ -69,8 +69,13 @@ namespace Robomongo
         _shell(shell),
         _parent(parent),
         _textChanged(false),
-        _disableTextAndCursorNotifications(false)
+        _disableTextAndCursorNotifications(false),
+        _manuallyResized(false)
     {
+        if (_parent->splitter()) {
+            connect(_parent->splitter(), SIGNAL(splitterMoved(int, int)), this, SLOT(onSplitterMoved(int, int)));
+        }
+
         setStyleSheet("QFrame {background-color: rgb(255, 255, 255); border: 0px solid #c7c5c4;"
                       "border-radius: 0px; margin: 0px; padding: 0px;}");
 
@@ -299,25 +304,44 @@ namespace Robomongo
 
     void ScriptWidget::ui_queryLinesCountChanged()
     {
-        // When docked, we used to force a fixed height based on lines.
-        // To support manual resizing via QSplitter, we now only set a minimum height
-        // and allow the splitter to manage the actual height.
+        // When docked, we support "Smart Auto-Grow":
+        // 1. Auto-expand as you type, up to 18 lines.
+        // 2. Beyond 18 lines, scrollbar appears.
+        // 3. User can manually resize at any time. Once resized manually, auto-scaling is disabled to respect user choice.
         if (_parent->outputWindowDocked())
         {
             int lines = _queryText->sciScintilla()->lines();
             int editorTotalHeight = editorHeight(lines);
-
             int maxHeight = editorHeight(18);
-            if (editorTotalHeight > maxHeight) {
-                editorTotalHeight = maxHeight;
-            }
 
-            // Remove fixed and maximum height constraints to allow manual resizing via Splitter
+            // Calculate target height for the editor (content height capped at 18 lines) + Find Panel
+            int targetHeight = std::min(editorTotalHeight, maxHeight) + FindFrame::HeightFindPanel;
+
+            // Reset constraints to allow free movement via Splitter
             _queryText->setMinimumHeight(editorHeight(1) + FindFrame::HeightFindPanel); 
-            _queryText->setMaximumHeight(16777215); // QWIDGETSIZE_MAX
-            
+            _queryText->setMaximumHeight(16777215);
             _queryText->sciScintilla()->setMinimumHeight(editorHeight(1));
             _queryText->sciScintilla()->setMaximumHeight(16777215);
+
+            // If user hasn't manually resized, apply the auto-scaling
+            if (!_manuallyResized && _parent->splitter())
+            {
+                QList<int> sizes = _parent->splitter()->sizes();
+                if (sizes.size() >= 2) {
+                    int oldTotal = sizes[0] + sizes[1];
+                    sizes[0] = targetHeight;
+                    sizes[1] = oldTotal - targetHeight;
+                    _parent->splitter()->setSizes(sizes);
+                }
+            }
+        }
+    }
+
+    void ScriptWidget::onSplitterMoved(int pos, int index)
+    {
+        // index 1 is the handle below index 0 (the script area)
+        if (index == 1) {
+            _manuallyResized = true;
         }
     }
 

@@ -58,6 +58,8 @@ namespace Robomongo
         // Get output window's dock status
         bool outputWindowDocked() const;
 
+        QSplitter* splitter() const { return _splitter; }
+
     Q_SIGNALS:
         void titleChanged(const QString &text);
         void toolTipChanged(const QString &text);

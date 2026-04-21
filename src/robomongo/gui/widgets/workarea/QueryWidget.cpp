@@ -362,6 +362,7 @@ namespace Robomongo
     {
         if (!_dock->isFloating()) {    // If output window docked 
             // Restore splitter and show results
+            _scriptWidget->resetManualResize();
             _scriptWidget->ui_queryLinesCountChanged();
             _bottomContainer->show();
             _splitter->setHandleWidth(3);

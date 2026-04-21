@@ -74,6 +74,7 @@ namespace Robomongo
 
         void disableFixedHeight() const;
         void updateSaveButtonStatus();
+        void resetManualResize() { _manuallyResized = false; }
 
     Q_SIGNALS:
         void textChanged();
@@ -81,6 +82,7 @@ namespace Robomongo
     public Q_SLOTS:
         void setText(const QString &text);
         void ui_queryLinesCountChanged();
+        void onSplitterMoved(int pos, int index);
 
     private Q_SLOTS:
         void onTextChanged();
@@ -124,6 +126,7 @@ namespace Robomongo
 
         bool _textChanged;
         bool _disableTextAndCursorNotifications;
+        bool _manuallyResized;
     };
 
     class TopStatusBar : public QFrame
