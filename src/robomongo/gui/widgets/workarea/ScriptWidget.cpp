@@ -299,7 +299,9 @@ namespace Robomongo
 
     void ScriptWidget::ui_queryLinesCountChanged()
     {
-        // Set fixed size only if output widget is docked
+        // When docked, we used to force a fixed height based on lines.
+        // To support manual resizing via QSplitter, we now only set a minimum height
+        // and allow the splitter to manage the actual height.
         if (_parent->outputWindowDocked())
         {
             int lines = _queryText->sciScintilla()->lines();
@@ -309,14 +311,13 @@ namespace Robomongo
             if (editorTotalHeight > maxHeight) {
                 editorTotalHeight = maxHeight;
             }
-            // Hide & Show solves problem of UI blinking
-            _queryText->hide();
-            _queryText->setFixedHeight(editorTotalHeight);
-            _queryText->sciScintilla()->setFixedHeight(editorTotalHeight);
-            _queryText->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+
+            // Remove setFixedHeight to allow manual resizing via Splitter
+            _queryText->setMinimumHeight(editorHeight(1)); 
             _queryText->setMaximumHeight(editorTotalHeight + FindFrame::HeightFindPanel);
-            _queryText->sciScintilla()->setFocus();
-            _queryText->show();
+            
+            // If it's very small, we might want to ensure it's at least visible
+            _queryText->sciScintilla()->setMinimumHeight(editorHeight(1));
         }
     }
 

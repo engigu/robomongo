@@ -9,6 +9,7 @@
 #include <QMessageBox>
 #include <QMainWindow>
 #include <QDockWidget>
+#include <QSplitter>
 #include <Qsci/qsciscintilla.h>
 #include <Qsci/qscilexerjavascript.h>
 #include <mongo/client/dbclient_base.h>
@@ -74,18 +75,28 @@ namespace Robomongo
         _outputLabel->setContentsMargins(0, 5, 0, 0);
         _outputLabel->setVisible(false);
 
-        _line = new QFrame(this);
-        _line->setFrameShape(QFrame::HLine);
-        _line->setFrameShadow(QFrame::Raised);
+        // Bottom container for results and messages
+        _bottomContainer = new QWidget(this);
+        _bottomLayout = new QVBoxLayout(_bottomContainer);
+        _bottomLayout->setSpacing(0);
+        _bottomLayout->setContentsMargins(0, 0, 0, 0);
+        _bottomLayout->addWidget(_outputLabel, 0, Qt::AlignTop);
+        _bottomLayout->addWidget(_outputWindow, 1);
 
-        _mainLayout = new QVBoxLayout;
-        _mainLayout->setSpacing(0);
-        _mainLayout->setContentsMargins(0, 0, 0, 0);
-        _mainLayout->addWidget(_scriptWidget); 
-        _mainLayout->addWidget(_line);
-        _mainLayout->addWidget(_outputLabel, 0, Qt::AlignTop);
-        _mainLayout->addWidget(_outputWindow, 1);      
-        setLayout(_mainLayout);
+        // Main splitter
+        _splitter = new QSplitter(Qt::Vertical, this);
+        _splitter->setHandleWidth(3);
+        _splitter->addWidget(_scriptWidget);
+        _splitter->addWidget(_bottomContainer);
+
+        QVBoxLayout *mainLayout = new QVBoxLayout(this);
+        mainLayout->setSpacing(0);
+        mainLayout->setContentsMargins(0, 0, 0, 0);
+        mainLayout->addWidget(_splitter);
+        setLayout(mainLayout);
+
+        // Set initial sizes: 30% for script, 70% for results
+        _splitter->setSizes(QList<int>() << 300 << 700);
     }
 
     void QueryWidget::setScriptFocus()
@@ -350,23 +361,17 @@ namespace Robomongo
     void QueryWidget::on_dock_undock()
     {
         if (!_dock->isFloating()) {    // If output window docked 
-            // Settings to revert to docked mode
+            // Restore splitter and show results
             _scriptWidget->ui_queryLinesCountChanged();
-            _mainLayout->addWidget(_scriptWidget);                     
-            _mainLayout->addWidget(_line);
-            _mainLayout->addWidget(_outputWindow, 1);
-            _dock->setFeatures(QDockWidget::DockWidgetFloatable);
-            _dock->setTitleBarWidget(new QWidget);
+            _bottomContainer->show();
+            _splitter->setHandleWidth(3);
             _viewer->applyDockUndockSettings(true);
         }
         else {              // output window undocked(floating)
-            // Settings for query window in order to use maximum space
+            // Hide bottom container and handle to let script fill space
             _scriptWidget->disableFixedHeight();
-            _mainLayout->addWidget(_scriptWidget, 1); 
-            _mainLayout->addWidget(_line);
-            _mainLayout->addWidget(_outputWindow);
-            _dock->setFeatures(QDockWidget::DockWidgetClosable);
-            _dock->setTitleBarWidget(nullptr);
+            _bottomContainer->hide();
+            _splitter->setHandleWidth(0);
             _viewer->applyDockUndockSettings(false);
         }
     }

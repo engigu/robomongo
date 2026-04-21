@@ -9,6 +9,7 @@ class QLabel;
 class QVBoxLayout;
 class QMainWindow;
 class QPushButton;
+class QSplitter;
 class QFrame;
 QT_END_NAMESPACE
 
@@ -94,8 +95,9 @@ namespace Robomongo
         QLabel *_outputLabel;
         QDockWidget *_dock;
         QMainWindow *_outputWindow;
-        QFrame *_line;
-        QVBoxLayout *_mainLayout;
+        QSplitter *_splitter;
+        QWidget *_bottomContainer;
+        QVBoxLayout *_bottomLayout;
 
         MongoShellExecResult _currentResult;
         bool _isTextChanged;

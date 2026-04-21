@@ -4,6 +4,7 @@ Robo 3T 1.5.4 (Apr/2026)
   - Fix font settings (family and size) not persisted after restart.
   - Improved settings migration logic to prevent repeated import and accidental resets.
   - Restore "Preferences" menu entry in Options menu.
+  - Restore draggable splitter between query editor and results area.
 
 Download latest version: 
 https://robomongo.org/download
