@@ -45,7 +45,13 @@ namespace Robomongo
         QWidget(parent),
         _shell(shell),
         _viewer(nullptr),
+        _scriptWidget(nullptr),
+        _outputLabel(nullptr),
         _dock(nullptr),
+        _outputWindow(nullptr),
+        _splitter(nullptr),
+        _bottomContainer(nullptr),
+        _bottomLayout(nullptr),
         _isTextChanged(false),
         _favoriteName("")
     {
@@ -53,14 +59,10 @@ namespace Robomongo
         AppRegistry::instance().bus()->subscribe(this, ScriptExecutedEvent::Type, shell);
         AppRegistry::instance().bus()->subscribe(this, AutocompleteResponse::Type, shell);
 
-        // Make QMessageBox text selectable
-        // setStyleSheet("QMessageBox { messagebox-text-interaction-flags: 5; }");
+        _outputLabel = new QLabel(this);
+        _outputLabel->setContentsMargins(0, 5, 0, 0);
+        _outputLabel->setVisible(false);
 
-        _scriptWidget = new ScriptWidget(_shell, this);
-        VERIFY(connect(_scriptWidget, SIGNAL(textChanged()), this, SLOT(textChange())));
-
-        // Need to use QMainWindow in order to make use of all features of docking.
-        // (Note: Qt full support for dock windows implemented only for QMainWindow)
         _viewer = new OutputWidget(this);
         _outputWindow = new QMainWindow;
         _dock = new CustomDockWidget(this);
@@ -71,10 +73,6 @@ namespace Robomongo
         VERIFY(connect(_dock, SIGNAL(topLevelChanged(bool)), this, SLOT(on_dock_undock())));
         _outputWindow->addDockWidget(Qt::BottomDockWidgetArea, _dock);
 
-        _outputLabel = new QLabel(this);
-        _outputLabel->setContentsMargins(0, 5, 0, 0);
-        _outputLabel->setVisible(false);
-
         // Bottom container for results and messages
         _bottomContainer = new QWidget(this);
         _bottomLayout = new QVBoxLayout(_bottomContainer);
@@ -83,9 +81,14 @@ namespace Robomongo
         _bottomLayout->addWidget(_outputLabel, 0, Qt::AlignTop);
         _bottomLayout->addWidget(_outputWindow, 1);
 
-        // Main splitter
+        // Created splitter BEFORE children that might need to reference it
         _splitter = new QSplitter(Qt::Vertical, this);
         _splitter->setHandleWidth(3);
+
+        // Create ScriptWidget (it safe now because splitter() and outputWindowDocked() return valid states)
+        _scriptWidget = new ScriptWidget(_shell, this);
+        VERIFY(connect(_scriptWidget, SIGNAL(textChanged()), this, SLOT(textChange())));
+
         _splitter->addWidget(_scriptWidget);
         _splitter->addWidget(_bottomContainer);
 
@@ -95,8 +98,11 @@ namespace Robomongo
         mainLayout->addWidget(_splitter);
         setLayout(mainLayout);
 
-        // Set initial sizes: more compact for script initially (auto-grow will refine)
+        // Set initial sizes: more compact for script initially
         _splitter->setSizes(QList<int>() << 100 << 900);
+
+        // Now that the whole hierarchy is built, tell the script widget to perform its first auto-resize
+        _scriptWidget->ui_queryLinesCountChanged();
     }
 
     void QueryWidget::setScriptFocus()
