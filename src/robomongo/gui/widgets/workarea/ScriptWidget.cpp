@@ -317,28 +317,30 @@ namespace Robomongo
         {
             int lines = _queryText->sciScintilla()->lines();
             
-            // Set default 10 lines height, and cap auto-growth at 10 lines (Navicat-style)
-            int displayLines = std::max(10, lines);
-            if (displayLines > 10) {
-                displayLines = 10;
-            }
-
+            // Default 10 lines height for initial layout
+            int displayLines = 10; 
             int editorTotalHeight = editorHeight(displayLines);
             
-            // Apply MINIMUM height to the editor to ensure it occupies at least 10 lines
-            // but DO NOT use setFixedHeight() to allow the splitter to stretch it.
-            _queryText->sciScintilla()->setMinimumHeight(editorTotalHeight);
+            // Set MINIMUM height to 5 lines so it can be collapsed if needed,
+            // but the sizeHint will still suggest 10 lines.
+            _queryText->sciScintilla()->setMinimumHeight(editorHeight(5));
             _queryText->sciScintilla()->setMaximumHeight(QWIDGETSIZE_MAX);
             
-            // The FindFrame should accommodate the editor + potentially the find panel
             int frameHeight = editorTotalHeight;
             if (_queryText->isFindPanelVisible()) {
                 frameHeight += FindFrame::HeightFindPanel;
             }
             
-            _queryText->setMinimumHeight(frameHeight);
+            _queryText->setMinimumHeight(editorHeight(5));
             _queryText->setMaximumHeight(QWIDGETSIZE_MAX);
         }
+    }
+
+    QSize ScriptWidget::sizeHint() const
+    {
+        // Preferred height is 10 lines + status bar + some margins
+        int height = editorHeight(10) + _topStatusBar->sizeHint().height() + 10;
+        return QSize(200, height);
     }
 
     void ScriptWidget::onFontChanged()
@@ -400,9 +402,8 @@ namespace Robomongo
         QsciLexerJavaScript *javaScriptLexer = new JSLexer(this);
         javaScriptLexer->setFont(GuiRegistry::instance().font());
         
-        // Initial height set to 10 lines (Navicat style)
-        int initialHeight = editorHeight(10);
-        _queryText->sciScintilla()->setMinimumHeight(initialHeight);
+        // Initial height hint set to 10 lines, but minimum is 5 lines
+        _queryText->sciScintilla()->setMinimumHeight(editorHeight(5));
         _queryText->sciScintilla()->setMaximumHeight(QWIDGETSIZE_MAX);
         _queryText->sciScintilla()->setAppropriateBraceMatching();
         _queryText->sciScintilla()->setFont(GuiRegistry::instance().font());

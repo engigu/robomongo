@@ -58,6 +58,11 @@ namespace Robomongo
          */
         bool eventFilter(QObject *obj, QEvent *e);
 
+        /**
+         * @reimp
+         */
+        QSize sizeHint() const override;
+
         void setup(const MongoShellExecResult & execResult);
         void setTextCursor(const CursorPosition &cursor = CursorPosition());
         QString text() const;
