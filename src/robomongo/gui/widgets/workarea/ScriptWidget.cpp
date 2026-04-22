@@ -310,6 +310,8 @@ namespace Robomongo
         _topStatusBar->setSaveEnabled(!isFav);
     }
 
+    void ScriptWidget::ui_queryLinesCountChanged()
+    {
         // Set size constraints only if output widget is docked
         if (_parent->outputWindowDocked())
         {
