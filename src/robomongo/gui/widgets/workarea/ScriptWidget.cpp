@@ -315,23 +315,17 @@ namespace Robomongo
         // Set size constraints only if output widget is docked
         if (_parent->outputWindowDocked())
         {
-            int lines = _queryText->sciScintilla()->lines();
-            
-            // Default 10 lines height for initial layout
-            int displayLines = 10; 
-            int editorTotalHeight = editorHeight(displayLines);
-            
-            // Set MINIMUM height to 5 lines so it can be collapsed if needed,
-            // but the sizeHint will still suggest 10 lines.
-            _queryText->sciScintilla()->setMinimumHeight(editorHeight(5));
+            // Set MINIMUM height for the entire ScriptWidget to prevent it from disappearing.
+            // Minimum should be enough for the status bar + at least 1 line of code.
+            int minEditorHeight = editorHeight(1);
+            int statusBarHeight = _topStatusBar->sizeHint().height();
+            setMinimumHeight(minEditorHeight + statusBarHeight + 10);
+            setMaximumHeight(QWIDGETSIZE_MAX);
+
+            // Also set constraints on the editor itself
+            _queryText->sciScintilla()->setMinimumHeight(minEditorHeight);
             _queryText->sciScintilla()->setMaximumHeight(QWIDGETSIZE_MAX);
-            
-            int frameHeight = editorTotalHeight;
-            if (_queryText->isFindPanelVisible()) {
-                frameHeight += FindFrame::HeightFindPanel;
-            }
-            
-            _queryText->setMinimumHeight(editorHeight(5));
+            _queryText->setMinimumHeight(minEditorHeight);
             _queryText->setMaximumHeight(QWIDGETSIZE_MAX);
         }
     }
