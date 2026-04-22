@@ -106,9 +106,9 @@ namespace Robomongo
         _scriptWidget->ui_queryLinesCountChanged();
 
         // Set initial splitter sizes to provide 10 lines for editor (Navicat style)
-        int editorTargetHeight = _scriptWidget->editorHeight(10) + _scriptWidget->topStatusBarHeight() + 10; // extra padding
+        int editorTargetHeight = _scriptWidget->editorHeight(10) + _scriptWidget->topStatusBarHeight() + 20; // with padding
         QList<int> sizes;
-        sizes << editorTargetHeight << (height() - editorTargetHeight);
+        sizes << editorTargetHeight << 10000; // 10000 ensures the second widget takes all remaining space
         _splitter->setSizes(sizes);
     }
 
