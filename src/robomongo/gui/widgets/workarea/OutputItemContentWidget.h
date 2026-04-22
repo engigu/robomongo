@@ -66,6 +66,7 @@ namespace Robomongo
 
     private Q_SLOTS:
         void jsonPartReady(const QString &json);
+        void onFontChanged();
         void refresh(int skip, int batchSize);
         void paging_rightClicked(int skip, int batchSize);
         void paging_leftClicked(int skip, int limit);      

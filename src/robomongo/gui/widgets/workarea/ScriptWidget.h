@@ -87,8 +87,11 @@ namespace Robomongo
         void onCursorPositionChanged(int line, int index);
         void onCompletionActivated(const QString&);
         void onSaveToFavoritesRequested();
+        void onFontChanged();
 
-    private:
+    public:
+        int topStatusBarHeight() const;
+        int editorHeight(int lines) const;
         void configureQueryText();
 
         /**

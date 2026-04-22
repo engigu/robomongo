@@ -127,6 +127,9 @@ namespace Robomongo
         VERIFY(connect(_header, SIGNAL(maximizedPart()), this, SIGNAL(maximizedPart())));
         VERIFY(connect(_header, SIGNAL(restoredSize()), this, SIGNAL(restoredSize())));
 
+        // Connect to GuiRegistry for real-time font updates
+        VERIFY(connect(&GuiRegistry::instance(), SIGNAL(fontChanged()), this, SLOT(onFontChanged())));
+
         refreshOutputItem();
     }
 
@@ -428,5 +431,15 @@ namespace Robomongo
         // even for medium size documents.    
         _logText->sciScintilla()->setStyleSheet("QFrame {background-color: rgb(73, 76, 78); border: 1px solid #c7c5c4; border-radius: 0px; margin: 0px; padding: 0px;}");
         return _logText;
+    }
+
+    void OutputItemContentWidget::onFontChanged()
+    {
+        if (_textView) {
+            _textView->sciScintilla()->setFont(GuiRegistry::instance().font());
+            if (_textView->sciScintilla()->lexer()) {
+                _textView->sciScintilla()->lexer()->setFont(GuiRegistry::instance().font());
+            }
+        }
     }
 }

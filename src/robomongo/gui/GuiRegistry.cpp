@@ -14,6 +14,7 @@ namespace Robomongo
      */
     GuiRegistry::GuiRegistry() : QObject(NULL)
     {
+        refreshFont();
     }
 
     /**

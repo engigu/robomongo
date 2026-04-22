@@ -113,6 +113,9 @@ namespace Robomongo
         VERIFY(connect(_topStatusBar, SIGNAL(saveToFavoritesRequested()), this, SLOT(onSaveToFavoritesRequested())));
         updateSaveButtonStatus();
 
+        // Connect to GuiRegistry for real-time font updates
+        VERIFY(connect(&GuiRegistry::instance(), SIGNAL(fontChanged()), this, SLOT(onFontChanged())));
+
         // Connect find panel visibility changes to trigger layout recalculation
         connect(_queryText, SIGNAL(findPanelVisibilityChanged(bool)), this, SLOT(ui_queryLinesCountChanged()));
 
@@ -307,22 +310,23 @@ namespace Robomongo
         _topStatusBar->setSaveEnabled(!isFav);
     }
 
-    void ScriptWidget::ui_queryLinesCountChanged()
-    {
-        // Set fixed size only if output widget is docked
+        // Set size constraints only if output widget is docked
         if (_parent->outputWindowDocked())
         {
             int lines = _queryText->sciScintilla()->lines();
-            int editorTotalHeight = editorHeight(lines);
-
-            int maxHeight = editorHeight(18);
-            if (editorTotalHeight > maxHeight) {
-                editorTotalHeight = maxHeight;
+            
+            // Set default 10 lines height, and cap auto-growth at 10 lines (Navicat-style)
+            int displayLines = std::max(10, lines);
+            if (displayLines > 10) {
+                displayLines = 10;
             }
 
-            // Apply fixed height to the editor to provide stable layout
-            // (Traditional Robo 3T behavior)
-            _queryText->sciScintilla()->setFixedHeight(editorTotalHeight);
+            int editorTotalHeight = editorHeight(displayLines);
+            
+            // Apply MINIMUM height to the editor to ensure it occupies at least 10 lines
+            // but DO NOT use setFixedHeight() to allow the splitter to stretch it.
+            _queryText->sciScintilla()->setMinimumHeight(editorTotalHeight);
+            _queryText->sciScintilla()->setMaximumHeight(QWIDGETSIZE_MAX);
             
             // The FindFrame should accommodate the editor + potentially the find panel
             int frameHeight = editorTotalHeight;
@@ -330,8 +334,18 @@ namespace Robomongo
                 frameHeight += FindFrame::HeightFindPanel;
             }
             
-            _queryText->setFixedHeight(frameHeight);
+            _queryText->setMinimumHeight(frameHeight);
+            _queryText->setMaximumHeight(QWIDGETSIZE_MAX);
         }
+    }
+
+    void ScriptWidget::onFontChanged()
+    {
+        _queryText->sciScintilla()->setFont(GuiRegistry::instance().font());
+        if (_queryText->sciScintilla()->lexer()) {
+            _queryText->sciScintilla()->lexer()->setFont(GuiRegistry::instance().font());
+        }
+        ui_queryLinesCountChanged();
     }
 
 
@@ -383,9 +397,11 @@ namespace Robomongo
     {
         QsciLexerJavaScript *javaScriptLexer = new JSLexer(this);
         javaScriptLexer->setFont(GuiRegistry::instance().font());
-        int height = editorHeight(1);
-        _queryText->sciScintilla()->setMinimumHeight(height);
-        _queryText->sciScintilla()->setFixedHeight(height);
+        
+        // Initial height set to 10 lines (Navicat style)
+        int initialHeight = editorHeight(10);
+        _queryText->sciScintilla()->setMinimumHeight(initialHeight);
+        _queryText->sciScintilla()->setMaximumHeight(QWIDGETSIZE_MAX);
         _queryText->sciScintilla()->setAppropriateBraceMatching();
         _queryText->sciScintilla()->setFont(GuiRegistry::instance().font());
         _queryText->sciScintilla()->setPaper(QColor(255, 0, 0, 127));
@@ -395,6 +411,11 @@ namespace Robomongo
         VERIFY(connect(_queryText->sciScintilla(), SIGNAL(linesChanged()), SLOT(ui_queryLinesCountChanged())));
         VERIFY(connect(_queryText->sciScintilla(), SIGNAL(textChanged()), SLOT(onTextChanged())));
         VERIFY(connect(_queryText->sciScintilla(), SIGNAL(cursorPositionChanged(int, int)), SLOT(onCursorPositionChanged(int, int))));
+    }
+
+    int ScriptWidget::topStatusBarHeight() const
+    {
+        return _topStatusBar->height();
     }
 
     /**

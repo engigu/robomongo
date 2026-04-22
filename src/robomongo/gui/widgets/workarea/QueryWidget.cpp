@@ -104,6 +104,12 @@ namespace Robomongo
 
         // Now that the whole hierarchy is built, tell the script widget to perform its first auto-resize
         _scriptWidget->ui_queryLinesCountChanged();
+
+        // Set initial splitter sizes to provide 10 lines for editor (Navicat style)
+        int editorTargetHeight = _scriptWidget->editorHeight(10) + _scriptWidget->topStatusBarHeight() + 10; // extra padding
+        QList<int> sizes;
+        sizes << editorTargetHeight << (height() - editorTargetHeight);
+        _splitter->setSizes(sizes);
     }
 
     void QueryWidget::setScriptFocus()
