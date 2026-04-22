@@ -91,7 +91,6 @@ namespace Robomongo
 
     public:
         int topStatusBarHeight() const;
-        int editorHeight(int lines) const;
         void configureQueryText();
 
         /**
