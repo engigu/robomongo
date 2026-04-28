@@ -11,6 +11,8 @@
 #include <QMessageBox>
 
 #include <QSplitter>
+#include <QApplication>
+#include <QInputMethod>
 #include <algorithm>
 
 #include "robomongo/core/AppRegistry.h"
@@ -356,6 +358,10 @@ namespace Robomongo
 
     void ScriptWidget::onCursorPositionChanged(int line, int index)
     {
+        if (qApp->inputMethod()->isVisible()) {
+            return;
+        }
+
         if (!_disableTextAndCursorNotifications && _textChanged) {
             showAutocompletion();
             _textChanged = false;
