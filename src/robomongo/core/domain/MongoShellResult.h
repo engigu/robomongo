@@ -29,10 +29,35 @@ namespace Robomongo
         MongoQueryInfo queryInfo() const { return _queryInfo; }
         std::string statement() const { return _statement; }
         std::string statementShort() const {
+            std::string name;
+
+            // 1. Try to get collection name from QueryInfo
+            if (!_queryInfo._info._ns.collectionName().empty() &&
+                _queryInfo._info._ns.collectionName() != "[invalid collection]") {
+                name = _queryInfo._info._ns.collectionName();
+            }
+            // 2. Try to get collection name from AggrInfo
+            else if (_aggrInfo.isValid && !_aggrInfo.collectionName.empty() &&
+                       _aggrInfo.collectionName != "[invalid collection]") {
+                name = _aggrInfo.collectionName;
+            }
+
+            if (!name.empty()) {
+                // Use a slightly longer limit for collection names as they are more informative
+                if (name.size() <= 16) {
+                    return name;
+                } else {
+                    return name.substr(0, 14) + "..";
+                }
+            }
+
+            // Fallback to original behavior: truncate the statement
             std::size_t const LEN = _statement.size() < 10 ? _statement.size() : 10;
-            std::string statementShort { _statement, 0, LEN };
-            statementShort.append((_statement.size() > 10) ? ".." : "");
-            return statementShort;
+            std::string shortStatement = _statement.substr(0, LEN);
+            if (_statement.size() > 10) {
+                shortStatement += "..";
+            }
+            return shortStatement;
         }
 
         qint64 elapsedMs() const { return _elapsedms; }
