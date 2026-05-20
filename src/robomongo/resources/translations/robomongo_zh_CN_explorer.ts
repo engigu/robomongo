@@ -1729,5 +1729,9 @@ Error:
         <source>Please select a server or database in the tree first to open this script.</source>
         <translation>请先在树中选择一个服务器或数据库以打开此脚本。</translation>
     </message>
+    <message>
+        <source>Filter connection/objects...</source>
+        <translation>过滤连接/对象...</translation>
+    </message>
 </context>
 </TS>
