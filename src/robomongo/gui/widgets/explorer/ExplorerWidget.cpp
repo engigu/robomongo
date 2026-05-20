@@ -1,6 +1,9 @@
 #include "robomongo/gui/widgets/explorer/ExplorerWidget.h"
 
-#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QLineEdit>
+#include <QTimer>
+#include <QAbstractItemModel>
 #include <QLabel>
 #include <QMovie>
 #include <QKeyEvent>
@@ -40,15 +43,30 @@ namespace Robomongo
         _favoritesRoot = new ExplorerFavoritesRootItem(_treeWidget);
         _treeWidget->addTopLevelItem(_favoritesRoot);
 
-        QHBoxLayout *vlaout = new QHBoxLayout();
+        QVBoxLayout *vlaout = new QVBoxLayout();
         vlaout->setMargin(0);
-        vlaout->addWidget(_treeWidget, Qt::AlignJustify);
+        vlaout->setSpacing(2);
+
+        _filterLineEdit = new QLineEdit(this);
+        _filterLineEdit->setPlaceholderText(tr("Filter connection/objects..."));
+        _filterLineEdit->setClearButtonEnabled(true);
+        _filterLineEdit->setStyleSheet("QLineEdit { margin: 2px 4px; padding: 2px; }");
+
+        vlaout->addWidget(_filterLineEdit);
+        vlaout->addWidget(_treeWidget);
 
         VERIFY(connect(_treeWidget, SIGNAL(itemExpanded(QTreeWidgetItem *)), this, SLOT(ui_itemExpanded(QTreeWidgetItem *))));
         VERIFY(connect(_treeWidget, SIGNAL(itemDoubleClicked(QTreeWidgetItem *, int)), 
                        this, SLOT(ui_itemDoubleClicked(QTreeWidgetItem *, int))));
         VERIFY(connect(_treeWidget, SIGNAL(currentItemChanged(QTreeWidgetItem *, QTreeWidgetItem *)), 
                        this, SLOT(ui_currentItemChanged(QTreeWidgetItem *, QTreeWidgetItem *))));
+        VERIFY(connect(_filterLineEdit, SIGNAL(textChanged(const QString &)), this, SLOT(ui_filterTextChanged(const QString &))));
+        VERIFY(connect(_treeWidget->model(), SIGNAL(rowsInserted(const QModelIndex &, int, int)), 
+                       this, SLOT(ui_rowsInserted(const QModelIndex &, int, int))));
+
+        ExplorerTreeWidget *explorerTree = static_cast<ExplorerTreeWidget *>(_treeWidget);
+        VERIFY(connect(explorerTree, SIGNAL(printableKeyPressed(const QString &)), 
+                       this, SLOT(ui_treePrintableKeyPressed(const QString &))));
 
         setLayout(vlaout);
 
@@ -329,5 +347,72 @@ namespace Robomongo
             _lastDatabase = database;
             _lastServer = server;
         }
+    }
+
+    void ExplorerWidget::ui_filterTextChanged(const QString &text)
+    {
+        filterTree(text);
+    }
+
+    void ExplorerWidget::ui_rowsInserted(const QModelIndex &parent, int start, int end)
+    {
+        if (!_filterLineEdit->text().isEmpty()) {
+            QTimer::singleShot(0, this, SLOT(ui_applyFilter()));
+        }
+    }
+
+    void ExplorerWidget::ui_applyFilter()
+    {
+        filterTree(_filterLineEdit->text());
+    }
+
+    void ExplorerWidget::ui_treePrintableKeyPressed(const QString &text)
+    {
+        _filterLineEdit->setFocus();
+        _filterLineEdit->setCursorPosition(_filterLineEdit->text().length());
+        _filterLineEdit->insert(text);
+    }
+
+    void ExplorerWidget::filterTree(const QString &text)
+    {
+        for (int i = 0; i < _treeWidget->topLevelItemCount(); ++i) {
+            filterItem(_treeWidget->topLevelItem(i), text, false);
+        }
+    }
+
+    bool ExplorerWidget::filterItem(QTreeWidgetItem *item, const QString &text, bool parentMatches)
+    {
+        if (!item)
+            return false;
+
+        // Check if this item matches the search text
+        bool itemMatches = false;
+        if (text.isEmpty() || item->text(0).contains(text, Qt::CaseInsensitive)) {
+            itemMatches = true;
+        }
+
+        // Recursively filter children.
+        // We pass along whether this item or any ancestor matched the search query.
+        bool hasMatchingChild = false;
+        for (int i = 0; i < item->childCount(); ++i) {
+            if (filterItem(item->child(i), text, parentMatches || itemMatches)) {
+                hasMatchingChild = true;
+            }
+        }
+
+        // An item should be kept visible if:
+        // 1. It matches the search query itself.
+        // 2. Or it has at least one child that is kept visible.
+        // 3. Or a parent/ancestor matched (so we show all sub-items of a matched database or category)
+        bool keepVisible = itemMatches || hasMatchingChild || parentMatches;
+        item->setHidden(!keepVisible);
+
+        // If a child matches, we should expand this item so that the match is visible to the user.
+        // If the text is empty, we don't automatically expand items.
+        if (!text.isEmpty() && hasMatchingChild) {
+            item->setExpanded(true);
+        }
+
+        return keepVisible;
     }
 }

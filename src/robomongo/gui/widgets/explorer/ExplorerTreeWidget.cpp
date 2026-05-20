@@ -6,6 +6,7 @@
 #include "robomongo/gui/widgets/explorer/ExplorerReplicaSetTreeItem.h"
 #include <QContextMenuEvent>
 #include <QDropEvent>
+#include <QKeyEvent>
 #include <QFileInfo>
 #include <QFile>
 #include <QDir>
@@ -134,5 +135,19 @@ namespace Robomongo
         }
 
         QTreeWidget::dropEvent(event);
+    }
+
+    void ExplorerTreeWidget::keyPressEvent(QKeyEvent *event)
+    {
+        Qt::KeyboardModifiers modifiers = event->modifiers();
+        if ((modifiers == Qt::NoModifier || modifiers == Qt::ShiftModifier) &&
+            !event->text().isEmpty() && event->text()[0].isPrint())
+        {
+            emit printableKeyPressed(event->text());
+            event->accept();
+            return;
+        }
+
+        QTreeWidget::keyPressEvent(event);
     }
 }
