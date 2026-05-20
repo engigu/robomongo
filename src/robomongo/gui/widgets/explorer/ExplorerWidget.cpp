@@ -385,34 +385,39 @@ namespace Robomongo
         if (!item)
             return false;
 
-        // Check if this item matches the search text
+        // Check if this item itself directly matches the search text
         bool itemMatches = false;
-        if (text.isEmpty() || item->text(0).contains(text, Qt::CaseInsensitive)) {
+        if (!text.isEmpty() && item->text(0).contains(text, Qt::CaseInsensitive)) {
             itemMatches = true;
         }
 
-        // Recursively filter children.
-        // We pass along whether this item or any ancestor matched the search query.
-        bool hasMatchingChild = false;
+        // Recursively filter children
+        bool hasDirectMatchingDescendant = false;
         for (int i = 0; i < item->childCount(); ++i) {
             if (filterItem(item->child(i), text, parentMatches || itemMatches)) {
-                hasMatchingChild = true;
+                hasDirectMatchingDescendant = true;
             }
         }
 
-        // An item should be kept visible if:
-        // 1. It matches the search query itself.
-        // 2. Or it has at least one child that is kept visible.
-        // 3. Or a parent/ancestor matched (so we show all sub-items of a matched database or category)
-        bool keepVisible = itemMatches || hasMatchingChild || parentMatches;
+        // Determine if we should show this item
+        // It should be shown if:
+        // 1. We are not searching (text is empty)
+        // 2. Or this item itself is a direct match
+        // 3. Or this item has a descendant that is a direct match
+        // 4. Or an ancestor was a direct match (so we show all sub-items of a matched item)
+        bool keepVisible = text.isEmpty() || itemMatches || hasDirectMatchingDescendant || parentMatches;
         item->setHidden(!keepVisible);
 
-        // If a child matches, we should expand this item so that the match is visible to the user.
-        // If the text is empty, we don't automatically expand items.
-        if (!text.isEmpty() && hasMatchingChild) {
+        // We only automatically expand this item if:
+        // 1. We are searching (text is not empty)
+        // 2. And this item has a descendant that is a DIRECT match.
+        // (If this item itself is a direct match, but has no direct matching descendants,
+        // we do NOT expand it, so its children like "索引列表" remain collapsed until manually expanded!)
+        if (!text.isEmpty() && hasDirectMatchingDescendant) {
             item->setExpanded(true);
         }
 
-        return keepVisible;
+        // Return whether this item or any of its descendants directly matches the search text
+        return itemMatches || hasDirectMatchingDescendant;
     }
 }
