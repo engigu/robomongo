@@ -1581,6 +1581,7 @@ namespace Robomongo
                             
                             ConnectionSettings* conn = AppRegistry::instance().settingsManager()->getConnectionSettingsByUuid(uuid);
                             if (conn) {
+                                conn->setDefaultDatabase(dbname.toStdString());
                                 ScriptInfo inf(query, false, dbname.toStdString(), CursorPosition(), QString(), filePath);
                                 _app->openShell(nullptr, conn, inf);
                             }
