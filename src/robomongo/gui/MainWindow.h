@@ -93,6 +93,7 @@ namespace Robomongo
         void resizeEvent(QResizeEvent* event) override;
         
     private Q_SLOTS:
+        void restoreTabsState();
         void updateMenus();
         void setUtcTimeZone();
         void setLocalTimeZone();
@@ -134,7 +135,6 @@ namespace Robomongo
         void adjustUpdatesBarHeight();
         
         void saveTabsState();
-        void restoreTabsState();
 
         QDockWidget *_logDock;
 
