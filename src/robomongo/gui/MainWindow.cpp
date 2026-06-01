@@ -32,6 +32,7 @@
 #include "robomongo/core/settings/SettingsManager.h"
 #include "robomongo/core/settings/SshSettings.h"
 #include "robomongo/core/domain/MongoServer.h"
+#include "robomongo/core/domain/MongoShell.h"
 #include "robomongo/core/domain/App.h"
 #include "robomongo/core/AppRegistry.h"
 #include "robomongo/core/EventBus.h"
