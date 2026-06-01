@@ -212,13 +212,15 @@ namespace Robomongo
     void App::openShell(MongoServer* server, ConnectionSettings* connection, const ScriptInfo &scriptInfo)
     {
         auto serverClone{ openServerInternal(connection, ConnectionSecondary) };
-        if (!serverClone || !server)
+        if (!serverClone)
             return;
 
         auto shell{ std::make_unique<MongoShell>(serverClone.get(), scriptInfo) };
         _servers.push_back(move(serverClone));
         // Connection between explorer's server and tab's MongoShells
-        _bus->subscribe(server, ReplicaSetRefreshed::Type, shell.get()); 
+        if (server) {
+            _bus->subscribe(server, ReplicaSetRefreshed::Type, shell.get()); 
+        }
         _bus->publish(new OpeningShellEvent(this, shell.get()));
         shell->execute();
         _shells.push_back(move(shell));
