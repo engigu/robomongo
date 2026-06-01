@@ -1565,10 +1565,13 @@ namespace Robomongo
             if (!doc.isNull() && doc.isObject()) {
                 QJsonArray tabsArray = doc.object()["tabs"].toArray();
                 if (tabsArray.size() > 0) {
-                    QMessageBox::StandardButton reply = QMessageBox::question(this, tr("Auto Recovery"), 
-                        tr("Do you want to restore previously opened query windows?\n\n提示是自动恢复。防止意外关闭软件后查询窗口的语句全部丢失"), 
-                        QMessageBox::Yes | QMessageBox::No);
-                    if (reply == QMessageBox::Yes) {
+                    QMessageBox msgBox(this);
+                    msgBox.setWindowTitle(tr("自动恢复"));
+                    msgBox.setText(tr("是否恢复上次关闭前打开的查询窗口？\n\n(此为自动恢复功能，防止意外关闭软件后查询语句丢失)"));
+                    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+                    msgBox.setButtonText(QMessageBox::Yes, tr("是 (Y)"));
+                    msgBox.setButtonText(QMessageBox::No, tr("否 (N)"));
+                    if (msgBox.exec() == QMessageBox::Yes) {
                         for (int i = 0; i < tabsArray.size(); ++i) {
                             QJsonObject tabObj = tabsArray[i].toObject();
                             QString uuid = tabObj["uuid"].toString();
