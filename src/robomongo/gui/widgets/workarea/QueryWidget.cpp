@@ -106,6 +106,11 @@ namespace Robomongo
         _scriptWidget->ui_queryLinesCountChanged();
     }
 
+    QString QueryWidget::queryText() const
+    {
+        return _scriptWidget->text();
+    }
+
     void QueryWidget::setScriptFocus()
     {
         _scriptWidget->setScriptFocus();
@@ -222,6 +227,7 @@ namespace Robomongo
     {
         _isTextChanged = true;
         updateCurrentTab();
+        emit textChanged();
     }
 
     QueryWidget::~QueryWidget()

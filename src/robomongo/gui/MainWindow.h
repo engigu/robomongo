@@ -12,6 +12,7 @@ class QPushButton;
 class QTreeWidgetItem;
 class QNetworkReply;
 class QNetworkAccessManager;
+class QTimer;
 QT_END_NAMESPACE
 
 namespace Robomongo
@@ -117,6 +118,9 @@ namespace Robomongo
         void checkUpdates();
         void toggleCheckUpdates();
         void openShellTimeoutDialog();
+        
+        void scheduleAutoSave();
+        void on_autoSaveTimerTimeout();
 
     private:
         void updateConnectionsMenu();
@@ -128,6 +132,9 @@ namespace Robomongo
         void restoreWindowSettings();
         void saveWindowSettings() const;
         void adjustUpdatesBarHeight();
+        
+        void saveTabsState();
+        void restoreTabsState();
 
         QDockWidget *_logDock;
 
@@ -163,6 +170,8 @@ namespace Robomongo
 
         bool _allowExit;
         bool _updateMenusAtStart = true;
+        
+        QTimer *_autoSaveTimer;
     };
 
 }

@@ -59,10 +59,14 @@ namespace Robomongo
         bool outputWindowDocked() const;
 
         QSplitter* splitter() const { return _splitter; }
+        
+        QString queryText() const;
+        MongoShell* shell() const { return _shell; }
 
     Q_SIGNALS:
         void titleChanged(const QString &text);
         void toolTipChanged(const QString &text);
+        void textChanged();
 
     public Q_SLOTS:
         void execute();

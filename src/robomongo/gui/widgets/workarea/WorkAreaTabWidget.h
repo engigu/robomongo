@@ -43,6 +43,9 @@ namespace Robomongo
 
         void tabTextChange(const QString &text);
         void tooltipTextChange(const QString &text);
+        
+    Q_SIGNALS:
+        void queryTextChanged();
 
     protected:
         /**

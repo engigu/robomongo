@@ -301,6 +301,8 @@ namespace Robomongo
                        this, SLOT(tabTextChange(const QString &))));
         VERIFY(connect(queryWidget, SIGNAL(toolTipChanged(const QString &)), 
                        this, SLOT(tooltipTextChange(const QString &))));
+        VERIFY(connect(queryWidget, SIGNAL(textChanged()), 
+                       this, SIGNAL(queryTextChanged())));
         
         addTab(queryWidget, shellName);
         setCurrentIndex(count() - 1);

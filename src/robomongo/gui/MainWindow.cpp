@@ -23,6 +23,10 @@
 #include <QNetworkReply>
 #include <QUrl>
 #include <QTextDocument>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QFile>
 
 #include <mongo/logger/log_severity.h>
 #include "robomongo/core/settings/SettingsManager.h"
@@ -132,7 +136,8 @@ namespace Robomongo
 #if defined(Q_OS_WIN)
         _trayIcon(nullptr),
 #endif
-        _allowExit(false)
+        _allowExit(false),
+        _autoSaveTimer(new QTimer(this))
      {
         QColor background = palette().window().color();
         QString controlKey = "Ctrl";
@@ -644,6 +649,12 @@ namespace Robomongo
             VERIFY(connect(timer, SIGNAL(timeout()), this, SLOT(checkUpdates())));
             timer->start(ONE_HOUR);
         }
+
+        _autoSaveTimer->setSingleShot(true);
+        _autoSaveTimer->setInterval(2000);
+        VERIFY(connect(_autoSaveTimer, SIGNAL(timeout()), this, SLOT(on_autoSaveTimerTimeout())));
+
+        QTimer::singleShot(500, this, SLOT(restoreTabsState()));
 
         setUnifiedTitleAndToolBarOnMac(false); // https://bugreports.qt.io/browse/QTBUG-68946
     }
@@ -1210,6 +1221,9 @@ namespace Robomongo
 
     void MainWindow::closeEvent(QCloseEvent *event)
     {
+        // 确保正常关闭时，也将最新的状态强制保存下来
+        saveTabsState();
+        
         AppRegistry::instance().settingsManager()->setProgramExitedNormally(true);
         AppRegistry::instance().settingsManager()->save();
         saveWindowSettings();
@@ -1353,6 +1367,9 @@ namespace Robomongo
         AppRegistry::instance().bus()->subscribe(_workArea, OpeningShellEvent::Type);
         VERIFY(connect(_workArea, SIGNAL(currentChanged(int)), this, SLOT(updateMenus())));
         VERIFY(connect(_workArea, SIGNAL(currentChanged(int)), this, SLOT(on_tabChange())));
+        VERIFY(connect(_workArea, SIGNAL(queryTextChanged()), this, SLOT(scheduleAutoSave())));
+        VERIFY(connect(_workArea, SIGNAL(tabCloseRequested(int)), this, SLOT(scheduleAutoSave())));
+        VERIFY(connect(_workArea, SIGNAL(currentChanged(int)), this, SLOT(scheduleAutoSave())));
 
         QHBoxLayout *hlayout = new QHBoxLayout;
         hlayout->setContentsMargins(0, 3, 0, 0);
@@ -1496,5 +1513,78 @@ namespace Robomongo
                   "&dbVersionsConnected=" + dbVersionsConnected + "&notify=true#");
 
         _networkAccessManager->get(QNetworkRequest(url));
+    }
+
+    void MainWindow::scheduleAutoSave()
+    {
+        _autoSaveTimer->start();
+    }
+
+    void MainWindow::on_autoSaveTimerTimeout()
+    {
+        saveTabsState();
+    }
+
+    void MainWindow::saveTabsState()
+    {
+        if (!_workArea) return;
+        QJsonArray tabsArray;
+        for (int i = 0; i < _workArea->count(); ++i) {
+            QueryWidget *qw = _workArea->queryWidget(i);
+            if (qw && qw->shell()) {
+                QJsonObject tabObj;
+                tabObj["uuid"] = qw->shell()->server()->connectionRecord()->uuid();
+                tabObj["dbname"] = QString::fromStdString(qw->shell()->dbname());
+                tabObj["query"] = qw->queryText();
+                tabObj["filePath"] = qw->shell()->filePath();
+                tabsArray.append(tabObj);
+            }
+        }
+        
+        QJsonObject root;
+        root["tabs"] = tabsArray;
+        QJsonDocument doc(root);
+        QString autosavePath = AppRegistry::instance().settingsManager()->configDir() + QDir::separator() + "autosave.json";
+        QFile file(autosavePath);
+        if (file.open(QIODevice::WriteOnly)) {
+            file.write(doc.toJson());
+        }
+    }
+
+    void MainWindow::restoreTabsState()
+    {
+        QString autosavePath = AppRegistry::instance().settingsManager()->configDir() + QDir::separator() + "autosave.json";
+        QFile file(autosavePath);
+        if (!file.exists()) return;
+        
+        if (file.open(QIODevice::ReadOnly)) {
+            QByteArray data = file.readAll();
+            file.close();
+            QJsonDocument doc = QJsonDocument::fromJson(data);
+            if (!doc.isNull() && doc.isObject()) {
+                QJsonArray tabsArray = doc.object()["tabs"].toArray();
+                if (tabsArray.size() > 0) {
+                    QMessageBox::StandardButton reply = QMessageBox::question(this, tr("Auto Recovery"), 
+                        tr("Do you want to restore previously opened query windows?\n\n提示是自动恢复。防止意外关闭软件后查询窗口的语句全部丢失"), 
+                        QMessageBox::Yes | QMessageBox::No);
+                    if (reply == QMessageBox::Yes) {
+                        for (int i = 0; i < tabsArray.size(); ++i) {
+                            QJsonObject tabObj = tabsArray[i].toObject();
+                            QString uuid = tabObj["uuid"].toString();
+                            QString dbname = tabObj["dbname"].toString();
+                            QString query = tabObj["query"].toString();
+                            QString filePath = tabObj["filePath"].toString();
+                            
+                            ConnectionSettings* conn = AppRegistry::instance().settingsManager()->getConnectionSettingsByUuid(uuid);
+                            if (conn) {
+                                ScriptInfo inf(query, false, dbname.toStdString(), CursorPosition(), QString(), filePath);
+                                _app->openShell(nullptr, conn, inf);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        QFile::remove(autosavePath);
     }
 }
