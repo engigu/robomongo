@@ -1447,23 +1447,37 @@ namespace Robomongo
 
     void MainWindow::on_networkReply(QNetworkReply* reply)
     {
-        QString str(QUrl::fromPercentEncoding(reply->readAll()));	
-
-        if (str.contains("NO-UPDATES")
-            || reply->error() != QNetworkReply::NoError 
-            || str.isEmpty()
-        ) {
+        if (reply->error() != QNetworkReply::NoError) {
             _updateLabel->setText("");
             _updateBar->setVisible(false);
             return;
         }
 
-        str.replace('+', ' ');
-        str.remove("Update,");
+        QByteArray data = reply->readAll();
+        QJsonDocument doc = QJsonDocument::fromJson(data);
+        if (!doc.isNull() && doc.isObject()) {
+            QJsonObject root = doc.object();
+            if (root.contains("tag_name") && root.contains("html_url")) {
+                QString tagName = root["tag_name"].toString();
+                QString htmlUrl = root["html_url"].toString();
+                
+                QString currentVersion = QString(PROJECT_VERSION);
+                QString latestVersion = tagName;
+                if (latestVersion.startsWith("v")) latestVersion = latestVersion.mid(1);
+                if (currentVersion.startsWith("v")) currentVersion = currentVersion.mid(1);
 
-        _updateLabel->setText(str);
-        _updateBar->setVisible(true);
-        adjustUpdatesBarHeight();
+                if (latestVersion != currentVersion && !latestVersion.isEmpty()) {
+                    QString msg = tr("发现新版本: %1. <a href=\"%2\">点击此处下载</a>").arg(tagName).arg(htmlUrl);
+                    _updateLabel->setText(msg);
+                    _updateBar->setVisible(true);
+                    adjustUpdatesBarHeight();
+                    return;
+                }
+            }
+        }
+        
+        _updateLabel->setText("");
+        _updateBar->setVisible(false);
     }
 
     void MainWindow::changeLanguage(QAction *ac)
@@ -1490,30 +1504,11 @@ namespace Robomongo
         if (!settings->checkForUpdates() || settings->disableHttpsFeatures())
             return;
 
-#ifdef _WIN32
-        QString const OS = "win";
-#elif __APPLE__
-        QString const OS = "osx";
-#elif __linux__
-        QString const OS = "linux";
-#else
-        QString const OS = "unknown";
-#endif
+        QUrl url("https://api.github.com/repos/engigu/robomongo/releases/latest");
+        QNetworkRequest request(url);
+        request.setRawHeader("User-Agent", QString("Robo3T/%1").arg(PROJECT_VERSION).toUtf8());
 
-        // Build dbVersionsConnected in following format: "3.4.3,2.6.0,..."
-        QString dbVersionsConnected;
-        for (auto const& version : settings->dbVersionsConnected())
-            dbVersionsConnected.append(version + ',');
-        
-        if (dbVersionsConnected.endsWith(','))
-            dbVersionsConnected.chop(1);
-
-        // softwareId=8: Robomongo product ID 
-        QUrl url("https://updates.3t.io/check.php?os=" + OS + "&softwareId=8&softwareVersion=" +
-                  QString(PROJECT_VERSION) + "&licenseInfo=FREE&setup=" + settings->anonymousID() + 
-                  "&dbVersionsConnected=" + dbVersionsConnected + "&notify=true#");
-
-        _networkAccessManager->get(QNetworkRequest(url));
+        _networkAccessManager->get(request);
     }
 
     void MainWindow::scheduleAutoSave()
