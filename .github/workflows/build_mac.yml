@@ -1,0 +1,102 @@
+name: Build Robo 3T macOS ARM64 (Apple Silicon)
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+    tags:
+      - 'v*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-mac:
+    runs-on: macos-14
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Robo 3T
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install System Dependencies
+        run: |
+          brew install qt@5 openssl@1.1 cmake ninja
+          echo "Qt5_Dir=$(brew --prefix qt@5)" >> $GITHUB_ENV
+          echo "OPENSSL_PATH=$(brew --prefix openssl@1.1)" >> $GITHUB_ENV
+
+      - name: Cache Robo Shell (Restoring from Cloud)
+        id: cache-robo-shell
+        uses: actions/cache@v4
+        with:
+          path: robomongo-shell-roboshell-v4.2/build
+          key: ${{ runner.os }}-robo-shell-arm64-stable
+          restore-keys: |
+            ${{ runner.os }}-robo-shell-arm64-
+          fail-on-cache-miss: false
+
+      - name: Build Robo Shell (Fallback)
+        if: steps.cache-robo-shell.outputs.cache-hit != 'true'
+        run: |
+          python -m pip install scons==4.5.2 pyyaml Cheetah3 psutil
+          if [ ! -d "robomongo-shell-roboshell-v4.2" ]; then
+            echo "Error: robomongo-shell-roboshell-v4.2 directory not found!"
+            exit 1
+          fi
+          cd robomongo-shell-roboshell-v4.2
+          # Use macOS standard ARCHFLAGS or CCFLAGS to cross compile/build for arm64
+          python -m SCons mongo MONGO_VERSION=4.2.0 --release -j2 --link-model=object --disable-warnings-as-errors --cxx-std=17 CCFLAGS="-arch arm64" LINKFLAGS="-arch arm64"
+
+      - name: Configure and Build Robo 3T
+        run: |
+          if [ ! -d "robomongo-shell-roboshell-v4.2/build" ]; then
+            mkdir -p "robomongo-shell-roboshell-v4.2/build"
+          fi
+          mkdir -p build dist
+          cd build
+          cmake -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" \
+            -DMongoDB_DIR="$GITHUB_WORKSPACE/robomongo-shell-roboshell-v4.2" \
+            -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" \
+            -DCMAKE_OSX_ARCHITECTURES="arm64" \
+            -DCMAKE_RUNTIME_OUTPUT_DIRECTORY="$GITHUB_WORKSPACE/dist" \
+            -DCMAKE_LIBRARY_OUTPUT_DIRECTORY="$GITHUB_WORKSPACE/dist" \
+            ..
+          ninja -v
+
+      - name: Build and Package Robo 3T
+        run: |
+          cd build
+          ninja install
+          
+          echo "Starting DMG packaging..."
+          cpack -G DragNDrop
+          
+          mkdir -p $GITHUB_WORKSPACE/dist
+          cp package/*.dmg $GITHUB_WORKSPACE/dist/ || true
+
+      - name: Organize Artifacts
+        run: |
+          cd $GITHUB_WORKSPACE/dist
+          TAG=${GITHUB_REF_NAME}
+          for file in *.dmg; do
+            if [ -f "$file" ]; then
+              mv "$file" "robo3t-$TAG-darwin-arm64.dmg"
+              echo "Organized DMG: robo3t-$TAG-darwin-arm64.dmg"
+            fi
+          done
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: robo3t-macos-arm64
+          path: dist/*.dmg
+          retention-days: 7
