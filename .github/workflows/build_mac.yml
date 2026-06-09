@@ -52,7 +52,8 @@ jobs:
           fi
           cd robomongo-shell-roboshell-v4.2
           # Use macOS standard ARCHFLAGS or CCFLAGS to cross compile/build for arm64
-          python -m SCons mongo MONGO_VERSION=4.2.0 --release -j2 --link-model=object --disable-warnings-as-errors --cxx-std=17 CCFLAGS="-arch arm64" LINKFLAGS="-arch arm64"
+          # Add _LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION to fix boost 1.70.0 error with c++17
+          python -m SCons mongo MONGO_VERSION=4.2.0 --release -j2 --link-model=object --disable-warnings-as-errors --cxx-std=17 CCFLAGS="-arch arm64 -D_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION" LINKFLAGS="-arch arm64"
 
       - name: Configure and Build Robo 3T
         run: |
@@ -63,6 +64,7 @@ jobs:
           cd build
           cmake -G Ninja \
             -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_CXX_FLAGS="-D_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION -D_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES" \
             -DCMAKE_PREFIX_PATH="${{ env.Qt5_Dir }}" \
             -DMongoDB_DIR="$GITHUB_WORKSPACE/robomongo-shell-roboshell-v4.2" \
             -DOpenSSL_DIR="${{ env.OPENSSL_PATH }}" \
