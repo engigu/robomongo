@@ -14,6 +14,8 @@
 #include <robomongo/gui/GuiRegistry.h>
 #include "robomongo/core/settings/SettingsManager.h"
 #include "robomongo/gui/widgets/explorer/ExplorerFavoritesItem.h"
+#include <QMessageBox>
+#include <algorithm>
 
 namespace Robomongo
 {
@@ -32,6 +34,26 @@ namespace Robomongo
                     updateChildPaths(folder, oldParentPath, newParentPath);
                 }
             }
+        }
+
+        int getMaxSubfolderDepth(QTreeWidgetItem *item) {
+            int maxDepth = 0;
+            for (int i = 0; i < item->childCount(); ++i) {
+                if (dynamic_cast<ExplorerFavoritesFolderItem*>(item->child(i))) {
+                    maxDepth = std::max(maxDepth, 1 + getMaxSubfolderDepth(item->child(i)));
+                }
+            }
+            return maxDepth;
+        }
+
+        int getFolderDepth(QTreeWidgetItem *item) {
+            int depth = 0;
+            while (item) {
+                if (dynamic_cast<ExplorerFavoritesFolderItem*>(item)) depth++;
+                else if (dynamic_cast<ExplorerFavoritesRootItem*>(item)) break;
+                item = item->parent();
+            }
+            return depth;
         }
     }
 
@@ -109,6 +131,17 @@ namespace Robomongo
                 else if (rootTarget) targetDirPath = AppRegistry::instance().settingsManager()->favoritesScriptsDir();
 
                 if (!sourcePath.isEmpty() && !targetDirPath.isEmpty()) {
+                    // Calculate target depth
+                    int targetDepth = getFolderDepth(folderTarget);
+                    // Calculate dragged folder subtree depth
+                    int draggedDepth = folderSource ? (1 + getMaxSubfolderDepth(folderSource)) : 0;
+
+                    if (targetDepth + draggedDepth > 4) {
+                        QMessageBox::warning(this, tr("Favorites"), tr("Maximum folder depth (4) reached."));
+                        event->ignore();
+                        return;
+                    }
+
                     // Remove trailing slashes to ensure QFileInfo::fileName() works for folders
                     if (sourcePath.endsWith("/")) sourcePath.chop(1);
                     if (targetDirPath.endsWith("/")) targetDirPath.chop(1);

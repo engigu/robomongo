@@ -204,12 +204,25 @@ namespace Robomongo
                 delete item;
             }
         } else if (selectedAction && selectedAction == newFolderAction) {
+            QTreeWidgetItem *parent = item;
+            if (dynamic_cast<ExplorerFavoriteItem *>(item)) parent = item->parent();
+            
+            int depth = 0;
+            QTreeWidgetItem *curr = parent;
+            while (curr) {
+                if (dynamic_cast<ExplorerFavoritesFolderItem*>(curr)) depth++;
+                else if (dynamic_cast<ExplorerFavoritesRootItem*>(curr)) break;
+                curr = curr->parent();
+            }
+            
+            if (depth >= 4) {
+                QMessageBox::warning(treeWidget(), tr("Favorites"), tr("Maximum folder depth (4) reached."));
+                return;
+            }
+
             bool ok;
             QString folderName = QInputDialog::getText(treeWidget(), tr("New Folder"), tr("Enter folder name:"), QLineEdit::Normal, tr("New Group"), &ok);
             if (ok && !folderName.isEmpty()) {
-                QTreeWidgetItem *parent = item;
-                if (dynamic_cast<ExplorerFavoriteItem *>(item)) parent = item->parent();
-                
                 auto folder = new ExplorerFavoritesFolderItem(parent, folderName);
                 QDir().mkpath(folder->physicalPath());
                 folder->setExpanded(true);
