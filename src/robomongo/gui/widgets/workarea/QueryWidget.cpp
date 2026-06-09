@@ -305,7 +305,17 @@ namespace Robomongo
     void QueryWidget::handle(ScriptExecutedEvent *event)
     {
         hideProgress();        
-        _currentResult = event->result();
+        
+        if (event->isError()) {
+            _currentResult = MongoShellExecResult(
+                std::vector<MongoShellResult>(),
+                _currentResult.currentServer(), _currentResult.isCurrentServerValid(),
+                _currentResult.currentDatabase(), _currentResult.isCurrentDatabaseValid(),
+                event->timeoutReached()
+            );
+        } else {
+            _currentResult = event->result();
+        }
 
         if (_currentResult.results().size() == 1) {
             MongoShellResult const& result = _currentResult.results().front();
@@ -318,9 +328,11 @@ namespace Robomongo
 
         updateCurrentTab();
 
-        displayData(event->result().results(), event->empty());
+        displayData(_currentResult.results(), event->empty());
         // this should be in ScriptWidget, which is subscribed to ScriptExecutedEvent              
-        _scriptWidget->setup(event->result()); 
+        if (!event->isError()) {
+            _scriptWidget->setup(_currentResult); 
+        }
         activateTabContent();
 
         if (event->isError()) {
