@@ -109,10 +109,20 @@ namespace Robomongo
                 else if (rootTarget) targetDirPath = AppRegistry::instance().settingsManager()->favoritesScriptsDir();
 
                 if (!sourcePath.isEmpty() && !targetDirPath.isEmpty()) {
+                    // Remove trailing slashes to ensure QFileInfo::fileName() works for folders
+                    if (sourcePath.endsWith("/")) sourcePath.chop(1);
+                    if (targetDirPath.endsWith("/")) targetDirPath.chop(1);
+
                     QFileInfo sourceInfo(sourcePath);
                     QString newPath = targetDirPath + "/" + sourceInfo.fileName();
 
                     if (sourcePath != newPath) {
+                        // Prevent dragging a folder into itself or its own subfolders
+                        if (folderSource && (newPath == sourcePath || newPath.startsWith(sourcePath + "/"))) {
+                            event->ignore();
+                            return;
+                        }
+
                         bool success = false;
                         if (favSource) success = QFile::rename(sourcePath, newPath);
                         else if (folderSource) success = QDir().rename(sourcePath, newPath);
@@ -122,7 +132,7 @@ namespace Robomongo
                                 favSource->setFilePath(newPath);
                             } else if (folderSource) {
                                 // For folders, we must update all children's internal paths
-                                updateChildPaths(folderSource, sourcePath, newPath + "/");
+                                updateChildPaths(folderSource, sourcePath, newPath);
                             }
                             // Fall through to default dropEvent to handle UI
                         } else {
