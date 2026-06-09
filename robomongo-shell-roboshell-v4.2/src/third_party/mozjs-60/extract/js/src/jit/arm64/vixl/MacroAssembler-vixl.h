@@ -515,12 +515,12 @@ class MacroAssembler : public js::jit::Assembler {
   void Adr(const Register& rd, Label* label) {
     VIXL_ASSERT(!rd.IsZero());
     SingleEmissionCheckScope guard(this);
-    adr(rd, label);
+    this->adr(rd, label);
   }
   void Adrp(const Register& rd, Label* label) {
     VIXL_ASSERT(!rd.IsZero());
     SingleEmissionCheckScope guard(this);
-    adrp(rd, label);
+    this->adrp(rd, label);
   }
   void Asr(const Register& rd, const Register& rn, unsigned shift) {
     VIXL_ASSERT(!rd.IsZero());

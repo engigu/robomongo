@@ -136,7 +136,7 @@ class MozBaseAssembler : public js::jit::AssemblerShared {
     MOZ_ASSERT(numInst == 1);	/* If not, then fix disassembly */
     BufferOffset offset = armbuffer_.allocEntry(numInst, numPoolEntries, inst,
                                                 data, pe);
-    propagateOOM(offset.assigned());
+    static_cast<js::jit::AssemblerShared*>(this)->propagateOOM(offset.assigned());
 #ifdef JS_DISASM_ARM64
     Instruction* instruction = armbuffer_.getInstOrNull(offset);
     if (instruction)

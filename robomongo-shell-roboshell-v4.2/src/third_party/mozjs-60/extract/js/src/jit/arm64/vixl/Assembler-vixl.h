@@ -3553,16 +3553,16 @@ class Assembler : public MozBaseAssembler {
 
   // Emit generic instructions.
   // Emit raw instructions into the instruction stream.
-  void dci(Instr raw_inst) { Emit(raw_inst); }
+  void dci(Instr raw_inst) { MozBaseAssembler::Emit(raw_inst); }
 
   // Emit 32 bits of data into the instruction stream.
   void dc32(uint32_t data) {
-    EmitData(&data, sizeof(data));
+    static_cast<MozBaseAssembler*>(this)->EmitData(&data, sizeof(data));
   }
 
   // Emit 64 bits of data into the instruction stream.
   void dc64(uint64_t data) {
-    EmitData(&data, sizeof(data));
+    static_cast<MozBaseAssembler*>(this)->EmitData(&data, sizeof(data));
   }
 
   // Code generation helpers.
