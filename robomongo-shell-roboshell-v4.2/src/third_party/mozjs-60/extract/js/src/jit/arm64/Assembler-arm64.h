@@ -210,13 +210,13 @@ class Assembler : public vixl::Assembler
     BufferOffset fImmPool64(ARMFPRegister dest, double value);
     BufferOffset fImmPool32(ARMFPRegister dest, float value);
 
-    void bind(Label* label) { bind(label, static_cast<const vixl::MozBaseAssembler*>(this)->nextOffset()); }
+    void bind(Label* label) { bind(label, this->vixl::MozBaseAssembler::nextOffset()); }
     void bind(Label* label, BufferOffset boff);
     void bind(RepatchLabel* label);
     void bindLater(Label* label, wasm::OldTrapDesc target);
 
     bool oom() const {
-        return static_cast<const js::jit::AssemblerShared*>(this)->oom() ||
+        return this->js::jit::AssemblerShared::oom() ||
             armbuffer_.oom() ||
             jumpRelocations_.oom() ||
             dataRelocations_.oom();
@@ -238,7 +238,7 @@ class Assembler : public vixl::Assembler
         return dataRelocations_.length();
     }
     size_t bytesNeeded() const {
-        return static_cast<const vixl::Assembler*>(this)->SizeOfCodeGenerated() +
+        return this->vixl::Assembler::SizeOfCodeGenerated() +
             jumpRelocationTableBytes() +
             dataRelocationTableBytes();
     }
